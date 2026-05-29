@@ -17,4 +17,5 @@ Core source plan:
 - Decode responses with GBK.
 - Do symbol normalization before requests.
 - Browser-side Sina fallback is limited because scripts cannot set `Referer`.
+- Older Node runtimes may lack GBK `TextDecoder`; use Node 18+/modern browsers, or add a GBK decoder when readable Chinese names are required.
 - Store source names in quote objects to support later strategy diagnostics.
