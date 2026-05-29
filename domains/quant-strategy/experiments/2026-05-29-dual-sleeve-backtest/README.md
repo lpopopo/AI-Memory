@@ -70,6 +70,7 @@ python3 -m venv .venv
 .venv/bin/python scripts/backtest_dual_sleeve.py
 .venv/bin/python scripts/optimize_dual_sleeve.py
 .venv/bin/python scripts/validate_dual_sleeve.py
+.venv/bin/python scripts/test_v2_variants.py
 ```
 
 ## Data Notes
@@ -99,6 +100,10 @@ The best in-sample configuration is only a candidate. It needs walk-forward vali
 - 2022-2026 test-like period.
 - 2022 bear-market segment.
 - 2023-2026 post-bear recovery segment.
+
+## V2 Variants
+
+`test_v2_variants.py` tests bull-market participation upgrades. In strong QQQ regimes, selected variants temporarily shift from 50/50 to a more aggressive value/tactical mix such as 35/65, while reverting to the V1-style defensive structure outside those regimes.
 
 ## Known Limitations
 

@@ -157,3 +157,42 @@ Next step:
 
 - Build V2 to improve bull-market participation while preserving 2022 downside protection.
 - Candidate V2 tests: allow tactical sleeve to hold QQQ/SMH/XLK more aggressively in confirmed bull regimes, and compare with a simple 50/50 SPY/QQQ hurdle.
+
+## 2026-05-29 V2 Bull-Participation Optimization
+
+Summary:
+
+- Added V2 variants that increase tactical/growth exposure during confirmed QQQ bull regimes.
+- Tested several bull-market allocation shifts, tactical top N settings, bull-regime rules, and QQQ inclusion rules.
+- Best V2 candidate uses a 35% value / 65% tactical-growth mix during QQQ long-trend bull regimes, and reverts to the V1-style 50/50 structure otherwise.
+
+Best candidate:
+
+- Name: dual_sleeve_v2_05.
+- Bull allocation: 35% value, 65% tactical/growth.
+- Normal allocation: 50% value, 50% tactical.
+- Bull rule: QQQ above 200-day moving average with positive 6-month momentum.
+- Tactical top N: 2.
+- Fallback: QQQ.
+- Include QQQ in bull ranking: true.
+
+Result:
+
+- V2 final value: 5.759.
+- V2 CAGR: 19.15%.
+- V2 max drawdown: -31.04%.
+- V2 Sharpe: 1.02.
+- V2 beats V1 on CAGR, drawdown, and Sharpe.
+- V2 slightly beats 50/50 SPY/QQQ on CAGR and Sharpe, but has slightly worse drawdown.
+- V2 still trails QQQ on full-period CAGR, while carrying less volatility and drawdown.
+
+Learned:
+
+- Bull-market participation improved when the tactical sleeve became more growth-oriented in confirmed QQQ trends.
+- A slower bull rule using QQQ 200-day moving average plus 6-month momentum was better than the faster QQQ 100-day / 3-month rule in the tested candidates.
+- V2 gives up some of V1's 2022 protection, but still protects much better than SPY, QQQ, and 50/50 SPY/QQQ.
+
+Next step:
+
+- Validate V2 with a more formal walk-forward process.
+- Add individual-stock sleeves to test whether value selection and industry leaders can improve beyond ETF proxies.

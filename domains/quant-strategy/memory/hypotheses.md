@@ -59,3 +59,10 @@ Revalidation result:
 - V1 showed stronger performance in 2022-2026 and much better 2022 drawdown control.
 - V1 underperformed in 2016-2021 bull-market conditions.
 - Hypothesis should be reframed: dual-sleeve ETF V1 may be useful as a regime-aware drawdown-control strategy, but not yet as a full-cycle return-maximizing strategy.
+
+V2 result:
+
+- V2 improved bull-market participation by shifting to 35% value / 65% tactical-growth during confirmed QQQ bull regimes.
+- V2 slightly beat 50/50 SPY/QQQ on full-period CAGR and Sharpe, while drawdown remained slightly worse.
+- V2 still did not beat QQQ on full-period CAGR.
+- Hypothesis remains promising but not proven; next evidence should come from walk-forward validation and individual-stock implementation.
