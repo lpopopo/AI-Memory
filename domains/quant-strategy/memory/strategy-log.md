@@ -227,3 +227,50 @@ Next step:
 
 - Decide whether the strategy objective is defensive compounding or full-cycle return maximization.
 - If full-cycle return maximization is required, add a stronger bull-market accelerator or move to individual-stock leadership selection.
+
+## 2026-05-29 Objective Choice
+
+Decision:
+
+- User selected direction 2: pursue full-cycle return maximization.
+
+Implication:
+
+- V3 may accept higher volatility or somewhat weaker bear-market protection if it materially improves bull-market participation and full-cycle CAGR.
+- Strategy comparisons must continue to include QQQ and 50/50 SPY/QQQ, because a return-focused version can easily become disguised QQQ exposure.
+
+## 2026-05-29 V3 Return Engine Test
+
+Summary:
+
+- Built V3 ETF-proxy return engine candidates after user selected full-cycle return maximization.
+- V3 tested stronger bull-market growth allocations and more aggressive normal-regime growth exposure.
+
+Best V3 candidate:
+
+- Name: dual_sleeve_v3_04.
+- Bull allocation: 20% value, 80% growth.
+- Normal allocation: 40% value, 60% growth.
+- Bear allocation: 70% value, 30% growth.
+- Bull rule: QQQ above 100-day moving average with positive 3-month momentum.
+- Bear rule: SPY and QQQ below 200-day moving averages with negative 3-month momentum.
+
+Result:
+
+- V3 final value: 5.758.
+- V3 CAGR: 19.15%.
+- V3 max drawdown: -33.12%.
+- V3 Sharpe: 0.96.
+- V3 does not improve on V2: similar CAGR, worse drawdown, lower Sharpe.
+- V3 improves 2016-2021 bull participation but gives up too much in 2022-2026 and 2022 bear-market protection.
+
+Learned:
+
+- Simply increasing ETF growth exposure is not enough.
+- The ETF proxy layer appears close to its useful limit for this strategy direction.
+- To pursue full-cycle return maximization, the next test should move to individual-stock leadership selection inside strong industries.
+
+Next step:
+
+- Build a V4 individual-stock prototype using Nasdaq 100 or S&P 500 subset data.
+- For hot industries, rank individual leaders by relative strength and liquidity instead of only ETF proxies.

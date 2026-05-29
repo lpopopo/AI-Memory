@@ -72,3 +72,9 @@ V2 robustness revalidation:
 - Rolling 3-year windows show V2 beats 50/50 SPY/QQQ on CAGR in 4 of 9 windows, drawdown in 6 of 9 windows, and Sharpe in 4 of 9 windows.
 - Evidence supports V2 as a defensive/regime-aware ETF strategy more than as a consistently superior return engine.
 - Hypothesis remains open; individual-stock sleeves or a bull accelerator are needed before treating the strategy as superior.
+
+V3 result:
+
+- A stronger ETF-level bull accelerator did not improve on V2.
+- V3 matched V2's full-period CAGR but had worse drawdown and lower Sharpe.
+- Evidence now points toward individual-stock leadership selection as the next required improvement path.
