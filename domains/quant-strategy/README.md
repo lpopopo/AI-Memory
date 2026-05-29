@@ -12,6 +12,7 @@ This domain stores memory for 量外策略 research and implementation.
 
 - `references/data-sources.md`: Current data-source contracts and runtime caveats.
 - `references/us-stock-strategy-blueprint.md`: Initial US-stock-first strategy design.
+- `references/dual-sleeve-portfolio-strategy.md`: 50% value plus 50% hot-industry portfolio design.
 
 ## Related Skills
 

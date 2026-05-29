@@ -35,3 +35,28 @@ Open questions:
 Next step:
 
 - Decide the first universe and benchmark, then create the backtest data contract.
+
+## 2026-05-29 Dual-Sleeve Portfolio Design
+
+Summary:
+
+- User proposed splitting capital into 50% value investing and 50% hot-industry investing.
+- Formalized the structure as a dual-sleeve US equity strategy.
+- Added separate rules for value selection, hot-industry selection, risk control, and rebalancing.
+
+Learned:
+
+- The strategy should combine a stable long-term base with a tactical industry-rotation component.
+- The two sleeves need different review cadences: value monthly/quarterly, tactical weekly/monthly.
+- Portfolio-level sector and factor concentration must be monitored across both sleeves.
+
+Open questions:
+
+- Should the value sleeve use only individual stocks, or allow value ETFs?
+- Should the hot-industry sleeve begin with ETFs, then move to individual stocks after confirmation?
+- What maximum portfolio drawdown should trigger risk reduction?
+- Should tactical sleeve be allowed to hold cash when no industry qualifies?
+
+Next step:
+
+- Define exact scoring models for value stocks and hot industries, then create a backtest data contract.

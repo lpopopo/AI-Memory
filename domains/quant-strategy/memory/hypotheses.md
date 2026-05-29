@@ -29,3 +29,14 @@ Validation needed:
 
 - Build a price-volume baseline.
 - Add fundamentals/events only after baseline backtest is stable.
+
+### H4: Dual-sleeve allocation can balance compounding and opportunity capture
+
+A 50% value sleeve plus 50% hot-industry momentum sleeve may produce better behavioral and risk balance than a pure momentum or pure value strategy.
+
+Validation needed:
+
+- Backtest value sleeve, tactical sleeve, and combined portfolio separately.
+- Compare against SPY, QQQ, and a 50/50 SPY/QQQ benchmark.
+- Measure whether combined drawdown is lower than the tactical sleeve alone.
+- Check whether both sleeves are accidentally concentrated in the same sectors or factors.

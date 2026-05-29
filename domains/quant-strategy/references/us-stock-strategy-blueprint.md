@@ -136,8 +136,9 @@ Exit when any are true:
 Default version:
 
 - Long-only.
-- Equal weight or volatility-adjusted weight.
-- 5 to 20 positions.
+- Dual-sleeve portfolio: 50% value-investing sleeve and 50% hot-industry momentum sleeve.
+- Equal weight or volatility-adjusted weight inside each sleeve.
+- 8 to 15 value holdings plus 2 to 4 active tactical industries.
 - Maximum single position: 5% to 10%.
 - Maximum sector exposure: configurable cap.
 
@@ -146,6 +147,9 @@ Risk controls:
 - Use cash when not enough qualified candidates exist.
 - Do not force full investment.
 - Rebalance weekly or when exit signals trigger.
+- Track sector and factor exposure across both sleeves so the portfolio does not accidentally become one concentrated bet.
+
+See `dual-sleeve-portfolio-strategy.md` for the detailed 50/50 design.
 
 ## Backtest Metrics
 
