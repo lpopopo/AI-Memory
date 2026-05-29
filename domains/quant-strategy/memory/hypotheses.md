@@ -53,3 +53,9 @@ V1 optimization result:
 - V1 still did not clearly beat 50/50 SPY/QQQ on CAGR or drawdown.
 - V1's best result depended on QQQ fallback, so the dual-sleeve thesis remains unproven.
 - Hypothesis remains open and needs walk-forward validation plus individual-stock sleeves.
+
+Revalidation result:
+
+- V1 showed stronger performance in 2022-2026 and much better 2022 drawdown control.
+- V1 underperformed in 2016-2021 bull-market conditions.
+- Hypothesis should be reframed: dual-sleeve ETF V1 may be useful as a regime-aware drawdown-control strategy, but not yet as a full-cycle return-maximizing strategy.

@@ -69,6 +69,7 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python scripts/backtest_dual_sleeve.py
 .venv/bin/python scripts/optimize_dual_sleeve.py
+.venv/bin/python scripts/validate_dual_sleeve.py
 ```
 
 ## Data Notes
@@ -88,6 +89,16 @@ The optimizer scans:
 - Cash, SPY, QQQ, or SPY/QQQ fallback when tactical conditions fail.
 
 The best in-sample configuration is only a candidate. It needs walk-forward validation before being treated as a durable strategy rule.
+
+## Revalidation
+
+`validate_dual_sleeve.py` reruns the best V1 configuration and compares it against SPY, QQQ, and 50/50 SPY/QQQ across:
+
+- Full period.
+- 2016-2021 training-like period.
+- 2022-2026 test-like period.
+- 2022 bear-market segment.
+- 2023-2026 post-bear recovery segment.
 
 ## Known Limitations
 

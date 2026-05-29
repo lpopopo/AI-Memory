@@ -131,3 +131,29 @@ Next step:
 - Build V2 walk-forward validation to reduce in-sample overfitting risk.
 - Add a stricter comparison against 50/50 SPY/QQQ because V1 still does not clearly beat it.
 - Consider individual-stock value and industry leader selection, because ETF proxies may be too blunt.
+
+## 2026-05-29 V1 Revalidation
+
+Summary:
+
+- Reran the fixed V1 best configuration and compared it against SPY, QQQ, and 50/50 SPY/QQQ.
+- Added split validation for full period, 2016-2021, 2022-2026, 2022 bear market, and 2023-2026 recovery.
+
+Revalidation result:
+
+- Full period reproduced the optimization result: V1 final value 5.288, CAGR 18.14%, max drawdown -32.17%, Sharpe 1.00.
+- Full period still did not beat 50/50 SPY/QQQ on CAGR or drawdown.
+- 2016-2021: V1 underperformed QQQ and 50/50 SPY/QQQ in the bull market.
+- 2022-2026: V1 outperformed SPY, QQQ, and 50/50 SPY/QQQ with lower drawdown.
+- 2022 bear market: V1 lost -5.56% versus SPY -18.84%, QQQ -33.54%, and 50/50 SPY/QQQ -26.45%.
+
+Learned:
+
+- V1's edge is defensive and regime-aware, not raw bull-market return.
+- The strategy is promising as a drawdown-control overlay.
+- The main weakness is insufficient participation in strong QQQ-led bull phases.
+
+Next step:
+
+- Build V2 to improve bull-market participation while preserving 2022 downside protection.
+- Candidate V2 tests: allow tactical sleeve to hold QQQ/SMH/XLK more aggressively in confirmed bull regimes, and compare with a simple 50/50 SPY/QQQ hurdle.
