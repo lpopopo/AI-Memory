@@ -78,3 +78,19 @@ V3 result:
 - A stronger ETF-level bull accelerator did not improve on V2.
 - V3 matched V2's full-period CAGR but had worse drawdown and lower Sharpe.
 - Evidence now points toward individual-stock leadership selection as the next required improvement path.
+
+### H5: AI infrastructure bottleneck tracking can improve candidate-universe selection
+
+Qualitative public research sources focused on AI compute, interconnect, optical modules, and storage may help identify which subthemes deserve a temporary candidate-universe tilt before pure price momentum fully reflects the shift.
+
+Initial source:
+
+- Xiaohongshu account "美研芒格君" repeatedly focuses on AI infrastructure bottlenecks including optical modules/interconnect, memory/storage, AI inference, cloud capex, and earnings-driven dislocations.
+- See `references/xiaohongshu-mungerjun-content-framework.md`.
+
+Validation needed:
+
+- Build an AI infrastructure watchlist grouped by bottleneck subtheme.
+- Compare strategy results with and without a qualitative-theme candidate-universe tilt.
+- Require normal technical filters: relative strength, 63/126-day momentum, 50/200-day trend, benchmark comparison, and drawdown control.
+- Test crowding flags when content repeatedly signals sector overheating.
