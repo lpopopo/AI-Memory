@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_LONG_DIR = ROOT / "data_long"
+DATA_LONG_DIR = ROOT / "datasets" / "data_long"
 cache_path = DATA_LONG_DIR / "yfinance_adjusted_close_2000_2025.csv"
 
 def main():

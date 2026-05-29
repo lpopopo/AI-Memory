@@ -12,7 +12,7 @@ START_LONG = "2000-01-01"
 END_LONG = "2025-12-31"
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_UNIVERSE_DIR = ROOT / "data_universe"
+DATA_UNIVERSE_DIR = ROOT / "datasets" / "data_universe"
 
 
 # Robust Fallback tickers list in case scraping Wikipedia fails
@@ -205,7 +205,7 @@ def main():
     print(f"Total Trading Days: {len(combined)}")
     print(f"Total Cached Stocks: {len(combined.columns)}")
     if failures:
-        print(f"Total Failures: {len(failures)} (Details in data_universe/download_failures.json)")
+        print(f"Total Failures: {len(failures)} (Details in datasets/data_universe/download_failures.json)")
 
 
 if __name__ == "__main__":

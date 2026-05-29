@@ -17,7 +17,7 @@ This document defines the long-term storage pattern for `AI-Memory`. The goal is
 | Layer | Path | Purpose | Typical files |
 | --- | --- | --- | --- |
 | L0 Entry Index | `README.md` | Human and AI entry point | Repository map, rules, quick links |
-| L1 Domain Memory | `domains/<domain>/memory/` | Stable research memory for one topic | `decisions.md`, `strategy-log.md`, `hypotheses.md` |
+| L1 Domain Memory | `domains/<domain>/memory/` | Stable research memory and daily logs for one topic | `summary.md`, `daily-summaries.md`, `daily/` |
 | L2 Domain References | `domains/<domain>/references/` | Source contracts, external docs, field maps, schemas | `data-sources.md`, `api-contracts.md`, `schemas.md` |
 | L3 Reusable Skills | `skills/<skill-name>/` | Portable Codex skills and executable helpers | `SKILL.md`, `references/`, `scripts/` |
 | L4 Archive | `archive/` | Deprecated or inactive material kept for traceability | Dated snapshots, retired experiments |
@@ -36,9 +36,11 @@ AI-Memory/
 │   └── <domain>/
 │       ├── README.md
 │       ├── memory/
+│       │   ├── summary.md
 │       │   ├── decisions.md
-│       │   ├── strategy-log.md
-│       │   └── hypotheses.md
+│       │   ├── daily-summaries.md
+│       │   └── daily/
+│       │       └── YYYY-MM-DD-details.md
 │       └── references/
 │           └── data-sources.md
 ├── skills/
@@ -65,13 +67,26 @@ Each decision should include:
 - Impact
 - Revision trigger
 
-### Strategy Log
+### Top-level Summary
 
-Use `memory/strategy-log.md` for running notes, open questions, and session summaries. This is the working memory layer.
+Use `memory/summary.md` as the main entry point for the AI to understand the current state, primary goal, and latest status of the domain. It provides a high-level overview of the entire domain.
+
+### Daily Summaries
+
+Use `memory/daily-summaries.md` to append a concise summary for each day of work. This provides a fast timeline of progress without needing to read detailed logs.
 
 Good entries include:
+- Date
+- Key actions taken
+- Main conclusion for the day
 
+### Daily Detailed Memory
+
+Use `memory/daily/<YYYY-MM-DD>-details.md` for running notes, open questions, session details, and experiment logs for a specific day. This replaces the old monolithic strategy-log.
+
+Good entries include:
 - What changed
+- Detailed experiment observations
 - What was learned
 - What remains uncertain
 - Next concrete step
@@ -107,10 +122,12 @@ raw note -> strategy log -> hypothesis/reference -> decision/skill -> archive
 
 Use this flow:
 
-1. Capture new thinking in `strategy-log.md`.
-2. Move factual contracts into `references/`.
-3. Move reusable workflows into `skills/`.
-4. Promote validated conclusions into `decisions.md`.
+1. Capture daily detailed thinking in `daily/<date>-details.md`.
+2. Append a brief summary to `daily-summaries.md` at the end of the day.
+3. Update `summary.md` with any major status changes.
+4. Move factual contracts into `references/`.
+5. Move reusable workflows into `skills/`.
+6. Promote validated conclusions into `decisions.md`.
 5. Move obsolete material into `archive/` with a short reason.
 
 ## Naming Rules
@@ -137,10 +154,11 @@ When starting work:
 
 1. Read root `README.md`.
 2. Read this architecture document when unsure where to store something.
-3. For a specific topic, read that domain's `memory/decisions.md` first.
-4. Read `strategy-log.md` for current open context.
-5. Read `references/` only when the task needs factual contracts.
-6. Read skill `SKILL.md` only when the task matches that reusable capability.
+3. For a specific topic, read that domain's `memory/summary.md` and `memory/decisions.md` first.
+4. Read `memory/daily-summaries.md` to understand recent timeline progress.
+5. Read recent `memory/daily/<date>-details.md` files for current open context.
+6. Read `references/` only when the task needs factual contracts.
+7. Read skill `SKILL.md` only when the task matches that reusable capability.
 
 ## Current Domains
 

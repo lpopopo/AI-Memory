@@ -25,7 +25,7 @@ from test_v4_stock_alpha import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_LONG_DIR = ROOT / "data_long"
+DATA_LONG_DIR = ROOT / "datasets" / "data_long"
 
 SPLITS_LONG = [
     ("full_26yr", "2000-01-03", "2025-12-31"),

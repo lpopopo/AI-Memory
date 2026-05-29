@@ -21,11 +21,12 @@ Short version:
 
 ## How To Store New Memory
 
-1. Put stable conclusions in `domains/<domain>/memory/decisions.md`.
-2. Put running notes and open questions in `domains/<domain>/memory/strategy-log.md`.
-3. Put API contracts, field maps, schemas, and external facts in `domains/<domain>/references/`.
-4. Put reusable AI workflows and code helpers in `skills/<skill-name>/`.
-5. Move obsolete material to `archive/` instead of deleting important history.
+1. Put high-level current state in `domains/<domain>/memory/summary.md`.
+2. Put daily running notes in `domains/<domain>/memory/daily/<YYYY-MM-DD>-details.md` and append a high-level timeline to `daily-summaries.md`.
+3. Put stable conclusions in `domains/<domain>/memory/decisions.md`.
+4. Put API contracts, field maps, schemas, and external facts in `domains/<domain>/references/`.
+5. Put reusable AI workflows and code helpers in `skills/<skill-name>/`.
+6. Move obsolete material to `archive/` instead of deleting important history.
 
 ## Rules
 

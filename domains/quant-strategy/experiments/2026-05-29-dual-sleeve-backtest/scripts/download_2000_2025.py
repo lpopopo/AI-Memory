@@ -34,7 +34,7 @@ ALL_LEADER_STOCKS = sorted(set(s for leaders in SECTOR_LEADERS.values() for s in
 ALL_SYMBOLS = sorted(set(BENCHMARKS + VALUE_ETFS + TACTICAL_ETFS + ALL_LEADER_STOCKS))
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_LONG_DIR = ROOT / "data_long"
+DATA_LONG_DIR = ROOT / "datasets" / "data_long"
 
 
 def fetch_symbol_close_long(symbol):

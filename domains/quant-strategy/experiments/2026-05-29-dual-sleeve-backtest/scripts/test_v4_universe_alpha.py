@@ -30,8 +30,8 @@ from test_v4_stock_alpha import (
 from test_v4_long_term import SPLITS_LONG, slice_curve
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_UNIVERSE_DIR = ROOT / "data_universe"
-DATA_LONG_DIR = ROOT / "data_long"
+DATA_UNIVERSE_DIR = ROOT / "datasets" / "data_universe"
+DATA_LONG_DIR = ROOT / "datasets" / "data_long"
 
 
 def load_universe_data():
