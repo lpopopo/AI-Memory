@@ -40,3 +40,9 @@ Validation needed:
 - Compare against SPY, QQQ, and a 50/50 SPY/QQQ benchmark.
 - Measure whether combined drawdown is lower than the tactical sleeve alone.
 - Check whether both sleeves are accidentally concentrated in the same sectors or factors.
+
+Initial V0 result:
+
+- ETF-proxy V0 did reduce drawdown versus SPY and QQQ.
+- ETF-proxy V0 did not outperform SPY, QQQ, or 50/50 SPY/QQQ on CAGR or Sharpe.
+- Hypothesis remains open; needs V1 with true scoring models before acceptance or rejection.

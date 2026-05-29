@@ -1,0 +1,7 @@
+data/
+results/*.csv
+results/*.json
+
+.venv/
+__pycache__/
+scripts/__pycache__/

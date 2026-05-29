@@ -60,3 +60,35 @@ Open questions:
 Next step:
 
 - Define exact scoring models for value stocks and hot industries, then create a backtest data contract.
+
+## 2026-05-29 Dual-Sleeve V0 Backtest
+
+Summary:
+
+- Built and ran the first 10-year US ETF proxy backtest for the 50% value plus 50% hot-industry strategy.
+- Period tested: 2016-05-31 to 2026-05-28.
+- Data source: yfinance auto-adjusted daily close data.
+- Value sleeve proxy: equal-weight `VTV`, `IWD`, `SCHD`.
+- Tactical sleeve proxy: monthly rotation among sector/theme ETFs.
+
+Result:
+
+- Dual Sleeve V0 final value: 2.463.
+- Dual Sleeve V0 CAGR: 9.44%.
+- Dual Sleeve V0 max drawdown: -24.48%.
+- Dual Sleeve V0 Sharpe: 0.74.
+- SPY CAGR: 15.54%, max drawdown: -33.72%, Sharpe: 0.90.
+- QQQ CAGR: 21.77%, max drawdown: -35.12%, Sharpe: 1.00.
+- 50/50 SPY/QQQ CAGR: 18.72%, max drawdown: -30.86%, Sharpe: 0.97.
+
+Learned:
+
+- The V0 ETF-proxy version reduces drawdown versus SPY and QQQ, but underperforms on CAGR and Sharpe.
+- The current tactical regime filter may be too conservative.
+- ETF-based value exposure may be too broad and defensive to represent the intended value-investing sleeve.
+- The 50/50 idea remains testable, but V0 rules are not strong enough.
+
+Next step:
+
+- Improve V1 by building explicit value and industry scoring models instead of using broad ETF proxies only.
+- Test tactical sleeve with top 2 vs top 3 industries, SPY/QQQ dual regime filters, and different cash rules.

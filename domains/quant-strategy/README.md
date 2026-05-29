@@ -14,6 +14,10 @@ This domain stores memory for 量外策略 research and implementation.
 - `references/us-stock-strategy-blueprint.md`: Initial US-stock-first strategy design.
 - `references/dual-sleeve-portfolio-strategy.md`: 50% value plus 50% hot-industry portfolio design.
 
+## Experiments
+
+- `experiments/2026-05-29-dual-sleeve-backtest`: First 10-year ETF-proxy validation of the dual-sleeve strategy.
+
 ## Related Skills
 
 - `../../skills/quant-stock-data`: Tencent/Sina resilient stock data-source skill.
