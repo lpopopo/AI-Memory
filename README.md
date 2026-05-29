@@ -1,17 +1,22 @@
-# Quant Strategy Memory
+# AI-Memory
 
-This repository is the shared memory base for 量外策略 research across machines.
+This repository stores reusable AI working memory, local Codex skills, and domain research notes that should travel across machines.
 
-Recommended use:
+## Structure
 
-- Store stable decisions in `memory/decisions.md`.
-- Store data-source contracts in `references/data-sources.md`.
-- Store strategy hypotheses and experiments in `memory/strategy-log.md`.
-- Keep secrets, brokerage credentials, API keys, cookies, and personal account data out of this repo.
+- `skills/`: Codex skills that can be copied into `$CODEX_HOME/skills`.
+- `domains/quant-strategy/`: 量外策略 research memory, decisions, data-source notes, and future strategy logs.
 
-To sync across machines, create a private GitHub repository and push this folder:
+## Current Contents
 
-```bash
-git remote add origin git@github.com:<your-user>/<your-private-repo>.git
-git push -u origin main
-```
+- `skills/quant-stock-data`: Tencent/Sina resilient stock data source skill.
+- `domains/quant-strategy/memory/decisions.md`: Stable decisions made during strategy research.
+- `domains/quant-strategy/memory/strategy-log.md`: Running notes and open strategy topics.
+- `domains/quant-strategy/references/data-sources.md`: Data-source contracts and runtime caveats.
+
+## Rules
+
+- Keep secrets, brokerage credentials, cookies, tokens, and personal account data out of this repository.
+- Put stable conclusions in `memory/decisions.md`.
+- Put raw or semi-stable interface notes in `references/`.
+- Put ongoing thinking and experiments in `memory/strategy-log.md` until they become decisions.
