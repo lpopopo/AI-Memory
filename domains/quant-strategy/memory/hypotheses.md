@@ -66,3 +66,9 @@ V2 result:
 - V2 slightly beat 50/50 SPY/QQQ on full-period CAGR and Sharpe, while drawdown remained slightly worse.
 - V2 still did not beat QQQ on full-period CAGR.
 - Hypothesis remains promising but not proven; next evidence should come from walk-forward validation and individual-stock implementation.
+
+V2 robustness revalidation:
+
+- Rolling 3-year windows show V2 beats 50/50 SPY/QQQ on CAGR in 4 of 9 windows, drawdown in 6 of 9 windows, and Sharpe in 4 of 9 windows.
+- Evidence supports V2 as a defensive/regime-aware ETF strategy more than as a consistently superior return engine.
+- Hypothesis remains open; individual-stock sleeves or a bull accelerator are needed before treating the strategy as superior.

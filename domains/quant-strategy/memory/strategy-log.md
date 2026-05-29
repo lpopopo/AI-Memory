@@ -196,3 +196,34 @@ Next step:
 
 - Validate V2 with a more formal walk-forward process.
 - Add individual-stock sleeves to test whether value selection and industry leaders can improve beyond ETF proxies.
+
+## 2026-05-29 V2 Robustness Revalidation
+
+Summary:
+
+- Fixed the best V2 configuration and tested it across fixed splits plus rolling 3-year windows.
+- Compared V2 against SPY, QQQ, and 50/50 SPY/QQQ.
+
+Fixed split result:
+
+- Full period: V2 beats 50/50 SPY/QQQ by 0.43 percentage points CAGR and 0.05 Sharpe, but has 0.18 percentage points worse drawdown.
+- 2016-2021: V2 underperforms 50/50 SPY/QQQ by 3.97 percentage points CAGR.
+- 2022-2026: V2 beats 50/50 SPY/QQQ by 5.95 percentage points CAGR and has much shallower drawdown.
+- 2022 bear market: V2 loses -6.79% versus 50/50 SPY/QQQ losing -26.45%.
+
+Rolling 3-year result versus 50/50 SPY/QQQ:
+
+- CAGR wins: 4 / 9.
+- Drawdown wins: 6 / 9.
+- Sharpe wins: 4 / 9.
+
+Learned:
+
+- V2 is not a stable return winner across all windows.
+- V2's clearest edge is drawdown control, especially around bear-market regimes.
+- V2 still lags in early bull-market windows such as 2017-2019 and 2018-2020.
+
+Next step:
+
+- Decide whether the strategy objective is defensive compounding or full-cycle return maximization.
+- If full-cycle return maximization is required, add a stronger bull-market accelerator or move to individual-stock leadership selection.

@@ -71,6 +71,7 @@ python3 -m venv .venv
 .venv/bin/python scripts/optimize_dual_sleeve.py
 .venv/bin/python scripts/validate_dual_sleeve.py
 .venv/bin/python scripts/test_v2_variants.py
+.venv/bin/python scripts/validate_v2_robustness.py
 ```
 
 ## Data Notes
@@ -104,6 +105,8 @@ The best in-sample configuration is only a candidate. It needs walk-forward vali
 ## V2 Variants
 
 `test_v2_variants.py` tests bull-market participation upgrades. In strong QQQ regimes, selected variants temporarily shift from 50/50 to a more aggressive value/tactical mix such as 35/65, while reverting to the V1-style defensive structure outside those regimes.
+
+`validate_v2_robustness.py` fixes the best V2 candidate and tests it across fixed splits plus rolling 3-year windows against SPY, QQQ, and 50/50 SPY/QQQ.
 
 ## Known Limitations
 
