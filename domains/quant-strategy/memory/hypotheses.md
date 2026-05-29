@@ -46,3 +46,10 @@ Initial V0 result:
 - ETF-proxy V0 did reduce drawdown versus SPY and QQQ.
 - ETF-proxy V0 did not outperform SPY, QQQ, or 50/50 SPY/QQQ on CAGR or Sharpe.
 - Hypothesis remains open; needs V1 with true scoring models before acceptance or rejection.
+
+V1 optimization result:
+
+- V1 improved strongly over V0: CAGR 18.14% and Sharpe 1.00.
+- V1 still did not clearly beat 50/50 SPY/QQQ on CAGR or drawdown.
+- V1's best result depended on QQQ fallback, so the dual-sleeve thesis remains unproven.
+- Hypothesis remains open and needs walk-forward validation plus individual-stock sleeves.

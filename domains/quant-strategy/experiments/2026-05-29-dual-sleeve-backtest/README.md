@@ -68,6 +68,7 @@ Selection:
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python scripts/backtest_dual_sleeve.py
+.venv/bin/python scripts/optimize_dual_sleeve.py
 ```
 
 ## Data Notes
@@ -75,6 +76,18 @@ python3 -m venv .venv
 - V0 uses yfinance daily data.
 - Prices use auto-adjusted close values.
 - Raw downloaded data should not be committed unless explicitly needed.
+
+## V1 Optimization
+
+The optimizer scans:
+
+- Static versus dynamic value ETF selection.
+- Tactical top 1, 2, 3, or 4 ETF rotation.
+- Different market regime filters.
+- Different tactical trend filters.
+- Cash, SPY, QQQ, or SPY/QQQ fallback when tactical conditions fail.
+
+The best in-sample configuration is only a candidate. It needs walk-forward validation before being treated as a durable strategy rule.
 
 ## Known Limitations
 

@@ -92,3 +92,42 @@ Next step:
 
 - Improve V1 by building explicit value and industry scoring models instead of using broad ETF proxies only.
 - Test tactical sleeve with top 2 vs top 3 industries, SPY/QQQ dual regime filters, and different cash rules.
+
+## 2026-05-29 Dual-Sleeve V1 Optimization
+
+Summary:
+
+- Added a V1 parameter-scan optimizer for the dual-sleeve ETF-proxy strategy.
+- Tested dynamic value sleeve selection, tactical top N selection, regime filters, trend filters, and fallback rules.
+- Used a representative 48-configuration grid after the full grid proved too slow for the first pass.
+
+Best candidate:
+
+- Value mode: top 2 value ETFs by momentum score.
+- Tactical top N: 2.
+- Regime filter: SPY above 200-day moving average or QQQ above 100-day moving average.
+- Tactical filter: positive 3-month momentum.
+- Score mode: 3-month plus 6-month momentum.
+- Fallback: QQQ.
+
+Result:
+
+- Dual Sleeve V1 Best final value: 5.288.
+- Dual Sleeve V1 Best CAGR: 18.14%.
+- Dual Sleeve V1 Best max drawdown: -32.17%.
+- Dual Sleeve V1 Best Sharpe: 1.00.
+- Compared with V0: materially better CAGR and Sharpe.
+- Compared with 50/50 SPY/QQQ: slightly lower CAGR and deeper drawdown, but slightly higher Sharpe.
+
+Learned:
+
+- Cash fallback was too conservative in V0.
+- Top 2 tactical industry/theme selection worked better than top 3 in the tested grid.
+- QQQ fallback drives much of the improvement; this must be treated as a growth-index fallback, not pure industry rotation.
+- Dynamic value ETF selection had only a small impact compared with tactical/fallback rules.
+
+Next step:
+
+- Build V2 walk-forward validation to reduce in-sample overfitting risk.
+- Add a stricter comparison against 50/50 SPY/QQQ because V1 still does not clearly beat it.
+- Consider individual-stock value and industry leader selection, because ETF proxies may be too blunt.
