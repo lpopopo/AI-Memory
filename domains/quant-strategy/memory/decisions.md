@@ -7,4 +7,4 @@
 - Strategy analysis should consume normalized quote objects rather than raw endpoint payloads.
 - Quote outputs should preserve `source` for debugging and data-quality review.
 - Runtime caveat: old Node can fetch Tencent data but may not decode GBK Chinese names correctly without a decoder.
-- Repository memory model: use layered storage under `study/` with docs, domains, skills, templates, and archive. Stable conclusions live in `memory/decisions.md`; running notes live in `memory/strategy-log.md`; factual contracts live in `references/`; reusable workflows live in `skills/`.
+- Repository memory model: use layered storage with root-level `docs/`, `domains/`, `skills/`, `templates/`, and `archive/`. Stable conclusions live in `memory/decisions.md`; running notes live in `memory/strategy-log.md`; factual contracts live in `references/`; reusable workflows live in `skills/`.

@@ -16,16 +16,16 @@ This document defines the long-term storage pattern for `AI-Memory`. The goal is
 
 | Layer | Path | Purpose | Typical files |
 | --- | --- | --- | --- |
-| L0 Entry Index | `README.md`, `study/README.md` | Human and AI entry points | Repository map, rules, quick links |
-| L1 Domain Memory | `study/domains/<domain>/memory/` | Stable research memory for one topic | `decisions.md`, `strategy-log.md`, `hypotheses.md` |
-| L2 Domain References | `study/domains/<domain>/references/` | Source contracts, external docs, field maps, schemas | `data-sources.md`, `api-contracts.md`, `schemas.md` |
-| L3 Reusable Skills | `study/skills/<skill-name>/` | Portable Codex skills and executable helpers | `SKILL.md`, `references/`, `scripts/` |
-| L4 Archive | `study/archive/` | Deprecated or inactive material kept for traceability | Dated snapshots, retired experiments |
+| L0 Entry Index | `README.md` | Human and AI entry point | Repository map, rules, quick links |
+| L1 Domain Memory | `domains/<domain>/memory/` | Stable research memory for one topic | `decisions.md`, `strategy-log.md`, `hypotheses.md` |
+| L2 Domain References | `domains/<domain>/references/` | Source contracts, external docs, field maps, schemas | `data-sources.md`, `api-contracts.md`, `schemas.md` |
+| L3 Reusable Skills | `skills/<skill-name>/` | Portable Codex skills and executable helpers | `SKILL.md`, `references/`, `scripts/` |
+| L4 Archive | `archive/` | Deprecated or inactive material kept for traceability | Dated snapshots, retired experiments |
 
 ## Recommended Directory Shape
 
 ```text
-study/
+AI-Memory/
 ├── README.md
 ├── docs/
 │   └── memory-architecture.md
@@ -136,21 +136,20 @@ Before adding memory:
 When starting work:
 
 1. Read root `README.md`.
-2. Read `study/README.md`.
-3. Read this architecture document when unsure where to store something.
-4. For a specific topic, read that domain's `memory/decisions.md` first.
-5. Read `strategy-log.md` for current open context.
-6. Read `references/` only when the task needs factual contracts.
-7. Read skill `SKILL.md` only when the task matches that reusable capability.
+2. Read this architecture document when unsure where to store something.
+3. For a specific topic, read that domain's `memory/decisions.md` first.
+4. Read `strategy-log.md` for current open context.
+5. Read `references/` only when the task needs factual contracts.
+6. Read skill `SKILL.md` only when the task matches that reusable capability.
 
 ## Current Domains
 
 | Domain | Path | Status |
 | --- | --- | --- |
-| 量外策略 / Quant Strategy | `study/domains/quant-strategy/` | Active |
+| 量外策略 / Quant Strategy | `domains/quant-strategy/` | Active |
 
 ## Current Skills
 
 | Skill | Path | Purpose |
 | --- | --- | --- |
-| Quant Stock Data | `study/skills/quant-stock-data/` | Tencent/Sina resilient stock data source workflow |
+| Quant Stock Data | `skills/quant-stock-data/` | Tencent/Sina resilient stock data source workflow |
