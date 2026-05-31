@@ -1,13 +1,13 @@
 ---
 name: quant-stock-data
-description: Use when working on 量外策略 or stock-market data acquisition that needs Tencent Smartbox fuzzy search, Tencent real-time quotes, Sina fallback quotes, historical daily K-line data, minute data, symbol normalization, GBK decoding, or resilient CN/HK/US quote fetching in JS/TS/Python.
+description: Use when working on 量化策略 or stock-market data acquisition that needs Tencent Smartbox fuzzy search, Tencent real-time quotes, Sina fallback quotes, historical daily K-line data, minute data, symbol normalization, GBK decoding, or resilient CN/HK/US quote fetching in JS/TS/Python.
 metadata:
   short-description: Tencent/Sina resilient stock data source guide
 ---
 
 # Quant Stock Data
 
-Use this skill when the user discusses 量外策略 data sources, stock quote fetching, fuzzy stock search, Tencent/Sina quote resilience, or cross-market symbol normalization.
+Use this skill when the user discusses 量化策略 data sources, stock quote fetching, fuzzy stock search, Tencent/Sina quote resilience, or cross-market symbol normalization.
 
 ## Workflow
 
