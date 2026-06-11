@@ -137,6 +137,13 @@ Only include actionable candidates after the market fear gate and trend-aligned 
 | ---: | --- | --- | --- | --- | --- | --- | --- |
 | 1 |  |  |  |  |  |  |  |
 
+Required entry-price basis:
+
+- Every buy candidate must identify the source of its limit price.
+- Acceptable sources: 5/10/20/50-day moving averages, intraday VWAP, prior low/support, gap level, ATR-derived pullback range, or explicit risk-line offset.
+- If the price is only a starter-test discount from the current quote, label it as `starter-test price`, not `technical support`.
+- For the real HKD 20,000 account, prefer fewer technically justified orders over higher-probability fills.
+
 Rejected or watch-only names:
 
 | Ticker | Reason rejected | Recheck trigger |
@@ -169,6 +176,8 @@ Rules:
 - Stop-triggered positions come before new buys.
 - Near-stop defensive holds come before watchlist expansion.
 - No buy order is valid if it violates fear gate cash floor or concentration rules.
+- No buy order is valid unless `Notes` or `Trigger` states the technical basis for the limit price.
+- If live quote data is unreliable, do not derive a new buy price from a stale or suspect quote; use broker quote plus technical levels or defer.
 
 ## 10. Strategy Self-Review
 

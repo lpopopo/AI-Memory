@@ -16,3 +16,8 @@
 - Portfolio concentration preference: daily recommendations should target 4 to 6 active stocks, hard maximum 8, across 2 to 3 themes. Avoid broad baskets of many similar names; pick the strongest core names and keep overlapping names on watchlist.
 - Daily market monitoring requirement: each trading day must review not only recommended stocks, but also broad market regime, sector/theme leadership, best/worst movers, emotion distribution, and whether the strategy missed, overconcentrated, or needs repair.
 - Real-time hot news requirement: daily market monitoring must include current news catalysts and map them to macro, sector, theme, and ticker-level implications. News explains and validates price action but does not override technical filters, market fear gate, or stop rules by itself.
+
+## 2026-06-11
+
+- Real-account order-price discipline: every new buy limit recommendation must state its technical price basis. Acceptable bases include 5/10/20/50-day moving averages, intraday VWAP, prior low/support, gap level, ATR-derived pullback range, or explicit risk-line offset. A buy price that is only an intuition/discount from the current quote must be labeled as a starter-test price, not a technical support price.
+- For the real HKD 20,000 account, single-share sizing makes entry quality more important. New buys should prefer technically justified levels over high-probability fills, and should avoid using margin/financing. If a recommended buy would consume more than roughly 10%-15% of account capital or lacks a clear technical basis, it should default to watch-only.
