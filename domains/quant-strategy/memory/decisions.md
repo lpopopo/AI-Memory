@@ -19,5 +19,6 @@
 
 ## 2026-06-11
 
+- Current portfolio scope: daily execution, post-close audits, portfolio NAV, stop-trigger tables, and risk reviews should focus only on user/broker-confirmed real-account holdings. The retired USD 20,000 model/paper ledger should not be included in current holdings, current NAV, or routine stop tables unless the user explicitly asks for historical replay/backtest analysis.
 - Real-account order-price discipline: every new buy limit recommendation must state its technical price basis. Acceptable bases include 5/10/20/50-day moving averages, intraday VWAP, prior low/support, gap level, ATR-derived pullback range, or explicit risk-line offset. A buy price that is only an intuition/discount from the current quote must be labeled as a starter-test price, not a technical support price.
 - For the real HKD 20,000 account, single-share sizing makes entry quality more important. New buys should prefer technically justified levels over high-probability fills, and should avoid using margin/financing. If a recommended buy would consume more than roughly 10%-15% of account capital or lacks a clear technical basis, it should default to watch-only.

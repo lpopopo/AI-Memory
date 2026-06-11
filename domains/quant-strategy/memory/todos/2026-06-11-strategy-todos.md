@@ -13,23 +13,20 @@ Run time: 2026-06-11 08:25 Asia/Shanghai.
 - Validation method: next official close table; do not substitute after-hours for close trigger.
 - Next step: keep for the 04:15 post-close audit or next official close review.
 
-### 2. Keep real account and retired model portfolio separate
+### 2. Real account is the only current portfolio scope
 
-- Problem: historical model AMD/WDC/STX risk events are still useful for replay but are not real holdings.
-- Impact: mixing them could create false current positions or false real orders.
-- Possible cause: the model ledger was retired after several active model risk notes existed.
-- Repair suggestion: future portfolio files should list only user-confirmed real holdings; model/replay notes must be labeled historical.
+- Problem: user clarified that the historical model ledger should no longer be tracked in routine work.
+- Impact: including model AMD/WDC/STX in daily audit tables creates confusion and distracts from the actual real-account risk.
+- Possible cause: prior automation prompt still asked to audit the model portfolio after the user had retired it.
+- Repair suggestion: future portfolio files should list only user-confirmed real holdings; historical model/replay notes should be omitted unless explicitly requested.
 - Validation method: every trade/portfolio file includes account scope.
-- Next step: do not record AMD/WDC/STX as real holdings unless user confirms them.
+- Next step: daily execution/post-close audit should focus on MRVL real holding and any later broker-confirmed real positions only.
 
 ### 3. Historical model stop/replay cleanup for AMD, WDC, and STX
 
-- Problem: latest public official close shows AMD `452.40` below 492, WDC `490.09` below 500, and STX `815.99` below 835.
-- Impact: replay ledger should not upgrade old model positions to ordinary hold; near-stop warnings have become reduce-review evidence.
-- Possible cause: AI/storage flow fragility continued after the 2026-06-09 warning.
-- Repair suggestion: mark these as historical model/replay reduce-review, not current real-account action.
-- Validation method: replay rows only after official close data; no future rows prefilled.
-- Next step: post-close audit should decide whether to append a 2026-06-10 replay row.
+- Status: closed for routine daily work by user instruction.
+- Result: do not track AMD/WDC/STX model stop state in current daily execution or post-close audit.
+- Reopen condition: user explicitly asks for historical model replay, backtest diagnostics, or old ledger reconciliation.
 
 ### 4. Repair and label live quote workflow
 

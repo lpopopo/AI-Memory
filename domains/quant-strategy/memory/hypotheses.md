@@ -117,6 +117,33 @@ Validation needed:
 - Initial U.S.-listed watch dimensions: NVDA platform exposure, TSLA/autonomous systems, TER/ROK/DE/ISRG industrial or robotics proxies, and software/platform links through Omniverse, simulation, edge AI, and digital twins.
 - Evidence strength is high for partnership/product-roadmap facts but still medium-to-low for public-equity monetization. Validation must require customer deployments, robotics revenue, Jetson/Omniverse adoption, unit economics, and price relative strength before any trade trigger.
 
+2026-06-11 watchlist update:
+
+- User requested adding Tesla, Nokia, and Qualcomm to the observation list.
+- `TSLA` is reaffirmed under physical AI / autonomous systems as watch/satellite only.
+- `QCOM` is added under edge inference / mobile, automotive, PC, and device-side AI as watch-only.
+- `NOK` is added under telecom/network infrastructure and private-network edge-AI optionality as watch-only.
+- This update expands the monitoring universe only. It does not authorize buys while market fear is `stress`, flow fragility is elevated/acute, or trend-aligned entry remains broken.
+
+2026-06-11 additional watchlist update:
+
+- User asked about `RKLB`.
+- Add `RKLB` under space / satellite / edge-AI infrastructure as watch/satellite only.
+- Treat RKLB as a high-volatility optionality name tied to launch cadence, satellite systems revenue, defense/government demand, financing risk, and execution quality. It requires stronger confirmation than core AI names before any trade role.
+
+2026-06-11 additional watchlist update:
+
+- User asked about `RDW`.
+- Add `RDW` under space / satellite / space-infrastructure optionality as watch/satellite only.
+- Treat RDW as a high-volatility space-infrastructure name tied to backlog quality, satellite/component revenue, government/national-security demand, margins, debt/financing risk, and price relative strength.
+
+2026-06-11 additional watchlist update:
+
+- User requested adding Intel and Oracle to the observation list.
+- Add `INTC` under AI compute / AI PC / foundry-turnaround as watch/satellite only.
+- Add `ORCL` under cloud / AI factory / database infrastructure as watch-only.
+- Neither name is a buy signal. INTC requires roadmap, margin, foundry/customer, and relative-strength confirmation; ORCL requires AI backlog conversion, capex/margin/debt discipline, and price confirmation.
+
 ## 2026-06-08
 
 ### H7: Institutional flow-fragility overlay can reduce crowded AI drawdown risk

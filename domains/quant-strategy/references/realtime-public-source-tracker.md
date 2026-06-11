@@ -2,6 +2,49 @@
 
 This file tracks public, source-specific realtime observations that should not be mixed into Xiaohongshu author views.
 
+## 2026-06-11 Realtime / Institutional Monitor
+
+Retrieval window:
+
+- Scheduler last run used: `2026-06-10T13:10:59.514Z` (`2026-06-10 21:10:59` Beijing time).
+- Run time: `2026-06-11 20:32-20:34` Beijing time.
+
+Local checker outputs:
+
+- `domains/quant-strategy/work/realtime-public-source-latest.md`
+- `domains/quant-strategy/work/realtime-public-source-latest.json`
+- `domains/quant-strategy/work/institutional-research-latest.md`
+- `domains/quant-strategy/work/institutional-research-latest.json`
+
+### Social sources
+
+| Source | Status | New verified items | Evidence |
+| --- | --- | ---: | --- |
+| X: `@nvidia` | Checker Jina profile returned status 200 but zero-length content; direct public page returned empty HTML | 0 | Low |
+| X: `@elonmusk` | Checker Jina profile returned status 200 but zero-length content; direct public page returned empty HTML | 0 | Low |
+| X: `@realDonaldTrump` | Checker Jina profile returned status 200 but zero-length content; direct public page returned empty HTML | 0 | Low |
+| Xiaohongshu: `美研芒格君` | `public_profile_metadata_only`; `raw_profile_html` status 200 but length 0; no `titles` candidates, stable note URL, publish time, or body exposed | 0 | Low |
+
+Action:
+
+- No social-media item from this run is mapped into strategy.
+- No old candidate status ID or 2026-06-10 Xiaohongshu title candidate is reused; the current checker JSON contains no `verified_account_post`, `verified_related_official_post`, or visible title candidates.
+
+### Institutional sources
+
+| Source | Status | New verified items | Strategy dimension |
+| --- | --- | ---: | --- |
+| AQR Research | Checker Reader list failed, but official Research page opened; latest visible dated card remained `Total Portfolio Approach` from 2026-05-19 | 0 | `trend_aligned_entry` / factor robustness |
+| Citadel Securities Market Insights | Checker Reader list failed, but official category and detail pages opened; `Too Much of a Good Thing?` was dated 2026-06-06 and already handled | 0 | `flow_fragility` / `AI_quality/capex_cycle` |
+| GMO Research Library | Checker Reader list failed, but official Research Library opened; featured research remained `Hype vs. High Conviction` from 2026-03-04 | 0 | `AI_quality/capex_cycle` / quality |
+| Man Institute Market Views | Checker Reader list failed, but official Market Views/detail pages opened; latest visible item remained the already captured 2026-06-09 article | 0 | `factor_macro_exposure` / `flow_fragility` |
+
+Action:
+
+- No new institutional framework, trade signal, replay event, or stable decision is promoted.
+- Citadel Securities is marked as official-domain channel readable in this run, not generally unavailable.
+- AQR, GMO, and Man official pages were checked; no official-domain detail page with a post-window stable title, date, and body was found.
+
 ## 2026-06-10 Xiaohongshu Focused Refetch
 
 Retrieval window:

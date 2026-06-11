@@ -59,10 +59,13 @@ Track sector ETFs:
 
 Track current AI infrastructure themes:
 
-- AI compute: NVDA, AMD, AVGO, ARM
-- AI interconnect / optical / networking: MRVL, ALAB, LITE, COHR, CIEN, GLW
+- AI compute: NVDA, AMD, AVGO, ARM, INTC
+- AI compute / edge inference: NVDA, AMD, AVGO, ARM, QCOM, INTC
+- AI interconnect / optical / networking: MRVL, ALAB, LITE, COHR, CIEN, NOK, GLW
 - AI memory / storage: MU, WDC, STX, SNDK
-- Cloud / AI factory: AMZN, MSFT, META, GOOGL, CRWV, NBIS
+- Cloud / AI factory: AMZN, MSFT, META, GOOGL, ORCL, CRWV, NBIS
+- Space / satellite / edge-AI infrastructure: RKLB, RDW
+- Physical AI / autonomous systems: TSLA, TER, ROK, DE, ISRG
 
 ### 3. Best and Worst Movers
 
