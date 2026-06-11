@@ -1,0 +1,74 @@
+{
+  "args": {
+    "since": "2026-06-10T00:21:39.640Z",
+    "out": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\institutional-research-latest.md",
+    "json": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\institutional-research-latest.json",
+    "maxItems": 8
+  },
+  "results": [
+    {
+      "source": "AQR Research",
+      "dimension": "trend_aligned_entry / factor robustness / portfolio construction",
+      "items": [],
+      "diagnostics": [
+        {
+          "channel": "jina_list",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research",
+          "ok": false,
+          "length": 0,
+          "attempts": 3,
+          "error": null
+        }
+      ],
+      "note": "列表页 Reader 读取失败。"
+    },
+    {
+      "source": "Citadel Securities Market Insights",
+      "dimension": "flow_fragility / market structure / macro strategy",
+      "items": [],
+      "diagnostics": [
+        {
+          "channel": "jina_list",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/category/market-insights/",
+          "ok": false,
+          "length": 0,
+          "attempts": 3,
+          "error": null
+        }
+      ],
+      "note": "列表页 Reader 读取失败。"
+    },
+    {
+      "source": "GMO Research Library",
+      "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality",
+      "items": [],
+      "diagnostics": [
+        {
+          "channel": "jina_list",
+          "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/",
+          "ok": false,
+          "length": 0,
+          "attempts": 3,
+          "error": null
+        }
+      ],
+      "note": "列表页 Reader 读取失败。"
+    },
+    {
+      "source": "Man Institute Market Views",
+      "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch",
+      "items": [],
+      "diagnostics": [
+        {
+          "channel": "jina_list",
+          "url": "https://r.jina.ai/http://www.man.com/maninstitute/market-views",
+          "ok": false,
+          "length": 0,
+          "attempts": 3,
+          "error": null
+        }
+      ],
+      "note": "列表页 Reader 读取失败。"
+    }
+  ]
+}

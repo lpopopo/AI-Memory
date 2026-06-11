@@ -122,7 +122,21 @@ Daily reflection must include:
 - Should any theme be promoted, demoted, or removed from watchlist?
 - Did real-time news reveal a catalyst that our purely technical scan missed?
 
-### 7. Memory Update Rules
+### 7. Experimental Institutional Overlays
+
+When time and data allow, include the experimental institutional overlay block from `institutional-overlays-daily-checklist.md`. Use `institutional-overlay-scorecard.md` for consistent scoring and `us-stock-daily-strategy-report-template.md` when producing a full daily report.
+
+Track:
+
+- `trend_aligned_entry`: whether any buy/add idea is confirmed by trend and relative strength rather than merely cheaper.
+- `flow_fragility`: whether leadership is narrow, crowded, options-driven, or vulnerable to systematic-flow reversal.
+- `AI_quality/capex_cycle`: whether AI candidates are platform/hyperscaler, diversified supplier, cyclical supplier, application/data owner, or speculative bottleneck beneficiary.
+- `factor_macro_exposure`: whether the portfolio is implicitly long duration/growth, inflation/value, momentum, quality, or a concentrated theme.
+- `bottleneck_watch`: whether optical/interconnect, power/cooling, memory/storage, network, or custom-silicon bottleneck evidence changed.
+
+These overlays are not stable trading decisions yet. Use them to improve monitoring, sizing caution, and hypothesis tracking.
+
+### 8. Memory Update Rules
 
 - Daily observations go to `memory/daily/YYYY-MM-DD-*.md`.
 - One short line goes to `memory/daily-summaries.md`.

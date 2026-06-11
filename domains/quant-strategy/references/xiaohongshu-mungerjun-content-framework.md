@@ -94,3 +94,26 @@ Potential quant integration:
 - Public titles can reveal direction and watchlist emphasis, but not the full evidence base.
 - Small-cap optical names can have extreme volatility, liquidity risk, dilution risk, and narrative-driven drawdowns.
 - Do not let this source override the existing strategy's macro/micro trend filters, stop-loss, and benchmark-relative validation.
+
+## 2026-06-03 Recheck: Newly Visible Profile Titles
+
+Retrieval note:
+
+- Source opened directly in the in-app browser at `https://www.xiaohongshu.com/user/profile/632ea1e700000000230381cb`.
+- The public profile grid was visible, but grid cards did not expose publish timestamps or full note bodies.
+- Therefore the entries below are "newly visible versus the local 2026-05-29 title baseline", not confirmed as published after the previous automation timestamp.
+
+Newly visible or newly prioritized titles:
+
+- "迈威尔+50%, 不看懂怎么能安心？深入解读原" (visible title is truncated at the end on the public grid)
+- "MRVL? 一路恐高一路错过, 这次把握机会好吗"
+
+Visible-body summary:
+
+- Only profile-grid metadata was visible: title, author name, and engagement count. Full正文摘要 could not be extracted from the public grid in this run.
+
+Strategy interpretation:
+
+- Author-explicit content available from the profile grid: the account is still emphasizing MRVL / Marvell after a sharp move.
+- Inference from titles only: the framing shifted from pure MRVL thesis-building toward post-rally conviction, valuation comfort, and missed-entry psychology. Treat this as a crowding/risk-temperature clue, not a new trade signal.
+- Quant-strategy impact: keep MRVL in the AI interconnect/custom-silicon watchlist, but this source supports the existing discipline of profit protection after outsized event gaps rather than fresh chase-buying.

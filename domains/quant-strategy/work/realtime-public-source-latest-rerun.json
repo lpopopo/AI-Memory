@@ -1,0 +1,211 @@
+{
+  "args": {
+    "since": "2026-06-08T14:21:03.357Z",
+    "out": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\realtime-public-source-latest-rerun.md",
+    "json": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\realtime-public-source-latest-rerun.json",
+    "maxPosts": 8
+  },
+  "results": [
+    {
+      "source": "@nvidia",
+      "type": "x",
+      "dimension": "AI 算力/推理/产品路线",
+      "profileUrl": "https://x.com/nvidia",
+      "posts": [
+        {
+          "id": "2064056027947934209",
+          "authorName": "NVIDIA",
+          "authorHandle": "nvidia",
+          "text": "Transaction foundation models transform raw data into intelligence, trained on billions of financial events — payments, transfers and behavioral signals. Financial institutions, like @Revolut and @Mastercard, are already using NVIDIA accelerated computing to train foundation",
+          "url": "https://x.com/i/status/2064056027947934209",
+          "createdAt": "2026-06-08T18:44:40.026Z",
+          "createdAtSource": "twitter_snowflake_id",
+          "account": "@nvidia",
+          "sourceStatus": "verified_account_post",
+          "dimension": "AI 算力/推理/产品路线",
+          "evidence": "高：Jina Reader 读取 status 详情；发布时间由 X snowflake ID 推算；作者匹配目标账号。"
+        }
+      ],
+      "diagnostics": [
+        {
+          "channel": "jina_profile",
+          "url": "https://r.jina.ai/http://x.com/nvidia",
+          "ok": true,
+          "status": 200,
+          "length": 3894,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2064056027947934209",
+          "url": "https://r.jina.ai/http://x.com/i/status/2064056027947934209",
+          "ok": true,
+          "status": 200,
+          "length": 1432,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2063894568714555893",
+          "url": "https://r.jina.ai/http://x.com/i/status/2063894568714555893",
+          "ok": true,
+          "status": 200,
+          "length": 1688,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2063820382574903409",
+          "url": "https://r.jina.ai/http://x.com/i/status/2063820382574903409",
+          "ok": true,
+          "status": 200,
+          "length": 1340,
+          "error": null
+        }
+      ],
+      "note": "账号页可读；已按 status 详情和 snowflake 时间筛选。"
+    },
+    {
+      "source": "@elonmusk",
+      "type": "x",
+      "dimension": "xAI/Tesla/SpaceX/AI 基建",
+      "profileUrl": "https://x.com/elonmusk",
+      "posts": [
+        {
+          "id": "2064187087184650253",
+          "authorName": "Elon Musk",
+          "authorHandle": "elonmusk",
+          "text": "SpaceX AI Satellites",
+          "url": "https://x.com/i/status/2064187087184650253",
+          "createdAt": "2026-06-09T03:25:26.983Z",
+          "createdAtSource": "twitter_snowflake_id",
+          "account": "@elonmusk",
+          "sourceStatus": "verified_account_post",
+          "dimension": "xAI/Tesla/SpaceX/AI 基建",
+          "evidence": "高：Jina Reader 读取 status 详情；发布时间由 X snowflake ID 推算；作者匹配目标账号。"
+        }
+      ],
+      "diagnostics": [
+        {
+          "channel": "jina_profile",
+          "url": "https://r.jina.ai/http://x.com/elonmusk",
+          "ok": true,
+          "status": 200,
+          "length": 6595,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2064187087184650253",
+          "url": "https://r.jina.ai/http://x.com/i/status/2064187087184650253",
+          "ok": true,
+          "status": 200,
+          "length": 1972,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1519480761749016577",
+          "url": "https://r.jina.ai/http://x.com/i/status/1519480761749016577",
+          "ok": true,
+          "status": 200,
+          "length": 1779,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1812258574049157405",
+          "url": "https://r.jina.ai/http://x.com/i/status/1812258574049157405",
+          "ok": true,
+          "status": 200,
+          "length": 1967,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1518623997054918657",
+          "url": "https://r.jina.ai/http://x.com/i/status/1518623997054918657",
+          "ok": true,
+          "status": 200,
+          "length": 1744,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1854026234339938528",
+          "url": "https://r.jina.ai/http://x.com/i/status/1854026234339938528",
+          "ok": true,
+          "status": 200,
+          "length": 2235,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1519495072802390016",
+          "url": "https://r.jina.ai/http://x.com/i/status/1519495072802390016",
+          "ok": true,
+          "status": 200,
+          "length": 1783,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1518677066325053441",
+          "url": "https://r.jina.ai/http://x.com/i/status/1518677066325053441",
+          "ok": true,
+          "status": 200,
+          "length": 2223,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1519495982723084290",
+          "url": "https://r.jina.ai/http://x.com/i/status/1519495982723084290",
+          "ok": true,
+          "status": 200,
+          "length": 1893,
+          "error": null
+        }
+      ],
+      "note": "账号页可读；已按 status 详情和 snowflake 时间筛选。"
+    },
+    {
+      "source": "@realDonaldTrump",
+      "type": "x",
+      "dimension": "政策/关税/地缘风险",
+      "profileUrl": "https://x.com/realDonaldTrump",
+      "posts": [],
+      "diagnostics": [
+        {
+          "channel": "jina_profile",
+          "url": "https://r.jina.ai/http://x.com/realDonaldTrump",
+          "ok": true,
+          "status": 200,
+          "length": 2031,
+          "error": null
+        }
+      ],
+      "note": "账号页可读，但没有抽取到可校验 status 链接；可能是 X 返回置顶/历史推荐或无链接摘要。"
+    },
+    {
+      "source": "美研芒格君",
+      "type": "xiaohongshu",
+      "dimension": "AI 产业链线索",
+      "profileUrl": "https://www.xiaohongshu.com/user/profile/632ea1e700000000230381cb",
+      "posts": [],
+      "status": "public_profile_metadata_only",
+      "note": "公开 Reader 通道只暴露账号元信息，没有稳定笔记 URL、发布时间或正文。",
+      "evidence": "低",
+      "diagnostics": [
+        {
+          "channel": "jina_profile",
+          "url": "https://r.jina.ai/http://www.xiaohongshu.com/user/profile/632ea1e700000000230381cb",
+          "ok": true,
+          "status": 200,
+          "length": 578,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

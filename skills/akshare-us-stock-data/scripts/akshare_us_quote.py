@@ -1,0 +1,275 @@
+#!/usr/bin/env python
+"""AkShare-first U.S. quote fetcher with Tencent fallback."""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+import re
+import sys
+from datetime import datetime, timezone
+from typing import Any
+from urllib.request import Request, urlopen
+
+
+def now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def normalize_ticker(value: str) -> str:
+    return re.sub(r"[^A-Z0-9.-]", "", value.strip().upper())
+
+
+def parse_number(value: Any) -> float | None:
+    if value is None:
+        return None
+    text = str(value).strip().replace(",", "").replace("%", "")
+    if text in {"", "-", "--", "None", "nan", "NaN"}:
+        return None
+    try:
+        return float(text)
+    except ValueError:
+        return None
+
+
+def compact_error(prefix: str, exc: Exception, limit: int = 360) -> str:
+    text = f"{prefix}: {type(exc).__name__}: {exc}"
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) > limit:
+        text = text[: limit - 3] + "..."
+    return text
+
+
+def first_number(row: dict[str, Any], candidates: list[str]) -> float | None:
+    for key in candidates:
+        if key in row:
+            value = parse_number(row.get(key))
+            if value is not None:
+                return value
+    return None
+
+
+def first_text(row: dict[str, Any], candidates: list[str]) -> str:
+    for key in candidates:
+        value = row.get(key)
+        if value is not None and str(value).strip():
+            return str(value).strip()
+    return ""
+
+
+def row_matches_ticker(row: dict[str, Any], ticker: str) -> bool:
+    exact_columns = ["代码", "证券代码", "symbol", "Symbol", "ticker", "Ticker"]
+    for key in exact_columns:
+        if key in row and normalize_ticker(str(row[key])).endswith(ticker):
+            return True
+
+    token_pattern = re.compile(rf"(^|[^A-Z0-9]){re.escape(ticker)}($|[^A-Z0-9])")
+    for value in row.values():
+        text = normalize_ticker(str(value))
+        if text == ticker or token_pattern.search(text):
+            return True
+    return False
+
+
+def quote_from_akshare_row(ticker: str, row: dict[str, Any], observed_at: str) -> dict[str, Any]:
+    price = first_number(row, ["最新价", "最新", "现价", "price", "Price", "收盘"])
+    previous_close = first_number(row, ["昨收", "昨收价", "previous_close", "Previous Close"])
+    change_percent = first_number(row, ["涨跌幅", "涨幅", "change_percent", "Change Percent"])
+    return {
+        "ticker": ticker,
+        "name": first_text(row, ["名称", "股票名称", "name", "Name"]),
+        "price": price,
+        "previous_close": previous_close,
+        "open": first_number(row, ["开盘", "开盘价", "open", "Open"]),
+        "high": first_number(row, ["最高", "最高价", "high", "High"]),
+        "low": first_number(row, ["最低", "最低价", "low", "Low"]),
+        "change_percent": change_percent,
+        "volume": first_number(row, ["成交量", "volume", "Volume"]),
+        "source": "AkShare/Eastmoney stock_us_spot_em",
+        "quality": "high-public-snapshot" if price is not None else "unavailable",
+        "observed_at": observed_at,
+        "errors": [],
+    }
+
+
+def fetch_akshare_quotes(tickers: list[str], observed_at: str) -> tuple[dict[str, dict[str, Any]], list[str]]:
+    errors: list[str] = []
+    quotes: dict[str, dict[str, Any]] = {}
+    try:
+        import akshare as ak  # type: ignore
+    except Exception as exc:  # pragma: no cover - environment dependent
+        return {}, [compact_error("AkShare import failed", exc)]
+
+    try:
+        df = ak.stock_us_spot_em()
+    except Exception as exc:
+        return {}, [compact_error("AkShare stock_us_spot_em failed", exc)]
+
+    try:
+        rows = df.to_dict(orient="records")
+    except Exception as exc:
+        return {}, [compact_error("AkShare dataframe conversion failed", exc)]
+
+    for ticker in tickers:
+        for row in rows:
+            if row_matches_ticker(row, ticker):
+                quote = quote_from_akshare_row(ticker, row, observed_at)
+                if quote["price"] is not None:
+                    quotes[ticker] = quote
+                else:
+                    errors.append(f"AkShare matched {ticker} but price was empty")
+                break
+        if ticker not in quotes:
+            errors.append(f"AkShare returned no matched row for {ticker}")
+    return quotes, errors
+
+
+def decode_gbk(raw: bytes) -> str:
+    try:
+        return raw.decode("gbk")
+    except UnicodeDecodeError:
+        return raw.decode("gb18030", errors="replace")
+
+
+def fetch_tencent_quotes(tickers: list[str], observed_at: str) -> tuple[dict[str, dict[str, Any]], list[str]]:
+    if not tickers:
+        return {}, []
+
+    query = ",".join(f"us{ticker}" for ticker in tickers)
+    url = f"https://qt.gtimg.cn/q={query}"
+    req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urlopen(req, timeout=8) as response:
+            text = decode_gbk(response.read())
+    except Exception as exc:
+        return {}, [compact_error("Tencent fallback failed", exc)]
+
+    quotes: dict[str, dict[str, Any]] = {}
+    errors: list[str] = []
+    for ticker in tickers:
+        match = re.search(rf'v_us{re.escape(ticker)}="([^"]*)"', text, re.IGNORECASE)
+        if not match:
+            errors.append(f"Tencent returned no line for {ticker}")
+            continue
+        fields = match.group(1).split("~")
+        if len(fields) < 35:
+            errors.append(f"Tencent row for {ticker} had only {len(fields)} fields")
+            continue
+        price = parse_number(fields[3])
+        quotes[ticker] = {
+            "ticker": ticker,
+            "name": fields[1],
+            "price": price,
+            "previous_close": parse_number(fields[4]),
+            "open": parse_number(fields[5]),
+            "high": parse_number(fields[33]),
+            "low": parse_number(fields[34]),
+            "change_percent": parse_number(fields[32]),
+            "volume": parse_number(fields[6]),
+            "source": "Tencent qt.gtimg.cn fallback",
+            "quality": "medium-public-snapshot" if price is not None else "unavailable",
+            "observed_at": observed_at,
+            "errors": [],
+        }
+    return quotes, errors
+
+
+def build_unavailable(ticker: str, observed_at: str, errors: list[str]) -> dict[str, Any]:
+    return {
+        "ticker": ticker,
+        "name": "",
+        "price": None,
+        "previous_close": None,
+        "open": None,
+        "high": None,
+        "low": None,
+        "change_percent": None,
+        "volume": None,
+        "source": "",
+        "quality": "unavailable",
+        "observed_at": observed_at,
+        "errors": errors,
+    }
+
+
+def fetch_quotes(tickers: list[str], allow_fallback: bool) -> dict[str, Any]:
+    observed_at = now_iso()
+    normalized = [normalize_ticker(item) for item in tickers if normalize_ticker(item)]
+    ak_quotes, ak_errors = fetch_akshare_quotes(normalized, observed_at)
+
+    missing = [ticker for ticker in normalized if ticker not in ak_quotes]
+    fallback_quotes: dict[str, dict[str, Any]] = {}
+    fallback_errors: list[str] = []
+    if allow_fallback and missing:
+        fallback_quotes, fallback_errors = fetch_tencent_quotes(missing, observed_at)
+
+    results = []
+    for ticker in normalized:
+        if ticker in ak_quotes:
+            quote = ak_quotes[ticker]
+            quote["errors"] = ak_errors
+            results.append(quote)
+        elif ticker in fallback_quotes:
+            quote = fallback_quotes[ticker]
+            quote["errors"] = ak_errors + fallback_errors
+            results.append(quote)
+        else:
+            results.append(build_unavailable(ticker, observed_at, ak_errors + fallback_errors))
+
+    return {
+        "observed_at": observed_at,
+        "requested": normalized,
+        "allow_fallback": allow_fallback,
+        "results": results,
+    }
+
+
+def write_csv(path: str, rows: list[dict[str, Any]]) -> None:
+    fields = [
+        "ticker",
+        "name",
+        "price",
+        "previous_close",
+        "open",
+        "high",
+        "low",
+        "change_percent",
+        "volume",
+        "source",
+        "quality",
+        "observed_at",
+        "errors",
+    ]
+    with open(path, "w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer.writeheader()
+        for row in rows:
+            item = dict(row)
+            item["errors"] = " | ".join(item.get("errors") or [])
+            writer.writerow(item)
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Fetch U.S. stock quotes through AkShare with Tencent fallback.")
+    parser.add_argument("tickers", nargs="+", help="U.S. tickers, e.g. NVDA AMD MRVL SPY")
+    parser.add_argument("--json", dest="json_path", help="Optional JSON output path")
+    parser.add_argument("--csv", dest="csv_path", help="Optional CSV output path")
+    parser.add_argument("--no-fallback", action="store_true", help="Disable Tencent fallback")
+    args = parser.parse_args()
+
+    payload = fetch_quotes(args.tickers, allow_fallback=not args.no_fallback)
+    text = json.dumps(payload, ensure_ascii=False, indent=2)
+    print(text)
+
+    if args.json_path:
+        with open(args.json_path, "w", encoding="utf-8") as handle:
+            handle.write(text + "\n")
+    if args.csv_path:
+        write_csv(args.csv_path, payload["results"])
+
+    return 0 if any(item["quality"] != "unavailable" for item in payload["results"]) else 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

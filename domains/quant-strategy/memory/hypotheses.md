@@ -94,3 +94,71 @@ Validation needed:
 - Compare strategy results with and without a qualitative-theme candidate-universe tilt.
 - Require normal technical filters: relative strength, 63/126-day momentum, 50/200-day trend, benchmark comparison, and drawdown control.
 - Test crowding flags when content repeatedly signals sector overheating.
+
+### H6: AI application-layer monitoring may become a separate investable theme
+
+AI application evidence should be tracked separately from GPU, data center, optical, and storage infrastructure. Strong consumer adoption or enterprise AI workflow evidence does not automatically mean more infrastructure buying; it can benefit application software, cloud platforms, inference compute, storage, cybersecurity, or endpoints depending on monetization and cost structure.
+
+Initial 2026-06-03 evidence:
+
+- Reuters/Sensor Tower reported that ChatGPT crossed 1B global monthly active app users, supporting consumer AI adoption but not directly proving public-stock monetization.
+- Nvidia/Huang comments helped repair the "AI kills software" narrative, but this is still narrative evidence unless CRM/NOW/ADBE/SNOW/DDOG/CRWD show AI revenue, ARR, retention, pricing power, and gross-margin stability.
+- Initial watch pool: SNOW, CRWD, DDOG, NOW, CRM, ADBE, MSFT, GOOGL, AMZN, META, APP, PLTR.
+
+Validation needed:
+
+- Track AI-related revenue, ARR/ACV, paid users, retention, gross margin, inference cost, and capex burden.
+- Separate proven revenue from product launches, customer anecdotes, and market narrative.
+- Require price relative strength versus QQQ/IGV and no violation of market fear/concentration rules before any application-layer buy recommendation.
+
+2026-06-08 evidence update:
+
+- Physical AI / robotics and industrial digital twins should be added to the AI application observation pool after NVIDIA/SK hynix referenced personal AI and physical AI in its memory roadmap and Reuters/Investing.com reported an expanded NVIDIA/Hyundai physical-AI and robotics partnership.
+- Initial U.S.-listed watch dimensions: NVDA platform exposure, TSLA/autonomous systems, TER/ROK/DE/ISRG industrial or robotics proxies, and software/platform links through Omniverse, simulation, edge AI, and digital twins.
+- Evidence strength is high for partnership/product-roadmap facts but still medium-to-low for public-equity monetization. Validation must require customer deployments, robotics revenue, Jetson/Omniverse adoption, unit economics, and price relative strength before any trade trigger.
+
+## 2026-06-08
+
+### H7: Institutional flow-fragility overlay can reduce crowded AI drawdown risk
+
+Public market-structure research from Citadel Securities suggests that the current AI/semiconductor rally may be supported by earnings revisions and buybacks, but also by narrow breadth, passive flows, retail/options demand, levered ETF exposure, CTA positioning, and volatility-control rebuilding. This can turn a strong trend into a fragile one if momentum stalls.
+
+Proposed use:
+
+- Add a daily `flow_fragility` note when AI/semiconductor leadership is narrow and upside-option or systematic-flow pressure appears elevated.
+- Use it as a sizing/profit-protection overlay, not as a short signal.
+- Combine it with the existing market fear gate and portfolio concentration rules.
+
+Validation needed:
+
+- Identify practical proxies available in daily workflow: breadth versus SPY/QQQ, SMH concentration, option implied-vol behavior, put/call/skew data if available, buyback window calendar, levered ETF theme exposure, and CTA/vol-control proxy data.
+- Test whether adding this overlay reduces drawdown after crowded semiconductor rallies without forcing premature exits during healthy trends.
+
+### H8: AI quality and capex-cycle classification improves candidate ranking
+
+GMO and Man Group research point to a key split inside AI exposure: diversified platform/hyperscaler and quality suppliers may be more resilient than cyclical suppliers tied mainly to hyperscaler growth capex, while optical/interconnect bottlenecks may offer real upside but can become crowded or cyclically exposed.
+
+Proposed use:
+
+- Classify AI names into platform/hyperscaler, diversified supplier, cyclical supplier, application/data owner, and speculative bottleneck beneficiary.
+- Use the class to set maximum weight, core/satellite status, and trim discipline.
+- Require actual revenue, margins, customer diversification, balance sheet strength, and relative strength before promoting a bottleneck name to core.
+
+Validation needed:
+
+- Build a simple scoring sheet for current AI candidates: MRVL, AMD, WDC, STX, MU, AVGO, NVDA, MSFT, GOOGL, AMZN, META, SNOW, CRWD, DDOG, NOW, CRM, ADBE, plus optical/interconnect watch names.
+- Backtest whether quality/capex-cycle labels improve post-signal holding returns and reduce gap-down risk after AI capex scares.
+
+### H9: Trend-aligned support buys outperform plain dip-buying in the current strategy
+
+AQR's trend-following research argues against automatic buy-the-dip timing because it often fights momentum. This directly affects current AI infrastructure pullback rules.
+
+Proposed use:
+
+- Replace any plain "buy lower" logic with "hold/reclaim support plus improving relative strength" logic.
+- Treat cheaper prices as watchlist improvement only until price action confirms.
+
+Validation needed:
+
+- Compare support-buy variants across V4/V5/V6: plain pullback limit, reclaim-after-pullback, relative-strength reclaim, and fear-gated reclaim.
+- Measure CAGR, max drawdown, false-entry rate, and missed-rebound cost.

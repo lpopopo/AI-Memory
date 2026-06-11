@@ -1,0 +1,4 @@
+interface:
+  display_name: "AkShare US Stock Data"
+  short_description: "AkShare-first resilient U.S. stock quotes"
+  default_prompt: "Use $akshare-us-stock-data to fetch resilient U.S. stock quote data for NVDA, AMD, and MRVL."
