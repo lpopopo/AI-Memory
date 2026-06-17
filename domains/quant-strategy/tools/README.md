@@ -52,3 +52,32 @@ Evidence rules:
 - Official-domain detail page with a stable title/date is high evidence for article existence.
 - Official list page visibility with detail-page 403 is not enough for a new research framework; record it as a candidate or access limitation.
 - Search/RSS snippets can help discover official URLs, but framework updates should be grounded in official-domain pages.
+
+## Quote Workflow Smoke Test
+
+Use the local quote clients before marking realtime quote data unavailable.
+
+Node path:
+
+```powershell
+node -e "const {StockService}=require('D:/code/AI-Memory/skills/quant-stock-data/scripts/stock_service.js'); (async()=>console.log(JSON.stringify(await StockService.fetchQuotes(['MRVL','AMD','SPY','QQQ','SMH']),null,2)))()"
+```
+
+Python path:
+
+```powershell
+& 'C:\Users\lp\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -c "import sys,json; sys.path.insert(0, r'D:\code\AI-Memory\skills\quant-stock-data\scripts'); from resilient_stock_client import ResilientStockClient; print(json.dumps(ResilientStockClient().fetch_quotes(['MRVL','AMD','SPY','QQQ','SMH']), ensure_ascii=False, indent=2))"
+```
+
+What it fixes:
+
+- Treats empty Tencent results as a failure rather than a completed empty quote set.
+- Uses `Tencent -> Yahoo chart -> Sina` for U.S. tickers, so a local Sina `connect EACCES 198.18.0.42:443` error no longer kills the whole workflow.
+- The Node quote client has its own transport fallback: `node:https -> PowerShell WebClient -> fetch`. A Node `AggregateError` is a transport failure, not proof that quotes are unavailable.
+- Uses the Codex bundled Python path on Windows to avoid the Microsoft Store `python.exe` login-session stub.
+
+Browser-visible fallback:
+
+- If both local quote clients fail, or when a single ticker needs a quick sanity check, open a rendered Google Search or Google Finance stock card such as `https://www.google.com/search?q=RKLB` or `https://www.google.com/finance/quote/RKLB:NASDAQ`.
+- Record the source as `Google browser-visible snapshot` with ticker, exchange, observed time, visible price, and visible percent change.
+- Do not treat Google's redirect-only HTML as evidence; the price must be visible in the browser page or screenshot.

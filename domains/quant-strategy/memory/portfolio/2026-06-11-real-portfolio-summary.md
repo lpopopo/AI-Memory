@@ -7,30 +7,32 @@ Scope: real account only, using user-confirmed holdings plus latest public marke
 | Item | Value |
 | --- | ---: |
 | Real account baseline | HKD 20,000 |
-| Confirmed equity holding | MRVL |
+| Confirmed equity holding | None after confirmed MRVL sale |
 | Confirmed cash balance | Unconfirmed |
 | Fees / FX spread / tax | Unconfirmed |
 | Margin / financing | Do not use |
 
 ## Confirmed Position
 
-| Ticker | Shares | Cost | Latest official close | Close P/L | After-hours warning |
-| --- | ---: | ---: | ---: | ---: | --- |
-| MRVL | 1 | USD 252.00 | USD 252.59 on 2026-06-10 | about USD +0.59 / +0.23% before fees/FX | USD 244.55 after-hours, below the 245 review line but not an official close trigger |
+No confirmed equity position remains after the 2026-06-11 real-account MRVL sale.
 
-Approximate account weight at cost remains about 9.8% of HKD 20,000 before fees and FX spread, assuming USD/HKD near the peg area.
+## Realized Trade
+
+| Ticker | Buy | Sell | Shares | Gross realized P/L | Gross realized return |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| MRVL | USD 252.00 | USD 267.020 | 1 | USD +15.020 | +5.96% |
+
+- Fees, FX spread, taxes, settlement cash, and final HKD result remain unconfirmed.
 
 ## Risk Status
 
-- Real-account strategy state: `starter position / defensive monitor`.
-- No automatic add is authorized.
-- MRVL official close `<245`: cut-or-wait review.
-- MRVL trade or close near `<235` with weak QQQ/SMH: starter thesis failed; exit/reassess.
-- After-hours below 245 is a warning, not a formal stop trigger.
+- Real-account strategy state: `cash / no confirmed equity holdings`.
+- No automatic rebuy is authorized after the MRVL sale.
+- MRVL remains on watchlist only.
+- Re-entry requires a fresh setup: controlled pullback and reclaim of `245-252` with QQQ/SMH repair, or stronger trend repair with broad semiconductor confirmation.
 - Do not include retired model MRVL/AMD/WDC/STX positions in current holdings.
 
 ## Data Quality
 
 - Market data source: StockAnalysis public quote pages, latest stable official close from 2026-06-10 and after-hours snapshot.
 - Real-account cash, fees, FX, margin, and order status remain unconfirmed.
-

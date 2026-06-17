@@ -8,6 +8,74 @@ This file is a reference framework, not a trade signal. The ideas below should f
 
 ## Source Index
 
+## 2026-06-17 Update: Policy Hysteresis And AI Listing Fragility
+
+Source pages:
+
+- https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/hysteresis-may-set-up-a-september-hike/
+- https://www.man.com/insights/views-from-the-floor-2026-17-June
+
+Verified public items:
+
+- Citadel Securities published `Hysteresis May Set Up a September Hike` with official-domain title, timestamp `2026-06-16T20:54:12Z`, and readable body through the Reader official-domain channel. The article argues that temporary energy and supply-chain shocks can become persistent if they hit an economy with easy financial conditions, positive output gap, AI capex support, and reaccelerating labor demand; it frames the risk as a more hawkish Fed path and possible 2026-2027 rate hikes.
+- Man Group published `SpaceX - To Infinity and Beyond?` on 2026-06-17 with official-domain title/date/body. The article treats the hypothetical SpaceX listing as evidence that the AI listing window remains open, but warns that SpaceX valuation is more a Musk-specific belief story than a clean read-through for AI sector health. It also highlights a split between strong semiconductor leadership and weak software/free-cash-flow dynamics, with hyperscaler AI capex consuming a very large share of operating cash flow.
+
+Reusable framework:
+
+- Add `policy_hysteresis_risk` under `factor_macro_exposure`: if energy/supply shocks, wage acceleration, easy financial conditions, AI capex stimulus, and inflation breadth rise together, the rate backdrop can tighten even while equity leadership looks strong.
+- Add `AI_listing_window_liquidity` under `flow_fragility`: a large successful AI-adjacent IPO can extend risk appetite and funding windows, but may also mark late-cycle liquidity confidence if valuations depend on aggressive TAM assumptions.
+- Add `AI_capex_cashflow_pressure` under `AI_quality/capex_cycle`: monitor whether hyperscaler AI capex is consuming operating cash flow faster than AI revenue converts into free cash flow. This raises the bar for treating semiconductor strength as a durable core signal.
+- Separate `semiconductor_momentum` from `software_monetization`: semiconductor leadership can coexist with software weakness, SaaS multiple compression, and delayed AI application-layer payback.
+
+Strategy mapping:
+
+- `market fear gate`: policy hysteresis is not a panic signal by itself, but it raises sensitivity to VIX, rates, credit, breadth, and QQQ/SMH trend breaks.
+- `trend_aligned_entry`: require reclaim/relative-strength confirmation before buying AI pullbacks when rate-hike odds or front-end policy pricing are moving against growth duration.
+- `flow_fragility`: treat large AI IPO demand and high semiconductor valuation as liquidity/crowding context, not automatic confirmation.
+- `AI_quality/capex_cycle`: prefer companies with self-funded capex, proven AI revenue, and resilient free cash flow; mark suppliers and application names separately.
+- `AI bottleneck watch`: keep space/satellite/edge-AI themes in the observation pool, but do not infer SpaceX read-through to RKLB/RDW/TSLA/xAI without direct revenue, order, and price-action evidence.
+- `replay protocol`: add policy-hysteresis and AI-listing-window fields to future AI drawdown, rate-shock, and IPO/liquidity-window replays.
+
+Evidence notes:
+
+- High evidence for official article existence, title/date/body for Citadel and Man via official-domain Reader/detail checks.
+- Medium evidence for strategy transmission because both articles are forward-looking interpretations and require market-data confirmation before affecting position sizing.
+- Do not convert either item into a buy/sell signal or a stable `decisions.md` rule without replay evidence.
+
+## 2026-06-14 Weekly Update: GMO Valuation Concentration And Dynamic Allocation
+
+Source pages:
+
+- https://www.gmo.com/americas/research-library/diversifying-beyond-6040-with-a-more-dynamic-allocation_insights/
+- https://www.gmo.com/americas/research-library/gmo-7-year-asset-class-forecast-may-2026_gmo7yearassetclassforecast/
+
+Verified public items:
+
+- GMO published `Diversifying Beyond 60/40 with a More Dynamic Allocation` on 2026-06-12. The official-domain Reader detail page exposed title, body, and the core argument that the traditional 60/40 profile has become highly dependent on expensive U.S. growth equities and tight credit spreads after strong recent gains.
+- GMO published `GMO 7-Year Asset Class Forecast: May 2026` on 2026-06-12. The official-domain Reader page exposed title/date and a download surface; use it as valuation-context evidence rather than a full article framework unless the PDF is separately reviewed.
+
+Reusable framework:
+
+- Add `valuation_concentration_pressure` as a sub-flag under `factor_macro_exposure`.
+- Treat a portfolio as concentrated when it has common exposure to expensive U.S. growth, AI capex expectations, long-duration valuation, tight credit/liquidity, or wealth-effect consumption, even if ticker count looks diversified.
+- Add `dynamic_allocation_drift`: after a long bull run, passive or default allocations may drift into a narrow risk bundle. Current strategy reviews should ask whether cash, sleeves, and watchlists are merely rebuilding the same AI/growth exposure after a pullback.
+- A high `valuation_concentration_pressure` flag does not force selling by itself; it raises the confirmation threshold for fresh adds and makes support/reclaim evidence more important.
+
+Strategy mapping:
+
+- `market fear gate`: context only; valuation pressure is not a panic signal without current VIX, breadth, credit, and trend evidence.
+- `trend_aligned_entry`: reinforces waiting for reclaim and relative strength when expensive growth sells off.
+- `flow_fragility`: combine valuation pressure with narrow breadth, options/crowding, tight credit, and systematic-flow risk.
+- `AI_quality/capex_cycle`: prefer names with durable cash flows and proven AI monetization when valuation concentration is elevated.
+- `portfolio concentration`: review whether multiple holdings express one U.S. growth / AI capex / wealth-effect bet.
+- `replay protocol`: add valuation-concentration notes to 2021-2022, 2024-2026 AI concentration, and 2026-06-05 AI/semiconductor/storage replays.
+
+Evidence notes:
+
+- High evidence for the `Diversifying Beyond 60/40` article existence and body via official-domain Reader.
+- Medium evidence for strategy transmission because it is an asset-allocation view and must be validated against the strategy's actual universe, timing rules, and drawdown behavior.
+- Do not treat GMO's asset-allocation preference as a direct U.S. equity buy/sell signal.
+
 ## 2026-06-09 Incremental Update: Man Institute Consumer Backstop Fragility
 
 Source pages:
@@ -39,6 +107,37 @@ Evidence notes:
 - High evidence for the existence and content of the Man article.
 - Medium evidence for strategy transmission because the article includes forward-looking macro interpretation and linked data that should be refreshed from primary sources before quantitative scoring.
 - Do not treat the author's "AI bubble" framing as a confirmed regime label.
+
+## 2026-06-12 Catch-up Update: Citadel Securities Token Cost Elasticity
+
+Source page:
+
+- https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/tokenomics/
+
+Verified public item:
+
+- Citadel Securities / Frank Flight published `Tokenomics` on 2026-06-10. The article was first captured in this memory on 2026-06-12 as a catch-up item because it was not in the prior institutional framework, but its publication date is before the 2026-06-12 automation window.
+
+Reusable framework:
+
+- Add `token_cost_elasticity` under `AI_quality/capex_cycle`.
+- Treat AI adoption as constrained by all-in token cost, compute availability, power, cooling, memory bandwidth, and inference budgets, not only by model capability.
+- Split AI deployment into `frontier_high_cost` and `everyday_cost_efficient` paths. The first should concentrate in firms with balance-sheet depth, research depth, and high-value operating domains; the second may favor cheaper models, targeted copilots, and token-efficient workflows.
+- Interpret falling token-price or token-expenditure indexes carefully. They can signal efficiency and broader usage, but may also indicate substitution away from expensive frontier models.
+- For AI infrastructure names, separate durable physical bottleneck demand from valuation expectations that assume ubiquitous, frictionless, immediate deployment.
+
+Strategy mapping:
+
+- `market fear gate`: context only; no regime change without current VIX, breadth, credit, and index-trend data.
+- `concentrated holdings`: reinforces duplicate-theme and single-narrative review for AI capex names.
+- `institutional overlay`: extends `AI_quality/capex_cycle` and `AI bottleneck watch` with a cost-elasticity dimension.
+- `replay protocol`: future AI drawdown or software/infrastructure rotation replays should record token-cost, inference-budget, and model-substitution evidence.
+
+Evidence notes:
+
+- High evidence for the official article existence, title, author, date, and body.
+- Medium evidence for strategy transmission because the framework is macro/market-structure interpretation and should be validated against actual AI revenue, capex, and price-action data.
+- Do not treat this as a buy/sell signal or as a stable decision.
 
 ### AQR
 

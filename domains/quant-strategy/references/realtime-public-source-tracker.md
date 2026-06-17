@@ -2,6 +2,249 @@
 
 This file tracks public, source-specific realtime observations that should not be mixed into Xiaohongshu author views.
 
+## 2026-06-17 Realtime / Institutional Monitor
+
+Retrieval window:
+
+- Automation last run used: `2026-06-16T12:31:18.759Z` (`2026-06-16 20:31:18` Beijing time).
+- Run time: `2026-06-17 20:33-20:50` Beijing time.
+
+Local checker outputs:
+
+- `domains/quant-strategy/work/realtime-public-source-latest.md`
+- `domains/quant-strategy/work/realtime-public-source-latest.json`
+- `domains/quant-strategy/work/institutional-research-latest.md`
+- `domains/quant-strategy/work/institutional-research-latest.json`
+
+### Social sources
+
+| Source | Status | New verified items | Evidence |
+| --- | --- | ---: | --- |
+| X: `@nvidia` | Jina profile readable, but no post-window verifiable status extracted | 0 | Low |
+| X: `@elonmusk` | Jina profile/status details readable, but no post-window verified target-account item extracted | 0 | Low |
+| X: `@realDonaldTrump` | Jina profile/status details readable, but no post-window verified item extracted | 0 | Low |
+| Xiaohongshu: `美研芒格君` | `visible_titles_raw_html_unverified_time`; raw public HTML/SSR exposed titles only | 0 | Low-to-medium |
+
+Xiaohongshu note:
+
+- Current checker JSON `raw_profile_html` diagnostic: status `200`, length `833493`.
+- Current checker JSON `titles` field includes MRVL optical modules, AI token inference, ORCL AI inference, AVGO AI layout, Micron supply chain, ALAB interconnect, Nokia/CBRS, NBIS/CRWV, AOI, and optical-module/storage title candidates.
+- 原始公开 HTML/SSR 暴露可见标题，但缺少稳定单条笔记 URL/发布时间/正文；可用于主题温度和候选池，不可当作完整正文事实。
+
+Action:
+
+- No social-media item from this run is mapped into strategy as a verified fact.
+- No old candidate status ID is reused; current checker JSON contains no `verified_account_post` or `verified_related_official_post`.
+
+### Institutional sources
+
+| Source | Status | New verified items | Strategy dimension |
+| --- | --- | ---: | --- |
+| AQR Research | Checker list/details readable and date-filtered; official page independently opened; window-after zero | 0 | `trend_aligned_entry` / factor robustness |
+| Citadel Securities Market Insights | Reader official-domain list/details readable; `Hysteresis May Set Up a September Hike` verified post-window | 1 | `flow_fragility` / `factor_macro_exposure` |
+| GMO Research Library | Checker Reader list failed, but official page independently opened; latest visible items were pre-window | 0 | `AI_quality/capex_cycle` / valuation |
+| Man Institute Market Views | Reader official-domain list/details readable; `SpaceX - To Infinity and Beyond?` verified post-window | 1 | `AI_quality/capex_cycle` / `flow_fragility` |
+
+Verified institutional items:
+
+- Citadel Securities, `Hysteresis May Set Up a September Hike`, timestamp `2026-06-16T20:54:12Z`, https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/hysteresis-may-set-up-a-september-hike/. Strategy mapping: `policy_hysteresis_risk` under `factor_macro_exposure`; require stronger rate/credit/fear-gate confirmation before growth/AI adds when this risk rises.
+- Man Group, `SpaceX - To Infinity and Beyond?`, dated 2026-06-17, https://www.man.com/insights/views-from-the-floor-2026-17-June. Strategy mapping: `AI_listing_window_liquidity`, `AI_capex_cashflow_pressure`, and semiconductor/software monetization split under institutional overlay.
+
+Action:
+
+- Added a 2026-06-17 section to `references/institutional-market-research-framework.md`.
+- No stable decision, trade signal, replay row, or real-account change was promoted.
+
+## 2026-06-16 Realtime / Institutional Monitor
+
+Retrieval window:
+
+- Automation last run used: `2026-06-15T12:31:39.663Z` (`2026-06-15 20:31:39` Beijing time).
+- Run time: `2026-06-16 20:32-20:45` Beijing time.
+
+Local checker outputs:
+
+- `domains/quant-strategy/work/realtime-public-source-latest.md`
+- `domains/quant-strategy/work/realtime-public-source-latest.json`
+- `domains/quant-strategy/work/institutional-research-latest.md`
+- `domains/quant-strategy/work/institutional-research-latest.json`
+
+### Social sources
+
+| Source | Status | New verified items | Evidence |
+| --- | --- | ---: | --- |
+| X: `@nvidia` | Checker Jina profile status 200 but zero-length content | 0 | Low |
+| X: `@elonmusk` | Checker Jina profile status 200 but zero-length content | 0 | Low |
+| X: `@realDonaldTrump` | Checker Jina profile status 200 but zero-length content | 0 | Low |
+| Xiaohongshu: `美研芒格君` | Initial checker: `visible_titles_raw_html_unverified_time`; later focused note URL opened with title/body/link but only relative time | 1 focused note verified | Medium-to-high for note existence/body; medium for time |
+
+Xiaohongshu note:
+
+- Current checker JSON `raw_profile_html` diagnostic: status 200, length `831461`.
+- Current checker JSON `titles` field includes AI investment sharing, MRVL optical module / AI inference layout, AI bottlenecks, ORCL AI token inference factory, AVGO, Micron supply chain, ALAB interconnect, optical modules, NBIS/CRWV, AOI, and Nokia/CBRS-related optical-module candidates.
+- These are usable only for topic-temperature and candidate-pool monitoring. They are not complete post facts and should not be treated as body-level author claims.
+
+Action:
+
+- No social-media item from the initial checker-only pass was mapped into strategy as a verified fact.
+- No old candidate status ID is reused; there is no current `verified_account_post` or `verified_related_official_post`.
+
+### Xiaohongshu focused note refetch
+
+User supplied a stable single-note URL after the initial checker run:
+
+- Note ID: `6a30d3b900000000150272d1`.
+- Link: `https://www.xiaohongshu.com/explore/6a30d3b900000000150272d1?xsec_source=pc_user`.
+- Account: `美研芒格君`.
+- Title: `分享我压箱底的，AI下一阶段“瓶颈”机会`.
+- Page-visible time: `9小时前 美国` when opened around 2026-06-16 22:35 Beijing; no stable absolute timestamp was exposed in the readable output.
+- Type: focused Xiaohongshu note page, publicly readable in this run.
+- Evidence: medium-to-high for note existence/title/body/author/link; medium for publication time.
+- Fact summary: the note frames AI investment as a search for shifting bottlenecks rather than only buying headline compute; it maps the chain from GPU/compute to memory/HBM, cluster interconnect and optical modules, CPU scheduling as applications grow, and fab/equipment capacity. Tickers mentioned or referenced include NVDA, AMD, INTC, MU, SNDK, AVGO, MRVL, MXL, AXTI, LITE, COHR, AAOI, ASML, AMAT, and KLA, with CPO and 1.6T components highlighted as optical-interconnect watch areas.
+- Strategy mapping: supports the existing `AI bottleneck watch`, `AI_quality/capex_cycle`, and candidate-pool / crowding-temperature overlay. It is not a buy/sell signal and does not override market fear gate, concentration rules, valuation checks, price action, or account risk controls.
+- Items still to verify: stable absolute publish timestamp, whether the visible body is complete, and whether referenced tickers have confirming revenue, order, margin, valuation, and price-action evidence.
+
+### Institutional sources
+
+| Source | Status | New verified items | Strategy dimension |
+| --- | --- | ---: | --- |
+| AQR Research | Checker list/details readable and date-filtered with zero strict post-window items; independent official page showed a readable date-only 2026-06-15 tax-wrapper article | 0 strict framework items | `trend_aligned_entry` / factor robustness, but article is mainly compliance/tax context |
+| Citadel Securities Market Insights | Reader official-domain list channel readable; several detail pages blocked by security verification/no-date; one dated detail was pre-window | 0 | `flow_fragility` / market structure |
+| GMO Research Library | List/detail pages readable; checked items are pre-window or existing | 0 | `AI_quality/capex_cycle` / valuation-aware allocation |
+| Man Institute Market Views | List/detail pages readable; latest checked item remains the already captured 2026-06-09 article | 0 | `factor_macro_exposure` / `flow_fragility` |
+
+Independent page check:
+
+- AQR official Research page and detail page verified `The Wrapper Illusion: Do Entity Structures Neutralize Tax Anti-Abuse Rules?`, dated 2026-06-15, with stable title/date/body. Exact timing relative to the `2026-06-15T12:31:39.663Z` cutoff is not available from the page, and the article is not one of the requested market overlay frameworks, so it is recorded as a date-only candidate / compliance context only.
+- Citadel Securities official Market Insights list was readable and exposed current candidate titles, but checker detail reads for most current items hit security verification/no-date pages. Citadel is not marked generally unavailable.
+- GMO and Man official pages were readable and date-filtered; all stable checked items are pre-window or already captured.
+
+Action:
+
+- No strict post-window institutional market framework is added.
+- No reference framework, trade signal, replay row, or stable decision is promoted.
+
+## 2026-06-15 Realtime / Institutional Monitor
+
+Retrieval window:
+
+- Automation last run used: `2026-06-14T12:32:10.139Z` (`2026-06-14 20:32:10` Beijing time).
+- Run time: `2026-06-15 20:57-21:10` Beijing time.
+
+Local checker outputs:
+
+- `domains/quant-strategy/work/realtime-public-source-latest.md`
+- `domains/quant-strategy/work/realtime-public-source-latest.json`
+- `domains/quant-strategy/work/institutional-research-latest.md`
+- `domains/quant-strategy/work/institutional-research-latest.json`
+
+### Social sources
+
+| Source | Status | New verified items | Evidence |
+| --- | --- | ---: | --- |
+| X: `@nvidia` | Checker Jina profile status 200 but zero-length content; direct public HTML exposed only stale 2026-06-12 IDs before the strict window | 0 | Low |
+| X: `@elonmusk` | Checker Jina profile status 200 but zero-length content; direct public HTML exposed stale 2026-06-09 and older IDs before the strict window | 0 | Low |
+| X: `@realDonaldTrump` | Checker Jina profile status 200 but zero-length content; direct public HTML exposed stale May 2026 IDs before the strict window | 0 | Low |
+| Xiaohongshu: `美研芒格君` | `visible_titles_raw_html_unverified_time`; raw public HTML/SSR exposed visible titles but no stable single-note URL, publish time, or body | 0 | Low-to-medium |
+
+Xiaohongshu note:
+
+- Current checker JSON `raw_profile_html` diagnostic: status 200, length about 831,591.
+- Current checker JSON `titles` field includes AI token inference factory, MRVL/ORCL, AVGO, optical module, Micron supply chain, NBIS/CRWV, and AOI-related title candidates.
+- These are usable only for topic-temperature and candidate-pool monitoring. They are not complete post facts and should not be treated as body-level author claims.
+
+Action:
+
+- No social-media item from this run is mapped into strategy as a verified fact.
+- No old candidate status ID is reused; there is no current `verified_account_post` or `verified_related_official_post`.
+
+### Institutional sources
+
+| Source | Status | New verified items | Strategy dimension |
+| --- | --- | ---: | --- |
+| AQR Research | Checker Reader list/details and independent official-page read verified; window after `2026-06-14T12:32:10.139Z` has no new stable official item | 0 | `trend_aligned_entry` / factor robustness |
+| Citadel Securities Market Insights | Direct category page returned 403, but checker/Jina Reader official-domain list channel was readable; no official article candidates extracted | 0 | `flow_fragility` / market structure |
+| GMO Research Library | List/detail pages readable; 2026-06-12 items are pre-window and already covered by prior weekly research sweep | 0 | `AI_quality/capex_cycle` / valuation-aware allocation |
+| Man Institute Market Views | List/detail pages readable; latest checked item remains the already captured 2026-06-09 AI/consumer fragility article | 0 | `factor_macro_exposure` / `flow_fragility` |
+
+Action:
+
+- No strict post-window institutional framework is added.
+- Citadel Securities is marked as `Reader 官方域名通道可读`, not generally unavailable.
+- AQR, GMO, and Man were readable and date-filtered; all post-window counts are zero.
+- No stable decision, replay row, or trade signal is promoted.
+
+### 2026-06-15 21:07 Beijing Retry
+
+Corrected retry window:
+
+- Used `2026-06-15T12:57:33.797Z` (`2026-06-15 20:57:33` Beijing time) because a first retry using `2026-06-15T13:10:00.000Z` was later than the checker-reported run time and was treated as a future-window check.
+
+Social retry status:
+
+| Source | Status | New verified items | Evidence |
+| --- | --- | ---: | --- |
+| X: `@nvidia` | Checker Jina profile status 200 but zero-length content; direct HTML exposed only 2026-06-12 stale IDs | 0 | Low |
+| X: `@elonmusk` | Checker Jina profile status 200 but zero-length content; direct HTML exposed only 2026-06-09 and older IDs | 0 | Low |
+| X: `@realDonaldTrump` | Checker Jina profile status 200 but zero-length content; direct HTML exposed only May 2026 IDs | 0 | Low |
+| Xiaohongshu: `美研芒格君` | `public_profile_metadata_only`; raw HTML status 200 length about 640,717 but no `titles`, stable note URL, publish time, or body extracted | 0 | Low |
+
+Institutional retry status:
+
+| Source | Status | New verified items | Strategy dimension |
+| --- | --- | ---: | --- |
+| AQR Research | List/details readable and date-filtered; all checked items pre-window | 0 | `trend_aligned_entry` / factor robustness |
+| Citadel Securities Market Insights | Direct category page still 403, but Reader official-domain channel read list/details; all stable dated items pre-window, with some detail-blocked/no-date candidates | 0 | `flow_fragility` / market structure |
+| GMO Research Library | List/details readable and date-filtered; 2026-06-12 items are pre-window/existing | 0 | `AI_quality/capex_cycle` / valuation-aware allocation |
+| Man Institute Market Views | List/details readable and date-filtered; latest checked item remains the already captured 2026-06-09 article | 0 | `factor_macro_exposure` / `flow_fragility` |
+
+Action:
+
+- No social post, institutional framework, replay row, stable decision, or trade signal is promoted from the retry.
+
+## 2026-06-12 Realtime / Institutional Monitor
+
+Retrieval window:
+
+- Automation last run used: `2026-06-11T12:31:48.255Z` (`2026-06-11 20:31:48` Beijing time).
+- Run time: `2026-06-12 20:31-20:32` Beijing time.
+
+Local checker outputs:
+
+- `domains/quant-strategy/work/realtime-public-source-latest.md`
+- `domains/quant-strategy/work/realtime-public-source-latest.json`
+- `domains/quant-strategy/work/institutional-research-latest.md`
+- `domains/quant-strategy/work/institutional-research-latest.json`
+
+### Social sources
+
+| Source | Status | New verified items | Evidence |
+| --- | --- | ---: | --- |
+| X: `@nvidia` | Checker Jina profile returned status 200 but zero-length content | 0 | Low |
+| X: `@elonmusk` | Checker Jina profile returned status 200 but zero-length content | 0 | Low |
+| X: `@realDonaldTrump` | Checker Jina profile returned status 200 but zero-length content | 0 | Low |
+| Xiaohongshu: `缇庣爺鑺掓牸鍚沗` | `public_profile_metadata_only`; `raw_profile_html` status 200 length 0; no `titles`, stable note URL, publish time, or body | 0 | Low |
+
+Action:
+
+- No social-media item from this run is mapped into strategy.
+- No old candidate status ID or prior Xiaohongshu title candidate is reused; the current checker JSON contains no `verified_account_post`, `verified_related_official_post`, or visible title candidates.
+
+### Institutional sources
+
+| Source | Status | New verified items | Strategy dimension |
+| --- | --- | ---: | --- |
+| AQR Research | Checker Reader list failed, but official Research page opened; latest visible dated card remained `Total Portfolio Approach` from 2026-05-19 | 0 | `trend_aligned_entry` / factor robustness |
+| Citadel Securities Market Insights | Checker Reader list failed, but official category and detail pages opened; `Tokenomics` is official-domain readable and dated 2026-06-10, before the strict post-window cutoff | 0 post-window; 1 catch-up framework item | `AI_quality/capex_cycle` / `AI bottleneck watch` |
+| GMO Research Library | Checker Reader list failed, but official Research Library and `Hype vs. High Conviction` detail page opened; featured item remained 2026-03-04 | 0 | `AI_quality/capex_cycle` / quality |
+| Man Institute Market Views | Checker Reader list failed, but official Market Views/detail pages opened; latest visible item remained the already captured 2026-06-09 article | 0 | `factor_macro_exposure` / `flow_fragility` |
+
+Action:
+
+- No strict post-window institutional item was verified after `2026-06-11T12:31:48.255Z`.
+- Citadel Securities is marked as official-domain channel readable in this run, not generally unavailable.
+- Added `Tokenomics` as a catch-up institutional framework because it has stable official-domain title/date/body and was not previously in memory; do not classify it as a new post-window publication or trading signal.
+
 ## 2026-06-11 Realtime / Institutional Monitor
 
 Retrieval window:

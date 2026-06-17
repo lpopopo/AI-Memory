@@ -1,6 +1,7 @@
 /**
  * Resilient stock data service.
- * Supports Tencent Smartbox search, Tencent primary quotes, and Sina fallback quotes.
+ * Supports Tencent Smartbox search, Tencent primary quotes, Yahoo fallback quotes,
+ * and Sina last-resort fallback quotes.
  */
 class StockService {
   static _decodeGbk(buf) {
@@ -16,16 +17,80 @@ class StockService {
   }
 
   static async _requestArrayBuffer(url, options = {}) {
+    const errors = [];
+    const useNodeClient = typeof require === "function" && typeof window === "undefined";
+    if (useNodeClient) {
+      try {
+        if (typeof process !== "undefined" && process.env.AI_MEMORY_FORCE_NODE_HTTP_FAIL === "1") {
+          throw new Error("Forced node:https failure for smoke test");
+        }
+        return await this._requestArrayBufferWithNode(url, options);
+      } catch (error) {
+        errors.push(`node:https ${this._compactError(error)}`);
+      }
+
+      if (typeof process !== "undefined" && process.platform === "win32") {
+        try {
+          return await this._requestArrayBufferWithPowerShell(url, options);
+        } catch (error) {
+          errors.push(`powershell ${this._compactError(error)}`);
+        }
+      }
+    }
+
     if (typeof fetch === "function") {
-      const res = await fetch(url, options);
-      if (!res.ok) throw new Error(`HTTP Status ${res.status}`);
-      return res.arrayBuffer();
+      try {
+        const res = await fetch(url, options);
+        if (!res.ok) throw new Error(`HTTP Status ${res.status}`);
+        return res.arrayBuffer();
+      } catch (error) {
+        errors.push(`fetch ${this._compactError(error)}`);
+      }
     }
 
+    throw new Error(errors.length ? errors.join(" | ") : "No fetch implementation available in this runtime");
+  }
+
+  static async _requestJson(url, options = {}) {
+    const buf = await this._requestArrayBuffer(url, {
+      headers: {
+        Accept: "application/json,text/plain,*/*",
+        "User-Agent": "Mozilla/5.0",
+        ...(options.headers || {}),
+      },
+      timeoutMs: options.timeoutMs || 8000,
+    });
+    const text = new TextDecoder("utf-8").decode(buf);
+    return JSON.parse(text);
+  }
+
+  static _toYahooSymbol(symbol) {
+    const clean = String(symbol).trim();
+    if (/^us/i.test(clean)) return clean.slice(2).toUpperCase();
+    return clean.toUpperCase();
+  }
+
+  static _isUsSymbol(symbol) {
+    return /^us[A-Z.]+$/i.test(String(symbol)) || /^[A-Z.]+$/i.test(String(symbol));
+  }
+
+  static _lastNumber(values) {
+    if (!Array.isArray(values)) return 0;
+    for (let index = values.length - 1; index >= 0; index -= 1) {
+      const value = Number.parseFloat(values[index]);
+      if (Number.isFinite(value)) return value;
+    }
+    return 0;
+  }
+
+  static _compactError(error) {
+    return String(error && error.message ? error.message : error).replace(/\s+/g, " ").slice(0, 240);
+  }
+
+  static async _requestArrayBufferWithNode(url, options = {}) {
     if (typeof require !== "function") {
-      throw new Error("No fetch implementation available in this runtime");
+      throw new Error("No Node request implementation available in this runtime");
     }
-
     const client = url.startsWith("https:") ? require("https") : require("http");
     return new Promise((resolve, reject) => {
       const req = client.get(url, { headers: options.headers || {} }, (res) => {
@@ -43,10 +108,38 @@ class StockService {
         });
       });
       req.on("error", reject);
-      req.setTimeout(5000, () => {
+      req.setTimeout(options.timeoutMs || 8000, () => {
         req.destroy(new Error("Request timeout"));
       });
     });
+  }
+
+  static async _requestArrayBufferWithPowerShell(url, options = {}) {
+    const { execFileSync } = require("child_process");
+    const script = `
+$ErrorActionPreference = 'Stop'
+$ProgressPreference = 'SilentlyContinue'
+$headers = @{}
+$headersJson = @'
+${JSON.stringify(options.headers || {})}
+'@
+if ($headersJson.Trim().Length -gt 0) {
+  $parsed = $headersJson | ConvertFrom-Json
+  foreach ($prop in $parsed.PSObject.Properties) { $headers[$prop.Name] = [string]$prop.Value }
+}
+$client = [System.Net.WebClient]::new()
+foreach ($key in $headers.Keys) { $client.Headers[$key] = $headers[$key] }
+$bytes = $client.DownloadData('${String(url).replace(/'/g, "''")}')
+[Convert]::ToBase64String($bytes)
+`;
+    const output = execFileSync("powershell.exe", ["-NoProfile", "-NonInteractive", "-Command", script], {
+      encoding: "utf8",
+      maxBuffer: 1024 * 1024 * 8,
+      timeout: (options.timeoutMs || 8000) + 3000,
+      windowsHide: true,
+    }).trim();
+    const buffer = Buffer.from(output, "base64");
+    return buffer.buffer.slice(buffer.byteOffset, buffer.byteOffset + buffer.byteLength);
   }
 
   static normalizeSymbol(symbol) {
@@ -89,17 +182,42 @@ class StockService {
 
   static async fetchQuotes(symbols) {
     const normSymbols = symbols.map((symbol) => this.normalizeSymbol(symbol));
+    const errors = [];
     try {
-      return await this._fetchTencent(normSymbols);
+      const results = await this._fetchTencent(normSymbols);
+      if (results.length > 0) return results;
+      errors.push("Tencent returned no usable rows");
     } catch (primaryError) {
-      console.warn(`[Fallback] Tencent quotes failed: ${primaryError.message}. Switching to Sina.`);
+      errors.push(`Tencent failed: ${this._compactError(primaryError)}`);
+    }
+
+    const usSymbols = normSymbols.filter((symbol) => this._isUsSymbol(symbol));
+    if (usSymbols.length > 0) {
       try {
-        return await this._fetchSina(normSymbols);
+        const results = await this._fetchYahoo(usSymbols);
+        if (results.length > 0) {
+          if (errors.length > 0) console.warn(`[Fallback] ${errors.join(" | ")}. Used Yahoo chart.`);
+          return results;
+        }
+        errors.push("Yahoo returned no usable rows");
       } catch (secondaryError) {
-        console.error("[Fatal] Tencent and Sina quote sources both failed:", secondaryError);
-        return [];
+        errors.push(`Yahoo failed: ${this._compactError(secondaryError)}`);
       }
     }
+
+    try {
+      const results = await this._fetchSina(normSymbols);
+      if (results.length > 0) {
+        console.warn(`[Fallback] ${errors.join(" | ")}. Used Sina.`);
+        return results;
+      }
+      errors.push("Sina returned no usable rows");
+    } catch (lastError) {
+      errors.push(`Sina failed: ${this._compactError(lastError)}`);
+    }
+
+    console.error(`[Fatal] quote sources failed: ${errors.join(" | ")}`);
+    return [];
   }
 
   static async _fetchTencent(symbols) {
@@ -132,6 +250,40 @@ class StockService {
     }
 
     return results;
+  }
+
+  static async _fetchYahoo(symbols) {
+    const results = [];
+
+    for (const sym of symbols) {
+      const ticker = this._toYahooSymbol(sym);
+      const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?range=1d&interval=1m`;
+      const data = await this._requestJson(url);
+      const chart = data && data.chart;
+      const item = chart && chart.result && chart.result[0];
+      if (!item || !item.meta) continue;
+
+      const meta = item.meta;
+      const quote = item.indicators && item.indicators.quote && item.indicators.quote[0] ? item.indicators.quote[0] : {};
+      const price = Number.parseFloat(meta.regularMarketPrice) || this._lastNumber(item.indicators && item.indicators.quote && item.indicators.quote[0] && item.indicators.quote[0].close);
+      const previousClose = Number.parseFloat(meta.previousClose || meta.chartPreviousClose) || 0;
+      const changePercent = previousClose > 0 ? ((price - previousClose) / previousClose) * 100 : 0;
+
+      results.push({
+        symbol: `US${ticker}`,
+        name: meta.shortName || ticker,
+        price,
+        yesterdayClose: previousClose,
+        open: this._lastNumber(quote.open),
+        changePercent,
+        high: this._lastNumber(quote.high),
+        low: this._lastNumber(quote.low),
+        volume: Math.trunc(this._lastNumber(quote.volume)),
+        source: "Yahoo Chart (Fallback)",
+      });
+    }
+
+    return results.filter((item) => Number.isFinite(item.price) && item.price > 0);
   }
 
   static async _fetchSina(symbols) {

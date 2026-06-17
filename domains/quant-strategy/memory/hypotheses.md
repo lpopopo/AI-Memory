@@ -189,3 +189,23 @@ Validation needed:
 
 - Compare support-buy variants across V4/V5/V6: plain pullback limit, reclaim-after-pullback, relative-strength reclaim, and fear-gated reclaim.
 - Measure CAGR, max drawdown, false-entry rate, and missed-rebound cost.
+
+## 2026-06-14
+
+### H10: Valuation-concentration pressure can improve AI/growth add discipline
+
+GMO's 2026-06-12 dynamic-allocation research suggests that after strong recent returns, default or passive-like portfolios can drift into a narrow bundle of expensive U.S. growth equities and tight-spread credit exposure. For the current US stock quant strategy, this may map to a portfolio that appears diversified by ticker but is effectively one AI/growth/duration/capex-extrapolation bet.
+
+Proposed use:
+
+- Add `valuation_concentration_pressure` to the institutional overlay block when U.S. growth / AI leadership is narrow, valuations are extended, and credit or liquidity conditions offer little cushion.
+- Use it as an entry/sizing caution, not as a standalone sell signal.
+- When the flag is high, require cleaner trend-aligned support/reclaim evidence before adding AI infrastructure, software, storage, or optical/interconnect exposure.
+- Combine it with `flow_fragility`, `theme_overlap_high`, and `consumer_backstop_fragility`.
+
+Validation needed:
+
+- Build daily proxies: QQQ/SPY, RSP/SPY, SMH/QQQ, IGV/QQQ, HYG/LQD, VIX, and top-contribution concentration if available.
+- Replay 2021-2022 growth-duration stress, 2024-2026 AI concentration episodes, and the 2026-06-05 AI/semiconductor/storage drawdown.
+- Test whether the overlay blocks false adds after crowded rallies without blocking too many durable winners.
+- Measure CAGR, max drawdown, false-add rate, missed-winner rate, and cash drag before any promotion to `decisions.md`.

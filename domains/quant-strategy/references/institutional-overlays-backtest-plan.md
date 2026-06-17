@@ -112,6 +112,35 @@ Metrics:
 - Conditional correlations during VIX spikes, volatility collapses, inflation shocks, and rate shocks.
 - Frequency of "diversified on paper, same risk in practice" episodes.
 
+### Overlay E: Valuation Concentration / Dynamic Allocation Pressure
+
+Question:
+
+- Can a valuation-concentration overlay reduce false adds when the strategy is already exposed to expensive U.S. growth, AI capex expectations, duration risk, and tight credit/liquidity?
+
+Inputs:
+
+- QQQ/SPY and growth/value relative strength.
+- RSP/SPY or equal-weight versus cap-weight breadth.
+- SMH/QQQ and AI/semiconductor contribution concentration.
+- IGV/QQQ for software/application AI participation.
+- HYG/LQD and credit-spread proxies.
+- VIX level/change and VIX term structure if available.
+- Optional: top-10 index contribution share, valuation percentile, and earnings revision breadth.
+
+Backtest behavior:
+
+- Start as diagnostic only.
+- Later test reducing fresh AI/growth add size by 25%-50% when `valuation_concentration_pressure = high`, `flow_fragility >= elevated`, and `trend_aligned_entry` is not confirmed.
+- Do not force exits from existing winners unless price action, stop rules, or profit-protection rules also trigger.
+
+Metrics:
+
+- False-add rate after crowded rallies.
+- Missed-winner rate when expensive growth continues higher.
+- Max drawdown and 20-day post-entry return during 2021-2022, 2024-2026 AI concentration, and 2026-06-05 style drawdowns.
+- Cash drag and turnover impact.
+
 ## Validation Phases
 
 ### Phase 1: Diagnostic Only

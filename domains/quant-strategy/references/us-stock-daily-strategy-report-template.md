@@ -32,6 +32,27 @@ Write one concise paragraph:
 - What it must avoid.
 - Which existing position needs attention first.
 
+### 1.1 Six-Dimensional Trade Decision
+
+Every real-account trade recommendation must summarize these dimensions before the action:
+
+| Dimension | Current read | Impact |
+| --- | --- | --- |
+| Market sentiment | SPY / QQQ / SMH / VIX / breadth |  |
+| Theme strength | AI compute / interconnect / storage / cloud / application / defensive |  |
+| Stock relative strength | Stock vs QQQ / SMH / direct peers |  |
+| Technical entry quality | MA / VWAP / support / opening range / ATR / breakout level |  |
+| Account constraints | HKD 20,000 capital, share size, cash, FX, fees, no margin |  |
+| Exit / risk plan | Stop, no-chase line, failed-trigger rule, profit-taking level |  |
+
+Final action must be one of:
+
+```text
+buy / conditional buy / wait / watch only / reduce / exit
+```
+
+If live quote data is unreliable or a required dimension is missing, default to `conditional buy`, `wait`, or `watch only`; do not present the trade as directly executable.
+
 ## 2. Market Fear Gate
 
 Use `market-fear-technical-framework.md`.
@@ -133,9 +154,9 @@ Required language:
 
 Only include actionable candidates after the market fear gate and trend-aligned entry check.
 
-| Rank | Ticker | Theme | AI class | Entry condition | Risk line | Max size | Reason |
-| ---: | --- | --- | --- | --- | --- | --- | --- |
-| 1 |  |  |  |  |  |  |  |
+| Rank | Ticker | Theme | AI class | Pullback entry | Breakout / confirmation entry | No-chase line | Risk line | Max size | Reason |
+| ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 |  |  |  |  |  |  |  |  |  |
 
 Required entry-price basis:
 
@@ -143,6 +164,9 @@ Required entry-price basis:
 - Acceptable sources: 5/10/20/50-day moving averages, intraday VWAP, prior low/support, gap level, ATR-derived pullback range, or explicit risk-line offset.
 - If the price is only a starter-test discount from the current quote, label it as `starter-test price`, not `technical support`.
 - For the real HKD 20,000 account, prefer fewer technically justified orders over higher-probability fills.
+- Every actionable candidate must include both a pullback path and a breakout/confirmation path. If one path is invalid, state why.
+- Breakout/confirmation entries require market confirmation such as QQQ and SMH risk-on behavior plus stock-level confirmation such as reclaiming a trigger level, holding above opening range/VWAP, or outperforming SMH for 15-30 minutes.
+- If the market is strong enough for a breakout entry but the stock is beyond the no-chase line, mark it watch-only instead of forcing a trade.
 
 Rejected or watch-only names:
 
@@ -167,9 +191,9 @@ If holdings exceed the target range, identify weakest duplicate exposure.
 
 ## 9. Execution Checklist
 
-| Priority | Action | Ticker | Trigger | Size | Notes |
-| ---: | --- | --- | --- | --- | --- |
-| 1 |  |  |  |  |  |
+| Priority | Action | Ticker | Path | Trigger | Size | Notes |
+| ---: | --- | --- | --- | --- | --- | --- |
+| 1 |  |  | pullback / breakout / reduce / exit |  |  |  |
 
 Rules:
 
@@ -178,6 +202,7 @@ Rules:
 - No buy order is valid if it violates fear gate cash floor or concentration rules.
 - No buy order is valid unless `Notes` or `Trigger` states the technical basis for the limit price.
 - If live quote data is unreliable, do not derive a new buy price from a stale or suspect quote; use broker quote plus technical levels or defer.
+- For strong repair/risk-on opens, evaluate breakout confirmation separately from pullback orders. Do not let a valid no-chase rule erase the breakout path without explaining the missed-trigger tradeoff.
 
 ## 10. Strategy Self-Review
 
