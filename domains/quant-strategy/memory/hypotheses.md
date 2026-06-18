@@ -144,6 +144,20 @@ Validation needed:
 - Add `ORCL` under cloud / AI factory / database infrastructure as watch-only.
 - Neither name is a buy signal. INTC requires roadmap, margin, foundry/customer, and relative-strength confirmation; ORCL requires AI backlog conversion, capex/margin/debt discipline, and price confirmation.
 
+2026-06-18 additional watchlist update:
+
+- User requested adding `DRAM`.
+- Add `DRAM` under memory / storage bottleneck monitoring as the Roundhill Memory ETF, a thematic ETF proxy for global memory-stock exposure rather than a single operating company.
+- Treat `DRAM` as a basket-level read-through for memory/storage leadership, useful when WDC/STX/MU/SNDK single-stock concentration or price-per-share risk is too high.
+- This is not a buy signal. It requires ETF holdings/structure review, liquidity/spread checks, trend confirmation, market fear gate permission, and comparison versus existing single-name candidates before any trade role.
+
+2026-06-18 additional watchlist update:
+
+- User requested adding `SMCI`.
+- Add `SMCI` under AI server / rack-scale infrastructure / hardware integration as a high-volatility watch name.
+- Use it to monitor AI server demand, rack-scale deployment, liquid cooling, supply-chain integration, customer concentration, margin quality, and competitive pressure.
+- This is not a buy signal. SMCI requires stronger accounting / governance risk review, margin and cash-flow evidence, trend confirmation, and portfolio concentration checks before any trade role.
+
 ## 2026-06-08
 
 ### H7: Institutional flow-fragility overlay can reduce crowded AI drawdown risk

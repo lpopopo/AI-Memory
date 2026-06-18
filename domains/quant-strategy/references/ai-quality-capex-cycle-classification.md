@@ -90,6 +90,7 @@ Typical sizing:
 | WDC | cyclical_supplier | high | existing defensive hold | Storage bottleneck exposure; close to risk zone in current memory. |
 | STX | cyclical_supplier | high | existing defensive hold | Storage bottleneck exposure; close to risk zone in current memory. |
 | SNDK | cyclical_supplier | high | watch | Storage/memory cycle exposure; validate liquidity and data quality. |
+| DRAM | thematic_etf / memory_storage_basket | high | watch | Roundhill Memory ETF; basket-level proxy for global memory/storage exposure. Use for theme read-through and possible single-name concentration reduction, but validate holdings, liquidity, spread, and ETF structure before any trade role. |
 | ALAB | speculative_bottleneck | high | watch/satellite only | AI interconnect narrative; requires revenue durability and valuation discipline. |
 | LITE | speculative_bottleneck | high | watch | Optical component exposure; validate earnings and relative strength. |
 | COHR | speculative_bottleneck | high | watch | Optical/compound semiconductor exposure; monitor balance sheet and margin volatility. |
@@ -98,6 +99,7 @@ Typical sizing:
 | GLW | diversified_supplier / bottleneck | medium | watch | Optical/fiber exposure; more diversified but AI revenue pass-through must be verified. |
 | CRWV | speculative_bottleneck / platform | high | watch | AI cloud exposure; likely high capex and financing sensitivity. |
 | NBIS | speculative_bottleneck / platform | high | watch | AI infrastructure exposure; needs durable revenue and financing validation. |
+| SMCI | AI_server_integrator / rack_scale_infrastructure | high | watch/satellite only | AI server and rack-scale infrastructure exposure; high revenue upside but margin, customer concentration, accounting/governance, supply-chain, and competition risks require strict confirmation. |
 | RKLB | speculative_space / edge_ai_infrastructure | high | watch/satellite only | Space launch, satellite systems, and edge/satellite infrastructure optionality; high volatility and financing/execution risk require strict price and revenue confirmation. |
 | RDW | speculative_space / satellite_infrastructure | high | watch/satellite only | Space infrastructure, satellite components, and national-security/space-economy optionality; requires backlog, revenue quality, margin, debt/financing, and RS confirmation. |
 | SNOW | application_data_owner | medium | watch only | AI data platform thesis; require AI revenue/retention and RS confirmation. |
