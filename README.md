@@ -13,6 +13,7 @@ Short version:
 - `skills/`: Portable Codex skills and helper scripts.
 - `templates/`: Starter files for new memory domains.
 - `archive/`: Deprecated or inactive material kept for traceability.
+- `docs/automations`: Snapshot of local Codex cron automations for this repository.
 
 ## Current Contents
 
