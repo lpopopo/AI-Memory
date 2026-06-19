@@ -18,6 +18,7 @@ Short version:
 ## Current Contents
 
 - `domains/quant-strategy`: 量外策略 research memory.
+- `skills/ai-memory-loader`: Loader skill for opening this repository as portable AI working memory.
 - `skills/quant-stock-data`: Tencent/Sina resilient stock data-source skill.
 
 ## How To Store New Memory
