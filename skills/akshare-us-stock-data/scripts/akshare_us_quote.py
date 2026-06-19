@@ -193,30 +193,138 @@ def build_unavailable(ticker: str, observed_at: str, errors: list[str]) -> dict[
     }
 
 
+def fetch_yahoo_chart_quote(ticker: str, observed_at: str) -> tuple[dict[str, Any] | None, str | None]:
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?range=1d&interval=1m"
+    req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urlopen(req, timeout=8) as response:
+            data = json.loads(response.read().decode("utf-8"))
+            result = data.get("chart", {}).get("result", [None])[0]
+            if not result:
+                return None, f"Yahoo chart returned empty result for {ticker}"
+            meta = result.get("meta", {})
+            price = parse_number(meta.get("regularMarketPrice"))
+            if price is None:
+                # Try close price from indicators as fallback
+                indicators = result.get("indicators", {})
+                quote_list = indicators.get("quote", [{}])
+                if quote_list:
+                    closes = quote_list[0].get("close", [])
+                    for val in reversed(closes):
+                        price = parse_number(val)
+                        if price is not None:
+                            break
+            if price is None:
+                return None, f"Yahoo chart price was empty for {ticker}"
+
+            previous_close = parse_number(meta.get("chartPreviousClose") or meta.get("previousClose"))
+            change_percent = None
+            if price is not None and previous_close is not None and previous_close > 0:
+                change_percent = round((price - previous_close) / previous_close * 100, 4)
+
+            open_val = parse_number(meta.get("regularMarketDayLow"))
+            high_val = parse_number(meta.get("regularMarketDayHigh"))
+            low_val = parse_number(meta.get("regularMarketDayLow"))
+            volume_val = parse_number(meta.get("regularMarketVolume"))
+
+            indicators = result.get("indicators", {})
+            quote_list = indicators.get("quote", [{}])
+            if quote_list:
+                quote = quote_list[0]
+                def get_last_num(lst):
+                    if not lst:
+                        return None
+                    for v in reversed(lst):
+                        n = parse_number(v)
+                        if n is not None:
+                            return n
+                    return None
+                open_val = get_last_num(quote.get("open")) or open_val
+                high_val = get_last_num(quote.get("high")) or high_val
+                low_val = get_last_num(quote.get("low")) or low_val
+                volume_val = get_last_num(quote.get("volume")) or volume_val
+
+            return {
+                "ticker": ticker,
+                "name": meta.get("shortName") or meta.get("longName") or ticker,
+                "price": price,
+                "previous_close": previous_close,
+                "open": open_val,
+                "high": high_val,
+                "low": low_val,
+                "change_percent": change_percent,
+                "volume": volume_val,
+                "source": "Yahoo Finance Chart (0-delay)",
+                "quality": "high-public-snapshot",
+                "observed_at": observed_at,
+                "errors": [],
+            }, None
+    except Exception as exc:
+        return None, compact_error(f"Yahoo chart failed for {ticker}", exc)
+
+
+def fetch_yahoo_chart_quotes(tickers: list[str], observed_at: str) -> tuple[dict[str, dict[str, Any]], list[str]]:
+    from concurrent.futures import ThreadPoolExecutor
+    quotes: dict[str, dict[str, Any]] = {}
+    errors: list[str] = []
+    
+    with ThreadPoolExecutor(max_workers=min(len(tickers), 10)) as executor:
+        futures = {executor.submit(fetch_yahoo_chart_quote, ticker, observed_at): ticker for ticker in tickers}
+        for future in futures:
+            ticker = futures[future]
+            try:
+                quote, err = future.result()
+                if quote:
+                    quotes[ticker] = quote
+                if err:
+                    errors.append(err)
+            except Exception as exc:
+                errors.append(compact_error(f"Thread execution error for {ticker}", exc))
+                
+    return quotes, errors
+
+
 def fetch_quotes(tickers: list[str], allow_fallback: bool) -> dict[str, Any]:
     observed_at = now_iso()
     normalized = [normalize_ticker(item) for item in tickers if normalize_ticker(item)]
-    ak_quotes, ak_errors = fetch_akshare_quotes(normalized, observed_at)
-
-    missing = [ticker for ticker in normalized if ticker not in ak_quotes]
+    
+    # 1. Primary: Yahoo Finance Chart (0-delay)
+    yahoo_quotes, yahoo_errors = fetch_yahoo_chart_quotes(normalized, observed_at)
+    
+    # 2. Check what is missing after Yahoo
+    missing = [ticker for ticker in normalized if ticker not in yahoo_quotes]
+    
+    ak_quotes: dict[str, dict[str, Any]] = {}
+    ak_errors: list[str] = []
+    if missing:
+        ak_quotes, ak_errors = fetch_akshare_quotes(missing, observed_at)
+        
+    # 3. Check what is still missing after AkShare
+    still_missing = [ticker for ticker in missing if ticker not in ak_quotes]
+    
     fallback_quotes: dict[str, dict[str, Any]] = {}
     fallback_errors: list[str] = []
-    if allow_fallback and missing:
-        fallback_quotes, fallback_errors = fetch_tencent_quotes(missing, observed_at)
-
+    if allow_fallback and still_missing:
+        fallback_quotes, fallback_errors = fetch_tencent_quotes(still_missing, observed_at)
+        
     results = []
     for ticker in normalized:
-        if ticker in ak_quotes:
+        all_errors = yahoo_errors + ak_errors + fallback_errors
+        if ticker in yahoo_quotes:
+            quote = yahoo_quotes[ticker]
+            quote["errors"] = all_errors
+            results.append(quote)
+        elif ticker in ak_quotes:
             quote = ak_quotes[ticker]
-            quote["errors"] = ak_errors
+            quote["errors"] = all_errors
             results.append(quote)
         elif ticker in fallback_quotes:
             quote = fallback_quotes[ticker]
-            quote["errors"] = ak_errors + fallback_errors
+            quote["errors"] = all_errors
             results.append(quote)
         else:
-            results.append(build_unavailable(ticker, observed_at, ak_errors + fallback_errors))
-
+            results.append(build_unavailable(ticker, observed_at, all_errors))
+            
     return {
         "observed_at": observed_at,
         "requested": normalized,
