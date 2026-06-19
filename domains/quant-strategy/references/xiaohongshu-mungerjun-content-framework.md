@@ -7,7 +7,31 @@ Source profile:
 - Xiaohongshu ID: Kay2289123
 - Profile claim: AI compute, interconnect, and storage long-cycle investment research; team background mentions Stanford, UCLA, and Wharton.
 - Retrieval date: 2026-05-29
-- Access note: Public profile view exposes account metadata and recent note titles, but full note bodies and a complete 50-note history may require logged-in access or dynamic page loading. This reference is therefore based on publicly visible titles and profile text, not full post-body extraction.
+- Access note: This reference began as public profile-title monitoring. Per 2026-06-19 user instruction and successful logged-in Chrome reads, future use of this source should prioritize browser-visible logged-in pages and carousel images over unstable script/title extraction. Title-only checker output is a low-evidence fallback only.
+
+## 2026-06-19 Browser-Visible Carousel Upgrade
+
+User-authorized logged-in Chrome access verified the note `分享我压箱底的，AI下一阶段“瓶颈”玩家` (`6a340d4b000000001c02554b`) and exposed all 16 carousel images.
+
+Operational change:
+
+- For Xiaohongshu `美研芒格君` / `Kay2289123`, use Chrome browser-visible note pages first.
+- If a note has a carousel such as `1/16`, extract or inspect every image before writing learning conclusions.
+- Do not rely on unstable public HTML/title-only scripts for this account except as a low-evidence diagnostic fallback.
+
+Image-level framework learned:
+
+- 2026 H2 AI bottleneck focus shifts from pure capacity build / CapEx narrative to cash-flow conversion and "show me the money".
+- The AI chain is framed as a logistics system: build warehouses, inspect / label packages, sort packages, then move them through an interconnect delivery network.
+- First-wave winners include AI cloud / compute rental / storage exposure such as `CRWV`, `NBIS`, `NVDA`, `MU`, and `SNDK`, but they can become financially heavier as backlog, capex, depreciation, interest, and working capital rise.
+- Second-wave scarcity is testing / validation. HBM layer counts and package complexity raise insertion / system-level-test needs; representative watch names include `TER` and `KLA`.
+- Third-wave scarcity is interconnect / delivery networks. Representative watch names include `MRVL`, `AVGO`, `ALAB`, `CRDO`, `LITE`, `COHR`, `AAOI`, `MXL`, and `AXTI`.
+- `CRDO` is added as an AEC / high-speed connectivity transmission candidate; `TER` is added or reclassified as an HBM / SLT validation candidate; `TTMI`, `MXL`, and `AXTI` remain source-driven new candidates requiring independent validation.
+
+Trading integration:
+
+- Treat `CRDO`, `TER`, `MXL`, `AXTI`, and `TTMI` as `新增候选/待验证`, not buy signals.
+- Require independent revenue/order/margin validation, liquidity/spread check, valuation review, daily K-line setup, market gate, and concentration control before any order preparation.
 
 ## Visible Recent Note Themes
 

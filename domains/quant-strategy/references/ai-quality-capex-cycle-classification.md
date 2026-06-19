@@ -92,8 +92,12 @@ Typical sizing:
 | SNDK | cyclical_supplier | high | watch | Storage/memory cycle exposure; validate liquidity and data quality. |
 | DRAM | thematic_etf / memory_storage_basket | high | watch | Roundhill Memory ETF; basket-level proxy for global memory/storage exposure. Use for theme read-through and possible single-name concentration reduction, but validate holdings, liquidity, spread, and ETF structure before any trade role. |
 | ALAB | speculative_bottleneck | high | watch/satellite only | AI interconnect narrative; requires revenue durability and valuation discipline. |
+| CRDO | speculative_bottleneck / interconnect_transmission | high | watch / new candidate | AEC / high-speed connectivity transmission candidate from 2026-06-19 Xiaohongshu carousel learning; validate revenue durability, customer concentration, copper-vs-optical distance economics, margins, valuation, liquidity, and RS before any trade role. |
 | LITE | speculative_bottleneck | high | watch | Optical component exposure; validate earnings and relative strength. |
 | COHR | speculative_bottleneck | high | watch | Optical/compound semiconductor exposure; monitor balance sheet and margin volatility. |
+| MXL | speculative_bottleneck / optical_component | high | watch / new candidate | Optical / interconnect component-line candidate from public-source framework; requires independent revenue, margin, liquidity, and volatility validation. |
+| AXTI | speculative_bottleneck / InP_component | high | watch / new candidate | InP substrate / optical supply-chain candidate from X/Xiaohongshu source learning; highly speculative and requires revenue capture, customer concentration, dilution/liquidity, and daily K-line validation. |
+| TTMI | infrastructure_supplier / PCB_interconnect | medium-high | watch / new candidate | AI infrastructure / PCB / interconnect "shovel seller" candidate from Kay2289123 X article; validate AI data-center exposure, backlog, customer mix, margin durability, valuation, liquidity, and RS. |
 | CIEN | diversified_supplier / bottleneck | medium-high | watch | Networking/optical exposure; needs AI data-center revenue confirmation. |
 | NOK | network_infrastructure / edge_ai | medium | watch | Telecom/network infrastructure and private-network edge-AI optionality; requires order growth, margin evidence, and price leadership before any trade role. |
 | GLW | diversified_supplier / bottleneck | medium | watch | Optical/fiber exposure; more diversified but AI revenue pass-through must be verified. |
@@ -111,7 +115,7 @@ Typical sizing:
 | APP | application_data_owner | medium-high | watch | AI ad-tech monetization; high momentum/crowding risk possible. |
 | PLTR | application_data_owner | high | watch/satellite only | AI narrative and government/commercial data platform; valuation/crowding risk high. |
 | TSLA | application/physical_ai | high | watch/satellite only | Autonomous/robotics option value; car-cycle, margin, execution, and valuation risk remain high. Reaffirmed as watchlist-only per user request on 2026-06-11. |
-| TER | application/physical_ai | medium-high | watch | Robotics/automation test exposure; needs cycle and RS confirmation. |
+| TER | testing_validation / physical_ai | medium-high | watch / new AI-test angle | Existing robotics/automation test watch name; 2026-06-19 carousel adds HBM insertion / SLT / AI package validation angle. Needs semi-test cycle, AI/HBM order evidence, margins, valuation, liquidity, and RS confirmation. |
 | ROK | application/physical_ai | medium | watch | Industrial automation; slower AI monetization but potentially more diversified. |
 | DE | application/physical_ai | medium | watch | Autonomy/agtech exposure but cyclical macro sensitivity. |
 | ISRG | application/physical_ai | medium | watch/core candidate | Robotics healthcare quality angle; AI link must be evidence-based, not narrative-only. |

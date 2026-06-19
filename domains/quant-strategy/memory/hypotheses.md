@@ -86,6 +86,8 @@ Qualitative public research sources focused on AI compute, interconnect, optical
 Initial source:
 
 - Xiaohongshu account "美研芒格君" repeatedly focuses on AI infrastructure bottlenecks including optical modules/interconnect, memory/storage, AI inference, cloud capex, and earnings-driven dislocations.
+- On 2026-06-19, user-authorized logged-in Chrome reading exposed the 16-image carousel for `分享我压箱底的，AI下一阶段“瓶颈”玩家`. The image-level framework added testing / validation and interconnect delivery networks as more explicit bottleneck layers, with `TER` and `CRDO` as source-only new candidate lines requiring independent validation.
+- X account `@Kay2289123` appears to be the same public-source identity and, through user-authorized logged-in Chrome reading on 2026-06-19, exposed recent timeline posts and long-form Articles around `MRVL`, `NVDA`, `ORCL`, `AVGO`, `TTMI`, `AXTI`, token inference, AI cloud factories, optical/InP, equipment, and moving AI bottlenecks.
 - See `references/xiaohongshu-mungerjun-content-framework.md`.
 
 Validation needed:
@@ -157,6 +159,15 @@ Validation needed:
 - Add `SMCI` under AI server / rack-scale infrastructure / hardware integration as a high-volatility watch name.
 - Use it to monitor AI server demand, rack-scale deployment, liquid cooling, supply-chain integration, customer concentration, margin quality, and competitive pressure.
 - This is not a buy signal. SMCI requires stronger accounting / governance risk review, margin and cash-flow evidence, trend confirmation, and portfolio concentration checks before any trade role.
+
+2026-06-19 additional watchlist update:
+
+- User requested that the newly learned `美研芒格君` / `Kay2289123` X and Xiaohongshu carousel content be added into the local strategy and watchlist.
+- Add `CRDO` under AI interconnect / AEC / high-speed connectivity transmission as a source-driven watch name. Validate AEC revenue durability, hyperscaler mix, gross margin, copper-vs-optical distance economics, valuation, liquidity, and daily K-line before any trade role.
+- Add or reclassify `TER` under AI testing / validation: HBM insertion, system-level test, and AI package validation. This supplements the older physical-AI/robotics watch angle. Validate semi-test cycle, AI/HBM exposure, order growth, margins, and relative strength.
+- Add `MXL` and `AXTI` under optical / InP / interconnect component monitoring. Treat them as highly speculative component-layer candidates requiring revenue capture, customer concentration, dilution/liquidity, and volatility checks.
+- Add `TTMI` under AI infrastructure / PCB / interconnect "shovel seller" monitoring. Validate AI data-center exposure, customer concentration, margin durability, backlog, valuation, liquidity, and trend confirmation.
+- All five are `新增候选/待验证`; none is a buy signal.
 
 ## 2026-06-08
 

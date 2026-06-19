@@ -2,6 +2,70 @@
 
 This file tracks public, source-specific realtime observations that should not be mixed into Xiaohongshu author views.
 
+## 2026-06-19 User-Authorized X Profile Read
+
+Source:
+
+- X: `美研芒格君` / `@Kay2289123`.
+- URL: `https://x.com/Kay2289123`.
+
+Method:
+
+- User stated they are logged into Chrome and asked for systematic learning from the account profile.
+- Used logged-in Chrome in read-only mode. No cookies, passwords, local storage, private messages, account settings, or account actions were inspected or modified.
+
+Evidence:
+
+- Browser-visible profile showed `123 posts` and profile text linking the X identity to the same Xiaohongshu ID.
+- Extracted 21 recent visible timeline posts and 7 visible Articles entries.
+- Evidence is high for visible existence/title/body snippets in the browser session; performance claims, market data, and company claims still require independent verification before trading use.
+
+Main mapped themes:
+
+- `AI bottleneck watch`: moving bottlenecks from compute to memory/storage, optical/interconnect, ASIC, equipment, CPU/agent scheduling, and token inference economics.
+- `AI_quality/capex_cycle`: separate architecture controllers (`NVDA`), cloud AI factories (`ORCL`, `CRWV`), cyclical suppliers (`MRVL`, `AVGO`, memory/storage), optical/interconnect beneficiaries (`ALAB`, `COHR`, `LITE`, `AAOI`), and equipment (`AMAT`, `KLAC`, `LRCX`).
+- New source-only candidates: `TTMI` and `AXTI`, both `新增候选/待验证`, not buy signals.
+
+Action:
+
+- Added a daily learning note at `memory/daily/2026-06-19-kay2289123-x-profile-learning.md`.
+- Updated `memory/summary.md`, `memory/hypotheses.md`, and `memory/daily-summaries.md`.
+- No stable decision and no trade recommendation was promoted.
+
+## 2026-06-19 User-Authorized Xiaohongshu Carousel Read
+
+Source:
+
+- Xiaohongshu: `美研芒格君` / `Kay2289123`.
+- Note: `分享我压箱底的，AI下一阶段“瓶颈”玩家`.
+- Note ID: `6a340d4b000000001c02554b`.
+
+Method:
+
+- User stated Xiaohongshu was logged in through Chrome and asked specifically to learn from carousel images.
+- Used logged-in Chrome in read-only mode.
+- Extracted 16 original carousel image URLs from the note page and read all 16 images.
+
+Evidence:
+
+- Browser-visible note showed `1/16` and full text area.
+- Evidence is high for visible note text and image-level content in this session.
+- This improves over title-only checker output, which had no stable note URL/body/image visibility.
+
+Main mapped themes:
+
+- AI bottleneck is shifting from capacity build to "show me the money" and from first-wave warehouse / compute leasing toward testing / validation and interconnect delivery networks.
+- First-wave examples: `CRWV`, `NBIS`, `SNDK`, `NVDA`, `MU`, and neocloud platforms.
+- Testing / validation examples: `TER`, `KLA`.
+- Interconnect examples: `MRVL`, `AVGO`, `ALAB`, `CRDO`, `LITE`, `COHR`, `AAOI`, `MXL`, `AXTI`.
+- New source-only lines: `TER`, `CRDO`, `MXL`, and `AXTI`; all remain `新增候选/待验证`.
+
+Action:
+
+- Added a daily learning note at `memory/daily/2026-06-19-xiaohongshu-carousel-learning.md`.
+- Updated `memory/daily-summaries.md` and `memory/hypotheses.md`.
+- No stable decision and no trade recommendation was promoted.
+
 ## 2026-06-17 Realtime / Institutional Monitor
 
 Retrieval window:

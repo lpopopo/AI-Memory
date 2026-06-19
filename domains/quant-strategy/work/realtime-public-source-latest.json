@@ -1,9 +1,9 @@
 {
   "args": {
-    "since": "2026-06-17T12:45:40.258Z",
+    "since": "2026-06-18T12:00:00.000Z",
     "out": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\realtime-public-source-latest.md",
     "json": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\realtime-public-source-latest.json",
-    "maxPosts": 5
+    "maxPosts": 8
   },
   "results": [
     {
@@ -18,11 +18,83 @@
           "url": "https://r.jina.ai/http://x.com/nvidia",
           "ok": true,
           "status": 200,
-          "length": 0,
+          "length": 19058,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2067489992042004685",
+          "url": "https://r.jina.ai/http://x.com/i/status/2067489992042004685",
+          "ok": true,
+          "status": 200,
+          "length": 1439,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2067276081548202489",
+          "url": "https://r.jina.ai/http://x.com/i/status/2067276081548202489",
+          "ok": true,
+          "status": 200,
+          "length": 2997,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2067276088724557928",
+          "url": "https://r.jina.ai/http://x.com/i/status/2067276088724557928",
+          "ok": true,
+          "status": 200,
+          "length": 1077,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2067044209476223373",
+          "url": "https://r.jina.ai/http://x.com/i/status/2067044209476223373",
+          "ok": true,
+          "status": 200,
+          "length": 1275,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2067016769584177337",
+          "url": "https://r.jina.ai/http://x.com/i/status/2067016769584177337",
+          "ok": true,
+          "status": 200,
+          "length": 3147,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2067016774424351031",
+          "url": "https://r.jina.ai/http://x.com/i/status/2067016774424351031",
+          "ok": true,
+          "status": 200,
+          "length": 1371,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2066902392570876031",
+          "url": "https://r.jina.ai/http://x.com/i/status/2066902392570876031",
+          "ok": true,
+          "status": 200,
+          "length": 1365,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2066902394655424619",
+          "url": "https://r.jina.ai/http://x.com/i/status/2066902394655424619",
+          "ok": true,
+          "status": 200,
+          "length": 1406,
           "error": null
         }
       ],
-      "note": "Jina Reader 未能读取账号页。"
+      "note": "账号页可读；已按 status 详情和 snowflake 时间筛选。"
     },
     {
       "source": "@elonmusk",
@@ -36,11 +108,83 @@
           "url": "https://r.jina.ai/http://x.com/elonmusk",
           "ok": true,
           "status": 200,
-          "length": 0,
+          "length": 12004,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2066538446781382800",
+          "url": "https://r.jina.ai/http://x.com/i/status/2066538446781382800",
+          "ok": true,
+          "status": 200,
+          "length": 1842,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1519480761749016577",
+          "url": "https://r.jina.ai/http://x.com/i/status/1519480761749016577",
+          "ok": true,
+          "status": 200,
+          "length": 937,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1812258574049157405",
+          "url": "https://r.jina.ai/http://x.com/i/status/1812258574049157405",
+          "ok": true,
+          "status": 200,
+          "length": 2190,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1518623997054918657",
+          "url": "https://r.jina.ai/http://x.com/i/status/1518623997054918657",
+          "ok": true,
+          "status": 200,
+          "length": 1014,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1854026234339938528",
+          "url": "https://r.jina.ai/http://x.com/i/status/1854026234339938528",
+          "ok": true,
+          "status": 200,
+          "length": 2325,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1519495072802390016",
+          "url": "https://r.jina.ai/http://x.com/i/status/1519495072802390016",
+          "ok": true,
+          "status": 200,
+          "length": 894,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1518677066325053441",
+          "url": "https://r.jina.ai/http://x.com/i/status/1518677066325053441",
+          "ok": true,
+          "status": 200,
+          "length": 2199,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "1519495982723084290",
+          "url": "https://r.jina.ai/http://x.com/i/status/1519495982723084290",
+          "ok": true,
+          "status": 200,
+          "length": 2219,
           "error": null
         }
       ],
-      "note": "Jina Reader 未能读取账号页。"
+      "note": "账号页可读；已按 status 详情和 snowflake 时间筛选。"
     },
     {
       "source": "@realDonaldTrump",
@@ -54,11 +198,83 @@
           "url": "https://r.jina.ai/http://x.com/realDonaldTrump",
           "ok": true,
           "status": 200,
+          "length": 13040,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2057968277062582378",
+          "url": "https://r.jina.ai/http://x.com/i/status/2057968277062582378",
+          "ok": true,
+          "status": 200,
+          "length": 0,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2056827052851105947",
+          "url": "https://r.jina.ai/http://x.com/i/status/2056827052851105947",
+          "ok": true,
+          "status": 200,
+          "length": 0,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2028505632123326484",
+          "url": "https://r.jina.ai/http://x.com/i/status/2028505632123326484",
+          "ok": true,
+          "status": 200,
+          "length": 0,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2027651077865157033",
+          "url": "https://r.jina.ai/http://x.com/i/status/2027651077865157033",
+          "ok": true,
+          "status": 200,
+          "length": 0,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2017417980594827718",
+          "url": "https://r.jina.ai/http://x.com/i/status/2017417980594827718",
+          "ok": true,
+          "status": 200,
+          "length": 0,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2015833393917747502",
+          "url": "https://r.jina.ai/http://x.com/i/status/2015833393917747502",
+          "ok": true,
+          "status": 200,
+          "length": 0,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2014874759473828043",
+          "url": "https://r.jina.ai/http://x.com/i/status/2014874759473828043",
+          "ok": true,
+          "status": 200,
+          "length": 0,
+          "error": null
+        },
+        {
+          "channel": "jina_status",
+          "id": "2014772963719991311",
+          "url": "https://r.jina.ai/http://x.com/i/status/2014772963719991311",
+          "ok": true,
+          "status": 200,
           "length": 0,
           "error": null
         }
       ],
-      "note": "Jina Reader 未能读取账号页。"
+      "note": "账号页可读；已按 status 详情和 snowflake 时间筛选。"
     },
     {
       "source": "美研芒格君",
@@ -72,6 +288,7 @@
       "titles": [
         "[置顶] 一篇走心发文，为什么我们坚持做AI投资分享",
         "[置顶] 40小时呕心沥血！MRVL光模块+AI推理布局解析",
+        "分享我压箱底的，AI下一阶段“瓶颈”玩家",
         "深入拆解甲骨文, AI Token推理工厂的错配",
         "耗时一周，深度拆解甲骨文ORCL的AI豪赌决心",
         "好消息就是坏消息？从看懂AVGO到理解AI布局",
@@ -88,8 +305,7 @@
         "光模块下投资还在早期，分享如何提前布局",
         "耗时一周调研，带你彻底读懂 MRVL底层逻辑",
         "光模块的投资才刚刚开始‼️现在入局还不晚",
-        "光模块下个机会？不是谁领先,而是相互看懂",
-        "从AAOI拆解光模块4层路线，下个标的是谁？"
+        "光模块下个机会？不是谁领先,而是相互看懂"
       ],
       "diagnostics": [
         {
@@ -97,7 +313,7 @@
           "url": "https://www.xiaohongshu.com/user/profile/632ea1e700000000230381cb",
           "ok": true,
           "status": 200,
-          "length": 935041,
+          "length": 935039,
           "error": null
         },
         {
