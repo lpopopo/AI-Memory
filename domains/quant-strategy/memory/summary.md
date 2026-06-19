@@ -1,7 +1,7 @@
 # Domain Summary: Quant Strategy
 
 **Primary Goal:**
-To develop and backtest a robust, full-cycle quantitative trading strategy focused on US equities (S&P 500 and Nasdaq 100), maximizing long-term CAGR while strictly controlling maximum drawdowns during systemic bear markets.
+To develop and run a robust, full-cycle quantitative trading strategy focused on US equities (S&P 500 and Nasdaq 100). Current real-account operating goal is an aggressive but controlled push toward **USD 10,000 NAV by 2026 year-end**, preferably from investment gains rather than additional capital, while preserving hard stop discipline and avoiding unrecoverable drawdowns.
 
 **Current State:**
 We have successfully developed and backtested the **V4.0 Hybrid Individual-Stock & ETF Dual-Sleeve Strategy** over a 26-year period (2000-2025). It uses dynamic sector rotation and individual stock selection with macro-micro trend filters, achieving a 16.70% long-term CAGR with significantly lower drawdown than major indices. We have also built a 516-ticker US stock universe database for upcoming optimizations.
@@ -27,7 +27,13 @@ Daily work must include a broad market-monitoring and strategy self-review layer
 
 Daily monitoring also includes real-time hot news analysis. News must be mapped to macro, sector, theme, and ticker-level catalysts, then checked against price action and risk controls before affecting recommendations.
 
-**Latest Operational Status (2026-06-12):**
+**Latest Operational Status (2026-06-19):**
+User updated the active real-account capital baseline to `HKD 50,000`, approximately `USD 6,410.26` at a working `7.80` HKD/USD rate. Current confirmed holdings remain `MRVL 1`, `RDW 5`, and `GLW 2`; user clarified that `ALAB` and `MXL` have no broker-side open orders. Using 2026-06-18 close references, estimated NAV is about `USD 6,451.93`, cash about `USD 5,679.76`, and equity exposure about `11.97%`. Revised next-session plan: RDW remains pending exit after closing below `14.50`; TTMI is a conditional 3-share core candidate only on pullback to `210-213` or confirmed breakout above `220` with no chase above `225`; MXL is a conditional 2-share satellite only on pullback to `85-87` or confirmed breakout above `90` with no chase above `92`; ALAB is watch-only after event-risk / sizing review. See `memory/portfolio/2026-06-19-portfolio-summary.md`, `memory/trades/2026-06-19-trade-plan.md`, and `memory/daily/2026-06-19-details.md`.
+
+**2026 Year-End Real-Account Target:**
+Per user instruction on 2026-06-19, manage the real account toward a stretch target of `USD 10,000` NAV by 2026 year-end using primarily investment returns. Starting reference NAV is about `USD 6,451.93`, so the target requires roughly `+55%`. Operating mode is `controlled aggressive`: raise equity exposure in stages toward about `30%-35%`, then `45%-60%` only after market confirmation and/or profit cushion; add to winners, cut losers quickly, keep 4-6 active names, and use the market fear gate to reduce exposure in stress/panic regimes.
+
+**Prior Operational Status (2026-06-12):**
 The 2026-06-11 U.S. close produced a broad rebound: AP reported S&P 500 +1.8%, Dow +1.9%, Nasdaq +2.5%, and Russell 2000 +3.0%; Cboe VIX spot improved to about `19.89`. Current confirmed real-account equity holdings remain none after the `MRVL` sale at `USD 267.020`; gross realized P/L on that closed trade remains about `USD +15.020` / `+5.96%` before fees and FX. MRVL closed around `280.71` after the sale, but this should not trigger automatic chase-buying. Fear improves from `stress` toward `elevated / repair`, yet new buys still require pullback/reclaim or second-day confirmation. MRVL and the expanded watchlist remain observation-only until trend and account-level entry discipline confirm. No stable strategy decision was promoted.
 
 Current portfolio scope update: per user instruction on 2026-06-11, stop routine tracking of the retired USD 20,000 model/paper ledger. Daily execution, post-close audits, NAV, stop-trigger tables, and risk reviews should focus only on real-account holdings confirmed by the user or broker. Historical model/replay records should be used only when the user explicitly asks for replay/backtest analysis.
