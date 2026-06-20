@@ -1,6 +1,6 @@
 {
   "args": {
-    "since": "2026-06-17T12:45:40.258Z",
+    "since": "2026-06-18T13:30:28.174Z",
     "out": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\institutional-research-latest.md",
     "json": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\institutional-research-latest.json",
     "maxItems": 8
@@ -120,7 +120,7 @@
           "channel": "jina_list",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research",
           "ok": true,
-          "length": 3604,
+          "length": 3651,
           "attempts": 1,
           "error": null
         },
@@ -128,7 +128,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Working-Paper/The-Tax-Benefits-of-Pre-Tax-Alpha",
           "ok": true,
-          "length": 4495,
+          "length": 4542,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/Working-Paper/The-Tax-Benefits-of-Pre-Tax-Alpha"
@@ -137,7 +137,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Alternative-Thinking/Total-Portfolio-Approach",
           "ok": true,
-          "length": 4532,
+          "length": 4579,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/Alternative-Thinking/Total-Portfolio-Approach"
@@ -146,7 +146,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Cliff-Asness-The-Illusion-of-Safety-in-Private-Assets",
           "ok": true,
-          "length": 4229,
+          "length": 4276,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Cliff-Asness-The-Illusion-of-Safety-in-Private-Assets"
@@ -155,7 +155,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Tax-Aware-Investing/Why-More-Alpha-Can-Mean-More-Tax-Benefits",
           "ok": true,
-          "length": 18160,
+          "length": 18207,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/Tax-Aware-Investing/Why-More-Alpha-Can-Mean-More-Tax-Benefits"
@@ -164,7 +164,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
           "ok": true,
-          "length": 5277,
+          "length": 5324,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes"
@@ -173,7 +173,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Working-Paper/Climate-Risk-Pricing",
           "ok": true,
-          "length": 4307,
+          "length": 4354,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/Working-Paper/Climate-Risk-Pricing"
@@ -182,7 +182,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Alternative-Thinking/Hold-the-Dip",
           "ok": true,
-          "length": 4594,
+          "length": 4641,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/Alternative-Thinking/Hold-the-Dip"
@@ -191,7 +191,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/White-Papers/Active-Extension",
           "ok": true,
-          "length": 4784,
+          "length": 4831,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/White-Papers/Active-Extension"
@@ -204,6 +204,19 @@
       "dimension": "flow_fragility / market structure / macro strategy",
       "items": [
         {
+          "title": "Fed Views: From Inertial to Adaptive Policy Making",
+          "url": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/fed-views-from-inertial-to-adaptive-policy-making/",
+          "date": "2026-06-19T00:13:35.000Z",
+          "dateSource": "detail_page",
+          "summary": "Fed Views: From Inertial to Adaptive Policy Making - Citadel Securities Skip to Content[](http://www.citadelsecurities.com/) * Who We Are Who We AreLearn More * Our Culture * Leadership Team * Civic Leadership * Office Locations × * What We Do What We DoLearn More * Equities * Designated Market Maker * Options * Fixed Income & FX * What is a Market Maker? * Corporate Solutions × * News & Insights News & InsightsLearn More * In the Media * Market Insights * Policy Positions × * Careers CareersLearn More * Markets & Trading * Quantitative Research * Engineering * Internships * Programs & Events * Conference Travel Grant * Datathons * Discover Citadel Securities * Citadel Securities Quant Invit",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "post_window_verified",
+          "isPostWindow": true,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "flow_fragility / market structure / macro strategy"
+        },
+        {
           "title": "July",
           "url": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/july/",
           "date": "2026-06-17T16:08:09.000Z",
@@ -211,8 +224,8 @@
           "summary": "Markets are entering one of the most technically important periods of the year. Over the next two weeks, price action is likely to be driven more by flows than fundamentals as investors navigate month-end, quarter-end, and first-half rebalancing activity. The market is set to absorb the largest options expiration in history, significant quarter-end pension rebalancing flows, and a broad reset in positioning across major investor cohorts. Looking beyond quarter-end, however, the backdrop becomes increasingly supportive. Historically, July has been one of the strongest months of the year for US equities, as fresh capital is deployed, positioning is rebuilt, and several of the market’s largest ",
           "detailWarning": false,
           "detailOk": true,
-          "verificationStatus": "post_window_verified",
-          "isPostWindow": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
           "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
           "dimension": "flow_fragility / market structure / macro strategy"
         },
@@ -256,24 +269,11 @@
           "dimension": "flow_fragility / market structure / macro strategy"
         },
         {
-          "title": "Too Much of a Good Thing?",
-          "url": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/too-much-of-a-good-thing/",
-          "date": "2026-06-06T21:37:35.000Z",
-          "dateSource": "detail_page",
-          "summary": "“MORE GROWTH, MORE INFLATION” HAS BEEN THE MANTRA OF THIS NOTE IN RECENT MONTHS. This was the reality prior to the Iran conflict…and is even more the case now following an energy and supply chain shock from the closure of the Strait of Hormuz and a once-in-a-generation AI infrastructure boom that has been supersized in recent weeks with commitments to spend over $700bn on capex in 2026 alone. Of course, the key difference compared to last year is that AI is no longer just a capex story…annualised revenue growth at companies like Anthropic suggests that enterprise AI adoption is translating into real economic demand. The Dallas Fed’s high-frequency tracker for US growth has GDP at 3.23% (scal",
-          "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "pre_window_or_existing",
-          "isPostWindow": false,
-          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
-          "dimension": "flow_fragility / market structure / macro strategy"
-        },
-        {
-          "title": "Global Market Intelligence Archives - Citadel Securities",
-          "url": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/",
+          "title": "Global Macro Strategy Archives - Citadel Securities",
+          "url": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/",
           "date": null,
           "dateSource": "none",
-          "summary": "Global Market Intelligence ('GMI') series offers timely, data-driven insights into market structure, investor flows, and positioning trends. The series draws on proprietary analytics and years of flow expertise to interpret what’s moving markets beneath the surface. GMI is designed for institutional investors looking to understand the mechanics behind short-term price action and structural shifts in liquidity. July Read More Global Roadshow Insights Read More Flow Fragility Read More May Toolkit Read More Flows and Fundamentals Read More April Update Read More",
+          "summary": "Global Macro Strategy Archives - Citadel Securities Skip to Content[](http://www.citadelsecurities.com/) * Who We Are Who We AreLearn More * Our Culture * Leadership Team * Civic Leadership * Office Locations × * What We Do What We DoLearn More * Equities * Designated Market Maker * Options * Fixed Income & FX * What is a Market Maker? * Corporate Solutions × * News & Insights News & InsightsLearn More * In the Media * Market Insights * Policy Positions × * Careers CareersLearn More * Markets & Trading * Quantitative Research * Engineering * Internships * Programs & Events * Conference Travel Grant * Datathons * Discover Citadel Securities * Citadel Securities Quant Invitational * Ignite Wom",
           "detailWarning": false,
           "detailOk": true,
           "verificationStatus": "date_unverified",
@@ -282,11 +282,11 @@
           "dimension": "flow_fragility / market structure / macro strategy"
         },
         {
-          "title": "Global Macro Strategy Archives - Citadel Securities",
-          "url": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/",
+          "title": "Global Market Intelligence Archives - Citadel Securities",
+          "url": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/",
           "date": null,
           "dateSource": "none",
-          "summary": "Global Macro Strategy Archives - Citadel Securities Skip to Content[](http://www.citadelsecurities.com/) * Who We Are Who We AreLearn More * Our Culture * Leadership Team * Civic Leadership * Office Locations × * What We Do What We DoLearn More * Equities * Designated Market Maker * Options * Fixed Income & FX * What is a Market Maker? * Corporate Solutions × * News & Insights News & InsightsLearn More * In the Media * Market Insights * Policy Positions × * Careers CareersLearn More * Markets & Trading * Quantitative Research * Engineering * Internships * Programs & Events * Conference Travel Grant * Datathons * Discover Citadel Securities * Citadel Securities Quant Invitational * Ignite Wom",
+          "summary": "Global Market Intelligence Archives - Citadel Securities Skip to Content[](http://www.citadelsecurities.com/) * Who We Are Who We AreLearn More * Our Culture * Leadership Team * Civic Leadership * Office Locations × * What We Do What We DoLearn More * Equities * Designated Market Maker * Options * Fixed Income & FX * What is a Market Maker? * Corporate Solutions × * News & Insights News & InsightsLearn More * In the Media * Market Insights * Policy Positions × * Careers CareersLearn More * Markets & Trading * Quantitative Research * Engineering * Internships * Programs & Events * Conference Travel Grant * Datathons * Discover Citadel Securities * Citadel Securities Quant Invitational * Ignit",
           "detailWarning": false,
           "detailOk": true,
           "verificationStatus": "date_unverified",
@@ -313,9 +313,27 @@
           "channel": "jina_list",
           "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/category/market-insights/",
           "ok": true,
-          "length": 16975,
+          "length": 17095,
           "attempts": 1,
           "error": null
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-macro-strategy/fed-views-from-inertial-to-adaptive-policy-making/",
+          "ok": true,
+          "length": 24350,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/fed-views-from-inertial-to-adaptive-policy-making/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-macro-strategy/",
+          "ok": true,
+          "length": 15847,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/"
         },
         {
           "channel": "jina_detail",
@@ -330,7 +348,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-market-intelligence/",
           "ok": true,
-          "length": 1549,
+          "length": 16458,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/"
@@ -343,15 +361,6 @@
           "attempts": 1,
           "error": null,
           "candidate": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/hysteresis-may-set-up-a-september-hike/"
-        },
-        {
-          "channel": "jina_detail",
-          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-macro-strategy/",
-          "ok": true,
-          "length": 16270,
-          "attempts": 1,
-          "error": null,
-          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/"
         },
         {
           "channel": "jina_detail",
@@ -379,15 +388,6 @@
           "attempts": 1,
           "error": null,
           "candidate": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/tokenomics/"
-        },
-        {
-          "channel": "jina_detail",
-          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/macro-thoughts/too-much-of-a-good-thing/",
-          "ok": true,
-          "length": 13185,
-          "attempts": 1,
-          "error": null,
-          "candidate": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/too-much-of-a-good-thing/"
         }
       ],
       "note": "列表页可读；已读取候选详情页并按日期过滤。"
@@ -655,16 +655,16 @@
           "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
         },
         {
-          "title": "Views from the Floor Achilles and the Tortoise Market Views read 4 min May 19, 2026 Views from the Floor Achilles and the Tortoise How the next generation of AI tools is reshaping cyber risk and testing the resilience of the insurance market.",
+          "title": "Views from the Floor Achilles and the Tortoise | Man Group",
           "url": "https://www.man.com/insights/views-from-the-floor-2026-19-may",
-          "date": "2026-05-25T16:00:00.000Z",
-          "dateSource": "list_page",
-          "summary": "",
+          "date": "2026-05-18T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "Achilles and the Tortoise | Man Group [](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-19-may) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on o",
           "detailWarning": false,
-          "detailOk": false,
-          "verificationStatus": "pre_window_or_existing_list_only",
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
           "isPostWindow": false,
-          "evidence": "中：官方列表页可见标题/日期，但详情页未读取成功；可记录为候选，不应提炼新框架。",
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
           "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
         },
         {
@@ -699,7 +699,7 @@
           "channel": "jina_list",
           "url": "https://r.jina.ai/http://www.man.com/maninstitute/market-views",
           "ok": true,
-          "length": 14289,
+          "length": 35728,
           "attempts": 1,
           "error": null
         },
@@ -707,7 +707,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-17-June",
           "ok": true,
-          "length": 41229,
+          "length": 41314,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-17-June"
@@ -716,7 +716,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-9-june",
           "ok": true,
-          "length": 42788,
+          "length": 42873,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-9-june"
@@ -725,7 +725,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-2-jun",
           "ok": true,
-          "length": 41128,
+          "length": 41213,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-2-jun"
@@ -734,7 +734,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/road-ahead-reflections",
           "ok": true,
-          "length": 18269,
+          "length": 18316,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/road-ahead-reflections"
@@ -743,7 +743,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-26-may",
           "ok": true,
-          "length": 39563,
+          "length": 39648,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-26-may"
@@ -751,9 +751,9 @@
         {
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-19-may",
-          "ok": false,
-          "length": 0,
-          "attempts": 2,
+          "ok": true,
+          "length": 42014,
+          "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-19-may"
         },
@@ -761,8 +761,8 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-12-may",
           "ok": true,
-          "length": 42590,
-          "attempts": 2,
+          "length": 42675,
+          "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-12-may"
         },
@@ -770,7 +770,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-5-may",
           "ok": true,
-          "length": 42264,
+          "length": 42349,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-5-may"
