@@ -13,7 +13,7 @@ Run time: 2026-06-26 22:00 Asia/Shanghai.
 - Later user-confirmed MXL fill means the confirmed sleeve is now GLW/TTMI/DRAM/MXL, with estimated equity exposure near `29%`. This increases optical/interconnect overlap and should block any further same-theme adds before the post-close audit.
 
 ### 1. Reconcile broker cash, NAV and open orders
-- Working cash is estimated at `USD 5,069.84` after DRAM fill and fee.
+- Working cash is estimated at `USD 3,368.64` after DRAM, MXL, and MU fills and estimated platform fees.
 - Compare with broker statement when convenient.
 - Confirm all previous buy orders (WDC at $655, DRAM limit orders) are fully cancelled.
 
@@ -45,19 +45,25 @@ Run time: 2026-06-26 22:00 Asia/Shanghai.
 - Confirm whether the broker has a protective `MXL sell stop-market, 6 shares, trigger 86.00`.
 - Do not add more MXL today. If MXL trades below `86.00` or closes with GLW/TTMI/DRAM all weak, escalate to post-close risk review.
 
+### 4c. MU new-position protection check
+- User confirmed `MU 1 @ 1155.00`.
+- Initial close-based risk line is `1,100.00` (50-day simple moving average).
+- Confirm whether the broker has a protective stop-market sell on `1` share at `1,090.00` to avoid intraday whipsaws.
+- **Concentration Ban**: Memory theme exposure (MU + DRAM) is at its limit (~23%). Strictly prohibit any further memory/storage additions.
+
 ### 5. MRVL re-entry check
 - MRVL is trading at `269.22`.
 - Re-entry remains blocked. Re-entry requires reclaiming **$285.00** on a completed close and SMH reclaiming its 50-day average. Watch only.
 
 ### 6. Next-regime buy queue (NEW — added 2026-06-26 22:16 BJT)
 - Broader candidate analysis completed across 27 AI-theme tickers. See `work/2026-06-26-broader-stock-analysis.md`.
+- MU has been filled at $1,155.00.
 - Priority queue for next Normal fear-gate regime:
-  1. **MU** — entry $1,100–$1,150 (check DRAM overlap)
-  2. **CRDO** — entry $240–$270 on stabilization
-  3. **ALAB** — entry $350–$370 (satellite only, valuation risk)
-  4. **AMD** — entry $490–$505
-  5. **TER** — entry $410–$430 (investigate today's -6.6% drop)
-  6. **ANET** — entry $150–$155
+  1. **CRDO** — entry $240–$270 on stabilization
+  2. **ALAB** — entry $350–$370 (satellite only, valuation risk)
+  3. **AMD** — entry $490–$505
+  4. **TER** — entry $410–$430 (investigate today's -6.6% drop)
+  5. **ANET** — entry $150–$155
 - Do NOT add NOW, PLTR, APP — today's green moves are bounces from broken trends.
 - Remove LITE and COHR from active queue (theme selling too heavy).
 

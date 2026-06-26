@@ -150,3 +150,39 @@ equity_exposure: 28.96%
 active_holdings: GLW 2, TTMI 3, DRAM 4, MXL 6
 new_buy_gate: closed until post-close audit
 ```
+
+## 02:21 BJT Addendum After User-Confirmed MU Fill
+
+User-confirmed real trade record exists separately: `memory/trades/2026-06-26-real-mu-buy.md`.
+
+- Real fill: `MU buy 1 @ USD 1,155.00`.
+- Estimated gross notional: `USD 1,155.00`.
+- Estimated fee: `USD 1.00`.
+- Initial risk line: `1,100.00` close-based (50-day simple moving average).
+- No additional MU buying today.
+
+Local Node quote workflow was rerun after recognizing the fill and returned structured Tencent quotes. MU traded at `1149.50`, with intraday range `1140.00-1213.56`, so it remains above the `1,100.00` risk line.
+
+Updated execution checklist including MU:
+
+| Priority | Action | Ticker | Direction / quantity | Target amount / NAV weight | Reference price | Trigger condition | Stop / reduce line | Invalid condition | Strategy reason / risk | State |
+| ---: | --- | --- | --- | --- | ---: | --- | --- | --- | --- | --- |
+| 1 | Reduce-review / protect profits | GLW | Hold `2`; no add | `USD 432.06` / `6.76%` | 216.03 | Completed close must reclaim/hold `210` | Close `<210` -> reduce/exit review | Close above 210 keeps hold; no add | Prior winner testing protection line | `reduce-review / profit-protection watch` |
+| 2 | Defensive hold | TTMI | Hold `3`; no add | `USD 590.46` / `9.24%` | 196.82 | Hold only while completed close remains above `188` | Close `<200` -> reduce review; close `<188` -> exit review | Close reclaims 200 reduces warning | Below wind-control; rebalance and theme pressure | `defensive hold` |
+| 3 | Defensive hold / protective stop watch | DRAM | Hold `4`; no add | `USD 292.20` / `4.57%` | 73.05 | Existing position only | Intraday protective exit `70.50` | Any additional DRAM/WDC fill | Above 70.50 but still weak | `defensive hold` |
+| 4 | Satellite hold / protect | MXL | Hold `6`; no add | `USD 559.08` / `8.75%` | 93.18 | User-confirmed fill only; no automation order | Risk line `86.00`; consider broker stop-market if user chooses | Breaks 86 or same-theme drawdown worsens | High-beta optical/InP/interconnect satellite | `satellite hold` |
+| 5 | Core hold / protect | MU | Hold `1`; no add | `USD 1149.50` / `17.98%` | 1149.50 | User-confirmed fill only; no automation order | Close-stop `1,100.00` (or stop-market `1,090.00`) | Breaks 1100 or same-theme drawdown worsens | Core HBM leader, but raises memory concentration | `core hold` |
+| 6 | Watch only | MRVL / AMD / WDC / STX | No order | `0` | 263.14 / 518.13 / 605.53 / 927.98 | Fresh post-close setup required | Existing old replay lines only | Intraday rebound without close repair | No current real holdings; same-theme sell-off blocks new buys | `watch only` |
+
+Estimated account after MU:
+
+```text
+working_cash: USD 3,368.64
+equity_value: USD 3,023.30
+estimated_NAV: USD 6,391.94
+cash_ratio: 52.70%
+equity_exposure: 47.30%
+active_holdings: GLW 2, TTMI 3, DRAM 4, MXL 6, MU 1
+new_buy_gate: closed (thematic memory limit reached, MU+DRAM ~22.70% of NAV)
+```
+
