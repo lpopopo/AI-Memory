@@ -257,7 +257,7 @@ $bytes = $client.DownloadData('${String(url).replace(/'/g, "''")}')
 
     for (const sym of symbols) {
       const ticker = this._toYahooSymbol(sym);
-      const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?range=1d&interval=1m`;
+      const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?range=1d&interval=1m&includePrePost=true`;
       const data = await this._requestJson(url);
       const chart = data && data.chart;
       const item = chart && chart.result && chart.result[0];

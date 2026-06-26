@@ -123,6 +123,19 @@ Additional validation needed:
 - Replay memory-theme gaps and earnings surprises over 5/20/60 trading days to separate structural demand from supply-shortage crowding.
 - Treat `CBRS` as source-driven speculative inference watch only until SEC filings, customer contracts, margins, OCF-CapEx and price trend are independently verified.
 
+2026-06-26 evidence update:
+
+- Logged-in Chrome showed no strict-window new Xiaohongshu note; the latest non-pinned note remained the already captured MU/storage note, so no new carousel evidence was added.
+- X `@Kay2289123` added an ALAB Article (`2070338459932529140`) and related MRVL/ALAB/CRDO posts that strengthen the need to split AI interconnect into `MRVL_custom_optical_CXL`, `ALAB_interconnect_router`, and `CRDO_scale_out_AEC_optical_optionality` rather than treating them as interchangeable optical/interconnect exposure.
+- X `@Kay2289123` added a Samsung/SK Hynix capex thread (`2070399554625982852` and replies) that supports an `HBM_upstream_bottleneck_map`: WFE tools, wafer thinning, TSV etch, TCB / hybrid bonding, ABF substrate materials, EUV mask blanks, and photoresists.
+- X `@Kay2289123` added a Micron / hyperscaler-cost-pushback post (`2070403183680045076`): memory pricing power may trigger customer and supplier responses through capacity expansion, CXL/compression, procurement pushback, and architecture changes.
+
+Additional validation needed:
+
+- For ALAB, verify CXL/PCIe/retimer revenue, customer concentration, inventory, gross margin, product roadmap, hyperscaler adoption, and relative strength versus QQQ/SMH/CRDO/MRVL.
+- For HBM upstream, verify Samsung/SK Hynix official capex, actual orders to ASML/AMAT/LRCX/KLAC/DISCO/ASMPT/Hanmi/material suppliers, delivery timing, revenue exposure, valuation, liquidity and post-announcement 5/20/60-day returns.
+- For memory-cost pushback, track DDR/HBM/NAND contract pricing, hyperscaler capex commentary, CXL/compression deployment, realized TCO, and whether memory supplier margin strength leads to downstream demand destruction or architecture substitution.
+
 ### H6: AI application-layer monitoring may become a separate investable theme
 
 AI application evidence should be tracked separately from GPU, data center, optical, and storage infrastructure. Strong consumer adoption or enterprise AI workflow evidence does not automatically mean more infrastructure buying; it can benefit application software, cloud platforms, inference compute, storage, cybersecurity, or endpoints depending on monetization and cost structure.

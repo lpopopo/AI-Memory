@@ -2,6 +2,127 @@
 
 This file tracks public, source-specific realtime observations that should not be mixed into Xiaohongshu author views.
 
+## 2026-06-26 Realtime / Institutional Monitor
+
+Retrieval window:
+
+- Automation last-run timestamp used: `2026-06-25T12:32:04.035Z`.
+- Browser and checker run: 2026-06-26 21:32-21:59 Beijing time.
+- Local automation memory was missing at run start, so the automation timestamp was used directly rather than a 24-hour fallback.
+
+Browser result:
+
+- Xiaohongshu `美研芒格君 / Kay2289123` profile was readable. Latest non-pinned note remained `MU先别眼红, 5+4逻辑全面梳理搞懂存储产业`, ID `6a3caa1a000000001700a95a`, already handled in the 2026-06-25 monitor with `21/21` carousel images read. No strict post-window Xiaohongshu note was verified.
+- `@Kay2289123`: verified post-window X items around ALAB interconnect analysis, MRVL/ALAB/CRDO role mapping, Samsung/SK Hynix capex/upstream HBM bottleneck thread, and Micron/hyperscaler memory-cost pushback.
+- `@nvidia`: verified official post-window items for BioNeMo healthcare AI agent tools, Revolut transaction foundation model on NVIDIA/Nebius infrastructure, and PYLER video advertising brand-safety AI.
+- `@elonmusk`: page readable; post-window visible items were mainly low-strategy-relevance reposts/political/cultural content, with no high-evidence AI/market catalyst mapped.
+- `@realDonaldTrump`: page readable; latest visible items remained 2026-06-21 or earlier, so strict post-window verified items were `0`.
+
+Institutional result:
+
+| Source | List/detail status | Post-window verified |
+| --- | --- | ---: |
+| AQR Research | Reader list and 8 details readable/date-filtered | 0 |
+| Citadel Securities | Reader list readable; several details readable, some channel/candidate pages date-unverified or security-check blocked | 0 |
+| GMO Research Library | Reader list and 8 details readable/date-filtered | 0 |
+| Man Institute Market Views | Reader list and 8 details readable/date-filtered | 0 |
+
+Action:
+
+- Added `memory/daily/2026-06-26-realtime-public-institutional-monitor.md`.
+- Updated H5 with `ALAB_interconnect_router`, `HBM_upstream_bottleneck_map`, and `hyperscaler_memory_cost_pushback` validation fields.
+- No institutional framework, stable decision, trade signal, or confirmed account action was added.
+
+## 2026-06-25 Realtime / Institutional Monitor
+
+Retrieval window:
+
+- Automation last-run timestamp used: `2026-06-24T12:30:49.954Z`.
+- Browser and checker run: 2026-06-25 20:33-21:29 Beijing time.
+
+Browser result:
+
+- Xiaohongshu new non-pinned note `MU先别眼红, 5+4逻辑全面梳理搞懂存储产业`, ID `6a3caa1a000000001700a95a`.
+- Stable link: `https://www.xiaohongshu.com/explore/6a3caa1a000000001700a95a`.
+- Page-visible time: `8小时前 美国`; exact absolute timestamp unavailable.
+- Carousel: `21/21` images visually read; unread gap `0`.
+- Main framework: split storage into SRAM, HBM, DDR, NAND/SSD, HDD and match each layer to AI data center, mobile, automotive, robotics/edge AI and gaming workloads.
+
+X result:
+
+- `@Kay2289123`: verified Cerebras Article `2069958412872638784`, MU post `2069907461730087236`, MRVL/CXL post `2069864998801961428`, and MRVL long-term-positioning post `2069844080474071194`.
+- `@nvidia`: verified official posts for medical AI infrastructure, wave-energy digital twins, advertising/marketing AI workflows, Jetson retail edge AI, plus one `@NVIDIARobotics` repost.
+- `@elonmusk`: verified an AI-regulator naming post, a foreign-aid political quote post, and a Starlink railway deployment repost.
+- `@realDonaldTrump`: profile readable; zero strict post-window items.
+
+Institutional result:
+
+| Source | List/detail status | Post-window verified |
+| --- | --- | ---: |
+| AQR Research | Reader list and 8 details readable/date-filtered | 0 |
+| Citadel Securities | List and several details readable; two details blocked/no-date and several category pages date-unverified | 0 |
+| GMO Research Library | Reader list and 8 details readable/date-filtered | 0 |
+| Man Institute Market Views | Reader list and 8 details readable/date-filtered | 0 |
+
+Action:
+
+- Added `memory/daily/2026-06-25-realtime-public-institutional-monitor.md`.
+- Updated H5 with memory hierarchy, inference latency-versus-cost, and CXL memory-efficiency validation fields.
+- No institutional framework, stable decision, trade signal, or confirmed account action was added.
+
+## 2026-06-24 Realtime / Institutional Monitor
+
+Retrieval window:
+
+- Automation last successful run used: `2026-06-23T12:31:57.485Z` (`2026-06-23 20:31:57` Beijing time).
+- Run time: `2026-06-24 20:31-20:45` Beijing time.
+
+Browser result:
+
+- Xiaohongshu profile and note detail were readable through logged-in Chrome in read-only mode.
+- New non-pinned note: `要看懂MRVL和10 倍万亿光互联，Credo很关键`.
+- Note ID: `6a3b5e5c0000000015027e00`.
+- Stable link: `https://www.xiaohongshu.com/explore/6a3b5e5c0000000015027e00`.
+- Page-visible time: `编辑于 8小时前 美国` at about 2026-06-24 20:37 Beijing; exact absolute timestamp was not exposed.
+- Carousel: `24/24` original images visually read; unread gap `0`.
+- Evidence: high for page existence/title/body/comments/images, medium for relative time, medium-low for company claims until primary-source validation.
+- Main source thesis: separate CRDO into current AEC/retimer cash flow and optical DSP/PIC/ZeroFlap optionality; copper short-distance and optical long-distance can coexist, while customer concentration, optical production, margin, valuation, and hyperscaler capex remain the critical risks.
+
+X result:
+
+| Account | Browser status | Checker status | Verified post-window item |
+| --- | --- | --- | ---: |
+| `@Kay2289123` | Loading / unreadable timeline | Not covered by local checker | 0 |
+| `@nvidia` | Loading | Jina profile 200, length 0 | 0 |
+| `@elonmusk` | Privacy-extension error / Loading | Jina profile 200, length 0 | 0 |
+| `@realDonaldTrump` | Loading | Jina profile 200, length 0 | 0 |
+
+Institutional result:
+
+| Source | List/detail status | Post-window verified |
+| --- | --- | ---: |
+| AQR Research | Reader list and 8 details readable/date-filtered | 0 |
+| Citadel Securities | Reader list and multiple details readable; some category pages date-unverified or detail-blocked/no-date | 0 |
+| GMO Research Library | Reader list and 8 details readable/date-filtered | 0 |
+| Man Institute Market Views | Reader list and 8 details readable/date-filtered; 2026-06-23 item was before cutoff | 0 |
+
+Action:
+
+- Added `memory/daily/2026-06-24-realtime-public-institutional-monitor.md`.
+- Updated H5 with CRDO current-cash-flow versus optical-optionality validation fields.
+- No institutional framework, stable decision, trade signal, or confirmed account action was added.
+
+### 2026-06-24 22:49 X Recheck Correction
+
+Logged-in Chrome recovered and exposed readable X profiles/status details. This replaces the earlier unreadable-X result for the same strict window.
+
+- `@Kay2289123`: six main post-window items verified, including MRVL architecture mapping (`2069511714509635621`), author MRVL position-method self-report (`2069521725470175721`), CRDO Article (`2069666239044317581`), CRDO position-history supplement (`2069669280178987314`), profile/source introduction (`2069670049863119067`), and CoreWeave Article (`2069674006215811089`).
+- `@nvidia`: official post-window items verified for telecom agents, Agent Toolkit/Nemotron secure runtime, TOP500/Green500 claims, and NAIRR/DGX research infrastructure.
+- `@elonmusk`: verified a DOGE policy statement, an original `Try Grok` post, and a repost of Grok Build v0.2.64; only Grok-related items map to application/developer-tool watch.
+- `@realDonaldTrump`: profile readable but latest visible items were dated 2026-06-21 or earlier; zero strict post-window items.
+- Full status table, timestamps, links, evidence levels, and strategy mapping are recorded in `memory/daily/2026-06-24-realtime-public-institutional-monitor.md`.
+- Added `neocloud_financing_fragility` as a daily observation field from the CoreWeave source article; no stable decision was promoted.
+
 ## 2026-06-19 User-Authorized X Profile Read
 
 Source:

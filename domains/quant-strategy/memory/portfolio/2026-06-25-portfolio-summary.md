@@ -1,8 +1,8 @@
 # 2026-06-25 Portfolio Summary
 
-Run time: 2026-06-26 Asia/Shanghai.
+Run time: 2026-06-26 21:54 Asia/Shanghai.
 
-Scope: formal U.S. regular-session close snapshot of the real account.
+Scope: formal completed-close estimate for the 2026-06-25 U.S. regular session. No broker login, order submission, cancellation, or unconfirmed fill assumption was made.
 
 ## Confirmed holdings
 
@@ -33,15 +33,16 @@ Exact cash, fees, FX, taxes, settlement and open orders require user or broker c
 ## Risk state
 
 ```text
-data_time: 2026-06-25 16:00 New York Close
-equity_quote_source: Tencent (Primary), local Node workflow
-volatility_source: Yahoo Chart (Fallback), local Node workflow
-data_quality: high equities-ETFs / official close
-fear_regime: normal, score 2/14
-flow_fragility_state: elevated, about 8/14
+data_time: 2026-06-25 completed regular-session close
+equity_quote_source: local Node Yahoo chart daily bars, after local StockService smoke test
+volatility_source: Yahoo chart daily VIX; FRED VXVCLS / Yahoo visible snapshot VIX3M fallback
+data_quality: completed close; VIX3M source-level fallback noted
+formal_fear_regime: normal, 2/14
+flow_fragility_score: 8/14
+flow_fragility_state: elevated
 trend_aligned_entry_state: cheap_but_unconfirmed / gap-rejected for new correlated-theme entries
-factor_macro_flags: theme_overlap_high; momentum_reversal_high; AI_capex_cycle_high
-new_buy_gate: closed by overlay and concentration controls
+factor_macro_flags: theme_overlap_high; sleeve_correlation_high; momentum_reversal_high; AI_capex_cycle_high; opening_gap_rejection
+new_buy_gate: closed by overlay and concentration controls for AI/semiconductor/storage adds
 ```
 
 ## Holding controls
@@ -50,6 +51,8 @@ new_buy_gate: closed by overlay and concentration controls
 - TTMI: hold 3; no add. Reclaimed warning line ($210.57 vs $205 warning). Hard stop remains `<188` close-based.
 - DRAM: hold 4; no add. User-side protective exit is `70.50` for all 4 shares.
 - WDC/STX/AMD/MRVL and other candidates: watch only; no live-account position assumed.
-- Cancel every residual DRAM buy and the WDC `655` buy; user-side confirmation remains pending.
+- Confirm every residual DRAM buy and the WDC `655` buy are cancelled; user-side confirmation remains pending.
+
+The retired USD 20,000 model ledger is not a current portfolio. MRVL/AMD/WDC/STX values are tracked only where the institutional overlay replay protocol requires historical diagnostics.
 
 Not investment advice.
