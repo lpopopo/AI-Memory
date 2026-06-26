@@ -97,6 +97,32 @@ Validation needed:
 - Require normal technical filters: relative strength, 63/126-day momentum, 50/200-day trend, benchmark comparison, and drawdown control.
 - Test crowding flags when content repeatedly signals sector overheating.
 
+2026-06-24 evidence update:
+
+- Logged-in Chrome exposed the new Xiaohongshu note `要看懂MRVL和10 倍万亿光互联，Credo很关键` (ID `6a3b5e5c0000000015027e00`) with readable body, author comments, relative edit time, and all `24/24` carousel images.
+- The source thesis splits CRDO into two evidence chains: `current_AEC_cashflow` from SerDes/AEC/retimer scale-out connectivity, and `optical_optionality` from optical DSP, silicon-photonics PIC, ZeroFlap modules, and acquired optical assets.
+- This is source-driven research structure, not a confirmed company fact or trade signal.
+
+Additional validation needed:
+
+- Verify CRDO employee count, revenue growth, customer concentration, AEC contribution, optical revenue guidance, acquisition terms, CPO exposure, product distances/speeds, optical gross margin, and hyperscaler adoption from 10-K/10-Q, earnings calls, and official product material.
+- Add `scale_up`, `scale_out`, and `scale_across` labels to the AI interconnect watchlist.
+- Replay whether the two-chain classification improves candidate ranking after AI/semiconductor drawdowns without increasing theme overlap or false entries.
+
+2026-06-25 evidence update:
+
+- Logged-in Chrome exposed Xiaohongshu note `MU先别眼红, 5+4逻辑全面梳理搞懂存储产业` (ID `6a3caa1a000000001700a95a`) with readable body, author comments, relative time and all `21/21` carousel images.
+- The source framework separates memory demand into `SRAM`, `HBM`, `DDR`, `NAND/SSD`, `HDD`, and application-specific `edge_memory`; this is a candidate research taxonomy, not a confirmed demand forecast.
+- X Article `2069958412872638784` adds a separate inference-accelerator test: low single-user latency can coexist with weaker high-concurrency unit economics, customer concentration, data-center capex burden and margin volatility.
+- X post `2069864998801961428` adds a CXL-memory-efficiency path: cheaper memory, compression and pooling may reduce capacity cost, but latency, software adoption, hot/cold-data fit and realized TCO must be measured.
+
+Additional validation needed:
+
+- Build `memory_hierarchy_demand_map` fields for HBM/DDR/NAND-SSD/HDD/CXL/edge memory and record revenue exposure, inventory, pricing, capex, gross margin and relative strength.
+- Add `latency_vs_throughput_cost` fields for inference accelerators: single-user latency, total throughput, concurrency, energy, unit token cost, software ecosystem and customer concentration.
+- Replay memory-theme gaps and earnings surprises over 5/20/60 trading days to separate structural demand from supply-shortage crowding.
+- Treat `CBRS` as source-driven speculative inference watch only until SEC filings, customer contracts, margins, OCF-CapEx and price trend are independently verified.
+
 ### H6: AI application-layer monitoring may become a separate investable theme
 
 AI application evidence should be tracked separately from GPU, data center, optical, and storage infrastructure. Strong consumer adoption or enterprise AI workflow evidence does not automatically mean more infrastructure buying; it can benefit application software, cloud platforms, inference compute, storage, cybersecurity, or endpoints depending on monetization and cost structure.
