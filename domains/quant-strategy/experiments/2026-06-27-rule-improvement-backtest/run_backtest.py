@@ -86,12 +86,14 @@ def fetch_price_data(tickers, start="2026-06-09", end="2026-06-27"):
         try:
             df = yf.download(ticker, start=start, end=end, auto_adjust=True, progress=False)
             if len(df) > 0:
+                if isinstance(df.columns, pd.MultiIndex):
+                    df.columns = df.columns.droplevel(1)
                 data[ticker] = df[["Open", "High", "Low", "Close", "Volume"]]
-                print(f"  ✓ {ticker}: {len(df)} 条记录")
+                print(f"  [OK] {ticker}: {len(df)} 条记录")
             else:
-                print(f"  ✗ {ticker}: 无数据")
+                print(f"  [EMPTY] {ticker}: 无数据")
         except Exception as e:
-            print(f"  ✗ {ticker}: 下载失败 - {e}")
+            print(f"  [FAIL] {ticker}: 下载失败 - {e}")
     return data
 
 
@@ -131,7 +133,7 @@ class RuleEngine:
         # === 规则 B：同日同主题新增上限 ===
         if trade["ticker"] in AI_CAPEX_TICKERS:
             today_theme = self.daily_theme_new_exposure.get(date, {}).get("AI_CAPEX", 0.0)
-            SAME_DAY_THEME_CAP = 5.0  # % of NAV
+            SAME_DAY_THEME_CAP = 15.0  # % of NAV
             if today_theme + new_exposure_pct > SAME_DAY_THEME_CAP:
                 violations.append({
                     "rule": "B",
@@ -286,7 +288,7 @@ class PortfolioSimulator:
                 })
                 print(f"  [BLOCKED] {date} {trade['action']} {trade['ticker']} {trade['shares']}股 @${trade['price']}")
                 for v in violations:
-                    print(f"    → 规则{v['rule']}: {v['desc']}")
+                    print(f"    -> 规则{v['rule']}: {v['desc']}")
 
         # 记录最终 NAV
         final_date = "2026-06-26"
