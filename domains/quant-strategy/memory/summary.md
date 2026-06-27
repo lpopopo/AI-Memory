@@ -16,8 +16,14 @@ Leverage the newly scraped 500-stock database to run dynamic, constituent-level 
 **Risk Gate:**
 Daily stock recommendations now require a market fear gate before position sizing. The framework classifies market state as `normal`, `elevated`, `stress`, or `panic` using VIX, VIX term structure, index drawdowns/trends, breadth, and credit proxies. See `references/market-fear-technical-framework.md`.
 
-**Portfolio Construction:**
-Current preference is concentrated: target 4 to 6 active stocks, hard maximum 8, across 2 to 3 themes. Daily recommendations should choose the strongest core names and avoid holding many overlapping stocks from the same subtheme. See `references/portfolio-concentration-rules.md`.
+**Portfolio Construction (V5 Strategy Rules):**
+Current preference is highly concentrated: target 4 to 6 active stocks, hard maximum 8, across 2 to 3 themes. 
+Strict constraints apply: 
+- Max 55% concentration per broad theme.
+- Max 15% new exposure per day (8% in elevated regime).
+- T+2 earnings cooldown.
+- Strict trailing stops (+15%, +25%, +40% thresholds).
+See `references/portfolio-concentration-rules.md` for full V5 rules.
 
 **Aggressive Satellite Module:**
 Per 2026-06-11 strategy update, the portfolio framework now includes a Double-Radar satellite module for 6-12 month potential double or multi-bagger candidates. V5 Optimal remains the core engine; default research mix is `75%` V5 core plus `25%` Double-Radar Top5 gated. The radar requires strong 50/200-day trend, 63/126-day momentum, high volatility, limited short-term extension, and a bullish QQQ regime gate. A 10-year current-S&P-500 approximation test showed the combined approach at CAGR `28.09%`, max drawdown `-30.70%`, Sharpe `1.24`, versus V5-only CAGR `25.95%` and SPY CAGR `14.82%`. See `references/double-radar-satellite-strategy.md`.

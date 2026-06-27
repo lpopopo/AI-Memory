@@ -114,14 +114,14 @@ For every active recommendation:
 
 ### 6. Strategy Self-Review
 
-Daily reflection must include:
+Daily reflection must include V5 Rule verification:
 
-- What did the strategy get right?
-- What did it miss?
-- Was concentration helpful or harmful?
-- Did cash level help or hurt?
+- Did the strategy overconcentrate in a fading theme? (Check: Is any theme > 55%?)
+- Did we buy too fast today? (Check: Is new exposure > 15%?)
+- Are trailing stops strictly updated? (Check: Any position hitting +15%, +25%, +40% profit?)
+- Did we violate the T+2 earnings cooldown by chasing a >10% gap up?
+- What did the strategy get right or miss today?
 - Did market fear gate over-protect or under-protect?
-- Did any stop-loss or limit-order logic need adjustment?
 - Should any theme be promoted, demoted, or removed from watchlist?
 - Did real-time news reveal a catalyst that our purely technical scan missed?
 

@@ -133,14 +133,15 @@ Exit when any are true:
 
 ## Portfolio Construction
 
-Default version:
+Default version (V5 Architecture):
 
-- Long-only.
-- Dual-sleeve portfolio: 50% value-investing sleeve and 50% hot-industry momentum sleeve.
-- Equal weight or volatility-adjusted weight inside each sleeve.
-- 8 to 15 value holdings plus 2 to 4 active tactical industries.
-- Maximum single position: 5% to 10%.
-- Maximum sector exposure: configurable cap.
+- Long-only, highly concentrated.
+- Dual-sleeve portfolio: Value/Cash defensive sleeve vs Hot-industry momentum sleeve.
+- Target active holdings: 4 to 6 stocks (Hard max 8).
+- Target themes: 2 to 3 themes (Hard max 55% broad theme concentration).
+- Core positions: 8% to 15% (Max 20% for high conviction).
+- Satellite/Speculative positions: 3% to 6% (Max price $300 for satellite).
+- Speed Limit: Max 15% new portfolio exposure per day (8% in elevated regime).
 
 Risk controls:
 
