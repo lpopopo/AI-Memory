@@ -1,9 +1,10 @@
-# Daily Summaries
+## 2026-06-27
 
-*Append a brief summary of the day's progress to the top or bottom of this file. Use this to maintain a high-level timeline of events.*
+- **策略深度复盘与规则升级：** 完成 2026-06-22 至 2026-06-27 实盘全周复盘。识别出6大策略问题（主题集中度失控、单日加仓过快、财报追涨、动态止损缺失、卫星仓超标、主题分散不足）。已将6条新稳定规则写入 `decisions.md`（2026-06-27节点）：单日加仓限速8pp/15pp、同日同主题5%上限、财报T+2冷静期、盈利追踪止损、主题浓度55%硬上限、核心/卫星仓规模重定义。已更新 `portfolio-concentration-rules.md`。已创建完整改进计划 `references/2026-06-27-strategy-improvement-plan.md`、错误分析文档 `references/2026-06-27-error-analysis-and-backtest-plan.md`、回测脚本 `experiments/2026-06-27-rule-improvement-backtest/run_backtest.py`。待执行：GLW止损上移至$215、MXL重新定性为核心仓（止损$91-92）、确认DRAM/MU券商保护单、运行回测脚本验证规则有效性。
 
 ## 2026-06-26
 
+- **Formal Post-Close Audit:** Completed the 2026-06-26 close audit using local Node Tencent structured quotes plus Yahoo completed daily bars; VIX closed `18.41` on Yahoo and official Cboe VIX3M closed `20.13`. Fear gate is `elevated 6/14`, while flow fragility is `10/14 elevated / near-acute`. Real-account estimate is NAV `USD 6,384.66`, cash `52.76%`, equity `47.24%`; TTMI closed below 200 and moves to `reduce-review / near-stop`, DRAM and MU remain near-stop, and correlated AI-capex additions are blocked. Added the 2026-06-26 replay close row; `decisions.md` unchanged. See [Post-Close Audit](daily/2026-06-26-post-close-audit.md), [Portfolio Summary](portfolio/2026-06-26-portfolio-summary.md), and [Todos](todos/2026-06-26-strategy-todos.md).
 - Realtime public/institutional monitor used strict window `2026-06-25T12:32:04.035Z` onward. Xiaohongshu had no new note beyond the prior MU/storage item; Kay X added ALAB/interconnect, Samsung/SK Hynix HBM upstream, and memory-cost-pushback evidence; NVIDIA added BioNeMo, Revolut and PYLER official customer/product cases; Elon/Trump had no strategy-relevant verified window item; AQR/Citadel/GMO/Man had zero strict-window new frameworks. Updated H5 and tracker; `decisions.md` unchanged.
 
 ## 2026-06-23

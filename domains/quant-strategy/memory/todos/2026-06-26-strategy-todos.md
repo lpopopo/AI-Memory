@@ -2,6 +2,26 @@
 
 Run time: 2026-06-26 22:00 Asia/Shanghai.
 
+Formal post-close update: 2026-06-27 08:24 Asia/Shanghai.
+
+## Post-close priorities
+
+### 0. TTMI reduce-review / near-stop
+- Formal close `191.49` is below the `200` reduce-review line and only `1.86%` above the `188` completed-close exit line.
+- Do not average down. Recheck before the next session open; if a later completed close is below `188`, apply the hard-cut priority rule.
+
+### 0a. DRAM and MU near-stop protection
+- DRAM closed `71.88`, day low `71.33`, still above the `70.50` intraday protective line. Confirm whether the broker-side protection is active.
+- MU closed `1132.33`, `2.94%` above the `1100` close line. No add; keep the `1090` hard-protection reference only as a user/broker decision.
+
+### 0b. Correlated-sleeve freeze
+- All five holdings are in one effective AI-capex chain. Optical/interconnect is about `25.00%` of NAV and memory is about `22.24%`.
+- `flow_fragility=10/14 elevated`, `theme_overlap_high`, and `sleeve_correlation_high`; block all new correlated AI/semiconductor/storage buys until trend and correlation risk repair.
+
+### 0c. Broker reconciliation
+- Reconcile estimated cash `USD 3,368.64`, NAV `USD 6,384.66`, fees, FX, settlements and all protective/cancelled orders against the broker statement.
+- No automation output is evidence of a live order or actual fill.
+
 ## Open
 
 ### 0. 23:17 intraday refresh: post-close audit priority
@@ -68,6 +88,10 @@ Run time: 2026-06-26 22:00 Asia/Shanghai.
 - Remove LITE and COHR from active queue (theme selling too heavy).
 
 ## Completed / verified
+- Completed the 2026-06-26 formal post-close audit.
+- Updated the 2026-06-26 formal portfolio summary and daily summaries.
+- Appended the completed 2026-06-26 close row to `replay-ledger-template.csv`.
+- Verified the local Node quote workflow returned structured Tencent quote objects and Yahoo daily close cross-checks; no Python/Google fallback was required.
 - Completed the 2026-06-25 post-close audit.
 - Updated 2026-06-25 portfolio summary and daily summaries.
 - Appended 2026-06-25 close row to `replay-ledger-template.csv`.
