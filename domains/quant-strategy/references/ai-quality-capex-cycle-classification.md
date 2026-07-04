@@ -84,6 +84,7 @@ Typical sizing:
 | AVGO | diversified_supplier | medium-high | core watch | Custom silicon/networking/software mix may be more diversified than pure accelerator exposure. |
 | QCOM | diversified_supplier / edge_inference | medium-high | watch | Mobile, handset, automotive, PC, and edge-AI inference exposure; needs device-cycle recovery, AI monetization evidence, and RS confirmation. |
 | INTC | cyclical_supplier / foundry_turnaround | high | watch/satellite only | AI PC, x86 server, foundry, and turnaround optionality; execution, margin, roadmap, and competitive risk require strict confirmation. |
+| AMAT | semiconductor_equipment / wafer_fab_equipment | high | user-selected watch / core candidate | AI-driven foundry, logic, DRAM/HBM and advanced-packaging capacity exposure. Validate customer capex, orders/backlog conversion, China/export-control exposure, margins, valuation, liquidity and relative strength before any trade role. Formally added per user request on 2026-07-01. |
 | AMD | cyclical_supplier | high | active reduce-review in current memory | AI accelerator upside but execution and relative strength must confirm; current stop breach requires review. |
 | MRVL | cyclical_supplier / bottleneck | high | existing position, profit-protection bias | Custom silicon/interconnect exposure; high theme upside but crowded and capex-sensitive. |
 | MU | cyclical_supplier | high | watch | Memory cycle leverage; needs storage/memory pricing and RS confirmation. |

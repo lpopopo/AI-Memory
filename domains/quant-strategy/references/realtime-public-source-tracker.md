@@ -2,6 +2,58 @@
 
 This file tracks public, source-specific realtime observations that should not be mixed into Xiaohongshu author views.
 
+## 2026-07-02 20:39 Incremental Realtime / Institutional Monitor
+
+- Strict window: `2026-07-01T18:04:55.498Z` to 2026-07-02 20:39 Beijing time, using automation memory's last successful cutoff.
+- Xiaohongshu: verified new note `6a45e9690000000016027e78`, `存储之后的下个机会，聪明人已经开始关注`; title/body/relative time/author comments visible and all `32/32` carousel originals visually read, gap `0`.
+- `@Kay2289123`: verified `2072513751262404612` (META interpretation and author self-reported 80% reduction), `2072542712205914491` (full memory-tax bypass framework) and reply `2072554591506641280` (optical-interconnect follow-up). Holdings, sales and internal-company statements remain unverified self-report/crowding evidence.
+- `@nvidia`: verified official Isaac ROS posts `2072440109358600197`/`2072440113527664860` and AI-cloud revenue-sharing/credit-support posts `2072545807505527251`/`2072545810881839263`. Added experimental `AI_cloud_credit_support`; contract and risk-sharing economics remain unverified.
+- `@elonmusk`: verified a repost of official SpaceX 1,000th Merlin 1D item `2072464558732824680` and a third-party Tesla Supercharger 2TWh claim `2072408701554897130`; the latter remains medium evidence pending Tesla confirmation. `@realDonaldTrump`: zero visible strict-window items.
+- Institutional checker: AQR, Citadel Securities, GMO and Man Institute each had `0` post-window verified items. All lists were readable; all stable dated details were pre-window. Citadel retained three date-unverified archive/category pages, not an unavailable source.
+- Added `memory_standard_power_shift` to H5 and `AI_cloud_credit_support` to H8 as unproven fields. `decisions.md` unchanged; no trade advice, broker action, order or unconfirmed fill was added.
+- Detailed evidence table: `memory/daily/2026-07-02-realtime-public-institutional-monitor.md`.
+
+## 2026-07-02 Realtime / Institutional Monitor
+
+- Strict window: `2026-06-30T15:50:24.313Z` to `2026-07-01T18:01:02.604Z`, using the automation memory's last successful cutoff.
+- Xiaohongshu: no new profile note. Existing Cerebras note `6a41e1fd00000000170095e6` showed a new page-visible edit time and an author comment saying the conclusion/body had been modified after review. Detail text and `26/26` were visible once, but the note later returned `300031`; current-run post-edit image read was `0/26`, while historical cumulative image verification remains `24/26` with 2 gaps.
+- `@Kay2289123`: verified new interconnect-crowding/self-report posts, semiconductor-equipment capex methodology, memory-substitution follow-ups, and two detailed META compute-resale posts. Added `localized_capacity_mismatch_vs_structural_demand` and `equipment_capex_lead_lag` as unproven H5 fields; self-reported returns/holdings remain crowding evidence only.
+- `@nvidia`: verified an official U.S. AI five-layer thread and a repost of `@NVIDIAAI` reusable motor-control research. `@elonmusk`: verified a Neuralink through-dura statement plus third-party/official reposts on xAI Memphis, Grok voice agents and Neuralink/Optimus. `@realDonaldTrump`: zero visible strict-window items.
+- Institutional checker: AQR, Citadel Securities and GMO had zero post-window verified items. Citadel's `1H 2026 Market Structure & Flows` detail timestamp was 5m37s before cutoff; GMO retained one pre-window list-only/detail-failed candidate. Man verified `The Hard Questions for AI Bonds Investors` on 2026-07-01 and added experimental `AI_credit_funding_fragility`, `cashflow_backstop_separation` and `credit_duration_mismatch` fields.
+- Detailed evidence table: `memory/daily/2026-07-02-realtime-public-institutional-monitor.md`.
+- `decisions.md` unchanged; no trade advice, broker action, order or unconfirmed fill was added.
+
+## 2026-06-30 Realtime / Institutional Monitor
+
+- Strict window: `2026-06-29T14:12:00.000Z` to `2026-06-30T15:50:24.313Z`, using the automation memory's last successful cutoff.
+- Xiaohongshu: no new non-pinned note after the existing Cerebras note `6a41e1fd00000000170095e6`; current detail still showed `26/26`. The prior `24/26` exported-image review and 2-image gap were not counted again.
+- `@Kay2289123`: verified new memory-wall Article `2071640439934074904` plus CBRS/MRVL/ALAB/GLW follow-up posts. The Article adds a capacity-relief versus bandwidth-relief split; performance/holding claims remain author self-report.
+- `@nvidia`: verified Claude on Azure GB300, SIGGRAPH neural rendering/world-model promotion, Palantir secure air-gapped Nemotron, and Blackwell/DeepSeek V4 inference-software efficiency claims.
+- `@elonmusk`: page readable; visible window items were political/cultural, quote-only, or media posts with no readable body. No strategy item added.
+- `@realDonaldTrump`: page readable; latest visible items remained 2026-06-21 or earlier, strict-window count `0`.
+- Institutional checker: AQR, Citadel Securities, GMO and Man Institute list pages were readable and 8 candidates each were checked; all four had `0` post-window verified items. All stable dated details were pre-window.
+- Detailed evidence table: `memory/daily/2026-06-30-realtime-public-institutional-monitor.md`.
+- No stable decision, trade signal, broker action or unconfirmed fill was added.
+
+### 2026-06-30 Xiaohongshu continuation
+
+- Read historical ORCL note `6a2b982f0000000017029b43`, `深入拆解甲骨文, AI Token推理工厂的错配`.
+- Browser evidence: title/body/date/author comments visible; all `22/22` carousel originals exported and read; unread gap `0`.
+- Main reusable observation: `capacity_to_revenue_lag`—power-on starts depreciation before GPU deployment, acceptance, billing and utilization fully ramp. RPO is not cash and contracted GPU share is not live utilization.
+- Added to H5 as an unproven AI-factory quality/capex-cycle hypothesis. No stable rule or direct trade signal added.
+
+## 2026-06-29 Realtime / Institutional Monitor
+
+- Strict window: `2026-06-26T13:59:00.000Z` to 2026-06-29 22:12 Beijing time.
+- Xiaohongshu: new Cerebras note `6a41e1fd00000000170095e6`; title/body/author comment/relative edit time visible. Carousel `26` total; all slides traversed, `24` original images exported and reviewed, `2` original-image download gaps.
+- `@Kay2289123`: verified `2071359522791473185` (memory-wall substitution stack), `2071423413944734166` (Optical HBM), `2071479718315168032` (Google/Meta compute rationing), and `2071488648776958136` (Samsung/SK Hynix capex follow-up).
+- `@nvidia`: verified new Nemotron leaderboard repost, Zaha Hadid local/custom AI case, and NPS/DGX/Omniverse education/synthetic-data post.
+- `@elonmusk`: verified Grok C/C++/GB300 stack claim and Starlink New Zealand rural-share repost; political/cultural items were not strategy-mapped.
+- `@realDonaldTrump`: page readable; latest visible items remained 2026-06-21 or earlier, strict-window count `0`.
+- Institutional checker: AQR, Citadel Securities, GMO and Man Institute list/detail reads succeeded; each had `0` post-window verified framework items. Citadel category pages with no stable date remain candidates, not unavailable sources.
+- Detailed evidence table: `memory/daily/2026-06-29-realtime-public-institutional-monitor.md`.
+- No stable decision, trade signal, broker action or unconfirmed fill was added.
+
 ## 2026-06-26 Realtime / Institutional Monitor
 
 Retrieval window:

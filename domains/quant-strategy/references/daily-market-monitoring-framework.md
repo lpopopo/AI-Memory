@@ -63,6 +63,7 @@ Track current AI infrastructure themes:
 - AI compute / edge inference: NVDA, AMD, AVGO, ARM, QCOM, INTC
 - AI interconnect / optical / networking: MRVL, ALAB, LITE, COHR, CIEN, NOK, GLW
 - AI memory / storage: MU, WDC, STX, SNDK
+- Semiconductor equipment / AI capacity expansion: AMAT, ASML, KLAC, LRCX
 - Cloud / AI factory: AMZN, MSFT, META, GOOGL, ORCL, CRWV, NBIS
 - Space / satellite / edge-AI infrastructure: RKLB, RDW
 - Physical AI / autonomous systems: TSLA, TER, ROK, DE, ISRG
@@ -103,6 +104,8 @@ Required news categories:
 News should not override price and risk controls by itself. Use news to explain moves, identify new watchlist candidates, and decide whether a thesis is strengthened or weakened.
 
 ### 5. Recommended Stock Review
+
+Before reviewing recommendations, load the canonical user-selected universe from `references/user-selected-watchlist.json`. Every full daily scanner/report must include one technical-state row for every tradable canonical symbol, including names that fail V6/V7 filters or have unavailable data. Top-ranked candidate tables are an additional prioritization layer and must not replace full-watchlist coverage.
 
 For every active recommendation:
 

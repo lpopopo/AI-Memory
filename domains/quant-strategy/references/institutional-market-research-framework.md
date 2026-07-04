@@ -8,6 +8,37 @@ This file is a reference framework, not a trade signal. The ideas below should f
 
 ## Source Index
 
+## 2026-07-01 Update: AI Credit Funding Fragility
+
+Source page:
+
+- https://www.man.com/insights/views-from-the-floor-2026-1-july
+
+Verified public item:
+
+- Man Institute published `The Hard Questions for AI Bonds Investors` on 2026-07-01. The official-domain detail page exposed a stable title, date and body. The article separates AI equity upside from bondholders' fixed-coupon exposure to construction delays, cost overruns, competition and long-duration demand uncertainty. It also distinguishes issuers with a cash-generating business backstop from pure-play data-centre, neocloud and leveraged-software issuers.
+
+Reusable framework:
+
+- Add `AI_credit_funding_fragility` under `flow_fragility`: very large AI bond supply can create a substitution effect, forcing wider compensation across lower-quality credit even when equity appetite remains strong.
+- Add `cashflow_backstop_separation` under `AI_quality/capex_cycle`: consolidated market capitalization is not enough; identify which segment actually supplies EBITDA/FCF and whether the AI segment is self-funding.
+- Add `credit_duration_mismatch` under `factor_macro_exposure`: short-dated lenders may accept near-term visibility while long-dated bonds price execution, technology and demand uncertainty more aggressively.
+- Separate `equity_optionality` from `credit_asymmetry`: equity captures upside if the boom succeeds; debt has capped upside and full exposure to delays/failure.
+
+Strategy mapping:
+
+- `market fear gate`: context only; require live HYG/LQD, credit spreads, VIX, breadth and index trend before changing exposure.
+- `flow_fragility`: monitor AI issuance calendar, new-deal concessions, long-end underperformance and spread widening.
+- `AI_quality/capex_cycle`: prefer proven segment cash flow, financing headroom and billable utilization over headline valuation or contracted capacity.
+- `portfolio concentration`: multiple equity holdings can share the same external-financing and AI-capex risk even when they sit in different subthemes.
+- `replay protocol`: compare AI bond issuance events with 1/5/20/60-day HYG/LQD, equity-theme returns, issuer spreads, maximum adverse excursion and financing revisions.
+
+Evidence notes:
+
+- High evidence for official article existence, title, date and body.
+- Medium evidence for strategy transmission because the article's cited issuance forecasts and credit interpretation require primary-market, spread and company-level cash-flow validation.
+- This is an experimental overlay, not a buy/sell signal or stable `decisions.md` rule.
+
 ## 2026-06-17 Update: Policy Hysteresis And AI Listing Fragility
 
 Source pages:

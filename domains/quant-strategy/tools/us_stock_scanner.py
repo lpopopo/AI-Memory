@@ -11,8 +11,8 @@ import pandas as pd
 import numpy as np
 import yfinance as yf
 
-# Watchlist tickers from L1 Memory
-WATCHLIST_TICKERS = [
+# Fallback list for environments where the canonical JSON cannot be read.
+DEFAULT_WATCHLIST_TICKERS = [
     # 1. 存储/内存瓶颈
     "DRAM", "MU", "WDC", "STX", "SNDK",
     # 2. 光互连/定制芯片/光模块
@@ -37,6 +37,28 @@ WATCHLIST_TICKERS = [
     "TTMI"
 ]
 
+WATCHLIST_PATH = Path(
+    "D:/code/AI-Memory/domains/quant-strategy/references/user-selected-watchlist.json"
+)
+
+
+def load_user_watchlist_tickers():
+    try:
+        payload = json.loads(WATCHLIST_PATH.read_text(encoding="utf-8"))
+        tickers = [
+            item["symbol"].strip().upper()
+            for item in payload.get("tickers", [])
+            if item.get("symbol") and item.get("tradable", True)
+        ]
+        if tickers:
+            return list(dict.fromkeys(tickers))
+    except Exception as exc:
+        print(f"Warning: Failed to load canonical user watchlist: {exc}")
+    return DEFAULT_WATCHLIST_TICKERS.copy()
+
+
+WATCHLIST_TICKERS = load_user_watchlist_tickers()
+
 def load_universe_symbols():
     # Read S&P 500 & Nasdaq 100 constituents from cached long-term file
     univ_path = Path("D:/code/AI-Memory/domains/quant-strategy/experiments/2026-05-29-dual-sleeve-backtest/datasets/data_universe/us_stock_universe_2000_2025.csv")
@@ -53,10 +75,9 @@ def load_universe_symbols():
     merged = set(symbols + WATCHLIST_TICKERS)
     # Filter out empty or index symbols
     cleaned = {s.strip().upper() for s in merged if s and s.strip() and not s.startswith("^")}
-    # Remove obsolete symbols if any
+    # Remove benchmark symbols; every canonical user-selected ticker remains.
     cleaned.discard("SPY")
     cleaned.discard("QQQ")
-    cleaned.discard("SNDK") # SNDK was acquired
     return sorted(list(cleaned))
 
 def z_score(values):
@@ -373,6 +394,61 @@ def main():
     for item in top_radar:
         item["fundamentals"] = fundamentals[item["symbol"]]
 
+    # Build a complete analysis block for every formal user-selected symbol.
+    # This is deliberately separate from Top 10 / Top 5 ranking tables so that
+    # weak or repairing watchlist names are still visible in every scan.
+    v6_symbols = {item["symbol"] for item in v6_ranked}
+    radar_symbols = {item["symbol"] for item in radar_ranked}
+    watchlist_analysis = []
+    for symbol in WATCHLIST_TICKERS:
+        if symbol not in p_last.index or pd.isna(p_last.get(symbol)):
+            watchlist_analysis.append({
+                "symbol": symbol,
+                "data_status": "unavailable",
+                "trend_state": "unavailable",
+                "screen_status": "data_unavailable"
+            })
+            continue
+
+        p = p_last[symbol]
+        m50 = ma50_last.get(symbol, np.nan)
+        m200 = ma200_last.get(symbol, np.nan)
+        m21 = mom21_last.get(symbol, np.nan)
+        m63 = mom63_last.get(symbol, np.nan)
+        m126 = mom126_last.get(symbol, np.nan)
+
+        if pd.notna(m50) and pd.notna(m200):
+            if p > m50 and p > m200:
+                trend_state = "above_ma50_ma200"
+            elif p > m200:
+                trend_state = "below_ma50_above_ma200"
+            else:
+                trend_state = "below_ma200"
+        else:
+            trend_state = "insufficient_history"
+
+        if symbol in radar_symbols:
+            screen_status = "double_radar_qualified"
+        elif symbol in v6_symbols:
+            screen_status = "v6_qualified"
+        elif trend_state == "above_ma50_ma200":
+            screen_status = "trend_watch"
+        else:
+            screen_status = "repair_or_defensive_watch"
+
+        watchlist_analysis.append({
+            "symbol": symbol,
+            "data_status": "available",
+            "price": float(p),
+            "ma50": float(m50) if pd.notna(m50) else None,
+            "ma200": float(m200) if pd.notna(m200) else None,
+            "mom21": float(m21) if pd.notna(m21) else None,
+            "mom63": float(m63) if pd.notna(m63) else None,
+            "mom126": float(m126) if pd.notna(m126) else None,
+            "trend_state": trend_state,
+            "screen_status": screen_status
+        })
+
     # Save to JSON
     output_data = {
         "observed_at": latest_dt.strftime("%Y-%m-%d"),
@@ -383,6 +459,8 @@ def main():
             "vix": vix_val,
             "spy_dd_63": spy_dd_63
         },
+        "user_selected_watchlist": WATCHLIST_TICKERS,
+        "watchlist_analysis": watchlist_analysis,
         "v6_candidates": top_v6,
         "radar_candidates": top_radar
     }
@@ -471,6 +549,30 @@ def main():
             )
     else:
         md_lines.append("| - | 没有符合条件的股票或雷达门槛关闭 | - | - | - | - | - | - | - | - | - | - |")
+
+    md_lines.extend([
+        "",
+        "## 4. 正式自选全量分析",
+        f"以下 `{len(WATCHLIST_TICKERS)}` 只标的全部来自统一自选清单。即使未进入 Top 10 / Top 5，也会保留趋势和修复状态。",
+        "",
+        "| 代码 | 现价 | MA50 | MA200 | 21日动量 | 63日动量 | 趋势状态 | 筛选状态 |",
+        "| :--- | ---: | ---: | ---: | ---: | ---: | :--- | :--- |"
+    ])
+
+    for item in watchlist_analysis:
+        if item["data_status"] != "available":
+            md_lines.append(
+                f"| **{item['symbol']}** | N/A | N/A | N/A | N/A | N/A | unavailable | data_unavailable |"
+            )
+            continue
+        ma50_text = f"${item['ma50']:.2f}" if item["ma50"] is not None else "N/A"
+        ma200_text = f"${item['ma200']:.2f}" if item["ma200"] is not None else "N/A"
+        mom21_text = f"{item['mom21']:.2%}" if item["mom21"] is not None else "N/A"
+        mom63_text = f"{item['mom63']:.2%}" if item["mom63"] is not None else "N/A"
+        md_lines.append(
+            f"| **{item['symbol']}** | ${item['price']:.2f} | {ma50_text} | {ma200_text} | "
+            f"{mom21_text} | {mom63_text} | {item['trend_state']} | {item['screen_status']} |"
+        )
 
     md_lines.extend([
         "",
