@@ -136,6 +136,36 @@ Additional validation needed:
 - For HBM upstream, verify Samsung/SK Hynix official capex, actual orders to ASML/AMAT/LRCX/KLAC/DISCO/ASMPT/Hanmi/material suppliers, delivery timing, revenue exposure, valuation, liquidity and post-announcement 5/20/60-day returns.
 - For memory-cost pushback, track DDR/HBM/NAND contract pricing, hyperscaler capex commentary, CXL/compression deployment, realized TCO, and whether memory supplier margin strength leads to downstream demand destruction or architecture substitution.
 
+2026-06-29 evidence update:
+
+- Xiaohongshu note `6a41e1fd00000000170095e6` adds `decoder_latency_specialist`: Cerebras/WSE-style wafer-scale SRAM may excel at low-latency decoder and long Agent chains, but this does not establish superior business quality without concurrency, capacity, cluster scaling, yield, ecosystem, customer concentration, margins and OCF-CapEx evidence.
+- X posts `2071359522791473185` and `2071423413944734166` add `memory_substitution_stack`: HBF, CXL, predictive tiering, SRAM inference and Optical HBM should be compared as complementary paths using end-to-end latency, capacity, power, software migration, reliability and realized TCO.
+- X post `2071479718315168032` adds `compute_rationing`: visible model-access quotas may support alternative compute providers, but could also expose dependence, utilization, financing and margin fragility.
+- X post `2071488648776958136` adds `capex_supply_response`: Samsung/SK Hynix expansion can support upstream tools/materials while reducing medium-term scarcity rents; both directions require official capex and 5/20/60-day price/revenue validation.
+- Xiaohongshu note `6a2b982f0000000017029b43` adds `capacity_to_revenue_lag`: for AI factories, depreciation and operating cost can start at power-on while GPU deployment, testing, customer acceptance, billing and utilization ramp later. Track RPO, powered/installed/accepted/billable capacity, utilization, gross margin, FCF, financing and dilution separately; do not treat contracted capacity as cash or live utilization.
+
+2026-06-30 evidence update:
+
+- X Article `2071640439934074904` adds `capacity_relief_vs_bandwidth_relief`: HBF, CXL/tiering, compression and SRAM-oriented designs should be evaluated for capacity relief separately from PIM/PNM and optical-interconnect bandwidth/power relief.
+- NVIDIA posts `2071654937335926864` and `2071715347581837357` add `secure_sovereign_ai`: Azure-hosted GB300 agent workloads and air-gapped government/critical-infrastructure deployments may represent distinct demand pools, but require contract size, utilization, certification and revenue evidence.
+- NVIDIA post `2071979909199577560` adds `software_efficiency_demand_elasticity`: lower token cost can reduce hardware per unit of inference while expanding total inference demand. Replay must test both effects rather than assume a one-way capex implication.
+- Kay follow-up posts on CBRS/MRVL/ALAB/GLW add a source-attention crowding flag. Author-stated holdings and gains are not verified trades and should enter `theme_crowding / flow_fragility`, not candidate scores.
+
+2026-07-02 evidence update:
+
+- Kay META posts `2072359344705085763` and `2072364009341464877` add `localized_capacity_mismatch_vs_structural_demand`: a company can resell capacity in a region/GPU generation/time bucket while broader demand remains tight. Validate with utilization, rental prices, GPU generation, geography, contract terms and official capex rather than treating either “oversupply” or “shortage” as a universal label.
+- Kay equipment post `2072022672603848988` adds `equipment_capex_lead_lag`: hiring requirements, fab expansion and management Q&A may precede equipment orders and revenue recognition. Validate official capex, orders, backlog, delivery, acceptance, revenue and margins for AMAT/KLAC/LRCX/ASML before ranking.
+- Interconnect/equipment posts repeatedly display self-reported 40%-170% gains, heavy positioning and concentration language. These are `source_attention_crowding` evidence only and must not enter company quality scores or real-account trade memory.
+- Replay the META compute-resale rumor and equipment-capex posts over 1/5/20/60 days versus QQQ/SMH/XSD, recording volume and maximum adverse excursion.
+- Xiaohongshu note `6a45e9690000000016027e78`, verified with `32/32` images, adds `memory_standard_power_shift`: when hyperscalers specify long contracts, interfaces and system architecture, value may migrate from commodity bit production toward standards, controllers, predictive tiering, packaging/foundry and software. Validate JEDEC/OCP/CXL standards, procurement contracts, HBM4 base-die/foundry claims, product qualification, volume and revenue before ranking.
+- The same note reinforces that capacity relief (HBF, CXL, predictive tiering, SRAM) and bandwidth/data-movement relief (PIM/PNM, optical interconnect, 3D integration) are complementary, not interchangeable. Replay and scoring must keep capacity, bandwidth, latency, power, standard maturity and realized TCO separate.
+
+Additional validation needed:
+
+- Build separate score fields for capacity added/saved, bandwidth, latency, power, software migration, reliability, standard maturity and realized TCO.
+- For secure/sovereign AI, track disclosed contract value, GPU count, deployment timing, utilization, software attach and recurring revenue.
+- Replay official performance claims and influencer follow-up posts over 5/20/60 trading days versus QQQ/SMH, including maximum adverse excursion and post-event volume.
+
 ### H6: AI application-layer monitoring may become a separate investable theme
 
 AI application evidence should be tracked separately from GPU, data center, optical, and storage infrastructure. Strong consumer adoption or enterprise AI workflow evidence does not automatically mean more infrastructure buying; it can benefit application software, cloud platforms, inference compute, storage, cybersecurity, or endpoints depending on monetization and cost structure.
@@ -208,6 +238,20 @@ Validation needed:
 - Add `TTMI` under AI infrastructure / PCB / interconnect "shovel seller" monitoring. Validate AI data-center exposure, customer concentration, margin durability, backlog, valuation, liquidity, and trend confirmation.
 - All five are `新增候选/待验证`; none is a buy signal.
 
+2026-07-01 additional watchlist update:
+
+- User formally requested adding `AMAT` to the self-selected monitoring universe.
+- Classify AMAT under semiconductor equipment / wafer-fab equipment / AI capacity expansion, with high semiconductor-capex-cycle sensitivity.
+- Monitor foundry/logic and DRAM/HBM equipment demand, advanced-packaging exposure, customer capex, order/backlog conversion, China/export-control exposure, gross margin, valuation, liquidity, daily trend and relative strength.
+- AMAT was already present in the scanner's technical universe; this update makes it an explicit user-selected watch name. This is not a buy signal.
+
+2026-07-01 canonical watchlist unification:
+
+- User requested that every symbol already present in the codebase manual watchlist become a formal self-selected name and enter routine analysis.
+- Canonical scope is the 31-symbol manual watchlist in `references/user-selected-watchlist.json`, not the separate 516-stock constituent research universe.
+- Full-watchlist analysis must retain weak, repairing and data-unavailable names instead of showing only top-ranked candidates; ranking remains a selection layer, not an inclusion layer.
+- `SPCX` remains context-only because it is not a public tradable ticker.
+
 ## 2026-06-08
 
 ### H7: Institutional flow-fragility overlay can reduce crowded AI drawdown risk
@@ -239,6 +283,18 @@ Validation needed:
 
 - Build a simple scoring sheet for current AI candidates: MRVL, AMD, WDC, STX, MU, AVGO, NVDA, MSFT, GOOGL, AMZN, META, SNOW, CRWD, DDOG, NOW, CRM, ADBE, plus optical/interconnect watch names.
 - Backtest whether quality/capex-cycle labels improve post-signal holding returns and reduce gap-down risk after AI capex scares.
+
+2026-07-01 institutional evidence update:
+
+- Man Institute's official `The Hard Questions for AI Bonds Investors` article adds `cashflow_backstop_separation`: determine which segment supplies EBITDA/FCF and whether an AI buildout is self-funded rather than inferring credit quality from market capitalization.
+- Add `AI_credit_supply_pressure` and `credit_duration_mismatch` to H8 validation. Large AI debt issuance may widen spreads through substitution effects, and long-dated bonds may price construction, technology and demand risk more harshly than short-dated debt.
+- Validation needs issuer-level debt maturity, spreads, capex, billable utilization, segment cash flow, financing revisions and 1/5/20/60-day equity/credit replay before any rule promotion.
+
+2026-07-02 NVIDIA evidence update:
+
+- Official NVIDIA post `2072545807505527251` adds `AI_cloud_credit_support`: NVIDIA says it is using revenue-sharing and credit-support arrangements with AI clouds to deploy multi-tenant AI factories. This may broaden token-compute access, but it may also transmit partner credit, utilization, residual-value and financing risk back toward the platform/supplier.
+- Validate named partners, contract size, GPU ownership, guarantees/credit recourse, utilization, pricing, depreciation/residual value, revenue recognition, cash conversion and defaults before this affects AI quality scores or position roles.
+- Treat the item as a financing/capex-cycle hypothesis linked to `AI_credit_funding_fragility`, not as automatic demand confirmation or a stable decision.
 
 ### H9: Trend-aligned support buys outperform plain dip-buying in the current strategy
 

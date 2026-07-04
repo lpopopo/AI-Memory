@@ -1,0 +1,23 @@
+# 2026-07-03 Holiday Trade Plan
+
+Run time: 2026-07-03 23:15 Asia/Shanghai. NYSE and Nasdaq are closed for Independence Day (observed), so this is a next-session execution-preparation list, not an intraday order sheet. No brokerage login, order submission, real fill, or model fill occurred.
+
+Data basis: local Node Quote Workflow Smoke Test returned structured `Tencent (Primary)` objects at 2026-07-03 23:15 Asia/Shanghai. The objects contain the completed 2026-07-02 session OHLC/volume but no per-object timestamp; quality is `high for cross-sectional direction / medium-high for completed-close use pending the missing 04:15 formal audit`. Yahoo Chart sanity checks show VIX 2026-07-02 close `16.15`; VIX3M metadata `19.04` but its daily bar is zero/missing, so term-structure quality is `medium`.
+
+Working account denominator is estimated NAV `USD 6,027.23`, assuming MRVL `4 @ 263.80` was paid from the prior working cash and none of the older stop items or XLI order has changed broker state. Exact cash, fees, FX and order state require user/broker confirmation.
+
+| Priority | Ticker | Direction | Qty | Target amount / NAV | Reference | Trigger | Stop / reduction line | Invalidation | Reason / risk | State |
+| ---: | --- | --- | ---: | --- | ---: | --- | --- | --- | --- | --- |
+| 0 | GLW | Exit | 2 | USD 393.58 / 6.53% | 196.79 | Prior completed-close stop `220.63 < 227` remains unresolved; execute at next tradable open under the stable rule | `227` completed-close trailing stop | Broker confirms it was already sold | A second weak close increases gap/slippage risk | `real-account pending execution confirmation` |
+| 0 | DRAM | Exit | 4 | USD 242.52 / 4.02% | 60.63 | Prior hard protection `65.86 < 70.50` remains unresolved | `70.50` | Broker confirms prior stop fill | No averaging down; ETF/theme liquidity and structure risk | `real-account pending execution confirmation` |
+| 0 | MXL | Exit | 6 | USD 558.72 / 9.27% | 93.12 | Prior completed-close trailing stop `112.39 < 113.38` remains unresolved | `113.38` monotonic trailing stop | Broker confirms it was already sold | High-beta speculative bottleneck; latest session -17.15% | `real-account pending execution confirmation` |
+| 0 | MU | Exit | 1 | USD 975.56 / 16.19% | 975.56 | Prior completed-close risk breach `1032.28 < 1090/1100` remains unresolved | `1090/1100` | Broker confirms it was already sold | Oversized and high capex-cycle sensitivity | `real-account pending execution confirmation` |
+| 0 | MRVL | Exit | 4 | USD 981.16 / 16.28% | 245.29 | Latest completed session is below the user-confirmed `260` failure rule; formal audit catch-up must verify, then next tradable open is the governing exit path | `260` completed-close failure | Only a broker-confirmed prior sale or an explicit rule change before execution | The new support-zone entry failed immediately; no event-rally override | `real-account exit-review / formal-audit catch-up` |
+| 0 | XLI | Cancel / verify | 2 | USD 367.82 / 6.10% if filled | 183.91 | Confirm `never placed / cancelled / open / filled`; cancel if still open | If filled, existing `<178` completed-close review | Broker confirms no live order | Old order state is still unknown; new buys are frozen | `user/broker confirmation` |
+| 1 | AMD | No buy | 0 | USD 0 | 517.82 | Watch only; latest close is above historical `492` line | Historical `492` | Fresh trend-aligned setup and portfolio capacity | Semiconductor trend remains broken; do not chase | `watch only / repair watch` |
+| 1 | WDC | No buy | 0 | USD 0 | 539.00 | Replay only; about 7.8% above `500` | Historical `500` | Storage breadth and trend repair | Same-theme drawdown; close to historical risk zone | `watch only / defensive near-stop review` |
+| 1 | STX | No buy | 0 | USD 0 | 820.16 | Replay only; latest close is below historical `835` line | Historical `835` | Formal replay rule verification | Historical stop appears breached; not a real holding | `watch only / exit-review replay` |
+
+Institutional overlay: `flow_fragility_state=acute (provisional 13/14)`; `trend_aligned_entry_state=trend_broken (0/5)` for AI-capex; AI quality/capex-cycle is high sensitivity for DRAM/MXL/MU/MRVL and medium for GLW; factor/macro flags are `theme_overlap_high`, `sleeve_correlation_high`, `momentum_reversal_high`, `AI_capex_cycle_high`, while HYG/LQD is stable; bottleneck watch shows optical/interconnect and memory/storage rejection. Action impact: new-buy capacity is `0%`; clear stop risk before any diversification.
+
+Real fills recognized: only previously user-confirmed MRVL `4 @ 263.80`. Pending items above are not fills. No retired-model simulated trade was added.

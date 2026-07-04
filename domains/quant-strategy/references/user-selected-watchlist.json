@@ -1,0 +1,40 @@
+{
+  "updated": "2026-07-01",
+  "scope": "All tradable symbols from the codebase manual watchlist are formal user-selected names and must appear in full-watchlist analysis even when they do not rank in the top candidate tables.",
+  "tickers": [
+    {"symbol": "DRAM", "theme": "memory_storage"},
+    {"symbol": "MU", "theme": "memory_storage"},
+    {"symbol": "WDC", "theme": "memory_storage"},
+    {"symbol": "STX", "theme": "memory_storage"},
+    {"symbol": "SNDK", "theme": "memory_storage"},
+    {"symbol": "MRVL", "theme": "interconnect_custom_silicon"},
+    {"symbol": "AVGO", "theme": "interconnect_custom_silicon"},
+    {"symbol": "ALAB", "theme": "interconnect_custom_silicon"},
+    {"symbol": "COHR", "theme": "optical_interconnect"},
+    {"symbol": "LITE", "theme": "optical_interconnect"},
+    {"symbol": "AAOI", "theme": "optical_interconnect"},
+    {"symbol": "MXL", "theme": "optical_interconnect"},
+    {"symbol": "AXTI", "theme": "optical_interconnect"},
+    {"symbol": "CRDO", "theme": "interconnect_transmission"},
+    {"symbol": "SMCI", "theme": "ai_server_rack"},
+    {"symbol": "ORCL", "theme": "ai_factory_cloud"},
+    {"symbol": "TER", "theme": "semiconductor_test"},
+    {"symbol": "ASML", "theme": "semiconductor_equipment"},
+    {"symbol": "AMAT", "theme": "semiconductor_equipment"},
+    {"symbol": "KLAC", "theme": "semiconductor_equipment"},
+    {"symbol": "LRCX", "theme": "semiconductor_equipment"},
+    {"symbol": "RKLB", "theme": "space_satellite"},
+    {"symbol": "RDW", "theme": "space_satellite"},
+    {"symbol": "TSLA", "theme": "physical_ai_autonomy"},
+    {"symbol": "QCOM", "theme": "edge_inference"},
+    {"symbol": "NVDA", "theme": "ai_compute"},
+    {"symbol": "AMD", "theme": "ai_compute"},
+    {"symbol": "INTC", "theme": "ai_compute_foundry"},
+    {"symbol": "GLW", "theme": "optical_network"},
+    {"symbol": "NOK", "theme": "network_infrastructure"},
+    {"symbol": "TTMI", "theme": "pcb_electronics_manufacturing"}
+  ],
+  "context_only": [
+    {"symbol": "SPCX", "theme": "space_launch_starlink_sentiment", "tradable": false}
+  ]
+}
