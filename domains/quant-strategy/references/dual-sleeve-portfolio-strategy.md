@@ -1,5 +1,11 @@
 # Dual-Sleeve Portfolio Strategy
 
+> **Research-only after the 2026-07-03 V8 audit.** Corrected ETF-sleeve tests did
+> not beat SPY/QQQ benchmarks out of sample, while individual-stock V5/V7 results
+> retain survivorship bias. This document describes a research architecture, not
+> the currently validated portfolio engine. The promoted defensive baseline is
+> the V8 SPY/QQQ trend core in `us-stock-strategy-blueprint.md`.
+
 This document defines the improved 50/50 US-stock strategy:
 
 - 50% value-investing sleeve.

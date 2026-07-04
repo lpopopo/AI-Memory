@@ -1,5 +1,9 @@
 # V5, V6, and V7 Performance Comparison (20-Year Backtest)
 
+> **Superseded / audit history only.** Current-constituent survivorship bias and
+> legacy accounting prevent these figures from supporting decisions. Use
+> `v8_model_optimization_report.md` for the current model status.
+
 This report compares the V5, V6, and V7 versions of the quant strategy over a 20-year backtest window from **2006-01-01** to **2025-12-30** (exactly 5030 trading days).
 
 ## Performance Table (2006-2025)

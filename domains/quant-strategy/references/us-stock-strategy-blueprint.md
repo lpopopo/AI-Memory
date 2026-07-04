@@ -1,5 +1,28 @@
 # US Stock Strategy Blueprint
 
+> **Current validated baseline (V8, 2026-07-03):** The only promoted portfolio
+> return engine is the defensive SPY/QQQ trend core described below. V5/V7 stock
+> selection, Double Radar, Pattern C, institutional/news overlays, and the legacy
+> 50/50 dual-sleeve model are research scanners until point-in-time-universe tests
+> demonstrate incremental portfolio value. See
+> `experiments/2026-05-29-dual-sleeve-backtest/results/v8_model_optimization_report.md`.
+
+## V8 Defensive Core
+
+- Base allocation: 50% SPY and 50% QQQ.
+- Review at each month-end using only completed-close data.
+- For each ETF independently, half of its base weight is enabled above MA150 and
+  half above MA200. Above both means full base weight; below both means cash.
+- Execute the target at the next session close in research/backtests. Live orders
+  require a separately stated executable price and user/broker confirmation.
+- Keep unallocated capital in cash; do not use leverage.
+- This is a drawdown-control baseline, not an alpha claim: in the frozen
+  2019-2025 report period it returned 14.20% CAGR with -22.69% max drawdown and
+  0.97 Sharpe, versus 20.09%, -30.86%, and 0.96 for static 50/50 SPY/QQQ.
+- Existing real-account holdings are not automatically liquidated or replaced by
+  V8. Position stops, account constraints, and confirmed broker state remain the
+  execution authority.
+
 This document defines the initial strategy direction for 量外策略 with US equities as the primary target market.
 
 ## Scope
@@ -133,7 +156,7 @@ Exit when any are true:
 
 ## Portfolio Construction
 
-Default version (V5 Architecture):
+Legacy research version (V5 Architecture; not validated for portfolio returns):
 
 - Long-only, highly concentrated.
 - Dual-sleeve portfolio: Value/Cash defensive sleeve vs Hot-industry momentum sleeve.

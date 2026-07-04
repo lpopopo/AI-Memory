@@ -4,3 +4,6 @@ results/*.json
 .venv/
 __pycache__/
 scripts/__pycache__/
+datasets/data_point_in_time/
+datasets/data_v81/
+datasets/data_v9/

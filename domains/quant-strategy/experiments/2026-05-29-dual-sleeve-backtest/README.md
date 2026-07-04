@@ -1,5 +1,68 @@
 # Dual-Sleeve 10-Year Backtest
 
+## V9 information-driven research strategy
+
+V9 is an independent, non-promoted full-account research model. Timestamped public-content events generate candidates; two-day price confirmation, scoring, concentration limits, stops, and portfolio drawdown breakers control execution. Formal V8 remains unchanged.
+
+Operational outputs include `results/v9_execution_playbook.md`, `results/v9_information_funnel_report.md`, and the point-in-time event study CSV. The live signal now distinguishes qualified trades from watchlist names and reports each candidate's remaining score gap without lowering the 70-point entry threshold.
+
+`scripts/run_v9_daily_execution.py` produces a human-review daily target and an append-only frozen forward ledger. It is deliberately not connected to a broker.
+
+Point-in-time primary-evidence upgrades live in `datasets/v9_evidence_updates.json`. Only filings, earnings releases, company investor-relations material, and regulator filings are accepted; repeated commentary cannot stack validation points.
+
+```bash
+python scripts/download_v9_data.py
+python scripts/validate_v9_information_strategy.py
+python scripts/v9_signal.py --json
+```
+
+The tracked event store is `datasets/v9_information_events.json`. Missing publication timestamps use `first_seen_at`; fewer than 50 reliable events disables optimization and promotion. A non-healthy source state blocks new information entries but never disables price stops on existing positions.
+
+> **V8 audit status (2026-07-03):** Legacy V5/V6/V7 performance reports are not
+> decision-grade because the stock universe is not point-in-time. The authoritative
+> current result is `results/v8_model_optimization_report.md`; the robust engine is
+> `scripts/robust_portfolio_engine.py` with tests in
+> `scripts/test_robust_portfolio_engine.py`.
+
+Reproduce the V8 audit and print the latest completed-bar target:
+
+```bash
+source .venv/bin/activate
+python -m unittest -v scripts/test_robust_portfolio_engine.py
+python scripts/optimize_v8_robust.py
+python scripts/optimize_v8_etf.py
+python scripts/optimize_v8_core.py
+python scripts/write_v8_report.py
+python scripts/v8_signal.py
+```
+
+Re-run V5 with point-in-time S&P 500/Nasdaq-100 membership:
+
+```bash
+pip install index-constitution==0.6.1
+python scripts/build_point_in_time_data.py
+python -m unittest -v scripts/test_v5_point_in_time.py
+python scripts/backtest_v5_point_in_time.py
+python scripts/write_v5_point_in_time_report.py
+```
+
+The authoritative result is `results/v5_point_in_time_report.md`. Free Yahoo
+prices still omit 212 of 940 historical symbols, so this materially reduces but
+does not claim to eliminate survivorship bias.
+
+Research the non-promoted V8.1 dynamic QQQ/VT enhancement sleeve:
+
+```bash
+python -m unittest -v scripts/test_v81_dynamic_enhancer.py
+python scripts/optimize_v81_dynamic.py
+python scripts/write_v81_report.py
+python scripts/v8_signal.py --version v8.1 --json
+```
+
+V8.1 is promoted only when every hard gate in
+`results/v81_dynamic_optimization_report.md` passes. Otherwise the live/default
+signal remains `python scripts/v8_signal.py --version v8`.
+
 This experiment validates the current US-stock strategy with approximately 10 years of daily data.
 
 ## Purpose

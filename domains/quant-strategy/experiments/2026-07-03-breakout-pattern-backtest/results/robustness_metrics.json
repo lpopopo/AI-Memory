@@ -1,0 +1,4972 @@
+{
+  "method": {
+    "generated_at": "2026-07-03T11:34:26.033450+08:00",
+    "oos_start": "2019-01-01",
+    "bootstrap": "ticker-clustered, n=2000, seed=20260703",
+    "portfolio_max_positions": 10,
+    "entry": "signal close, next-session open",
+    "stop_fill": "stop price, or adverse gap open"
+  },
+  "patterns": {
+    "A": {
+      "full": {
+        "unfiltered": {
+          "all": {
+            "trades": 1495,
+            "win_rate_pct": 45.21739130434783,
+            "mean_pct": 0.22764790486815029,
+            "median_pct": -0.2874082092978654,
+            "profit_factor": 1.2050273554363877
+          },
+          "in_sample_2006_2018": {
+            "trades": 1048,
+            "win_rate_pct": 45.896946564885496,
+            "mean_pct": 0.20423275825663853,
+            "median_pct": -0.22414100912691304,
+            "profit_factor": 1.1989960512834514
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 447,
+            "win_rate_pct": 43.624161073825505,
+            "mean_pct": 0.28254516135330554,
+            "median_pct": -0.41039641490346007,
+            "profit_factor": 1.2161285630629324,
+            "mean_ci95_pct": [
+              -0.061340355538786,
+              0.6362423050938721
+            ],
+            "prob_mean_positive": 0.944,
+            "portfolio": {
+              "accepted_trades": 429,
+              "skipped_capacity_or_duplicate": 18,
+              "max_positions": 10,
+              "cagr_pct": 1.4501246204759566,
+              "max_drawdown_pct": 8.526894141135056,
+              "sharpe": -0.312686392937235,
+              "final_equity": 1.103822704396653,
+              "average_exposure_pct": 15.350318471337493
+            },
+            "by_year": {
+              "2019": {
+                "trades": 87,
+                "win_rate_pct": 47.12643678160919,
+                "mean_pct": 0.15067454371919062,
+                "median_pct": -0.04254166018946655,
+                "profit_factor": 1.1459958227079337
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 38.46153846153847,
+                "mean_pct": 0.20535035964081408,
+                "median_pct": -0.8421161120781121,
+                "profit_factor": 1.1241434785534812
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 36.0,
+                "mean_pct": -0.387043848697466,
+                "median_pct": -0.9456644430458183,
+                "profit_factor": 0.7578968814035909
+              },
+              "2022": {
+                "trades": 23,
+                "win_rate_pct": 30.434782608695656,
+                "mean_pct": -0.9534091881517137,
+                "median_pct": -1.2673742573305076,
+                "profit_factor": 0.49832064196313824
+              },
+              "2023": {
+                "trades": 82,
+                "win_rate_pct": 48.78048780487805,
+                "mean_pct": 1.3749212023962543,
+                "median_pct": -0.04255248373042566,
+                "profit_factor": 2.5422764888227642
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 44.0,
+                "mean_pct": 0.0706710854701269,
+                "median_pct": -0.726181621837994,
+                "profit_factor": 1.0431295215802603
+              },
+              "2025": {
+                "trades": 53,
+                "win_rate_pct": 50.943396226415096,
+                "mean_pct": 0.6683700583600506,
+                "median_pct": 0.004584682112300682,
+                "profit_factor": 1.7236017584197403
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 1416,
+            "win_rate_pct": 45.33898305084746,
+            "mean_pct": 0.23137048564884607,
+            "median_pct": -0.2823464267304691,
+            "profit_factor": 1.2097203910114038
+          },
+          "in_sample_2006_2018": {
+            "trades": 987,
+            "win_rate_pct": 46.20060790273556,
+            "mean_pct": 0.23701257807877282,
+            "median_pct": -0.2205726786977704,
+            "profit_factor": 1.233839154866415
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 429,
+            "win_rate_pct": 43.35664335664335,
+            "mean_pct": 0.21838972754083283,
+            "median_pct": -0.4201377034108958,
+            "profit_factor": 1.166770969832414,
+            "mean_ci95_pct": [
+              -0.13457792214189612,
+              0.5940489081120819
+            ],
+            "prob_mean_positive": 0.883,
+            "portfolio": {
+              "accepted_trades": 413,
+              "skipped_capacity_or_duplicate": 16,
+              "max_positions": 10,
+              "cagr_pct": 0.9826788092287764,
+              "max_drawdown_pct": 8.52689414113501,
+              "sharpe": -0.423295845230027,
+              "final_equity": 1.0691659128256472,
+              "average_exposure_pct": 14.433468913422354
+            },
+            "by_year": {
+              "2019": {
+                "trades": 85,
+                "win_rate_pct": 45.88235294117647,
+                "mean_pct": 0.015206188022391471,
+                "median_pct": -0.15805026633875222,
+                "profit_factor": 1.0143952951596118
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 38.46153846153847,
+                "mean_pct": 0.20535035964081408,
+                "median_pct": -0.8421161120781121,
+                "profit_factor": 1.1241434785534812
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 36.0,
+                "mean_pct": -0.387043848697466,
+                "median_pct": -0.9456644430458183,
+                "profit_factor": 0.7578968814035909
+              },
+              "2022": {
+                "trades": 11,
+                "win_rate_pct": 36.36363636363637,
+                "mean_pct": -1.4567894742903753,
+                "median_pct": -1.2673742573305076,
+                "profit_factor": 0.24161081264387818
+              },
+              "2023": {
+                "trades": 79,
+                "win_rate_pct": 46.835443037974684,
+                "mean_pct": 1.1819256421993893,
+                "median_pct": -0.11606117568015582,
+                "profit_factor": 2.277285031348554
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 44.0,
+                "mean_pct": 0.0706710854701269,
+                "median_pct": -0.726181621837994,
+                "profit_factor": 1.0431295215802603
+              },
+              "2025": {
+                "trades": 52,
+                "win_rate_pct": 50.0,
+                "mean_pct": 0.5403646953323942,
+                "median_pct": -0.024521746255838976,
+                "profit_factor": 1.5739804073784536
+              }
+            }
+          }
+        }
+      },
+      "no_false_breakout_exit": {
+        "unfiltered": {
+          "all": {
+            "trades": 1495,
+            "win_rate_pct": 50.36789297658862,
+            "mean_pct": 0.2988961336747758,
+            "median_pct": 0.017948472108271454,
+            "profit_factor": 1.256432314725611
+          },
+          "in_sample_2006_2018": {
+            "trades": 1048,
+            "win_rate_pct": 50.76335877862596,
+            "mean_pct": 0.28410876721542777,
+            "median_pct": 0.04727679730749026,
+            "profit_factor": 1.2696184623078939
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 447,
+            "win_rate_pct": 49.44071588366891,
+            "mean_pct": 0.33356539553024933,
+            "median_pct": -0.014780043425498983,
+            "profit_factor": 1.2336168234730418,
+            "mean_ci95_pct": [
+              -0.09023288833621348,
+              0.7250650310086415
+            ],
+            "prob_mean_positive": 0.941,
+            "portfolio": {
+              "accepted_trades": 423,
+              "skipped_capacity_or_duplicate": 24,
+              "max_positions": 10,
+              "cagr_pct": 1.4437278891864747,
+              "max_drawdown_pct": 10.424980796461947,
+              "sharpe": -0.27019383628716087,
+              "final_equity": 1.103345268092051,
+              "average_exposure_pct": 18.204979733642162
+            },
+            "by_year": {
+              "2019": {
+                "trades": 87,
+                "win_rate_pct": 52.87356321839081,
+                "mean_pct": 0.07850631413118342,
+                "median_pct": 0.3877857822858063,
+                "profit_factor": 1.0659656294608
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 42.30769230769231,
+                "mean_pct": -0.13791035909462843,
+                "median_pct": -0.7057556899911676,
+                "profit_factor": 0.9340753098924349
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 44.0,
+                "mean_pct": -0.25529875931290497,
+                "median_pct": -0.39869581858274283,
+                "profit_factor": 0.8413134646385263
+              },
+              "2022": {
+                "trades": 23,
+                "win_rate_pct": 34.78260869565217,
+                "mean_pct": -1.288600687092657,
+                "median_pct": -0.8441879076688603,
+                "profit_factor": 0.437484929829085
+              },
+              "2023": {
+                "trades": 82,
+                "win_rate_pct": 57.3170731707317,
+                "mean_pct": 1.6914304305470091,
+                "median_pct": 0.3909810871157455,
+                "profit_factor": 2.9420791887009172
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 49.333333333333336,
+                "mean_pct": 0.35789612900533607,
+                "median_pct": -0.21146962219421436,
+                "profit_factor": 1.2096802708879963
+              },
+              "2025": {
+                "trades": 53,
+                "win_rate_pct": 52.83018867924528,
+                "mean_pct": 0.6168063946579854,
+                "median_pct": 0.12762306497114545,
+                "profit_factor": 1.615198229198567
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 1416,
+            "win_rate_pct": 50.56497175141242,
+            "mean_pct": 0.3061665419301299,
+            "median_pct": 0.04255447127216449,
+            "profit_factor": 1.2650951303931914
+          },
+          "in_sample_2006_2018": {
+            "trades": 987,
+            "win_rate_pct": 51.16514690982776,
+            "mean_pct": 0.316665007948662,
+            "median_pct": 0.07496522201675768,
+            "profit_factor": 1.3047829580187378
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 429,
+            "win_rate_pct": 49.184149184149184,
+            "mean_pct": 0.2820127285028776,
+            "median_pct": -0.018033039953714254,
+            "profit_factor": 1.1983648911234694,
+            "mean_ci95_pct": [
+              -0.14615812043899207,
+              0.7032290143988292
+            ],
+            "prob_mean_positive": 0.8985,
+            "portfolio": {
+              "accepted_trades": 407,
+              "skipped_capacity_or_duplicate": 22,
+              "max_positions": 10,
+              "cagr_pct": 1.044199907812171,
+              "max_drawdown_pct": 10.424980796462059,
+              "sharpe": -0.35382243268261016,
+              "final_equity": 1.073628606217134,
+              "average_exposure_pct": 17.158628704241703
+            },
+            "by_year": {
+              "2019": {
+                "trades": 85,
+                "win_rate_pct": 51.76470588235295,
+                "mean_pct": -0.058660117555921786,
+                "median_pct": 0.37327611156969065,
+                "profit_factor": 0.9518434101517615
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 42.30769230769231,
+                "mean_pct": -0.13791035909462843,
+                "median_pct": -0.7057556899911676,
+                "profit_factor": 0.9340753098924349
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 44.0,
+                "mean_pct": -0.25529875931290497,
+                "median_pct": -0.39869581858274283,
+                "profit_factor": 0.8413134646385263
+              },
+              "2022": {
+                "trades": 11,
+                "win_rate_pct": 36.36363636363637,
+                "mean_pct": -1.749624177928407,
+                "median_pct": -1.2673742573305076,
+                "profit_factor": 0.20965032347390558
+              },
+              "2023": {
+                "trades": 79,
+                "win_rate_pct": 55.69620253164557,
+                "mean_pct": 1.5104542081280208,
+                "median_pct": 0.3615009610444372,
+                "profit_factor": 2.6708351266319874
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 49.333333333333336,
+                "mean_pct": 0.35789612900533607,
+                "median_pct": -0.21146962219421436,
+                "profit_factor": 1.2096802708879963
+              },
+              "2025": {
+                "trades": 52,
+                "win_rate_pct": 51.92307692307693,
+                "mean_pct": 0.4878094227129816,
+                "median_pct": 0.06610387354172306,
+                "profit_factor": 1.477357629563837
+              }
+            }
+          }
+        }
+      },
+      "no_trailing_stop": {
+        "unfiltered": {
+          "all": {
+            "trades": 1495,
+            "win_rate_pct": 45.21739130434783,
+            "mean_pct": 0.24037927511032423,
+            "median_pct": -0.2874082092978654,
+            "profit_factor": 1.2164936554374628
+          },
+          "in_sample_2006_2018": {
+            "trades": 1048,
+            "win_rate_pct": 45.896946564885496,
+            "mean_pct": 0.21032134248023174,
+            "median_pct": -0.22414100912691304,
+            "profit_factor": 1.2049285188696712
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 447,
+            "win_rate_pct": 43.624161073825505,
+            "mean_pct": 0.31085066973300196,
+            "median_pct": -0.41039641490346007,
+            "profit_factor": 1.237780425100024,
+            "mean_ci95_pct": [
+              -0.05700086449375154,
+              0.6837227141024417
+            ],
+            "prob_mean_positive": 0.9505,
+            "portfolio": {
+              "accepted_trades": 429,
+              "skipped_capacity_or_duplicate": 18,
+              "max_positions": 10,
+              "cagr_pct": 1.6355925240713942,
+              "max_drawdown_pct": 8.600360223865822,
+              "sharpe": -0.26976551920795305,
+              "final_equity": 1.1177425279885174,
+              "average_exposure_pct": 15.414012738853419
+            },
+            "by_year": {
+              "2019": {
+                "trades": 87,
+                "win_rate_pct": 47.12643678160919,
+                "mean_pct": 0.14115308234001137,
+                "median_pct": -0.04254166018946655,
+                "profit_factor": 1.1367700201727307
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 38.46153846153847,
+                "mean_pct": 0.20535035964081408,
+                "median_pct": -0.8421161120781121,
+                "profit_factor": 1.1241434785534812
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 36.0,
+                "mean_pct": -0.20729812355462754,
+                "median_pct": -0.9456644430458183,
+                "profit_factor": 0.8703311721381001
+              },
+              "2022": {
+                "trades": 23,
+                "win_rate_pct": 30.434782608695656,
+                "mean_pct": -0.9534091881517137,
+                "median_pct": -1.2673742573305076,
+                "profit_factor": 0.49832064196313824
+              },
+              "2023": {
+                "trades": 82,
+                "win_rate_pct": 48.78048780487805,
+                "mean_pct": 1.3749212023962543,
+                "median_pct": -0.04255248373042566,
+                "profit_factor": 2.5422764888227642
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 44.0,
+                "mean_pct": 0.0706710854701269,
+                "median_pct": -0.726181621837994,
+                "profit_factor": 1.0431295215802603
+              },
+              "2025": {
+                "trades": 53,
+                "win_rate_pct": 50.943396226415096,
+                "mean_pct": 0.6683700583600506,
+                "median_pct": 0.004584682112300682,
+                "profit_factor": 1.7236017584197403
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 1416,
+            "win_rate_pct": 45.33898305084746,
+            "mean_pct": 0.24481215126470066,
+            "median_pct": -0.2823464267304691,
+            "profit_factor": 1.221904275921772
+          },
+          "in_sample_2006_2018": {
+            "trades": 987,
+            "win_rate_pct": 46.20060790273556,
+            "mean_pct": 0.2434774577812305,
+            "median_pct": -0.2205726786977704,
+            "profit_factor": 1.2402174746087253
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 429,
+            "win_rate_pct": 43.35664335664335,
+            "mean_pct": 0.24788287962876832,
+            "median_pct": -0.4201377034108958,
+            "profit_factor": 1.1892930986546146,
+            "mean_ci95_pct": [
+              -0.12811639064431474,
+              0.6628032967994449
+            ],
+            "prob_mean_positive": 0.898,
+            "portfolio": {
+              "accepted_trades": 413,
+              "skipped_capacity_or_duplicate": 16,
+              "max_positions": 10,
+              "cagr_pct": 1.1678839207002856,
+              "max_drawdown_pct": 8.600360223865778,
+              "sharpe": -0.3780689014914029,
+              "final_equity": 1.0826486948319316,
+              "average_exposure_pct": 14.4973852411388
+            },
+            "by_year": {
+              "2019": {
+                "trades": 85,
+                "win_rate_pct": 45.88235294117647,
+                "mean_pct": 0.005460692257819766,
+                "median_pct": -0.15805026633875222,
+                "profit_factor": 1.0051694926244086
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 38.46153846153847,
+                "mean_pct": 0.20535035964081408,
+                "median_pct": -0.8421161120781121,
+                "profit_factor": 1.1241434785534812
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 36.0,
+                "mean_pct": -0.20729812355462754,
+                "median_pct": -0.9456644430458183,
+                "profit_factor": 0.8703311721381001
+              },
+              "2022": {
+                "trades": 11,
+                "win_rate_pct": 36.36363636363637,
+                "mean_pct": -1.4567894742903753,
+                "median_pct": -1.2673742573305076,
+                "profit_factor": 0.24161081264387818
+              },
+              "2023": {
+                "trades": 79,
+                "win_rate_pct": 46.835443037974684,
+                "mean_pct": 1.1819256421993893,
+                "median_pct": -0.11606117568015582,
+                "profit_factor": 2.277285031348554
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 44.0,
+                "mean_pct": 0.0706710854701269,
+                "median_pct": -0.726181621837994,
+                "profit_factor": 1.0431295215802603
+              },
+              "2025": {
+                "trades": 52,
+                "win_rate_pct": 50.0,
+                "mean_pct": 0.5403646953323942,
+                "median_pct": -0.024521746255838976,
+                "profit_factor": 1.5739804073784536
+              }
+            }
+          }
+        }
+      },
+      "no_shooting_star": {
+        "unfiltered": {
+          "all": {
+            "trades": 1495,
+            "win_rate_pct": 45.1505016722408,
+            "mean_pct": 0.2733462372022636,
+            "median_pct": -0.2895018941523068,
+            "profit_factor": 1.2410640466803964
+          },
+          "in_sample_2006_2018": {
+            "trades": 1048,
+            "win_rate_pct": 46.087786259541986,
+            "mean_pct": 0.22346593998522996,
+            "median_pct": -0.21800144211068048,
+            "profit_factor": 1.212482580987444
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 447,
+            "win_rate_pct": 42.95302013422819,
+            "mean_pct": 0.390291542534369,
+            "median_pct": -0.4431489970609642,
+            "profit_factor": 1.2941837738569746,
+            "mean_ci95_pct": [
+              -0.012417534864425386,
+              0.820164528844981
+            ],
+            "prob_mean_positive": 0.97,
+            "portfolio": {
+              "accepted_trades": 428,
+              "skipped_capacity_or_duplicate": 19,
+              "max_positions": 10,
+              "cagr_pct": 1.9936800002483102,
+              "max_drawdown_pct": 8.467215557375951,
+              "sharpe": -0.18489680190057767,
+              "final_equity": 1.145042514874972,
+              "average_exposure_pct": 16.149392009264595
+            },
+            "by_year": {
+              "2019": {
+                "trades": 87,
+                "win_rate_pct": 45.97701149425287,
+                "mean_pct": 0.23748143821496498,
+                "median_pct": -0.09595981428495345,
+                "profit_factor": 1.2282041960188868
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 38.46153846153847,
+                "mean_pct": 0.1757712762341998,
+                "median_pct": -0.8421161120781121,
+                "profit_factor": 1.1064979679045652
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 34.66666666666667,
+                "mean_pct": -0.37878635900172253,
+                "median_pct": -1.0116984879454154,
+                "profit_factor": 0.7732264978579207
+              },
+              "2022": {
+                "trades": 23,
+                "win_rate_pct": 26.08695652173913,
+                "mean_pct": -1.4303007232233433,
+                "median_pct": -0.8441879076688603,
+                "profit_factor": 0.3756096509596445
+              },
+              "2023": {
+                "trades": 82,
+                "win_rate_pct": 48.78048780487805,
+                "mean_pct": 1.569081398150178,
+                "median_pct": -0.04255248373042566,
+                "profit_factor": 2.837701742431255
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 44.0,
+                "mean_pct": 0.4205375481931493,
+                "median_pct": -0.726181621837994,
+                "profit_factor": 1.2634043077810588
+              },
+              "2025": {
+                "trades": 53,
+                "win_rate_pct": 50.943396226415096,
+                "mean_pct": 0.8634005815178851,
+                "median_pct": 0.004584682112300682,
+                "profit_factor": 1.9347489032346972
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 1416,
+            "win_rate_pct": 45.2683615819209,
+            "mean_pct": 0.27909110956535704,
+            "median_pct": -0.2792245321929763,
+            "profit_factor": 1.2475662803279228
+          },
+          "in_sample_2006_2018": {
+            "trades": 987,
+            "win_rate_pct": 46.30192502532928,
+            "mean_pct": 0.2540815277429311,
+            "median_pct": -0.2153313502706393,
+            "profit_factor": 1.244320831416609
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 429,
+            "win_rate_pct": 42.89044289044289,
+            "mean_pct": 0.3366306369749941,
+            "median_pct": -0.4431489970609642,
+            "profit_factor": 1.2534117628067911,
+            "mean_ci95_pct": [
+              -0.06444594829950336,
+              0.7981692272833836
+            ],
+            "prob_mean_positive": 0.9415,
+            "portfolio": {
+              "accepted_trades": 412,
+              "skipped_capacity_or_duplicate": 17,
+              "max_positions": 10,
+              "cagr_pct": 1.563365618045709,
+              "max_drawdown_pct": 8.048668807803661,
+              "sharpe": -0.2789966569891688,
+              "final_equity": 1.1119261334576813,
+              "average_exposure_pct": 15.22951772225445
+            },
+            "by_year": {
+              "2019": {
+                "trades": 85,
+                "win_rate_pct": 44.70588235294118,
+                "mean_pct": 0.1040555976827723,
+                "median_pct": -0.15805026633875222,
+                "profit_factor": 1.0976920170025082
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 38.46153846153847,
+                "mean_pct": 0.1757712762341998,
+                "median_pct": -0.8421161120781121,
+                "profit_factor": 1.1064979679045652
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 34.66666666666667,
+                "mean_pct": -0.37878635900172253,
+                "median_pct": -1.0116984879454154,
+                "profit_factor": 0.7732264978579207
+              },
+              "2022": {
+                "trades": 11,
+                "win_rate_pct": 36.36363636363637,
+                "mean_pct": -2.2209519785928884,
+                "median_pct": -0.5193994929250906,
+                "profit_factor": 0.1728489301979999
+              },
+              "2023": {
+                "trades": 79,
+                "win_rate_pct": 46.835443037974684,
+                "mean_pct": 1.3834590099439685,
+                "median_pct": -0.11606117568015582,
+                "profit_factor": 2.5610222321576024
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 44.0,
+                "mean_pct": 0.4205375481931493,
+                "median_pct": -0.726181621837994,
+                "profit_factor": 1.2634043077810588
+              },
+              "2025": {
+                "trades": 52,
+                "win_rate_pct": 50.0,
+                "mean_pct": 0.7391458054740333,
+                "median_pct": -0.024521746255838976,
+                "profit_factor": 1.7851275521934107
+              }
+            }
+          }
+        }
+      },
+      "no_time_stop": {
+        "unfiltered": {
+          "all": {
+            "trades": 1495,
+            "win_rate_pct": 47.22408026755853,
+            "mean_pct": 0.9773471696351171,
+            "median_pct": -0.36267569749786444,
+            "profit_factor": 1.5220198376420366
+          },
+          "in_sample_2006_2018": {
+            "trades": 1048,
+            "win_rate_pct": 48.282442748091604,
+            "mean_pct": 1.0933880013757376,
+            "median_pct": -0.2746989989930891,
+            "profit_factor": 1.6217212581418075
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 447,
+            "win_rate_pct": 44.742729306487696,
+            "mean_pct": 0.7052872330262355,
+            "median_pct": -0.7874880547137608,
+            "profit_factor": 1.3297943753324153,
+            "mean_ci95_pct": [
+              0.14679156837003063,
+              1.2145634808064603
+            ],
+            "prob_mean_positive": 0.997,
+            "portfolio": {
+              "accepted_trades": 384,
+              "skipped_capacity_or_duplicate": 63,
+              "max_positions": 10,
+              "cagr_pct": 2.94557176288881,
+              "max_drawdown_pct": 13.398951151583082,
+              "sharpe": 0.02161295394564166,
+              "final_equity": 1.2225349962807042,
+              "average_exposure_pct": 31.39494833524687
+            },
+            "by_year": {
+              "2019": {
+                "trades": 87,
+                "win_rate_pct": 47.12643678160919,
+                "mean_pct": 0.4821140697995504,
+                "median_pct": -0.04254166018946655,
+                "profit_factor": 1.2485988504284184
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 38.46153846153847,
+                "mean_pct": 0.09586106768608245,
+                "median_pct": -1.3528167091623804,
+                "profit_factor": 1.0341464177615298
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 44.0,
+                "mean_pct": 0.34169590270796324,
+                "median_pct": -1.2423084655376104,
+                "profit_factor": 1.1584921477057812
+              },
+              "2022": {
+                "trades": 23,
+                "win_rate_pct": 17.391304347826086,
+                "mean_pct": -1.6906201483428225,
+                "median_pct": -2.463934032176169,
+                "profit_factor": 0.4044445519269211
+              },
+              "2023": {
+                "trades": 82,
+                "win_rate_pct": 46.34146341463415,
+                "mean_pct": 1.2688645116942858,
+                "median_pct": -0.37639065357868134,
+                "profit_factor": 1.5829290539947318
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 54.666666666666664,
+                "mean_pct": 1.6274994365696533,
+                "median_pct": 0.7275929352002645,
+                "profit_factor": 1.8226576238112933
+              },
+              "2025": {
+                "trades": 53,
+                "win_rate_pct": 43.39622641509434,
+                "mean_pct": 1.0468380486343831,
+                "median_pct": -0.8551133798249948,
+                "profit_factor": 1.63491574499754
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 1416,
+            "win_rate_pct": 46.82203389830508,
+            "mean_pct": 0.9285932928278531,
+            "median_pct": -0.4191250766725845,
+            "profit_factor": 1.4886636522919647
+          },
+          "in_sample_2006_2018": {
+            "trades": 987,
+            "win_rate_pct": 47.92299898682877,
+            "mean_pct": 1.0579851156075948,
+            "median_pct": -0.3147132013507734,
+            "profit_factor": 1.5931987574278872
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 429,
+            "win_rate_pct": 44.28904428904429,
+            "mean_pct": 0.6309016166422933,
+            "median_pct": -0.8103376539579077,
+            "profit_factor": 1.2908899827373406,
+            "mean_ci95_pct": [
+              0.0782063453458608,
+              1.1635571113611654
+            ],
+            "prob_mean_positive": 0.9895,
+            "portfolio": {
+              "accepted_trades": 367,
+              "skipped_capacity_or_duplicate": 62,
+              "max_positions": 10,
+              "cagr_pct": 2.397498125072506,
+              "max_drawdown_pct": 13.398951105286605,
+              "sharpe": -0.05745728577617608,
+              "final_equity": 1.1775792561926648,
+              "average_exposure_pct": 30.385944700460815
+            },
+            "by_year": {
+              "2019": {
+                "trades": 85,
+                "win_rate_pct": 45.88235294117647,
+                "mean_pct": 0.35444429118699505,
+                "median_pct": -0.20983204158106628,
+                "profit_factor": 1.1785652594185838
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 38.46153846153847,
+                "mean_pct": 0.09586106768608245,
+                "median_pct": -1.3528167091623804,
+                "profit_factor": 1.0341464177615298
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 44.0,
+                "mean_pct": 0.34169590270796324,
+                "median_pct": -1.2423084655376104,
+                "profit_factor": 1.1584921477057812
+              },
+              "2022": {
+                "trades": 11,
+                "win_rate_pct": 0.0,
+                "mean_pct": -3.617757248826799,
+                "median_pct": -2.8138010934122617,
+                "profit_factor": 0.0
+              },
+              "2023": {
+                "trades": 79,
+                "win_rate_pct": 44.303797468354425,
+                "mean_pct": 1.0062299356762323,
+                "median_pct": -0.6696171918975881,
+                "profit_factor": 1.445359707668143
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 54.666666666666664,
+                "mean_pct": 1.6274994365696533,
+                "median_pct": 0.7275929352002645,
+                "profit_factor": 1.8226576238112933
+              },
+              "2025": {
+                "trades": 52,
+                "win_rate_pct": 42.30769230769231,
+                "mean_pct": 0.9261109161889257,
+                "median_pct": -0.8913234287044605,
+                "profit_factor": 1.5510957670156613
+              }
+            }
+          }
+        }
+      },
+      "stop_and_20d": {
+        "unfiltered": {
+          "all": {
+            "trades": 1495,
+            "win_rate_pct": 63.47826086956522,
+            "mean_pct": 1.582719208373683,
+            "median_pct": 5.0488922498894935,
+            "profit_factor": 1.5673908254890268
+          },
+          "in_sample_2006_2018": {
+            "trades": 1048,
+            "win_rate_pct": 65.64885496183206,
+            "mean_pct": 1.763967605100792,
+            "median_pct": 5.06214575134047,
+            "profit_factor": 1.6906127678635376
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 447,
+            "win_rate_pct": 58.38926174496645,
+            "mean_pct": 1.1577788956890975,
+            "median_pct": 4.998366728129399,
+            "profit_factor": 1.3465317609101375,
+            "mean_ci95_pct": [
+              0.4331451303201734,
+              1.8595783591891053
+            ],
+            "prob_mean_positive": 1.0,
+            "portfolio": {
+              "accepted_trades": 345,
+              "skipped_capacity_or_duplicate": 102,
+              "max_positions": 10,
+              "cagr_pct": 5.172858297195759,
+              "max_drawdown_pct": 15.280515204028799,
+              "sharpe": 0.2671839459595441,
+              "final_equity": 1.4177564442360282,
+              "average_exposure_pct": 44.919632606199954
+            },
+            "by_year": {
+              "2019": {
+                "trades": 87,
+                "win_rate_pct": 64.36781609195403,
+                "mean_pct": 1.4351828767527635,
+                "median_pct": 5.040153420858556,
+                "profit_factor": 1.5034930939078404
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 46.15384615384615,
+                "mean_pct": -0.8457687426447665,
+                "median_pct": -5.89242681995747,
+                "profit_factor": 0.8158888183666682
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 61.33333333333333,
+                "mean_pct": 1.4464768990173926,
+                "median_pct": 5.090323891243162,
+                "profit_factor": 1.452055744905585
+              },
+              "2022": {
+                "trades": 23,
+                "win_rate_pct": 26.08695652173913,
+                "mean_pct": -3.9791836500203535,
+                "median_pct": -7.953836561695284,
+                "profit_factor": 0.3668781595592651
+              },
+              "2023": {
+                "trades": 82,
+                "win_rate_pct": 58.536585365853654,
+                "mean_pct": 1.5894676846030815,
+                "median_pct": 4.987935383842763,
+                "profit_factor": 1.4970239549705195
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 72.0,
+                "mean_pct": 3.3032215151307853,
+                "median_pct": 5.148307172826974,
+                "profit_factor": 2.3298419876380234
+              },
+              "2025": {
+                "trades": 53,
+                "win_rate_pct": 50.943396226415096,
+                "mean_pct": 0.7849759144333233,
+                "median_pct": 4.932826106607653,
+                "profit_factor": 1.2397698647851445
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 1416,
+            "win_rate_pct": 63.559322033898304,
+            "mean_pct": 1.6133856680999012,
+            "median_pct": 5.050324658676883,
+            "profit_factor": 1.5805508814104137
+          },
+          "in_sample_2006_2018": {
+            "trades": 987,
+            "win_rate_pct": 65.75481256332321,
+            "mean_pct": 1.8053071300024939,
+            "median_pct": 5.063161726951295,
+            "profit_factor": 1.7106192831609528
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 429,
+            "win_rate_pct": 58.5081585081585,
+            "mean_pct": 1.1718320949114178,
+            "median_pct": 4.998366728129399,
+            "profit_factor": 1.3521148118691717,
+            "mean_ci95_pct": [
+              0.42758093499207456,
+              1.9105597225804816
+            ],
+            "prob_mean_positive": 1.0,
+            "portfolio": {
+              "accepted_trades": 328,
+              "skipped_capacity_or_duplicate": 101,
+              "max_positions": 10,
+              "cagr_pct": 4.904903214281564,
+              "max_drawdown_pct": 14.65501977512914,
+              "sharpe": 0.240843529489774,
+              "final_equity": 1.3914836979040262,
+              "average_exposure_pct": 42.94354838709692
+            },
+            "by_year": {
+              "2019": {
+                "trades": 85,
+                "win_rate_pct": 63.52941176470588,
+                "mean_pct": 1.3299382465391072,
+                "median_pct": 5.039110003521683,
+                "profit_factor": 1.4558452383720133
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 46.15384615384615,
+                "mean_pct": -0.8457687426447665,
+                "median_pct": -5.89242681995747,
+                "profit_factor": 0.8158888183666682
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 61.33333333333333,
+                "mean_pct": 1.4464768990173926,
+                "median_pct": 5.090323891243162,
+                "profit_factor": 1.452055744905585
+              },
+              "2022": {
+                "trades": 11,
+                "win_rate_pct": 18.181818181818183,
+                "mean_pct": -5.694262573502085,
+                "median_pct": -8.145329980435017,
+                "profit_factor": 0.20523823302791555
+              },
+              "2023": {
+                "trades": 79,
+                "win_rate_pct": 56.9620253164557,
+                "mean_pct": 1.339007912619539,
+                "median_pct": 4.89864562916657,
+                "profit_factor": 1.4033870951077352
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 72.0,
+                "mean_pct": 3.3032215151307853,
+                "median_pct": 5.148307172826974,
+                "profit_factor": 2.3298419876380234
+              },
+              "2025": {
+                "trades": 52,
+                "win_rate_pct": 50.0,
+                "mean_pct": 0.6592129717147684,
+                "median_pct": 2.465685068793614,
+                "profit_factor": 1.197556573794162
+              }
+            }
+          }
+        }
+      },
+      "trailing_stop_and_20d": {
+        "unfiltered": {
+          "all": {
+            "trades": 1495,
+            "win_rate_pct": 63.47826086956522,
+            "mean_pct": 1.5656740981790362,
+            "median_pct": 5.050026236728336,
+            "profit_factor": 1.5612803043727579
+          },
+          "in_sample_2006_2018": {
+            "trades": 1048,
+            "win_rate_pct": 65.64885496183206,
+            "mean_pct": 1.7534654300796533,
+            "median_pct": 5.06214575134047,
+            "profit_factor": 1.6865010505400662
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 447,
+            "win_rate_pct": 58.38926174496645,
+            "mean_pct": 1.1253937495619293,
+            "median_pct": 5.002490048513531,
+            "profit_factor": 1.3368386478670808,
+            "mean_ci95_pct": [
+              0.41139011182681057,
+              1.8019954306175723
+            ],
+            "prob_mean_positive": 1.0,
+            "portfolio": {
+              "accepted_trades": 345,
+              "skipped_capacity_or_duplicate": 102,
+              "max_positions": 10,
+              "cagr_pct": 4.961036866373858,
+              "max_drawdown_pct": 15.280515202875911,
+              "sharpe": 0.2466193036126353,
+              "final_equity": 1.398110816502824,
+              "average_exposure_pct": 44.77037887485666
+            },
+            "by_year": {
+              "2019": {
+                "trades": 87,
+                "win_rate_pct": 64.36781609195403,
+                "mean_pct": 1.4687278297507569,
+                "median_pct": 5.040933811696367,
+                "profit_factor": 1.5152613866066544
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 46.15384615384615,
+                "mean_pct": -0.8457687426447665,
+                "median_pct": -5.89242681995747,
+                "profit_factor": 0.8158888183666682
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 61.33333333333333,
+                "mean_pct": 1.2667311738745544,
+                "median_pct": 5.090323891243162,
+                "profit_factor": 1.3958812648788126
+              },
+              "2022": {
+                "trades": 23,
+                "win_rate_pct": 26.08695652173913,
+                "mean_pct": -3.9791836500203535,
+                "median_pct": -7.953836561695284,
+                "profit_factor": 0.3668781595592651
+              },
+              "2023": {
+                "trades": 82,
+                "win_rate_pct": 58.536585365853654,
+                "mean_pct": 1.5894676846030815,
+                "median_pct": 4.987935383842763,
+                "profit_factor": 1.4970239549705195
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 72.0,
+                "mean_pct": 3.2510396238780284,
+                "median_pct": 5.148307172826974,
+                "profit_factor": 2.308834111035013
+              },
+              "2025": {
+                "trades": 53,
+                "win_rate_pct": 50.943396226415096,
+                "mean_pct": 0.7849759144333233,
+                "median_pct": 4.932826106607653,
+                "profit_factor": 1.2397698647851445
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 1416,
+            "win_rate_pct": 63.559322033898304,
+            "mean_pct": 1.5953895948364847,
+            "median_pct": 5.052257256231011,
+            "profit_factor": 1.574075283912819
+          },
+          "in_sample_2006_2018": {
+            "trades": 987,
+            "win_rate_pct": 65.75481256332321,
+            "mean_pct": 1.7941558843873435,
+            "median_pct": 5.063161726951295,
+            "profit_factor": 1.7062298415896568
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 429,
+            "win_rate_pct": 58.5081585081585,
+            "mean_pct": 1.1380881314642286,
+            "median_pct": 5.002490048513531,
+            "profit_factor": 1.3419753478687206,
+            "mean_ci95_pct": [
+              0.4047747418801382,
+              1.83439757227294
+            ],
+            "prob_mean_positive": 0.9995,
+            "portfolio": {
+              "accepted_trades": 328,
+              "skipped_capacity_or_duplicate": 101,
+              "max_positions": 10,
+              "cagr_pct": 4.692951747115104,
+              "max_drawdown_pct": 14.65501977512914,
+              "sharpe": 0.2197375843060608,
+              "final_equity": 1.3722021592585967,
+              "average_exposure_pct": 42.793778801843466
+            },
+            "by_year": {
+              "2019": {
+                "trades": 85,
+                "win_rate_pct": 63.52941176470588,
+                "mean_pct": 1.3642724925488179,
+                "median_pct": 5.040933811696367,
+                "profit_factor": 1.4676135310708274
+              },
+              "2020": {
+                "trades": 52,
+                "win_rate_pct": 46.15384615384615,
+                "mean_pct": -0.8457687426447665,
+                "median_pct": -5.89242681995747,
+                "profit_factor": 0.8158888183666682
+              },
+              "2021": {
+                "trades": 75,
+                "win_rate_pct": 61.33333333333333,
+                "mean_pct": 1.2667311738745544,
+                "median_pct": 5.090323891243162,
+                "profit_factor": 1.3958812648788126
+              },
+              "2022": {
+                "trades": 11,
+                "win_rate_pct": 18.181818181818183,
+                "mean_pct": -5.694262573502085,
+                "median_pct": -8.145329980435017,
+                "profit_factor": 0.20523823302791555
+              },
+              "2023": {
+                "trades": 79,
+                "win_rate_pct": 56.9620253164557,
+                "mean_pct": 1.339007912619539,
+                "median_pct": 4.89864562916657,
+                "profit_factor": 1.4033870951077352
+              },
+              "2024": {
+                "trades": 75,
+                "win_rate_pct": 72.0,
+                "mean_pct": 3.2510396238780284,
+                "median_pct": 5.148307172826974,
+                "profit_factor": 2.308834111035013
+              },
+              "2025": {
+                "trades": 52,
+                "win_rate_pct": 50.0,
+                "mean_pct": 0.6592129717147684,
+                "median_pct": 2.465685068793614,
+                "profit_factor": 1.197556573794162
+              }
+            }
+          }
+        }
+      }
+    },
+    "B": {
+      "full": {
+        "unfiltered": {
+          "all": {
+            "trades": 192,
+            "win_rate_pct": 33.33333333333333,
+            "mean_pct": -0.2795477129357682,
+            "median_pct": -0.7922710414445632,
+            "profit_factor": 0.7449334841290842
+          },
+          "in_sample_2006_2018": {
+            "trades": 136,
+            "win_rate_pct": 27.205882352941174,
+            "mean_pct": -0.7507068870746986,
+            "median_pct": -0.9304703336062925,
+            "profit_factor": 0.35254669912273773
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 56,
+            "win_rate_pct": 48.214285714285715,
+            "mean_pct": 0.8646959956873485,
+            "median_pct": -0.10354133227696559,
+            "profit_factor": 1.9181575131351427,
+            "mean_ci95_pct": [
+              -0.2732449614706285,
+              2.263150454368458
+            ],
+            "prob_mean_positive": 0.924,
+            "portfolio": {
+              "accepted_trades": 43,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 0.6742427129180273,
+              "max_drawdown_pct": 2.982389543409192,
+              "sharpe": -1.9976467113049539,
+              "final_equity": 1.0465679294989625,
+              "average_exposure_pct": 1.4654161781946093
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 38.88888888888889,
+                "mean_pct": 0.5930294335973829,
+                "median_pct": -0.2951073470331326,
+                "profit_factor": 1.6677758770000506
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 50.0,
+                "mean_pct": -0.8731458128649136,
+                "median_pct": -0.5901386499514119,
+                "profit_factor": 0.36262235792951386
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 37.5,
+                "mean_pct": -0.8598438283336236,
+                "median_pct": -1.1251781368860008,
+                "profit_factor": 0.33657858257658646
+              },
+              "2023": {
+                "trades": 10,
+                "win_rate_pct": 60.0,
+                "mean_pct": 2.365747167702161,
+                "median_pct": 0.9503909427253006,
+                "profit_factor": 6.987727691054133
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 60.0,
+                "mean_pct": 2.053627724653152,
+                "median_pct": 1.2452539165416647,
+                "profit_factor": 2.6251100343457
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 1.7711623508121912,
+                "median_pct": 0.42199574987235927,
+                "profit_factor": 3.018635203934877
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 185,
+            "win_rate_pct": 32.972972972972975,
+            "mean_pct": -0.26502714487405654,
+            "median_pct": -0.8089655817277046,
+            "profit_factor": 0.759813237982698
+          },
+          "in_sample_2006_2018": {
+            "trades": 130,
+            "win_rate_pct": 26.923076923076923,
+            "mean_pct": -0.7429591247312147,
+            "median_pct": -0.9755084487158061,
+            "profit_factor": 0.36202933244217034
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 55,
+            "win_rate_pct": 47.27272727272727,
+            "mean_pct": 0.8646302620610447,
+            "median_pct": -0.11782229662982574,
+            "profit_factor": 1.9016932919098397,
+            "mean_ci95_pct": [
+              -0.25736890242246613,
+              2.280917932261721
+            ],
+            "prob_mean_positive": 0.922,
+            "portfolio": {
+              "accepted_trades": 42,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 0.6613735802640575,
+              "max_drawdown_pct": 2.9647405525094594,
+              "sharpe": -2.0156446954720915,
+              "final_equity": 1.0456620977383815,
+              "average_exposure_pct": 1.436107854630717
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 38.88888888888889,
+                "mean_pct": 0.5930294335973829,
+                "median_pct": -0.2951073470331326,
+                "profit_factor": 1.6677758770000506
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 50.0,
+                "mean_pct": -0.8731458128649136,
+                "median_pct": -0.5901386499514119,
+                "profit_factor": 0.36262235792951386
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 37.5,
+                "mean_pct": -0.8598438283336236,
+                "median_pct": -1.1251781368860008,
+                "profit_factor": 0.33657858257658646
+              },
+              "2023": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 2.532128925765283,
+                "median_pct": 1.0324705403165424,
+                "profit_factor": 6.767957296453359
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 60.0,
+                "mean_pct": 2.053627724653152,
+                "median_pct": 1.2452539165416647,
+                "profit_factor": 2.6251100343457
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 1.7711623508121912,
+                "median_pct": 0.42199574987235927,
+                "profit_factor": 3.018635203934877
+              }
+            }
+          }
+        }
+      },
+      "no_false_breakout_exit": {
+        "unfiltered": {
+          "all": {
+            "trades": 192,
+            "win_rate_pct": 44.79166666666667,
+            "mean_pct": -0.2628580348090569,
+            "median_pct": -0.3034574904734702,
+            "profit_factor": 0.8041727880010898
+          },
+          "in_sample_2006_2018": {
+            "trades": 136,
+            "win_rate_pct": 39.705882352941174,
+            "mean_pct": -0.8182090043535888,
+            "median_pct": -0.6460842566944174,
+            "profit_factor": 0.4674670776508692
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 56,
+            "win_rate_pct": 57.14285714285714,
+            "mean_pct": 1.0858514626562354,
+            "median_pct": 0.418247304162505,
+            "profit_factor": 2.2469817215454166,
+            "mean_ci95_pct": [
+              0.015684926485807577,
+              2.4415233721090672
+            ],
+            "prob_mean_positive": 0.977,
+            "portfolio": {
+              "accepted_trades": 43,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 0.8518224690248433,
+              "max_drawdown_pct": 3.1432509126328556,
+              "sharpe": -1.7267961886841252,
+              "final_equity": 1.0591358647781997,
+              "average_exposure_pct": 1.8874560375146576
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 50.0,
+                "mean_pct": 0.7388164979336301,
+                "median_pct": -0.055281462359674856,
+                "profit_factor": 1.9343582256344016
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 50.0,
+                "mean_pct": -1.4942549711148778,
+                "median_pct": -0.5901386499514119,
+                "profit_factor": 0.24949998504720533
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 62.5,
+                "mean_pct": 0.44142226592072226,
+                "median_pct": 0.5149337732083441,
+                "profit_factor": 1.5887065416973316
+              },
+              "2023": {
+                "trades": 10,
+                "win_rate_pct": 70.0,
+                "mean_pct": 2.549876944763976,
+                "median_pct": 1.1605789583544426,
+                "profit_factor": 8.069260412860078
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 60.0,
+                "mean_pct": 2.053627724653152,
+                "median_pct": 1.2452539165416647,
+                "profit_factor": 2.6251100343457
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 1.908469841595755,
+                "median_pct": 0.42199574987235927,
+                "profit_factor": 3.5786705241533774
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 185,
+            "win_rate_pct": 44.32432432432433,
+            "mean_pct": -0.24885598151926247,
+            "median_pct": -0.30626302730424726,
+            "profit_factor": 0.8167634342589233
+          },
+          "in_sample_2006_2018": {
+            "trades": 130,
+            "win_rate_pct": 39.23076923076923,
+            "mean_pct": -0.8152132857282975,
+            "median_pct": -0.6460842566944174,
+            "profit_factor": 0.47661968425411827
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 55,
+            "win_rate_pct": 56.36363636363636,
+            "mean_pct": 1.0898067375202751,
+            "median_pct": 0.41449885845265055,
+            "profit_factor": 2.2291752809444163,
+            "mean_ci95_pct": [
+              0.028904723698486373,
+              2.438873611778244
+            ],
+            "prob_mean_positive": 0.9785,
+            "portfolio": {
+              "accepted_trades": 42,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 0.8389306364490645,
+              "max_drawdown_pct": 3.1432509126328556,
+              "sharpe": -1.7423962626967986,
+              "final_equity": 1.0582191551427862,
+              "average_exposure_pct": 1.8581477139507652
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 50.0,
+                "mean_pct": 0.7388164979336301,
+                "median_pct": -0.055281462359674856,
+                "profit_factor": 1.9343582256344016
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 50.0,
+                "mean_pct": -1.4942549711148778,
+                "median_pct": -0.5901386499514119,
+                "profit_factor": 0.24949998504720533
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 62.5,
+                "mean_pct": 0.44142226592072226,
+                "median_pct": 0.5149337732083441,
+                "profit_factor": 1.5887065416973316
+              },
+              "2023": {
+                "trades": 9,
+                "win_rate_pct": 66.66666666666666,
+                "mean_pct": 2.7367175669450785,
+                "median_pct": 1.2886873763923432,
+                "profit_factor": 7.828530403092424
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 60.0,
+                "mean_pct": 2.053627724653152,
+                "median_pct": 1.2452539165416647,
+                "profit_factor": 2.6251100343457
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 1.908469841595755,
+                "median_pct": 0.42199574987235927,
+                "profit_factor": 3.5786705241533774
+              }
+            }
+          }
+        }
+      },
+      "no_trailing_stop": {
+        "unfiltered": {
+          "all": {
+            "trades": 192,
+            "win_rate_pct": 33.33333333333333,
+            "mean_pct": -0.2905519517083521,
+            "median_pct": -0.7922710414445632,
+            "profit_factor": 0.7348929339344219
+          },
+          "in_sample_2006_2018": {
+            "trades": 136,
+            "win_rate_pct": 27.205882352941174,
+            "mean_pct": -0.7507068870746986,
+            "median_pct": -0.9304703336062925,
+            "profit_factor": 0.35254669912273773
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 56,
+            "win_rate_pct": 48.214285714285715,
+            "mean_pct": 0.8269671770384892,
+            "median_pct": -0.10354133227696559,
+            "profit_factor": 1.8780960366429025,
+            "mean_ci95_pct": [
+              -0.2944089794627699,
+              2.1560551492507125
+            ],
+            "prob_mean_positive": 0.921,
+            "portfolio": {
+              "accepted_trades": 43,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 0.6742427129180273,
+              "max_drawdown_pct": 2.982389543409192,
+              "sharpe": -1.9976467113049539,
+              "final_equity": 1.0465679294989625,
+              "average_exposure_pct": 1.4654161781946093
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 38.88888888888889,
+                "mean_pct": 0.4756508866898211,
+                "median_pct": -0.2951073470331326,
+                "profit_factor": 1.5356027374195893
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 50.0,
+                "mean_pct": -0.8731458128649136,
+                "median_pct": -0.5901386499514119,
+                "profit_factor": 0.36262235792951386
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 37.5,
+                "mean_pct": -0.8598438283336236,
+                "median_pct": -1.1251781368860008,
+                "profit_factor": 0.33657858257658646
+              },
+              "2023": {
+                "trades": 10,
+                "win_rate_pct": 60.0,
+                "mean_pct": 2.365747167702161,
+                "median_pct": 0.9503909427253006,
+                "profit_factor": 6.987727691054133
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 60.0,
+                "mean_pct": 2.053627724653152,
+                "median_pct": 1.2452539165416647,
+                "profit_factor": 2.6251100343457
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 1.7711623508121912,
+                "median_pct": 0.42199574987235927,
+                "profit_factor": 3.018635203934877
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 185,
+            "win_rate_pct": 32.972972972972975,
+            "mean_pct": -0.2764477602488464,
+            "median_pct": -0.8089655817277046,
+            "profit_factor": 0.7494630505389956
+          },
+          "in_sample_2006_2018": {
+            "trades": 130,
+            "win_rate_pct": 26.923076923076923,
+            "mean_pct": -0.7429591247312147,
+            "median_pct": -0.9755084487158061,
+            "profit_factor": 0.36202933244217034
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 55,
+            "win_rate_pct": 47.27272727272727,
+            "mean_pct": 0.8262154648912973,
+            "median_pct": -0.11782229662982574,
+            "profit_factor": 1.8616318154175988,
+            "mean_ci95_pct": [
+              -0.27484174206018297,
+              2.198330237065305
+            ],
+            "prob_mean_positive": 0.9145,
+            "portfolio": {
+              "accepted_trades": 42,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 0.6613735802640575,
+              "max_drawdown_pct": 2.9647405525094594,
+              "sharpe": -2.0156446954720915,
+              "final_equity": 1.0456620977383815,
+              "average_exposure_pct": 1.436107854630717
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 38.88888888888889,
+                "mean_pct": 0.4756508866898211,
+                "median_pct": -0.2951073470331326,
+                "profit_factor": 1.5356027374195893
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 50.0,
+                "mean_pct": -0.8731458128649136,
+                "median_pct": -0.5901386499514119,
+                "profit_factor": 0.36262235792951386
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 37.5,
+                "mean_pct": -0.8598438283336236,
+                "median_pct": -1.1251781368860008,
+                "profit_factor": 0.33657858257658646
+              },
+              "2023": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 2.532128925765283,
+                "median_pct": 1.0324705403165424,
+                "profit_factor": 6.767957296453359
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 60.0,
+                "mean_pct": 2.053627724653152,
+                "median_pct": 1.2452539165416647,
+                "profit_factor": 2.6251100343457
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 1.7711623508121912,
+                "median_pct": 0.42199574987235927,
+                "profit_factor": 3.018635203934877
+              }
+            }
+          }
+        }
+      },
+      "no_shooting_star": {
+        "unfiltered": {
+          "all": {
+            "trades": 192,
+            "win_rate_pct": 32.29166666666667,
+            "mean_pct": -0.26803758316423565,
+            "median_pct": -0.8111631359191401,
+            "profit_factor": 0.7663176984043025
+          },
+          "in_sample_2006_2018": {
+            "trades": 136,
+            "win_rate_pct": 27.205882352941174,
+            "mean_pct": -0.8096694136094928,
+            "median_pct": -0.9304703336062925,
+            "profit_factor": 0.332322856398395
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 56,
+            "win_rate_pct": 44.642857142857146,
+            "mean_pct": 1.0473540050599608,
+            "median_pct": -0.326068991415755,
+            "profit_factor": 2.0605217448505577,
+            "mean_ci95_pct": [
+              -0.26562346607038817,
+              2.6590949523346468
+            ],
+            "prob_mean_positive": 0.9375,
+            "portfolio": {
+              "accepted_trades": 43,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 0.8224777319476573,
+              "max_drawdown_pct": 3.2865897769570274,
+              "sharpe": -1.7971490683759752,
+              "final_equity": 1.0570502079624757,
+              "average_exposure_pct": 1.5592028135990645
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 38.88888888888889,
+                "mean_pct": 0.5930294335973829,
+                "median_pct": -0.2951073470331326,
+                "profit_factor": 1.6677758770000506
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 33.33333333333333,
+                "mean_pct": -1.397864060493135,
+                "median_pct": -1.2448088837374782,
+                "profit_factor": 0.09719394414727976
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 37.5,
+                "mean_pct": -0.8598438283336236,
+                "median_pct": -1.1251781368860008,
+                "profit_factor": 0.33657858257658646
+              },
+              "2023": {
+                "trades": 10,
+                "win_rate_pct": 60.0,
+                "mean_pct": 4.007122408022055,
+                "median_pct": 0.9503909427253006,
+                "profit_factor": 11.142063417225607
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 40.0,
+                "mean_pct": 1.5207770497879392,
+                "median_pct": -1.1223485285553603,
+                "profit_factor": 2.0219211064061566
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 1.7297911265636048,
+                "median_pct": 0.42199574987235927,
+                "profit_factor": 2.882710357186513
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 185,
+            "win_rate_pct": 31.891891891891895,
+            "mean_pct": -0.2507776370916225,
+            "median_pct": -0.8351059891756933,
+            "profit_factor": 0.7827045096377918
+          },
+          "in_sample_2006_2018": {
+            "trades": 130,
+            "win_rate_pct": 26.923076923076923,
+            "mean_pct": -0.8013644292321067,
+            "median_pct": -0.9755084487158061,
+            "profit_factor": 0.34148800859026035
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 55,
+            "win_rate_pct": 43.63636363636363,
+            "mean_pct": 1.0506093261495224,
+            "median_pct": -0.4723923974364395,
+            "profit_factor": 2.0448212432196753,
+            "mean_ci95_pct": [
+              -0.2314025827338816,
+              2.6645764350438634
+            ],
+            "prob_mean_positive": 0.9315,
+            "portfolio": {
+              "accepted_trades": 42,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 0.8095896504933586,
+              "max_drawdown_pct": 3.26899612474405,
+              "sharpe": -1.8135338100913427,
+              "final_equity": 1.056135303517277,
+              "average_exposure_pct": 1.5298944900351723
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 38.88888888888889,
+                "mean_pct": 0.5930294335973829,
+                "median_pct": -0.2951073470331326,
+                "profit_factor": 1.6677758770000506
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 33.33333333333333,
+                "mean_pct": -1.397864060493135,
+                "median_pct": -1.2448088837374782,
+                "profit_factor": 0.09719394414727976
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 37.5,
+                "mean_pct": -0.8598438283336236,
+                "median_pct": -1.1251781368860008,
+                "profit_factor": 0.33657858257658646
+              },
+              "2023": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 4.3558791927873886,
+                "median_pct": 1.0324705403165424,
+                "profit_factor": 10.922293022624833
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 40.0,
+                "mean_pct": 1.5207770497879392,
+                "median_pct": -1.1223485285553603,
+                "profit_factor": 2.0219211064061566
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 1.7297911265636048,
+                "median_pct": 0.42199574987235927,
+                "profit_factor": 2.882710357186513
+              }
+            }
+          }
+        }
+      },
+      "no_time_stop": {
+        "unfiltered": {
+          "all": {
+            "trades": 192,
+            "win_rate_pct": 31.25,
+            "mean_pct": 0.2737888908794723,
+            "median_pct": -0.9755084487158061,
+            "profit_factor": 1.181660496654351
+          },
+          "in_sample_2006_2018": {
+            "trades": 136,
+            "win_rate_pct": 27.941176470588236,
+            "mean_pct": -0.010353397330110552,
+            "median_pct": -1.0337500891113647,
+            "profit_factor": 0.9930315512811728
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 56,
+            "win_rate_pct": 39.285714285714285,
+            "mean_pct": 0.9638487336741737,
+            "median_pct": -0.6948550062108213,
+            "profit_factor": 1.6182087581375058,
+            "mean_ci95_pct": [
+              -0.6982920699422299,
+              2.8102569113007982
+            ],
+            "prob_mean_positive": 0.864,
+            "portfolio": {
+              "accepted_trades": 43,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 0.632648582805051,
+              "max_drawdown_pct": 5.239970964025886,
+              "sharpe": -1.530885969113046,
+              "final_equity": 1.0439129490288133,
+              "average_exposure_pct": 2.90623179965057
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 22.22222222222222,
+                "mean_pct": -0.844472790951278,
+                "median_pct": -1.423974944810566,
+                "profit_factor": 0.6765424400630896
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 33.33333333333333,
+                "mean_pct": -0.34622642287427696,
+                "median_pct": -1.4380178163158788,
+                "profit_factor": 0.7905604297428387
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 37.5,
+                "mean_pct": 0.15301763698887302,
+                "median_pct": -1.1251781368860008,
+                "profit_factor": 1.1180623437382529
+              },
+              "2023": {
+                "trades": 10,
+                "win_rate_pct": 40.0,
+                "mean_pct": 2.74348526112136,
+                "median_pct": -0.19991670104669798,
+                "profit_factor": 6.805231341351604
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 80.0,
+                "mean_pct": 2.755885276485022,
+                "median_pct": 1.5419048457707025,
+                "profit_factor": 2.9169216661222928
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 3.201664196730298,
+                "median_pct": 0.826028306584903,
+                "profit_factor": 4.551147457452768
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 185,
+            "win_rate_pct": 31.351351351351354,
+            "mean_pct": 0.25856824526960104,
+            "median_pct": -1.0333252303764966,
+            "profit_factor": 1.1693146675679986
+          },
+          "in_sample_2006_2018": {
+            "trades": 130,
+            "win_rate_pct": 27.692307692307693,
+            "mean_pct": -0.05150159316364349,
+            "median_pct": -1.0928048783280326,
+            "profit_factor": 0.965800175248718
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 55,
+            "win_rate_pct": 40.0,
+            "mean_pct": 0.9914605906572701,
+            "median_pct": -0.7373304194390254,
+            "profit_factor": 1.6285573297903395,
+            "mean_ci95_pct": [
+              -0.7250384443313379,
+              2.84680027008002
+            ],
+            "prob_mean_positive": 0.864,
+            "portfolio": {
+              "accepted_trades": 42,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 0.6408322393230304,
+              "max_drawdown_pct": 5.239970964025886,
+              "sharpe": -1.5296602914629498,
+              "final_equity": 1.0444915912584218,
+              "average_exposure_pct": 2.865463016889941
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 22.22222222222222,
+                "mean_pct": -0.844472790951278,
+                "median_pct": -1.423974944810566,
+                "profit_factor": 0.6765424400630896
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 33.33333333333333,
+                "mean_pct": -0.34622642287427696,
+                "median_pct": -1.4380178163158788,
+                "profit_factor": 0.7905604297428387
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 37.5,
+                "mean_pct": 0.15301763698887302,
+                "median_pct": -1.1251781368860008,
+                "profit_factor": 1.1180623437382529
+              },
+              "2023": {
+                "trades": 9,
+                "win_rate_pct": 44.44444444444444,
+                "mean_pct": 3.109961779067749,
+                "median_pct": -0.17974558539507052,
+                "profit_factor": 7.710408064191947
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 80.0,
+                "mean_pct": 2.755885276485022,
+                "median_pct": 1.5419048457707025,
+                "profit_factor": 2.9169216661222928
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 3.201664196730298,
+                "median_pct": 0.826028306584903,
+                "profit_factor": 4.551147457452768
+              }
+            }
+          }
+        }
+      },
+      "stop_and_20d": {
+        "unfiltered": {
+          "all": {
+            "trades": 192,
+            "win_rate_pct": 65.625,
+            "mean_pct": 1.6031904340063088,
+            "median_pct": 5.061023101291576,
+            "profit_factor": 1.620877261553887
+          },
+          "in_sample_2006_2018": {
+            "trades": 136,
+            "win_rate_pct": 64.70588235294117,
+            "mean_pct": 1.4079523044561932,
+            "median_pct": 5.073909587331549,
+            "profit_factor": 1.5440083714756725
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 56,
+            "win_rate_pct": 67.85714285714286,
+            "mean_pct": 2.077340177199446,
+            "median_pct": 5.027858152805651,
+            "profit_factor": 1.8090471137959405,
+            "mean_ci95_pct": [
+              -0.3260016583777512,
+              4.417377905591122
+            ],
+            "prob_mean_positive": 0.954,
+            "portfolio": {
+              "accepted_trades": 43,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 1.1648346713306612,
+              "max_drawdown_pct": 4.866006905894837,
+              "sharpe": -0.7716592752234434,
+              "final_equity": 1.0821167009577368,
+              "average_exposure_pct": 6.557949912638277
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 61.111111111111114,
+                "mean_pct": 0.29081855473608137,
+                "median_pct": 4.945834586169159,
+                "profit_factor": 1.0889506201473358
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 50.0,
+                "mean_pct": -1.3970577798330197,
+                "median_pct": -1.1661170454124508,
+                "profit_factor": 0.6647857994344862
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 75.0,
+                "mean_pct": 2.5217428286797223,
+                "median_pct": 5.083374762004725,
+                "profit_factor": 2.778896314282673
+              },
+              "2023": {
+                "trades": 10,
+                "win_rate_pct": 80.0,
+                "mean_pct": 5.847243689309467,
+                "median_pct": 6.105574171067973,
+                "profit_factor": 4.506051305336078
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 80.0,
+                "mean_pct": 4.130170929345434,
+                "median_pct": 5.055342856492792,
+                "profit_factor": 3.8728387958691344
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 66.66666666666666,
+                "mean_pct": 2.24238093862867,
+                "median_pct": 2.6120333409651595,
+                "profit_factor": 1.8162254787021885
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 185,
+            "win_rate_pct": 65.4054054054054,
+            "mean_pct": 1.6341145126930363,
+            "median_pct": 5.0588829749050985,
+            "profit_factor": 1.6323483433468886
+          },
+          "in_sample_2006_2018": {
+            "trades": 130,
+            "win_rate_pct": 63.84615384615384,
+            "mean_pct": 1.3637593819076916,
+            "median_pct": 5.066361808797937,
+            "profit_factor": 1.5169058784834772
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 55,
+            "win_rate_pct": 69.0909090909091,
+            "mean_pct": 2.2731357309129416,
+            "median_pct": 5.046002933016737,
+            "profit_factor": 1.9254320756726646,
+            "mean_ci95_pct": [
+              -0.26881829301228966,
+              4.594508599679961
+            ],
+            "prob_mean_positive": 0.9615,
+            "portfolio": {
+              "accepted_trades": 42,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 1.2942541039622224,
+              "max_drawdown_pct": 4.866006905894837,
+              "sharpe": -0.7291017608022026,
+              "final_equity": 1.0915854856228975,
+              "average_exposure_pct": 6.25509609784505
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 61.111111111111114,
+                "mean_pct": 0.29081855473608137,
+                "median_pct": 4.945834586169159,
+                "profit_factor": 1.0889506201473358
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 50.0,
+                "mean_pct": -1.3970577798330197,
+                "median_pct": -1.1661170454124508,
+                "profit_factor": 0.6647857994344862
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 75.0,
+                "mean_pct": 2.5217428286797223,
+                "median_pct": 5.083374762004725,
+                "profit_factor": 2.778896314282673
+              },
+              "2023": {
+                "trades": 9,
+                "win_rate_pct": 88.88888888888889,
+                "mean_pct": 7.4626502411263855,
+                "median_pct": 6.693054845406071,
+                "profit_factor": 9.410030176891944
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 80.0,
+                "mean_pct": 4.130170929345434,
+                "median_pct": 5.055342856492792,
+                "profit_factor": 3.8728387958691344
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 66.66666666666666,
+                "mean_pct": 2.24238093862867,
+                "median_pct": 2.6120333409651595,
+                "profit_factor": 1.8162254787021885
+              }
+            }
+          }
+        }
+      },
+      "trailing_stop_and_20d": {
+        "unfiltered": {
+          "all": {
+            "trades": 192,
+            "win_rate_pct": 65.625,
+            "mean_pct": 1.6045718440169106,
+            "median_pct": 5.061023101291576,
+            "profit_factor": 1.6214122485686997
+          },
+          "in_sample_2006_2018": {
+            "trades": 136,
+            "win_rate_pct": 64.70588235294117,
+            "mean_pct": 1.4079523044561932,
+            "median_pct": 5.073909587331549,
+            "profit_factor": 1.5440083714756725
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 56,
+            "win_rate_pct": 67.85714285714286,
+            "mean_pct": 2.0820764400929375,
+            "median_pct": 5.027858152805651,
+            "profit_factor": 1.8108917128973376,
+            "mean_ci95_pct": [
+              -0.3173612453118396,
+              4.430116293266109
+            ],
+            "prob_mean_positive": 0.9545,
+            "portfolio": {
+              "accepted_trades": 43,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 1.1648346713306612,
+              "max_drawdown_pct": 4.866006905894837,
+              "sharpe": -0.7716592752234434,
+              "final_equity": 1.0821167009577368,
+              "average_exposure_pct": 6.557949912638277
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 61.111111111111114,
+                "mean_pct": 0.30555359484916655,
+                "median_pct": 4.945834586169159,
+                "profit_factor": 1.0934575229381303
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 50.0,
+                "mean_pct": -1.3970577798330197,
+                "median_pct": -1.1661170454124508,
+                "profit_factor": 0.6647857994344862
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 75.0,
+                "mean_pct": 2.5217428286797223,
+                "median_pct": 5.083374762004725,
+                "profit_factor": 2.778896314282673
+              },
+              "2023": {
+                "trades": 10,
+                "win_rate_pct": 80.0,
+                "mean_pct": 5.847243689309467,
+                "median_pct": 6.105574171067973,
+                "profit_factor": 4.506051305336078
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 80.0,
+                "mean_pct": 4.130170929345434,
+                "median_pct": 5.055342856492792,
+                "profit_factor": 3.8728387958691344
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 66.66666666666666,
+                "mean_pct": 2.24238093862867,
+                "median_pct": 2.6120333409651595,
+                "profit_factor": 1.8162254787021885
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 185,
+            "win_rate_pct": 65.4054054054054,
+            "mean_pct": 1.6355481922716069,
+            "median_pct": 5.0588829749050985,
+            "profit_factor": 1.6329031299908827
+          },
+          "in_sample_2006_2018": {
+            "trades": 130,
+            "win_rate_pct": 63.84615384615384,
+            "mean_pct": 1.3637593819076916,
+            "median_pct": 5.066361808797937,
+            "profit_factor": 1.5169058784834772
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 55,
+            "win_rate_pct": 69.0909090909091,
+            "mean_pct": 2.277958107677224,
+            "median_pct": 5.046002933016737,
+            "profit_factor": 1.9273953469714062,
+            "mean_ci95_pct": [
+              -0.26411647566711427,
+              4.598729690118372
+            ],
+            "prob_mean_positive": 0.962,
+            "portfolio": {
+              "accepted_trades": 42,
+              "skipped_capacity_or_duplicate": 13,
+              "max_positions": 10,
+              "cagr_pct": 1.2942541039622224,
+              "max_drawdown_pct": 4.866006905894837,
+              "sharpe": -0.7291017608022026,
+              "final_equity": 1.0915854856228975,
+              "average_exposure_pct": 6.25509609784505
+            },
+            "by_year": {
+              "2019": {
+                "trades": 18,
+                "win_rate_pct": 61.111111111111114,
+                "mean_pct": 0.30555359484916655,
+                "median_pct": 4.945834586169159,
+                "profit_factor": 1.0934575229381303
+              },
+              "2020": {
+                "trades": 6,
+                "win_rate_pct": 50.0,
+                "mean_pct": -1.3970577798330197,
+                "median_pct": -1.1661170454124508,
+                "profit_factor": 0.6647857994344862
+              },
+              "2021": {
+                "trades": 8,
+                "win_rate_pct": 75.0,
+                "mean_pct": 2.5217428286797223,
+                "median_pct": 5.083374762004725,
+                "profit_factor": 2.778896314282673
+              },
+              "2023": {
+                "trades": 9,
+                "win_rate_pct": 88.88888888888889,
+                "mean_pct": 7.4626502411263855,
+                "median_pct": 6.693054845406071,
+                "profit_factor": 9.410030176891944
+              },
+              "2024": {
+                "trades": 5,
+                "win_rate_pct": 80.0,
+                "mean_pct": 4.130170929345434,
+                "median_pct": 5.055342856492792,
+                "profit_factor": 3.8728387958691344
+              },
+              "2025": {
+                "trades": 9,
+                "win_rate_pct": 66.66666666666666,
+                "mean_pct": 2.24238093862867,
+                "median_pct": 2.6120333409651595,
+                "profit_factor": 1.8162254787021885
+              }
+            }
+          }
+        }
+      }
+    },
+    "C": {
+      "full": {
+        "unfiltered": {
+          "all": {
+            "trades": 3656,
+            "win_rate_pct": 44.201312910284464,
+            "mean_pct": 0.31094476844848007,
+            "median_pct": -0.49774361786230764,
+            "profit_factor": 1.1945567178996128
+          },
+          "in_sample_2006_2018": {
+            "trades": 2339,
+            "win_rate_pct": 44.206926036767854,
+            "mean_pct": 0.23274132834721495,
+            "median_pct": -0.4537081065975569,
+            "profit_factor": 1.157192198076402
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1317,
+            "win_rate_pct": 44.19134396355353,
+            "mean_pct": 0.44983455310820586,
+            "median_pct": -0.5950619867994841,
+            "profit_factor": 1.248927637685484,
+            "mean_ci95_pct": [
+              0.1253314788220452,
+              0.7958691820149274
+            ],
+            "prob_mean_positive": 0.997,
+            "portfolio": {
+              "accepted_trades": 1062,
+              "skipped_capacity_or_duplicate": 255,
+              "max_positions": 10,
+              "cagr_pct": 7.8667948594937975,
+              "max_drawdown_pct": 21.756814792893664,
+              "sharpe": 0.4181703957406762,
+              "final_equity": 1.6981138551504973,
+              "average_exposure_pct": 41.25071063104044
+            },
+            "by_year": {
+              "2019": {
+                "trades": 198,
+                "win_rate_pct": 52.02020202020202,
+                "mean_pct": 1.199073358797331,
+                "median_pct": 0.18603772230373694,
+                "profit_factor": 1.9667754688285695
+              },
+              "2020": {
+                "trades": 198,
+                "win_rate_pct": 43.43434343434344,
+                "mean_pct": 0.7771104655135762,
+                "median_pct": -0.8851404658708438,
+                "profit_factor": 1.42839891266077
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 44.15584415584416,
+                "mean_pct": 0.31111799295373205,
+                "median_pct": -0.7138939027550998,
+                "profit_factor": 1.180482117700712
+              },
+              "2022": {
+                "trades": 97,
+                "win_rate_pct": 28.865979381443296,
+                "mean_pct": -1.570376200396281,
+                "median_pct": -2.3381616302203527,
+                "profit_factor": 0.4736205780634317
+              },
+              "2023": {
+                "trades": 200,
+                "win_rate_pct": 40.0,
+                "mean_pct": -0.13916252550149824,
+                "median_pct": -0.6303059042099624,
+                "profit_factor": 0.9179902148948497
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 46.08294930875576,
+                "mean_pct": 0.8212180789070069,
+                "median_pct": -0.33398720287362293,
+                "profit_factor": 1.461203889143252
+              },
+              "2025": {
+                "trades": 176,
+                "win_rate_pct": 47.159090909090914,
+                "mean_pct": 0.7456484447361011,
+                "median_pct": -0.2631887631728947,
+                "profit_factor": 1.3626903961151575
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 3190,
+            "win_rate_pct": 44.70219435736677,
+            "mean_pct": 0.3260387969734186,
+            "median_pct": -0.4741450168384692,
+            "profit_factor": 1.2121167478571777
+          },
+          "in_sample_2006_2018": {
+            "trades": 1995,
+            "win_rate_pct": 44.51127819548872,
+            "mean_pct": 0.23506140276257922,
+            "median_pct": -0.4340954290595566,
+            "profit_factor": 1.1676922216343903
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1195,
+            "win_rate_pct": 45.020920502092046,
+            "mean_pct": 0.47792155969360656,
+            "median_pct": -0.5498963671682165,
+            "profit_factor": 1.27108444719661,
+            "mean_ci95_pct": [
+              0.1498135714831884,
+              0.8464493670483068
+            ],
+            "prob_mean_positive": 0.9975,
+            "portfolio": {
+              "accepted_trades": 963,
+              "skipped_capacity_or_duplicate": 232,
+              "max_positions": 10,
+              "cagr_pct": 7.439184822065714,
+              "max_drawdown_pct": 20.069995832462297,
+              "sharpe": 0.4099686967147859,
+              "final_equity": 1.640280589725674,
+              "average_exposure_pct": 37.5907780979828
+            },
+            "by_year": {
+              "2019": {
+                "trades": 191,
+                "win_rate_pct": 52.35602094240838,
+                "mean_pct": 1.1278518590661952,
+                "median_pct": 0.20986545360582326,
+                "profit_factor": 1.8895337512117154
+              },
+              "2020": {
+                "trades": 170,
+                "win_rate_pct": 44.11764705882353,
+                "mean_pct": 0.779304830286324,
+                "median_pct": -0.8851404658708438,
+                "profit_factor": 1.4428803171199187
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 44.15584415584416,
+                "mean_pct": 0.31111799295373205,
+                "median_pct": -0.7138939027550998,
+                "profit_factor": 1.180482117700712
+              },
+              "2022": {
+                "trades": 26,
+                "win_rate_pct": 26.923076923076923,
+                "mean_pct": -3.2323134204692043,
+                "median_pct": -2.958353785115651,
+                "profit_factor": 0.10085201341715831
+              },
+              "2023": {
+                "trades": 190,
+                "win_rate_pct": 37.89473684210527,
+                "mean_pct": -0.4256340227408241,
+                "median_pct": -0.859370379102742,
+                "profit_factor": 0.7574060037934305
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 46.08294930875576,
+                "mean_pct": 0.8212180789070069,
+                "median_pct": -0.33398720287362293,
+                "profit_factor": 1.461203889143252
+              },
+              "2025": {
+                "trades": 170,
+                "win_rate_pct": 48.23529411764706,
+                "mean_pct": 0.8120751256550864,
+                "median_pct": -0.22165816553249978,
+                "profit_factor": 1.3899128339702544
+              }
+            }
+          }
+        }
+      },
+      "no_false_breakout_exit": {
+        "unfiltered": {
+          "all": {
+            "trades": 3656,
+            "win_rate_pct": 44.201312910284464,
+            "mean_pct": 0.31094476844848007,
+            "median_pct": -0.49774361786230764,
+            "profit_factor": 1.1945567178996128
+          },
+          "in_sample_2006_2018": {
+            "trades": 2339,
+            "win_rate_pct": 44.206926036767854,
+            "mean_pct": 0.23274132834721495,
+            "median_pct": -0.4537081065975569,
+            "profit_factor": 1.157192198076402
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1317,
+            "win_rate_pct": 44.19134396355353,
+            "mean_pct": 0.44983455310820586,
+            "median_pct": -0.5950619867994841,
+            "profit_factor": 1.248927637685484,
+            "mean_ci95_pct": [
+              0.1253314788220452,
+              0.7958691820149274
+            ],
+            "prob_mean_positive": 0.997,
+            "portfolio": {
+              "accepted_trades": 1062,
+              "skipped_capacity_or_duplicate": 255,
+              "max_positions": 10,
+              "cagr_pct": 7.8667948594937975,
+              "max_drawdown_pct": 21.756814792893664,
+              "sharpe": 0.4181703957406762,
+              "final_equity": 1.6981138551504973,
+              "average_exposure_pct": 41.25071063104044
+            },
+            "by_year": {
+              "2019": {
+                "trades": 198,
+                "win_rate_pct": 52.02020202020202,
+                "mean_pct": 1.199073358797331,
+                "median_pct": 0.18603772230373694,
+                "profit_factor": 1.9667754688285695
+              },
+              "2020": {
+                "trades": 198,
+                "win_rate_pct": 43.43434343434344,
+                "mean_pct": 0.7771104655135762,
+                "median_pct": -0.8851404658708438,
+                "profit_factor": 1.42839891266077
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 44.15584415584416,
+                "mean_pct": 0.31111799295373205,
+                "median_pct": -0.7138939027550998,
+                "profit_factor": 1.180482117700712
+              },
+              "2022": {
+                "trades": 97,
+                "win_rate_pct": 28.865979381443296,
+                "mean_pct": -1.570376200396281,
+                "median_pct": -2.3381616302203527,
+                "profit_factor": 0.4736205780634317
+              },
+              "2023": {
+                "trades": 200,
+                "win_rate_pct": 40.0,
+                "mean_pct": -0.13916252550149824,
+                "median_pct": -0.6303059042099624,
+                "profit_factor": 0.9179902148948497
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 46.08294930875576,
+                "mean_pct": 0.8212180789070069,
+                "median_pct": -0.33398720287362293,
+                "profit_factor": 1.461203889143252
+              },
+              "2025": {
+                "trades": 176,
+                "win_rate_pct": 47.159090909090914,
+                "mean_pct": 0.7456484447361011,
+                "median_pct": -0.2631887631728947,
+                "profit_factor": 1.3626903961151575
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 3190,
+            "win_rate_pct": 44.70219435736677,
+            "mean_pct": 0.3260387969734186,
+            "median_pct": -0.4741450168384692,
+            "profit_factor": 1.2121167478571777
+          },
+          "in_sample_2006_2018": {
+            "trades": 1995,
+            "win_rate_pct": 44.51127819548872,
+            "mean_pct": 0.23506140276257922,
+            "median_pct": -0.4340954290595566,
+            "profit_factor": 1.1676922216343903
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1195,
+            "win_rate_pct": 45.020920502092046,
+            "mean_pct": 0.47792155969360656,
+            "median_pct": -0.5498963671682165,
+            "profit_factor": 1.27108444719661,
+            "mean_ci95_pct": [
+              0.1498135714831884,
+              0.8464493670483068
+            ],
+            "prob_mean_positive": 0.9975,
+            "portfolio": {
+              "accepted_trades": 963,
+              "skipped_capacity_or_duplicate": 232,
+              "max_positions": 10,
+              "cagr_pct": 7.439184822065714,
+              "max_drawdown_pct": 20.069995832462297,
+              "sharpe": 0.4099686967147859,
+              "final_equity": 1.640280589725674,
+              "average_exposure_pct": 37.5907780979828
+            },
+            "by_year": {
+              "2019": {
+                "trades": 191,
+                "win_rate_pct": 52.35602094240838,
+                "mean_pct": 1.1278518590661952,
+                "median_pct": 0.20986545360582326,
+                "profit_factor": 1.8895337512117154
+              },
+              "2020": {
+                "trades": 170,
+                "win_rate_pct": 44.11764705882353,
+                "mean_pct": 0.779304830286324,
+                "median_pct": -0.8851404658708438,
+                "profit_factor": 1.4428803171199187
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 44.15584415584416,
+                "mean_pct": 0.31111799295373205,
+                "median_pct": -0.7138939027550998,
+                "profit_factor": 1.180482117700712
+              },
+              "2022": {
+                "trades": 26,
+                "win_rate_pct": 26.923076923076923,
+                "mean_pct": -3.2323134204692043,
+                "median_pct": -2.958353785115651,
+                "profit_factor": 0.10085201341715831
+              },
+              "2023": {
+                "trades": 190,
+                "win_rate_pct": 37.89473684210527,
+                "mean_pct": -0.4256340227408241,
+                "median_pct": -0.859370379102742,
+                "profit_factor": 0.7574060037934305
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 46.08294930875576,
+                "mean_pct": 0.8212180789070069,
+                "median_pct": -0.33398720287362293,
+                "profit_factor": 1.461203889143252
+              },
+              "2025": {
+                "trades": 170,
+                "win_rate_pct": 48.23529411764706,
+                "mean_pct": 0.8120751256550864,
+                "median_pct": -0.22165816553249978,
+                "profit_factor": 1.3899128339702544
+              }
+            }
+          }
+        }
+      },
+      "no_trailing_stop": {
+        "unfiltered": {
+          "all": {
+            "trades": 3656,
+            "win_rate_pct": 44.064551422319475,
+            "mean_pct": 0.3259182689707702,
+            "median_pct": -0.5069728355882923,
+            "profit_factor": 1.2037014638172094
+          },
+          "in_sample_2006_2018": {
+            "trades": 2339,
+            "win_rate_pct": 44.12141941000428,
+            "mean_pct": 0.25222700438806306,
+            "median_pct": -0.4554778387280028,
+            "profit_factor": 1.170289079837976
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1317,
+            "win_rate_pct": 43.96355353075171,
+            "mean_pct": 0.45679440250072617,
+            "median_pct": -0.6036234949966184,
+            "profit_factor": 1.252234907806084,
+            "mean_ci95_pct": [
+              0.1441805394893506,
+              0.7859276531198947
+            ],
+            "prob_mean_positive": 0.9985,
+            "portfolio": {
+              "accepted_trades": 1062,
+              "skipped_capacity_or_duplicate": 255,
+              "max_positions": 10,
+              "cagr_pct": 8.18520813969592,
+              "max_drawdown_pct": 21.53692424562713,
+              "sharpe": 0.43814767385419023,
+              "final_equity": 1.73347643285805,
+              "average_exposure_pct": 41.51222285389425
+            },
+            "by_year": {
+              "2019": {
+                "trades": 198,
+                "win_rate_pct": 51.515151515151516,
+                "mean_pct": 1.2248574354813568,
+                "median_pct": 0.15196190074202653,
+                "profit_factor": 1.9860485048231216
+              },
+              "2020": {
+                "trades": 198,
+                "win_rate_pct": 42.92929292929293,
+                "mean_pct": 0.7463193584617559,
+                "median_pct": -0.953702847993667,
+                "profit_factor": 1.408550777939266
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 43.290043290043286,
+                "mean_pct": 0.20672217413947705,
+                "median_pct": -0.8142804635429115,
+                "profit_factor": 1.119169787410584
+              },
+              "2022": {
+                "trades": 97,
+                "win_rate_pct": 28.865979381443296,
+                "mean_pct": -1.5526605928192079,
+                "median_pct": -2.3381616302203527,
+                "profit_factor": 0.479558729235948
+              },
+              "2023": {
+                "trades": 200,
+                "win_rate_pct": 40.5,
+                "mean_pct": -0.12954957551980628,
+                "median_pct": -0.6303059042099624,
+                "profit_factor": 0.9235920019035876
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 46.08294930875576,
+                "mean_pct": 0.8899483004630587,
+                "median_pct": -0.33398720287362293,
+                "profit_factor": 1.4998034357162127
+              },
+              "2025": {
+                "trades": 176,
+                "win_rate_pct": 47.159090909090914,
+                "mean_pct": 0.8349523413263724,
+                "median_pct": -0.2631887631728947,
+                "profit_factor": 1.406128648897158
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 3190,
+            "win_rate_pct": 44.608150470219435,
+            "mean_pct": 0.34221474943391106,
+            "median_pct": -0.4869651238920568,
+            "profit_factor": 1.2224077360505516
+          },
+          "in_sample_2006_2018": {
+            "trades": 1995,
+            "win_rate_pct": 44.51127819548872,
+            "mean_pct": 0.2571672241997283,
+            "median_pct": -0.4340954290595566,
+            "profit_factor": 1.1834624598116588
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1195,
+            "win_rate_pct": 44.76987447698745,
+            "mean_pct": 0.4841978564148271,
+            "median_pct": -0.5690462566105624,
+            "profit_factor": 1.2739767804721358,
+            "mean_ci95_pct": [
+              0.1600444993578541,
+              0.8421026150130838
+            ],
+            "prob_mean_positive": 0.9985,
+            "portfolio": {
+              "accepted_trades": 963,
+              "skipped_capacity_or_duplicate": 232,
+              "max_positions": 10,
+              "cagr_pct": 7.83249978230216,
+              "max_drawdown_pct": 19.982183417478428,
+              "sharpe": 0.43756320458284015,
+              "final_equity": 1.6821429775569048,
+              "average_exposure_pct": 37.85014409221903
+            },
+            "by_year": {
+              "2019": {
+                "trades": 191,
+                "win_rate_pct": 51.832460732984295,
+                "mean_pct": 1.1545809019114153,
+                "median_pct": 0.16220999100165062,
+                "profit_factor": 1.9091975108790042
+              },
+              "2020": {
+                "trades": 170,
+                "win_rate_pct": 43.529411764705884,
+                "mean_pct": 0.7437508754076483,
+                "median_pct": -0.953702847993667,
+                "profit_factor": 1.4191349273994696
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 43.290043290043286,
+                "mean_pct": 0.20672217413947705,
+                "median_pct": -0.8142804635429115,
+                "profit_factor": 1.119169787410584
+              },
+              "2022": {
+                "trades": 26,
+                "win_rate_pct": 26.923076923076923,
+                "mean_pct": -3.2323134204692043,
+                "median_pct": -2.958353785115651,
+                "profit_factor": 0.10085201341715831
+              },
+              "2023": {
+                "trades": 190,
+                "win_rate_pct": 38.421052631578945,
+                "mean_pct": -0.4155151280232537,
+                "median_pct": -0.859370379102742,
+                "profit_factor": 0.7629737175302925
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 46.08294930875576,
+                "mean_pct": 0.8899483004630587,
+                "median_pct": -0.33398720287362293,
+                "profit_factor": 1.4998034357162127
+              },
+              "2025": {
+                "trades": 170,
+                "win_rate_pct": 48.23529411764706,
+                "mean_pct": 0.9045309244779556,
+                "median_pct": -0.22165816553249978,
+                "profit_factor": 1.4343049122363234
+              }
+            }
+          }
+        }
+      },
+      "no_shooting_star": {
+        "unfiltered": {
+          "all": {
+            "trades": 3656,
+            "win_rate_pct": 43.40809628008753,
+            "mean_pct": 0.38735641242715924,
+            "median_pct": -0.5694071107965721,
+            "profit_factor": 1.2366981180761072
+          },
+          "in_sample_2006_2018": {
+            "trades": 2339,
+            "win_rate_pct": 43.351859769132105,
+            "mean_pct": 0.25877879945865695,
+            "median_pct": -0.5225817824113095,
+            "profit_factor": 1.1704003028287517
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1317,
+            "win_rate_pct": 43.50797266514807,
+            "mean_pct": 0.6157110340925555,
+            "median_pct": -0.6346172626201924,
+            "profit_factor": 1.3335744974325237,
+            "mean_ci95_pct": [
+              0.2513296738582431,
+              1.0029349980852584
+            ],
+            "prob_mean_positive": 0.9995,
+            "portfolio": {
+              "accepted_trades": 1043,
+              "skipped_capacity_or_duplicate": 274,
+              "max_positions": 10,
+              "cagr_pct": 10.991474339786112,
+              "max_drawdown_pct": 21.579295145448118,
+              "sharpe": 0.6051472022445165,
+              "final_equity": 2.0734155565046732,
+              "average_exposure_pct": 44.24104604889138
+            },
+            "by_year": {
+              "2019": {
+                "trades": 198,
+                "win_rate_pct": 52.02020202020202,
+                "mean_pct": 1.419923049998941,
+                "median_pct": 0.18603772230373694,
+                "profit_factor": 2.14308606298986
+              },
+              "2020": {
+                "trades": 198,
+                "win_rate_pct": 43.43434343434344,
+                "mean_pct": 0.727089167312768,
+                "median_pct": -0.8851404658708438,
+                "profit_factor": 1.4016927012878728
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 43.290043290043286,
+                "mean_pct": 0.45022122449865537,
+                "median_pct": -0.7761444985576336,
+                "profit_factor": 1.2600485205710223
+              },
+              "2022": {
+                "trades": 97,
+                "win_rate_pct": 26.804123711340207,
+                "mean_pct": -1.437918652590164,
+                "median_pct": -2.514366188686075,
+                "profit_factor": 0.5319322697193398
+              },
+              "2023": {
+                "trades": 200,
+                "win_rate_pct": 39.5,
+                "mean_pct": -0.02254672744399104,
+                "median_pct": -0.9073981074614771,
+                "profit_factor": 0.9878632486729884
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 45.622119815668206,
+                "mean_pct": 1.3276057629708122,
+                "median_pct": -0.33398720287362293,
+                "profit_factor": 1.7279632577208577
+              },
+              "2025": {
+                "trades": 176,
+                "win_rate_pct": 45.45454545454545,
+                "mean_pct": 0.782266558172531,
+                "median_pct": -0.551101836980231,
+                "profit_factor": 1.3810013472124287
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 3190,
+            "win_rate_pct": 43.98119122257053,
+            "mean_pct": 0.4166837996370545,
+            "median_pct": -0.5485395354483875,
+            "profit_factor": 1.2653663889483575
+          },
+          "in_sample_2006_2018": {
+            "trades": 1995,
+            "win_rate_pct": 43.80952380952381,
+            "mean_pct": 0.2847034432319196,
+            "median_pct": -0.4975950784215389,
+            "profit_factor": 1.1989069810987558
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1195,
+            "win_rate_pct": 44.26778242677824,
+            "mean_pct": 0.6370192063552504,
+            "median_pct": -0.6036234949966184,
+            "profit_factor": 1.3534917506006252,
+            "mean_ci95_pct": [
+              0.2721593264702581,
+              1.0480559657675113
+            ],
+            "prob_mean_positive": 0.999,
+            "portfolio": {
+              "accepted_trades": 947,
+              "skipped_capacity_or_duplicate": 248,
+              "max_positions": 10,
+              "cagr_pct": 9.997828785316031,
+              "max_drawdown_pct": 21.063650586891846,
+              "sharpe": 0.568633974082285,
+              "final_equity": 1.929352498156457,
+              "average_exposure_pct": 40.47838616714698
+            },
+            "by_year": {
+              "2019": {
+                "trades": 191,
+                "win_rate_pct": 51.832460732984295,
+                "mean_pct": 1.352818531137264,
+                "median_pct": 0.16220999100165062,
+                "profit_factor": 2.065240003203578
+              },
+              "2020": {
+                "trades": 170,
+                "win_rate_pct": 44.11764705882353,
+                "mean_pct": 0.6882393666318731,
+                "median_pct": -0.8851404658708438,
+                "profit_factor": 1.3921463800699059
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 43.290043290043286,
+                "mean_pct": 0.45022122449865537,
+                "median_pct": -0.7761444985576336,
+                "profit_factor": 1.2600485205710223
+              },
+              "2022": {
+                "trades": 26,
+                "win_rate_pct": 19.230769230769234,
+                "mean_pct": -3.125379613290004,
+                "median_pct": -3.19602403231872,
+                "profit_factor": 0.1716956893824966
+              },
+              "2023": {
+                "trades": 190,
+                "win_rate_pct": 37.89473684210527,
+                "mean_pct": -0.3688037815659931,
+                "median_pct": -1.0161670007665402,
+                "profit_factor": 0.8081198338332595
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 45.622119815668206,
+                "mean_pct": 1.3276057629708122,
+                "median_pct": -0.33398720287362293,
+                "profit_factor": 1.7279632577208577
+              },
+              "2025": {
+                "trades": 170,
+                "win_rate_pct": 46.470588235294116,
+                "mean_pct": 0.8534703225830084,
+                "median_pct": -0.3813231527233746,
+                "profit_factor": 1.4103383180598443
+              }
+            }
+          }
+        }
+      },
+      "no_time_stop": {
+        "unfiltered": {
+          "all": {
+            "trades": 3656,
+            "win_rate_pct": 39.25054704595186,
+            "mean_pct": 0.7671592758076625,
+            "median_pct": -1.5801687591650775,
+            "profit_factor": 1.337965621980376
+          },
+          "in_sample_2006_2018": {
+            "trades": 2339,
+            "win_rate_pct": 38.47798204360838,
+            "mean_pct": 0.5860203041296003,
+            "median_pct": -1.5432098840057062,
+            "profit_factor": 1.2726406832460249
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1317,
+            "win_rate_pct": 40.62262718299165,
+            "mean_pct": 1.0888631898205612,
+            "median_pct": -1.6609146462023792,
+            "profit_factor": 1.438358101619496,
+            "mean_ci95_pct": [
+              0.535711082196054,
+              1.673058170127297
+            ],
+            "prob_mean_positive": 1.0,
+            "portfolio": {
+              "accepted_trades": 814,
+              "skipped_capacity_or_duplicate": 503,
+              "max_positions": 10,
+              "cagr_pct": 12.271742384062833,
+              "max_drawdown_pct": 23.081795856919275,
+              "sharpe": 0.6999629473431687,
+              "final_equity": 2.2465430631129415,
+              "average_exposure_pct": 53.25753268902782
+            },
+            "by_year": {
+              "2019": {
+                "trades": 198,
+                "win_rate_pct": 47.97979797979798,
+                "mean_pct": 2.3273991616759795,
+                "median_pct": -0.3748244187799836,
+                "profit_factor": 2.3410185914808532
+              },
+              "2020": {
+                "trades": 198,
+                "win_rate_pct": 44.94949494949495,
+                "mean_pct": 1.7339429263232564,
+                "median_pct": -1.373375277845062,
+                "profit_factor": 1.7289145277533708
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 36.36363636363637,
+                "mean_pct": 0.5890517960535631,
+                "median_pct": -1.9797194486919882,
+                "profit_factor": 1.230990427237347
+              },
+              "2022": {
+                "trades": 97,
+                "win_rate_pct": 21.649484536082475,
+                "mean_pct": -1.929863967404709,
+                "median_pct": -3.417710187623476,
+                "profit_factor": 0.4784298874878471
+              },
+              "2023": {
+                "trades": 200,
+                "win_rate_pct": 41.5,
+                "mean_pct": 0.6642542272009793,
+                "median_pct": -1.490242039873826,
+                "profit_factor": 1.291370192208382
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 45.16129032258064,
+                "mean_pct": 2.0527347320560496,
+                "median_pct": -0.8289529749489714,
+                "profit_factor": 1.876328710619107
+              },
+              "2025": {
+                "trades": 176,
+                "win_rate_pct": 36.93181818181818,
+                "mean_pct": 0.5836286660417903,
+                "median_pct": -2.0472251818120184,
+                "profit_factor": 1.1886520167836057
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 3190,
+            "win_rate_pct": 39.18495297805642,
+            "mean_pct": 0.845722082393922,
+            "median_pct": -1.5387176537932714,
+            "profit_factor": 1.3877781426323716
+          },
+          "in_sample_2006_2018": {
+            "trades": 1995,
+            "win_rate_pct": 37.94486215538847,
+            "mean_pct": 0.6555400882977365,
+            "median_pct": -1.528031159672844,
+            "profit_factor": 1.3239828183063502
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1195,
+            "win_rate_pct": 41.25523012552301,
+            "mean_pct": 1.163222566261612,
+            "median_pct": -1.5626334944621179,
+            "profit_factor": 1.4759524030886797,
+            "mean_ci95_pct": [
+              0.5881939798658977,
+              1.7738733317830344
+            ],
+            "prob_mean_positive": 1.0,
+            "portfolio": {
+              "accepted_trades": 734,
+              "skipped_capacity_or_duplicate": 461,
+              "max_positions": 10,
+              "cagr_pct": 12.222941903451856,
+              "max_drawdown_pct": 18.92470474012111,
+              "sharpe": 0.7313994656547613,
+              "final_equity": 2.2151105937644306,
+              "average_exposure_pct": 49.28530259365995
+            },
+            "by_year": {
+              "2019": {
+                "trades": 191,
+                "win_rate_pct": 48.167539267015705,
+                "mean_pct": 2.25058200501659,
+                "median_pct": -0.3859117547003029,
+                "profit_factor": 2.2683767995774833
+              },
+              "2020": {
+                "trades": 170,
+                "win_rate_pct": 44.11764705882353,
+                "mean_pct": 1.5712441443681395,
+                "median_pct": -1.3990594035280597,
+                "profit_factor": 1.6675996080001931
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 36.36363636363637,
+                "mean_pct": 0.5890517960535631,
+                "median_pct": -1.9797194486919882,
+                "profit_factor": 1.230990427237347
+              },
+              "2022": {
+                "trades": 26,
+                "win_rate_pct": 19.230769230769234,
+                "mean_pct": -3.093454704787332,
+                "median_pct": -3.3551533918989755,
+                "profit_factor": 0.23352220831733048
+              },
+              "2023": {
+                "trades": 190,
+                "win_rate_pct": 39.473684210526315,
+                "mean_pct": 0.3980728871975565,
+                "median_pct": -1.6582705083996792,
+                "profit_factor": 1.168319778118409
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 45.16129032258064,
+                "mean_pct": 2.0527347320560496,
+                "median_pct": -0.8289529749489714,
+                "profit_factor": 1.876328710619107
+              },
+              "2025": {
+                "trades": 170,
+                "win_rate_pct": 37.64705882352941,
+                "mean_pct": 0.684469830554547,
+                "median_pct": -2.0472251818120184,
+                "profit_factor": 1.219592384960914
+              }
+            }
+          }
+        }
+      },
+      "stop_and_20d": {
+        "unfiltered": {
+          "all": {
+            "trades": 3656,
+            "win_rate_pct": 37.800875273522976,
+            "mean_pct": 0.9161372960444586,
+            "median_pct": -2.0991584370051672,
+            "profit_factor": 1.34648299730242
+          },
+          "in_sample_2006_2018": {
+            "trades": 2339,
+            "win_rate_pct": 36.98161607524583,
+            "mean_pct": 0.6969748869534651,
+            "median_pct": -2.0215285227050557,
+            "profit_factor": 1.279886476018039
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1317,
+            "win_rate_pct": 39.25588458618071,
+            "mean_pct": 1.3053710658727302,
+            "median_pct": -2.31765832620532,
+            "profit_factor": 1.4474386739798424,
+            "mean_ci95_pct": [
+              0.7311851302234488,
+              1.8999140243886765
+            ],
+            "prob_mean_positive": 1.0,
+            "portfolio": {
+              "accepted_trades": 740,
+              "skipped_capacity_or_duplicate": 577,
+              "max_positions": 10,
+              "cagr_pct": 12.92301800140172,
+              "max_drawdown_pct": 28.723193398145096,
+              "sharpe": 0.6732230395754756,
+              "final_equity": 2.3392677453186645,
+              "average_exposure_pct": 58.48209209778259
+            },
+            "by_year": {
+              "2019": {
+                "trades": 198,
+                "win_rate_pct": 50.0,
+                "mean_pct": 2.7698822175273103,
+                "median_pct": 2.3291331635899337,
+                "profit_factor": 2.4840221580286994
+              },
+              "2020": {
+                "trades": 198,
+                "win_rate_pct": 40.4040404040404,
+                "mean_pct": 1.5244173832612284,
+                "median_pct": -2.279064583663052,
+                "profit_factor": 1.5225080633337529
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 36.79653679653679,
+                "mean_pct": 0.8610201739181774,
+                "median_pct": -2.596971891756085,
+                "profit_factor": 1.2944496124744163
+              },
+              "2022": {
+                "trades": 97,
+                "win_rate_pct": 18.556701030927837,
+                "mean_pct": -2.329069669978055,
+                "median_pct": -4.090391035285686,
+                "profit_factor": 0.46920503787617945
+              },
+              "2023": {
+                "trades": 200,
+                "win_rate_pct": 39.5,
+                "mean_pct": 0.9576949729471796,
+                "median_pct": -2.1901032638798394,
+                "profit_factor": 1.3341147771968596
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 42.3963133640553,
+                "mean_pct": 2.724261264416525,
+                "median_pct": -1.9632012277572677,
+                "profit_factor": 1.9805502044519125
+              },
+              "2025": {
+                "trades": 176,
+                "win_rate_pct": 36.36363636363637,
+                "mean_pct": 0.6433112593363942,
+                "median_pct": -2.8201202276628057,
+                "profit_factor": 1.183280305862943
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 3190,
+            "win_rate_pct": 37.93103448275862,
+            "mean_pct": 1.0038079554439663,
+            "median_pct": -2.0485069284063147,
+            "profit_factor": 1.3950853869319706
+          },
+          "in_sample_2006_2018": {
+            "trades": 1995,
+            "win_rate_pct": 36.74185463659148,
+            "mean_pct": 0.7642146267928924,
+            "median_pct": -1.9704925915619003,
+            "profit_factor": 1.3265368067815444
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1195,
+            "win_rate_pct": 39.9163179916318,
+            "mean_pct": 1.4037984915601938,
+            "median_pct": -2.256374458123859,
+            "profit_factor": 1.4882349325054443,
+            "mean_ci95_pct": [
+              0.7866815516791135,
+              2.0242702594913826
+            ],
+            "prob_mean_positive": 1.0,
+            "portfolio": {
+              "accepted_trades": 661,
+              "skipped_capacity_or_duplicate": 534,
+              "max_positions": 10,
+              "cagr_pct": 13.294404147808269,
+              "max_drawdown_pct": 22.355499339522556,
+              "sharpe": 0.7212307337213425,
+              "final_equity": 2.365138424052745,
+              "average_exposure_pct": 54.391930835734655
+            },
+            "by_year": {
+              "2019": {
+                "trades": 191,
+                "win_rate_pct": 49.73821989528796,
+                "mean_pct": 2.6520965527551463,
+                "median_pct": -0.2,
+                "profit_factor": 2.3884001518118754
+              },
+              "2020": {
+                "trades": 170,
+                "win_rate_pct": 38.82352941176471,
+                "mean_pct": 1.2875492144214813,
+                "median_pct": -2.3221922455390485,
+                "profit_factor": 1.4345352653643857
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 36.79653679653679,
+                "mean_pct": 0.8610201739181774,
+                "median_pct": -2.596971891756085,
+                "profit_factor": 1.2944496124744163
+              },
+              "2022": {
+                "trades": 26,
+                "win_rate_pct": 11.538461538461538,
+                "mean_pct": -3.8012744197176,
+                "median_pct": -4.753026536580952,
+                "profit_factor": 0.24413705584028017
+              },
+              "2023": {
+                "trades": 190,
+                "win_rate_pct": 37.89473684210527,
+                "mean_pct": 0.6796231079457324,
+                "median_pct": -2.409318809647825,
+                "profit_factor": 1.2309973794709534
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 42.3963133640553,
+                "mean_pct": 2.724261264416525,
+                "median_pct": -1.9632012277572677,
+                "profit_factor": 1.9805502044519125
+              },
+              "2025": {
+                "trades": 170,
+                "win_rate_pct": 37.64705882352941,
+                "mean_pct": 0.7749987013884154,
+                "median_pct": -2.8201202276628057,
+                "profit_factor": 1.2198649451140096
+              }
+            }
+          }
+        }
+      },
+      "trailing_stop_and_20d": {
+        "unfiltered": {
+          "all": {
+            "trades": 3656,
+            "win_rate_pct": 37.91028446389497,
+            "mean_pct": 0.8826845972273542,
+            "median_pct": -2.093603726694062,
+            "profit_factor": 1.3353710225260438
+          },
+          "in_sample_2006_2018": {
+            "trades": 2339,
+            "win_rate_pct": 37.02436938862762,
+            "mean_pct": 0.6647427361654118,
+            "median_pct": -2.0176381462736592,
+            "profit_factor": 1.2674158400807387
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1317,
+            "win_rate_pct": 39.48367501898253,
+            "mean_pct": 1.2697506663419205,
+            "median_pct": -2.288616916813307,
+            "profit_factor": 1.4391245183055938,
+            "mean_ci95_pct": [
+              0.7022258008659639,
+              1.8745430750312462
+            ],
+            "prob_mean_positive": 1.0,
+            "portfolio": {
+              "accepted_trades": 749,
+              "skipped_capacity_or_duplicate": 568,
+              "max_positions": 10,
+              "cagr_pct": 11.897420252647084,
+              "max_drawdown_pct": 29.006692282461046,
+              "sharpe": 0.6326998403478888,
+              "final_equity": 2.194688805683195,
+              "average_exposure_pct": 58.214894826605835
+            },
+            "by_year": {
+              "2019": {
+                "trades": 198,
+                "win_rate_pct": 50.505050505050505,
+                "mean_pct": 2.7656390408474665,
+                "median_pct": 4.5000884584349174,
+                "profit_factor": 2.4976676729822422
+              },
+              "2020": {
+                "trades": 198,
+                "win_rate_pct": 40.909090909090914,
+                "mean_pct": 1.5354595600567624,
+                "median_pct": -2.2554989713742533,
+                "profit_factor": 1.535529503279461
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 36.79653679653679,
+                "mean_pct": 0.8071451996078443,
+                "median_pct": -2.596971891756085,
+                "profit_factor": 1.2760255780693244
+              },
+              "2022": {
+                "trades": 97,
+                "win_rate_pct": 18.556701030927837,
+                "mean_pct": -2.346785277555128,
+                "median_pct": -4.090391035285686,
+                "profit_factor": 0.465167651028511
+              },
+              "2023": {
+                "trades": 200,
+                "win_rate_pct": 39.0,
+                "mean_pct": 0.7728374205973689,
+                "median_pct": -2.1901032638798394,
+                "profit_factor": 1.2694908100689672
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 43.31797235023041,
+                "mean_pct": 2.7900151467797873,
+                "median_pct": -1.6009665289616941,
+                "profit_factor": 2.039517018331109
+              },
+              "2025": {
+                "trades": 176,
+                "win_rate_pct": 36.36363636363637,
+                "mean_pct": 0.5785850252046563,
+                "median_pct": -2.8201202276628057,
+                "profit_factor": 1.1648397083810047
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 3190,
+            "win_rate_pct": 38.025078369905955,
+            "mean_pct": 0.9740488537658375,
+            "median_pct": -2.044395970423866,
+            "profit_factor": 1.3849916019493904
+          },
+          "in_sample_2006_2018": {
+            "trades": 1995,
+            "win_rate_pct": 36.74185463659148,
+            "mean_pct": 0.7374784291893244,
+            "median_pct": -1.9704925915619003,
+            "profit_factor": 1.3151128529799958
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 1195,
+            "win_rate_pct": 40.1673640167364,
+            "mean_pct": 1.3689927843349956,
+            "median_pct": -2.2487612994880295,
+            "profit_factor": 1.4809000830748567,
+            "mean_ci95_pct": [
+              0.762819813229183,
+              1.9971716160992428
+            ],
+            "prob_mean_positive": 1.0,
+            "portfolio": {
+              "accepted_trades": 670,
+              "skipped_capacity_or_duplicate": 525,
+              "max_positions": 10,
+              "cagr_pct": 12.279682361162102,
+              "max_drawdown_pct": 22.532833971370746,
+              "sharpe": 0.6836257035592793,
+              "final_equity": 2.222846157893649,
+              "average_exposure_pct": 54.121037463976805
+            },
+            "by_year": {
+              "2019": {
+                "trades": 191,
+                "win_rate_pct": 50.26178010471204,
+                "mean_pct": 2.6476978669823232,
+                "median_pct": 4.141910589689967,
+                "profit_factor": 2.4011832584253834
+              },
+              "2020": {
+                "trades": 170,
+                "win_rate_pct": 39.411764705882355,
+                "mean_pct": 1.321591468059738,
+                "median_pct": -2.279064583663052,
+                "profit_factor": 1.4550244168867765
+              },
+              "2021": {
+                "trades": 231,
+                "win_rate_pct": 36.79653679653679,
+                "mean_pct": 0.8071451996078443,
+                "median_pct": -2.596971891756085,
+                "profit_factor": 1.2760255780693244
+              },
+              "2022": {
+                "trades": 26,
+                "win_rate_pct": 11.538461538461538,
+                "mean_pct": -3.8012744197176,
+                "median_pct": -4.753026536580952,
+                "profit_factor": 0.24413705584028017
+              },
+              "2023": {
+                "trades": 190,
+                "win_rate_pct": 37.368421052631575,
+                "mean_pct": 0.48503621073540515,
+                "median_pct": -2.409318809647825,
+                "profit_factor": 1.1647763933705317
+              },
+              "2024": {
+                "trades": 217,
+                "win_rate_pct": 43.31797235023041,
+                "mean_pct": 2.7900151467797873,
+                "median_pct": -1.6009665289616941,
+                "profit_factor": 2.039517018331109
+              },
+              "2025": {
+                "trades": 170,
+                "win_rate_pct": 37.64705882352941,
+                "mean_pct": 0.7079880119343808,
+                "median_pct": -2.8201202276628057,
+                "profit_factor": 1.2008542015702226
+              }
+            }
+          }
+        }
+      }
+    },
+    "breakout_no_retest": {
+      "full": {
+        "unfiltered": {
+          "all": {
+            "trades": 2261,
+            "win_rate_pct": 42.857142857142854,
+            "mean_pct": 0.23738027174919246,
+            "median_pct": -0.42778944310755734,
+            "profit_factor": 1.2180429931107999
+          },
+          "in_sample_2006_2018": {
+            "trades": 1602,
+            "win_rate_pct": 43.69538077403246,
+            "mean_pct": 0.3151262407306138,
+            "median_pct": -0.360417387469923,
+            "profit_factor": 1.3165749526809825
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 659,
+            "win_rate_pct": 40.819423368740516,
+            "mean_pct": 0.04838324244989509,
+            "median_pct": -0.528543934327278,
+            "profit_factor": 1.0367821231847274,
+            "mean_ci95_pct": [
+              -0.2940109098869988,
+              0.42230651561303195
+            ],
+            "prob_mean_positive": 0.608,
+            "portfolio": {
+              "accepted_trades": 508,
+              "skipped_capacity_or_duplicate": 151,
+              "max_positions": 10,
+              "cagr_pct": 1.1954763936607327,
+              "max_drawdown_pct": 14.064999480742157,
+              "sharpe": -0.32029280057633824,
+              "final_equity": 1.0855877319508627,
+              "average_exposure_pct": 16.285221391604303
+            },
+            "by_year": {
+              "2019": {
+                "trades": 135,
+                "win_rate_pct": 42.22222222222222,
+                "mean_pct": 0.33536916071306216,
+                "median_pct": -0.3702335286161378,
+                "profit_factor": 1.3343666039046043
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 37.2093023255814,
+                "mean_pct": -0.5583950207803556,
+                "median_pct": -1.0163595676397217,
+                "profit_factor": 0.6435734402724212
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 37.96296296296296,
+                "mean_pct": -0.6219081270084313,
+                "median_pct": -1.1174856877322965,
+                "profit_factor": 0.5907368881260304
+              },
+              "2022": {
+                "trades": 31,
+                "win_rate_pct": 41.935483870967744,
+                "mean_pct": -1.039231932220329,
+                "median_pct": -0.8822582370532221,
+                "profit_factor": 0.4840417350618134
+              },
+              "2023": {
+                "trades": 117,
+                "win_rate_pct": 37.60683760683761,
+                "mean_pct": 0.31590242070734686,
+                "median_pct": -0.5865155254507071,
+                "profit_factor": 1.250530297478949
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 40.56603773584906,
+                "mean_pct": 0.1431826162383749,
+                "median_pct": -0.3773264909109975,
+                "profit_factor": 1.1082184555409633
+              },
+              "2025": {
+                "trades": 76,
+                "win_rate_pct": 51.31578947368421,
+                "mean_pct": 1.077316038645283,
+                "median_pct": 0.13415627169342537,
+                "profit_factor": 1.993860981932223
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 2131,
+            "win_rate_pct": 42.74988268418583,
+            "mean_pct": 0.24647239533484677,
+            "median_pct": -0.42465688612358854,
+            "profit_factor": 1.2281319527454946
+          },
+          "in_sample_2006_2018": {
+            "trades": 1497,
+            "win_rate_pct": 43.62057448229793,
+            "mean_pct": 0.3437918010498144,
+            "median_pct": -0.36002707432740877,
+            "profit_factor": 1.348653471918714
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 634,
+            "win_rate_pct": 40.694006309148264,
+            "mean_pct": 0.016681937361177117,
+            "median_pct": -0.5255192155191987,
+            "profit_factor": 1.0128012890647895,
+            "mean_ci95_pct": [
+              -0.33217835058338574,
+              0.3866642048355012
+            ],
+            "prob_mean_positive": 0.5425,
+            "portfolio": {
+              "accepted_trades": 484,
+              "skipped_capacity_or_duplicate": 150,
+              "max_positions": 10,
+              "cagr_pct": 1.1018751055297038,
+              "max_drawdown_pct": 13.567927562083726,
+              "sharpe": -0.34885403392226577,
+              "final_equity": 1.0782795777405836,
+              "average_exposure_pct": 15.586366262276066
+            },
+            "by_year": {
+              "2019": {
+                "trades": 132,
+                "win_rate_pct": 40.909090909090914,
+                "mean_pct": 0.22807578178632745,
+                "median_pct": -0.4437068698065057,
+                "profit_factor": 1.2223407698464432
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 37.2093023255814,
+                "mean_pct": -0.5583950207803556,
+                "median_pct": -1.0163595676397217,
+                "profit_factor": 0.6435734402724212
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 37.96296296296296,
+                "mean_pct": -0.6219081270084313,
+                "median_pct": -1.1174856877322965,
+                "profit_factor": 0.5907368881260304
+              },
+              "2022": {
+                "trades": 16,
+                "win_rate_pct": 50.0,
+                "mean_pct": -0.9627594191445213,
+                "median_pct": -0.4568031460160209,
+                "profit_factor": 0.5104224675609318
+              },
+              "2023": {
+                "trades": 111,
+                "win_rate_pct": 37.83783783783784,
+                "mean_pct": 0.1389927863824195,
+                "median_pct": -0.4978921573030765,
+                "profit_factor": 1.1119206174290697
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 40.56603773584906,
+                "mean_pct": 0.1431826162383749,
+                "median_pct": -0.3773264909109975,
+                "profit_factor": 1.1082184555409633
+              },
+              "2025": {
+                "trades": 75,
+                "win_rate_pct": 50.66666666666667,
+                "mean_pct": 1.0727598492241106,
+                "median_pct": 0.10911872604436948,
+                "profit_factor": 1.9766359285987984
+              }
+            }
+          }
+        }
+      },
+      "no_false_breakout_exit": {
+        "unfiltered": {
+          "all": {
+            "trades": 2261,
+            "win_rate_pct": 50.287483414418396,
+            "mean_pct": 0.32602357213839367,
+            "median_pct": 0.010798012044799113,
+            "profit_factor": 1.268758473658735
+          },
+          "in_sample_2006_2018": {
+            "trades": 1602,
+            "win_rate_pct": 50.998751560549316,
+            "mean_pct": 0.3560693994036929,
+            "median_pct": 0.051322808474573656,
+            "profit_factor": 1.3109389480143074
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 659,
+            "win_rate_pct": 48.558421851289836,
+            "mean_pct": 0.25298348825522277,
+            "median_pct": -0.09376637018966132,
+            "profit_factor": 1.183559713024937,
+            "mean_ci95_pct": [
+              -0.0853096440881161,
+              0.6271462638284618
+            ],
+            "prob_mean_positive": 0.9245,
+            "portfolio": {
+              "accepted_trades": 491,
+              "skipped_capacity_or_duplicate": 168,
+              "max_positions": 10,
+              "cagr_pct": 2.161123840876189,
+              "max_drawdown_pct": 13.562033992182565,
+              "sharpe": -0.11271146529261913,
+              "final_equity": 1.159698236378535,
+              "average_exposure_pct": 19.868043602983434
+            },
+            "by_year": {
+              "2019": {
+                "trades": 135,
+                "win_rate_pct": 50.37037037037037,
+                "mean_pct": 0.4549986586084272,
+                "median_pct": 0.08370223347827777,
+                "profit_factor": 1.4109400691958491
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 43.02325581395349,
+                "mean_pct": -0.7812398033842234,
+                "median_pct": -0.853090941288449,
+                "profit_factor": 0.6065959763943591
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 45.370370370370374,
+                "mean_pct": -0.46421837114985315,
+                "median_pct": -0.21836111652343737,
+                "profit_factor": 0.7114485325790209
+              },
+              "2022": {
+                "trades": 31,
+                "win_rate_pct": 58.06451612903226,
+                "mean_pct": -0.3001790618583963,
+                "median_pct": 0.3623783339425254,
+                "profit_factor": 0.8312717737198618
+              },
+              "2023": {
+                "trades": 117,
+                "win_rate_pct": 47.008547008547005,
+                "mean_pct": 0.7295729235661136,
+                "median_pct": -0.13578439444070792,
+                "profit_factor": 1.562356425953531
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 46.22641509433962,
+                "mean_pct": 0.5092868314515553,
+                "median_pct": -0.10900807840112453,
+                "profit_factor": 1.439825204660101
+              },
+              "2025": {
+                "trades": 76,
+                "win_rate_pct": 57.89473684210527,
+                "mean_pct": 1.2180871282867327,
+                "median_pct": 0.659433849033501,
+                "profit_factor": 2.0948880431938908
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 2131,
+            "win_rate_pct": 50.02346316283435,
+            "mean_pct": 0.3245418406293813,
+            "median_pct": 0.001953042821988514,
+            "profit_factor": 1.2691430820899787
+          },
+          "in_sample_2006_2018": {
+            "trades": 1497,
+            "win_rate_pct": 50.9686038744155,
+            "mean_pct": 0.39477685682099545,
+            "median_pct": 0.05233779325191233,
+            "profit_factor": 1.3499742090952818
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 634,
+            "win_rate_pct": 47.791798107255524,
+            "mean_pct": 0.1587030090223678,
+            "median_pct": -0.12445613418943521,
+            "profit_factor": 1.11420975313123,
+            "mean_ci95_pct": [
+              -0.1679556280402443,
+              0.5226475872306318
+            ],
+            "prob_mean_positive": 0.823,
+            "portfolio": {
+              "accepted_trades": 468,
+              "skipped_capacity_or_duplicate": 166,
+              "max_positions": 10,
+              "cagr_pct": 1.4371880006394777,
+              "max_drawdown_pct": 14.898291345847603,
+              "sharpe": -0.2415568203282604,
+              "final_equity": 1.1034175949834282,
+              "average_exposure_pct": 18.662824207492843
+            },
+            "by_year": {
+              "2019": {
+                "trades": 132,
+                "win_rate_pct": 49.24242424242424,
+                "mean_pct": 0.30610204817398284,
+                "median_pct": -0.07459644016078067,
+                "profit_factor": 1.2703178793079548
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 43.02325581395349,
+                "mean_pct": -0.7812398033842234,
+                "median_pct": -0.853090941288449,
+                "profit_factor": 0.6065959763943591
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 45.370370370370374,
+                "mean_pct": -0.46421837114985315,
+                "median_pct": -0.21836111652343737,
+                "profit_factor": 0.7114485325790209
+              },
+              "2022": {
+                "trades": 16,
+                "win_rate_pct": 56.25,
+                "mean_pct": -0.9945406636542635,
+                "median_pct": 0.265915765781152,
+                "profit_factor": 0.5168548273256905
+              },
+              "2023": {
+                "trades": 111,
+                "win_rate_pct": 45.94594594594595,
+                "mean_pct": 0.43519909474313234,
+                "median_pct": -0.18000302202486113,
+                "profit_factor": 1.3291642294987709
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 46.22641509433962,
+                "mean_pct": 0.5092868314515553,
+                "median_pct": -0.10900807840112453,
+                "profit_factor": 1.439825204660101
+              },
+              "2025": {
+                "trades": 75,
+                "win_rate_pct": 57.333333333333336,
+                "mean_pct": 1.215407886727446,
+                "median_pct": 0.6448048441648113,
+                "profit_factor": 2.0781050499818243
+              }
+            }
+          }
+        }
+      },
+      "no_trailing_stop": {
+        "unfiltered": {
+          "all": {
+            "trades": 2261,
+            "win_rate_pct": 42.812914639540026,
+            "mean_pct": 0.25617897561958886,
+            "median_pct": -0.42778944310755734,
+            "profit_factor": 1.2352975862252684
+          },
+          "in_sample_2006_2018": {
+            "trades": 1602,
+            "win_rate_pct": 43.69538077403246,
+            "mean_pct": 0.32941461502043634,
+            "median_pct": -0.360417387469923,
+            "profit_factor": 1.3309290141015784
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 659,
+            "win_rate_pct": 40.667678300455236,
+            "mean_pct": 0.07814635904878799,
+            "median_pct": -0.528543934327278,
+            "profit_factor": 1.0593996347648214,
+            "mean_ci95_pct": [
+              -0.2744719828844755,
+              0.4498354126548088
+            ],
+            "prob_mean_positive": 0.6685,
+            "portfolio": {
+              "accepted_trades": 508,
+              "skipped_capacity_or_duplicate": 151,
+              "max_positions": 10,
+              "cagr_pct": 1.4865594896462664,
+              "max_drawdown_pct": 12.342264620208764,
+              "sharpe": -0.26291069317114185,
+              "final_equity": 1.1073504574840973,
+              "average_exposure_pct": 16.336975273145416
+            },
+            "by_year": {
+              "2019": {
+                "trades": 135,
+                "win_rate_pct": 42.22222222222222,
+                "mean_pct": 0.33536916071306216,
+                "median_pct": -0.3702335286161378,
+                "profit_factor": 1.3343666039046043
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 36.04651162790697,
+                "mean_pct": -0.6506431605447479,
+                "median_pct": -1.0163595676397217,
+                "profit_factor": 0.5851015667888306
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 37.96296296296296,
+                "mean_pct": -0.4352690381179378,
+                "median_pct": -1.1174856877322965,
+                "profit_factor": 0.7135596830042362
+              },
+              "2022": {
+                "trades": 31,
+                "win_rate_pct": 41.935483870967744,
+                "mean_pct": -1.039231932220329,
+                "median_pct": -0.8822582370532221,
+                "profit_factor": 0.4840417350618134
+              },
+              "2023": {
+                "trades": 117,
+                "win_rate_pct": 37.60683760683761,
+                "mean_pct": 0.31590242070734686,
+                "median_pct": -0.5865155254507071,
+                "profit_factor": 1.250530297478949
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 40.56603773584906,
+                "mean_pct": 0.2129015998066282,
+                "median_pct": -0.3773264909109975,
+                "profit_factor": 1.1609125668923104
+              },
+              "2025": {
+                "trades": 76,
+                "win_rate_pct": 51.31578947368421,
+                "mean_pct": 1.077316038645283,
+                "median_pct": 0.13415627169342537,
+                "profit_factor": 1.993860981932223
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 2131,
+            "win_rate_pct": 42.70295635851713,
+            "mean_pct": 0.2664178995352063,
+            "median_pct": -0.42465688612358854,
+            "profit_factor": 1.2465789962985734
+          },
+          "in_sample_2006_2018": {
+            "trades": 1497,
+            "win_rate_pct": 43.62057448229793,
+            "mean_pct": 0.35908236592108744,
+            "median_pct": -0.36002707432740877,
+            "profit_factor": 1.36416026560515
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 634,
+            "win_rate_pct": 40.536277602523654,
+            "mean_pct": 0.04761867843163513,
+            "median_pct": -0.5255192155191987,
+            "profit_factor": 1.0365354508624736,
+            "mean_ci95_pct": [
+              -0.2953149141445772,
+              0.42180110400299703
+            ],
+            "prob_mean_positive": 0.608,
+            "portfolio": {
+              "accepted_trades": 484,
+              "skipped_capacity_or_duplicate": 150,
+              "max_positions": 10,
+              "cagr_pct": 1.394080206510262,
+              "max_drawdown_pct": 11.835227924482727,
+              "sharpe": -0.29020465017578084,
+              "final_equity": 1.0998957970546084,
+              "average_exposure_pct": 15.638359329867049
+            },
+            "by_year": {
+              "2019": {
+                "trades": 132,
+                "win_rate_pct": 40.909090909090914,
+                "mean_pct": 0.22807578178632745,
+                "median_pct": -0.4437068698065057,
+                "profit_factor": 1.2223407698464432
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 36.04651162790697,
+                "mean_pct": -0.6506431605447479,
+                "median_pct": -1.0163595676397217,
+                "profit_factor": 0.5851015667888306
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 37.96296296296296,
+                "mean_pct": -0.4352690381179378,
+                "median_pct": -1.1174856877322965,
+                "profit_factor": 0.7135596830042362
+              },
+              "2022": {
+                "trades": 16,
+                "win_rate_pct": 50.0,
+                "mean_pct": -0.9627594191445213,
+                "median_pct": -0.4568031460160209,
+                "profit_factor": 0.5104224675609318
+              },
+              "2023": {
+                "trades": 111,
+                "win_rate_pct": 37.83783783783784,
+                "mean_pct": 0.1389927863824195,
+                "median_pct": -0.4978921573030765,
+                "profit_factor": 1.1119206174290697
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 40.56603773584906,
+                "mean_pct": 0.2129015998066282,
+                "median_pct": -0.3773264909109975,
+                "profit_factor": 1.1609125668923104
+              },
+              "2025": {
+                "trades": 75,
+                "win_rate_pct": 50.66666666666667,
+                "mean_pct": 1.0727598492241106,
+                "median_pct": 0.10911872604436948,
+                "profit_factor": 1.9766359285987984
+              }
+            }
+          }
+        }
+      },
+      "no_shooting_star": {
+        "unfiltered": {
+          "all": {
+            "trades": 2261,
+            "win_rate_pct": 42.591773551525876,
+            "mean_pct": 0.29300419912654896,
+            "median_pct": -0.42963714492217997,
+            "profit_factor": 1.26418846022976
+          },
+          "in_sample_2006_2018": {
+            "trades": 1602,
+            "win_rate_pct": 43.383270911360796,
+            "mean_pct": 0.3341574694051125,
+            "median_pct": -0.3660612280144805,
+            "profit_factor": 1.3296200686551571
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 659,
+            "win_rate_pct": 40.667678300455236,
+            "mean_pct": 0.1929624100730456,
+            "median_pct": -0.5224944967111194,
+            "profit_factor": 1.1439201650592548,
+            "mean_ci95_pct": [
+              -0.2273989573974083,
+              0.6990514527414402
+            ],
+            "prob_mean_positive": 0.803,
+            "portfolio": {
+              "accepted_trades": 507,
+              "skipped_capacity_or_duplicate": 152,
+              "max_positions": 10,
+              "cagr_pct": 2.0713452772302077,
+              "max_drawdown_pct": 14.108516022027862,
+              "sharpe": -0.14035527069595138,
+              "final_equity": 1.152201700164439,
+              "average_exposure_pct": 17.676825761932097
+            },
+            "by_year": {
+              "2019": {
+                "trades": 135,
+                "win_rate_pct": 42.22222222222222,
+                "mean_pct": 0.3696705302235132,
+                "median_pct": -0.3702335286161378,
+                "profit_factor": 1.36453086458542
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 38.372093023255815,
+                "mean_pct": -0.43526785327881845,
+                "median_pct": -0.8074756008200408,
+                "profit_factor": 0.7045113799124996
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 37.96296296296296,
+                "mean_pct": -0.6583178319024438,
+                "median_pct": -1.1414572912015486,
+                "profit_factor": 0.573945283655789
+              },
+              "2022": {
+                "trades": 31,
+                "win_rate_pct": 38.70967741935484,
+                "mean_pct": -0.3424649287937191,
+                "median_pct": -0.8822582370532221,
+                "profit_factor": 0.8422136293060406
+              },
+              "2023": {
+                "trades": 117,
+                "win_rate_pct": 37.60683760683761,
+                "mean_pct": 0.5510363771947829,
+                "median_pct": -0.5865155254507071,
+                "profit_factor": 1.4289861886335449
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 38.67924528301887,
+                "mean_pct": 0.5134291877474879,
+                "median_pct": -0.4326121766043239,
+                "profit_factor": 1.3655755025237601
+              },
+              "2025": {
+                "trades": 76,
+                "win_rate_pct": 52.63157894736842,
+                "mean_pct": 1.0198648769077252,
+                "median_pct": 0.1395043731611908,
+                "profit_factor": 1.894433292375305
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 2131,
+            "win_rate_pct": 42.56217738151103,
+            "mean_pct": 0.307878025921246,
+            "median_pct": -0.42778944310755734,
+            "profit_factor": 1.2794273389052495
+          },
+          "in_sample_2006_2018": {
+            "trades": 1497,
+            "win_rate_pct": 43.35337341349366,
+            "mean_pct": 0.36280258972327684,
+            "median_pct": -0.3608077006124373,
+            "profit_factor": 1.3597000564287562
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 634,
+            "win_rate_pct": 40.694006309148264,
+            "mean_pct": 0.17819021517733402,
+            "median_pct": -0.5101933270070979,
+            "profit_factor": 1.1348022450944628,
+            "mean_ci95_pct": [
+              -0.25726262403617906,
+              0.7031294296234637
+            ],
+            "prob_mean_positive": 0.7765,
+            "portfolio": {
+              "accepted_trades": 483,
+              "skipped_capacity_or_duplicate": 151,
+              "max_positions": 10,
+              "cagr_pct": 2.0868646047542905,
+              "max_drawdown_pct": 12.993827228761356,
+              "sharpe": -0.14519533626364173,
+              "final_equity": 1.152630430931608,
+              "average_exposure_pct": 16.932409012131664
+            },
+            "by_year": {
+              "2019": {
+                "trades": 132,
+                "win_rate_pct": 40.909090909090914,
+                "mean_pct": 0.26315672787656147,
+                "median_pct": -0.4437068698065057,
+                "profit_factor": 1.25373134149468
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 38.372093023255815,
+                "mean_pct": -0.43526785327881845,
+                "median_pct": -0.8074756008200408,
+                "profit_factor": 0.7045113799124996
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 37.96296296296296,
+                "mean_pct": -0.6583178319024438,
+                "median_pct": -1.1414572912015486,
+                "profit_factor": 0.573945283655789
+              },
+              "2022": {
+                "trades": 16,
+                "win_rate_pct": 50.0,
+                "mean_pct": 0.8321376919812391,
+                "median_pct": -0.4568031460160209,
+                "profit_factor": 1.4231544348345258
+              },
+              "2023": {
+                "trades": 111,
+                "win_rate_pct": 37.83783783783784,
+                "mean_pct": 0.38683668646377106,
+                "median_pct": -0.4978921573030765,
+                "profit_factor": 1.3053809311614961
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 38.67924528301887,
+                "mean_pct": 0.5134291877474879,
+                "median_pct": -0.4326121766043239,
+                "profit_factor": 1.3655755025237601
+              },
+              "2025": {
+                "trades": 75,
+                "win_rate_pct": 52.0,
+                "mean_pct": 1.0145426719967188,
+                "median_pct": 0.11981492897990037,
+                "profit_factor": 1.8780582142572113
+              }
+            }
+          }
+        }
+      },
+      "no_time_stop": {
+        "unfiltered": {
+          "all": {
+            "trades": 2261,
+            "win_rate_pct": 40.645731977001326,
+            "mean_pct": 0.7424689378683584,
+            "median_pct": -0.7879247998978052,
+            "profit_factor": 1.428147268061575
+          },
+          "in_sample_2006_2018": {
+            "trades": 1602,
+            "win_rate_pct": 41.19850187265918,
+            "mean_pct": 0.8982749397052461,
+            "median_pct": -0.7137009625703044,
+            "profit_factor": 1.552598839265033
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 659,
+            "win_rate_pct": 39.30197268588771,
+            "mean_pct": 0.36371140381267697,
+            "median_pct": -0.8920983870371589,
+            "profit_factor": 1.1820249976862418,
+            "mean_ci95_pct": [
+              -0.11931292733677824,
+              0.8202639164122357
+            ],
+            "prob_mean_positive": 0.926,
+            "portfolio": {
+              "accepted_trades": 458,
+              "skipped_capacity_or_duplicate": 201,
+              "max_positions": 10,
+              "cagr_pct": 3.551467271680253,
+              "max_drawdown_pct": 14.487998430106275,
+              "sharpe": 0.10432777180395174,
+              "final_equity": 1.2736989291307412,
+              "average_exposure_pct": 32.60321100917449
+            },
+            "by_year": {
+              "2019": {
+                "trades": 135,
+                "win_rate_pct": 38.51851851851852,
+                "mean_pct": 0.32484352458329613,
+                "median_pct": -0.7694304763545695,
+                "profit_factor": 1.1715635979592338
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 33.72093023255814,
+                "mean_pct": -0.6842013402631707,
+                "median_pct": -1.7914152166429336,
+                "profit_factor": 0.7174249230594926
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 40.74074074074074,
+                "mean_pct": -0.19553140684478743,
+                "median_pct": -1.3363702228409116,
+                "profit_factor": 0.9083169347018287
+              },
+              "2022": {
+                "trades": 31,
+                "win_rate_pct": 22.58064516129032,
+                "mean_pct": -2.247189102346118,
+                "median_pct": -2.820431840789999,
+                "profit_factor": 0.3132578367152578
+              },
+              "2023": {
+                "trades": 117,
+                "win_rate_pct": 35.04273504273504,
+                "mean_pct": 0.5106376806662666,
+                "median_pct": -0.7922767826104066,
+                "profit_factor": 1.2665678452268372
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 49.056603773584904,
+                "mean_pct": 1.622775945703145,
+                "median_pct": -0.0999255450259157,
+                "profit_factor": 1.906308872241698
+              },
+              "2025": {
+                "trades": 76,
+                "win_rate_pct": 44.73684210526316,
+                "mean_pct": 1.4959822340252893,
+                "median_pct": -0.47180162189438773,
+                "profit_factor": 2.06021919302937
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 2131,
+            "win_rate_pct": 40.591271703425626,
+            "mean_pct": 0.7628633194432062,
+            "median_pct": -0.7879247998978052,
+            "profit_factor": 1.4425231149772402
+          },
+          "in_sample_2006_2018": {
+            "trades": 1497,
+            "win_rate_pct": 41.21576486305945,
+            "mean_pct": 0.937166348371812,
+            "median_pct": -0.7226696520255992,
+            "profit_factor": 1.581018598187944
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 634,
+            "win_rate_pct": 39.11671924290221,
+            "mean_pct": 0.3512992274777119,
+            "median_pct": -0.8975186798217676,
+            "profit_factor": 1.1769049935063345,
+            "mean_ci95_pct": [
+              -0.1212659171419744,
+              0.7950130406097216
+            ],
+            "prob_mean_positive": 0.9265,
+            "portfolio": {
+              "accepted_trades": 434,
+              "skipped_capacity_or_duplicate": 200,
+              "max_positions": 10,
+              "cagr_pct": 3.5352713133209868,
+              "max_drawdown_pct": 13.121965185488637,
+              "sharpe": 0.09865965287355326,
+              "final_equity": 1.2708671502264948,
+              "average_exposure_pct": 31.37096774193559
+            },
+            "by_year": {
+              "2019": {
+                "trades": 132,
+                "win_rate_pct": 37.121212121212125,
+                "mean_pct": 0.21731092665361199,
+                "median_pct": -0.7980482723028018,
+                "profit_factor": 1.1122206184939503
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 33.72093023255814,
+                "mean_pct": -0.6842013402631707,
+                "median_pct": -1.7914152166429336,
+                "profit_factor": 0.7174249230594926
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 40.74074074074074,
+                "mean_pct": -0.19553140684478743,
+                "median_pct": -1.3363702228409116,
+                "profit_factor": 0.9083169347018287
+              },
+              "2022": {
+                "trades": 16,
+                "win_rate_pct": 12.5,
+                "mean_pct": -3.1375493243091843,
+                "median_pct": -2.9701807225040833,
+                "profit_factor": 0.17191256518375914
+              },
+              "2023": {
+                "trades": 111,
+                "win_rate_pct": 35.13513513513514,
+                "mean_pct": 0.40979826878358205,
+                "median_pct": -0.7339508424103512,
+                "profit_factor": 1.219566530701449
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 49.056603773584904,
+                "mean_pct": 1.622775945703145,
+                "median_pct": -0.0999255450259157,
+                "profit_factor": 1.906308872241698
+              },
+              "2025": {
+                "trades": 75,
+                "win_rate_pct": 44.0,
+                "mean_pct": 1.4226174161853096,
+                "median_pct": -0.5224944967111194,
+                "profit_factor": 1.9949586184249872
+              }
+            }
+          }
+        }
+      },
+      "stop_and_20d": {
+        "unfiltered": {
+          "all": {
+            "trades": 2261,
+            "win_rate_pct": 62.317558602388324,
+            "mean_pct": 1.4834142089858524,
+            "median_pct": 5.0210263069490315,
+            "profit_factor": 1.5311336460464313
+          },
+          "in_sample_2006_2018": {
+            "trades": 1602,
+            "win_rate_pct": 63.857677902621724,
+            "mean_pct": 1.6330015374139761,
+            "median_pct": 5.03913345879886,
+            "profit_factor": 1.6262499458528068
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 659,
+            "win_rate_pct": 58.573596358118365,
+            "mean_pct": 1.1197739963275006,
+            "median_pct": 4.9404087178853935,
+            "profit_factor": 1.3452408010338093,
+            "mean_ci95_pct": [
+              0.30490370090581553,
+              1.8500117185324494
+            ],
+            "prob_mean_positive": 0.997,
+            "portfolio": {
+              "accepted_trades": 368,
+              "skipped_capacity_or_duplicate": 291,
+              "max_positions": 10,
+              "cagr_pct": 5.471496522206132,
+              "max_drawdown_pct": 16.228524930866616,
+              "sharpe": 0.29696732388334207,
+              "final_equity": 1.4466986650093767,
+              "average_exposure_pct": 47.38532110091744
+            },
+            "by_year": {
+              "2019": {
+                "trades": 135,
+                "win_rate_pct": 65.18518518518519,
+                "mean_pct": 1.6144524113001473,
+                "median_pct": 4.98212197810368,
+                "profit_factor": 1.6179338510767547
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 46.51162790697674,
+                "mean_pct": -1.183377108387478,
+                "median_pct": -5.8622490090844614,
+                "profit_factor": 0.7279712040501377
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 57.407407407407405,
+                "mean_pct": 0.6596665311691406,
+                "median_pct": 4.911613189323898,
+                "profit_factor": 1.1920866710139177
+              },
+              "2022": {
+                "trades": 31,
+                "win_rate_pct": 29.03225806451613,
+                "mean_pct": -3.054857258105632,
+                "median_pct": -8.09716000978236,
+                "profit_factor": 0.49205911990184203
+              },
+              "2023": {
+                "trades": 117,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 1.189258479986166,
+                "median_pct": 4.87739348968364,
+                "profit_factor": 1.3679834850526134
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 72.64150943396226,
+                "mean_pct": 3.894954945737757,
+                "median_pct": 5.413068285242718,
+                "profit_factor": 2.6826084227935993
+              },
+              "2025": {
+                "trades": 76,
+                "win_rate_pct": 59.210526315789465,
+                "mean_pct": 1.2262966132111845,
+                "median_pct": 4.818377339521463,
+                "profit_factor": 1.405595377199002
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 2131,
+            "win_rate_pct": 62.50586579070859,
+            "mean_pct": 1.5326954264978212,
+            "median_pct": 5.0298880469595675,
+            "profit_factor": 1.5518677518687605
+          },
+          "in_sample_2006_2018": {
+            "trades": 1497,
+            "win_rate_pct": 64.12825651302605,
+            "mean_pct": 1.7077599969009551,
+            "median_pct": 5.050317417972028,
+            "profit_factor": 1.6596825169301461
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 634,
+            "win_rate_pct": 58.67507886435332,
+            "mean_pct": 1.1193331837636076,
+            "median_pct": 4.9311353552015795,
+            "profit_factor": 1.3473560586382411,
+            "mean_ci95_pct": [
+              0.29384907363650786,
+              1.86319639502935
+            ],
+            "prob_mean_positive": 0.9975,
+            "portfolio": {
+              "accepted_trades": 345,
+              "skipped_capacity_or_duplicate": 289,
+              "max_positions": 10,
+              "cagr_pct": 5.254975958029262,
+              "max_drawdown_pct": 14.206979595462876,
+              "sharpe": 0.2767092912567536,
+              "final_equity": 1.4238377043779809,
+              "average_exposure_pct": 44.64861751152064
+            },
+            "by_year": {
+              "2019": {
+                "trades": 132,
+                "win_rate_pct": 64.39393939393939,
+                "mean_pct": 1.4919070225177877,
+                "median_pct": 4.970403587572257,
+                "profit_factor": 1.55833989418864
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 46.51162790697674,
+                "mean_pct": -1.183377108387478,
+                "median_pct": -5.8622490090844614,
+                "profit_factor": 0.7279712040501377
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 57.407407407407405,
+                "mean_pct": 0.6596665311691406,
+                "median_pct": 4.911613189323898,
+                "profit_factor": 1.1920866710139177
+              },
+              "2022": {
+                "trades": 16,
+                "win_rate_pct": 12.5,
+                "mean_pct": -4.831520934122577,
+                "median_pct": -8.320631907260717,
+                "profit_factor": 0.3361270424528892
+              },
+              "2023": {
+                "trades": 111,
+                "win_rate_pct": 55.85585585585585,
+                "mean_pct": 1.094512334725838,
+                "median_pct": 4.87739348968364,
+                "profit_factor": 1.3434798958462824
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 72.64150943396226,
+                "mean_pct": 3.894954945737757,
+                "median_pct": 5.413068285242718,
+                "profit_factor": 2.6826084227935993
+              },
+              "2025": {
+                "trades": 75,
+                "win_rate_pct": 58.666666666666664,
+                "mean_pct": 1.149335987093684,
+                "median_pct": 4.811547997235244,
+                "profit_factor": 1.3751389374140752
+              }
+            }
+          }
+        }
+      },
+      "trailing_stop_and_20d": {
+        "unfiltered": {
+          "all": {
+            "trades": 2261,
+            "win_rate_pct": 62.45024325519681,
+            "mean_pct": 1.470455895239273,
+            "median_pct": 5.022345588895026,
+            "profit_factor": 1.528837022571283
+          },
+          "in_sample_2006_2018": {
+            "trades": 1602,
+            "win_rate_pct": 63.920099875156055,
+            "mean_pct": 1.61556660012541,
+            "median_pct": 5.039259738040576,
+            "profit_factor": 1.6206371671925828
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 659,
+            "win_rate_pct": 58.877086494688925,
+            "mean_pct": 1.117698157412882,
+            "median_pct": 4.947059807962697,
+            "profit_factor": 1.3479794737115112,
+            "mean_ci95_pct": [
+              0.28593064437011323,
+              1.8571670741583577
+            ],
+            "prob_mean_positive": 0.997,
+            "portfolio": {
+              "accepted_trades": 368,
+              "skipped_capacity_or_duplicate": 291,
+              "max_positions": 10,
+              "cagr_pct": 5.125605074118611,
+              "max_drawdown_pct": 16.228524931000976,
+              "sharpe": 0.26273416414813733,
+              "final_equity": 1.4141274471727796,
+              "average_exposure_pct": 47.31077981651375
+            },
+            "by_year": {
+              "2019": {
+                "trades": 135,
+                "win_rate_pct": 65.18518518518519,
+                "mean_pct": 1.6144524113001473,
+                "median_pct": 4.98212197810368,
+                "profit_factor": 1.6179338510767547
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 48.837209302325576,
+                "mean_pct": -0.8412037941349121,
+                "median_pct": -1.4468911265828415,
+                "profit_factor": 0.7952714120599329
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 57.407407407407405,
+                "mean_pct": 0.47302744227864685,
+                "median_pct": 4.911613189323898,
+                "profit_factor": 1.1377396948189815
+              },
+              "2022": {
+                "trades": 31,
+                "win_rate_pct": 29.03225806451613,
+                "mean_pct": -3.054857258105632,
+                "median_pct": -8.09716000978236,
+                "profit_factor": 0.49205911990184203
+              },
+              "2023": {
+                "trades": 117,
+                "win_rate_pct": 55.55555555555556,
+                "mean_pct": 1.189258479986166,
+                "median_pct": 4.87739348968364,
+                "profit_factor": 1.3679834850526134
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 72.64150943396226,
+                "mean_pct": 3.8252359621695033,
+                "median_pct": 5.413068285242718,
+                "profit_factor": 2.6524900387263015
+              },
+              "2025": {
+                "trades": 76,
+                "win_rate_pct": 59.210526315789465,
+                "mean_pct": 1.1835643893684693,
+                "median_pct": 4.818377339521463,
+                "profit_factor": 1.3914617717879485
+              }
+            }
+          }
+        },
+        "spy_above_ma200": {
+          "all": {
+            "trades": 2131,
+            "win_rate_pct": 62.64664476771469,
+            "mean_pct": 1.5199372974018084,
+            "median_pct": 5.032280120109796,
+            "profit_factor": 1.5498734691308866
+          },
+          "in_sample_2006_2018": {
+            "trades": 1497,
+            "win_rate_pct": 64.19505678022712,
+            "mean_pct": 1.6905124382777956,
+            "median_pct": 5.051845624931637,
+            "profit_factor": 1.6542397881293853
+          },
+          "out_of_sample_2019_2025": {
+            "trades": 634,
+            "win_rate_pct": 58.99053627760252,
+            "mean_pct": 1.1171754900021977,
+            "median_pct": 4.938127668112113,
+            "profit_factor": 1.3502442986867726,
+            "mean_ci95_pct": [
+              0.292998864371643,
+              1.8629137596521221
+            ],
+            "prob_mean_positive": 0.9975,
+            "portfolio": {
+              "accepted_trades": 345,
+              "skipped_capacity_or_duplicate": 289,
+              "max_positions": 10,
+              "cagr_pct": 4.908153574599794,
+              "max_drawdown_pct": 14.2069795956005,
+              "sharpe": 0.2412987894926192,
+              "final_equity": 1.3917811820669979,
+              "average_exposure_pct": 44.57373271889391
+            },
+            "by_year": {
+              "2019": {
+                "trades": 132,
+                "win_rate_pct": 64.39393939393939,
+                "mean_pct": 1.4919070225177877,
+                "median_pct": 4.970403587572257,
+                "profit_factor": 1.55833989418864
+              },
+              "2020": {
+                "trades": 86,
+                "win_rate_pct": 48.837209302325576,
+                "mean_pct": -0.8412037941349121,
+                "median_pct": -1.4468911265828415,
+                "profit_factor": 0.7952714120599329
+              },
+              "2021": {
+                "trades": 108,
+                "win_rate_pct": 57.407407407407405,
+                "mean_pct": 0.47302744227864685,
+                "median_pct": 4.911613189323898,
+                "profit_factor": 1.1377396948189815
+              },
+              "2022": {
+                "trades": 16,
+                "win_rate_pct": 12.5,
+                "mean_pct": -4.831520934122577,
+                "median_pct": -8.320631907260717,
+                "profit_factor": 0.3361270424528892
+              },
+              "2023": {
+                "trades": 111,
+                "win_rate_pct": 55.85585585585585,
+                "mean_pct": 1.094512334725838,
+                "median_pct": 4.87739348968364,
+                "profit_factor": 1.3434798958462824
+              },
+              "2024": {
+                "trades": 106,
+                "win_rate_pct": 72.64150943396226,
+                "mean_pct": 3.8252359621695033,
+                "median_pct": 5.413068285242718,
+                "profit_factor": 2.6524900387263015
+              },
+              "2025": {
+                "trades": 75,
+                "win_rate_pct": 58.666666666666664,
+                "mean_pct": 1.1060340002663993,
+                "median_pct": 4.811547997235244,
+                "profit_factor": 1.3610053320030218
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "benchmark": {
+    "SPY_2019_2025": {
+      "start": "2019-01-02",
+      "end": "2025-12-30",
+      "cagr_pct": 17.308699766644065,
+      "max_drawdown_pct": 33.717262742332,
+      "sharpe": 0.7565533470547638,
+      "final_equity": 3.053441153779129
+    }
+  }
+}

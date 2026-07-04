@@ -1,0 +1,19 @@
+{
+  "source": "Yahoo Finance via yfinance auto_adjust=True",
+  "symbols": [
+    "^VIX",
+    "^VIX3M"
+  ],
+  "requested_period": [
+    "2000-01-01",
+    "2025-12-31"
+  ],
+  "first_valid": {
+    "^VIX": "2000-01-03",
+    "^VIX3M": "2006-07-17"
+  },
+  "last_valid": {
+    "^VIX": "2025-12-31",
+    "^VIX3M": "2025-12-31"
+  }
+}

@@ -4,29 +4,31 @@
 To develop and run a robust, full-cycle quantitative trading strategy focused on US equities (S&P 500 and Nasdaq 100). Current real-account operating goal is an aggressive but controlled push toward **USD 10,000 NAV by 2026 year-end**, preferably from investment gains rather than additional capital, while preserving hard stop discipline and avoiding unrecoverable drawdowns.
 
 **Current State:**
-We have successfully developed and backtested the **V4.0 Hybrid Individual-Stock & ETF Dual-Sleeve Strategy** over a 26-year period (2000-2025). It uses dynamic sector rotation and individual stock selection with macro-micro trend filters, achieving a 16.70% long-term CAGR with significantly lower drawdown than major indices. We have also built a 516-ticker US stock universe database for upcoming optimizations.
+The 2026-07-03 V8 audit invalidated the legacy V4/V5/V6/V7 performance claims for decision use because the stock database applied current constituents to historical periods. A best-effort point-in-time S&P 500/Nasdaq-100 rerun subsequently reduced V5's frozen 2019-2025 CAGR from 35.57% to 13.73% with -29.24% max drawdown and 0.70 Sharpe; the coverage-adjusted variant returned 12.99% with 0.70 Sharpe. Both underperformed SPY, QQQ, and static 50/50, confirming V5 as a scanner only. A V8.1 dynamic QQQ/VT enhancement experiment reached 16.53% CAGR but failed its 17% promotion gate, expanded drawdown to -28.69%, and never selected VT; it remains research-only. The only promoted portfolio return engine remains the **V8 Defensive Core**: 50% SPY / 50% QQQ base weights, with half of each ETF's base weight enabled above MA150 and half above MA200, reviewed monthly and otherwise held as cash. In the frozen 2019-2025 report period V8 produced 14.20% CAGR, -22.69% max drawdown, and 0.97 Sharpe. See `experiments/2026-05-29-dual-sleeve-backtest/results/v5_point_in_time_report.md`, `v8_model_optimization_report.md`, and `v81_dynamic_optimization_report.md`.
 
 Recent qualitative overlay added: a public-content framework from Xiaohongshu account "美研芒格君" and X account `@Kay2289123` has been captured as an AI infrastructure bottleneck watchlist source. Treat it as idea generation for optical/interconnect, memory/storage, AI inference, AI factory / cloud, server infrastructure, and semiconductor equipment subthemes, not as a standalone trading signal.
+
+V9 research status (2026-07-04): an independent event-driven full-account model records timestamped/content-hashed source events, requires two-day technical confirmation, limits single names to 20% and themes to 40%, risks at most 1.5% per name, and applies 10%/15%/20%/25% portfolio drawdown breakers. The synchronized local archive has 18 events, 17 meeting the reliability threshold. Replay uses local first-seen time rather than backfilling original publication time. Source health becomes partial on 2026-06-27, so only new entries after that date are blocked. The archive remains below the 50-event optimization threshold and V9 is not promoted; formal V8 remains unchanged.
 
 Latest institutional research overlay: a 2026-06-08 first-stage synthesis from AQR, Citadel Securities, GMO, and Man Group has been added as `references/institutional-market-research-framework.md`. It proposes trend-aligned entry discipline, flow-fragility monitoring, AI quality/capex-cycle classification, factor-macro exposure audits, and optical/interconnect watchlist expansion. These are hypotheses and monitoring upgrades for now, not stable trading decisions.
 
 **Next Major Milestone:**
-Leverage the newly scraped 500-stock database to run dynamic, constituent-level multi-factor optimizations (e.g., cross-sectional relative strength and GICS sector leader momentum).
+Acquire or construct a point-in-time universe containing historical additions, deletions, delistings, and industry mappings, then retest individual-stock relative-strength and theme modules without survivorship bias. Until then, V5/V7, Double Radar, Pattern C, and qualitative overlays are research scanners only.
 
 **Risk Gate:**
 Daily stock recommendations now require a market fear gate before position sizing. The framework classifies market state as `normal`, `elevated`, `stress`, or `panic` using VIX, VIX term structure, index drawdowns/trends, breadth, and credit proxies. See `references/market-fear-technical-framework.md`.
 
-**Portfolio Construction (V5 Strategy Rules):**
+**Real-Account Overlay Rules:**
 Current preference is highly concentrated: target 4 to 6 active stocks, hard maximum 8, across 2 to 3 themes. 
 Strict constraints apply: 
 - Max 55% concentration per broad theme.
 - Max 15% new exposure per day (8% in elevated regime).
 - T+2 earnings cooldown.
 - Strict trailing stops (+15%, +25%, +40% thresholds).
-See `references/portfolio-concentration-rules.md` for full V5 rules.
+These controls govern user-confirmed real holdings but do not turn the research scanners into validated return engines. See `references/portfolio-concentration-rules.md`.
 
 **Aggressive Satellite Module:**
-Per 2026-06-11 strategy update, the portfolio framework now includes a Double-Radar satellite module for 6-12 month potential double or multi-bagger candidates. V5 Optimal remains the core engine; default research mix is `75%` V5 core plus `25%` Double-Radar Top5 gated. The radar requires strong 50/200-day trend, 63/126-day momentum, high volatility, limited short-term extension, and a bullish QQQ regime gate. A 10-year current-S&P-500 approximation test showed the combined approach at CAGR `28.09%`, max drawdown `-30.70%`, Sharpe `1.24`, versus V5-only CAGR `25.95%` and SPY CAGR `14.82%`. See `references/double-radar-satellite-strategy.md`.
+Double Radar remains available for candidate discovery, but its historical performance uses a current-constituent approximation and is not decision-grade. It has no default portfolio allocation and cannot create an order by itself. Any future promotion requires point-in-time-universe evidence and incremental improvement over the V8/SPY/QQQ baselines.
 
 **Daily Monitoring:**
 Daily work must include a broad market-monitoring and strategy self-review layer: index/risk state, sector/theme leadership, top winners/losers, recommended stock behavior, market emotion distribution, and whether the strategy needs repair. See `references/daily-market-monitoring-framework.md`.

@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "policy": "Only locally archived company filings, earnings releases, investor-relations material or regulator filings may raise fundamental validation. Repeated commentary never adds points; the highest available validation score is used.",
+  "updates": []
+}
