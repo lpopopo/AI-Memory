@@ -39,6 +39,17 @@ Flag `flow_fragility = elevated` when three or more are true:
 - CTA/vol-control exposure is likely high after a sharp rally and volatility compression.
 - Downside hedging appears unusually cheap or under-owned.
 
+When available, record these direct diagnostics separately rather than forcing missing data into the score:
+
+- 0DTE share or average option tenor.
+- Semiconductor call-premium concentration and inverted call-skew breadth.
+- Leveraged technology/semiconductor ETF AUM or flow acceleration.
+- Single-stock implied correlation and semiconductor implied volatility.
+- Frequency of Nasdaq/semiconductor `spot up / vol up` sessions.
+- Equity-financing spread or another balance-sheet-capacity proxy.
+
+These diagnostics describe amplification risk. High values do not create a standalone bearish signal.
+
 Daily action guide:
 
 | State | Meaning | Strategy response |

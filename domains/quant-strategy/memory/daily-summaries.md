@@ -1,3 +1,19 @@
+## 2026-07-05
+
+- **四大机构周度深度学习：** 以 2026-06-14 周度学习为 cutoff 运行并读取 institutional checker 的 Markdown/JSON；AQR、GMO 列表/详情已核验且窗口后无新增，Citadel Reader 官方域名通道核验 5 篇、Man 核验 3 篇。新增结构性资金集中/短期限杠杆 reference，扩展 H7 并新增 H11，细化日度 checklist 与 backtest plan；`decisions.md` 不变。见 [2026-07-05 周报](daily/2026-07-05-institutional-research-weekly.md)。
+
+## 2026-07-05
+
+- **V9 Phase 4 shadow-engine correction:** Reworked the claimed shadow implementation into a true one-session incremental runner with serialized attribution state, safe lifecycle keys, separate open-execution/close-decision freezes, append-only event and state hash chains, dry-run namespaces, four-account isolation and an as-of lifecycle exporter. Removed an impossible normalized-NAV `1.5 shares` entry minimum that had silently blocked all information orders. All 23 V9/shadow tests pass; dry-run `826f23bb2d07` advanced from 2026-06-18 through 2026-07-02 idempotently. Formal forward mode remains deliberately blocked until a clean committed freeze is created.
+
+## 2026-07-04
+
+- **Frozen April-to-date V9 retrospective:** Ran a dual publication-time hypothetical and true point-in-time comparison for 2026-04-27 through 2026-07-02 without tuning parameters. Both returned `4.09%`, versus V8 `4.64%`, QQQ `7.40%`, and static SPY/QQQ `5.94%`. V9 held no information stocks: eight stock-days passed technical confirmation, zero reached the fixed 70-point threshold, and the result came entirely from the V8.7 fallback. Cost sensitivity reduced the hypothetical result to `3.94%` at 0.2% and `3.51%` at 0.5%. V9 remains research-only.
+
+- **Gemini V9 audit correction:** Invalidated the claimed `t60.0_tw2.0_cs2.0`, `11.84%` return and `2.27` Sharpe because the run forced eligibility with fewer than 50 reliable events, backfilled 31 historical posts to publication dates, and selected/evaluated parameters on the same interval. Preserved those posts as retrospective research, blocked optimization, and reran frozen defaults: V9 `4.09%`, V8 `4.64%`, QQQ `7.40%`, with zero information-stock invested days. Formal V8 remains unchanged.
+
+- **V9 iteration:** Added the fully read 2026-07-02 Xiaohongshu memory-tax-bypass note to the point-in-time event archive, raising the archive to `19` events / `18` reliable. Because source health is `partial` from 2026-06-27, the new item remains research-only. Added strict event identity, timestamp, symbol and hash validation; removed optional market-data imports from ledger-only tests; fixed UTF-8 data-cache rebuilding; regenerated the V9 funnel and validation reports. All `15` V9专项 tests pass; formal V8 remains unchanged.
+
 ## 2026-07-02
 
 - **US Employment Situation Addendum:** Verified the official June 2026 BLS release: nonfarm payrolls `+57k`, unemployment `4.2%`, participation `61.5%`, hourly earnings `+0.3% MoM / +3.5% YoY`, and April-May payrolls revised down `74k` combined. Classified the mix as weak establishment growth plus labor-force exit and still-firm wages; added macro mapping and replay fields without changing stable rules. See [2026-07-02 Monitor](daily/2026-07-02-realtime-public-institutional-monitor.md).

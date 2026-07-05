@@ -43,6 +43,9 @@ Proxy inputs:
 - Options/crowding: put/call, skew, options volume, or substitute public proxies when direct data is unavailable.
 - Flows: buyback calendar, ETF flow proxies, levered ETF AUM if available.
 - Trend crowding: very high 20/63-day return with narrowing breadth.
+- Short-duration leverage: 0DTE share, average option tenor, call-premium concentration, and inverted call-skew breadth if available.
+- Volatility character: single-stock implied correlation, semiconductor implied volatility, and `spot up / vol up` frequency.
+- Financing capacity: equity-financing spreads or a documented public substitute.
 
 Backtest behavior:
 
@@ -56,6 +59,9 @@ Metrics:
 - Return captured during continued rallies.
 - Number of blocked winners versus blocked losers.
 - Impact on cash drag.
+- Warning lead time before 1/5/20-day AI or semiconductor drawdowns.
+- Incremental value of each direct diagnostic versus the existing public-proxy score.
+- Stability across 2022 growth-duration stress, 2024-2026 AI rallies, and concentrated reversal episodes.
 
 ### Overlay C: AI Quality / Capex-Cycle Score
 

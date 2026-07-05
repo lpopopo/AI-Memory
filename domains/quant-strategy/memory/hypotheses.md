@@ -267,6 +267,12 @@ Proposed use:
 Validation needed:
 
 - Identify practical proxies available in daily workflow: breadth versus SPY/QQQ, SMH concentration, option implied-vol behavior, put/call/skew data if available, buyback window calendar, levered ETF theme exposure, and CTA/vol-control proxy data.
+
+2026-07-05 institutional evidence update:
+
+- Citadel Securities' official `1H 2026 Market Structure & Flows` article links historically high index/semiconductor concentration with accelerating passive flows, record retail participation, short-dated options, leveraged technology/semiconductor products, tighter financing capacity, low implied correlation, and `spot up / vol up` behavior.
+- Add `short_duration_leverage_density`, `spot_vol_correlation_shift`, and `financing_capacity_pressure` to H7 validation. These remain amplification-risk diagnostics, not standalone bearish signals.
+- Replay each field incrementally against the existing 14-point score and measure warning lead time, blocked winners, blocked losers, cash drag, and 1/5/20-day maximum adverse excursion.
 - Test whether adding this overlay reduces drawdown after crowded semiconductor rallies without forcing premature exits during healthy trends.
 
 ### H8: AI quality and capex-cycle classification improves candidate ranking
@@ -328,4 +334,22 @@ Validation needed:
 - Build daily proxies: QQQ/SPY, RSP/SPY, SMH/QQQ, IGV/QQQ, HYG/LQD, VIX, and top-contribution concentration if available.
 - Replay 2021-2022 growth-duration stress, 2024-2026 AI concentration episodes, and the 2026-06-05 AI/semiconductor/storage drawdown.
 - Test whether the overlay blocks false adds after crowded rallies without blocking too many durable winners.
+
+## 2026-07-05
+
+### H11: Adaptive policy and physical AI input pressure can alter factor risk before equity trend breaks
+
+Citadel Securities' 2026-06-19, 2026-06-20, 2026-06-27, and 2026-07-01 macro notes propose that a faster, less pre-communicated central-bank reaction function can raise short-end/tail volatility even if long-horizon inflation credibility improves. The same source argues that AI is initially a physical input-price shock through chips, memory, power, cooling, construction, and engineering before productivity gains dominate. Man Institute's 2026-06-23 article adds energy-logistics normalization risk rather than assuming a ceasefire or lower spot oil immediately removes supply-chain pressure.
+
+Proposed use:
+
+- Add `adaptive_policy_surprise`, `AI_input_cost_pressure`, and `energy_logistics_lag` as diagnostic fields under `factor_macro_exposure`.
+- Use the fields to explain growth-duration, semiconductor, memory/storage, optical/interconnect, industrial, and application-software relative performance; do not use them as a directional rate, commodity, or equity trade signal.
+- Keep the market fear gate primary and require completed-close trend/relative-strength confirmation before any action impact.
+
+Validation needed:
+
+- Build point-in-time event rows for policy communications, inflation releases, energy-logistics disruptions, and verified hardware price/capex evidence.
+- Compare 1/5/20/60-day moves in 2-year and 10-year yields, curve slope, breakevens, DXY, VIX/VIX3M, HYG/LQD, QQQ/SPY, SMH/QQQ, IGV/QQQ, memory/storage, and optical/interconnect baskets.
+- Test whether the fields add warning value beyond the existing fear gate and price trend; reject them if they merely restate moves already visible in market data.
 - Measure CAGR, max drawdown, false-add rate, missed-winner rate, and cash drag before any promotion to `decisions.md`.

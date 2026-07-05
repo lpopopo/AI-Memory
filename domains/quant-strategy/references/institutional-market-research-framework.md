@@ -8,6 +8,37 @@ This file is a reference framework, not a trade signal. The ideas below should f
 
 ## Source Index
 
+## 2026-07-05 Weekly Update: Structural Flow Concentration And Short-Duration Leverage
+
+Source page:
+
+- https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/1h-2026-market-structure-flows/
+
+Verified public item:
+
+- Citadel Securities published `1H 2026 Market Structure & Flows` on 2026-06-30. The Reader official-domain channel and direct official detail page exposed a stable title, date, body, and the article's 20 market-structure observations. It links index concentration, passive ownership, retail participation, short-dated options, leveraged ETFs, financing costs, implied correlation, and upside-volatility demand rather than treating them as independent indicators.
+
+Reusable framework:
+
+- Add `structural_flow_concentration` under `flow_fragility`: narrow benchmark leadership is more fragile when passive inflows, retail calls, leveraged products, and systematic positioning converge on the same technology/semiconductor names.
+- Add `short_duration_leverage_density`: track 0DTE share, average option tenor, call-premium concentration, and leveraged-ETF theme exposure. High activity is not bearish by itself; it indicates that price moves may be amplified and intraday liquidity can differ from apparent headline depth.
+- Add `spot_vol_correlation_shift`: `spot up / vol up`, inverted call skew, low implied single-stock correlation, and unusually high semiconductor implied volatility can coexist. Treat this as upside-chase/cross-sectional-dispersion evidence, not as a simple risk-on or panic label.
+- Add `financing_capacity_pressure`: rising equity-financing spreads can make an apparently liquid rally more vulnerable when leverage demand is concentrated and dealer/balance-sheet capacity is constrained.
+
+Strategy mapping:
+
+- `market fear gate`: these fields are context only; they do not change the fear regime without VIX term structure, breadth, credit, and completed-close trend evidence.
+- `trend_aligned_entry`: require support/reclaim and relative-strength confirmation when structural flows are crowded; do not equate retail dip buying with durable support.
+- `flow_fragility`: monitor breadth concentration, 0DTE/call demand, leveraged technology/semiconductor exposure, financing spreads, implied correlation, and spot-vol co-movement.
+- `portfolio concentration`: ticker diversification does not reduce risk when holdings share the same passive, retail-option, leverage, and semiconductor-flow channel.
+- `replay protocol`: test whether the expanded fields improve warnings before AI/semiconductor reversals without blocking too many continued-trend winners.
+
+Evidence notes:
+
+- High evidence for article existence, date, and reported Citadel platform/market observations on the official-domain detail page.
+- Medium evidence for broad-market transmission because several observations use Citadel's own platform data and the proposed strategy mapping still requires independent, point-in-time proxies and replay.
+- This is an experimental monitoring and backtest framework, not a short signal, trade recommendation, or stable decision.
+
 ## 2026-07-01 Update: AI Credit Funding Fragility
 
 Source page:
