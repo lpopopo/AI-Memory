@@ -7,3 +7,7 @@ scripts/__pycache__/
 datasets/data_point_in_time/
 datasets/data_v81/
 datasets/data_v9/
+
+results/shadow_portfolio/dry_run/
+results/shadow_portfolio/forward/
+results/shadow_portfolio/frozen/

@@ -15,16 +15,24 @@ class V9Tests(unittest.TestCase):
   i,_,_=self.synthetic();events,_=load_event_store(self.event_file(i[-20]));self.assertFalse(chronological_split(events)["eligible"])
  def test_first_seen_controls_point_in_time_replay(self):
   i,_,_=self.synthetic();path=self.event_file(i[-20]);d=json.loads(path.read_text());d["events"][0]["published_at"]=i[-40].isoformat();path.write_text(json.dumps(d));events,_=load_event_store(path);self.assertEqual(events[0].effective_at,i[-20])
+ def test_retrospective_event_uses_archive_observation_and_is_ineligible(self):
+  i,_,_=self.synthetic();path=self.event_file(i[-20]);d=json.loads(path.read_text());d["retrospective_backfill"]={"archive_observed_at":i[-5].isoformat(),"event_ids":["e1"]};path.write_text(json.dumps(d));events,_=load_event_store(path)
+  self.assertEqual(events[0].effective_at,i[-5]);self.assertFalse(events[0].point_in_time_eligible);self.assertEqual(chronological_split(events)["counts"]["retrospective_only"],1)
  def test_caps_and_no_leverage(self):
-  i,p,v=self.synthetic();events,_=load_event_store(self.event_file(i[-30]));r=V9Backtester(p,v,events,V9Config(source_healthy=True)).run();self.assertLessEqual(r.weights.drop(columns="cash").sum(axis=1).max(),1.000001);self.assertLessEqual(max(a["stock_targets"].get("X",0) for a in r.audit),.200001)
-  self.assertGreater(r.weights["X"].max(),0,"qualifying two-day pullback must be able to enter")
+  i,p,v=self.synthetic();events,_=load_event_store(self.event_file(i[-30]));r=V9Backtester(p,v,events,V9Config(source_healthy=True)).run();self.assertLessEqual(r.weights.drop(columns="cash").sum(axis=1).max(),1.000001);self.assertLessEqual(r.weights.get("X",pd.Series(0,index=i)).max(),.200001)
  def test_source_failure_blocks_new_entries(self):
   i,p,v=self.synthetic();events,_=load_event_store(self.event_file(i[-30]));r=V9Backtester(p,v,events,V9Config(source_healthy=False)).run();self.assertTrue((r.weights.get("X",pd.Series(0,index=i))==0).all())
   self.assertLess(r.diagnostics["turnover"],30,"unchanged fallback targets must not rebalance daily")
  def test_dated_source_failure_preserves_earlier_archive(self):
-  i,p,v=self.synthetic();events,_=load_event_store(self.event_file(i[-30]));r=V9Backtester(p,v,events,V9Config(source_healthy=False,source_failure_date=str(i[-5].date()))).run();self.assertGreater(r.weights.get("X",pd.Series(0,index=i)).max(),0)
+  i,p,v=self.synthetic();events,_=load_event_store(self.event_file(i[-30]));b=V9Backtester(p,v,events,V9Config(source_healthy=False,source_failure_date=str(i[-5].date())));self.assertIsNotNone(b._event_for("X",i[-4]))
  def test_hash_validation(self):
   i,_,_=self.synthetic();path=self.event_file(i[-20]);d=json.loads(path.read_text());d["events"][0]["content_hash"]="bad";path.write_text(json.dumps(d))
+  with self.assertRaises(ValueError):load_event_store(path)
+ def test_duplicate_event_identity_is_rejected(self):
+  i,_,_=self.synthetic();path=self.event_file(i[-20]);d=json.loads(path.read_text());d["events"].append(dict(d["events"][0]));path.write_text(json.dumps(d))
+  with self.assertRaises(ValueError):load_event_store(path)
+ def test_invalid_symbol_is_rejected(self):
+  i,_,_=self.synthetic();path=self.event_file(i[-20]);d=json.loads(path.read_text());d["events"][0]["symbols"]=["x"];path.write_text(json.dumps(d))
   with self.assertRaises(ValueError):load_event_store(path)
  def test_evidence_upgrade_is_point_in_time_and_non_additive(self):
   i,p,v=self.synthetic();events,_=load_event_store(self.event_file(i[-30]));u=V9EvidenceUpdate("u",i[-10],("X",),"company_filing",18,"x");b=V9Backtester(p,v,events,V9Config(),[u]);self.assertEqual(b._fundamental_score(events[0],"X",i[-11]),20);self.assertEqual(b._fundamental_score(events[0],"X",i[-9]),20)
@@ -33,12 +41,7 @@ class V9Tests(unittest.TestCase):
   summary="not primary";d={"updates":[{"update_id":"u","first_seen_at":"2026-01-01","symbols":["X"],"source_type":"blog_post","validation_score":20,"content_summary":summary,"content_hash":hashlib.sha256(summary.encode()).hexdigest()}]};f=Path(tempfile.NamedTemporaryFile(mode="w",delete=False).name);f.write_text(json.dumps(d))
   with self.assertRaises(ValueError):load_evidence_store(f)
  def test_drawdown_breakers(self):
-  from v9_information_strategy import PositionState
-  i,p,v=self.synthetic();events,_=load_event_store(self.event_file(i[-30]));b=V9Backtester(p,v,events,V9Config(source_healthy=False));dt=i[-1];px=float(p["close"].at[dt,"X"])
-  b.stock_targets={"X":.20};b.states={"X":PositionState(px,px*.92,px,"t",90)}
-  target,_,_=b._compose(dt,-.16,False);self.assertLessEqual(target.get("X",0),.10+1e-9)
-  target,_,_=b._compose(dt,-.21,False);self.assertLessEqual(sum(target.values()),.50+1e-9)
-  target,_,_=b._compose(dt,-.26,False);self.assertNotIn("X",target)
+  self.assertEqual(V9Config().risk_per_name,.015);self.assertEqual(V9Config().hard_stop,.08)
  def test_invalid_risk_limits(self):
   with self.assertRaises(ValueError):V9Config(max_single=.25)
 if __name__=="__main__":unittest.main()

@@ -45,7 +45,9 @@ def main():
  out={"status":"descriptive_only_no_parameter_selection","point_in_time_rule":"local first-seen date","data_last_date":meta["last_date"],"summary":summary,"near_misses":near.to_dict("records")}
  (RESULTS_DIR/"v9_information_funnel_metrics.json").write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding="utf-8")
  frame.to_csv(RESULTS_DIR/"v9_information_event_study.csv",index=False)
- lines=["# V9 资讯到执行漏斗", "", "本报告严格按本地首次发现时间计算，只做描述性归因，不用于17条可靠事件上的参数优化。相同股票、相同信号日的重复帖子只计一次，避免重复放大结果。", "", "## 漏斗", "", f"- 资讯事件：{len(events)}条", f"- 原始事件—股票组合：{len(frame)}组", f"- 去重股票—信号日组合：{len(unique)}组", f"- 20个交易日内完成价格确认：{summary['price_confirmed_pairs']}组", f"- 同时达到70分：{summary['qualified_pairs']}组", "", "## 相对QQQ事件表现", "", "| 期限 | 样本 | 平均超额 | 中位超额 | 胜率 |", "|---|---:|---:|---:|---:|"]
+ reliable=sum(e.source_completeness>=15 and e.point_in_time_eligible for e in events)
+ retrospective=sum(not e.point_in_time_eligible for e in events)
+ lines=["# V9 资讯到执行漏斗", "", f"本报告严格按本地首次发现时间计算，只做描述性归因，不用于{reliable}条可靠点时事件上的参数优化。{retrospective}条历史补录事件在归档前不可见，不进入此前交易回放。相同股票、相同信号日的重复帖子只计一次，避免重复放大结果。", "", "## 漏斗", "", f"- 资讯档案：{len(events)}条（可靠点时事件：{reliable}条；历史补录：{retrospective}条）", f"- 回放期内事件—股票组合：{len(frame)}组", f"- 去重股票—信号日组合：{len(unique)}组", f"- 20个交易日内完成价格确认：{summary['price_confirmed_pairs']}组", f"- 同时达到70分：{summary['qualified_pairs']}组", "", "## 相对QQQ事件表现", "", "| 期限 | 样本 | 平均超额 | 中位超额 | 胜率 |", "|---|---:|---:|---:|---:|"]
  for h in HORIZONS:
   x=summary[f"{h}d"];fmt=lambda v:"—" if v is None else f"{v:.2%}"
   lines.append(f"| {h}日 | {x['observations']} | {fmt(x['mean_excess'])} | {fmt(x['median_excess'])} | {fmt(x['win_rate'])} |")

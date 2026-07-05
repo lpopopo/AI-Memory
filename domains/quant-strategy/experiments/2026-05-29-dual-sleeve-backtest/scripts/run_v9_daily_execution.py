@@ -6,8 +6,6 @@ from pathlib import Path
 import pandas as pd
 
 SCRIPTS=Path(__file__).resolve().parent;ROOT=SCRIPTS.parent;sys.path.insert(0,str(SCRIPTS))
-from validate_v9_information_strategy import load_data
-from v9_information_strategy import V9Backtester,V9Config,chronological_split,load_event_store,load_evidence_store
 
 def stable_hash(value)->str:
  payload=json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(",",":")).encode("utf-8")
@@ -26,6 +24,9 @@ def freeze_decision(ledger:Path,record:dict)->str:
  return "appended"
 
 def build_decision()->dict:
+ # Keep ledger/hash helpers importable without optional market-data packages.
+ from validate_v9_information_strategy import load_data
+ from v9_information_strategy import V9Backtester,V9Config,chronological_split,load_event_store,load_evidence_store
  panels,vix,meta=load_data();store=ROOT/"datasets/v9_information_events.json";evidence_store=ROOT/"datasets/v9_evidence_updates.json";events,raw=load_event_store(store);updates,_=load_evidence_store(evidence_store)
  failed_on=next((x["start"] for x in raw.get("source_health_history",[]) if not str(x.get("status","")).startswith("healthy")),None)
  healthy=raw["source_health"]=="healthy";cfg=V9Config(source_healthy=healthy,source_failure_date=failed_on)
