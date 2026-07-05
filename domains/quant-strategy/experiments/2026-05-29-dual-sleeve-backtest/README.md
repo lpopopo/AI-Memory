@@ -1,5 +1,9 @@
 # Dual-Sleeve 10-Year Backtest
 
+> **Current operating entry:** read `CURRENT_STRATEGY.md` before running anything.
+> V8 is the promoted baseline. V9 Rule E is a frozen forward shadow experiment.
+> Version status and historical boundaries are indexed in `STRATEGY_VERSIONS.md`.
+
 ## V9 information-driven research strategy
 
 V9 is an independent, non-promoted full-account research model. Timestamped public-content events generate candidates; two-day price confirmation, scoring, concentration limits, stops, and portfolio drawdown breakers control execution. Formal V8 remains unchanged.
