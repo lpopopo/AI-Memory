@@ -8,9 +8,7 @@ import pandas as pd
 from typing import Dict, Any, List
 
 from v9_information_strategy import V9Backtester, V9Config, PositionState, PendingOrder, V9Event
-
-class TamperAlarmException(Exception):
-    pass
+from shadow_integrity import TamperAlarmException
 
 class ShadowV9Engine:
     def __init__(self, panels: Dict[str, pd.DataFrame], vix: pd.DataFrame, events: List[V9Event], config: V9Config, 

@@ -8,7 +8,7 @@ from importlib.metadata import PackageNotFoundError, version
 import json
 import subprocess
 import sys
-import datetime
+import pandas as pd
 from pathlib import Path
 
 SCRIPTS = Path(__file__).resolve().parent
@@ -33,6 +33,12 @@ def write_frozen(path: Path, value, replace: bool):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2), encoding="utf-8")
 
+
+def hash_file(path: Path) -> str:
+    if not path.exists():
+        return ""
+    with path.open("rb") as f:
+        return hashlib.sha256(f.read()).hexdigest()
 
 def main():
     parser = argparse.ArgumentParser()
@@ -65,7 +71,7 @@ def main():
     file_hashes = {name: hash_file(ROOT / name) for name in code_files}
     if any(not value for value in file_hashes.values()):
         raise FileNotFoundError("one or more result-affecting code files are missing")
-    combined = hashlib.sha256("".join(f"{k}:{file_hashes[k]}" for k in sorted(file_hashes)).encode()).hexdigest()
+    combined_code = "".join(f"{k}:{file_hashes[k]}" for k in sorted(file_hashes))
     packages = {}
     for package in ("numpy", "pandas", "yfinance"):
         try:
@@ -73,22 +79,22 @@ def main():
         except PackageNotFoundError:
             packages[package] = "missing"
     dirty = bool(git_value("status", "--porcelain"))
-    frozen_time = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
-    manifest = {
-        "frozen_at_utc": frozen_time,
+    manifest = {}
+    manifest["combined_code_hash"] = hashlib.sha256(combined_code.encode()).hexdigest()
+    manifest["frozen_at_utc"] = pd.Timestamp.now(tz="UTC").strftime("%Y-%m-%dT%H:%M:%SZ")
+    manifest.update({
         "files": file_hashes,
-        "combined_code_hash": combined,
         "python_version": sys.version,
         "package_versions": packages,
         "git_commit": git_value("rev-parse", "HEAD"),
         "dirty_worktree": dirty,
         "forward_eligible": not dirty,
-    }
+    })
     events = json.loads((ROOT / "datasets" / "v9_information_events.json").read_text(encoding="utf-8"))
     manifest["baseline_event_snapshot_hash"] = hashlib.sha256(
         json.dumps(events, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
     ).hexdigest()
-    config["code_manifest_hash"] = combined
+    config["code_manifest_hash"] = manifest["combined_code_hash"]
     write_frozen(FROZEN_DIR / "config.json", config, args.replace)
     write_frozen(FROZEN_DIR / "code_manifest.json", manifest, args.replace)
     write_frozen(FROZEN_DIR / "baseline_event_snapshot.json", events, args.replace)

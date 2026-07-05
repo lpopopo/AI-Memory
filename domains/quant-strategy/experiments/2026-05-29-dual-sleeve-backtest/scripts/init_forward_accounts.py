@@ -11,13 +11,9 @@ SHADOW_DIR = ROOT / "results" / "shadow_portfolio"
 FORWARD_DIR = SHADOW_DIR / "forward"
 FROZEN_DIR = SHADOW_DIR / "frozen"
 
-from shadow_v9_engine import TamperAlarmException
-
-ACCOUNTS = ["v8_base", "v9_a", "v9_e", "passive_50_50"]
-
-def get_hash(obj):
-    payload = json.dumps(obj, sort_keys=True)
-    return hashlib.sha256(payload.encode()).hexdigest()
+from shadow_integrity import TamperAlarmException, digest, state_digest
+from run_v9_shadow import ACCOUNTS
+from v9_information_strategy import V9Config
 
 def main():
     if not FROZEN_DIR.exists():
@@ -29,7 +25,6 @@ def main():
     
     frozen_at_utc = manifest.get("frozen_at_utc")
     code_hash = manifest.get("combined_code_hash", "")
-    config_hash = get_hash(config)
     
     events_obj = json.loads(events_raw)
     baseline_events_hash = hashlib.sha256(json.dumps(events_obj, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
@@ -38,18 +33,28 @@ def main():
     accounts_dir.mkdir(parents=True, exist_ok=True)
     
     # Pre-flight check
-    for acc in ACCOUNTS:
-        acc_dir = accounts_dir / acc
+    for acc_name in ACCOUNTS.keys():
+        acc_dir = accounts_dir / acc_name
         if acc_dir.exists():
             for f in acc_dir.glob("*_state.json"):
                 if f.name != "initial_state.json":
-                    raise TamperAlarmException(f"Forbidden: Forward execution already started. Found {f.name} in {acc}.")
+                    raise TamperAlarmException(f"Forbidden: Forward execution already started. Found {f.name} in {acc_name}.")
     
     new_states = {}
-    for acc in ACCOUNTS:
+    for acc_name, overrides in ACCOUNTS.items():
+        acc_config = {**config, **overrides}
+        acc_config.pop("stress_transaction_cost", None)
+        acc_config.pop("code_manifest_hash", None)
+        # Verify it can be loaded
+        V9Config(**acc_config)
+        
+        frozen_base_config_hash = digest(config)
+        account_definition_hash = digest(overrides)
+        account_config_hash = digest(acc_config)
+        
         base_state = {
             "schema_version": 1,
-            "account": acc,
+            "account": acc_name,
             "mode": "forward",
             "cash": 1.0,
             "current_nav": 1.0,
@@ -65,19 +70,21 @@ def main():
             "cum_cost": 0.0,
             "turnover": 0.0,
             "code_hash": code_hash,
-            "config_hash": config_hash,
+            "config_hash": account_config_hash,
+            "frozen_base_config_hash": frozen_base_config_hash,
+            "account_definition_hash": account_definition_hash,
             "baseline_event_snapshot_hash": baseline_events_hash,
             "initialized_at_utc": frozen_at_utc,
             "previous_state_hash": ""
         }
         
         # Calculate state_hash
-        state_hash = get_hash(base_state)
+        state_hash = state_digest(base_state)
         base_state["state_hash"] = state_hash
-        new_states[acc] = base_state
+        new_states[acc_name] = base_state
 
     # Check existing status for idempotency
-    existing_files = {acc: (accounts_dir / acc / "initial_state.json") for acc in ACCOUNTS}
+    existing_files = {acc: (accounts_dir / acc / "initial_state.json") for acc in ACCOUNTS.keys()}
     exists_count = sum(1 for f in existing_files.values() if f.exists())
     
     if exists_count > 0 and exists_count < len(ACCOUNTS):
@@ -87,7 +94,7 @@ def main():
         # Verify contents
         for acc, file_path in existing_files.items():
             current = json.loads(file_path.read_text())
-            if get_hash(current) != get_hash(new_states[acc]):
+            if state_digest(current) != state_digest(new_states[acc]):
                 raise TamperAlarmException(f"Tamper Alarm: {acc} initial_state.json differs from expected genesis!")
         print("unchanged")
         return
@@ -106,11 +113,13 @@ def main():
     # Write event chain genesis
     shared_dir = FORWARD_DIR / "shared"
     shared_dir.mkdir(parents=True, exist_ok=True)
+    # Note: Using digest directly for config_hash
+    frozen_base_config_hash = digest(config)
     event_genesis = {
         "baseline_event_snapshot_hash": baseline_events_hash,
         "frozen_at_utc": frozen_at_utc,
-        "config_hash": config_hash,
-        "previous_event_hash": get_hash({"baseline": baseline_events_hash, "frozen_at": frozen_at_utc})
+        "config_hash": frozen_base_config_hash,
+        "previous_event_hash": digest({"baseline": baseline_events_hash, "frozen_at": frozen_at_utc})
     }
     event_genesis_file = shared_dir / "event_chain_genesis.json"
     event_genesis_file.write_text(json.dumps(event_genesis, indent=2, sort_keys=True))

@@ -17,7 +17,8 @@ sys.path.insert(0, str(SCRIPTS))
 
 from v9_information_strategy import V9Backtester, V9Config, load_event_store
 from validate_v9_information_strategy import load_data
-from shadow_v9_engine import ShadowV9Engine, TamperAlarmException
+from shadow_integrity import TamperAlarmException, canonical_json as canonical, digest, state_digest, verify_genesis, verify_daily_state
+from shadow_v9_engine import ShadowV9Engine
 
 SHADOW_DIR = ROOT / "results" / "shadow_portfolio"
 FROZEN_DIR = SHADOW_DIR / "frozen"
@@ -28,15 +29,6 @@ ACCOUNTS = {
     "v9_e": {"v8_core_weight": 0.70, "info_sleeve_weight": 0.30, "entry_rule_version": "E"},
     "passive_50_50": {"v8_core_weight": 1.0, "info_sleeve_weight": 0.0, "entry_rule_version": "A"},
 }
-
-
-def canonical(value) -> str:
-    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False)
-
-
-def digest(value) -> str:
-    payload = value if isinstance(value, (bytes, bytearray)) else canonical(value).encode("utf-8")
-    return hashlib.sha256(payload).hexdigest()
 
 
 def hash_file(path: Path) -> str:
@@ -141,7 +133,12 @@ def main():
     if not args.dry_run and not manifest.get("forward_eligible", False):
         raise TamperAlarmException("forward mode requires a clean committed freeze; current manifest is engineering-only")
     config_base = json.loads((FROZEN_DIR / "config.json").read_text(encoding="utf-8"))
-    config_hash = digest(config_base)
+    
+    if args.dry_run:
+        run_id = args.run_id or manifest["combined_code_hash"][:8]
+        mode_dir = SHADOW_DIR / "dry_run" / run_id
+    else:
+        mode_dir = SHADOW_DIR / "forward"
     
     # 2. Load Data
     panels, vix, meta = load_data()
@@ -152,14 +149,13 @@ def main():
         return
         
     frozen_at_utc = manifest.get("frozen_at_utc")
-    if frozen_at_utc:
+    if frozen_at_utc and not args.dry_run:
         frozen_dt = pd.Timestamp(frozen_at_utc, tz="UTC")
-        # Assume session close is dt at 16:00 ET (20:00 UTC for simplicity, or just dt + 20h)
+        # Assume session close is dt at 16:00 ET
         session_close_utc = pd.Timestamp(dt).tz_localize("America/New_York").replace(hour=16, minute=0).tz_convert("UTC")
         if session_close_utc <= frozen_dt:
             raise TamperAlarmException(f"Forbidden: Cannot execute {dt.date()}. Session close {session_close_utc} is not after freeze time {frozen_dt}.")
             
-    mode_dir = SHADOW_DIR / ("dry_run" if args.dry_run else "forward") / f"{dt.date()}.json"
     event_snapshot_path, event_hash, new_event_hashes = visible_event_snapshot(mode_dir, dt)
     market = market_snapshot(panels, vix, dt)
     market_path = mode_dir / "shared" / "market_snapshots" / f"{dt.date()}.json"
@@ -172,6 +168,7 @@ def main():
         cfg_kwargs = {**config_base, **overrides}
         cfg_kwargs.pop("stress_transaction_cost", None)
         cfg_kwargs.pop("code_manifest_hash", None)
+        acc_config_hash = digest(cfg_kwargs)
         cfg = V9Config(**cfg_kwargs)
         state_file = acc_dir / f"{dt.date()}_state.json"
         shadow = ShadowV9Engine(panels, vix, events, cfg, state_file)
@@ -184,11 +181,17 @@ def main():
             prev_state_file = acc_dir / f"{prev_dt.date()}_state.json"
             if prev_state_file.exists():
                 prev_state = json.loads(prev_state_file.read_text())
+                verify_daily_state(prev_state, acc_name, prev_dt, manifest, acc_config_hash)
                 shadow.load_state(prev_state)
             else:
+                existing_states = list(acc_dir.glob("20*_state.json"))
+                if len(existing_states) > 0:
+                    raise TamperAlarmException(f"Missing T-1 state for {acc_name} at {prev_dt.date()} (Skip day detected!)")
+                
                 initial_file = acc_dir / "initial_state.json"
                 if initial_file.exists():
                     prev_state = json.loads(initial_file.read_text())
+                    verify_genesis(prev_state, manifest, digest(config_base), digest(overrides), acc_config_hash, acc_name)
                     shadow.load_state(prev_state)
                 else:
                     raise TamperAlarmException(f"Missing T-1 state for {acc_name} at {prev_dt.date()} and no initial_state.json found.")
@@ -216,9 +219,10 @@ def main():
         new_state["previous_state_hash"] = previous_hash
         new_state["genesis_state_hash"] = prev_state.get("genesis_state_hash", previous_hash) if prev_state else previous_hash
         new_state.update({
+            "as_of": str(dt.date()),
             "account": acc_name,
             "mode": "dry_run" if args.dry_run else "forward",
-            "config_hash": config_hash,
+            "config_hash": acc_config_hash,
             "code_hash": manifest["combined_code_hash"],
             "market_data_hash": market_hash,
             "event_snapshot_hash": event_hash,
@@ -226,7 +230,7 @@ def main():
             "execution_hash": execution_hash,
             "decision_hash": decision_hash,
         })
-        new_state["state_hash"] = digest({"previous_state_hash": previous_hash, "state": new_state})
+        new_state["state_hash"] = state_digest(new_state)
         atomic_freeze(state_file, new_state)
         daily_stats[acc_name] = {
             "nav": float(shadow.bt.value),
