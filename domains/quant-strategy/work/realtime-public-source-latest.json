@@ -1,6 +1,6 @@
 {
   "args": {
-    "since": "2026-06-29T13:03:18.606Z",
+    "since": "2026-07-06T12:39:00.000Z",
     "out": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\realtime-public-source-latest.md",
     "json": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\realtime-public-source-latest.json",
     "maxPosts": 5
@@ -70,9 +70,9 @@
       "note": "原始公开 HTML/SSR 暴露可见笔记标题，但没有稳定单条笔记 URL、发布时间或正文；可用于主题温度和候选池，不可当作完整事实正文。",
       "evidence": "低到中",
       "titles": [
-        "[置顶] 一篇走心发文，为什么我们坚持做AI投资分享",
+        "[置顶] 分享我压箱底的 AI 主线 下一“瓶颈”标的",
         "[置顶] 40小时呕心沥血！MRVL光模块+AI推理布局解析",
-        "深度分析AI推理法拉利Cerebras，请停止误解",
+        "存储之后的下个机会，聪明人已经开始关注",
         "MU先别眼红, 5+4逻辑全面梳理搞懂存储产业",
         "要看懂MRVL和10 倍万亿光互联，Credo很关键",
         "分享我压箱底的，AI下一阶段“瓶颈”玩家",
@@ -86,10 +86,10 @@
         "深度拆解ALAB互联27年布局, 这次别踏空!",
         "光模块存储板块狂热, 我们开始睡不好觉了！",
         "诺基亚成光模块概念股？从无到有，最值钱",
+        "一篇走心发文，为什么我们坚持做AI投资分享",
         "CBRS+68%，下一个光模块？ 新机会深度解读",
         "NBIS CRWV深度解读，出现了难得的黄金坑？",
-        "27年的下个10倍投资机会，AI推理Token布局",
-        "光模块下投资还在早期，分享如何提前布局"
+        "27年的下个10倍投资机会，AI推理Token布局"
       ],
       "diagnostics": [
         {
@@ -97,7 +97,7 @@
           "url": "https://www.xiaohongshu.com/user/profile/632ea1e700000000230381cb",
           "ok": true,
           "status": 200,
-          "length": 948287,
+          "length": 944961,
           "error": null
         },
         {
@@ -105,7 +105,7 @@
           "url": "https://r.jina.ai/http://www.xiaohongshu.com/user/profile/632ea1e700000000230381cb",
           "ok": true,
           "status": 200,
-          "length": 578,
+          "length": 299,
           "error": null
         }
       ]

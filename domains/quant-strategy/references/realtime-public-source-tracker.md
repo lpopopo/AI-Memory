@@ -2,6 +2,29 @@
 
 This file tracks public, source-specific realtime observations that should not be mixed into Xiaohongshu author views.
 
+## 2026-07-07 Realtime Public / Institutional Monitor
+
+- Strict window: `2026-07-06T12:39:00.000Z` to 2026-07-07 20:39 Beijing time, using the latest complete public-source tracker cutoff. Automation memory was absent at run start.
+- Xiaohongshu: Chrome-visible profile for `美研芒格君 / Kay2289123` remained readable and latest non-pinned note was still old item `6a45e9690000000016027e78`, `存储之后的下个机会，聪明人已经开始关注`; no new strict-window note was visible. Detail recheck failed: direct open returned `300017`, token/profile navigation returned an explore feed, and current-run image read stayed `0/32`. Historical 2026-07-02 `32/32` image evidence is not overwritten.
+- `@Kay2289123`: verified new Chrome-visible post `2074172593175957904` with full translated body and page-visible edit time `Last edited 12:44 AM · Jul 7, 2026`; snowflake creation time is about `2026-07-06T16:44:17Z`. The post maps NVIDIA Kyber/Rubin/Oberon/Feynman and pluggable/LPO/CPO timing into optical-interconnect watch fields. CNBC/SemiAnalysis claims and author ticker implications remain unverified until primary-source confirmation.
+- `@nvidia`: verified official visible posts `2074161704456356216`/`2074161706830315617` on ICML2026, Nemotron/open-model research ecosystem, and `2074191650792902838`/`2074191660615864487` on AI for Good, compute access, infrastructure gap, digital trust and autonomous systems. These are official ecosystem facts, not revenue/order evidence.
+- `@elonmusk`: verified visible `2074378653501128833` on `Grok Imagine update` plus related Grok Imagine/video reposts. Map only to xAI application-layer and inference-demand observation; video content and commercial metrics were not analyzed. `@realDonaldTrump`: no strict-window readable policy text; latest visible items remained the 2026-07-05 White House event and a 2026-07-02 video, so no new policy framework was extracted.
+- Local realtime checker: X Jina profiles returned empty content; Xiaohongshu raw HTML exposed only title candidates without stable URL/time/body. These diagnostics are lower evidence than Chrome-visible pages.
+- Institutional checker: AQR, Citadel Securities, GMO and Man Institute each had Reader list-page failures, `0` candidates and `0` post-window verified items. This is a checker-channel failure, not an official-source-unavailable conclusion; no new institutional framework was added.
+- Added unproven fields `rack_architecture_delay_vs_pluggable_lifecycle`, `open_model_research_ecosystem`, and `xAI_generative_video_iteration` to hypothesis context. `decisions.md` unchanged; no trade advice, broker action, order or unconfirmed fill was added.
+- Detailed evidence table: `memory/daily/2026-07-07-realtime-public-institutional-monitor.md`.
+
+## 2026-07-06 Realtime Public / Institutional Monitor
+
+- Strict window: `2026-07-02T12:39:00.000Z` to 2026-07-06 20:39 Beijing time, using the latest complete public-source monitor cutoff. Local automation memory was empty; user-provided last run was noted but did not override the public-source tracker.
+- Xiaohongshu: latest visible non-pinned note remained `6a45e9690000000016027e78`, already captured on 2026-07-02. Current Chrome page exposed title/body/comments and `1/32` counter; DOM exposed 32 carousel image URLs, but asset inventory exported zero images and direct downloads returned 403 for all 32. Current-run image OCR/read is therefore `0/32`; historical 2026-07-02 `32/32` record remains the prior image evidence.
+- `@Kay2289123`: verified visible post-window profile items `2073122522653196704`, `2073060648141918387`, `2072788306899898750`, `2072766396325613798`, `2072761494497120567`, and `2072737863398220201`, covering AMAT/KLAC exit-method self-report, FDE/token demand, Tesla AI-token budget rumor interpretation, OpenAI/Meta compute-demand interpretation, and Anthropic/Samsung custom-chip rumor. Self-reported returns, holdings and internal-company claims remain crowding evidence only.
+- `@nvidia`: verified official visible items `2072719480711467286`/`2072719484339524074` on U.S. AI supply-chain localization and `2073423446290092458` on U.S. innovation/AI ecosystem messaging. The 2026-07-02 AI-cloud credit-support item was pre-window for this run and was not re-added.
+- `@elonmusk`: verified `2073990257419173964` on Cybercab accessibility as a physical-AI/autonomous-systems observation. Other visible reposts were low strategy relevance. `@realDonaldTrump`: verified visible `2073607119878623432` White House event broadcast and a text-insufficient `2072681271566708832`; no new policy framework was extracted.
+- Institutional checker: AQR, Citadel Securities, GMO and Man Institute each had `0` post-window verified items. All list pages were readable; candidate details were date-filtered. Citadel archive/category pages remained `date_unverified`, not unavailable.
+- Added `AI_FDE_token_demand_signal`, `AI_token_budget_control`, `AI_domestic_supply_chain_localization`, and `custom_AI_chip_memory_pull` as unproven monitoring fields under H5/H8 context. `decisions.md` unchanged; no trade advice, broker action, order or unconfirmed fill was added.
+- Detailed evidence table: `memory/daily/2026-07-06-realtime-public-institutional-monitor.md`.
+
 ## 2026-07-02 20:39 Incremental Realtime / Institutional Monitor
 
 - Strict window: `2026-07-01T18:04:55.498Z` to 2026-07-02 20:39 Beijing time, using automation memory's last successful cutoff.

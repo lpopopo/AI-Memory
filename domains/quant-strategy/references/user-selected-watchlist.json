@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01",
+  "updated": "2026-07-07",
   "scope": "All tradable symbols from the codebase manual watchlist are formal user-selected names and must appear in full-watchlist analysis even when they do not rank in the top candidate tables.",
   "tickers": [
     {"symbol": "DRAM", "theme": "memory_storage"},
@@ -32,7 +32,8 @@
     {"symbol": "INTC", "theme": "ai_compute_foundry"},
     {"symbol": "GLW", "theme": "optical_network"},
     {"symbol": "NOK", "theme": "network_infrastructure"},
-    {"symbol": "TTMI", "theme": "pcb_electronics_manufacturing"}
+    {"symbol": "TTMI", "theme": "pcb_electronics_manufacturing"},
+    {"symbol": "KO", "theme": "consumer_defensive_beverages"}
   ],
   "context_only": [
     {"symbol": "SPCX", "theme": "space_launch_starlink_sentiment", "tradable": false}

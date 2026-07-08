@@ -1,7 +1,7 @@
 import hashlib,json,tempfile,unittest
 from pathlib import Path
 import numpy as np,pandas as pd
-from v9_information_strategy import V9Backtester,V9Config,V9EvidenceUpdate,chronological_split,load_event_store,load_evidence_store
+from v9_information_strategy import PositionState,V9Backtester,V9Config,V9EvidenceUpdate,chronological_split,load_event_store,load_evidence_store
 
 class V9Tests(unittest.TestCase):
  def synthetic(self):
@@ -44,4 +44,16 @@ class V9Tests(unittest.TestCase):
   self.assertEqual(V9Config().risk_per_name,.015);self.assertEqual(V9Config().hard_stop,.08)
  def test_invalid_risk_limits(self):
   with self.assertRaises(ValueError):V9Config(max_single=.25)
+ def test_common_factor_theme_exposure_is_aggregated(self):
+  i,p,v=self.synthetic();p={k:df.assign(Y=df["X"]) for k,df in p.items()};b=V9Backtester(p,v,[],V9Config(aggregate_common_factors=True));b.value=100
+  b.positions={"X":PositionState(10,1,9,"ai_interconnect",75,1),"Y":PositionState(10,2,9,"memory_storage",75,1)}
+  exposure=b._theme_exposure(pd.Series({"X":10.,"Y":10.}));self.assertEqual(set(exposure),{"ai_capex"});self.assertAlmostEqual(exposure["ai_capex"],.30)
+ def test_common_factor_aggregation_can_be_ablated(self):
+  i,p,v=self.synthetic();b=V9Backtester(p,v,[],V9Config(aggregate_common_factors=False));self.assertEqual(b._theme_bucket("memory_storage"),"memory_storage")
+ def test_institutional_triple_confirmation_rejects_weak_volume(self):
+  i,p,v=self.synthetic();p["volume"].loc[i[-1],"X"]=1.;events,_=load_event_store(self.event_file(i[-30]));b=V9Backtester(p,v,events,V9Config(institutional_triple_confirmation=True));ok,_,_,reason,_=b._tech_setup("X",i[-1],events[0].effective_at.normalize());self.assertFalse(ok);self.assertEqual(reason,"institutional_triple_confirmation_failed")
+ def test_flow_fragility_score_is_bounded(self):
+  i,p,v=self.synthetic();events,_=load_event_store(self.event_file(i[-30]));b=V9Backtester(p,v,events,V9Config(institutional_flow_overlay=True));score=b._flow_fragility_score(i[-1]);self.assertGreaterEqual(score,0);self.assertLessEqual(score,10)
+ def test_evidence_quality_position_multipliers(self):
+  self.assertEqual(V9Backtester._quality_size_multiplier(10),.60);self.assertEqual(V9Backtester._quality_size_multiplier(12),.75);self.assertEqual(V9Backtester._quality_size_multiplier(15),1.0)
 if __name__=="__main__":unittest.main()

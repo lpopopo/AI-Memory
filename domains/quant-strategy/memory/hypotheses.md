@@ -166,6 +166,23 @@ Additional validation needed:
 - For secure/sovereign AI, track disclosed contract value, GPU count, deployment timing, utilization, software attach and recurring revenue.
 - Replay official performance claims and influencer follow-up posts over 5/20/60 trading days versus QQQ/SMH, including maximum adverse excursion and post-event volume.
 
+2026-07-06 evidence update:
+
+- Chrome-visible Xiaohongshu复核显示 `6a45e9690000000016027e78` 仍是最新可见非置顶笔记，正文继续支持把“绕开内存税”拆成容量缓解、带宽/搬运缓解、CXL/标准、软件调度、封装/代工和 SRAM 等分支；本轮图片级新增核验失败，当前-run 为 `0/32`，不得覆盖 2026-07-02 的历史 `32/32` 证据。
+- Kay X 新增 `AI_FDE_token_demand_signal`：微软/亚马逊 forward-deployed engineers 可能代表企业 AI 落地和 token 消耗需求，但需招聘数据、客户付费、云收入和 token 用量验证。
+- Kay X 新增 `AI_token_budget_control`：Tesla 员工 AI token 配额传闻说明成本控制可能与需求不足并存，不能把预算上限单向解释为 AI ROI 失败。
+- Kay X 新增 `custom_AI_chip_memory_pull`：Anthropic/Samsung 自研 AI 芯片传闻与存储瓶颈相关，但必须回到 The Information 原文、Samsung/Anthropic 官方、工艺、订单和存储接口验证。
+- NVIDIA 官方帖新增 `AI_domestic_supply_chain_localization` 观察：美国 AI 供应链、本土制造和伙伴生态可能成为政策/产业叙事字段，但没有订单、收入、产能或毛利证据前，不影响 AI 质量分或持仓角色。
+- Replay 需要把 2026-07-02 至 2026-07-06 的 Kay/NVIDIA/Elon/Trump 事件按 first-visible time 冻结，比较 1/5/20/60 日 QQQ/SMH/XSD/HYG/LQD、相关 ticker、成交量和最大不利波动。
+
+2026-07-07 evidence update:
+
+- Chrome-visible Xiaohongshu profile still shows `6a45e9690000000016027e78` as the latest non-pinned note, with no strict-window new note. Current-run detail/image review failed (`300017` or explore redirect), so image-level evidence remains `0/32` for this run and historical `32/32` from 2026-07-02 is not overwritten.
+- Kay X post `2074172593175957904` adds `rack_architecture_delay_vs_pluggable_lifecycle`: if Kyber/rack-scale or CPO timing is delayed, 800G/1.6T pluggable optics, DSP, and scale-out links may have a longer validation window. This requires CNBC/SemiAnalysis original text, NVIDIA roadmap confirmation, COHR/LITE/AAOI/MRVL order evidence, and hyperscaler capex validation.
+- NVIDIA official posts add `open_model_research_ecosystem` and `AI_for_good_compute_access` as ecosystem observations. These support monitoring of AI research and compute-access narratives but do not prove incremental revenue, orders, utilization, or margins.
+- Elon Musk's `Grok Imagine update` adds `xAI_generative_video_iteration` under application-layer monitoring. It needs product usage, subscription, token cost, inference margin, and compute procurement evidence before it can be mapped to infrastructure demand.
+- Replay should add the Kay Kyber/CPO post, NVIDIA ICML/open-model posts, NVIDIA AI for Good posts, and Elon Grok Imagine update to the 2026-07-06/07 event table, then compare 1/5/20/60-day returns and maximum adverse excursion for QQQ/SMH/XSD plus NVDA/COHR/LITE/AAOI/MRVL.
+
 ### H6: AI application-layer monitoring may become a separate investable theme
 
 AI application evidence should be tracked separately from GPU, data center, optical, and storage infrastructure. Strong consumer adoption or enterprise AI workflow evidence does not automatically mean more infrastructure buying; it can benefit application software, cloud platforms, inference compute, storage, cybersecurity, or endpoints depending on monetization and cost structure.

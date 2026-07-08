@@ -1,6 +1,6 @@
 {
   "args": {
-    "since": "2026-06-14T10:08:33.531Z",
+    "since": "2026-07-06T12:39:00.000Z",
     "out": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\institutional-research-latest.md",
     "json": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\institutional-research-latest.json",
     "maxItems": 8
@@ -137,7 +137,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Alternative-Thinking/Total-Portfolio-Approach",
           "ok": true,
-          "length": 4532,
+          "length": 4579,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/Alternative-Thinking/Total-Portfolio-Approach"
@@ -146,7 +146,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Cliff-Asness-The-Illusion-of-Safety-in-Private-Assets",
           "ok": true,
-          "length": 4229,
+          "length": 4276,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Cliff-Asness-The-Illusion-of-Safety-in-Private-Assets"
@@ -155,7 +155,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Tax-Aware-Investing/Why-More-Alpha-Can-Mean-More-Tax-Benefits",
           "ok": true,
-          "length": 18162,
+          "length": 18115,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/Tax-Aware-Investing/Why-More-Alpha-Can-Mean-More-Tax-Benefits"
@@ -164,7 +164,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
           "ok": true,
-          "length": 5277,
+          "length": 5324,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes"
@@ -173,7 +173,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Working-Paper/Climate-Risk-Pricing",
           "ok": true,
-          "length": 4354,
+          "length": 4307,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.aqr.com/Insights/Research/Working-Paper/Climate-Risk-Pricing"
@@ -211,8 +211,8 @@
           "summary": "We continue to see two rate hikes this year. We retain the baseline of those hikes likely coming at the September and December meetings, but think that the market is underpricing the probability of a July hike. Investors still appear anchored to an inertial framework, in which the Fed is assumed to move gradually and only once the data have fully forced its hand. We think the pivot from inertial to adaptive policy-making is likely real and underappreciated. In an adaptive policy-making framework, the optimal strategy for a central bank would be to respond quickly to deviations from the dual mandate before that deviation becomes entrenched, thereby signaling to economic agents such deviations",
           "detailWarning": false,
           "detailOk": true,
-          "verificationStatus": "post_window_verified",
-          "isPostWindow": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
           "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
           "dimension": "flow_fragility / market structure / macro strategy"
         },
@@ -224,8 +224,8 @@
           "summary": "Markets entering the second half of 2026 bear little resemblance to the markets investors navigated for most of the past two decades. The defining story of 2026 has not been a single macro event, it has been the structural transformation of equity markets. Concentration, passive investing, retail participation, leverage, and volatility are no longer independent trends. Together, they increasingly determine how capital flows, prices are discovered, and risk is transferred. These structural forces are no longer simply influencing markets, they are increasingly defining them. This marks my 21st semiannual _Global Market Structure & Flows_ review. The 20 charts that follow highlight the structur",
           "detailWarning": false,
           "detailOk": true,
-          "verificationStatus": "post_window_verified",
-          "isPostWindow": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
           "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
           "dimension": "flow_fragility / market structure / macro strategy"
         },
@@ -237,8 +237,8 @@
           "summary": "THE HEIGHTENED CREDIBILITY AT THE FED UNDER CHAIR WARSH THAT I WROTE ABOUT LAST WEEK IS NOW BECOMING VISIBLE IN MARKETS…in the shape of the yield curve, the behaviour of the dollar, and in the repricing of the front end. A more credible Fed does not necessarily mean higher yields…as evidenced by the recent rally in 30-year USTs. In fact, the broader change is that the market is beginning to understand the shifting reaction function: inflation misses are no longer going to be accommodated simply because growth is holding up or because a temporary energy shock is reversing.For most of the post-pandemic period, policy was still interpreted through the lens of insurance…if growth weakened, the F",
           "detailWarning": false,
           "detailOk": true,
-          "verificationStatus": "post_window_verified",
-          "isPostWindow": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
           "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
           "dimension": "flow_fragility / market structure / macro strategy"
         },
@@ -250,8 +250,8 @@
           "summary": "“CREDIBLE” IS THE WORD THAT MOST SPRINGS TO MIND WHEN ASSESSING CHAIR WARSH’S FOMC DEBUT. His emphasis on price stability left investors in no doubt about which side of the mandate he is currently concerned about, stating in the presser _“persistently high prices are a burden for the American people”_ and _“this committee will deliver price stability”._ His hawkish tone confounded the expectations of many in the market who had predicted a ‘dovish-come-what-may’ approach and marked a substantive change from the Powell-era willingness to look through persistently above-target core inflation and (arguably) excess sensitivity to the employment side of the mandate. The Summary of Economic Project",
           "detailWarning": false,
           "detailOk": true,
-          "verificationStatus": "post_window_verified",
-          "isPostWindow": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
           "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
           "dimension": "flow_fragility / market structure / macro strategy"
         },
@@ -263,8 +263,8 @@
           "summary": "Skip to Content[](http://www.citadelsecurities.com/) * Who We Are Who We AreLearn More * Our Culture * Leadership Team * Civic Leadership * Office Locations × * What We Do What We DoLearn More * Equities * Designated Market Maker * Options * Fixed Income & FX * What is a Market Maker? * Corporate Solutions × * News & Insights News & InsightsLearn More * In the Media * Market Insights * Policy Positions × * Careers CareersLearn More * Markets & Trading * Quantitative Research * Engineering * Internships * Programs & Events * Conference Travel Grant * Datathons * Discover Citadel Securities * Citadel Securities Quant Invitational * Ignite Women's Trading Program * PhD Summit * Terminal * Tradi",
           "detailWarning": false,
           "detailOk": true,
-          "verificationStatus": "post_window_verified",
-          "isPostWindow": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
           "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
           "dimension": "flow_fragility / market structure / macro strategy"
         },
@@ -313,7 +313,7 @@
           "channel": "jina_list",
           "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/category/market-insights/",
           "ok": true,
-          "length": 17093,
+          "length": 16784,
           "attempts": 1,
           "error": null
         },
@@ -330,7 +330,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-macro-strategy/",
           "ok": true,
-          "length": 15901,
+          "length": 16210,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/"
@@ -348,7 +348,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-market-intelligence/",
           "ok": true,
-          "length": 16147,
+          "length": 16456,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/"
@@ -366,7 +366,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/macro-thoughts/",
           "ok": true,
-          "length": 16755,
+          "length": 16446,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/"
@@ -397,55 +397,81 @@
       "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality",
       "items": [
         {
+          "title": "GMO 7-Year Asset Class Forecast: May 2026",
+          "url": "https://www.gmo.com/americas/research-library/gmo-7-year-asset-class-forecast-may-2026_gmo7yearassetclassforecast/",
+          "date": "2026-06-11T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "",
+          "detailWarning": false,
+          "detailOk": false,
+          "verificationStatus": "pre_window_or_existing_list_only",
+          "isPostWindow": false,
+          "evidence": "中：官方列表页可见标题/日期，但详情页未读取成功；可记录为候选，不应提炼新框架。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        },
+        {
+          "title": "Japan’s Next Phase of Corporate Governance Re...",
+          "url": "https://www.gmo.com/americas/research-library/japans-next-phase-of-corporate-governance-reform_insights/",
+          "date": "2026-06-11T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "",
+          "detailWarning": false,
+          "detailOk": false,
+          "verificationStatus": "pre_window_or_existing_list_only",
+          "isPostWindow": false,
+          "evidence": "中：官方列表页可见标题/日期，但详情页未读取成功；可记录为候选，不应提炼新框架。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        },
+        {
           "title": "Japan Equities",
           "url": "https://www.gmo.com/americas/research-library/japan-equities_insights/",
           "date": "2026-06-11T16:00:00.000Z",
           "dateSource": "list_page",
-          "summary": "Listen to this Insight Audio 3 * * * Despite strong local returns, a global energy shock, rapidly rising rates, and elevated geopolitical risks, Japanese equities offer significant upside driven by deep-seated structural reforms, improving fundamentals, and attractive valuation opportunities. * * * Executive Summary For the last eight years, GMO’s Asset Allocation team has held a differentiated view on Japanese equities. Long before Japan re‑entered the global investment narrative, we argued that the country was undergoing slow but durable structural changes aimed at improving corporate governance, growth, and capital efficiency. These reforms were never expected to deliver quick results. In",
+          "summary": "",
           "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "pre_window_or_existing",
+          "detailOk": false,
+          "verificationStatus": "pre_window_or_existing_list_only",
           "isPostWindow": false,
-          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "evidence": "中：官方列表页可见标题/日期，但详情页未读取成功；可记录为候选，不应提炼新框架。",
           "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
         },
         {
-          "title": "Letter to the Investment Committee on Private Equity",
+          "title": "Diversifying Beyond 60/40 with a More Dynamic...",
+          "url": "https://www.gmo.com/americas/research-library/diversifying-beyond-6040-with-a-more-dynamic-allocation_insights/",
+          "date": "2026-06-11T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "",
+          "detailWarning": false,
+          "detailOk": false,
+          "verificationStatus": "pre_window_or_existing_list_only",
+          "isPostWindow": false,
+          "evidence": "中：官方列表页可见标题/日期，但详情页未读取成功；可记录为候选，不应提炼新框架。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        },
+        {
+          "title": "Part 2: Letter to the Investment Committee on...",
           "url": "https://www.gmo.com/americas/research-library/part-2-letter-to-the-investment-committee-on-private-equity_gmoquarterlyletter/",
           "date": "2026-06-11T16:00:00.000Z",
           "dateSource": "list_page",
-          "summary": "Listen to Part 2 of the Quarterly Letter * * * Executive Summary Some institutional investors who had grown accustomed to outperforming the broader private equity composites are finding they have not done so consistently in recent years. Their diagnoses of the problem often center on specific decisions or biases they made in their recent manager selection, whereas a likely culprit is a falloff in the persistence of outperformance among private equity managers. While wide performance dispersion persists among private equity funds of a given vintage, academic research suggests that the tendency for a manager’s prior strong performance to persist into subsequent funds has largely disappeared, p",
+          "summary": "",
           "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "pre_window_or_existing",
+          "detailOk": false,
+          "verificationStatus": "pre_window_or_existing_list_only",
           "isPostWindow": false,
-          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "evidence": "中：官方列表页可见标题/日期，但详情页未读取成功；可记录为候选，不应提炼新框架。",
           "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
         },
         {
-          "title": "Diversifying Beyond 60/40 with a More Dynamic Allocation",
-          "url": "https://www.gmo.com/americas/research-library/diversifying-beyond-6040-with-a-more-dynamic-allocation_insights/",
-          "date": "2026-03-30T16:00:00.000Z",
-          "dateSource": "detail_page",
-          "summary": "Listen to this Insight * * * While the traditional 60/40 stock–bond portfolio has delivered strong long‑term results, its success has been highly valuation‑dependent and has included multiple “lost decades” following periods of elevated asset prices. Thanks to strong gains in markets over recent years, the 60/40 default portfolio has quietly morphed into a bundle of expensive U.S. growth equities and credit exposures offering narrow spreads over Treasuries. In our view, such a portfolio is likely to disappoint investors by delivering low single-digit real returns. A valuation‑sensitive, dynamic, and more globally diversified approach is likely a better way to manage risk and improve outcomes",
-          "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "pre_window_or_existing",
-          "isPostWindow": false,
-          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
-          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
-        },
-        {
-          "title": "What Barbarians Like to Take Private",
+          "title": "GMO Quarterly Letter",
           "url": "https://www.gmo.com/americas/research-library/part-1-what-barbarians-like-to-take-private_gmoquarterlyletter/",
           "date": "2026-03-03T16:00:00.000Z",
           "dateSource": "list_page",
-          "summary": "Listen to Part 1 of the Quarterly Letter * * * Executive Summary While most institutional investors recognize that private equity and public equity share similar economic risks, they often seem to ignore how their aggregate equity portfolio is affected by their substantial allocation to private equity. Analyzing 700 private equity leveraged buyouts over the last 45 years allowed us to compare a meaningful proportion of private equity portfolios to their public equity counterparts. Relative to public equities, private equity skews small and lower quality, and has a massive bet on software—all of which make a portfolio with a significant private equity allocation riskier and less well diversif",
+          "summary": "",
           "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "pre_window_or_existing",
+          "detailOk": false,
+          "verificationStatus": "pre_window_or_existing_list_only",
           "isPostWindow": false,
-          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "evidence": "中：官方列表页可见标题/日期，但详情页未读取成功；可记录为候选，不应提炼新框架。",
           "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
         },
         {
@@ -453,12 +479,12 @@
           "url": "https://www.gmo.com/americas/research-library/hype-vs-high-conviction_insights/",
           "date": "2026-03-03T16:00:00.000Z",
           "dateSource": "list_page",
-          "summary": "Three years after the launch of ChatGPT 3.5, positioning around artificial intelligence-related companies has become a (perhaps “the”) critical decision for equity investors. AI investment spending by companies far exceeds current revenue generation from end-market use cases, leaving highly leveraged players facing existential risks. Still, companies like Microsoft, Alphabet, and Nvidia are aggressively funding innovation from robust cash flows, and, at least superficially, trade at valuation multiples that are moderate relative to the frenzy surrounding the technology. But there is a frenzy. For investors, the real opportunity lies in distinguishing between companies with durable competitiv",
+          "summary": "",
           "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "pre_window_or_existing",
+          "detailOk": false,
+          "verificationStatus": "pre_window_or_existing_list_only",
           "isPostWindow": false,
-          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "evidence": "中：官方列表页可见标题/日期，但详情页未读取成功；可记录为候选，不应提炼新框架。",
           "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
         },
         {
@@ -466,38 +492,12 @@
           "url": "https://www.gmo.com/americas/research-library/a-second-opinion-on-the-6040-default_insights/",
           "date": "2026-03-03T16:00:00.000Z",
           "dateSource": "list_page",
-          "summary": "Asset Allocation Is Easy in Theory, Difficult in Practice In theory, growing a pool of wealth over decades—whether for a family, an endowment, or a pensioner—is a straightforward endeavor. An advisor or allocator needs to do three things: understand the goals of their client, find different ways to earn returns for taking risks, 1 and then take the right amount of risk to meet those goals. 2 Taking too much risk may expose the client to unacceptable drawdowns, while taking too little risk will likely lead to inadequate returns in the long run. The de facto “passive” allocation of 60% equities/40% bonds has proven effective at compounding wealth over time by tapping into two key risk premia: ",
+          "summary": "",
           "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "pre_window_or_existing",
+          "detailOk": false,
+          "verificationStatus": "pre_window_or_existing_list_only",
           "isPostWindow": false,
-          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
-          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
-        },
-        {
-          "title": "GMO 7-Year Asset Class Forecast: May 2026",
-          "url": "https://www.gmo.com/americas/research-library/gmo-7-year-asset-class-forecast-may-2026_gmo7yearassetclassforecast/",
-          "date": "2026-03-03T16:00:00.000Z",
-          "dateSource": "detail_page",
-          "summary": "Skip [](http://www.gmo.com/americas/ \"Home\")GMO Americas * Americas * Europe, Middle East, Africa * Asia * Australia, New Zealand Contact UsLog In Menu Search * Investment Capabilities Back to main menu Investment Capabilities Strategies * Multi-Asset Class * Equities * Alternatives * Fixed Income ETFs Mutual Funds Private Funds Document Library GMO Solutions * Asset Allocation * Quality Equity * ETF Investing at GMO * Dynamic Multi-Asset Credit FEATURED PRODUCTS Strategy Multi-Asset Credit Strategy Fixed Income The GMO Multi-Asset Credit Strategy seeks to maximize alpha potential by harvesting the most attractively priced credit risk premia through a dynamic allocation process across the cr",
-          "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "pre_window_or_existing",
-          "isPostWindow": false,
-          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
-          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
-        },
-        {
-          "title": "Japan’s Next Phase of Corporate Governance Reform",
-          "url": "https://www.gmo.com/americas/research-library/japans-next-phase-of-corporate-governance-reform_insights/",
-          "date": "2026-03-03T16:00:00.000Z",
-          "dateSource": "detail_page",
-          "summary": "Skip [](http://www.gmo.com/americas/ \"Home\")GMO Americas * Americas * Europe, Middle East, Africa * Asia * Australia, New Zealand Contact UsLog In Menu Search * Investment Capabilities Back to main menu Investment Capabilities Strategies * Multi-Asset Class * Equities * Alternatives * Fixed Income ETFs Mutual Funds Private Funds Document Library GMO Solutions * Asset Allocation * Quality Equity * ETF Investing at GMO * Dynamic Multi-Asset Credit FEATURED PRODUCTS Strategy Multi-Asset Credit Strategy Fixed Income The GMO Multi-Asset Credit Strategy seeks to maximize alpha potential by harvesting the most attractively priced credit risk premia through a dynamic allocation process across the cr",
-          "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "pre_window_or_existing",
-          "isPostWindow": false,
-          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "evidence": "中：官方列表页可见标题/日期，但详情页未读取成功；可记录为候选，不应提炼新框架。",
           "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
         }
       ],
@@ -513,72 +513,72 @@
         {
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/part-1-what-barbarians-like-to-take-private_gmoquarterlyletter/",
-          "ok": true,
-          "length": 30250,
-          "attempts": 1,
+          "ok": false,
+          "length": 0,
+          "attempts": 2,
           "error": null,
           "candidate": "https://www.gmo.com/americas/research-library/part-1-what-barbarians-like-to-take-private_gmoquarterlyletter/"
         },
         {
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/hype-vs-high-conviction_insights/",
-          "ok": true,
-          "length": 12957,
-          "attempts": 1,
+          "ok": false,
+          "length": 0,
+          "attempts": 2,
           "error": null,
           "candidate": "https://www.gmo.com/americas/research-library/hype-vs-high-conviction_insights/"
         },
         {
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/a-second-opinion-on-the-6040-default_insights/",
-          "ok": true,
-          "length": 24773,
-          "attempts": 1,
+          "ok": false,
+          "length": 0,
+          "attempts": 2,
           "error": null,
           "candidate": "https://www.gmo.com/americas/research-library/a-second-opinion-on-the-6040-default_insights/"
         },
         {
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/gmo-7-year-asset-class-forecast-may-2026_gmo7yearassetclassforecast/",
-          "ok": true,
-          "length": 29836,
-          "attempts": 1,
+          "ok": false,
+          "length": 0,
+          "attempts": 2,
           "error": null,
           "candidate": "https://www.gmo.com/americas/research-library/gmo-7-year-asset-class-forecast-may-2026_gmo7yearassetclassforecast/"
         },
         {
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/japans-next-phase-of-corporate-governance-reform_insights/",
-          "ok": true,
-          "length": 38937,
-          "attempts": 1,
+          "ok": false,
+          "length": 0,
+          "attempts": 2,
           "error": null,
           "candidate": "https://www.gmo.com/americas/research-library/japans-next-phase-of-corporate-governance-reform_insights/"
         },
         {
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/japan-equities_insights/",
-          "ok": true,
-          "length": 16002,
-          "attempts": 1,
+          "ok": false,
+          "length": 0,
+          "attempts": 2,
           "error": null,
           "candidate": "https://www.gmo.com/americas/research-library/japan-equities_insights/"
         },
         {
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/diversifying-beyond-6040-with-a-more-dynamic-allocation_insights/",
-          "ok": true,
-          "length": 9896,
-          "attempts": 1,
+          "ok": false,
+          "length": 0,
+          "attempts": 2,
           "error": null,
           "candidate": "https://www.gmo.com/americas/research-library/diversifying-beyond-6040-with-a-more-dynamic-allocation_insights/"
         },
         {
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/part-2-letter-to-the-investment-committee-on-private-equity_gmoquarterlyletter/",
-          "ok": true,
-          "length": 15133,
-          "attempts": 1,
+          "ok": false,
+          "length": 0,
+          "attempts": 2,
           "error": null,
           "candidate": "https://www.gmo.com/americas/research-library/part-2-letter-to-the-investment-committee-on-private-equity_gmoquarterlyletter/"
         }
@@ -590,6 +590,19 @@
       "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch",
       "items": [
         {
+          "title": "Views from the Floor Could 'Super El Niño' Scorch AI Too? | Man Group",
+          "url": "https://www.man.com/insights/views-from-the-floor-2026-7-july",
+          "date": "2026-07-06T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-7-july) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the em",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "post_window_verified",
+          "isPostWindow": true,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
+        },
+        {
           "title": "Views from the Floor The Hard Questions for AI Bonds Investors | Man Group",
           "url": "https://www.man.com/insights/views-from-the-floor-2026-1-july",
           "date": "2026-06-30T16:00:00.000Z",
@@ -597,8 +610,8 @@
           "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-1-july) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the em",
           "detailWarning": false,
           "detailOk": true,
-          "verificationStatus": "post_window_verified",
-          "isPostWindow": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
           "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
           "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
         },
@@ -610,8 +623,8 @@
           "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-23-jun) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the em",
           "detailWarning": false,
           "detailOk": true,
-          "verificationStatus": "post_window_verified",
-          "isPostWindow": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
           "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
           "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
         },
@@ -623,8 +636,8 @@
           "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-17-June) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the e",
           "detailWarning": false,
           "detailOk": true,
-          "verificationStatus": "post_window_verified",
-          "isPostWindow": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
           "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
           "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
         },
@@ -679,19 +692,6 @@
           "isPostWindow": false,
           "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
           "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
-        },
-        {
-          "title": "Views from the Floor Achilles and the Tortoise | Man Group",
-          "url": "https://www.man.com/insights/views-from-the-floor-2026-19-may",
-          "date": "2026-05-18T16:00:00.000Z",
-          "dateSource": "detail_page",
-          "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-19-may) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the em",
-          "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "pre_window_or_existing",
-          "isPostWindow": false,
-          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
-          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
         }
       ],
       "diagnostics": [
@@ -699,15 +699,24 @@
           "channel": "jina_list",
           "url": "https://r.jina.ai/http://www.man.com/maninstitute/market-views",
           "ok": true,
-          "length": 35732,
-          "attempts": 1,
+          "length": 35546,
+          "attempts": 2,
           "error": null
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-7-july",
+          "ok": true,
+          "length": 43042,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.man.com/insights/views-from-the-floor-2026-7-july"
         },
         {
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-1-july",
           "ok": true,
-          "length": 43282,
+          "length": 43166,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-1-july"
@@ -716,7 +725,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-23-jun",
           "ok": true,
-          "length": 42765,
+          "length": 42649,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-23-jun"
@@ -725,7 +734,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-17-June",
           "ok": true,
-          "length": 41538,
+          "length": 41422,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-17-June"
@@ -734,7 +743,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-9-june",
           "ok": true,
-          "length": 43072,
+          "length": 42975,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-9-june"
@@ -743,7 +752,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-2-jun",
           "ok": true,
-          "length": 41396,
+          "length": 41299,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-2-jun"
@@ -761,19 +770,10 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-26-may",
           "ok": true,
-          "length": 39794,
+          "length": 39697,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-26-may"
-        },
-        {
-          "channel": "jina_detail",
-          "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-19-may",
-          "ok": true,
-          "length": 42176,
-          "attempts": 1,
-          "error": null,
-          "candidate": "https://www.man.com/insights/views-from-the-floor-2026-19-may"
         }
       ],
       "note": "列表页可读；已读取候选详情页并按日期过滤。"

@@ -10,6 +10,12 @@ import numpy as np
 import pandas as pd
 from v87_dynamic_regime import V87Allocator, V87Config
 
+AI_CAPEX_THEMES = frozenset({
+    "ai_architecture", "ai_bottleneck", "ai_cloud_factory", "ai_inference",
+    "ai_interconnect", "custom_silicon", "hbm_upstream", "memory_efficiency",
+    "memory_storage", "optical_components",
+})
+
 @dataclass(frozen=True)
 class V9Event:
     event_id: str
@@ -60,6 +66,10 @@ class V9Config:
     crowding_multiplier: float = 1.0
     min_fundamental: int = 10
     score_cap_scale: float = 1.0
+    aggregate_common_factors: bool = True
+    institutional_triple_confirmation: bool = False
+    institutional_flow_overlay: bool = False
+    institutional_quality_sizing: bool = False
 
     # Confirmation / Selection
     ranking_mode: bool = False
@@ -288,6 +298,68 @@ class V9Backtester:
         scores = [event.fundamental_validation] + [u.validation_score for u in self.evidence_updates if symbol in u.symbols and u.effective_at.normalize() <= dt]
         return max(scores)
 
+    def _theme_bucket(self, theme: str) -> str:
+        if self.cfg.aggregate_common_factors and theme in AI_CAPEX_THEMES:
+            return "ai_capex"
+        return theme
+
+    def _theme_exposure(self, close_prices: pd.Series) -> dict[str, float]:
+        exposure: dict[str, float] = {}
+        if self.value <= 0:
+            return exposure
+        for symbol, state in self.positions.items():
+            price = close_prices.get(symbol)
+            if pd.isna(price):
+                continue
+            bucket = self._theme_bucket(state.theme)
+            exposure[bucket] = exposure.get(bucket, 0.0) + state.shares * float(price) / self.value
+        return exposure
+
+    def _flow_fragility_score(self, dt: pd.Timestamp) -> int:
+        """Public-proxy score inspired by Citadel market-structure research."""
+        loc = self.close.index.get_loc(dt)
+        if loc < 21:
+            return 0
+        symbols = sorted({s for e in self.events for s in e.symbols if s in self.close.columns})
+        if not symbols or pd.isna(self.close.at[dt, "QQQ"]):
+            return 0
+        prior = self.close.index[loc - 20]
+        qqq_ret = self.close.at[dt, "QQQ"] / self.close.at[prior, "QQQ"] - 1
+        rel = []
+        extensions = []
+        for symbol in symbols:
+            if pd.notna(self.close.at[dt, symbol]) and pd.notna(self.close.at[prior, symbol]):
+                rel.append(self.close.at[dt, symbol] / self.close.at[prior, symbol] - 1 - qqq_ret)
+            if pd.notna(self.ma20.at[dt, symbol]) and self.ma20.at[dt, symbol] > 0 and pd.notna(self.close.at[dt, symbol]):
+                extensions.append(self.close.at[dt, symbol] / self.ma20.at[dt, symbol] - 1)
+        score = 0
+        if rel:
+            participation = float(np.mean(np.asarray(rel) > 0))
+            score += 2 if participation < .35 else 1 if participation < .50 else 0
+            median_rel = float(np.median(rel))
+            score += 2 if median_rel > .05 else 1 if median_rel > .02 else 0
+        if extensions:
+            extension = float(np.median(extensions))
+            score += 2 if extension > .08 else 1 if extension > .04 else 0
+        vix = self.vix.at[dt, "^VIX"] if dt in self.vix.index else np.nan
+        score += 2 if pd.notna(vix) and vix >= 22 else 1 if pd.notna(vix) and vix >= 16 else 0
+        if loc >= 5 and dt in self.vix.index:
+            p5 = self.close.index[loc - 5]
+            if p5 in self.vix.index and pd.notna(self.vix.at[p5, "^VIX"]) and pd.notna(vix):
+                q5 = self.close.at[dt, "QQQ"] / self.close.at[p5, "QQQ"] - 1
+                v5 = vix / self.vix.at[p5, "^VIX"] - 1
+                if q5 > 0 and v5 > 0:
+                    score += 2
+        return int(score)
+
+    @staticmethod
+    def _quality_size_multiplier(fundamental_validation: int) -> float:
+        if fundamental_validation >= 15:
+            return 1.0
+        if fundamental_validation >= 12:
+            return .75
+        return .60
+
     def _tech_setup(self, s, dt, event_date=None):
         vals = [self.close.at[dt, s], self.ma20.at[dt, s], self.ma50.at[dt, s], self.ma200.at[dt, s], self.atr20.at[dt, s], self.rs20.at[dt, s], self.volume.at[dt, s], self.vol20.at[dt, s]]
         if any(pd.isna(x) for x in vals): return False, "unready", 0, "missing_data", False
@@ -357,6 +429,13 @@ class V9Backtester:
         else:
             valid = breakout or pullback or trend_conf or trend_wait
             path = "breakout" if breakout else ("pullback" if pullback else "trend")
+
+        if self.cfg.institutional_triple_confirmation:
+            volume_confirmed = vol >= .80 * vavg
+            trend_structure = px > m20 > m50
+            valid = valid and trend_structure and rs > 0 and volume_confirmed
+            if not valid:
+                return False, "none", 0, "institutional_triple_confirmation_failed", False
 
         if not valid:
             return False, "none", 0, "technical_not_confirmed", False
@@ -757,7 +836,7 @@ class V9Backtester:
                 symbols = sorted({s for e in self.events for s in e.symbols if s in self.close})
                 candidates = []
 
-                theme_exposure = {state.theme: state.shares * close_prices.at[s] / self.value for s, state in self.positions.items()}
+                theme_exposure = self._theme_exposure(close_prices)
                 info_exposure = info_val / self.value
 
                 for s in symbols:
@@ -805,18 +884,19 @@ class V9Backtester:
                             self.funnel.append({"date": str(dt.date()), "symbol": s, "reason": "added_to_d2_waitlist", "event_id": e.event_id})
                             continue
                         elif valid and total_score >= self.cfg.score_threshold:
-                            candidates.append({"symbol": s, "score": total_score, "theme": e.theme, "initial_stop": close_prices.at[s] * (1 - self.cfg.hard_stop), "high_vol": False, "is_observation": False, "event_id": e.event_id})
+                            candidates.append({"symbol": s, "score": total_score, "theme": e.theme, "initial_stop": close_prices.at[s] * (1 - self.cfg.hard_stop), "high_vol": False, "is_observation": False, "event_id": e.event_id, "fundamental": fun})
                         else:
                             self.funnel.append({"date": str(dt.date()), "symbol": s, "reason": tech_reason if not valid else "score_below_threshold" if not high_vol else "chased_rule_a", "event_id": e.event_id})
 
                     elif self.cfg.entry_rule_version == "A":
                         if valid and total_score >= self.cfg.score_threshold:
-                            candidates.append({"symbol": s, "score": total_score, "theme": e.theme, "initial_stop": close_prices.at[s] * (1 - self.cfg.hard_stop), "high_vol": False, "is_observation": False, "event_id": e.event_id})
+                            candidates.append({"symbol": s, "score": total_score, "theme": e.theme, "initial_stop": close_prices.at[s] * (1 - self.cfg.hard_stop), "high_vol": False, "is_observation": False, "event_id": e.event_id, "fundamental": fun})
                         else:
                             self.funnel.append({"date": str(dt.date()), "symbol": s, "reason": tech_reason if not valid else "score_below_threshold" if not high_vol else "chased_rule_a", "event_id": e.event_id})
 
                 # Sort candidates by score descending
                 candidates.sort(key=lambda x: x["score"], reverse=True)
+                flow_fragility = self._flow_fragility_score(dt) if self.cfg.institutional_flow_overlay else 0
 
                 # Order Execution Logic for Candidates
 
@@ -827,22 +907,27 @@ class V9Backtester:
                     is_observation = cand.get("is_observation", False)
                     rule_type = cand.get("rule", "A")
 
+                    if self.cfg.institutional_flow_overlay and flow_fragility >= 7 and cand.get("high_vol", False):
+                        self.funnel.append({"date": str(dt.date()), "symbol": s, "reason": "acute_flow_fragility_blocks_chase", "flow_fragility": flow_fragility, "event_id": e_id})
+                        continue
+
                     if len(self.positions) + sum(1 for o in self.pending_orders if o.order_type == "buy") >= self.cfg.max_names:
                         if self.cfg.entry_rule_version == "E" and "queue_key" not in cand and "waitlist_key" not in cand:
                             self.capacity_queue[(e_id, s)] = {"rule": "Capacity", "days_waited": 0, "score": cand["score"]}
                         self.funnel.append({"date": str(dt.date()), "symbol": s, "reason": "max_names_cap", "event_id": e_id})
                         continue
 
-                    room_theme = self.cfg.max_theme - theme_exposure.get(cand["theme"], 0)
+                    theme_bucket = self._theme_bucket(cand["theme"])
+                    room_theme = self.cfg.max_theme - theme_exposure.get(theme_bucket, 0)
                     room_sleeve = self.cfg.info_sleeve_weight - info_exposure
 
                     if is_observation:
-                        room_theme = min(room_theme, 0.06 - theme_exposure.get(cand["theme"], 0)) # Max 6% obs per theme
+                        room_theme = min(room_theme, 0.06 - theme_exposure.get(theme_bucket, 0)) # Max 6% obs per common-factor theme
 
                     if room_theme <= 0:
                         if self.cfg.entry_rule_version == "E" and "queue_key" not in cand and "waitlist_key" not in cand:
                             self.capacity_queue[(e_id, s)] = {"rule": "Capacity", "days_waited": 0, "score": cand["score"]}
-                        self.funnel.append({"date": str(dt.date()), "symbol": s, "reason": "theme_cap", "event_id": e_id})
+                        self.funnel.append({"date": str(dt.date()), "symbol": s, "reason": "common_factor_theme_cap", "theme_bucket": theme_bucket, "event_id": e_id})
                         continue
                     if room_sleeve <= 0:
                         if self.cfg.entry_rule_version == "E" and "queue_key" not in cand and "waitlist_key" not in cand:
@@ -861,6 +946,11 @@ class V9Backtester:
                     single_cap = 0.15 if cand["score"] >= 80 else self.cfg.max_single
 
                     size = min(self.score_cap(cand["score"]), single_cap, risk_size, room_theme, room_sleeve)
+                    if self.cfg.institutional_flow_overlay:
+                        size *= .50 if flow_fragility >= 7 else .75 if flow_fragility >= 4 else 1.0
+                    if self.cfg.institutional_quality_sizing:
+                        fundamental = cand.get("fundamental", 10)
+                        size *= self._quality_size_multiplier(fundamental)
                     if is_observation:
                         size = min(size, self.cfg.obs_size) # Cap observation size to 2%
 
@@ -874,7 +964,7 @@ class V9Backtester:
                     order.event_id = e_id or ""
 
                     self.pending_orders.append(order)
-                    theme_exposure[cand["theme"]] = theme_exposure.get(cand["theme"], 0) + size
+                    theme_exposure[theme_bucket] = theme_exposure.get(theme_bucket, 0) + size
                     info_exposure += size
                     self.funnel.append({"date": str(dt.date()), "symbol": s, "reason": "accepted", "event_id": e_id})
 
