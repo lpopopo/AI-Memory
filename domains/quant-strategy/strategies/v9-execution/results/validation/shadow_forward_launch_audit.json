@@ -1,9 +1,9 @@
 {
-  "formal_forward_authorized": false,
+  "formal_forward_authorized": true,
   "blockers": [],
   "warnings": [
     "only 18 reliable PIT events; Rule E statistical promotion blocked",
-    "git worktree is dirty; formal freeze should use a clean commit"
+    "git worktree is dirty now; do not re-freeze until committed"
   ],
   "prerequisites": {
     "venv_python_exists": true,
@@ -11,7 +11,12 @@
     "research_monitors_exist": true,
     "frozen_dir_exists": true,
     "forward_dir_exists": true,
-    "git_dirty": true,
+    "forward_eligible": true,
+    "dirty_worktree_at_freeze": false,
+    "git_dirty_now": true,
+    "forward_initialized": true,
+    "forward_daily_states": 0,
+    "first_executable_as_of": "2026-07-13",
     "events": {
       "all_events": 50,
       "reliable_point_in_time": 18,
@@ -19,5 +24,5 @@
       "source_health": "partial"
     }
   },
-  "next_action": "After clean commit, freeze then init_forward_accounts and run append-only forward."
+  "next_action": "Append-only formal forward is initialized. First executable completed session is 2026-07-13; do not backfill earlier dates. Rule E statistical promotion still waits for >=50 reliable PIT events."
 }

@@ -8,6 +8,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+import pandas as pd
+
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 FROZEN = ROOT / "results" / "shadow_portfolio" / "frozen"
@@ -43,6 +45,17 @@ def git_dirty() -> bool:
     return bool(result.stdout.strip())
 
 
+def next_session_after_freeze(frozen_at_utc: str | None) -> str | None:
+    if not frozen_at_utc:
+        return None
+    freeze_et = pd.Timestamp(frozen_at_utc).tz_convert("America/New_York")
+    # First eligible completed session is the next NYSE close strictly after freeze.
+    candidate = (freeze_et.normalize() + pd.Timedelta(days=1)).tz_localize(None)
+    while candidate.weekday() >= 5:
+        candidate += pd.Timedelta(days=1)
+    return str(candidate.date())
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--rehearse-dry-run", action="store_true")
@@ -50,6 +63,14 @@ def main() -> None:
     args = parser.parse_args()
 
     event_stats = count_reliable_events()
+    manifest = {}
+    if (FROZEN / "code_manifest.json").exists():
+        manifest = json.loads((FROZEN / "code_manifest.json").read_text(encoding="utf-8"))
+
+    initial_states = list((FORWARD / "accounts").glob("*/initial_state.json")) if FORWARD.exists() else []
+    daily_states = list((FORWARD / "accounts").glob("*/20*_state.json")) if FORWARD.exists() else []
+    first_as_of = next_session_after_freeze(manifest.get("frozen_at_utc"))
+
     audit = {
         "formal_forward_authorized": False,
         "blockers": [],
@@ -60,7 +81,12 @@ def main() -> None:
             "research_monitors_exist": (SCRIPTS / "v9_research_monitors.py").exists(),
             "frozen_dir_exists": FROZEN.exists(),
             "forward_dir_exists": FORWARD.exists(),
-            "git_dirty": git_dirty(),
+            "forward_eligible": bool(manifest.get("forward_eligible")),
+            "dirty_worktree_at_freeze": bool(manifest.get("dirty_worktree")),
+            "git_dirty_now": git_dirty(),
+            "forward_initialized": len(initial_states) >= 4,
+            "forward_daily_states": len(daily_states),
+            "first_executable_as_of": first_as_of,
             "events": event_stats,
         },
     }
@@ -69,14 +95,18 @@ def main() -> None:
         audit["blockers"].append("project venv python missing")
     if not (SCRIPTS / "v9_research_monitors.py").exists():
         audit["blockers"].append("research monitors missing from freeze set")
+    if not FROZEN.exists():
+        audit["blockers"].append("frozen artifacts missing; run freeze_v9_rule_e.py after clean commit")
+    elif not manifest.get("forward_eligible"):
+        audit["blockers"].append("frozen manifest is not forward_eligible")
+    if len(initial_states) < 4:
+        audit["blockers"].append("forward accounts not initialized; run run_v9_shadow.py --initialize")
     if event_stats["reliable_point_in_time"] < 50:
         audit["warnings"].append(
             f"only {event_stats['reliable_point_in_time']} reliable PIT events; Rule E statistical promotion blocked"
         )
-    if audit["prerequisites"]["git_dirty"]:
-        audit["warnings"].append("git worktree is dirty; formal freeze should use a clean commit")
-    if not FROZEN.exists():
-        audit["blockers"].append("frozen artifacts missing; run freeze_v9_rule_e.py after clean commit")
+    if audit["prerequisites"]["git_dirty_now"]:
+        audit["warnings"].append("git worktree is dirty now; do not re-freeze until committed")
 
     if args.rehearse_dry_run:
         if args.as_of is None:
@@ -92,11 +122,19 @@ def main() -> None:
             if completed.returncode != 0:
                 audit["blockers"].append("dry-run failed")
 
-    if not audit["blockers"]:
-        audit["next_action"] = "After clean commit, freeze then init_forward_accounts and run append-only forward."
+    launch_ready = (
+        not audit["blockers"]
+        and bool(manifest.get("forward_eligible"))
+        and len(initial_states) >= 4
+    )
+    audit["formal_forward_authorized"] = launch_ready
+    if launch_ready:
+        audit["next_action"] = (
+            f"Append-only formal forward is initialized. First executable completed session is {first_as_of}; "
+            "do not backfill earlier dates. Rule E statistical promotion still waits for >=50 reliable PIT events."
+        )
     else:
         audit["next_action"] = "Resolve blockers before formal forward launch."
-        audit["formal_forward_authorized"] = False
 
     out = ROOT / "results" / "validation" / "shadow_forward_launch_audit.json"
     out.parent.mkdir(parents=True, exist_ok=True)

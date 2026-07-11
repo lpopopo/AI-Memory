@@ -43,10 +43,17 @@ def main() -> None:
     fear_signals = ((latest_report or {}).get("diagnostics") or {}).get("fear_gate_advisory", {}).get("signals", [])
     unavailable = [s["name"] for s in fear_signals if "unavailable" in str(s.get("note", ""))]
 
+    launch = load(LAUNCH) or {}
+    first_as_of = (launch.get("prerequisites") or {}).get("first_executable_as_of")
+    forward_ready = bool(launch.get("formal_forward_authorized")) or (
+        bool(frozen.get("forward_eligible"))
+        and bool((launch.get("prerequisites") or {}).get("forward_initialized"))
+    )
+
     blockers = []
     if frozen.get("dirty_worktree", True) or not frozen.get("forward_eligible", False):
         blockers.append("git worktree dirty; formal freeze requires clean commit")
-    blockers.append("only 18 reliable PIT information events (<50 gate)")
+    blockers.append("only 18 reliable PIT information events (<50 gate for Rule E statistical promotion)")
     missing = pit.get("missing_symbols")
     if missing:
         blockers.append(
@@ -54,14 +61,14 @@ def main() -> None:
         )
 
     audit = {
-        "as_of": "2026-07-11",
+        "as_of": "2026-07-12",
         "formal_v9_weights_changed": False,
         "plan_items": {
             "1_schema_alignment": "completed",
             "2_validation_contract_and_data": "completed_partial_pit",
             "3_shadow_diagnostics": "completed_with_breadth_proxies",
             "4_preregistered_experiments": "completed_first_pass",
-            "5_formal_forward": "multi_day_dry_run_rehearsed",
+            "5_formal_forward": "initialized_waiting_first_session" if forward_ready else "multi_day_dry_run_rehearsed",
         },
         "data": {
             "pit_status": pit.get("status"),
@@ -98,18 +105,19 @@ def main() -> None:
         "forward": {
             "frozen_forward_eligible": frozen.get("forward_eligible", False),
             "dirty_worktree": frozen.get("dirty_worktree"),
-            "formal_forward_authorized": False,
+            "formal_forward_authorized": forward_ready,
+            "forward_initialized": bool((launch.get("prerequisites") or {}).get("forward_initialized")),
+            "first_executable_as_of": first_as_of,
             "dry_run_initialized": True,
             "dry_run_sample_as_of": dry_days[-1] if dry_days else None,
             "blockers": blockers,
             "next_actions": [
-                "Commit validation/diagnostics changes",
-                "Re-run freeze_v9_rule_e.py without dirty worktree",
+                f"On {first_as_of or 'next session'}, run append-only: python scripts/run_v9_shadow.py --as-of YYYY-MM-DD",
+                "Do not backfill dates at or before freeze time",
                 "Accumulate >=50 reliable PIT events before Rule E statistical promotion",
-                "Continue append-only formal forward once freeze is clean",
             ],
         },
-        "promotion_decision": "No formal V9 rule change. Research monitors and first-pass experiments remain advisory.",
+        "promotion_decision": "No formal V9 rule change. Formal shadow forward is initialized; research monitors remain advisory.",
     }
 
     VAL.mkdir(parents=True, exist_ok=True)
@@ -125,6 +133,7 @@ def main() -> None:
         "",
         f"- Formal V9 weights changed: `{audit['formal_v9_weights_changed']}`",
         f"- Formal forward authorized: `{audit['forward']['formal_forward_authorized']}`",
+        f"- First executable as-of: `{audit['forward'].get('first_executable_as_of')}`",
         f"- Promotion decision: {audit['promotion_decision']}",
         "",
         "## Progress since first-pass",

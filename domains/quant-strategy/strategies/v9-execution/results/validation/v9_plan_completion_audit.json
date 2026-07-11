@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-07-11",
+  "as_of": "2026-07-12",
   "formal_v9_weights_changed": false,
   "plan_items": {
     "1_schema_alignment": "completed",
     "2_validation_contract_and_data": "completed_partial_pit",
     "3_shadow_diagnostics": "completed_with_breadth_proxies",
     "4_preregistered_experiments": "completed_first_pass",
-    "5_formal_forward": "multi_day_dry_run_rehearsed"
+    "5_formal_forward": "initialized_waiting_first_session"
   },
   "data": {
     "pit_status": "partial_pit_membership_with_cached_prices",
@@ -47,22 +47,22 @@
     "authorizes_trade": false
   },
   "forward": {
-    "frozen_forward_eligible": false,
-    "dirty_worktree": true,
-    "formal_forward_authorized": false,
+    "frozen_forward_eligible": true,
+    "dirty_worktree": false,
+    "formal_forward_authorized": true,
+    "forward_initialized": true,
+    "first_executable_as_of": "2026-07-13",
     "dry_run_initialized": true,
     "dry_run_sample_as_of": "2026-07-10",
     "blockers": [
-      "git worktree dirty; formal freeze requires clean commit",
-      "only 18 reliable PIT information events (<50 gate)",
+      "only 18 reliable PIT information events (<50 gate for Rule E statistical promotion)",
       "PIT panel still missing 247 historical members; delisting returns incomplete"
     ],
     "next_actions": [
-      "Commit validation/diagnostics changes",
-      "Re-run freeze_v9_rule_e.py without dirty worktree",
-      "Accumulate >=50 reliable PIT events before Rule E statistical promotion",
-      "Continue append-only formal forward once freeze is clean"
+      "On 2026-07-13, run append-only: python scripts/run_v9_shadow.py --as-of YYYY-MM-DD",
+      "Do not backfill dates at or before freeze time",
+      "Accumulate >=50 reliable PIT events before Rule E statistical promotion"
     ]
   },
-  "promotion_decision": "No formal V9 rule change. Research monitors and first-pass experiments remain advisory."
+  "promotion_decision": "No formal V9 rule change. Formal shadow forward is initialized; research monitors remain advisory."
 }

@@ -1,8 +1,9 @@
 # V9 Plan Completion Audit
 
 - Formal V9 weights changed: `False`
-- Formal forward authorized: `False`
-- Promotion decision: No formal V9 rule change. Research monitors and first-pass experiments remain advisory.
+- Formal forward authorized: `True`
+- First executable as-of: `2026-07-13`
+- Promotion decision: No formal V9 rule change. Formal shadow forward is initialized; research monitors remain advisory.
 
 ## Progress since first-pass
 
@@ -18,17 +19,15 @@
 - `2_validation_contract_and_data`: **completed_partial_pit**
 - `3_shadow_diagnostics`: **completed_with_breadth_proxies**
 - `4_preregistered_experiments`: **completed_first_pass**
-- `5_formal_forward`: **multi_day_dry_run_rehearsed**
+- `5_formal_forward`: **initialized_waiting_first_session**
 
 ## Forward blockers
 
-- git worktree dirty; formal freeze requires clean commit
-- only 18 reliable PIT information events (<50 gate)
+- only 18 reliable PIT information events (<50 gate for Rule E statistical promotion)
 - PIT panel still missing 247 historical members; delisting returns incomplete
 
 ## Next actions
 
-- Commit validation/diagnostics changes
-- Re-run freeze_v9_rule_e.py without dirty worktree
+- On 2026-07-13, run append-only: python scripts/run_v9_shadow.py --as-of YYYY-MM-DD
+- Do not backfill dates at or before freeze time
 - Accumulate >=50 reliable PIT events before Rule E statistical promotion
-- Continue append-only formal forward once freeze is clean
