@@ -22,6 +22,13 @@ Status: launch checklist; formal forward remains blocked until prerequisites pas
 
 Use `--dry-run` for rehearsals. Formal forward forbids historical backfill.
 
+Operational checklists:
+
+- `formal-forward-monday-runbook.md` — first executable session steps
+- `pit-event-gap-analysis.md` — why the 18/50 gate remains open and how to close it
+- `scripts/append_shadow_event.py` — append-only new observations without editing baseline
+
+
 ## Initial audit gate
 
 - at least 3 months of append-only states

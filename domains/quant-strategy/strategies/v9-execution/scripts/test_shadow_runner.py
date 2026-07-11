@@ -8,7 +8,8 @@ import unittest
 import pandas as pd
 
 from run_v9_shadow import atomic_freeze, digest, visible_event_snapshot
-from shadow_v9_engine import TamperAlarmException
+from shadow_integrity import TamperAlarmException
+from append_shadow_event import append_event
 
 
 class TestShadowRunner(unittest.TestCase):
@@ -42,6 +43,14 @@ class TestShadowRunner(unittest.TestCase):
         self.assertEqual(atomic_freeze(path, {"a": 1}), "written")
         self.assertEqual(atomic_freeze(path, {"a": 1}), "unchanged")
         with self.assertRaises(TamperAlarmException): atomic_freeze(path, {"a": 2})
+
+    def test_append_shadow_event_helper_chains(self):
+        mode = self.mode_dir()
+        first = append_event(mode, self.event("helper-event-1"))
+        second = append_event(mode, self.event("helper-event-2"))
+        self.assertEqual(second["previous_event_hash"], first["event_hash"])
+        with self.assertRaises(TamperAlarmException):
+            append_event(mode, self.event("helper-event-1"))
 
 
 if __name__ == "__main__": unittest.main()

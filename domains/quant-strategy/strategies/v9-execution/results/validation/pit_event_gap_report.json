@@ -1,0 +1,11 @@
+{
+  "all_events": 50,
+  "retrospective_backfill": 31,
+  "reliable_point_in_time": 18,
+  "gate": 50,
+  "gap_to_gate": 32,
+  "forward_appended_events": 0,
+  "source_health": "partial",
+  "cannot_reclassify_backfill": true,
+  "note": "Forward appends power live shadow decisions; they do not auto-count toward the frozen statistical gate until curated into the archive with true first_seen_at."
+}

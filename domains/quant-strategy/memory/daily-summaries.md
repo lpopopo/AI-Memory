@@ -1,3 +1,8 @@
+## 2026-07-12
+
+- **Formal shadow forward initialized:** Clean freeze `forward_eligible=true`; genesis accounts ready; first executable session **2026-07-13** (no historical backfill). See [forward/PIT gap](daily/2026-07-12-formal-forward-pit-gap.md) and `strategies/v9-execution/validation/formal-forward-monday-runbook.md`.
+- **PIT event gate unchanged:** 18 reliable / 50 required; 31 retrospective items remain ineligible. Added gap analysis plus `append_shadow_event.py` for live append-only observations.
+
 ## 2026-07-11
 
 - **SPY/QQQ Drawdown Forecast (revised after audit):** Kept as conditional scenario/monitor list only — not calibrated probabilities, not a V9 rule change. Separated ≥8% catalog medians (SPY −15.9%/42d, QQQ −13.8%/27d) from strict intact-trend descriptives (peak+trough above MA200, ≥5%: SPY −5.83%/21.5d n=10; QQQ −7.75%/25d n=12). Fixed arithmetic bands (QQQ −6%~−10% → 681.98–652.96; −12%~−20% → 638.45–580.41) and data_v9 MAs (SPY 739.91/699.61/691.09; QQQ 714.59/646.42/636.63). 45/40/15 relabeled risk-budget weights. See [forecast](daily/2026-07-11-spy-qqq-drawdown-forecast.md) and [validation](daily/2026-07-11-spy-qqq-drawdown-forecast-validation.md).
