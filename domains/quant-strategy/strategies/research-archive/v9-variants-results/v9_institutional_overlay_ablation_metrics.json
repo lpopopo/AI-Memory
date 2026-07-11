@@ -1,0 +1,335 @@
+{
+  "status": "institutional_overlay_ablation_research_only",
+  "period": [
+    "2026-04-27",
+    "2026-07-02"
+  ],
+  "official_frozen_70_point_in_time": {
+    "baseline": {
+      "metrics": {
+        "total_return": 0.04189371168579048,
+        "max_drawdown": -0.0412056327505147,
+        "annualized_sharpe": 1.69477912249654
+      },
+      "diagnostics": {
+        "information_buys": 0,
+        "information_sells": 0,
+        "symbols_bought": [],
+        "information_turnover": 0.0,
+        "funnel_reasons": {}
+      }
+    },
+    "aqr_triple_confirmation": {
+      "metrics": {
+        "total_return": 0.04189371168579048,
+        "max_drawdown": -0.0412056327505147,
+        "annualized_sharpe": 1.69477912249654
+      },
+      "diagnostics": {
+        "information_buys": 0,
+        "information_sells": 0,
+        "symbols_bought": [],
+        "information_turnover": 0.0,
+        "funnel_reasons": {}
+      }
+    },
+    "citadel_flow_fragility": {
+      "metrics": {
+        "total_return": 0.04189371168579048,
+        "max_drawdown": -0.0412056327505147,
+        "annualized_sharpe": 1.69477912249654
+      },
+      "diagnostics": {
+        "information_buys": 0,
+        "information_sells": 0,
+        "symbols_bought": [],
+        "information_turnover": 0.0,
+        "funnel_reasons": {}
+      }
+    },
+    "gmo_man_evidence_quality_sizing": {
+      "metrics": {
+        "total_return": 0.04189371168579048,
+        "max_drawdown": -0.0412056327505147,
+        "annualized_sharpe": 1.69477912249654
+      },
+      "diagnostics": {
+        "information_buys": 0,
+        "information_sells": 0,
+        "symbols_bought": [],
+        "information_turnover": 0.0,
+        "funnel_reasons": {}
+      }
+    },
+    "all_institutional_overlays": {
+      "metrics": {
+        "total_return": 0.04189371168579048,
+        "max_drawdown": -0.0412056327505147,
+        "annualized_sharpe": 1.69477912249654
+      },
+      "diagnostics": {
+        "information_buys": 0,
+        "information_sells": 0,
+        "symbols_bought": [],
+        "information_turnover": 0.0,
+        "funnel_reasons": {}
+      }
+    }
+  },
+  "execution_diagnostic_55_publication_time": {
+    "baseline": {
+      "metrics": {
+        "total_return": 0.10346455061723803,
+        "max_drawdown": -0.058470773508918494,
+        "annualized_sharpe": 2.268991760392164
+      },
+      "diagnostics": {
+        "information_buys": 16,
+        "information_sells": 18,
+        "symbols_bought": [
+          "ALAB",
+          "AMAT",
+          "AMD",
+          "AVGO",
+          "COHR",
+          "CRWV",
+          "LITE",
+          "MRVL",
+          "MU",
+          "TTMI"
+        ],
+        "information_turnover": 1.800898418404311,
+        "funnel_reasons": {
+          "accepted": 16,
+          "chased_rule_a": 201,
+          "max_names_cap": 202,
+          "missing_data": 33,
+          "score_below_threshold": 126,
+          "technical_not_confirmed": 269
+        }
+      }
+    },
+    "aqr_triple_confirmation": {
+      "metrics": {
+        "total_return": 0.0932766583518585,
+        "max_drawdown": -0.058560460549637705,
+        "annualized_sharpe": 2.109337280878775
+      },
+      "diagnostics": {
+        "information_buys": 14,
+        "information_sells": 16,
+        "symbols_bought": [
+          "ALAB",
+          "AMAT",
+          "AVGO",
+          "COHR",
+          "LITE",
+          "MRVL",
+          "MU",
+          "TTMI"
+        ],
+        "information_turnover": 1.555254668416032,
+        "funnel_reasons": {
+          "accepted": 14,
+          "chased_rule_a": 107,
+          "institutional_triple_confirmation_failed": 447,
+          "max_names_cap": 189,
+          "missing_data": 33,
+          "score_below_threshold": 56
+        }
+      }
+    },
+    "citadel_flow_fragility": {
+      "metrics": {
+        "total_return": 0.1144172916044528,
+        "max_drawdown": -0.059051943510646576,
+        "annualized_sharpe": 2.5068654891158233
+      },
+      "diagnostics": {
+        "information_buys": 16,
+        "information_sells": 18,
+        "symbols_bought": [
+          "ALAB",
+          "AMAT",
+          "AMD",
+          "AVGO",
+          "COHR",
+          "CRWV",
+          "LITE",
+          "MRVL",
+          "MU",
+          "TTMI"
+        ],
+        "information_turnover": 1.3900628002615598,
+        "funnel_reasons": {
+          "accepted": 16,
+          "chased_rule_a": 201,
+          "max_names_cap": 202,
+          "missing_data": 33,
+          "score_below_threshold": 126,
+          "technical_not_confirmed": 269
+        }
+      }
+    },
+    "gmo_man_evidence_quality_sizing": {
+      "metrics": {
+        "total_return": 0.07860207153673349,
+        "max_drawdown": -0.05057624901399782,
+        "annualized_sharpe": 2.132488278823993
+      },
+      "diagnostics": {
+        "information_buys": 16,
+        "information_sells": 18,
+        "symbols_bought": [
+          "ALAB",
+          "AMAT",
+          "AMD",
+          "AVGO",
+          "COHR",
+          "CRWV",
+          "LITE",
+          "MRVL",
+          "MU",
+          "TTMI"
+        ],
+        "information_turnover": 1.0946096448899005,
+        "funnel_reasons": {
+          "accepted": 16,
+          "chased_rule_a": 201,
+          "max_names_cap": 202,
+          "missing_data": 33,
+          "score_below_threshold": 126,
+          "technical_not_confirmed": 269
+        }
+      }
+    },
+    "all_institutional_overlays": {
+      "metrics": {
+        "total_return": 0.07806128118038158,
+        "max_drawdown": -0.05046162963905787,
+        "annualized_sharpe": 2.173967337124933
+      },
+      "diagnostics": {
+        "information_buys": 14,
+        "information_sells": 16,
+        "symbols_bought": [
+          "ALAB",
+          "AMAT",
+          "AVGO",
+          "COHR",
+          "LITE",
+          "MRVL",
+          "MU",
+          "TTMI"
+        ],
+        "information_turnover": 0.7686612299858576,
+        "funnel_reasons": {
+          "accepted": 14,
+          "chased_rule_a": 107,
+          "institutional_triple_confirmation_failed": 447,
+          "max_names_cap": 189,
+          "missing_data": 33,
+          "score_below_threshold": 56
+        }
+      }
+    }
+  },
+  "all_overlay_cost_sensitivity_diagnostic": {
+    "0.001": {
+      "metrics": {
+        "total_return": 0.07806128118038158,
+        "max_drawdown": -0.05046162963905787,
+        "annualized_sharpe": 2.173967337124933
+      },
+      "diagnostics": {
+        "information_buys": 14,
+        "information_sells": 16,
+        "symbols_bought": [
+          "ALAB",
+          "AMAT",
+          "AVGO",
+          "COHR",
+          "LITE",
+          "MRVL",
+          "MU",
+          "TTMI"
+        ],
+        "information_turnover": 0.7686612299858576,
+        "funnel_reasons": {
+          "accepted": 14,
+          "chased_rule_a": 107,
+          "institutional_triple_confirmation_failed": 447,
+          "max_names_cap": 189,
+          "missing_data": 33,
+          "score_below_threshold": 56
+        }
+      }
+    },
+    "0.002": {
+      "metrics": {
+        "total_return": 0.07735584085726122,
+        "max_drawdown": -0.050536259512902526,
+        "annualized_sharpe": 2.154713432704413
+      },
+      "diagnostics": {
+        "information_buys": 14,
+        "information_sells": 16,
+        "symbols_bought": [
+          "ALAB",
+          "AMAT",
+          "AVGO",
+          "COHR",
+          "LITE",
+          "MRVL",
+          "MU",
+          "TTMI"
+        ],
+        "information_turnover": 0.7639294434130296,
+        "funnel_reasons": {
+          "accepted": 14,
+          "chased_rule_a": 107,
+          "institutional_triple_confirmation_failed": 447,
+          "max_names_cap": 189,
+          "missing_data": 33,
+          "score_below_threshold": 56
+        }
+      }
+    },
+    "0.005": {
+      "metrics": {
+        "total_return": 0.07523981648946343,
+        "max_drawdown": -0.050760362503637135,
+        "annualized_sharpe": 2.0969860781162537
+      },
+      "diagnostics": {
+        "information_buys": 14,
+        "information_sells": 16,
+        "symbols_bought": [
+          "ALAB",
+          "AMAT",
+          "AVGO",
+          "COHR",
+          "LITE",
+          "MRVL",
+          "MU",
+          "TTMI"
+        ],
+        "information_turnover": 0.7504351057712579,
+        "funnel_reasons": {
+          "accepted": 14,
+          "chased_rule_a": 107,
+          "institutional_triple_confirmation_failed": 447,
+          "max_names_cap": 189,
+          "missing_data": 33,
+          "score_below_threshold": 56
+        }
+      }
+    }
+  },
+  "timestamp_notes": {
+    "approximate_publication_times": 31,
+    "missing_publication_times": 3
+  },
+  "quality_data_boundary": "No point-in-time financial statement panel exists. The GMO/Man module sizes only by point-in-time primary-evidence validation; FCF, debt, margin and customer concentration are specification-only until data is acquired.",
+  "promotion_allowed": false
+}

@@ -1,0 +1,119 @@
+{
+  "tickers_requested": [
+    "SPY",
+    "QQQ",
+    "SMH",
+    "IWM",
+    "RSP",
+    "HYG",
+    "LQD",
+    "TLT",
+    "^VIX",
+    "^VIX3M"
+  ],
+  "start": "2025-01-02",
+  "end": "2026-05-29",
+  "rows": 353,
+  "columns": [
+    "HYG",
+    "IWM",
+    "LQD",
+    "QQQ",
+    "RSP",
+    "SMH",
+    "SPY",
+    "TLT",
+    "^VIX",
+    "^VIX3M"
+  ],
+  "checks": [
+    {
+      "check": "non_empty_dataset",
+      "status": "PASS",
+      "detail": "353 rows, 10 columns"
+    },
+    {
+      "check": "core_column_SPY",
+      "status": "PASS",
+      "detail": "exists=True, non_na_rows=352"
+    },
+    {
+      "check": "core_column_QQQ",
+      "status": "PASS",
+      "detail": "exists=True, non_na_rows=352"
+    },
+    {
+      "check": "core_column_SMH",
+      "status": "PASS",
+      "detail": "exists=True, non_na_rows=352"
+    },
+    {
+      "check": "core_column_^VIX",
+      "status": "PASS",
+      "detail": "exists=True, non_na_rows=353"
+    },
+    {
+      "check": "core_column_^VIX3M",
+      "status": "PASS",
+      "detail": "exists=True, non_na_rows=352"
+    },
+    {
+      "check": "optional_column_IWM",
+      "status": "PASS",
+      "detail": "exists=True, non_na_rows=352"
+    },
+    {
+      "check": "optional_column_RSP",
+      "status": "PASS",
+      "detail": "exists=True, non_na_rows=352"
+    },
+    {
+      "check": "optional_column_HYG",
+      "status": "PASS",
+      "detail": "exists=True, non_na_rows=352"
+    },
+    {
+      "check": "optional_column_LQD",
+      "status": "PASS",
+      "detail": "exists=True, non_na_rows=352"
+    },
+    {
+      "check": "optional_column_TLT",
+      "status": "PASS",
+      "detail": "exists=True, non_na_rows=352"
+    },
+    {
+      "check": "latest_value_sanity_SPY",
+      "status": "PASS",
+      "detail": "757.1000 in [50, 2000]"
+    },
+    {
+      "check": "latest_value_sanity_QQQ",
+      "status": "PASS",
+      "detail": "738.3000 in [50, 2000]"
+    },
+    {
+      "check": "latest_value_sanity_SMH",
+      "status": "PASS",
+      "detail": "600.9600 in [10, 2000]"
+    },
+    {
+      "check": "latest_value_sanity_^VIX",
+      "status": "PASS",
+      "detail": "15.4600 in [5, 100]"
+    },
+    {
+      "check": "latest_value_sanity_^VIX3M",
+      "status": "PASS",
+      "detail": "18.8800 in [5, 100]"
+    }
+  ],
+  "warnings": [],
+  "fear_result": {
+    "as_of": "2026-05-29",
+    "score": 0,
+    "regime": "normal",
+    "risk_multiplier": 1.0,
+    "cash_floor": 0.05
+  }
+}

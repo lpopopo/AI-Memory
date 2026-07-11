@@ -1,0 +1,68 @@
+{
+  "as_of": "2026-07-11",
+  "formal_v9_weights_changed": false,
+  "plan_items": {
+    "1_schema_alignment": "completed",
+    "2_validation_contract_and_data": "completed_partial_pit",
+    "3_shadow_diagnostics": "completed_with_breadth_proxies",
+    "4_preregistered_experiments": "completed_first_pass",
+    "5_formal_forward": "multi_day_dry_run_rehearsed"
+  },
+  "data": {
+    "pit_status": "partial_pit_membership_with_cached_prices",
+    "pit_decision_grade": false,
+    "pit_missing_symbols": 247,
+    "pit_price_symbols": 698,
+    "yahoo_backfill_downloaded": 185,
+    "yahoo_backfill_empty": 247,
+    "ff_momentum_files": [
+      "ff_mom_daily.csv",
+      "ff_wml_daily.csv",
+      "ff_mom_monthly.csv"
+    ],
+    "approx_legs_rows": 227,
+    "diagnostic_symbols_in_data_v9": [
+      "SMH",
+      "IWM",
+      "RSP",
+      "HYG",
+      "LQD"
+    ]
+  },
+  "experiment_highlights": {
+    "A_panic_to_repair_events": 175,
+    "B_overlay_improves_drawdown_at_0.1pct": true,
+    "C_status": "completed_with_wml_and_approx_legs",
+    "C_loser_outperforms_winner_share": 0.7111111111111111
+  },
+  "diagnostics_rehearsal": {
+    "dry_run_id": "fear_diag_chain",
+    "days": [
+      "2026-07-07",
+      "2026-07-08",
+      "2026-07-09",
+      "2026-07-10"
+    ],
+    "latest_fear_unavailable_signals": [],
+    "authorizes_trade": false
+  },
+  "forward": {
+    "frozen_forward_eligible": false,
+    "dirty_worktree": true,
+    "formal_forward_authorized": false,
+    "dry_run_initialized": true,
+    "dry_run_sample_as_of": "2026-07-10",
+    "blockers": [
+      "git worktree dirty; formal freeze requires clean commit",
+      "only 18 reliable PIT information events (<50 gate)",
+      "PIT panel still missing 247 historical members; delisting returns incomplete"
+    ],
+    "next_actions": [
+      "Commit validation/diagnostics changes",
+      "Re-run freeze_v9_rule_e.py without dirty worktree",
+      "Accumulate >=50 reliable PIT events before Rule E statistical promotion",
+      "Continue append-only formal forward once freeze is clean"
+    ]
+  },
+  "promotion_decision": "No formal V9 rule change. Research monitors and first-pass experiments remain advisory."
+}

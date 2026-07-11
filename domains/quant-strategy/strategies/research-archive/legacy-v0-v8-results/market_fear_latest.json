@@ -1,0 +1,84 @@
+{
+  "as_of": "2026-05-29",
+  "score": 0,
+  "regime": "normal",
+  "risk_multiplier": 1.0,
+  "max_gross_exposure": 0.95,
+  "max_new_buy_exposure": 0.5,
+  "cash_floor": 0.05,
+  "signals": [
+    {
+      "name": "vix_level",
+      "value": 15.350000381469727,
+      "points": 0,
+      "note": "calm volatility"
+    },
+    {
+      "name": "vix_5d_change",
+      "value": -0.0808383425026925,
+      "points": 0,
+      "note": "no major VIX spike"
+    },
+    {
+      "name": "vix_vix3m_ratio",
+      "value": 0.8160553331892766,
+      "points": 0,
+      "note": "VIX term structure normal"
+    },
+    {
+      "name": "spy_drawdown_63d",
+      "value": 0.0,
+      "points": 0,
+      "note": "SPY near short-term high"
+    },
+    {
+      "name": "spy_trend_break",
+      "value": 0.0,
+      "points": 0,
+      "note": "SPY trend intact"
+    },
+    {
+      "name": "qqq_drawdown_63d",
+      "value": 0.0,
+      "points": 0,
+      "note": "QQQ near short-term high"
+    },
+    {
+      "name": "qqq_trend_break",
+      "value": 0.0,
+      "points": 0,
+      "note": "QQQ trend intact"
+    },
+    {
+      "name": "smh_drawdown_63d",
+      "value": -0.002167257853712301,
+      "points": 0,
+      "note": "SMH near short-term high"
+    },
+    {
+      "name": "smh_trend_break",
+      "value": 0.0,
+      "points": 0,
+      "note": "SMH trend intact"
+    },
+    {
+      "name": "smallcap_vs_spy_21d",
+      "value": 0.0028171007449708796,
+      "points": 0,
+      "note": "smallcap_vs_spy_21d stable"
+    },
+    {
+      "name": "equal_weight_vs_spy_21d",
+      "value": -0.01844145430213817,
+      "points": 0,
+      "note": "equal_weight_vs_spy_21d stable"
+    },
+    {
+      "name": "credit_risk_21d",
+      "value": -0.0034759476631779362,
+      "points": 0,
+      "note": "credit_risk_21d stable"
+    }
+  ],
+  "action": "Normal staged buying is allowed when stock-level filters agree."
+}

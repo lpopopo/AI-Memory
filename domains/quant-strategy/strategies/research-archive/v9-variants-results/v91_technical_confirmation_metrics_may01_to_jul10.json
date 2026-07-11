@@ -1,0 +1,438 @@
+{
+  "status": "shadow_hypothesis_not_promoted",
+  "period": [
+    "2026-05-01",
+    "2026-07-10"
+  ],
+  "v91_pre_registered_parameters": {
+    "entry_rule_version": "E",
+    "score_threshold": 75.0,
+    "tech_weight": 1.6,
+    "trusted_event_only": true,
+    "min_source_completeness": 15,
+    "min_fundamental": 10
+  },
+  "data_source_health": "partial",
+  "runs": {
+    "V9_actual_source": {
+      "metrics": {
+        "total_return": 0.04508530582316572,
+        "max_drawdown": -0.04120563275051481,
+        "annualized_sharpe": 1.769965446192147
+      },
+      "diagnostics": {
+        "entries": 0,
+        "symbols": [],
+        "stock_invested_days": 0,
+        "information_net_contribution": 0.0,
+        "information_trades": [],
+        "pending_orders_latest": [],
+        "funnel_rejections": {
+          "chased_rule_a": 62,
+          "missing_data": 11,
+          "score_below_threshold": 67,
+          "technical_not_confirmed": 161
+        }
+      }
+    },
+    "V9_healthy_source_counterfactual": {
+      "metrics": {
+        "total_return": 0.04508530582316572,
+        "max_drawdown": -0.04120563275051481,
+        "annualized_sharpe": 1.769965446192147
+      },
+      "diagnostics": {
+        "entries": 0,
+        "symbols": [],
+        "stock_invested_days": 0,
+        "information_net_contribution": 0.0,
+        "information_trades": [],
+        "pending_orders_latest": [],
+        "funnel_rejections": {
+          "chased_rule_a": 62,
+          "missing_data": 11,
+          "score_below_threshold": 67,
+          "technical_not_confirmed": 161
+        }
+      }
+    },
+    "V9_1_actual_source": {
+      "metrics": {
+        "total_return": 0.037969181616056336,
+        "max_drawdown": -0.04120563275051481,
+        "annualized_sharpe": 1.461676924432383
+      },
+      "diagnostics": {
+        "entries": 6,
+        "symbols": [
+          "AMD",
+          "COHR",
+          "MU",
+          "SNDK",
+          "STX"
+        ],
+        "stock_invested_days": 4,
+        "information_net_contribution": -0.007767952709514709,
+        "information_trades": [
+          {
+            "date": "2026-06-25",
+            "symbol": "COHR",
+            "action": "BUY",
+            "shares": 5.647129642118142e-05,
+            "price": 415.1799926757813,
+            "cost": 2.3445752434537975e-05,
+            "reason": "buy",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-nvda-network-vera-20260618"
+          },
+          {
+            "date": "2026-06-26",
+            "symbol": "COHR",
+            "action": "SELL",
+            "shares": -5.647129642118142e-05,
+            "price": 388.86499938964846,
+            "cost": 2.195971064835537e-05,
+            "reason": "stop_loss",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-nvda-network-vera-20260618"
+          },
+          {
+            "date": "2026-06-29",
+            "symbol": "MU",
+            "action": "BUY",
+            "shares": 2.060280333072822e-05,
+            "price": 1128.526353776065,
+            "cost": 2.3250806520392083e-05,
+            "reason": "buy",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-mu-cycle-20260625"
+          },
+          {
+            "date": "2026-06-30",
+            "symbol": "COHR",
+            "action": "BUY",
+            "shares": 6.0313721061214274e-05,
+            "price": 388.4299926757813,
+            "cost": 2.342765823005658e-05,
+            "reason": "buy",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-nvda-network-vera-20260618"
+          },
+          {
+            "date": "2026-07-01",
+            "symbol": "MU",
+            "action": "SELL",
+            "shares": -2.060280333072822e-05,
+            "price": 1049.9015167236328,
+            "cost": 2.163091446569027e-05,
+            "reason": "stop_loss",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-mu-cycle-20260625"
+          },
+          {
+            "date": "2026-07-01",
+            "symbol": "COHR",
+            "action": "SELL",
+            "shares": -6.0313721061214274e-05,
+            "price": 370.1099853515625,
+            "cost": 2.2322710418464244e-05,
+            "reason": "stop_loss",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-nvda-network-vera-20260618"
+          },
+          {
+            "date": "2026-07-02",
+            "symbol": "AMD",
+            "action": "BUY",
+            "shares": 4.3572566998872647e-05,
+            "price": 538.1599731445312,
+            "cost": 2.3449011485951593e-05,
+            "reason": "buy",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-token-inference-20260617"
+          },
+          {
+            "date": "2026-07-02",
+            "symbol": "SNDK",
+            "action": "BUY",
+            "shares": 1.1473012009744695e-05,
+            "price": 2043.800048828125,
+            "cost": 2.3448542505721874e-05,
+            "reason": "buy",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-mu-cycle-20260625"
+          },
+          {
+            "date": "2026-07-02",
+            "symbol": "STX",
+            "action": "BUY",
+            "shares": 2.6031721937132117e-05,
+            "price": 900.75,
+            "cost": 2.3448073534871754e-05,
+            "reason": "buy",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-mu-cycle-20260625"
+          },
+          {
+            "date": "2026-07-06",
+            "symbol": "AMD",
+            "action": "SELL",
+            "shares": -4.3572566998872647e-05,
+            "price": 535.3499755859375,
+            "cost": 2.33265726790631e-05,
+            "reason": "sell",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-token-inference-20260617"
+          },
+          {
+            "date": "2026-07-06",
+            "symbol": "SNDK",
+            "action": "SELL",
+            "shares": -1.1473012009744695e-05,
+            "price": 1828.6800537109373,
+            "cost": 2.0980468218206156e-05,
+            "reason": "sell",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-mu-cycle-20260625"
+          },
+          {
+            "date": "2026-07-06",
+            "symbol": "STX",
+            "action": "SELL",
+            "shares": -2.6031721937132117e-05,
+            "price": 863.6199951171875,
+            "cost": 2.2481515572238023e-05,
+            "reason": "sell",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-mu-cycle-20260625"
+          }
+        ],
+        "pending_orders_latest": [],
+        "funnel_rejections": {
+          "accepted": 6,
+          "added_to_d1_waitlist": 1,
+          "added_to_d2_waitlist": 7,
+          "chased_rule_a": 28,
+          "max_names_cap": 8,
+          "missing_data": 11,
+          "score_below_threshold": 34,
+          "technical_not_confirmed": 142,
+          "trusted_event_quality_floor": 52,
+          "waitlist_cancelled": 1
+        }
+      }
+    },
+    "V9_1_healthy_source_counterfactual": {
+      "metrics": {
+        "total_return": 0.037969181616056336,
+        "max_drawdown": -0.04120563275051481,
+        "annualized_sharpe": 1.461676924432383
+      },
+      "diagnostics": {
+        "entries": 6,
+        "symbols": [
+          "AMD",
+          "COHR",
+          "MU",
+          "SNDK",
+          "STX"
+        ],
+        "stock_invested_days": 4,
+        "information_net_contribution": -0.007767952709514709,
+        "information_trades": [
+          {
+            "date": "2026-06-25",
+            "symbol": "COHR",
+            "action": "BUY",
+            "shares": 5.647129642118142e-05,
+            "price": 415.1799926757813,
+            "cost": 2.3445752434537975e-05,
+            "reason": "buy",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-nvda-network-vera-20260618"
+          },
+          {
+            "date": "2026-06-26",
+            "symbol": "COHR",
+            "action": "SELL",
+            "shares": -5.647129642118142e-05,
+            "price": 388.86499938964846,
+            "cost": 2.195971064835537e-05,
+            "reason": "stop_loss",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-nvda-network-vera-20260618"
+          },
+          {
+            "date": "2026-06-29",
+            "symbol": "MU",
+            "action": "BUY",
+            "shares": 2.060280333072822e-05,
+            "price": 1128.526353776065,
+            "cost": 2.3250806520392083e-05,
+            "reason": "buy",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-mu-cycle-20260625"
+          },
+          {
+            "date": "2026-06-30",
+            "symbol": "COHR",
+            "action": "BUY",
+            "shares": 6.0313721061214274e-05,
+            "price": 388.4299926757813,
+            "cost": 2.342765823005658e-05,
+            "reason": "buy",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-nvda-network-vera-20260618"
+          },
+          {
+            "date": "2026-07-01",
+            "symbol": "MU",
+            "action": "SELL",
+            "shares": -2.060280333072822e-05,
+            "price": 1049.9015167236328,
+            "cost": 2.163091446569027e-05,
+            "reason": "stop_loss",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-mu-cycle-20260625"
+          },
+          {
+            "date": "2026-07-01",
+            "symbol": "COHR",
+            "action": "SELL",
+            "shares": -6.0313721061214274e-05,
+            "price": 370.1099853515625,
+            "cost": 2.2322710418464244e-05,
+            "reason": "stop_loss",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-nvda-network-vera-20260618"
+          },
+          {
+            "date": "2026-07-02",
+            "symbol": "AMD",
+            "action": "BUY",
+            "shares": 4.3572566998872647e-05,
+            "price": 538.1599731445312,
+            "cost": 2.3449011485951593e-05,
+            "reason": "buy",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-token-inference-20260617"
+          },
+          {
+            "date": "2026-07-02",
+            "symbol": "SNDK",
+            "action": "BUY",
+            "shares": 1.1473012009744695e-05,
+            "price": 2043.800048828125,
+            "cost": 2.3448542505721874e-05,
+            "reason": "buy",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-mu-cycle-20260625"
+          },
+          {
+            "date": "2026-07-02",
+            "symbol": "STX",
+            "action": "BUY",
+            "shares": 2.6031721937132117e-05,
+            "price": 900.75,
+            "cost": 2.3448073534871754e-05,
+            "reason": "buy",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-mu-cycle-20260625"
+          },
+          {
+            "date": "2026-07-06",
+            "symbol": "AMD",
+            "action": "SELL",
+            "shares": -4.3572566998872647e-05,
+            "price": 535.3499755859375,
+            "cost": 2.33265726790631e-05,
+            "reason": "sell",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-token-inference-20260617"
+          },
+          {
+            "date": "2026-07-06",
+            "symbol": "SNDK",
+            "action": "SELL",
+            "shares": -1.1473012009744695e-05,
+            "price": 1828.6800537109373,
+            "cost": 2.0980468218206156e-05,
+            "reason": "sell",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-mu-cycle-20260625"
+          },
+          {
+            "date": "2026-07-06",
+            "symbol": "STX",
+            "action": "SELL",
+            "shares": -2.6031721937132117e-05,
+            "price": 863.6199951171875,
+            "cost": 2.2481515572238023e-05,
+            "reason": "sell",
+            "is_info": true,
+            "is_observation": true,
+            "event_id": "kay-mu-cycle-20260625"
+          }
+        ],
+        "pending_orders_latest": [],
+        "funnel_rejections": {
+          "accepted": 6,
+          "added_to_d1_waitlist": 1,
+          "added_to_d2_waitlist": 6,
+          "chased_rule_a": 27,
+          "max_names_cap": 8,
+          "missing_data": 6,
+          "score_below_threshold": 19,
+          "technical_not_confirmed": 66,
+          "trusted_event_quality_floor": 150,
+          "waitlist_cancelled": 1
+        }
+      }
+    },
+    "V8_defensive_core": {
+      "metrics": {
+        "total_return": 0.06402125786150203,
+        "max_drawdown": -0.057653784290939813,
+        "annualized_sharpe": 1.7965618437431967
+      },
+      "diagnostics": {
+        "entries": null,
+        "stock_invested_days": null,
+        "information_net_contribution": null
+      }
+    }
+  },
+  "healthy_source_delta_vs_v9": {
+    "total_return": -0.007116124207109387,
+    "max_drawdown": 0.0,
+    "entry_count": 6
+  },
+  "limitations": [
+    "This is a single pre-registered shadow variant, not an optimization sweep.",
+    "Actual source health is partial, so no new information entry can be treated as live-authorized.",
+    "The reliable point-in-time event sample remains below 50 and cannot support promotion."
+  ]
+}

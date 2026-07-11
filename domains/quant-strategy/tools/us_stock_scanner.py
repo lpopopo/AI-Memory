@@ -61,7 +61,7 @@ WATCHLIST_TICKERS = load_user_watchlist_tickers()
 
 def load_universe_symbols():
     # Read S&P 500 & Nasdaq 100 constituents from cached long-term file
-    univ_path = Path("D:/code/AI-Memory/domains/quant-strategy/experiments/2026-05-29-dual-sleeve-backtest/datasets/data_universe/us_stock_universe_2000_2025.csv")
+    univ_path = Path("D:/code/AI-Memory/domains/quant-strategy/strategies/v9-execution/datasets/data_universe/us_stock_universe_2000_2025.csv")
     symbols = []
     if univ_path.exists():
         try:

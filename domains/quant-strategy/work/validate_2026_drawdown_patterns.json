@@ -1,0 +1,387 @@
+{
+  "range": [
+    "2026-01-02",
+    "2026-07-10"
+  ],
+  "n_days": 130,
+  "ytd_return": {
+    "SPY": 11.09,
+    "QQQ": 18.61
+  },
+  "ytd_max_drawdown": {
+    "SPY": {
+      "dd_pct": -8.88,
+      "peak_date": "2026-01-27",
+      "peak_px": 691.81,
+      "trough_date": "2026-03-30",
+      "trough_px": 630.35,
+      "days": 62,
+      "peak_above_ma200": true,
+      "trough_above_ma200": false
+    },
+    "QQQ": {
+      "dd_pct": -11.72,
+      "peak_date": "2026-01-28",
+      "peak_px": 631.73,
+      "trough_date": "2026-03-30",
+      "trough_px": 557.67,
+      "days": 61,
+      "peak_above_ma200": true,
+      "trough_above_ma200": false
+    }
+  },
+  "current_from_ytd_high": {
+    "SPY": {
+      "pct": -0.35,
+      "high_px": 757.62,
+      "high_date": "2026-06-02"
+    },
+    "QQQ": {
+      "pct": -2.66,
+      "high_px": 745.34,
+      "high_date": "2026-06-02"
+    }
+  },
+  "ma200_breach_2026": {
+    "SPY": {
+      "days_below": 12,
+      "first": "2026-03-20",
+      "last": "2026-04-07",
+      "min_vs_ma200_pct": -3.98,
+      "deepest_date": "2026-03-30",
+      "deepest_px": 630.35
+    },
+    "QQQ": {
+      "days_below": 12,
+      "first": "2026-03-20",
+      "last": "2026-04-07",
+      "min_vs_ma200_pct": -5.81,
+      "deepest_date": "2026-03-30",
+      "deepest_px": 557.67
+    }
+  },
+  "dd63_min_2026": {
+    "SPY": {
+      "pct": -8.88,
+      "date": "2026-03-30"
+    },
+    "QQQ": {
+      "pct": -11.72,
+      "date": "2026-03-30"
+    }
+  },
+  "monthly_returns": {
+    "SPY": {
+      "2026-01-31": 1.29,
+      "2026-02-28": -1.35,
+      "2026-03-31": -4.99,
+      "2026-04-30": 9.68,
+      "2026-05-31": 4.97,
+      "2026-06-30": -1.3,
+      "2026-07-31": 1.23
+    },
+    "QQQ": {
+      "2026-01-31": 1.43,
+      "2026-02-28": -3.01,
+      "2026-03-31": -4.96,
+      "2026-04-30": 14.28,
+      "2026-05-31": 9.52,
+      "2026-06-30": -0.74,
+      "2026-07-31": 0.05
+    }
+  },
+  "events": {
+    "ge3": {
+      "SPY": [
+        {
+          "peak": "2026-01-27",
+          "trough": "2026-03-30",
+          "peak_px": 691.81,
+          "trough_px": 630.35,
+          "dd": -8.88,
+          "days": 62,
+          "peak_above_ma200": true,
+          "trough_above_ma200": false,
+          "intact": false,
+          "open": false
+        },
+        {
+          "peak": "2026-06-02",
+          "trough": "2026-06-10",
+          "peak_px": 757.62,
+          "trough_px": 723.57,
+          "dd": -4.49,
+          "days": 8,
+          "peak_above_ma200": true,
+          "trough_above_ma200": true,
+          "intact": true,
+          "open": true
+        }
+      ],
+      "QQQ": [
+        {
+          "peak": "2025-10-29",
+          "trough": "2026-03-30",
+          "peak_px": 633.46,
+          "trough_px": 557.67,
+          "dd": -11.96,
+          "days": 152,
+          "peak_above_ma200": true,
+          "trough_above_ma200": false,
+          "intact": false,
+          "open": false
+        },
+        {
+          "peak": "2026-06-02",
+          "trough": "2026-06-10",
+          "peak_px": 745.34,
+          "trough_px": 692.93,
+          "dd": -7.03,
+          "days": 8,
+          "peak_above_ma200": true,
+          "trough_above_ma200": true,
+          "intact": true,
+          "open": true
+        }
+      ]
+    },
+    "ge5": {
+      "SPY": [
+        {
+          "peak": "2026-01-27",
+          "trough": "2026-03-30",
+          "peak_px": 691.81,
+          "trough_px": 630.35,
+          "dd": -8.88,
+          "days": 62,
+          "peak_above_ma200": true,
+          "trough_above_ma200": false,
+          "intact": false,
+          "open": false
+        }
+      ],
+      "QQQ": [
+        {
+          "peak": "2025-10-29",
+          "trough": "2026-03-30",
+          "peak_px": 633.46,
+          "trough_px": 557.67,
+          "dd": -11.96,
+          "days": 152,
+          "peak_above_ma200": true,
+          "trough_above_ma200": false,
+          "intact": false,
+          "open": false
+        },
+        {
+          "peak": "2026-06-02",
+          "trough": "2026-06-10",
+          "peak_px": 745.34,
+          "trough_px": 692.93,
+          "dd": -7.03,
+          "days": 8,
+          "peak_above_ma200": true,
+          "trough_above_ma200": true,
+          "intact": true,
+          "open": true
+        }
+      ]
+    },
+    "ge8": {
+      "SPY": [
+        {
+          "peak": "2026-01-27",
+          "trough": "2026-03-30",
+          "peak_px": 691.81,
+          "trough_px": 630.35,
+          "dd": -8.88,
+          "days": 62,
+          "peak_above_ma200": true,
+          "trough_above_ma200": false,
+          "intact": false,
+          "open": false
+        }
+      ],
+      "QQQ": [
+        {
+          "peak": "2025-10-29",
+          "trough": "2026-03-30",
+          "peak_px": 633.46,
+          "trough_px": 557.67,
+          "dd": -11.96,
+          "days": 152,
+          "peak_above_ma200": true,
+          "trough_above_ma200": false,
+          "intact": false,
+          "open": false
+        }
+      ]
+    },
+    "ge12": {
+      "SPY": [],
+      "QQQ": []
+    },
+    "ge20": {
+      "SPY": [],
+      "QQQ": []
+    }
+  },
+  "pattern_checks": [
+    {
+      "claim": "QQQ drawdown typically deeper than SPY",
+      "2026_evidence": "YTD max DD SPY -8.88% vs QQQ -11.72%",
+      "supports": true,
+      "note": "direction only; one episode"
+    },
+    {
+      "claim": "If peak+trough stay above MA200, DD near historical intact medians (~-5.8% SPY / ~-7.8% QQQ)",
+      "2026_evidence": {
+        "SPY": {
+          "intact": false,
+          "dd": -8.88,
+          "hist_med": -5.83
+        },
+        "QQQ": {
+          "intact": false,
+          "dd": -11.72,
+          "hist_med": -7.75
+        }
+      },
+      "supports": "N/A_trend_broke",
+      "note": "2026 YTD max DD involved MA200 break; intact-median claim not applicable to that episode"
+    },
+    {
+      "claim": "Completed MA200 break raises odds of deeper (>~10-15%) path",
+      "2026_evidence": {
+        "SPY_broke": true,
+        "QQQ_broke": true,
+        "SPY_mdd": -8.88,
+        "QQQ_mdd": -11.72
+      },
+      "supports": false,
+      "note": "One year cannot calibrate odds; checks co-occurrence only"
+    },
+    {
+      "claim": "Do not use >=8% catalog median as typical shallow-pullback depth",
+      "2026_evidence": {
+        "SPY_ge8_events": [
+          {
+            "peak": "2026-01-27",
+            "trough": "2026-03-30",
+            "peak_px": 691.81,
+            "trough_px": 630.35,
+            "dd": -8.88,
+            "days": 62,
+            "peak_above_ma200": true,
+            "trough_above_ma200": false,
+            "intact": false,
+            "open": false
+          }
+        ],
+        "QQQ_ge8_events": [
+          {
+            "peak": "2025-10-29",
+            "trough": "2026-03-30",
+            "peak_px": 633.46,
+            "trough_px": 557.67,
+            "dd": -11.96,
+            "days": 152,
+            "peak_above_ma200": true,
+            "trough_above_ma200": false,
+            "intact": false,
+            "open": false
+          }
+        ],
+        "ytd_mdd": {
+          "SPY": -8.88,
+          "QQQ": -11.72
+        }
+      },
+      "supports": true,
+      "note": "Methodological; 2026 shows at least one >=8% episode when it occurred, but depth must be measured case-by-case"
+    },
+    {
+      "claim": "Intact-trend pullbacks often resolve in ~3-4 weeks (hist med 21.5/25 days)",
+      "2026_evidence": {
+        "SPY_days": 62,
+        "QQQ_days": 61,
+        "intact_spy": false,
+        "intact_qqq": false
+      },
+      "supports": "N/A_trend_broke",
+      "note": "If trend broke, duration claim for intact sample does not apply"
+    },
+    {
+      "claim": "SPY: historical intact median as descriptive level from episode peak",
+      "2026_evidence": {
+        "peak": 691.81,
+        "implied_median_trough": 651.48,
+        "actual_trough": 630.35,
+        "actual_dd": -8.88,
+        "error_pct_points": -3.05
+      },
+      "supports": "N/A",
+      "note": "Only meaningful if intact; otherwise expect larger miss"
+    },
+    {
+      "claim": "QQQ: historical intact median as descriptive level from episode peak",
+      "2026_evidence": {
+        "peak": 631.73,
+        "implied_median_trough": 582.77,
+        "actual_trough": 557.67,
+        "actual_dd": -11.72,
+        "error_pct_points": -3.97
+      },
+      "supports": "N/A",
+      "note": "Only meaningful if intact; otherwise expect larger miss"
+    },
+    {
+      "claim": "2026 should contain some intact >=5% pullbacks near hist depth if trend mostly held",
+      "2026_evidence": {
+        "SPY_n": 0,
+        "QQQ_n": 1,
+        "SPY_events": [],
+        "QQQ_events": [
+          {
+            "peak": "2026-06-02",
+            "trough": "2026-06-10",
+            "peak_px": 745.34,
+            "trough_px": 692.93,
+            "dd": -7.03,
+            "days": 8,
+            "peak_above_ma200": true,
+            "trough_above_ma200": true,
+            "intact": true,
+            "open": true
+          }
+        ]
+      },
+      "supports": true,
+      "note": "Presence check, not probability calibration"
+    }
+  ],
+  "intact_ge5_events_2026": {
+    "SPY": [],
+    "QQQ": [
+      {
+        "peak": "2026-06-02",
+        "trough": "2026-06-10",
+        "peak_px": 745.34,
+        "trough_px": 692.93,
+        "dd": -7.03,
+        "days": 8,
+        "peak_above_ma200": true,
+        "trough_above_ma200": true,
+        "intact": true,
+        "open": true
+      }
+    ]
+  },
+  "summary": {
+    "n_boolean_checks": 4,
+    "n_supported": 3,
+    "n_rejected": 1,
+    "n_na": 4,
+    "verdict": "PARTIAL: directional/co-occurrence patterns show limited support in 2026, but one YTD sample cannot validate calibrated timing/depth forecasts; intact-median claims are N/A when the main episode broke MA200."
+  }
+}

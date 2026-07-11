@@ -1,7 +1,7 @@
 # Realtime Public Source Check
 
-Run time: 2026-07-07T12:37:41.900Z (2026/07/07 20:37:41 Beijing)
-Since: 2026-07-06T12:39:00.000Z (2026/07/06 20:39:00 Beijing)
+Run time: 2026-07-10T12:33:04.249Z (2026/07/10 20:33:04 Beijing)
+Since: 2026-07-09T12:40:17.691Z (2026/07/09 20:40:17 Beijing)
 
 ## Summary
 
@@ -36,12 +36,11 @@ Diagnostics:
 ## 美研芒格君
 
 Visible title candidates without reliable time/body:
-- [置顶] 分享我压箱底的 AI 主线 下一“瓶颈”标的
 - [置顶] 40小时呕心沥血！MRVL光模块+AI推理布局解析
+- [置顶] 分享我压箱底的 AI 主线 下一“瓶颈”标的
 - 存储之后的下个机会，聪明人已经开始关注
 - MU先别眼红, 5+4逻辑全面梳理搞懂存储产业
 - 要看懂MRVL和10 倍万亿光互联，Credo很关键
-- 分享我压箱底的，AI下一阶段“瓶颈”玩家
 - 深入拆解甲骨文, AI Token推理工厂的错配
 - 耗时一周，深度拆解甲骨文ORCL的AI豪赌决心
 - 好消息就是坏消息？从看懂AVGO到理解AI布局
@@ -56,9 +55,10 @@ Visible title candidates without reliable time/body:
 - CBRS+68%，下一个光模块？ 新机会深度解读
 - NBIS CRWV深度解读，出现了难得的黄金坑？
 - 27年的下个10倍投资机会，AI推理Token布局
+- 光模块下投资还在早期，分享如何提前布局
 
 Diagnostics:
-- raw_profile_html: ok=true status=200 length=944961
-- jina_profile: ok=true status=200 length=299
+- raw_profile_html: ok=true status=200 length=945767
+- jina_profile: ok=true status=200 length=0
 
 Not investment advice.

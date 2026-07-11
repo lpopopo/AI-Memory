@@ -1,0 +1,32 @@
+results/*.csv
+results/*.json
+results/**/*.csv
+results/**/*.json
+!results/**/*.md
+!results/validation/*.json
+!results/validation/*.md
+
+.venv/
+__pycache__/
+scripts/__pycache__/
+scratch/
+*.log
+*.tmp
+compile_err*.txt
+
+# Large price caches (rebuild via download scripts)
+datasets/data_point_in_time/
+datasets/data_v81/
+datasets/data_v86/
+datasets/data_v87_forward/
+datasets/data_v9/
+datasets/data_long/
+datasets/data_universe/
+datasets/data_2026/
+datasets/data_xhs_replay_2026_06/
+datasets/*.csv
+
+# Local shadow state is append-only and machine-local
+results/shadow_portfolio/dry_run/
+results/shadow_portfolio/forward/
+results/shadow_portfolio/frozen/

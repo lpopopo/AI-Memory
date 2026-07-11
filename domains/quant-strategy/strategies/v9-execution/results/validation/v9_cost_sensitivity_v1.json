@@ -1,0 +1,38 @@
+{
+  "0.001": {
+    "overlay_cagr": 0.0678505548363495,
+    "baseline_cagr": 0.08332447994391501,
+    "overlay_sharpe": 0.6078048271218772,
+    "baseline_sharpe": 0.5137365136480627,
+    "overlay_max_drawdown": -0.2998034776939337,
+    "baseline_max_drawdown": -0.5518943663343292,
+    "overlay_es5": -0.01811103509856156,
+    "baseline_es5": -0.02887081632271272,
+    "avg_scale": 0.7744987550213261,
+    "turnover": 0.0029634532154359282
+  },
+  "0.002": {
+    "overlay_cagr": 0.06705231525121413,
+    "baseline_cagr": 0.08332447994391501,
+    "overlay_sharpe": 0.6015311659375756,
+    "baseline_sharpe": 0.5137365136480627,
+    "overlay_max_drawdown": -0.30094081929778105,
+    "baseline_max_drawdown": -0.5518943663343292,
+    "overlay_es5": -0.01812273846925071,
+    "baseline_es5": -0.02887081632271272,
+    "avg_scale": 0.7744987550213261,
+    "turnover": 0.0029634532154359282
+  },
+  "0.005": {
+    "overlay_cagr": 0.06466101975731209,
+    "baseline_cagr": 0.08332447994391501,
+    "overlay_sharpe": 0.5827102951373103,
+    "baseline_sharpe": 0.5137365136480627,
+    "overlay_max_drawdown": -0.3043418450434985,
+    "baseline_max_drawdown": -0.5518943663343292,
+    "overlay_es5": -0.018157891588394235,
+    "baseline_es5": -0.02887081632271272,
+    "avg_scale": 0.7744987550213261,
+    "turnover": 0.0029634532154359282
+  }
+}

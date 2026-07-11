@@ -1,0 +1,152 @@
+{
+  "status": "research_only_not_promoted",
+  "data": {
+    "source": "Yahoo Finance via yfinance auto_adjust=True",
+    "symbols": [
+      "ALAB",
+      "AMAT",
+      "AMD",
+      "ASML",
+      "AVGO",
+      "AXTI",
+      "CBRS",
+      "COHR",
+      "CRDO",
+      "CRWV",
+      "KLAC",
+      "LITE",
+      "LRCX",
+      "MRVL",
+      "MU",
+      "MXL",
+      "NVDA",
+      "ORCL",
+      "QQQ",
+      "SNDK",
+      "SPY",
+      "STX",
+      "TER",
+      "TTMI",
+      "WDC",
+      "^VIX",
+      "^VIX3M"
+    ],
+    "downloaded_at_utc": "2026-07-11T02:26:05.650053+00:00",
+    "last_date": "2026-07-10"
+  },
+  "event_store": {
+    "count": 50,
+    "reliable_point_in_time_count": 18,
+    "retrospective_only_count": 31,
+    "source_health": "partial",
+    "source_failure_date": "2026-06-27",
+    "split": {
+      "eligible": false,
+      "reason": "fewer_than_50_reliable_point_in_time_events",
+      "counts": {
+        "all": 50,
+        "reliable_point_in_time": 18,
+        "retrospective_only": 31,
+        "development": 0,
+        "validation": 0,
+        "test": 0
+      },
+      "embargo_days": 5
+    }
+  },
+  "parameters": {
+    "source": "frozen_defaults",
+    "values": {
+      "score_threshold": 70.0,
+      "tech_weight": 1.0,
+      "score_cap_scale": 1.0
+    }
+  },
+  "period": [
+    "2026-04-27",
+    "2026-07-02"
+  ],
+  "comparisons": {
+    "V9_actual_source_health": {
+      "total_return": 0.04189371168579048,
+      "max_drawdown": -0.04120563275051481,
+      "annualized_sharpe": 1.6947791224965332
+    },
+    "V9_healthy_source_counterfactual": {
+      "total_return": 0.04189371168579048,
+      "max_drawdown": -0.04120563275051481,
+      "annualized_sharpe": 1.6947791224965332
+    },
+    "V8": {
+      "total_return": 0.0463538275517994,
+      "max_drawdown": -0.057653784290940036,
+      "annualized_sharpe": 1.3859893216734238
+    },
+    "V8.7": {
+      "total_return": 0.040844565655430376,
+      "max_drawdown": -0.06272517806101763,
+      "annualized_sharpe": 1.1375870211332781
+    },
+    "QQQ": {
+      "total_return": 0.07400008720610951,
+      "max_drawdown": -0.07031997684181468,
+      "annualized_sharpe": 1.6494293669281204
+    },
+    "SPY_QQQ_50_50": {
+      "total_return": 0.059400317030575245,
+      "max_drawdown": -0.057613474747154614,
+      "annualized_sharpe": 1.7204045058588753
+    }
+  },
+  "cost_sensitivity_actual_source_health": {
+    "0.001": {
+      "total_return": 0.04189371168579048,
+      "max_drawdown": -0.04120563275051481,
+      "annualized_sharpe": 1.6947791224965332
+    },
+    "0.002": {
+      "total_return": 0.04188779174843438,
+      "max_drawdown": -0.04121664965645755,
+      "annualized_sharpe": 1.6941229478368682
+    },
+    "0.005": {
+      "total_return": 0.04186867840248154,
+      "max_drawdown": -0.04124981788801241,
+      "annualized_sharpe": 1.6920980257784608
+    }
+  },
+  "research_diagnostics": {
+    "stock_invested_days": 0,
+    "max_single_weight": 0,
+    "latest_audit": {
+      "date": "2026-07-10",
+      "drawdown": -0.010858509442813857,
+      "info_contrib": 0.0,
+      "v8_pnl": 0.00308367547027788,
+      "info_official_pnl": 0.0,
+      "info_obs_pnl": 0.0,
+      "cost_pnl": 0.0,
+      "weights": {
+        "SPY": 0.35354300130730476,
+        "QQQ": 0.3559045395945996
+      },
+      "pending_orders": []
+    }
+  },
+  "promotion_checks": {
+    "event_count_at_least_50": false,
+    "max_drawdown_lte_30pct": true,
+    "sharpe_gte_0_90": true,
+    "test_cagr_beats_v87_by_3pp": false,
+    "rolling_6m_win_rate_gte_60pct": false,
+    "cost_0_5pct_positive_excess": true,
+    "frozen_forward_12_months": false
+  },
+  "promoted": false,
+  "limitations": [
+    "Only 18 reliable point-in-time events exist; no parameter optimization is permitted.",
+    "31 historical posts were discovered later and are excluded from the historical trading replay.",
+    "The period is too short for stable annualized statistics.",
+    "Source degradation blocks only new entries from its recorded failure date; earlier archived signals remain replayable."
+  ]
+}

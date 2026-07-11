@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-07-02",
+  "score": 64.39909297052154,
+  "regime": "greed",
+  "available_components": 7,
+  "components": {
+    "market_momentum": 56.21693121693122,
+    "market_volatility": 65.47619047619048,
+    "volatility_term_structure": 77.38095238095238,
+    "equal_weight_breadth": 98.14814814814815,
+    "smallcap_breadth": 91.4021164021164,
+    "junk_bond_demand": 42.857142857142854,
+    "safe_haven_demand": 19.31216931216931
+  },
+  "contrarian": {
+    "armed": false,
+    "confirmed": false,
+    "active": false
+  },
+  "policy": "research-only; Fear Gate and unresolved-stop veto retain priority"
+}

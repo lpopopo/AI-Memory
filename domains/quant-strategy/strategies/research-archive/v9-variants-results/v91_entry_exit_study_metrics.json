@@ -1,0 +1,601 @@
+{
+  "status": "diagnostic_grid_no_parameter_promotion",
+  "period": [
+    "2026-05-01",
+    "2026-07-10"
+  ],
+  "fixed_v91_parameters": {
+    "entry_rule_version": "E",
+    "score_threshold": 75.0,
+    "tech_weight": 1.6,
+    "trusted_event_only": true,
+    "min_source_completeness": 15,
+    "min_fundamental": 10
+  },
+  "entry_paths": [
+    "any",
+    "breakout",
+    "pullback",
+    "trend"
+  ],
+  "exit_policies": {
+    "current": {
+      "hard_stop": 0.08,
+      "trailing_stop_mode": "ma20",
+      "time_stop_days": 3
+    },
+    "tight": {
+      "hard_stop": 0.06,
+      "trailing_stop_mode": "ma20",
+      "time_stop_days": 3
+    },
+    "patient": {
+      "hard_stop": 0.1,
+      "trailing_stop_mode": "ma50",
+      "time_stop_days": 5
+    },
+    "technical_staged": {
+      "hard_stop": 0.06,
+      "trailing_stop_mode": "ma20",
+      "time_stop_days": 3,
+      "dynamic_stop_mode": "technical_staged"
+    }
+  },
+  "results": {
+    "any__current": {
+      "metrics": {
+        "total_return": 0.037969181616056336,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.4616769244323893
+      },
+      "entries": 6,
+      "stock_invested_days": 4,
+      "information_net_contribution": -0.008144551145856653,
+      "closed_trades": [
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-25",
+          "exit": "2026-06-26",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0016056934066484023
+        },
+        {
+          "symbol": "MU",
+          "entry": "2026-06-29",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0017454837419083671
+        },
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-30",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0012064852262728743
+        },
+        {
+          "symbol": "AMD",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.0001774180809394238
+        },
+        {
+          "symbol": "SNDK",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.002634312074477695
+        },
+        {
+          "symbol": "STX",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.0010615740025806176
+        }
+      ],
+      "stop_loss_count": 3
+    },
+    "any__tight": {
+      "metrics": {
+        "total_return": 0.03822928322853514,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.471925163398636
+      },
+      "entries": 6,
+      "stock_invested_days": 4,
+      "information_net_contribution": -0.007836045101158533,
+      "closed_trades": [
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-25",
+          "exit": "2026-06-26",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0016056934066484023
+        },
+        {
+          "symbol": "MU",
+          "entry": "2026-06-29",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.001436349265092281
+        },
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-30",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0012064852262728743
+        },
+        {
+          "symbol": "AMD",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.00017746269689458206
+        },
+        {
+          "symbol": "SNDK",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.0026349745342944472
+        },
+        {
+          "symbol": "STX",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.0010618409603666873
+        }
+      ],
+      "stop_loss_count": 3
+    },
+    "any__patient": {
+      "metrics": {
+        "total_return": 0.039400466006647816,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.5284770237891965
+      },
+      "entries": 3,
+      "stock_invested_days": 8,
+      "information_net_contribution": -0.006594846565971271,
+      "closed_trades": [
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-25",
+          "exit": "2026-06-29",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0029254335020587278
+        },
+        {
+          "symbol": "MU",
+          "entry": "2026-06-29",
+          "exit": "2026-07-02",
+          "exit_reason": "sell",
+          "pnl": -0.0019293651592367101
+        },
+        {
+          "symbol": "AMD",
+          "entry": "2026-06-30",
+          "exit": "2026-07-08",
+          "exit_reason": "sell",
+          "pnl": -0.0018804258573638657
+        }
+      ],
+      "stop_loss_count": 1
+    },
+    "any__technical_staged": {
+      "metrics": {
+        "total_return": 0.03711480438011927,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.4279765372587996
+      },
+      "entries": 6,
+      "stock_invested_days": 4,
+      "information_net_contribution": -0.009158020760088963,
+      "closed_trades": [
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-25",
+          "exit": "2026-06-26",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0027836631230683945
+        },
+        {
+          "symbol": "MU",
+          "entry": "2026-06-29",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0014349611496882666
+        },
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-30",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0013544776347924046
+        },
+        {
+          "symbol": "AMD",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.00017727152722880478
+        },
+        {
+          "symbol": "SNDK",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.0026321360380365437
+        },
+        {
+          "symbol": "STX",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.0010606971043053623
+        }
+      ],
+      "stop_loss_count": 3
+    },
+    "breakout__current": {
+      "metrics": {
+        "total_return": 0.043155699487854804,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.688119553261818
+      },
+      "entries": 2,
+      "stock_invested_days": 3,
+      "information_net_contribution": -0.0021901638338622936,
+      "closed_trades": [
+        {
+          "symbol": "MU",
+          "entry": "2026-06-29",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0017477831170056044
+        },
+        {
+          "symbol": "SNDK",
+          "entry": "2026-07-01",
+          "exit": "2026-07-02",
+          "exit_reason": "sell",
+          "pnl": -0.0005383555114188886
+        }
+      ],
+      "stop_loss_count": 1
+    },
+    "breakout__tight": {
+      "metrics": {
+        "total_return": 0.043416966951758784,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.698748616047686
+      },
+      "entries": 2,
+      "stock_invested_days": 3,
+      "information_net_contribution": -0.0018803122738973027,
+      "closed_trades": [
+        {
+          "symbol": "MU",
+          "entry": "2026-06-29",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0014382414086005768
+        },
+        {
+          "symbol": "SNDK",
+          "entry": "2026-07-01",
+          "exit": "2026-07-02",
+          "exit_reason": "sell",
+          "pnl": -0.0005383555114188886
+        }
+      ],
+      "stop_loss_count": 1
+    },
+    "breakout__patient": {
+      "metrics": {
+        "total_return": 0.04299954684274665,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.681635419770586
+      },
+      "entries": 2,
+      "stock_invested_days": 3,
+      "information_net_contribution": -0.002375353906733952,
+      "closed_trades": [
+        {
+          "symbol": "MU",
+          "entry": "2026-06-29",
+          "exit": "2026-07-02",
+          "exit_reason": "sell",
+          "pnl": -0.0019327879998043888
+        },
+        {
+          "symbol": "SNDK",
+          "entry": "2026-07-01",
+          "exit": "2026-07-02",
+          "exit_reason": "sell",
+          "pnl": -0.0005383555114188886
+        }
+      ],
+      "stop_loss_count": 0
+    },
+    "breakout__technical_staged": {
+      "metrics": {
+        "total_return": 0.043416966951758784,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.698748616047686
+      },
+      "entries": 2,
+      "stock_invested_days": 3,
+      "information_net_contribution": -0.0018803122738973027,
+      "closed_trades": [
+        {
+          "symbol": "MU",
+          "entry": "2026-06-29",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0014382414086005768
+        },
+        {
+          "symbol": "SNDK",
+          "entry": "2026-07-01",
+          "exit": "2026-07-02",
+          "exit_reason": "sell",
+          "pnl": -0.0005383555114188886
+        }
+      ],
+      "stop_loss_count": 1
+    },
+    "pullback__current": {
+      "metrics": {
+        "total_return": 0.045085305823165944,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.7699654461921646
+      },
+      "entries": 0,
+      "stock_invested_days": 0,
+      "information_net_contribution": 0.0,
+      "closed_trades": [],
+      "stop_loss_count": 0
+    },
+    "pullback__tight": {
+      "metrics": {
+        "total_return": 0.045085305823165944,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.7699654461921646
+      },
+      "entries": 0,
+      "stock_invested_days": 0,
+      "information_net_contribution": 0.0,
+      "closed_trades": [],
+      "stop_loss_count": 0
+    },
+    "pullback__patient": {
+      "metrics": {
+        "total_return": 0.045085305823165944,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.7699654461921646
+      },
+      "entries": 0,
+      "stock_invested_days": 0,
+      "information_net_contribution": 0.0,
+      "closed_trades": [],
+      "stop_loss_count": 0
+    },
+    "pullback__technical_staged": {
+      "metrics": {
+        "total_return": 0.045085305823165944,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.7699654461921646
+      },
+      "entries": 0,
+      "stock_invested_days": 0,
+      "information_net_contribution": 0.0,
+      "closed_trades": [],
+      "stop_loss_count": 0
+    },
+    "trend__current": {
+      "metrics": {
+        "total_return": 0.037969181616056336,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.4616769244323893
+      },
+      "entries": 6,
+      "stock_invested_days": 4,
+      "information_net_contribution": -0.008144551145856653,
+      "closed_trades": [
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-25",
+          "exit": "2026-06-26",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0016056934066484023
+        },
+        {
+          "symbol": "MU",
+          "entry": "2026-06-29",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0017454837419083671
+        },
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-30",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0012064852262728743
+        },
+        {
+          "symbol": "AMD",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.0001774180809394238
+        },
+        {
+          "symbol": "SNDK",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.002634312074477695
+        },
+        {
+          "symbol": "STX",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.0010615740025806176
+        }
+      ],
+      "stop_loss_count": 3
+    },
+    "trend__tight": {
+      "metrics": {
+        "total_return": 0.03822928322853514,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.471925163398636
+      },
+      "entries": 6,
+      "stock_invested_days": 4,
+      "information_net_contribution": -0.007836045101158533,
+      "closed_trades": [
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-25",
+          "exit": "2026-06-26",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0016056934066484023
+        },
+        {
+          "symbol": "MU",
+          "entry": "2026-06-29",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.001436349265092281
+        },
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-30",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0012064852262728743
+        },
+        {
+          "symbol": "AMD",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.00017746269689458206
+        },
+        {
+          "symbol": "SNDK",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.0026349745342944472
+        },
+        {
+          "symbol": "STX",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.0010618409603666873
+        }
+      ],
+      "stop_loss_count": 3
+    },
+    "trend__patient": {
+      "metrics": {
+        "total_return": 0.039400466006647816,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.5284770237891965
+      },
+      "entries": 3,
+      "stock_invested_days": 8,
+      "information_net_contribution": -0.006594846565971271,
+      "closed_trades": [
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-25",
+          "exit": "2026-06-29",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0029254335020587278
+        },
+        {
+          "symbol": "MU",
+          "entry": "2026-06-29",
+          "exit": "2026-07-02",
+          "exit_reason": "sell",
+          "pnl": -0.0019293651592367101
+        },
+        {
+          "symbol": "AMD",
+          "entry": "2026-06-30",
+          "exit": "2026-07-08",
+          "exit_reason": "sell",
+          "pnl": -0.0018804258573638657
+        }
+      ],
+      "stop_loss_count": 1
+    },
+    "trend__technical_staged": {
+      "metrics": {
+        "total_return": 0.03711480438011927,
+        "max_drawdown": -0.04120563275051459,
+        "annualized_sharpe": 1.4279765372587996
+      },
+      "entries": 6,
+      "stock_invested_days": 4,
+      "information_net_contribution": -0.009158020760088963,
+      "closed_trades": [
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-25",
+          "exit": "2026-06-26",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0027836631230683945
+        },
+        {
+          "symbol": "MU",
+          "entry": "2026-06-29",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0014349611496882666
+        },
+        {
+          "symbol": "COHR",
+          "entry": "2026-06-30",
+          "exit": "2026-07-01",
+          "exit_reason": "stop_loss",
+          "pnl": -0.0013544776347924046
+        },
+        {
+          "symbol": "AMD",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.00017727152722880478
+        },
+        {
+          "symbol": "SNDK",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.0026321360380365437
+        },
+        {
+          "symbol": "STX",
+          "entry": "2026-07-02",
+          "exit": "2026-07-06",
+          "exit_reason": "sell",
+          "pnl": -0.0010606971043053623
+        }
+      ],
+      "stop_loss_count": 3
+    }
+  },
+  "interpretation_rule": "Do not select a live rule from this grid. Prefer only variants that preserve or improve return and drawdown with multiple independent trades, then forward-test them."
+}

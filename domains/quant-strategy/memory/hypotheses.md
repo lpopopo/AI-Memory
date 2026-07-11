@@ -183,6 +183,14 @@ Additional validation needed:
 - Elon Musk's `Grok Imagine update` adds `xAI_generative_video_iteration` under application-layer monitoring. It needs product usage, subscription, token cost, inference margin, and compute procurement evidence before it can be mapped to infrastructure demand.
 - Replay should add the Kay Kyber/CPO post, NVIDIA ICML/open-model posts, NVIDIA AI for Good posts, and Elon Grok Imagine update to the 2026-07-06/07 event table, then compare 1/5/20/60-day returns and maximum adverse excursion for QQQ/SMH/XSD plus NVDA/COHR/LITE/AAOI/MRVL.
 
+2026-07-09 evidence update:
+
+- Chrome-visible Xiaohongshu profile still shows no strict-window new note; the latest non-pinned item remains `6a45e9690000000016027e78`. Direct detail access redirected to explore, so current-run image evidence remains `0/32`; do not overwrite the historical `32/32` image read from 2026-07-02.
+- Kay X posts `2074755111679877351`, `2074541184098398705`, `2074528471225892956`, and `2074583043361386771` add candidate fields `token_intensity_from_better_models`, `custom_compute_co_design`, `AI_hardware_deleveraging_chain`, and `MRVL_valuation_path_compression`. These require official OpenAI/DeepSeek/MRVL/Reuters/company-source verification before affecting scores or rules.
+- NVIDIA official posts `2074872091388903774` and `2074510027897844105` add `agentic_AI_inference_stack` and `CPU_GPU_utilization_bottleneck`: agent workflows may shift bottleneck attention from GPU-only capacity toward CPU orchestration, tool calls, software stack and inference cost, but this needs benchmark, deployment and revenue evidence.
+- Kay self-reported returns, cash level, position discipline and buy/sell behavior remain `source_attention_crowding` only. They are not real-account fills, not verified trades, and not company facts.
+- Replay should freeze the 2026-07-07/08 Kay/NVIDIA/Elon event rows by first-visible time and compare 1/5/20/60-day returns and maximum adverse excursion for QQQ/SMH/XSD/HYG/LQD plus MRVL/ALAB/CRDO/MU/DRAM/GLW/MXL/NVDA/AMD/INTC/ORCL/CRWV/NBIS.
+
 ### H6: AI application-layer monitoring may become a separate investable theme
 
 AI application evidence should be tracked separately from GPU, data center, optical, and storage infrastructure. Strong consumer adoption or enterprise AI workflow evidence does not automatically mean more infrastructure buying; it can benefit application software, cloud platforms, inference compute, storage, cybersecurity, or endpoints depending on monetization and cost structure.
@@ -192,6 +200,11 @@ Initial 2026-06-03 evidence:
 - Reuters/Sensor Tower reported that ChatGPT crossed 1B global monthly active app users, supporting consumer AI adoption but not directly proving public-stock monetization.
 - Nvidia/Huang comments helped repair the "AI kills software" narrative, but this is still narrative evidence unless CRM/NOW/ADBE/SNOW/DDOG/CRWD show AI revenue, ARR, retention, pricing power, and gross-margin stability.
 - Initial watch pool: SNOW, CRWD, DDOG, NOW, CRM, ADBE, MSFT, GOOGL, AMZN, META, APP, PLTR.
+
+2026-07-09 evidence update:
+
+- Elon/X-visible Grok 4.5 posts and reposts add `xAI_agent_model_cost_efficiency`: coding/agent models are being marketed around speed, token efficiency, lower cost and Cursor/Vercel distribution. Treat this as application-layer and inference-demand monitoring, not infrastructure demand proof.
+- Kay/OpenAI-visible GPT 5.6 discussion adds a parallel `longer_reasoning_more_tool_use` watch field. Validate with official OpenAI release material, enterprise usage, token consumption, cloud deployment, pricing and margin evidence before mapping to public equities.
 
 Validation needed:
 
@@ -292,6 +305,12 @@ Validation needed:
 - Replay each field incrementally against the existing 14-point score and measure warning lead time, blocked winners, blocked losers, cash drag, and 1/5/20-day maximum adverse excursion.
 - Test whether adding this overlay reduces drawdown after crowded semiconductor rallies without forcing premature exits during healthy trends.
 
+2026-07-10 institutional evidence update:
+
+- Man Group's official `H2 Technology Outlook - Still Dancing, But Moving Closer to the Door?` article adds `AI_stack_selectivity_rotation`, `private_AI_customer_concentration`, and `AI_IPO_lockup_pressure` to flow-fragility validation. The article's core point is that AI exposure is becoming more selective across stack layers while private-AI commitments and IPO/lock-up supply can create delayed pressure points.
+- Replay the 2026-07-10 event over 1/5/20/60 days versus QQQ/SMH/XSD/HYG/LQD, semiconductor equipment, memory/storage, optical/interconnect, cloud infrastructure, cybersecurity/software-efficiency, SaaS and IPO/new-listing baskets.
+- Treat these fields as monitoring inputs only; they do not override the market fear gate, stop rules, or unresolved-stop veto.
+
 ### H8: AI quality and capex-cycle classification improves candidate ranking
 
 GMO and Man Group research point to a key split inside AI exposure: diversified platform/hyperscaler and quality suppliers may be more resilient than cyclical suppliers tied mainly to hyperscaler growth capex, while optical/interconnect bottlenecks may offer real upside but can become crowded or cyclically exposed.
@@ -318,6 +337,12 @@ Validation needed:
 - Official NVIDIA post `2072545807505527251` adds `AI_cloud_credit_support`: NVIDIA says it is using revenue-sharing and credit-support arrangements with AI clouds to deploy multi-tenant AI factories. This may broaden token-compute access, but it may also transmit partner credit, utilization, residual-value and financing risk back toward the platform/supplier.
 - Validate named partners, contract size, GPU ownership, guarantees/credit recourse, utilization, pricing, depreciation/residual value, revenue recognition, cash conversion and defaults before this affects AI quality scores or position roles.
 - Treat the item as a financing/capex-cycle hypothesis linked to `AI_credit_funding_fragility`, not as automatic demand confirmation or a stable decision.
+
+2026-07-10 institutional evidence update:
+
+- Man Group's official `H2 Technology Outlook` adds `semiconductor_peak_margin_trap`, `China_AI_efficiency_competition`, and `AI_stack_selectivity_rotation` to H8 validation. The article argues that value has accrued heavily at the chip layer while downstream software cash-flow monetization remains uneven, and that Chinese cost-to-output model competition may affect global AI economics.
+- Validate semiconductor margin durability, downstream enterprise ROI, cloud backlog customer concentration, model cost/performance data, China supply-chain availability, IPO/lock-up calendars and price relative strength before changing any AI quality score or core/satellite role.
+- Do not treat a single institutional outlook as a stable trading rule; keep it in replay/backtest context.
 
 ### H9: Trend-aligned support buys outperform plain dip-buying in the current strategy
 
@@ -370,3 +395,49 @@ Validation needed:
 - Compare 1/5/20/60-day moves in 2-year and 10-year yields, curve slope, breakevens, DXY, VIX/VIX3M, HYG/LQD, QQQ/SPY, SMH/QQQ, IGV/QQQ, memory/storage, and optical/interconnect baskets.
 - Test whether the fields add warning value beyond the existing fear gate and price trend; reject them if they merely restate moves already visible in market data.
 - Measure CAGR, max drawdown, false-add rate, missed-winner rate, and cash drag before any promotion to `decisions.md`.
+
+## 2026-07-11
+
+### H12: Index-core momentum layers — regime keep, continuation reject
+
+From the SPY/QQQ factor induction:
+
+- **Retain:** MA150/MA200 trend regime for V9 embedded index-core weights; QQQ ~1.3x drawdown amplification when SPY 63-day DD &lt; −5%.
+- **Reject for trade authorization:** absolute mom63 continuation and QQQ−SPY relative mom63 continuation into the next 21 days (failed on 2024–2026 / 2026YTD).
+- **Reject as short signal:** “below MA200 stays weak for the next 63 days” (2026YTD V-recovery counterexample).
+
+Status: incorporated into V9 as monitor-only via `references/v9-index-core-momentum-monitor.md` and `memory/decisions.md` (2026-07-11). Not a promotion of a momentum sleeve.
+
+Validation needed for any future promotion beyond monitor status:
+
+- Rolling sample-out protocol with costs, orthogonal to V8 monthly weights.
+- Explicit separation of event-driven V-recoveries from trend regimes.
+- No Rule E override unless forward gates are met independently.
+
+### H13: Panic-to-repair monitoring and slow risk scaling may improve V9 tail control
+
+Prospect-theory research supports a behavioral execution audit, while
+momentum-crash research suggests that a prior market decline, elevated
+volatility and a sharp rebound can create winner-crowding and high-beta reversal
+risk. The direct academic mechanism is strongest in cross-sectional
+long-winner/short-loser portfolios and does not automatically apply to V9's
+long-only MA core or Rule E stock sleeve.
+
+Status: research-only. See
+`strategies/v9-execution/BEHAVIORAL_MOMENTUM_SUPPLEMENT.md`,
+`strategies/v9-execution/validation/`, and first-pass outputs in
+`strategies/v9-execution/results/validation/`. Formal V9 weights remain
+unchanged.
+
+Validation needed:
+
+- Build a causal panic-to-repair label and test whether it adds warning value
+  beyond the existing Fear Gate and MA150/MA200 regime.
+- Test a separate 126-day slow-volatility overlay with no leverage, fixed
+  exposure caps and realistic one-way costs.
+- Measure long-winner and short-loser legs separately before mapping any WML
+  result to V9.
+- Report net CAGR, max drawdown, expected shortfall, skew, turnover, cash drag,
+  false reductions and missed winners in rolling/expanding sample-out tests.
+- Require point-in-time membership, deletions/delisting returns and genuinely
+  new forward evidence before promotion.

@@ -1,0 +1,24 @@
+{
+  "status": "observation_only_no_orders",
+  "period": [
+    "2026-05-01",
+    "2026-07-10"
+  ],
+  "watchlist_count": 32,
+  "covered_count": 32,
+  "missing_price_data": [],
+  "point_in_time_event_names": 21,
+  "latest_technical_valid_names": [
+    "ALAB",
+    "AMD",
+    "CRDO",
+    "NVDA"
+  ],
+  "event_and_technical_candidates": [
+    "ALAB",
+    "AMD",
+    "CRDO",
+    "NVDA"
+  ],
+  "data_last_date": "2026-07-10"
+}

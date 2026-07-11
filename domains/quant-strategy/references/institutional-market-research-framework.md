@@ -8,6 +8,39 @@ This file is a reference framework, not a trade signal. The ideas below should f
 
 ## Source Index
 
+## 2026-07-10 Update: AI Stack Selectivity, Private-AI Concentration, And IPO Lock-Up Pressure
+
+Source page:
+
+- https://www.man.com/insights/h2-2026-technology-outlook
+
+Verified public item:
+
+- Man Group published `H2 Technology Outlook - Still Dancing, But Moving Closer to the Door?` on 2026-07-10. The official-domain detail page exposed a stable title, date and body. It argues that the AI trade is maturing from broad thematic exposure into sharper winner/loser discrimination across semiconductors, infrastructure, cybersecurity, software, private AI entities, China cost-efficient AI, and the IPO pipeline.
+
+Reusable framework:
+
+- Add `AI_stack_selectivity_rotation` under `AI_quality/capex_cycle`: track whether capital is rotating from GPU-only winners toward memory, optics, wafer capacity, infrastructure, cybersecurity, software efficiency, model companies, and applications.
+- Add `semiconductor_peak_margin_trap`: low multiples on peak earnings can be misleading when margins depend on supply discipline and downstream AI ROI remains unproven.
+- Add `private_AI_customer_concentration`: cloud/provider backlog quality can depend heavily on a small number of private AI entities and their spending commitments.
+- Add `China_AI_efficiency_competition`: Chinese semiconductors and open-source models may compete through cost-to-output and availability even under export-control constraints.
+- Add `AI_IPO_lockup_pressure`: IPOs can extend risk appetite, but later lock-up expiries and venture-capital recycling may become a delayed liquidity pressure point.
+
+Strategy mapping:
+
+- `market fear gate`: context only; no regime change without VIX, breadth, credit, and completed-close trend evidence.
+- `trend_aligned_entry`: broad AI theme heat is insufficient; require sub-sector leadership, price confirmation, and stop closure before any action.
+- `flow_fragility`: combine AI crowding with private-AI concentration, IPO supply, and capital-recycling timing rather than treating semiconductor strength as self-validating.
+- `AI_quality/capex_cycle`: prefer validated monetization, customer diversification, margin durability and cash-flow evidence over bottleneck narrative alone.
+- `AI bottleneck watch`: keep GPU, memory, optics, wafer capacity and software-efficiency bottlenecks separate; do not map one bottleneck automatically to all AI tickers.
+- `replay protocol`: freeze the 2026-07-10 event and compare 1/5/20/60-day QQQ/SMH/XSD/HYG/LQD plus semiconductor equipment, memory/storage, optical/interconnect, infrastructure/cybersecurity, SaaS, cloud and IPO/new-listing baskets.
+
+Evidence notes:
+
+- High evidence for official article existence, title, date and body.
+- Medium evidence for strategy transmission because the article's backlog, spending-commitment, cost-efficiency and IPO claims require filings, primary data and market replay.
+- This is an experimental monitoring and backtest framework, not a buy/sell signal or stable decision.
+
 ## 2026-07-05 Weekly Update: Structural Flow Concentration And Short-Duration Leverage
 
 Source page:

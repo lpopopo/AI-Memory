@@ -1,0 +1,30 @@
+{
+  "source": "Ken French Data Library",
+  "files": {
+    "ff_mom_daily.csv": {
+      "rows": 26152,
+      "start": "1926-11-03",
+      "end": "2026-05-29",
+      "columns": [
+        "Mom"
+      ]
+    },
+    "ff_wml_daily.csv": {
+      "rows": 26152,
+      "start": "1926-11-03",
+      "end": "2026-05-29",
+      "columns": [
+        "WML"
+      ],
+      "note": "Winner/loser legs require CRSP reconstruction; WML only is stored here."
+    },
+    "ff_mom_monthly.csv": {
+      "rows": 198,
+      "start": "1927-01-01",
+      "end": "2025-01-02",
+      "columns": [
+        "Mom"
+      ]
+    }
+  }
+}

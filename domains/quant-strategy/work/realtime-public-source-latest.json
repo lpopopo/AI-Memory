@@ -1,6 +1,6 @@
 {
   "args": {
-    "since": "2026-07-06T12:39:00.000Z",
+    "since": "2026-07-09T12:40:17.691Z",
     "out": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\realtime-public-source-latest.md",
     "json": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\realtime-public-source-latest.json",
     "maxPosts": 5
@@ -70,12 +70,11 @@
       "note": "原始公开 HTML/SSR 暴露可见笔记标题，但没有稳定单条笔记 URL、发布时间或正文；可用于主题温度和候选池，不可当作完整事实正文。",
       "evidence": "低到中",
       "titles": [
-        "[置顶] 分享我压箱底的 AI 主线 下一“瓶颈”标的",
         "[置顶] 40小时呕心沥血！MRVL光模块+AI推理布局解析",
+        "[置顶] 分享我压箱底的 AI 主线 下一“瓶颈”标的",
         "存储之后的下个机会，聪明人已经开始关注",
         "MU先别眼红, 5+4逻辑全面梳理搞懂存储产业",
         "要看懂MRVL和10 倍万亿光互联，Credo很关键",
-        "分享我压箱底的，AI下一阶段“瓶颈”玩家",
         "深入拆解甲骨文, AI Token推理工厂的错配",
         "耗时一周，深度拆解甲骨文ORCL的AI豪赌决心",
         "好消息就是坏消息？从看懂AVGO到理解AI布局",
@@ -89,7 +88,8 @@
         "一篇走心发文，为什么我们坚持做AI投资分享",
         "CBRS+68%，下一个光模块？ 新机会深度解读",
         "NBIS CRWV深度解读，出现了难得的黄金坑？",
-        "27年的下个10倍投资机会，AI推理Token布局"
+        "27年的下个10倍投资机会，AI推理Token布局",
+        "光模块下投资还在早期，分享如何提前布局"
       ],
       "diagnostics": [
         {
@@ -97,7 +97,7 @@
           "url": "https://www.xiaohongshu.com/user/profile/632ea1e700000000230381cb",
           "ok": true,
           "status": 200,
-          "length": 944961,
+          "length": 945767,
           "error": null
         },
         {
@@ -105,7 +105,7 @@
           "url": "https://r.jina.ai/http://www.xiaohongshu.com/user/profile/632ea1e700000000230381cb",
           "ok": true,
           "status": 200,
-          "length": 299,
+          "length": 0,
           "error": null
         }
       ]

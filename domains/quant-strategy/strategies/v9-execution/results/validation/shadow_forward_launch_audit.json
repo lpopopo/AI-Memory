@@ -1,0 +1,23 @@
+{
+  "formal_forward_authorized": false,
+  "blockers": [],
+  "warnings": [
+    "only 18 reliable PIT events; Rule E statistical promotion blocked",
+    "git worktree is dirty; formal freeze should use a clean commit"
+  ],
+  "prerequisites": {
+    "venv_python_exists": true,
+    "freeze_script_exists": true,
+    "research_monitors_exist": true,
+    "frozen_dir_exists": true,
+    "forward_dir_exists": true,
+    "git_dirty": true,
+    "events": {
+      "all_events": 50,
+      "reliable_point_in_time": 18,
+      "gate_50_met": false,
+      "source_health": "partial"
+    }
+  },
+  "next_action": "After clean commit, freeze then init_forward_accounts and run append-only forward."
+}

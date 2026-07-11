@@ -1,6 +1,6 @@
 # 2026-07-07 Strategy Todos
 
-Run time: 2026-07-07 23:17 Asia/Shanghai. Scope: intraday execution prep and full watchlist scan.
+Run time: 2026-07-08 09:36 Asia/Shanghai. Scope: formal post-close audit.
 
 ## Priority 0 - broker facts and stop execution
 
@@ -10,11 +10,11 @@ Run time: 2026-07-07 23:17 Asia/Shanghai. Scope: intraday execution prep and ful
 
 ## Priority 1 - portfolio reconciliation
 
-4. Reconcile broker cash after MU sale and any additional stop executions. Working intraday NAV estimate is `USD 5,905.73` only if GLW/DRAM/MXL/MRVL remain open.
+4. Reconcile broker cash after MU sale and any additional stop executions. Working formal NAV estimate is `USD 5,935.53` only if GLW/DRAM/MXL/MRVL remain open.
 5. Verify platform fees, FX spread, tax and settlement effects.
 
 ## Priority 2 - next analysis
 
-6. At 04:15 post-close, rerun completed-close audit with official VIX/VIX3M and completed daily bars.
-7. If AI-capex bounces, explicitly label it as rebound risk-reduction window unless all stops are closed and V9/promoted rules authorize a new entry.
+6. Treat AI-capex rebounds as risk-reduction windows unless all stops are closed and a promoted/frozen rule set explicitly authorizes a new entry.
+7. Recheck AMD `492`, WDC `500`, and STX `835` replay risk lines on the next completed close; STX is currently below `835` and should remain `reduce-review` in replay context.
 8. Independently verify the 20:30 monitor gaps: CNBC/SemiAnalysis Kyber source, NVIDIA roadmap, COHR/LITE order or margin evidence, and institutional official pages.

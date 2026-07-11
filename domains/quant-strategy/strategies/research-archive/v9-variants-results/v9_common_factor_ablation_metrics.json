@@ -1,0 +1,43 @@
+{
+  "status": "frozen_parameter_ablation_not_promotion_evidence",
+  "period": [
+    "2026-04-27",
+    "2026-07-02"
+  ],
+  "unchanged_parameters": {
+    "score_threshold": 70.0,
+    "tech_weight": 1.0,
+    "score_cap_scale": 1.0
+  },
+  "single_change": "aggregate AI-capex subthemes and sum all positions in each common-factor bucket",
+  "legacy": {
+    "metrics": {
+      "total_return": 0.04189371168579048,
+      "max_drawdown": -0.04120563275051481,
+      "annualized_sharpe": 1.6947791224965332
+    },
+    "diagnostics": {
+      "stock_invested_days": 0,
+      "symbols_held": [],
+      "entry_count": 0
+    }
+  },
+  "optimized": {
+    "metrics": {
+      "total_return": 0.04189371168579048,
+      "max_drawdown": -0.04120563275051481,
+      "annualized_sharpe": 1.6947791224965332
+    },
+    "diagnostics": {
+      "stock_invested_days": 0,
+      "symbols_held": [],
+      "entry_count": 0
+    }
+  },
+  "delta": {
+    "total_return": 0.0,
+    "max_drawdown": 0.0,
+    "entry_count": 0
+  },
+  "interpretation": "No historical performance delta is expected when both frozen runs have zero information-stock entries. The change repairs future capacity accounting and is validated by unit tests, not by claiming historical alpha."
+}

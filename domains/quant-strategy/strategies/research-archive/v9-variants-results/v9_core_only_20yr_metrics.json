@@ -1,0 +1,52 @@
+{
+  "status": "v9_engine_core_only_not_information_alpha",
+  "period": [
+    "2006-01-03",
+    "2025-12-30"
+  ],
+  "warmup_start": "2005-01-01",
+  "data_source": "Yahoo Finance via yfinance auto_adjust=True",
+  "information_event_policy": "No historical V9 events were fabricated; the local event archive begins in 2026.",
+  "runs": {
+    "V8_equivalent_full_core": {
+      "metrics": {
+        "total_return": 4.954869835458609,
+        "max_drawdown": -0.21665579203597418,
+        "annualized_sharpe": 0.7667253869912672,
+        "calmar": 22.869777857754606,
+        "daily_win_rate": 0.48339630145158086,
+        "cagr": 0.0935240981176122
+      },
+      "information_entries": 0,
+      "information_contribution": 0.0,
+      "execution": "Strict T+1 Open"
+    },
+    "V9_fallback_core_70pct": {
+      "metrics": {
+        "total_return": 2.7067268065802184,
+        "max_drawdown": -0.15673059476407536,
+        "annualized_sharpe": 0.7735376148236865,
+        "calmar": 17.269932591365592,
+        "daily_win_rate": 0.48240206800556773,
+        "cagr": 0.06785370049617678
+      },
+      "information_entries": 0,
+      "information_contribution": 0.0,
+      "execution": "Strict T+1 Open"
+    },
+    "static_SPY_QQQ_50_50": {
+      "metrics": {
+        "total_return": 10.948422770289328,
+        "max_drawdown": -0.5366132123227865,
+        "annualized_sharpe": 0.7146909028364763,
+        "calmar": 20.402819980704415,
+        "daily_win_rate": 0.5587591966593756,
+        "cagr": 0.13235694964891676
+      },
+      "information_entries": 0,
+      "information_contribution": 0.0,
+      "execution": "buy-and-hold comparator"
+    }
+  },
+  "limitation": "This validates only the V9 fallback/core portfolio mechanics over 20 years. It cannot validate V9/V9.1 information-stock alpha without a dated 2006-2025 event archive."
+}

@@ -1,0 +1,12 @@
+{
+  "path": "datasets\\data_factor\\approx_winner_loser_legs.csv",
+  "rows": 227,
+  "start": "2007-02-05",
+  "end": "2025-12-15",
+  "mean_WML_approx": -0.005305567850284128,
+  "mean_winner_leg": 0.008991213392006309,
+  "mean_loser_leg": 0.014296781242290434,
+  "source_close": "datasets\\data_point_in_time\\adjusted_close.csv",
+  "decision_grade": false,
+  "note": "Equal-weight decile approximation from cached prices; not Ken French CRSP WML."
+}

@@ -1,0 +1,273 @@
+{
+  "status": "development_selected_frozen_test_research_only",
+  "periods": {
+    "development": [
+      "2010-01-01",
+      "2018-12-31"
+    ],
+    "frozen_test": [
+      "2019-01-01",
+      "2025-12-31"
+    ],
+    "forward_diagnostic": [
+      "2026-01-01",
+      "2026-07-02"
+    ]
+  },
+  "components": [
+    "market_momentum",
+    "market_volatility",
+    "volatility_term_structure",
+    "equal_weight_breadth",
+    "smallcap_breadth",
+    "junk_bond_demand",
+    "safe_haven_demand"
+  ],
+  "put_call": "optional_not_used_in_long_history_due_to_incomplete_free_official_series",
+  "cnn": "external_validation_only_not_an_input",
+  "variants": {
+    "v8": {
+      "metrics": {
+        "development_2010_2018": {
+          "final_value": 2.4166450120642584,
+          "cagr": 0.1031493857834378,
+          "max_drawdown": -0.2263910183777682,
+          "volatility": 0.1245079006093761,
+          "sharpe": 0.8517213864190635,
+          "sortino": 0.9990925951348008
+        },
+        "frozen_2019_2025": {
+          "final_value": 2.5104843217431028,
+          "cagr": 0.14063667511937283,
+          "max_drawdown": -0.22761777096162084,
+          "volatility": 0.14927244481916901,
+          "sharpe": 0.9585133049975941,
+          "sortino": 1.12531319769632
+        },
+        "forward_2026_to_date": {
+          "final_value": 1.001135558630096,
+          "cagr": 0.0022928315662025245,
+          "max_drawdown": -0.1031813559814978,
+          "volatility": 0.1637298147563742,
+          "sharpe": 0.09538098071815009,
+          "sortino": 0.13280259096279937
+        }
+      },
+      "diagnostics": {
+        "total_turnover": 24.90656029172021,
+        "execution_count": 45,
+        "extreme_fear_days": 297
+      },
+      "stress_windows": {
+        "covid_2020": {
+          "final_value": 1.219688981206263,
+          "cagr": 0.22052108230072465,
+          "max_drawdown": -0.1864520610784033,
+          "volatility": 0.22283924130858965,
+          "sharpe": 1.0033866226619972,
+          "sortino": 1.1154933839804728
+        },
+        "inflation_2022": {
+          "final_value": 0.8197428773604839,
+          "cagr": -0.1821730996037615,
+          "max_drawdown": -0.19096019274614573,
+          "volatility": 0.0910593594983271,
+          "sharpe": -2.1539213582151806,
+          "sortino": -1.8835577946708437
+        }
+      }
+    },
+    "fear_raw": {
+      "metrics": {
+        "development_2010_2018": {
+          "final_value": 2.435792535269743,
+          "cagr": 0.10411839797829758,
+          "max_drawdown": -0.2229327354720333,
+          "volatility": 0.12654443275518443,
+          "sharpe": 0.8469987963045416,
+          "sortino": 0.9937367644474026
+        },
+        "frozen_2019_2025": {
+          "final_value": 2.50632064969505,
+          "cagr": 0.14036604600395908,
+          "max_drawdown": -0.22761777096162028,
+          "volatility": 0.15264236286235763,
+          "sharpe": 0.9391673342212769,
+          "sortino": 1.0911546103924517
+        },
+        "forward_2026_to_date": {
+          "final_value": 1.0011355586300954,
+          "cagr": 0.0022928315662011922,
+          "max_drawdown": -0.10318135598149814,
+          "volatility": 0.16372981475637427,
+          "sharpe": 0.09538098071814866,
+          "sortino": 0.13280259096279798
+        }
+      },
+      "diagnostics": {
+        "total_turnover": 29.938456919435176,
+        "execution_count": 95,
+        "extreme_fear_days": 297
+      },
+      "stress_windows": {
+        "covid_2020": {
+          "final_value": 1.207878569124258,
+          "cagr": 0.20866222527794798,
+          "max_drawdown": -0.20658240073656342,
+          "volatility": 0.23770396866180898,
+          "sharpe": 0.9142170039305074,
+          "sortino": 1.007395827273333
+        },
+        "inflation_2022": {
+          "final_value": 0.8197428773604846,
+          "cagr": -0.18217309960376082,
+          "max_drawdown": -0.19096019274614506,
+          "volatility": 0.09105935949832712,
+          "sharpe": -2.1539213582151753,
+          "sortino": -1.8835577946708422
+        }
+      }
+    },
+    "fear_confirmed": {
+      "metrics": {
+        "development_2010_2018": {
+          "final_value": 2.4232408736696285,
+          "cagr": 0.10348395516680275,
+          "max_drawdown": -0.2184955868974724,
+          "volatility": 0.12484760169239117,
+          "sharpe": 0.8521760326593542,
+          "sortino": 1.0100043698338794
+        },
+        "frozen_2019_2025": {
+          "final_value": 2.542929651402511,
+          "cagr": 0.14273246919402394,
+          "max_drawdown": -0.22761777096162117,
+          "volatility": 0.14950025752662605,
+          "sharpe": 0.969594132507127,
+          "sortino": 1.1406941515513678
+        },
+        "forward_2026_to_date": {
+          "final_value": 1.0011355586300952,
+          "cagr": 0.002292831566200748,
+          "max_drawdown": -0.10318135598149836,
+          "volatility": 0.16372981475637413,
+          "sharpe": 0.09538098071813772,
+          "sortino": 0.13280259096278219
+        }
+      },
+      "diagnostics": {
+        "total_turnover": 31.621705828475267,
+        "execution_count": 111,
+        "extreme_fear_days": 297
+      },
+      "stress_windows": {
+        "covid_2020": {
+          "final_value": 1.2206766717730066,
+          "cagr": 0.22151284218077305,
+          "max_drawdown": -0.18645206107840273,
+          "volatility": 0.22356894951311865,
+          "sharpe": 1.004469874854975,
+          "sortino": 1.1294252753976326
+        },
+        "inflation_2022": {
+          "final_value": 0.8197428773604839,
+          "cagr": -0.1821730996037615,
+          "max_drawdown": -0.19096019274614562,
+          "volatility": 0.0910593594983271,
+          "sharpe": -2.1539213582151793,
+          "sortino": -1.8835577946708464
+        }
+      }
+    },
+    "fear_confirmed_greed": {
+      "metrics": {
+        "development_2010_2018": {
+          "final_value": 2.3886813684604946,
+          "cagr": 0.10172187864410498,
+          "max_drawdown": -0.2163399420070401,
+          "volatility": 0.12453370841112439,
+          "sharpe": 0.8411598113968246,
+          "sortino": 0.9960721981016492
+        },
+        "frozen_2019_2025": {
+          "final_value": 2.5304882750157973,
+          "cagr": 0.14193154704448174,
+          "max_drawdown": -0.227185464025618,
+          "volatility": 0.14842587310299507,
+          "sharpe": 0.9707813004926898,
+          "sortino": 1.1460828647114096
+        },
+        "forward_2026_to_date": {
+          "final_value": 1.0011355586300967,
+          "cagr": 0.0022928315662038568,
+          "max_drawdown": -0.10318135598149736,
+          "volatility": 0.16372981475637396,
+          "sharpe": 0.09538098071816675,
+          "sortino": 0.1328025909628228
+        }
+      },
+      "diagnostics": {
+        "total_turnover": 38.806007765336716,
+        "execution_count": 181,
+        "extreme_fear_days": 297
+      },
+      "stress_windows": {
+        "covid_2020": {
+          "final_value": 1.2095990279931794,
+          "cagr": 0.2103897165837807,
+          "max_drawdown": -0.18645096603197586,
+          "volatility": 0.22058431332929096,
+          "sharpe": 0.9736467744133273,
+          "sortino": 1.0962101822705796
+        },
+        "inflation_2022": {
+          "final_value": 0.820149964299844,
+          "cagr": -0.18176218157056456,
+          "max_drawdown": -0.1905584209856932,
+          "volatility": 0.09082082559799962,
+          "sharpe": -2.1543114911189307,
+          "sortino": -1.88569840969851
+        }
+      }
+    }
+  },
+  "development_ranking": [
+    "fear_confirmed",
+    "fear_raw",
+    "fear_confirmed_greed"
+  ],
+  "selected_before_frozen_test": "fear_confirmed",
+  "selected_cost_sensitivity": {
+    "0.001": {
+      "final_value": 2.542929651402511,
+      "cagr": 0.14273246919402394,
+      "max_drawdown": -0.22761777096162117,
+      "volatility": 0.14950025752662605,
+      "sharpe": 0.969594132507127,
+      "sortino": 1.1406941515513678
+    },
+    "0.002": {
+      "final_value": 2.5110693452839223,
+      "cagr": 0.14067466947783158,
+      "max_drawdown": -0.23106434247155105,
+      "volatility": 0.14948673632781853,
+      "sharpe": 0.9575798832624343,
+      "sortino": 1.127376284662337
+    },
+    "0.005": {
+      "final_value": 2.417740484165207,
+      "cagr": 0.13451522242522418,
+      "max_drawdown": -0.24132616057304912,
+      "volatility": 0.1494944869296207,
+      "sharpe": 0.9212262699344053,
+      "sortino": 1.0865270390899893
+    }
+  },
+  "latest": {
+    "date": "2026-07-02",
+    "score": 64.39909297052154,
+    "regime": "greed"
+  },
+  "promotion_allowed": false,
+  "promotion_reason": "frozen-test uplift is small, drawdown is unchanged, and the advantage disappears at higher transaction costs"
+}
