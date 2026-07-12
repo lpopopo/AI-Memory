@@ -28,7 +28,7 @@
 
 ## 对当前策略的映射
 
-- **可立即纳入日度监控：** 在 `factor_macro_exposure` 下增加 `climate_resource_input_stress`，仅允许 `low/elevated/high/unavailable`，并必须保存 `source/as_of`。`elevated/high` 只触发共同因子复核；不能自行改变 market fear gate 或生成买卖指令。
+- **可立即纳入日度监控：** 在 `factor_macro_exposure` 下增加 `climate_resource_input_stress`，仅允许 `low/elevated/high/unavailable`。记录约束类别、受影响地域/供应链、AI-capex 直接关联、严重度、独立来源数、`first_visible/source/as_of/expires_at`；无两份独立日期来源时固定为 `unavailable`。`elevated/high` 只触发共同因子复核；不能自行改变 market fear gate 或生成买卖指令。
 - **AI 基建/存储/光互连：** 同时检查电力、冷却/水、LNG/物流、铜/铝等输入约束，和客户 capex、可计费利用率、OCF/FCF、融资期限、相对强度。它们常为同一 AI-capex 因子，而不是独立分散。
 - **AI 应用：** 气候输入压力不能外推为应用层受益或受损；仍以收入、留存、单位经济和价格确认作为主证据。
 - **市场风险：** `market fear gate`、完成收盘趋势和既有集中度上限优先。`flow_fragility`、`AI_input_cost_pressure`、`energy_logistics_lag` 与新字段只提供解释和候选假设。
@@ -37,7 +37,7 @@
 
 1. 日度记录新增字段必须保存 `value/source/as_of/availability`；无独立证据时固定为 `unavailable`，不可主观补分。
 2. 建立独立核验的电网/水资源/LNG/物流/关键材料约束事件表，冻结 first-visible 时间，禁止以后验天气结果回填事件。
-3. 在 Overlay F 中比较“Fear Gate + trend + flow fragility”基线与新增诊断；仅在已验证的约束、`flow_fragility >= elevated` 或主题重叠高、且趋势未确认时，研究 25%-50% 新增仓降幅。
+3. 在 Overlay F 中比较“Fear Gate + trend + flow fragility”基线与新增诊断：趋势未确认时基线授权仓位为零，不测试减仓；趋势已确认时，`elevated` 压力配合 elevated/high `flow_fragility` 或高主题重叠才测试 25% 新增仓折减，`high` 压力测试 50% 折减。
 4. 以 QQQ/SPY、SMH/QQQ、存储、光互连、能源/电力、工业金属、VIX/VIX3M、HYG/LQD 和收益率的 1/5/20/60 日表现、MAE、错失赢家率、回撤、现金拖累与换手为结果指标。
 
 ## 记忆库更新清单
@@ -52,4 +52,5 @@
 
 1. 为 H14 选取可追溯且独立的约束事件，而非只使用机构观点或天气叙事。
 2. 检验 H14 是否提供 Fear Gate、趋势、`flow_fragility`、H11 输入压力字段之外的增量预警；没有增量即拒绝。
+3. 2026-07-12 审核修复：已将 Overlay F 从“趋势未确认时的无效减仓测试”改为“对基线已授权仓位的条件折减”，并冻结等级、来源独立性与有效期口径；仍未改变正式 V9 规则。
 3. 下一周继续以本次 checker 完成时间 `2026-07-12T02:05:31.859Z` 为默认起点，并保留四类访问诊断。

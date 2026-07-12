@@ -450,11 +450,12 @@ Man Group's 2026-07-07 discussion of a possible strong El Niño treats heat, dro
 
 Proposed use:
 
-- Add `climate_resource_input_stress` under `factor_macro_exposure` only from dated, independently verifiable public evidence of active power, water, LNG/logistics or critical-material constraints; otherwise record `unavailable`.
-- Use it to request a common-factor and input-cost review before fresh AI-capex adds when it agrees with `flow_fragility`, concentration or weak trend confirmation. The Fear Gate and completed-close price confirmation remain primary.
+- Add `climate_resource_input_stress` under `factor_macro_exposure` only from dated, independently verifiable public evidence of active power, water, LNG/logistics or critical-material constraints; otherwise record `unavailable`. Use the shared evidence, severity, aggregation and expiry contract in `references/institutional-market-research-framework.md`.
+- Use it to request a common-factor and input-cost review before fresh AI-capex adds when it agrees with `flow_fragility` or concentration. The Fear Gate and completed-close price confirmation remain primary; an unconfirmed trend permits no baseline add and therefore no overlay size test.
 
 Validation needed:
 
 - Build point-in-time rows for independently verified constraint events, preserving first-visible time and source; exclude hindsight relabeling of weather outcomes.
 - Compare 1/5/20/60-day QQQ/SPY, SMH/QQQ, memory/storage, optical/interconnect, energy/power, industrial-metal, VIX/VIX3M, HYG/LQD and yield responses.
 - Test incremental warning value over the Fear Gate, trend-aligned entry, flow fragility, `AI_input_cost_pressure` and `energy_logistics_lag`; reject the hypothesis if it merely restates market prices or produces excessive cash drag.
+- If testing a sizing overlay, apply a 25% reduction only to a baseline-authorized add under `elevated` stress and a 50% reduction only under `high` stress, each requiring elevated/high flow fragility or high theme overlap; report trigger counts and counterfactual size separately.

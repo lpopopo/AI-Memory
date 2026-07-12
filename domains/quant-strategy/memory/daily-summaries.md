@@ -3,6 +3,9 @@
 - **Formal shadow forward initialized:** Clean freeze `forward_eligible=true`; genesis accounts ready; first executable session **2026-07-13** (no historical backfill). See [forward/PIT gap](daily/2026-07-12-formal-forward-pit-gap.md) and `strategies/v9-execution/validation/formal-forward-monday-runbook.md`.
 - **PIT event gate unchanged:** 18 reliable / 50 required; 31 retrospective items remain ineligible. Added gap analysis plus `append_shadow_event.py` for live append-only observations.
 - **四大机构周度深度学习：** 以 `2026-07-05T02:13:19.417Z` 为起点运行并读取机构 checker 的 Markdown/JSON。AQR、Citadel Securities 和 GMO 列表/详情已核验且窗口后无新增；Citadel Reader 官方域名通道可读，3 个 archive 页面仅为日期不可验证候选。Man 新增 2026-07-07 气候—资源—AI 输入压力文章；已形成 H14、日度诊断字段与 Overlay F，均为研究/回测用途，未改动 `decisions.md`。详见 [周报](daily/2026-07-12-institutional-research-weekly.md)。
+- **H14 审核修复：** Overlay F 仅对 Fear Gate 与趋势已授权的新开仓测试 25%/50% 条件折减；趋势未确认时维持零授权。补齐气候资源压力的独立来源、聚合分级、冲突处理与失效规则，仍属研究层且未改变 V9 正式规则。
+- **QQQM 纳入自选：** 用户将 QQQM 加入正式自选与全量扫描，定位为 Nasdaq-100 指数核心的低单价执行替代品；QQQ 仍是 V9 正式信号符号，QQQM 不构成买入授权。
+- **账户状态清理：** 用户确认仓库中的现金基准与 GLW `2`、MXL `6`、MRVL `4`、QCOM `2` 持仓，DRAM 已卖出，且没有挂单。GLW/MXL/MRVL 旧短线止损建议从未提交并已被长期重分类覆盖，不再触发 unresolved-stop veto；其他市场与集中度门槛不变。
 
 ## 2026-07-11
 

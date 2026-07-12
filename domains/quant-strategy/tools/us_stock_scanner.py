@@ -34,7 +34,9 @@ DEFAULT_WATCHLIST_TICKERS = [
     # 10. 光纤与网络通信
     "GLW", "NOK",
     # 11. PCB与电子制造
-    "TTMI"
+    "TTMI",
+    # 12. 纳斯达克100指数核心的低单价执行替代品
+    "QQQM"
 ]
 
 WATCHLIST_PATH = Path(

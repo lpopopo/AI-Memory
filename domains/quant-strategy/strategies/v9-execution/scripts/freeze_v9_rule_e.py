@@ -60,6 +60,7 @@ def main():
         "scripts/v9_information_strategy.py",
         "scripts/v9_evaluation.py",
         "scripts/v9_data.py",
+        "scripts/download_v9_data.py",
         "scripts/v9_research_monitors.py",
         "scripts/shadow_v9_engine.py",
         "scripts/run_v9_shadow.py",
@@ -67,7 +68,8 @@ def main():
         "scripts/init_forward_accounts.py",
         "scripts/test_shadow_engine.py",
         "scripts/test_shadow_runner.py",
-        "scripts/test_manual_lifecycle.py"
+        "scripts/test_manual_lifecycle.py",
+        "../../references/user-selected-watchlist.json"
     ]
     file_hashes = {name: hash_file(ROOT / name) for name in code_files}
     if any(not value for value in file_hashes.values()):

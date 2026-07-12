@@ -155,19 +155,22 @@ Question:
 
 Inputs:
 
-- Dated public records for grid constraints, water restrictions, LNG/logistics interruptions, or critical-material disruption; each row must retain `value/source/as_of/availability`.
+- Dated public records for grid constraints, water restrictions, LNG/logistics interruptions, or critical-material disruption. Each row must meet the shared classification contract in `institutional-market-research-framework.md`, including independent-source count, `first_visible`, `as_of`, and `expires_at`.
 - Energy, power, industrial-metal and freight proxies where data are available; QQQ/SPY, SMH/QQQ, memory/storage and optical/interconnect relative returns; VIX/VIX3M, HYG/LQD and yields.
 
 Backtest behavior:
 
 - Start as diagnostic only. Freeze first-visible time and do not backfill a narrative based on later outcomes.
-- Test a 25%-50% fresh-add reduction only when the stress diagnostic is independently verified, `flow_fragility >= elevated` or `theme_overlap = high`, and trend-aligned entry is not confirmed.
+- Baseline authorization is zero when the Fear Gate or trend-aligned entry is not confirmed. Do not score a hypothetical size reduction in those cases.
+- Test a 25% reduction from the baseline-authorized fresh-add size only when trend-aligned entry is confirmed, climate-resource stress is `elevated`, and either flow fragility is `elevated`/`high` or theme overlap is `high`.
+- Test a 50% reduction from the baseline-authorized fresh-add size only when trend-aligned entry is confirmed, climate-resource stress is `high`, and either flow fragility is `elevated`/`high` or theme overlap is `high`.
 - Do not force exits or infer a commodity direction from climate commentary alone.
 
 Metrics:
 
 - Incremental false-add reduction versus Fear Gate + trend + flow-fragility baseline.
 - 1/5/20/60-day post-event return, maximum adverse excursion, missed-winner rate, max drawdown, cash drag and turnover.
+- Report the number of baseline-authorized observations, `elevated` and `high` triggers separately, and the counterfactual authorized size. Do not pool unavailable or expired events with verified triggers.
 
 ## Validation Phases
 

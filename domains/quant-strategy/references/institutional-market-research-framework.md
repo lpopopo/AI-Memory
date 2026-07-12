@@ -333,9 +333,18 @@ Reusable framework:
 
 Strategy mapping:
 
-- Add `climate_resource_input_stress` as a diagnostic subfield of `factor_macro_exposure`; record `low`, `elevated`, `high`, or `unavailable`, plus source and as-of date.
+- Add `climate_resource_input_stress` as a diagnostic subfield of `factor_macro_exposure`; record `low`, `elevated`, `high`, or `unavailable`, plus source and as-of date. Use the reproducible classification below rather than an analyst's narrative judgement.
 - When `elevated` or `high`, review AI infrastructure, memory/storage and optical/interconnect together for common exposure to power, cooling, water, copper/aluminium and financing-cost pressure; do not convert the flag into a directional commodity or equity signal.
 - Keep the market fear gate, completed-close trend confirmation, and existing concentration caps primary. Any sizing rule must first pass point-in-time replay.
+
+Classification and evidence contract:
+
+- Each event row must retain: constraint category, affected geography/supply chain, direct AI-capex linkage, severity (`limited`/`material`/`severe`), independently sourced evidence count, `first_visible`, `as_of`, and `expires_at`. Republishes, syndications and quotations of the same underlying source count as one source.
+- `unavailable`: no active event has at least two independent, dated public sources. Absence of a headline is not evidence for `low`.
+- `low`: one verified, limited constraint category with at least two independent sources and a plausible, but indirect or geographically limited, link to the monitored AI-capex supply chain.
+- `elevated`: either one verified material constraint with a direct AI-capex/supply-chain link, or two or more concurrent verified `low` categories affecting that chain.
+- `high`: two or more concurrent verified material constraints, or one severe directly linked constraint, with at least two independent sources for every contributing category.
+- An event expires on its stated end date; if no end date is stated, a `low` event expires after 10 trading days and an `elevated`/`high` event after 5 trading days unless a newly dated source refreshes it. Conflicting credible evidence resolves to the lower level and is recorded in the event row.
 
 ## Proposed Strategy Improvements
 
