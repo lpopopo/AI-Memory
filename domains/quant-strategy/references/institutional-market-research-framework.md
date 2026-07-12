@@ -319,6 +319,24 @@ Strategy mapping:
 - Add drawdown-overlap diagnostics to backtests: how often current sleeves lose money together, especially during inflation shocks, volatility collapses, and growth-to-value rotations.
 - Maintain AI optical/interconnect as a high-priority bottleneck theme, but require price/volume leadership and crowding controls before adding exposure.
 
+### Man Group: Climate-Resource / AI-Input Stress (2026-07-07)
+
+Source page:
+
+- https://www.man.com/insights/views-from-the-floor-2026-7-july
+
+Reusable framework:
+
+- Climate volatility can be a correlated input shock rather than an isolated weather headline: heat and drought can jointly raise cooling load, constrain water-intensive power generation and metals supply, and add food/LNG/fertiliser pressure.
+- AI data centres add electricity and cooling-water demand to that system. This is a risk-transmission framework, not evidence that a particular weather event will move a particular stock.
+- The useful distinction is between a verified physical constraint (power, water, LNG, logistics or metal disruption) and a narrative-only climate warning. The latter remains `unavailable`/watch-only until independently supported by public data.
+
+Strategy mapping:
+
+- Add `climate_resource_input_stress` as a diagnostic subfield of `factor_macro_exposure`; record `low`, `elevated`, `high`, or `unavailable`, plus source and as-of date.
+- When `elevated` or `high`, review AI infrastructure, memory/storage and optical/interconnect together for common exposure to power, cooling, water, copper/aluminium and financing-cost pressure; do not convert the flag into a directional commodity or equity signal.
+- Keep the market fear gate, completed-close trend confirmation, and existing concentration caps primary. Any sizing rule must first pass point-in-time replay.
+
 ## Proposed Strategy Improvements
 
 ### 1. Trend-Aligned Entry Discipline

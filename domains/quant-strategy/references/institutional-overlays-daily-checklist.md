@@ -93,12 +93,14 @@ Weekly or during regime transitions, record:
 - Quality exposure: can protect in some regimes but may lag speculative catch-up rallies.
 - Theme overlap: multiple stocks can express the same AI capex bet.
 - Sleeve drawdown overlap: value sleeve and momentum sleeve may fail together if both are exposed to the same macro shock.
+- Climate-resource input stress: record `low`, `elevated`, `high`, or `unavailable` only when a dated public source supports an active power, water, LNG/logistics, or critical-material constraint; retain `source` and `as_of`.
 
 Daily action guide:
 
 - If `momentum_reversal_risk = high`, avoid adding lagging defensive winners just as risk appetite returns.
 - If `growth_duration_risk = high`, reduce aggressive AI adds before CPI/Fed/rate shocks.
 - If `theme_overlap = high`, prefer trimming the weakest duplicate rather than adding a new related name.
+- If `climate_resource_input_stress >= elevated`, review AI infrastructure, storage and optical/interconnect as one common-input cluster; it is an explanation/review flag, not an automatic risk-state or trade trigger.
 
 ## 5. AI Bottleneck Watch Check
 

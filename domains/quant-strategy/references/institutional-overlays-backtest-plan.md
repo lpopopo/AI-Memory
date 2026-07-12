@@ -147,6 +147,28 @@ Metrics:
 - Max drawdown and 20-day post-entry return during 2021-2022, 2024-2026 AI concentration, and 2026-06-05 style drawdowns.
 - Cash drag and turnover impact.
 
+### Overlay F: Climate-Resource Input Stress
+
+Question:
+
+- Does a point-in-time, independently verifiable power/water/energy/logistics/materials stress diagnostic improve AI-infrastructure add discipline beyond the Fear Gate, trend and existing flow-fragility overlays?
+
+Inputs:
+
+- Dated public records for grid constraints, water restrictions, LNG/logistics interruptions, or critical-material disruption; each row must retain `value/source/as_of/availability`.
+- Energy, power, industrial-metal and freight proxies where data are available; QQQ/SPY, SMH/QQQ, memory/storage and optical/interconnect relative returns; VIX/VIX3M, HYG/LQD and yields.
+
+Backtest behavior:
+
+- Start as diagnostic only. Freeze first-visible time and do not backfill a narrative based on later outcomes.
+- Test a 25%-50% fresh-add reduction only when the stress diagnostic is independently verified, `flow_fragility >= elevated` or `theme_overlap = high`, and trend-aligned entry is not confirmed.
+- Do not force exits or infer a commodity direction from climate commentary alone.
+
+Metrics:
+
+- Incremental false-add reduction versus Fear Gate + trend + flow-fragility baseline.
+- 1/5/20/60-day post-event return, maximum adverse excursion, missed-winner rate, max drawdown, cash drag and turnover.
+
 ## Validation Phases
 
 ### Phase 1: Diagnostic Only
