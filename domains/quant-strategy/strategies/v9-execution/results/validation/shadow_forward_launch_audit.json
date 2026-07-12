@@ -2,7 +2,8 @@
   "formal_forward_authorized": true,
   "blockers": [],
   "warnings": [
-    "only 18 reliable PIT events; Rule E statistical promotion blocked"
+    "only 18 reliable PIT events; Rule E statistical promotion blocked",
+    "git worktree is dirty now; do not re-freeze until committed"
   ],
   "prerequisites": {
     "venv_python_exists": true,
@@ -12,7 +13,7 @@
     "forward_dir_exists": true,
     "forward_eligible": true,
     "dirty_worktree_at_freeze": false,
-    "git_dirty_now": false,
+    "git_dirty_now": true,
     "forward_initialized": true,
     "forward_daily_states": 0,
     "first_executable_as_of": "2026-07-13",
