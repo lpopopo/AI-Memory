@@ -17,12 +17,16 @@ Do **not** backfill `2026-07-10` or any earlier date.
 cd D:\code\AI-Memory\domains\quant-strategy\strategies\v9-execution
 $py = "D:\code\AI-Memory\domains\quant-strategy\.venv\Scripts\python.exe"
 
+# 0) Preflight (freeze hashes, genesis, data freshness vs as-of)
+& $py scripts\preflight_formal_forward.py 2026-07-13
+
 # 1) Refresh completed bars used by diagnostics / engine
 & $py scripts\download_v9_data.py
 # or, if only breadth proxies need refresh:
 # & $py scripts\enrich_v9_diagnostic_symbols.py
 
 # 2) Optional: append any newly observed information events BEFORE the day run
+# Copy validation/event-append-template.json, fill real fields, then:
 # & $py scripts\append_shadow_event.py --forward --event-json path\to\event.json
 
 # 3) Advance formal forward exactly one session

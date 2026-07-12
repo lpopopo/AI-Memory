@@ -1,0 +1,17 @@
+{
+  "event_id": "xhs-EXAMPLE-SYMBOL-yyyymmdd",
+  "source": "xiaohongshu",
+  "author": "AUTHOR_HANDLE",
+  "post_id": "POST_ID",
+  "published_at": "2026-07-13T12:00:00+08:00",
+  "first_seen_at": "2026-07-13T20:15:00+08:00",
+  "content_summary": "Paste the observed summary text exactly. content_hash is computed from this field.",
+  "theme": "ai_interconnect",
+  "symbols": ["EXAMPLE"],
+  "evidence_level": "high",
+  "primary_validation": "partial",
+  "source_completeness": 18,
+  "thesis_novelty": 12,
+  "fundamental_validation": 10,
+  "crowding_penalty": 8
+}

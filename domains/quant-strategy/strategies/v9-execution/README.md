@@ -41,6 +41,27 @@ Research monitors (`scripts/v9_research_monitors.py`) feed daily/shadow
 rails, Rule E, stops, or 70/30 ceilings. Formal forward requires a clean
 committed freeze (`forward_eligible=true`).
 
+## Formal append-only forward
+
+First executable completed session after the current freeze: see
+[validation/formal-forward-monday-runbook.md](validation/formal-forward-monday-runbook.md).
+PIT event gate status and what will **not** close the 18/50 gap:
+[validation/pit-event-gap-analysis.md](validation/pit-event-gap-analysis.md).
+
+```powershell
+$py = 'D:\code\AI-Memory\domains\quant-strategy\.venv\Scripts\python.exe'
+& $py scripts/preflight_formal_forward.py 2026-07-13
+& $py scripts/download_v9_data.py
+# Optional new observation (copy validation/event-append-template.json first):
+# & $py scripts/append_shadow_event.py --forward --event-json path\to\event.json
+& $py scripts/run_v9_shadow.py --as-of 2026-07-13
+& $py scripts/report_pit_event_gap.py
+& $py scripts/audit_shadow_forward_launch.py
+```
+
+Do not backfill dates at or before freeze time. Do not re-freeze after daily
+forward states exist unless starting a new versioned genesis.
+
 ## Execution workflow
 
 All signals use completed bars and are subject to human review. Nothing here

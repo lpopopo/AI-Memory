@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "as_of": null,
+  "forward_eligible": true,
+  "frozen_at_utc": "2026-07-11T16:25:12Z",
+  "data_v9_last_date": "2026-07-10",
+  "forward_initial_states": 4,
+  "forward_daily_states": 0,
+  "blockers": [],
+  "warnings": [
+    "git worktree dirty; formal forward can still run on frozen hashes, but do not re-freeze"
+  ]
+}

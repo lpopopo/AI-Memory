@@ -42,9 +42,17 @@ has no standalone execution command.
 Run the next completed U.S. trading session only after closing data is final:
 
 ```powershell
+..\..\.venv\Scripts\python.exe scripts\preflight_formal_forward.py YYYY-MM-DD
+..\..\.venv\Scripts\python.exe scripts\download_v9_data.py
 ..\..\.venv\Scripts\python.exe scripts\run_v9_daily_execution.py
 ..\..\.venv\Scripts\python.exe scripts\run_v9_shadow.py --as-of YYYY-MM-DD
 ```
+
+For the first formal forward day checklist, event-append template and PIT gap
+rules, see `validation/formal-forward-monday-runbook.md`,
+`validation/event-append-template.json` and `validation/pit-event-gap-analysis.md`.
+Append newly observed events with `scripts/append_shadow_event.py --forward`
+(never edit the frozen baseline snapshot).
 
 Rules:
 
