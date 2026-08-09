@@ -10,3 +10,7 @@ __pycache__/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Ephemeral runtime and browser-capture artifacts
+*.log
+domains/quant-strategy/work/*-raw.html

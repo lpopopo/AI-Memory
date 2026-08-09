@@ -311,6 +311,11 @@ Validation needed:
 - Replay the 2026-07-10 event over 1/5/20/60 days versus QQQ/SMH/XSD/HYG/LQD, semiconductor equipment, memory/storage, optical/interconnect, cloud infrastructure, cybersecurity/software-efficiency, SaaS and IPO/new-listing baskets.
 - Treat these fields as monitoring inputs only; they do not override the market fear gate, stop rules, or unresolved-stop veto.
 
+2026-07-26 institutional evidence update:
+
+- Man Group's official `The VIX Isn't Worried, But Maybe It Should Be` supplies a dated high-evidence source event for a possible `complacency_divergence`: quiet index volatility alongside concentrated AI/large-cap leadership, low cross-sectional correlation or credit compensation, and a near-term macro/earnings-event cluster. It supports adding the field to H7, but does not validate its predictive value or permit a risk-regime override.
+- Replay the 2026-07-21 label only with first-visible, point-in-time inputs. Compare the existing H7 score with low-VIX-only and fully-observed joint-label variants; report 1/5/20/60-day QQQ/SPY, SMH/QQQ, RSP/SPY, HYG/LQD, MAE, false warnings, blocked winners/losses and cash drag. Components unavailable at the time must remain unavailable.
+
 ### H8: AI quality and capex-cycle classification improves candidate ranking
 
 GMO and Man Group research point to a key split inside AI exposure: diversified platform/hyperscaler and quality suppliers may be more resilient than cyclical suppliers tied mainly to hyperscaler growth capex, while optical/interconnect bottlenecks may offer real upside but can become crowded or cyclically exposed.
@@ -343,6 +348,12 @@ Validation needed:
 - Man Group's official `H2 Technology Outlook` adds `semiconductor_peak_margin_trap`, `China_AI_efficiency_competition`, and `AI_stack_selectivity_rotation` to H8 validation. The article argues that value has accrued heavily at the chip layer while downstream software cash-flow monetization remains uneven, and that Chinese cost-to-output model competition may affect global AI economics.
 - Validate semiconductor margin durability, downstream enterprise ROI, cloud backlog customer concentration, model cost/performance data, China supply-chain availability, IPO/lock-up calendars and price relative strength before changing any AI quality score or core/satellite role.
 - Do not treat a single institutional outlook as a stable trading rule; keep it in replay/backtest context.
+
+2026-07-26 institutional evidence update:
+
+- GMO's official `The Electricity Tipping Point & the Next Energy Boom` adds a `power_delivery_evidence` ladder to H8: generation availability, grid interconnection/delivery, transmission/distribution, storage, cooling and procurement are separate physical constraints. Record `source_only`, `independently_confirmed`, or `unavailable`; an institutional article or announced project is not proof of issuer revenue, margin, backlog or durable bottleneck status.
+- GMO's `Mid-Year Update: Equity Dislocation Strategy` reaffirms H8's `expectation_gap_repricing`: measure point-in-time valuation, earnings/guidance surprise and completed-close price reaction rather than applying a static value/growth label to AI, infrastructure or software names.
+- Validate whether independently confirmed power-delivery observations improve class-level post-signal return or gap-risk discrimination beyond existing capex-cycle, concentration, Fear Gate and trend controls. Freeze 2026-07-23 as an event row; report the source-only and independently-confirmed samples separately, with 1/5/20/60-day basket returns, MAE, false-adds, missed winners and cash drag.
 
 ### H9: Trend-aligned support buys outperform plain dip-buying in the current strategy
 
@@ -459,3 +470,24 @@ Validation needed:
 - Compare 1/5/20/60-day QQQ/SPY, SMH/QQQ, memory/storage, optical/interconnect, energy/power, industrial-metal, VIX/VIX3M, HYG/LQD and yield responses.
 - Test incremental warning value over the Fear Gate, trend-aligned entry, flow fragility, `AI_input_cost_pressure` and `energy_logistics_lag`; reject the hypothesis if it merely restates market prices or produces excessive cash drag.
 - If testing a sizing overlay, apply a 25% reduction only to a baseline-authorized add under `elevated` stress and a 50% reduction only under `high` stress, each requiring elevated/high flow fragility or high theme overlap; report trigger counts and counterfactual size separately.
+
+## 2026-07-18
+
+### H15: Broad confirmation may distinguish semiconductor repair from a false bounce
+
+A fixed completed-close ladder combines a recent QQQ/SMH drawdown with SMH stabilization, short moving-average repair, SMH-versus-QQQ relative strength, QQQ MA20, RSP/SPY breadth, HYG/LQD credit and a non-worsening Fear Gate. The first frozen 2024-2026 event study found only seven independent `confirmed_turn` rising edges. Median subsequent SMH return was `+2.50%`/`+3.39%`/`+6.17%` over 5/10/21 sessions, with median excess over QQQ of `+1.82%`/`+3.62%`/`+5.53%`. These values are descriptive and may reflect a small number of overlapping regimes.
+
+Status: research-only and not promoted. The pre-registered minimum is 20 independent events, followed by genuinely new forward evidence. The monitor never authorizes trades and cannot override Fear Gate, portfolio concentration, stock-level confirmation or stops. Current 2026-07-17 stage is `risk_off`, not a turn.
+
+## 2026-07-19 institutional evidence update
+
+- Citadel Securities' official `After the Reset: Time to Focus on Fundamentals` separates broad/systemic stress from a market with concentrated semiconductor/momentum hedging and low implied correlation. Add `systemic_market_stress`, `cross_sectional_risk_localisation`, and `flow_to_fundamentals_handoff` to H7 validation. Its proprietary retail, skew, leveraged-ETF and financing observations are source facts, not default daily inputs.
+- GMO's official `Mid-Year Update: Equity Dislocation Strategy` reinforces H8's need to measure expectation gaps and dynamically rotate exposures as valuations change, rather than label a stock permanently cheap/expensive or infer quality from a broad value/growth factor. Add `expectation_gap_repricing` as an H8 research field only when point-in-time valuation, earnings/guidance and price reaction inputs are available.
+- Man Group's official `Chips Down, Then What?` reaffirms existing H7/H8 fields `AI_stack_selectivity_rotation`, `private_AI_customer_concentration`, `semiconductor_peak_margin_trap`, and `China_AI_efficiency_competition`; the stated easing of memory tightness is a candidate supply observation that requires independent pricing, inventory, production and earnings confirmation before it changes `bottleneck_watch`.
+- Replay the 2026-07-13/15 event labels with 1/5/20/60-day outcomes for QQQ/SPY, SMH/QQQ, RSP/SPY, HYG/LQD, memory/storage, optical/interconnect, semiconductor equipment, cloud infrastructure and software/application baskets. Score broad versus cross-sectional stress separately; report cash drag, blocked winners/losses and maximum adverse excursion. No new decision or action rule is authorized.
+
+## 2026-08-09 institutional evidence update
+
+- Citadel Securities' official `Traders on Defense` adds `retail_risk_transfer` to H7: retain retail participation separately from its direction.  The source observed record retail put premium and an unusually high index/ETF-to-single-stock option mix after July weakness, while semiconductor and memory exposure was part of the preceding retail concentration.  Its platform statistics are source facts, not reproducible daily inputs by default.
+- Man Group's official `The Yield Trap Hiding in Junior Bank Bonds` adds `complex_credit_complacency` to H7/H11 validation: compressed compensation can coexist with rising duration, negative convexity and documentation risk.  This is a macro/common-factor review field, not a US-equity or credit trade signal; a specialised-credit observation remains `unavailable` if only generic HYG/LQD data are available.
+- Replay source-event dates 2026-08-05 and 2026-07-28 with point-in-time retail-risk-transfer and credit-structure fields where publicly accessible.  Compare the base H7 score with the joint labels over 1/5/20/60 days for QQQ/SPY, SMH/QQQ, RSP/SPY, HYG/LQD, VIX/VIX3M and yield changes; report source-only versus independently reproducible subsets, MAE, false warnings, blocked winners/losses and cash drag.  Neither field may override the Fear Gate, trend confirmation, concentration constraints or stops.

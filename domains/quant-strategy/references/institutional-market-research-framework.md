@@ -1,5 +1,112 @@
 # Institutional Market Research Framework
 
+## 2026-08-09 Update: Retail Risk Transfer And Complex-Credit Complacency
+
+Verified source pages:
+
+- Citadel Securities, `Traders on Defense`, published 2026-08-05: https://www.citadelsecurities.com/news-and-insights/retail-detail/traders-on-defense/
+- Man Group, `The Yield Trap Hiding in Junior Bank Bonds`, published 2026-07-28: https://www.man.com/insights/views-from-the-floor-2026-28-July
+
+Reusable framework:
+
+- Add `retail_risk_transfer` under `flow_fragility`.  Keep outright retail participation separate from its direction: broad-index/ETF put demand, an index-or-ETF-to-single-stock option-activity shift, and monetisation after a rebound can indicate hedging or de-risking rather than fresh directional risk appetite.  Record `defensive`, `neutral`, `risk_seeking`, or `unavailable`, plus the source, first-visible time and whether the measure is proprietary.  It is not a contrarian buy or sell signal.
+- Add `complex_credit_complacency` under `factor_macro_exposure`.  A high-yield instrument can quietly become more rate-sensitive, long-duration or negatively convex while its spread compensation compresses.  Record the risk object, spread/compensation percentile, duration or extension risk, documentation/structure risk, source and as-of date; do not substitute a generic high-yield ETF for a complex-credit observation without marking it a proxy.
+
+Strategy mapping:
+
+- `market fear gate`: unchanged.  These fields can request a risk review but cannot alter the gate without the existing completed-close volatility, breadth, credit and trend inputs.
+- `flow_fragility` / `portfolio concentration`: defensive retail flow in semiconductors, memory or broad ETFs is a cross-sectional-risk input; review the common AI-capex sleeve and keep missing direct flow measures `unavailable`.
+- `trend_aligned_entry`: a rebound after retail monetisation still requires the existing support/reclaim, relative-strength and earnings/guidance checks.
+- `replay protocol`: freeze 2026-08-05 and 2026-07-28 as source-event dates; compare 1/5/20/60-day QQQ/SPY, SMH/QQQ, RSP/SPY, HYG/LQD, VIX/VIX3M and yield changes.  Test direct data only where point-in-time public access exists; do not backfill Citadel platform flow or AT1 structure from later information.
+
+Evidence notes:
+
+- High evidence for the pages' stable titles, dates and stated observations through official-domain Reader details.  Citadel's retail-flow figures are proprietary platform observations, and Man's AT1 analysis is an institutional interpretation of a specialised credit market; transmission to US equities is therefore medium evidence and remains experimental.
+- This update is a monitoring and replay framework, not a stable rule, market forecast or trade recommendation.
+
+## 2026-08-04 Update: Flow Reset, Market-Guidance Reflexivity, And AI Diffusion Friction
+
+Verified source pages:
+
+- Citadel Securities, `August - After The Reset`, published 2026-08-03: https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/august-after-the-reset/
+- Citadel Securities, `From Forward Guidance to Market Guidance`, published 2026-08-03: https://www.citadelsecurities.com/news-and-insights/macro-thoughts/from-forward-guidance-to-market-guidance/
+
+Reusable framework:
+
+- Extend `flow_to_fundamentals_handoff` with retail net flow, leveraged-product AUM, equity-financing spreads, index concentration, single-stock/index volatility dispersion, earnings revisions and buyback eligibility. A source-level claim that positioning has normalized remains provisional until point-in-time public proxies and subsequent completed-close price action agree.
+- Add `market_guidance_reflexivity` under `factor_macro_exposure` and `flow_fragility`: long-end yield and term-premium shocks can pressure duration equities while weakening the bond hedge, which can create correlated losses, deleveraging and further financial-condition tightening.
+- Add `AI_diffusion_cost_policy` under `AI_quality/capex_cycle`: for agentic applications with repeated model calls, model access and unit inference cost are application-ROI inputs. Separate frontier-capability controls from broad restrictions that raise ordinary application-layer diffusion costs.
+- Add `social_license_permitting_bottleneck` under `AI bottleneck watch`: local permitting, community acceptance, construction moratoria and grid queues are separate from chips, power generation, cooling and interconnect supply.
+- Add `product_complex_inflation_pass_through` under `factor_macro_exposure`: track diesel, gasoline, LPG, refining margins and product cracks alongside crude oil when assessing an energy shock's inflation path.
+
+Strategy mapping:
+
+- `market fear gate`: unchanged. Flow normalization and market-guidance feedback are context only until VIX term structure, breadth, credit and completed-close trend inputs confirm a regime change.
+- `flow_fragility` and `portfolio concentration`: a calm index can mask semiconductor/memory liquidation, high single-name volatility and low implied correlation. Review correlated AI-capex exposure without automatically changing position state.
+- `trend_aligned_entry`: a technical reset, valuation compression or reopening buyback window does not authorize entry; require the existing support/reclaim, relative-strength and earnings/guidance confirmation.
+- `AI infrastructure/application watchlists`: add permitting/social-license evidence to infrastructure and low-cost model access/call intensity to applications. Company-level promotion still needs orders, deployments, revenue, margin or cash-flow evidence.
+- `replay protocol`: freeze both 2026-08-03 timestamps and compare 1/5/20/60-day QQQ/SPY, SMH/QQQ, RSP/SPY, VIX/VIX3M, HYG/LQD, 10Y/30Y yields, breakevens, bond-equity correlation, semiconductor implied/realized volatility and energy-product cracks. Record unavailable proprietary flow fields as `unavailable`, not inferred values.
+
+Evidence notes:
+
+- High evidence for article existence, titles, timestamps and stated observations because both official-domain detail bodies were readable through the Reader channel.
+- Medium evidence for strategy transmission: Citadel platform flow, financing and volatility figures require independent point-in-time replication, and the macro/AI-policy conclusions remain institutional interpretation.
+- AQR and GMO had no post-2026-07-31 official-detail research item verified in this run. No framework was inferred from search summaries or undated candidates.
+- This update is an experimental monitoring and replay framework, not a stable rule, market forecast or trade recommendation.
+
+## 2026-07-26 Update: Complacency Divergence And Power-Delivery Evidence Ladder
+
+Verified source pages:
+
+- GMO, `The Electricity Tipping Point & the Next Energy Boom`, displayed 2026-07-23: https://www.gmo.com/americas/research-library/the-electricity-tipping-point--the-next-energy-boom_insights/
+- GMO, `Mid-Year Update: Equity Dislocation Strategy`, displayed 2026-07-23: https://www.gmo.com/americas/research-library/mid-year-update-equity-dislocation-strategy_marketcommentary/
+- Man Group, `The VIX Isn't Worried, But Maybe It Should Be`, displayed 2026-07-21: https://www.man.com/insights/views-from-the-floor-2026-21-July
+
+Reusable framework:
+
+- Add `complacency_divergence` under `flow_fragility`: a dated diagnostic for the combination of subdued index volatility, compressed cross-sectional correlation or credit compensation, concentrated AI/large-cap leadership, and a near-term macro or earnings-event cluster. It is `present`, `absent`, or `unavailable`; never infer `present` from a low VIX alone. The Man article is a high-evidence source event, but its market interpretation is not a stand-alone risk signal.
+- Keep `systemic_market_stress` separate from `complacency_divergence`. The former remains the Fear Gate's domain and needs completed-close VIX, breadth, credit and trend inputs. The latter is a cross-sectional/crowding review that can only reinforce existing no-chase and concentration controls.
+- Add `power_delivery_evidence` to `AI_quality/capex_cycle` and `bottleneck_watch`. Track `source_only`, `independently_confirmed`, or `unavailable`: generation availability, grid-interconnection queue or delivery date, transmission/distribution equipment, storage, cooling and site-power procurement are distinct stages. A thematic article, product claim, or announced project is `source_only`; only independently verifiable planning, procurement, operating or financial evidence is `independently_confirmed`.
+- GMO's Equity Dislocation update reinforces `expectation_gap_repricing`: an expensive company can disappoint despite strong reported growth when the embedded outcome is exceptional, while a cheaper company can reprice on an upside surprise. Apply this only with point-in-time valuation, earnings/guidance and completed-close reaction data; it is not a generic value or short signal.
+
+Strategy mapping:
+
+- `market fear gate`: unchanged. Do not upgrade a low-VIX or power-demand narrative into a risk-regime change without the existing completed-close inputs.
+- `flow_fragility` and `portfolio concentration`: if `complacency_divergence = present` and the normal flow-fragility evidence is also elevated, require the existing support/reclaim discipline and review correlated AI-capex exposure. Missing implied-correlation, spread or options data stays `unavailable`.
+- `AI_quality/capex_cycle` and `bottleneck_watch`: use the power-delivery ladder to distinguish a long-duration infrastructure narrative from evidence that a specific supplier or operator is converting it into orders, revenue or margins. It does not change a ticker class or weight by itself.
+- `replay protocol`: freeze first-visible dates for 2026-07-21 and 2026-07-23; compare QQQ/SPY, SMH/QQQ, RSP/SPY, HYG/LQD, VIX/VIX3M, implied correlation where available, energy/power, semiconductor equipment, memory/storage, optical/interconnect and software/application baskets over 1/5/20/60 days. Record earnings/Fed/macro confounders and baseline-authorized entries separately.
+
+Evidence notes:
+
+- High evidence for the three official-domain pages' stable titles, dates and bodies through the Reader channel.
+- Medium evidence for transmission to public US-equity overlays: the articles use institutional interpretation and, for power, macro/industry data. Public point-in-time replication is required before any rule promotion.
+- This is a monitoring and backtest framework, not a prediction, power trade, or buy/sell rule.
+
+## 2026-07-19 Update: Flow-to-Fundamentals Handoff And Risk Localisation
+
+Verified source page:
+
+- Citadel Securities, `After the Reset: Time to Focus on Fundamentals`, displayed 2026-07-13: https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/after-the-reset/
+
+Reusable framework:
+
+- Separate `systemic_market_stress` from `cross_sectional_risk_localisation`. Broad index/ETF skew and credit/breadth deterioration belong to the former; an extreme semiconductor/Nasdaq implied-vol premium, low implied correlation, or single-name/factor hedging belongs to the latter. The latter can coexist with a calm headline index and should raise concentration review, not automatically change the Fear Gate.
+- Record `flow_to_fundamentals_handoff` only as a dated diagnostic: retail demand, positioning reset, leveraged-product AUM, financing conditions, breadth/rotation, valuation, and the next earnings window. A handoff is provisional until realised earnings/guidance and completed-close price action agree; it is never a buy signal.
+- When the inputs are unavailable, write `unavailable` rather than infer them from an index rise. Citadel's retail-platform, option-skew, implied-correlation and financing-spread figures are source-specific and are not silently substituted by price-only proxies.
+
+Strategy mapping:
+
+- `market fear gate`: remains governed by its existing VIX, breadth, credit and completed-close inputs. Cross-sectional stress alone cannot upgrade or downgrade the gate.
+- `flow_fragility`: distinguish broad deleveraging from semiconductor/momentum-specific hedging. The latter triggers an AI-capex common-factor review and blocks chase entries, while existing stops and trend signals retain priority.
+- `trend_aligned_entry`: after a flow reset, wait for earnings/guidance evidence and relative-strength confirmation; do not interpret a single rebound as a confirmed fundamentals handoff.
+- `replay protocol`: freeze the first-visible date and compare the risk-localisation fields with QQQ/SPY, SMH/QQQ, RSP/SPY, VIX, sector/factor implied volatility where available, HYG/LQD and subsequent 1/5/20/60-day returns.
+
+Evidence notes:
+
+- High evidence for the Citadel article's title, displayed date and stated observations because the official-domain detail page was readable through the Reader channel.
+- Medium evidence for transmission to this strategy: its proprietary retail, financing and options data need public/proxy replication and point-in-time replay.
+- This is a monitoring and backtest framework, not a trading rule or a prediction of earnings.
+
 Date captured: 2026-06-08
 
 Purpose: convert public institutional research from AQR, Citadel Securities, GMO, and Man Group into reusable strategy-improvement inputs for the US equity quant strategy.

@@ -1,0 +1,892 @@
+{
+  "args": {
+    "since": "2026-07-31T12:36:44.488Z",
+    "out": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\institutional-research-2026-08-03.md",
+    "json": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\institutional-research-2026-08-03.json",
+    "maxItems": 10
+  },
+  "results": [
+    {
+      "source": "AQR Research",
+      "dimension": "trend_aligned_entry / factor robustness / portfolio construction",
+      "items": [
+        {
+          "title": "Total Portfolio Approach",
+          "url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/Total-Portfolio-Approach",
+          "date": "2026-05-18T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "${ numberSection }${ text } Total Portfolio Approach The total portfolio approach to investing (TPA) has been aptly described as \"buzzy but fuzzy.\"11CloseFT Alphaville, November 2025. Many commentators have tried to sort the substance from the hype: in this article we bring a skeptical but constructive and distinctively quantitative lens to that task. We identify a set of tangible advantages and a countervailing set of possible risks from removing traditional strategic asset allocation constraints or guardrails, and we offer four practical demonstrations of how a total portfolio mindset can help to drive long-term success for investors with many different objectives and approaches, whatever ",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "An Interview with Cliff Asness: The Illusion of Safety in Private Assets",
+          "url": "https://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Cliff-Asness-The-Illusion-of-Safety-in-Private-Assets",
+          "date": "2026-03-30T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "${ numberSection }${ text } An Interview with Cliff Asness: The Illusion of Safety in Private Assets In an interview with the editor of _The Journal of Private Markets Investing_, Cliff Asness reiterates his views on the numerous flaws embedded in private assets – including artificially smoothed returns (and investors taking on more equity risk as a result), performance during drawdowns compared to equities, and correlation risks with public assets – and what investors should keep in mind when assessing the role of privates in their own portfolios. Published In The Journal of Private Markets Investing This document is not intended to, and does not relate specifically to any investment strate",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "Why More Alpha Can Mean More Tax Benefits",
+          "url": "https://www.aqr.com/Insights/Research/Tax-Aware-Investing/Why-More-Alpha-Can-Mean-More-Tax-Benefits",
+          "date": "2026-03-18T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "Opens in a new window Opens an external website Opens an external website in a new window This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. Privacy Policy Accept Deny Non-Essential Manage Preferences Storage Preferences Important Notice:Fraudulent Schemes Impersonating AQR Capital Management, LLC and Affiliates (collectively, \"AQR\") Important Notice:Fraudulent Schemes Impersonating AQR More Info [](http://www.aqr.com/Insights/Research/Tax-Aware-Investing/Why-More-Alpha-Can-Mean-More-Tax-Benefits) There have been recent incidents of individuals and groups falsely claiming to be associ",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "The Tax Benefits of Pre-Tax Alpha",
+          "url": "https://www.aqr.com/Insights/Research/Working-Paper/The-Tax-Benefits-of-Pre-Tax-Alpha",
+          "date": "2026-03-17T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "${ numberSection }${ text } The Tax Benefits of Pre-Tax Alpha We present new evidence that pre-tax alpha materially enhances the tax benefits of tax-aware long-short beta-one equity strategies. The positive effect of pre-tax alpha on tax benefits strengthens with leverage and investment horizon. Two mechanisms drive this result. First, pre-tax alpha accelerates the growth of net asset value (NAV), which leads to higher dollar tax benefits as the asset base over which these benefits are realized grows. Second, pre-tax alpha leads to creation of new positions, acting similarly to recurring capital contributions. Position creation also lowers the cost of transitioning a long-short strategy to a",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "2026 Capital Market Assumptions for Major Asset Classes",
+          "url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
+          "date": "2025-12-30T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "${ numberSection }${ text } 2026 Capital Market Assumptions for Major Asset Classes This article updates our estimates of medium-term expected returns for major asset classes. Selected estimates are summarized in Exhibit 1. In 2025, equity markets rallied for a third consecutive year but our 5- to 10-year expected returns – based on current valuations – continue to imply risk premia are compressed. The expected real return of a global 60/40 portfolio is 3.4%, around 1.5% higher than the all-time low reached in 2021, but still well below the long-term U.S. average of nearly 5% since 1900. The article also includes a discussion on incorporating currency risk and currency hedging into capital m",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "Climate Risk Pricing",
+          "url": "https://www.aqr.com/Insights/Research/Working-Paper/Climate-Risk-Pricing",
+          "date": "2025-12-29T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "${ numberSection }${ text } Climate Risk Pricing We develop an environmental macro-finance model to study how markets price transition and physical climate risks. When carbon taxes are below the social cost of carbon, raising them improves long-run welfare even as they reduce current output. Brown firms perform well in the “bad economic states” when low taxes let climate damage worsen. This hedging value gives them lower required returns, reversing standard ESG predictions. The green-minus-brown required return can, however, switch sign depending on how policy and climate shocks interact. Strikingly, climate-concerned investors optimally hedge by holding brown stocks, while skeptics hedge wi",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "Hold the Dip",
+          "url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/Hold-the-Dip",
+          "date": "2025-11-30T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "${ numberSection }${ text } Hold the Dip “Buy the Dip” has become a popular investment mantra over the past five years. In this article, we look at the longer term and ask a simple question: does it beat \"buy and hold\"? The short answer is no. One reason is that buy the dip tends to face a headwind—it’s usually positioned opposite momentum. If investors want to add value through timing market entry and exit points, history shows it’s better to align with momentum than to buy the dip, by following the trend.11CloseThough a huge disclaimer is necessary: We believe in trend following (see for example Moskowitz et al [2012], Asness et al [2013], Hurst et al [2017], and Asness et al [2017]) but w",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "Active Extension",
+          "url": "https://www.aqr.com/Insights/Research/White-Papers/Active-Extension",
+          "date": "2025-11-23T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "${ numberSection }${ text } Active Extension With equity valuations elevated and future return expectations subdued, investors face mounting challenges in meeting long-term objectives through traditional passive or long-only active allocations. Active Extension (AE)—a long-short framework that uses modest leverage to short less attractive stocks and overweight more attractive stocks—offers a liquid, capital-efficient alternative. By relaxing the long-only constraint, AE enhances active risk efficiency, mitigates index concentration, and expands the opportunity set for generating alpha. Historical evidence shows that well-managed AE strategies have delivered higher active returns than long-on",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        }
+      ],
+      "diagnostics": [
+        {
+          "channel": "jina_list",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research",
+          "ok": true,
+          "length": 3604,
+          "attempts": 1,
+          "error": null
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Working-Paper/The-Tax-Benefits-of-Pre-Tax-Alpha",
+          "ok": true,
+          "length": 4495,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Working-Paper/The-Tax-Benefits-of-Pre-Tax-Alpha"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Alternative-Thinking/Total-Portfolio-Approach",
+          "ok": true,
+          "length": 4532,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Alternative-Thinking/Total-Portfolio-Approach"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Cliff-Asness-The-Illusion-of-Safety-in-Private-Assets",
+          "ok": true,
+          "length": 4229,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Cliff-Asness-The-Illusion-of-Safety-in-Private-Assets"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Tax-Aware-Investing/Why-More-Alpha-Can-Mean-More-Tax-Benefits",
+          "ok": true,
+          "length": 18168,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Tax-Aware-Investing/Why-More-Alpha-Can-Mean-More-Tax-Benefits"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes",
+          "ok": true,
+          "length": 5277,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Alternative-Thinking/2026-Capital-Market-Assumptions-for-Major-Asset-Classes"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Working-Paper/Climate-Risk-Pricing",
+          "ok": true,
+          "length": 4354,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Working-Paper/Climate-Risk-Pricing"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Alternative-Thinking/Hold-the-Dip",
+          "ok": true,
+          "length": 4594,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Alternative-Thinking/Hold-the-Dip"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/White-Papers/Active-Extension",
+          "ok": true,
+          "length": 4784,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/White-Papers/Active-Extension"
+        }
+      ],
+      "note": "列表页可读；已读取候选详情页并按日期过滤。"
+    },
+    {
+      "source": "Citadel Securities Market Insights",
+      "dimension": "flow_fragility / market structure / macro strategy",
+      "items": [
+        {
+          "title": "From Forward Guidance to Market Guidance",
+          "url": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/from-forward-guidance-to-market-guidance/",
+          "date": "2026-08-03T21:20:25.000Z",
+          "dateSource": "detail_page",
+          "summary": "THE FED SOUNDS HAWKISH…BUT MARKETS ARE TESTING THE REACTION FUNCTION. Chair Warsh was unequivocal that there is _“no soft inflation target”_, that five-plus years of above-target inflation cannot be cured by nine weeks of better data, and that this Fed _“will not waver”_. Yet despite that language…and three members preferring an immediate hike…the FOMC again declined to move. Warsh instead repeatedly highlighted the large rise in nominal and real Treasury yields since June, arguing that reduced forward guidance had allowed markets to respond more directly to the data and, in effect, deliver some tightening on the Fed’s behalf. But all forms of FCI tightening are not equal…higher front-end yi",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "post_window_verified",
+          "isPostWindow": true,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "flow_fragility / market structure / macro strategy"
+        },
+        {
+          "title": "August – After The Reset",
+          "url": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/august-after-the-reset/",
+          "date": "2026-08-03T21:01:33.000Z",
+          "dateSource": "detail_page",
+          "summary": "_Positioning Has Normalized. Fundamentals Matter Again._ I wasn’t planning to send an update today, but after receiving a number of client questions over the weekend regarding market risk, I thought it would be helpful to share our latest thinking more broadly. It has also been one of the most technically challenging trading environments we have navigated in recent years. Sharp rotations, elevated single-stock volatility, rapidly changing market leadership, and significant deleveraging created an exceptionally difficult backdrop for investors across the marketplace. Today, we believe much of the global technical reset is behind us. Importantly, the reset occurred through rotation, deleveragi",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "post_window_verified",
+          "isPostWindow": true,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "flow_fragility / market structure / macro strategy"
+        },
+        {
+          "title": "Fed Views: The Case for July",
+          "url": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/fed-views-the-case-for-july/",
+          "date": "2026-07-27T15:33:45.000Z",
+          "dateSource": "detail_page",
+          "summary": "We have for some time argued that inflation risks were tilted to the upside, that the labor market was no longer a source of downside risk to the economy, and that the Fed staff and speakers were moving in a more hawkish direction. Ahead of the June meeting, we published an expectation of rate hikes in September and December. The tone of the June meeting was consistent with our significantly more hawkish-than-consensus outlook, with Chair Warsh repeatedly emphasizing price stability and implying that the Fed is willing to act against the one-sided risks to its mandate. Our risk assessment was based on a simple exercise: benchmarking the changes in the key SEP forecasts that we expected, name",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "flow_fragility / market structure / macro strategy"
+        },
+        {
+          "title": "A More Fragile World",
+          "url": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/a-more-fragile-world/",
+          "date": "2026-07-18T14:53:52.000Z",
+          "dateSource": "detail_page",
+          "summary": "WAR WITH IRAN IS BACK. This week has seen a material escalation in kinetic activity, with sustained US strikes against Iranian coastal military sites, air defences, logistics infrastructure, maritime capabilities and, increasingly, transport and energy-related infrastructure deeper inside the country. Strikes around Bandar Abbas and southern Hormozgan suggest Washington is willing to move beyond purely military targets and pressure Iran’s ability to move people, goods, and energy along its southern corridor. In essence, the MoU and ceasefire framework have effectively collapsed.The Strait of Hormuz remains the central battleground, with POTUS having reimposed a naval blockade on Iranian port",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "flow_fragility / market structure / macro strategy"
+        },
+        {
+          "title": "After the Reset: Time to Focus on Fundamentals",
+          "url": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/after-the-reset/",
+          "date": "2026-07-13T20:58:58.000Z",
+          "dateSource": "detail_page",
+          "summary": "Two weeks ago, we believed the market needed a meaningful technical reset before we could become more constructive on US equities. We believe that reset has now largely occurred. The market we are entering is fundamentally different from the one we exited two weeks ago. Retail demand remains exceptionally resilient. Positioning headwinds have eased, market leadership has broadened, and valuations have become more attractive heading into earnings season. Our framework has shifted. The market is no longer driven primarily by positioning; it is transitioning back toward fundamentals. _We have organized our GMI watchlist into four broad categories:_ I. Retail Behavior II. Technical Positioning I",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "flow_fragility / market structure / macro strategy"
+        },
+        {
+          "title": "Where is the Good News?",
+          "url": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/where-is-the-good-news/",
+          "date": "2026-07-11T21:05:35.000Z",
+          "dateSource": "detail_page",
+          "summary": "THE RE-ESCALATION WITH IRAN…appears to reflect the fragility of negotiations and the intractable positions on the key unresolved issues, culminating in attacks on commercial vessels in the Strait, including an LNG tanker and oil tankers. This, in turn, prompted the US to strike more than 80 Iranian targets, including assets in and near the Strait, revoke the waiver on Iranian oil sales, launch subsequent strikes on Wednesday evening, and led President Trump to declare the ceasefire over. This kinetic re-engagement likely stems from unyielding positions on the critical issues in the negotiations…I argued at the time that the MOU lacked substance on control over the Strait of Hormuz (paragraph",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "flow_fragility / market structure / macro strategy"
+        },
+        {
+          "title": "Some Macro Thoughts Archives - Citadel Securities",
+          "url": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/",
+          "date": null,
+          "dateSource": "none",
+          "summary": "Skip to Content[](http://www.citadelsecurities.com/) * Who We Are Who We AreLearn More * Our Culture * Leadership Team * Civic Leadership * Office Locations × * What We Do What We DoLearn More * Equities * Designated Market Maker * Options * Fixed Income & FX * What is a Market Maker? * Corporate Solutions × * News & Insights News & InsightsLearn More * In the Media * Market Insights * Policy Positions × * Careers CareersLearn More * Markets & Trading * Quantitative Research * Engineering * Internships * Programs & Events * Conference Travel Grant * Datathons * Discover Citadel Securities * Citadel Securities Quant Invitational * Ignite Women's Trading Program * PhD Summit * Terminal * Tradi",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "date_unverified",
+          "isPostWindow": false,
+          "evidence": "低：未取得稳定发布日期。",
+          "dimension": "flow_fragility / market structure / macro strategy"
+        },
+        {
+          "title": "Global Market Intelligence Archives - Citadel Securities",
+          "url": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/",
+          "date": null,
+          "dateSource": "none",
+          "summary": "Skip to Content[](http://www.citadelsecurities.com/) * Who We Are Who We AreLearn More * Our Culture * Leadership Team * Civic Leadership * Office Locations × * What We Do What We DoLearn More * Equities * Designated Market Maker * Options * Fixed Income & FX * What is a Market Maker? * Corporate Solutions × * News & Insights News & InsightsLearn More * In the Media * Market Insights * Policy Positions × * Careers CareersLearn More * Markets & Trading * Quantitative Research * Engineering * Internships * Programs & Events * Conference Travel Grant * Datathons * Discover Citadel Securities * Citadel Securities Quant Invitational * Ignite Women's Trading Program * PhD Summit * Terminal * Tradi",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "date_unverified",
+          "isPostWindow": false,
+          "evidence": "低：未取得稳定发布日期。",
+          "dimension": "flow_fragility / market structure / macro strategy"
+        },
+        {
+          "title": "Global Macro Strategy Archives - Citadel Securities",
+          "url": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/",
+          "date": null,
+          "dateSource": "none",
+          "summary": "Skip to Content[](http://www.citadelsecurities.com/) * Who We Are Who We AreLearn More * Our Culture * Leadership Team * Civic Leadership * Office Locations × * What We Do What We DoLearn More * Equities * Designated Market Maker * Options * Fixed Income & FX * What is a Market Maker? * Corporate Solutions × * News & Insights News & InsightsLearn More * In the Media * Market Insights * Policy Positions × * Careers CareersLearn More * Markets & Trading * Quantitative Research * Engineering * Internships * Programs & Events * Conference Travel Grant * Datathons * Discover Citadel Securities * Citadel Securities Quant Invitational * Ignite Women's Trading Program * PhD Summit * Terminal * Tradi",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "date_unverified",
+          "isPostWindow": false,
+          "evidence": "低：未取得稳定发布日期。",
+          "dimension": "flow_fragility / market structure / macro strategy"
+        }
+      ],
+      "diagnostics": [
+        {
+          "channel": "jina_list",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/category/market-insights/",
+          "ok": true,
+          "length": 17261,
+          "attempts": 1,
+          "error": null
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/macro-thoughts/from-forward-guidance-to-market-guidance/",
+          "ok": true,
+          "length": 14088,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/from-forward-guidance-to-market-guidance/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/macro-thoughts/",
+          "ok": true,
+          "length": 16682,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-market-intelligence/august-after-the-reset/",
+          "ok": true,
+          "length": 12039,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/august-after-the-reset/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-market-intelligence/",
+          "ok": true,
+          "length": 16721,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-macro-strategy/fed-views-the-case-for-july/",
+          "ok": true,
+          "length": 8120,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/fed-views-the-case-for-july/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-macro-strategy/",
+          "ok": true,
+          "length": 16538,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/macro-thoughts/a-more-fragile-world/",
+          "ok": true,
+          "length": 10965,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/a-more-fragile-world/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-market-intelligence/after-the-reset/",
+          "ok": true,
+          "length": 12294,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/after-the-reset/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/macro-thoughts/where-is-the-good-news/",
+          "ok": true,
+          "length": 10362,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/where-is-the-good-news/"
+        }
+      ],
+      "note": "列表页可读；已读取候选详情页并按日期过滤。"
+    },
+    {
+      "source": "GMO Research Library",
+      "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality",
+      "items": [
+        {
+          "title": "The Liquid Alternatives Revival",
+          "url": "https://www.gmo.com/americas/research-library/the-liquid-alternatives-revival_insights/",
+          "date": "2026-07-28T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "Listen to this Insight * * * GMO’s liquid alternatives are hedge fund strategies (e.g., equity long-short, global macro, event-driven) managed with an emphasis on risk control and liquidity. The GMO Alternative Allocation Strategy (“ALTA”) is a liquid alternative solution combining several underlying strategies; ALTA is available in a mutual fund with daily liquidity. * * * While liquid alternative strategies have been a consistent component of our multi-asset opportunity set for over 25 years, general investor interest has waxed and waned. Some gave up on the category after being disappointed by lackluster returns, or because they were surprised by higher-than-expected correlations to tradi",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        },
+        {
+          "title": "The Electricity Tipping Point & the Next Energy Boom",
+          "url": "https://www.gmo.com/americas/research-library/the-electricity-tipping-point--the-next-energy-boom_insights/",
+          "date": "2026-07-28T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "Listen to this Insight * * * Introduction Electricity demand is surging all over the world. To meet this demand, vast investments in power generation need to be made, and grids need to be overhauled and expanded. Ramping up electricity generation and delivery is extremely expensive, and electricity prices have spiked up throughout much of the developed world. All of this creates opportunities for investors across a wide variety of industries. The Problem: The Era of Flat Electricity Demand Is Over For most of the last couple decades, U.S. electricity demand was relatively flat. Pockets of demand growth were offset by energy efficiency gains. In the last few years, however, booming demand has",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        },
+        {
+          "title": "Targeting Outcomes",
+          "url": "https://www.gmo.com/americas/research-library/targeting-outcomes_insights/",
+          "date": "2026-07-28T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "Emerging market debt (EMD) is a broad, diverse, and often inefficient opportunity set. Investors can access it through benchmark-relative strategies tied to hard or local currency indices, or through an approach that seeks to maximize total return using a defined cash-plus objective. For investors with the governance flexibility to prioritize explicit portfolio outcomes, a total return framework can at times offer better value and diversification properties than benchmark-relative strategies. We sat down with Tina Vandersteel, GMO’s Head of Emerging Country Debt, to explore how to think about the trade-offs of benchmark-relative and total return EMD strategies, the current opportunity set ac",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        },
+        {
+          "title": "Mid-Year Update: Equity Dislocation Strategy",
+          "url": "https://www.gmo.com/americas/research-library/mid-year-update-equity-dislocation-strategy_marketcommentary/",
+          "date": "2026-07-28T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "Listen to this Insight * * * It has been an eventful six months, and we are delighted that the Equity Dislocation Strategy has risen to the occasion. The Strategy generated a 9.05% net return in the first half of 2026, compared with a 1.3% return for MSCI ACWI Value minus MSCI ACWI Growth, a broad proxy for the value-growth spread. The result was driven less by broad value factor exposure than by security selection and active rotation as valuation opportunities evolved. Further, Equity Dislocation has demonstrated an ability to profit from AI disruption, not by forecasting which business models are most vulnerable, but by paying attention to which businesses are trading at unsustainable mult",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        },
+        {
+          "title": "What Barbarians Like to Take Private",
+          "url": "https://www.gmo.com/americas/research-library/part-1-what-barbarians-like-to-take-private_gmoquarterlyletter/",
+          "date": "2026-03-03T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "Listen to Part 1 of the Quarterly Letter * * * Executive Summary While most institutional investors recognize that private equity and public equity share similar economic risks, they often seem to ignore how their aggregate equity portfolio is affected by their substantial allocation to private equity. Analyzing 700 private equity leveraged buyouts over the last 45 years allowed us to compare a meaningful proportion of private equity portfolios to their public equity counterparts. Relative to public equities, private equity skews small and lower quality, and has a massive bet on software—all of which make a portfolio with a significant private equity allocation riskier and less well diversif",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        },
+        {
+          "title": "Hype vs. High Conviction",
+          "url": "https://www.gmo.com/americas/research-library/hype-vs-high-conviction_insights/",
+          "date": "2026-03-03T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "Three years after the launch of ChatGPT 3.5, positioning around artificial intelligence-related companies has become a (perhaps “the”) critical decision for equity investors. AI investment spending by companies far exceeds current revenue generation from end-market use cases, leaving highly leveraged players facing existential risks. Still, companies like Microsoft, Alphabet, and Nvidia are aggressively funding innovation from robust cash flows, and, at least superficially, trade at valuation multiples that are moderate relative to the frenzy surrounding the technology. But there is a frenzy. For investors, the real opportunity lies in distinguishing between companies with durable competitiv",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        },
+        {
+          "title": "A Second Opinion on the 60/40 Default",
+          "url": "https://www.gmo.com/americas/research-library/a-second-opinion-on-the-6040-default_insights/",
+          "date": "2026-03-03T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "Asset Allocation Is Easy in Theory, Difficult in Practice In theory, growing a pool of wealth over decades—whether for a family, an endowment, or a pensioner—is a straightforward endeavor. An advisor or allocator needs to do three things: understand the goals of their client, find different ways to earn returns for taking risks, 1 and then take the right amount of risk to meet those goals. 2 Taking too much risk may expose the client to unacceptable drawdowns, while taking too little risk will likely lead to inadequate returns in the long run. The de facto “passive” allocation of 60% equities/40% bonds has proven effective at compounding wealth over time by tapping into two key risk premia: ",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        },
+        {
+          "title": "Valuation Metrics in Emerging Debt: 2Q26",
+          "url": "https://www.gmo.com/americas/research-library/valuation-metrics-in-emerging-debt-2q26_quarterlyemdebtupdate/",
+          "date": "2026-03-03T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "Skip [](http://www.gmo.com/americas/ \"Home\")GMO Americas * Americas * Europe, Middle East, Africa * Asia * Australia, New Zealand Contact UsLog In Menu Search * Investment Capabilities Back to main menu Investment Capabilities Strategies * Multi-Asset Class * Equities * Alternatives * Fixed Income ETFs Mutual Funds Private Funds Document Library GMO Solutions * Asset Allocation * Quality Equity * ETF Investing at GMO * Dynamic Multi-Asset Credit FEATURED PRODUCTS Strategy Multi-Asset Credit Strategy Fixed Income The GMO Multi-Asset Credit Strategy seeks to maximize alpha potential by harvesting the most attractively priced credit risk premia through a dynamic allocation process across the cr",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        },
+        {
+          "title": "GMO 7-Year Asset Class Forecast: 2Q 2026",
+          "url": "https://www.gmo.com/americas/research-library/gmo-7-year-asset-class-forecast-2q-2026_gmo7yearassetclassforecast/",
+          "date": "2026-03-03T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "Skip [](http://www.gmo.com/americas/ \"Home\")GMO Americas * Americas * Europe, Middle East, Africa * Asia * Australia, New Zealand Contact UsLog In Menu Search * Investment Capabilities Back to main menu Investment Capabilities Strategies * Multi-Asset Class * Equities * Alternatives * Fixed Income ETFs Mutual Funds Private Funds Document Library GMO Solutions * Asset Allocation * Quality Equity * ETF Investing at GMO * Dynamic Multi-Asset Credit FEATURED PRODUCTS Strategy Multi-Asset Credit Strategy Fixed Income The GMO Multi-Asset Credit Strategy seeks to maximize alpha potential by harvesting the most attractively priced credit risk premia through a dynamic allocation process across the cr",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        },
+        {
+          "title": "Japan’s Next Phase of Corporate Governance Reform",
+          "url": "https://www.gmo.com/americas/research-library/japans-next-phase-of-corporate-governance-reform_insights/",
+          "date": "2026-03-03T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "Skip [](http://www.gmo.com/americas/ \"Home\")GMO Americas * Americas * Europe, Middle East, Africa * Asia * Australia, New Zealand Contact UsLog In Menu Search * Investment Capabilities Back to main menu Investment Capabilities Strategies * Multi-Asset Class * Equities * Alternatives * Fixed Income ETFs Mutual Funds Private Funds Document Library GMO Solutions * Asset Allocation * Quality Equity * ETF Investing at GMO * Dynamic Multi-Asset Credit FEATURED PRODUCTS Strategy Multi-Asset Credit Strategy Fixed Income The GMO Multi-Asset Credit Strategy seeks to maximize alpha potential by harvesting the most attractively priced credit risk premia through a dynamic allocation process across the cr",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "AI_quality/capex_cycle / valuation-aware allocation / quality"
+        }
+      ],
+      "diagnostics": [
+        {
+          "channel": "jina_list",
+          "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/",
+          "ok": true,
+          "length": 35824,
+          "attempts": 1,
+          "error": null
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/part-1-what-barbarians-like-to-take-private_gmoquarterlyletter/",
+          "ok": true,
+          "length": 30250,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.gmo.com/americas/research-library/part-1-what-barbarians-like-to-take-private_gmoquarterlyletter/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/hype-vs-high-conviction_insights/",
+          "ok": true,
+          "length": 12957,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.gmo.com/americas/research-library/hype-vs-high-conviction_insights/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/a-second-opinion-on-the-6040-default_insights/",
+          "ok": true,
+          "length": 24773,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.gmo.com/americas/research-library/a-second-opinion-on-the-6040-default_insights/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/the-liquid-alternatives-revival_insights/",
+          "ok": true,
+          "length": 11043,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.gmo.com/americas/research-library/the-liquid-alternatives-revival_insights/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/the-electricity-tipping-point--the-next-energy-boom_insights/",
+          "ok": true,
+          "length": 15575,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.gmo.com/americas/research-library/the-electricity-tipping-point--the-next-energy-boom_insights/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/valuation-metrics-in-emerging-debt-2q26_quarterlyemdebtupdate/",
+          "ok": true,
+          "length": 31728,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.gmo.com/americas/research-library/valuation-metrics-in-emerging-debt-2q26_quarterlyemdebtupdate/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/gmo-7-year-asset-class-forecast-2q-2026_gmo7yearassetclassforecast/",
+          "ok": true,
+          "length": 29804,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.gmo.com/americas/research-library/gmo-7-year-asset-class-forecast-2q-2026_gmo7yearassetclassforecast/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/targeting-outcomes_insights/",
+          "ok": true,
+          "length": 12054,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.gmo.com/americas/research-library/targeting-outcomes_insights/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/mid-year-update-equity-dislocation-strategy_marketcommentary/",
+          "ok": true,
+          "length": 9353,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.gmo.com/americas/research-library/mid-year-update-equity-dislocation-strategy_marketcommentary/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/japans-next-phase-of-corporate-governance-reform_insights/",
+          "ok": true,
+          "length": 38937,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.gmo.com/americas/research-library/japans-next-phase-of-corporate-governance-reform_insights/"
+        }
+      ],
+      "note": "列表页可读；已读取候选详情页并按日期过滤。"
+    },
+    {
+      "source": "Man Institute Market Views",
+      "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch",
+      "items": [
+        {
+          "title": "Views from the Floor The Yield Trap Hiding in Junior Bank Bonds | Man Group",
+          "url": "https://www.man.com/insights/views-from-the-floor-2026-28-July",
+          "date": "2026-07-27T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-28-July) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the e",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
+        },
+        {
+          "title": "Views from the Floor The VIX Isn't Worried, But Maybe It Should Be | Man Group",
+          "url": "https://www.man.com/insights/views-from-the-floor-2026-21-July",
+          "date": "2026-07-20T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-21-July) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the e",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
+        },
+        {
+          "title": "Views from the Floor Chips Down, Then What? | Man Group",
+          "url": "https://www.man.com/insights/views-from-the-floor-2026-14-july",
+          "date": "2026-07-13T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-14-july) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the e",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
+        },
+        {
+          "title": "Technology Outlook H2 2026: Still Dancing, But Moving Closer to the Door? | Man Group",
+          "url": "https://www.man.com/insights/h2-2026-technology-outlook",
+          "date": "2026-07-09T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/h2-2026-technology-outlook) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the embedded",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
+        },
+        {
+          "title": "Views from the Floor Could 'Super El Niño' Scorch AI Too? | Man Group",
+          "url": "https://www.man.com/insights/views-from-the-floor-2026-7-july",
+          "date": "2026-07-06T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-7-july) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the em",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
+        },
+        {
+          "title": "H2 2026 Credit Outlook: The AI Buildout – Boom or Bubble? | Man Group",
+          "url": "https://www.man.com/insights/2026-h2-credit-outlook",
+          "date": "2026-03-24T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "AI supply is breaking records, but bubble risks are mounting. In focus The Gulf conflict has understandably dominated headlines in recent months, but credit markets have had another story to tell. Artificial intelligence (AI) and hyperscaler bond issuance is booming in public markets, while in private credit, a series of high-profile defaults has placed AI and software deals under the microscope. In light of these developments, we are devoting this section of the credit outlook to AI and its growing footprint across public and private credit markets. The regular sector outlooks follow below. We also offer a snapshot of how we are using AI to advance our credit capabilities. AI bond boom The ",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
+        },
+        {
+          "title": "The Early ViewLooking for AI Alpha Without AI Beta | Man Group",
+          "url": "https://www.man.com/insights/the-early-view-july-2026",
+          "date": null,
+          "dateSource": "none",
+          "summary": "We expect more of the same in the third quarter – mini cycles of AI boom and bust and flare ups in the Middle East. Key takeaways: * Iran and AI dominated the first half of the year and we believe they look set to define the third quarter too, with the war beginning to rattle oil markets again and equity market leadership increasingly focused on perceived AI winners * Against this backdrop, we have downgraded both qualitative and quantitative Equity Market Neutral as we expect traditional equity market alpha to be harder to generate in this volatile landscape. Crowding also remains a risk * We are positive on areas that can generate alpha from AI-adjacent corporate activity, and have upgrade",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "date_unverified",
+          "isPostWindow": false,
+          "evidence": "低：未取得稳定发布日期。",
+          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
+        },
+        {
+          "title": "The Road Ahead Andy Burnham, Can You Hear Me? | Man Group",
+          "url": "https://www.man.com/insights/road-ahead-andy-burnham",
+          "date": null,
+          "dateSource": "none",
+          "summary": "Key takeaways: * It’s hard to make the case that investors’ neglect of UK govies is a debt / deficit story. Yes, these metrics are bad on an absolute basis, but world relative, the UK is not an outlier * The UK has faced unusual levels of inflation and political instability, however. This is likely pressuring gilt yields higher via inflation expectations and the term premium * The former is likely to be influenced by global factors in the long term, but the latter can be influenced on the near horizon. Fiscal consistency and discipline will be key to that effort The tale is told that, in the moment of Britain’s greatest peril, the ghost of Sir Francis Drake himself will rise from the grave, ",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "date_unverified",
+          "isPostWindow": false,
+          "evidence": "低：未取得稳定发布日期。",
+          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
+        },
+        {
+          "title": "A Trend Following Deep Dive: Cash (Equities) Is King | Man Group",
+          "url": "https://www.man.com/insights/trend-following-cash-is-king",
+          "date": null,
+          "dateSource": "none",
+          "summary": "Key takeaways: * Trend followers have long sought to expand into new markets offering differentiated, idiosyncratic return drivers. Within equities, cash equities offer an opportunity to do precisely this, opening the door to trends inaccessible through index futures alone * Not all cash equity approaches are equal, however. Historically, directional sector trend following has generated positive absolute returns, but remained correlated to equity index futures trend, particularly in the tails * We believe cross-sectional strategies, applied to sectors and equity styles, can offer more diversifying characteristics and serve as an effective complement to traditional trend following Introductio",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "date_unverified",
+          "isPostWindow": false,
+          "evidence": "低：未取得稳定发布日期。",
+          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
+        },
+        {
+          "title": "A Sustainable Future James Talbot, Bank of England, on Climate Shocks and Monetary Policy | Man Group",
+          "url": "https://www.man.com/insights/ri-podcast-james-talbot",
+          "date": null,
+          "dateSource": "none",
+          "summary": "How are central banks integrating climate risk? Listen to Jason Mitchell discuss with James Talbot, Bank of England, about why climate risk is no longer a long-run abstraction but is already feeding into inflation, asset prices, and insurance coverage today; how the Bank of England is responding across its monetary policy, prudential regulation, and financial stability functions; and what it'll take to ensure the financial system remains stable and price stability is maintained as the climate transition accelerates. Recording date: 08 July 2026 James Talbot James Talbot is Executive Director of the International Directorate at the Bank of England, having been appointed to the role in 2023 af",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "date_unverified",
+          "isPostWindow": false,
+          "evidence": "低：未取得稳定发布日期。",
+          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
+        }
+      ],
+      "diagnostics": [
+        {
+          "channel": "jina_list",
+          "url": "https://r.jina.ai/http://www.man.com/maninstitute/market-views",
+          "ok": true,
+          "length": 22596,
+          "attempts": 1,
+          "error": null
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-28-July",
+          "ok": true,
+          "length": 43144,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.man.com/insights/views-from-the-floor-2026-28-July"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.man.com/insights/the-early-view-july-2026",
+          "ok": true,
+          "length": 19559,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.man.com/insights/the-early-view-july-2026"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-21-July",
+          "ok": true,
+          "length": 41403,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.man.com/insights/views-from-the-floor-2026-21-July"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.man.com/insights/road-ahead-andy-burnham",
+          "ok": true,
+          "length": 12985,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.man.com/insights/road-ahead-andy-burnham"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-14-july",
+          "ok": true,
+          "length": 42068,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.man.com/insights/views-from-the-floor-2026-14-july"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-7-july",
+          "ok": true,
+          "length": 43624,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.man.com/insights/views-from-the-floor-2026-7-july"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.man.com/insights/2026-h2-credit-outlook",
+          "ok": true,
+          "length": 50798,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.man.com/insights/2026-h2-credit-outlook"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.man.com/insights/trend-following-cash-is-king",
+          "ok": true,
+          "length": 15709,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.man.com/insights/trend-following-cash-is-king"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.man.com/insights/h2-2026-technology-outlook",
+          "ok": true,
+          "length": 49401,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.man.com/insights/h2-2026-technology-outlook"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.man.com/insights/ri-podcast-james-talbot",
+          "ok": true,
+          "length": 54619,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.man.com/insights/ri-podcast-james-talbot"
+        }
+      ],
+      "note": "列表页可读；已读取候选详情页并按日期过滤。"
+    }
+  ]
+}

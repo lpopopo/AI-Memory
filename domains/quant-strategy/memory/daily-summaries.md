@@ -1,3 +1,21 @@
+## 2026-07-26
+
+- **四大机构周度深度学习：** 本地 checker 以 `2026-07-19T03:34:43.198Z` 为窗口起点完成官方域名/Reader 核验；AQR 与 Citadel 列表/详情可读但无新增，Citadel 的 archive 候选仅 `date_unverified`，不是来源不可用；GMO 新增 3 篇、Man 新增 1 篇高证据正文。将低波动—集中度—信用/相关性—事件日历的 `complacency_divergence` 纳入 H7 的点时诊断，并把 AI 电力/并网/输配电/储能拆为 `power_delivery_evidence` 阶梯纳入 H8；更新机构框架、日度检查表和回测计划。均为观察与 replay 输入，`decisions.md` 未变更，未产生交易建议。见 [weekly study](daily/2026-07-26-institutional-research-weekly.md)。
+
+## 2026-07-24
+
+- **实时公开来源与机构研究监控：** 以 `2026-07-21T15:24:40.767Z` 为窗口起点，Chrome 及降级详情核验了 @Kay、@nvidia、@elonmusk 的公开帖子；小红书新笔记仍为 `0/unknown` 图片访问缺口，@realDonaldTrump 窗口覆盖不完整。机构检查器完成：AQR/Citadel/Man 为 0，GMO 有 3 篇 7/23 官方详情页高证据文章。仅补充 AI-capex、电力与估值/分散化研究输入；不改 Fear Gate、集中度或稳定规则，不给交易建议，也不记录订单或成交。见 [monitor](daily/2026-07-24-realtime-public-institutional-monitor.md)。
+
+## 2026-07-18
+
+- **Market/semiconductor turn monitor:** Pre-registered and implemented a completed-close `risk_off → stabilizing → repair_attempt → confirmed_turn` ladder using SMH stabilization/MA/relative strength plus QQQ, breadth, credit and Fear confirmation. The 2024-2026 study found only 7 independent confirmed events, below the 20-event promotion gate; encouraging 21-day SMH medians remain descriptive only. Current 2026-07-17 state is `risk_off` with 1/6 confirmations, so no market or semiconductor turn is confirmed. Engineering generation `v9-turn-monitor-20260718-r1` rehearsed successfully; full suite passes `50/50`. See [details](daily/2026-07-18-market-semiconductor-turn-validation.md).
+- **V9 versioned-generation rehearsal:** Added immutable `generations/<generation-id>` freeze/forward roots and a one-command preparation workflow. Refreshed 46 symbols through `2026-07-17`, then completed three isolated sessions for candidate `v9-opt-20260718-r1`. Final NAV was V9 A/E `0.9860` versus full core `0.9800`; V9 A and E were identical, so the benefit came from 30% cash and Rule E incremental alpha remained zero. Fear Gate was elevated and authorized no trade. The dirty-worktree candidate is engineering-only and audit correctly refuses formal initialization. See [details](daily/2026-07-18-v9-versioned-generation-rehearsal.md).
+- **V9 formal-forward integrity optimization:** Identified that `test_forward_integrity.py` deleted the live forward directory and replaced the shared freeze. Migrated all four end-to-end integrity scenarios to an isolated temporary root, blocked `--replace` after formal artifacts exist, added manifest/state/report/execution/decision consistency inventory to preflight and launch audits, and restored the skipped tests. Full suite passes `48/48` with no skips. Current live forward remains blocked (`forward_eligible=false`, four genesis files, zero completed sessions); start a new clean versioned chain without backfilling missing dates. See [details](daily/2026-07-18-v9-forward-integrity-optimization.md).
+
+## 2026-07-14
+
+- **美股盘后正式审计：** 本地 Node Tencent 报价工作流返回结构化对象，并由 Yahoo Chart 已完成日线确认 7 月 14 日收盘；Fear Gate 为 `normal 3/14`，但真实账户因单一 AI-capex 共因子、趋势未确认和 QCOM `178.10 < 182` 失败入场触发，实际新增/摊低仍为 `0%`。工作 NAV 为 USD `5,933.27`，现金 `63.31%`；QCOM 升级 `reduce-review`，MRVL 保持周线 `<223` 复核。见 [post-close audit](daily/2026-07-14-post-close-audit.md) 和 [portfolio summary](portfolio/2026-07-14-portfolio-summary.md)。
+
 ## 2026-07-12
 
 - **Formal shadow forward initialized:** Clean freeze `forward_eligible=true`; genesis accounts ready; first executable session **2026-07-13** (no historical backfill). See [forward/PIT gap](daily/2026-07-12-formal-forward-pit-gap.md) and `strategies/v9-execution/validation/formal-forward-monday-runbook.md`.
@@ -328,3 +346,132 @@
 - **V9 20-Year Core Baseline:** Ran the V9 engine from 2006-01-03 through 2025-12-30 without fabricated historical information events. The 70% V9 core / 30% unfilled information sleeve returned `6.79%` CAGR with `-15.67%` drawdown; full V8-equivalent core returned `9.35%` with `-21.67%`; static SPY/QQQ 50/50 returned `13.24%` with `-53.66%`. All information-entry counts are zero, so this is core-risk validation only. See [20-year V9 baseline](daily/2026-07-11-v9-core-only-20yr-baseline.md).
 - **Dual-Track Operating Split:** User directed V8/V9 parallel operation: V8 owns SPY/QQQ/cash only; V9 owns all individual-stock research and trade decisions. V8 cannot authorize an individual-stock trade. V9 remains evidence-gated for new buys despite this ownership split; current individual-stock output is still hold/watch/no-action unless a frozen daily V9 decision explicitly authorizes it.
 - **V9 Long-Term Recommendation Promotion:** User promoted V9 Rule E as the long-term individual-stock recommendation framework while retaining all information, technical, sizing, concentration, stop, broker-reconciliation and human-review controls. V8 remains ETF-only. This is a governance decision, not a claim that the present 18 reliable point-in-time events prove information alpha; V9.1/V9.1.1/dynamic-stop remain research upgrades. See `strategies/v9-execution/STRATEGY_OPERATING_MODEL.md`.
+
+## 2026-07-13
+
+- **Realtime Public / Institutional Monitor:** With automation memory missing, used a provisional cutoff of `2026-07-12T10:05:31Z`. The initial Chrome import path was wrong (the component was not missing); the institutional checker ultimately wrote a 12:52Z result with AQR/Citadel/GMO/Man all at zero post-window verified items, while no current public-source artifact was produced. No new verified social or official-detail item, hypothesis, stable decision, trade advice, broker action, order, or fill was recorded. See [monitor](daily/2026-07-13-realtime-public-institutional-monitor.md).
+- **Chrome Public-Source Rerun:** Corrected the Chrome import path and read the Xiaohongshu profile: the first non-pinned note remained existing ID `6a45e9690000000016027e78`; no current-window note was visible. All four X target profiles showed a browser-visible load error, so no new status fact was added. See [monitor](daily/2026-07-13-realtime-public-institutional-monitor.md).
+
+## 2026-07-14
+
+- **Watchlist Update:** User added SK hynix under Nasdaq ADR ticker `SKHY` as a `memory_storage` research and full-scan name. It is observation-only until a new versioned formal-forward freeze/preflight incorporates the changed watchlist; the existing frozen forward record is not rewritten. See [SK hynix watchlist addition](daily/2026-07-14-sk-hynix-watchlist-addition.md).
+
+## 2026-07-15
+
+- **Realtime Public / Institutional Monitor:** Chrome timeline navigation timed out, so the read-and-verified fallback found four high-evidence @nvidia status details (GB300 energy efficiency, power constraint, and open-model positioning); Xiaohongshu remained title-only with images `0/unknown`, and no @Kay/@elonmusk/@realDonaldTrump Chrome-visible current post was verified. The required institutional checker timed out before writing a current result, so no AQR/Citadel/GMO/Man item was added. No rule promotion, trade advice, broker action, order or fill. See [monitor](daily/2026-07-15-realtime-public-institutional-monitor.md).
+
+- **Realtime Public / Institutional Monitor (2026-07-16):** Chrome visibly verified three relative-time @Kay2289123 posts on storage/optical-interconnect narratives (medium author-view evidence; images unread); Xiaohongshu stayed title-only and other X timelines were access gaps. Official-detail checks verified Citadel 1, GMO 3 and Man 1 post-window articles; AQR 0. No rule promotion, trade advice, broker action, order or fill. See [monitor](daily/2026-07-16-realtime-public-institutional-monitor.md).
+
+## 2026-07-17
+
+- **Realtime Public / Institutional Monitor:** Chrome timeline loading timed out before public X profiles were read, so the social result remains an access gap. Fallback X profiles had empty bodies; Xiaohongshu remained title-only with images `0/unknown`. The institutional checker completed current-window date filtering and found 0 new official-detail high-evidence articles for AQR, Citadel Securities, GMO, and Man Institute. No rule promotion, trade advice, broker action, order, or fill. See [monitor](daily/2026-07-17-realtime-public-institutional-monitor.md).
+
+- **Xiaohongshu Single-Note Verification:** User-provided note `6a5840d8000000001302f692` was fully readable: stable author/time/body and `24/24` images. It presents a CXL memory-pooling/interconnect thesis and MRVL/Marvell ecosystem leads; retained as high evidence for the author post and medium research evidence only, pending primary-source, fundamental and price-window validation. No rule promotion or trade action. See [monitor](daily/2026-07-17-realtime-public-institutional-monitor.md).
+
+- **META Watchlist Addition:** From the verified CXL note, MRVL/ALAB/MU were already canonical watchlist names and Celestial AI was not a directly tradable public stock. Added only `META` as `ai_infrastructure_memory_cxl_demand`, observation-only pending a new versioned forward freeze/preflight; no rule promotion or trade action. See [addition note](daily/2026-07-17-meta-watchlist-addition.md).
+
+- **Realtime Public / Institutional Monitor:** Chrome-visible @Kay2289123 showed several 7/13 AI storage/interconnect/optical posts (relative times only); Xiaohongshu’s latest non-pinned card remained existing ID `6a45e9690000000016027e78` with no details/images read. Official-detail checks verified Citadel’s 7/14 *After the Reset* and Man’s 7/13 *Chips Down, Then What?*; AQR/GMO had no post-window verified item. No rule promotion, trade advice, broker action, order or fill. See [monitor](daily/2026-07-14-realtime-public-institutional-monitor.md).
+
+- **Formal Post-Close Audit:** 本地 Node Tencent quote workflow 通过，随后以 Yahoo completed daily bars 核验 2026-07-13 收盘；Fear Gate 为 `elevated 6/14`（VIX `17.16`、SMH 63 日回撤 `-12.45%`，VIX3M 仅有 7 月 10 日 `18.57` 的日期错配近似）。真实工作 NAV `USD 5,896.59`、现金 `63.71%`、股票 `36.29%`，四个真实持仓仍为一个 AI-capex 共同因子；MRVL 暂低于 223 周线复核线、QCOM 185 观察触发但未跌破 182 完成收盘失败线。Formal shadow forward 已附加 2026-07-13 四个状态，未授权真实交易；`decisions.md` 未改。见 [audit](daily/2026-07-13-post-close-audit.md)。
+- **Formal Post-Close Audit (2026-07-15):** 本地 Node Tencent quote workflow 对股票、ETF 与 VIX 返回结构化对象；Yahoo Chart 备用交叉校验为 HTTP 404，VIX3M 缺口，故数据质量中等。保守 Fear Gate 为 `elevated 5/14`（VIX `21.67`，半导体相对显著走弱）；真实工作 NAV `USD 5,819.35`，现金/股票 `64.55%/35.45%`，四项持仓仍为一个 AI-capex 共因子。QCOM 持续 `reduce-review`，MRVL/GLW 周线风险复核，WDC near-stop、STX replay `reduce-review`；无订单/成交假定，未改 `decisions.md`。见 [audit](daily/2026-07-15-post-close-audit.md)。
+
+- **Formal Post-Close Audit (2026-07-16):** Node Tencent quote workflow 为所需股票/ETF 返回结构化对象；SMH 与公开历史收盘一致，VIX 的公开可见收盘为 `16.58`，VIX3M 仅有 7 月 15 日 `18.91`，所以期限结构不计分。保守 Fear Gate 为 `elevated 5/14`；工作 NAV `USD 5,614.09`，现金/股票 `66.91%/33.09%`，四项持仓仍是一个 AI-capex 共因子。QCOM 持续 `reduce-review`，GLW/MXL/MRVL 等待完成周线复核；AMD near-stop，WDC/STX 仅在 replay/watch 中触发。无订单/成交假定，未改 `decisions.md`。见 [audit](daily/2026-07-16-post-close-audit.md)。
+
+- **Formal Post-Close Audit (2026-07-17):** Local Node quote workflow returned structured Tencent objects for all required equities/ETFs and VIX; VIX3M was unavailable and not imputed. Conservative Fear Gate is `elevated 7/14` (70% multiplier, 25% cash floor, 25% framework new-buy cap), while actual fresh-buy capacity remains `0%` because the four confirmed holdings remain one AI-capex common factor with `trend_broken`, theme overlap, and unresolved reviews. Working NAV is `USD 5,595.03`, cash/equity `67.14%/32.86%`; QCOM remains `reduce-review`, and the completed weekly GLW/MXL/MRVL risk reviews plus AMD near-stop and WDC/STX replay triggers remain active. No order or fill was assumed; `decisions.md` was not changed. See [audit](daily/2026-07-17-post-close-audit.md).
+
+## 2026-07-19
+
+- **四大机构周度深度学习：** 官方域名 checker 核验 AQR 窗口后无新增、Citadel 1、GMO 3、Man 1 篇稳定日期/正文文章；新增“系统性 vs 横截面风险定位”和“流向基本面切换”的诊断/回测框架，Man/GMO 对 AI stack 选择性、存储供给、预期差和客户集中度的输入仅补充 H7/H8。未改 `decisions.md`，不产生交易建议。见 [周报](daily/2026-07-19-institutional-research-weekly.md)。
+## 2026-07-20
+
+- **Formal Post-Close Audit:** Local Node quote workflow returned structured Tencent objects; `yesterdayClose` was used as the completed 2026-07-20 stock/ETF close, while Google browser-visible VIX implied a prior close of `18.65` and VIX3M remained unavailable. Fear Gate is `normal 3/14`, but actual new-buy capacity remains `0%` because four confirmed holdings are one correlated AI-capex basket with unresolved reviews. Working NAV is `USD 5,715.89`, cash/equity `65.72%/34.28%`; QCOM remains `reduce-review`, AMD is near its 492 line, and WDC/STX remain replay `reduce-review`. No order/fill assumed and `decisions.md` was not changed. See [audit](daily/2026-07-20-post-close-audit.md).
+
+- **实时公开来源与机构研究监控：** 以 `2026-07-19T03:34:43Z` 为增量起点；Chrome 公共页面连接不可用，降级诊断的三个 X profile 均为空正文，小红书仅标题候选（图片 `0/unknown`）。机构检查器完成且四源窗口后 official-detail 高证据新增均为 0；不调整 Fear Gate、主题/集中度约束或稳定规则。详见 [监控记录](daily/2026-07-20-realtime-public-institutional-monitor.md)。
+
+## 2026-07-23
+
+- **正式盘后审计：** 本地 Node quote workflow 返回结构化 Tencent completed-close 字段，7/23 收盘 MRVL/AMD/WDC/STX 为 `210.99/552.33/556.67/908.10`；Google browser-visible VIX/VIX3M 为 `16.64/20.60`。Fear Gate `normal 3/14`，但实际新增仍 `0%`：四个真实持仓是一篮子 AI-capex 共因子，QCOM `175.63 <182` 继续 `reduce-review`，GLW/MXL/MRVL 继续防御性复核。工作 NAV `USD 5,780.63`、现金/股票 `64.98%/35.02%`；已完成组合级相关风险复核并追加 7/23 replay 行，无订单、成交或 `decisions.md` 变更。见 [审计](daily/2026-07-23-post-close-audit.md)。
+
+- **实时公开来源 / 机构研究监控（20:36）:** 窗口自 `2026-07-21T15:24:40.767Z`。Chrome 可见核验 @Kay 两条窗口内作者帖、@elonmusk 一条 Tesla 财报电话会入口；降级 status 详情补充 @nvidia 一条 LiveX/Physical AI 官方帖。均仅是研究线索，不构成订单、收入、趋势或交易结论。小红书主页无可核验新增时间且轮播 `0/unknown`；@realDonaldTrump 仍有覆盖缺口。机构 checker 本轮超时且未写出新产物，故 AQR/Citadel/GMO/Man 不作本窗口新增判断。未更新 rules/decisions/hypotheses。见 [monitor](daily/2026-07-23-realtime-public-institutional-monitor-run2.md)。
+
+- **小红书追补核验：** 浏览器已稳定打开美研芒格君新笔记 `6a60140c000000001b01d1ab`，页面显示“昨天 08:51 美国”；作者以 scale-up / scale-out / scale-across 解释 AI 光互联，并强调铜/光并存及可插拔→LPO/NPO/CPO 的演进。正文、作者和页面时间为高证据，产业判断为中证据；轮播图已逐页视觉/OCR 读完 `29/29`，但公司订单和采购数字仍待官方交叉核验。仅补充 AI bottleneck/质量-capex 研究线索，不改规则或交易状态。见 [监控记录](daily/2026-07-23-realtime-public-institutional-monitor.md)。
+
+- **小红书图片完整分析：** 同笔记轮播图现已视觉/OCR 读完 `29/29`。其可复用价值是将光互联拆为连接距离/位置、技术层、采购对象及 demo→收入的证据成熟度，而非公司清单；公司订单、收入、量产、投资和采购承诺仍仅为作者陈述，待官方详情/财报/客户确认。将“客户认证、实际发货、200G/lane 良率、售价、毛利”加入 AI bottleneck 观察字段；不变更 Fear Gate、趋势、集中度或任何稳定规则。见 [监控记录](daily/2026-07-23-realtime-public-institutional-monitor.md)。
+
+- **实时公开来源与机构研究监控：** 使用 `2026-07-21T15:24:40.767Z` 增量窗口。浏览器高证据核验 NVIDIA 4 条与 Elon Musk 1 条 status（物理 AI/仿真、Wistron 美国制造、Spectrum-6 互连和 Grok Imagine 产品目标）；均只是产品/生态事实，未形成订单、收入或价格确认。小红书 `0/unknown` 图片且无单篇正文，@Kay 与 @realDonaldTrump 为时间线覆盖缺口。机构检查器读完 AQR、Citadel、GMO、Man 的列表/详情分层结果，窗口后 official-detail 高证据新增均为 0。不改 Fear Gate、集中度、假设或稳定规则，不产生交易建议、订单或成交。见 [监控记录](daily/2026-07-23-realtime-public-institutional-monitor.md)。
+
+## 2026-07-21
+
+- **实时公开来源与机构研究监控：** Chrome 连接正常但四个 X 时间线仍加载中，小红书目标作者页未呈现内容，均按访问缺口处理；降级诊断核验 NVIDIA 3 条、Elon Musk 1 条作者匹配 status，以及 Man Institute 1 篇 7/20 官方详情文章。它们仅补充 AI 产品栈与 VIX 风险复核观察，不改变 Fear Gate、集中度、假设或稳定决策，不生成交易建议、订单或成交。详见 [监控记录](daily/2026-07-21-realtime-public-institutional-monitor.md)。
+- **正式盘后审计（2026-07-21）：** 本地 Node Tencent workflow 对 7/21 结构化 completed-close 字段可用；Google browser-visible 反推同步 VIX/VIX3M 为 `17.05/19.59`。Fear Gate 为 `normal 3/14`，但实际新增仓仍 `0%`，因四个确认持仓仍是单一 AI-capex 共同因子且 QCOM 持续 `reduce-review`。工作 NAV `USD 5,776.51`，现金/股票 `65.03%/34.97%`；已完成组合相关性复核并追加 replay 台账，无订单、成交或 `decisions.md` 改动。见 [审计](daily/2026-07-21-post-close-audit.md)。
+
+## 2026-07-22
+
+- **盘后正式审计延期：** Node 本地 quote workflow 对股票/ETF 返回结构化 Tencent 对象，但运行时可见市场仍在 7/22 GMT-5 15:04 左右、成交量递增；仅记录盘中数据质量与既有风险约束，未把价格写成正式收盘、未计算 NAV/门控/止损或追加 replay 行。详见 [延期记录](daily/2026-07-22-post-close-audit.md)。
+- **正式盘后审计（2026-07-24）：** Node Quote Workflow Smoke Test 返回结构化 `Tencent (Primary)` 收盘对象；Google browser-visible VIX/VIX3M 为 `18.58/20.51`。Fear Gate 为 `elevated 5/14`，但实际新增/摊低仍为 `0%`：四项真实持仓是一个 AI-capex 共因子篮子，QCOM `166.97 <182`、MXL `71.59 <78` 均为 `reduce-review`，WDC/STX near-stop。工作 NAV `USD 5,590.19`，现金/股票 `67.20%/32.80%`；已完成组合级相关风险复核和 7/24 replay 行，无订单、成交或稳定决策变更。见 [审计](daily/2026-07-24-post-close-audit.md)。
+
+## 2026-07-27
+
+- **实时公开来源与机构研究监控：** 增量窗口自 `2026-07-24T12:37:24.596Z`。Chrome 连接成功但公开时间线 DOM 两次超时，按覆盖缺口处理；降级输出中的 NVIDIA 5 条、Elon Musk 4 条 status 均有 URL/正文/作者与 snowflake 时间，统一仅作中证据研究线索。小红书只有无时间/正文/URL 的标题候选（图片 `0/unknown`），Trump 政策覆盖未完成。机构 checker 刷新并读完：AQR 核验 1 篇 7/26 官方详情文章（集中持股风险框架），Citadel/GMO/Man 均无窗口后 official-detail 高证据。未改 Fear Gate、趋势、集中度、`decisions.md` 或 `hypotheses.md`，不生成交易建议、订单或成交。见 [监控记录](daily/2026-07-27-realtime-public-institutional-monitor.md)。
+- **QCOM 长期重分类：** 用户确认若长期条件成立则长期持有高通；经官方财务、Investor Day、分红与回购证据复核，QCOM `2 @ 187.50` 纳入长期核心候选。原 `<182` 短线失败入场规则不再自动卖出现有两股，当日卖出建议被覆盖且仍为 planning-only。财报前不加仓；财报后至少两日不创新低、Fear Gate 非压力、基本面完好且完成收盘重回约 `182` 后，才评估新增一股。见 [重分类记录](daily/2026-07-27-qcom-long-term-reclassification.md)。
+
+## 2026-07-29
+
+- **实时公开来源与机构研究监控：** 以 `2026-07-27T12:55:53.521Z` 为增量起点。Chrome 扩展不可用；两项降级检查器均超时且未刷新 7/27 产物，因此没有把历史内容记作本窗口核验。社媒、机构详情页和小红书轮播均保留为覆盖缺口（图片 `0/unknown`）；不改变 Fear Gate、主题集中度或稳定规则。见 `daily/2026-07-29-realtime-public-institutional-monitor.md`。
+
+## 2026-07-30
+
+- **实时公开来源与机构研究监控：** Chrome 不可连接；降级公开检查器完成但 X 三个 profile 均为 200/空正文，小红书仍仅未定时标题候选（图片 `0/unknown`），没有新社媒事实。机构 checker 刷新并读完：AQR 0、Citadel 1、GMO 3、Man 1 篇窗口内 official-detail 高证据文章；仅补充利率/信用与电力投入的研究/回放入口，不调整 Fear Gate、趋势、集中度、`decisions.md` 或 `hypotheses.md`，不生成订单/成交或交易建议。见 `daily/2026-07-30-realtime-public-institutional-monitor.md`。
+
+- **21:46 复核：** 两个检查器产物已重新生成并读取；浏览器可见社媒仍为访问缺口，机构高证据计数不变。维持既有风险约束，仅作为后续非回填 replay 的带时间戳研究输入。
+
+## 2026-07-28
+
+## 2026-07-29 收盘补记
+
+- **正式盘后审计：** 本地 Node Tencent workflow 返回结构化 yesterdayClose，Google browser-visible VIX/VIX3M 为 20.66/21.50；Fear Gate 为 elevated 6/14，但实际新增/摊低维持 0%。AMD/WDC/STX 历史 replay 风险线均触发，MXL <78 风险复核持续；工作 NAV USD 5,313.05、现金/股票 70.70%/29.30%。已完成相关风险复核并追加 completed-close replay 行；未下单、未假设成交、未改稳定决策。见 daily/2026-07-29-post-close-audit.md。
+
+- **盘后正式审计延期：** 自动化实际运行于 12:03 EDT，纽约常规交易未收盘。Node Quote Workflow Smoke Test 和扩展请求均返回结构化 `Tencent (Primary)` 对象，说明本地 workflow 可用；但价格和成交量仍为盘中，VIX 陈旧且 VIX3M 缺失，故未将数据写为收盘，未计算 Fear Gate/NAV/止损/overlay，也未追加 replay 行。既有相关 AI-capex 新增/摊低 `0%` 约束保持。见 [延期记录](daily/2026-07-28-post-close-audit.md) 与 [待办](todos/2026-07-28-strategy-todos.md)。
+- **盘后正式审计（补做完成）：** 下一交易日 Node `yesterdayClose` 提供 7/28 completed closes，Google browser-visible VIX/VIX3M 反推为 `18.21/19.86`。Fear Gate 为 `elevated 5/14`，实际新增仍 `0%`；MXL `<78`、AMD `<492`、WDC `<500`、STX `<835` 均为 reduce-review（后三者仅历史 replay/watch）。工作 NAV `USD 5,385.79`，现金/股票 `69.75%/30.25%`；已完成相关性复核、组合快照与 replay 行，无订单、成交或稳定决策改动。见 [完成审计](daily/2026-07-28-post-close-audit-completed.md)。
+## 2026-07-30 收盘补记
+
+- **正式盘后审计：** 本地 Node Quote Workflow Smoke Test 返回结构化 `Tencent (Primary)` 对象，且 `price` 与 Yahoo Chart 7/30 完整日线交叉一致；Google browser-visible VIX/VIX3M 为 `20.66/19.50`。Fear Gate 为 `elevated 5/14`，但实际新增/摊低维持 `0%`。MXL `<78` 继续 reduce-review；MRVL/GLW 维持 completed-week 防御复核；QCOM long-term no-add；AMD `<492` 为 replay reduce-review，WDC/STX 为 near-stop 防御复核。工作 NAV USD `5,464.85`，现金/股票 `68.74%/31.26%`；完成相关风险复核与 7/30 replay 行，无订单、成交或 `decisions.md` 更新。见 `daily/2026-07-30-post-close-audit.md`。
+
+## 2026-07-31
+
+- **正式盘后审计：** Node Tencent structured quotes 与 Yahoo completed bars 确认 7/31 收盘，Google browser-visible VIX/VIX3M 为 `15.99/19.02`；Fear Gate 为 normal `4/14`，但实际相关新增/摊低维持 `0%`。MXL `<78` 和 AMD `<492`（仅 replay/watch）为 reduce-review，GLW/MRVL 防御复核、QCOM 长期 no-add、STX near-stop；工作 NAV USD `5,479.37`，现金/股票 `68.56%/31.44%`。已完成组合级相关风险复核与 replay 行，无订单、成交或稳定决策变更。见 `daily/2026-07-31-post-close-audit.md`。
+
+- **实时公开来源与机构研究监控：** 窗口 `2026-07-30T13:40:51.817Z` 至 `2026-07-31T12:36:44.488Z`。Chrome 可连接但四个 X 时间线均停在 Loading，小红书仅显示公共壳页面、无目标作者内容（图片 `0/unknown`），均为覆盖缺口而非无更新。机构检查器刷新且 Markdown/JSON 均已读：AQR/Citadel/GMO/Man 的窗口内 official-detail 高证据新增均为 0。未改变 Fear Gate、趋势、集中度、`decisions.md` 或 `hypotheses.md`，不生成交易建议、订单或成交。见 `daily/2026-07-31-realtime-public-institutional-monitor.md`。
+
+## 2026-08-04
+
+- **正式盘后审计：** Node Quote Workflow Smoke Test 与扩展请求均返回非空 Tencent 结构化报价，Yahoo Chart completed bars 交叉验证 8/04 权益/ETF 收盘；VIX/VIX3M 采用中等质量 Yahoo `16.50/19.34`。Fear Gate 为 normal `4/14`，但实际相关新增/摊低仍为 `0%`。MXL `<78` 继续 reduce-review；GLW/MRVL completed-week review，QCOM long-term no-add；AMD/WDC/STX 仅 replay/watch。工作 NAV USD `5,712.29`，现金/股票 `65.76%/34.24%`，已完成组合级相关风险复核并追加完成的 replay 行；未下单、未假设成交、未更新稳定决策。见 `daily/2026-08-04-post-close-audit.md`。
+
+- **AQR / GMO / Citadel Securities 机构研究续查：** 增量起点为 `2026-07-31T12:36:44.488Z`。AQR 官方 Research 列表与候选详情未发现窗口内新增；GMO 官方 sitemap 无窗口内新的 Research Library 条目。Citadel 官方域名详情页核验两篇 2026-08-03 新文，新增 `flow_to_fundamentals_handoff_v2`、`market_guidance_reflexivity`、`AI_diffusion_cost_policy`、`social_license_permitting_bottleneck` 和 `product_complex_inflation_pass_through` 作为实验性 replay 字段。Fear Gate、集中持仓约束、`decisions.md` 与 `hypotheses.md` 均不变，不生成交易建议。见 [续查记录](daily/2026-08-04-aqr-gmo-citadel-research-continuation.md)。
+
+## 2026-08-03
+
+- **正式盘后审计：** 本地 Node Quote Workflow Smoke Test 返回非空 Tencent 结构化报价，Yahoo Chart completed bars 交叉核验 8/03 收盘；本地 VIX 陈旧、VIX3M 缺失，Yahoo 完成日线为 `15.86/18.93`。Fear Gate 为 normal `3/14`，但相关新增/摊低维持 `0%`。MXL `<78`、AMD `<492` 和 STX `<835`（后两者仅 replay/watch）为 reduce-review；GLW/MRVL 维持防御复核，QCOM long-term no-add。工作 NAV USD `5,530.69`，现金/股票 `67.92%/32.08%`；已完成组合级相关风险复核和 8/03 replay 行，未下单、未假设成交、未更新稳定决策。见 `daily/2026-08-03-post-close-audit.md`。
+## 2026-08-04 Public Monitor
+
+- **实时公开来源与机构研究监控：** Chrome 只读核验了 @Kay2289123 的互连/算力工厂作者观点、@nvidia 的安全联盟与 agentic-commerce/推理成本产品信息、以及 @elonmusk 的 Grok Imagine 帖；均不作为订单、收入或交易确认。小红书仍为服务器连接错误（轮播 `0/unknown`），Trump 仅见窗口前帖。机构 checker 双格式输出确认 AQR 0、Citadel 2、GMO 0、Man 0 本窗口 official-detail 高证据新增；仅进入风险与 replay 观察，不更新稳定规则。见 [监控记录](daily/2026-08-04-realtime-public-institutional-monitor.md)。
+
+## 2026-08-05
+
+- **正式盘后审计：** 本地 Node `Tencent (Primary)` 结构化报价与 Yahoo completed bars 确认 8/05 收盘；Cboe 官方 VIX/VIX3M 为 `15.81/18.95`。Fear Gate 为 normal `4/14`，但实际相关新增/摊低仍 `0%`。MXL `<78`、AMD replay `<492` 为 reduce-review，WDC/STX 为 near-stop review；工作 NAV USD `5,633.79`（现金/股票 `66.68%/33.32%`），完成组合级相关风险复核与 replay 行，无订单、成交或 `decisions.md` 更新。见 `daily/2026-08-05-post-close-audit.md`。
+
+- **实时公开来源与机构研究监控：** 增量窗口 `2026-08-04T14:25:20.069Z` 至 `2026-08-05T12:52:29.124Z`。Chrome 虽连接但四个 X 目标与小红书公开页均在可见快照前超时，按访问缺口处理（小红书图片 `0/unknown`），不推断无更新且未用脚本替代。机构 checker 的 Markdown/原始 JSON 已读：AQR、Citadel、GMO、Man 均为 0 篇窗口内 official-detail 高证据新增；无稳定规则、假设、交易建议、订单或成交更新。见 [监控记录](daily/2026-08-05-realtime-public-institutional-monitor.md)。
+
+## 2026-08-06
+
+- **实时公开来源与机构研究监控：** 窗口 `2026-08-05T12:52:29.124Z` 至 `2026-08-06T13:17:14.178Z`。Chrome 只读 DOM 两次超时，社媒为覆盖缺口；降级输出的三个 X profile 均为 HTTP 200/空正文，小红书仅无时间/正文/URL 的标题候选、图片 `0/unknown`。机构 Markdown/原始 JSON 已读，AQR/Citadel/GMO/Man 均无窗口内 official-detail 高证据新增；保持 Fear Gate、AI-capex 集中度和新增/摊低 `0%` 的既有约束，不更新稳定规则或假设。见 `daily/2026-08-06-realtime-public-institutional-monitor.md`。
+
+## 2026-08-08
+
+- **实时公开来源与机构研究监控：** 增量起点 `2026-08-06T13:17:14.178Z`。Chrome 可连接但五个公开目标页面的可见 DOM 超时，故社媒均为覆盖缺口、轮播 `0/unknown`；检查器命令虽执行但 `work/*-latest.md/.json` 未刷新，历史 8/06 输出不冒充当前窗口结果。未重定级 Fear Gate/趋势/集中度，不更新 `decisions.md` 或 `hypotheses.md`，不生成交易建议、订单或成交。见 `daily/2026-08-08-realtime-public-institutional-monitor.md`。
+- **2026-08-06 Formal Post-Close Audit:** Local Node smoke test returned structured Tencent Primary quotes; because the following session was live, `yesterdayClose` was correctly used for the 8/06 completed close and matched Yahoo daily bars. Cboe official VIX/VIX3M were `15.15/18.69`. Fear Gate is `normal 4/14`, but actual correlated adds remain `0%`; MXL stays reduce-review, replay/watch AMD and WDC are below `492/500`, and STX is near `835`. Working real-account NAV is USD `5,654.99` (cash `66.43%`, four holdings, one effective AI-capex theme). Completed the portfolio-level correlation review, created audit/portfolio/todo records and appended a replay row; no broker action or decision update. See [audit](daily/2026-08-06-post-close-audit.md) and [portfolio](portfolio/2026-08-06-portfolio-summary.md).
+- **2026-08-07 Formal Post-Close Audit:** Local Node Tencent Primary quotes matched local Yahoo Chart fallback objects; Cboe official VIX/VIX3M were `14.90/18.72`. Fear Gate remains `normal 4/14`, but actual correlated adds remain `0%`. GLW/MXL/MRVL are in completed-week/close reduce reviews, while replay/watch AMD/WDC/STX are below `492/500/835`; none of the latter are real positions. Working real-account NAV is USD `5,748.33` (cash `65.35%`, four holdings, one effective theme); MRVL is `15.22%`, marginally above the normal cap. Completed the portfolio-level correlation review and replay row; no broker action or decision update. See [audit](daily/2026-08-07-post-close-audit.md) and [portfolio](portfolio/2026-08-07-portfolio-summary.md).
+
+## 2026-08-09
+
+- **Institutional weekly study:** Required checker outputs were regenerated and read using `2026-07-26T03:09:40.239Z`. Citadel Reader official-domain details verified three post-window articles and Man one; GMO list/details were readable with no post-window item; AQR Reader list failed in this run, an access gap rather than a no-new or source-unavailable conclusion. Added experimental `retail_risk_transfer` and `complex_credit_complacency` to the institutional framework, checklist, Overlay B and H7/H11 validation; created the weekly source/evidence note. `decisions.md` unchanged; no trade advice or account action. See [weekly study](daily/2026-08-09-institutional-research-weekly.md).

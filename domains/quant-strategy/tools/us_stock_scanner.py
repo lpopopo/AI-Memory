@@ -14,13 +14,13 @@ import yfinance as yf
 # Fallback list for environments where the canonical JSON cannot be read.
 DEFAULT_WATCHLIST_TICKERS = [
     # 1. 存储/内存瓶颈
-    "DRAM", "MU", "WDC", "STX", "SNDK",
+    "DRAM", "MU", "WDC", "STX", "SNDK", "SKHY",
     # 2. 光互连/定制芯片/光模块
     "MRVL", "AVGO", "ALAB", "COHR", "LITE", "AAOI", "MXL", "AXTI", "CRDO",
     # 3. AI服务器/机架整合
     "SMCI",
     # 4. AI工厂/云/数据库基建
-    "ORCL",
+    "ORCL", "META", "CEG",
     # 5. 半导体设备/测试/验证
     "TER", "ASML", "AMAT", "KLAC", "LRCX",
     # 6. 航天与卫星通信
@@ -35,7 +35,9 @@ DEFAULT_WATCHLIST_TICKERS = [
     "GLW", "NOK",
     # 11. PCB与电子制造
     "TTMI",
-    # 12. 纳斯达克100指数核心的低单价执行替代品
+    # 12. 消费防御
+    "KO",
+    # 13. 纳斯达克100指数核心的低单价执行替代品
     "QQQM"
 ]
 

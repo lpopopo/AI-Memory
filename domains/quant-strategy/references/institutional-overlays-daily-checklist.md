@@ -47,6 +47,10 @@ When available, record these direct diagnostics separately rather than forcing m
 - Single-stock implied correlation and semiconductor implied volatility.
 - Frequency of Nasdaq/semiconductor `spot up / vol up` sessions.
 - Equity-financing spread or another balance-sheet-capacity proxy.
+- Risk localisation: `broad/systemic`, `cross-sectional`, `mixed`, or `unavailable`. Compare index/ETF hedging and breadth/credit with semiconductor, momentum and single-name hedging; do not infer this state from the index level alone.
+- Flow-to-fundamentals handoff: `not_observed`, `provisional`, `confirmed`, or `unavailable`. `Confirmed` requires realised earnings/guidance plus completed-close/relative-strength confirmation; it is context, not an entry trigger.
+- Complacency divergence: `present`, `absent`, or `unavailable`. `Present` needs more than a low VIX: record the dated combination of subdued index volatility, concentrated leadership, credit/implied-correlation or options evidence where available, and a known macro/earnings event cluster. It prompts a concentration/no-chase review only and cannot override the Fear Gate.
+- Retail risk transfer: `defensive`, `neutral`, `risk_seeking`, or `unavailable`. Record the index/ETF-versus-single-stock option mix, put/call or monetisation observation, source and first-visible time. Treat a platform-specific statistic as source-only, not as a price-derived fact.
 
 These diagnostics describe amplification risk. High values do not create a standalone bearish signal.
 
@@ -80,6 +84,7 @@ Daily review fields:
 - Customer concentration: `low`, `medium`, or `high`.
 - Evidence type: `earnings`, `guidance`, `backlog`, `capex`, `product`, `partnership`, `narrative`.
 - Price confirmation: `confirmed`, `mixed`, or `rejected`.
+- Power-delivery evidence: `source_only`, `independently_confirmed`, or `unavailable`; record whether the evidence concerns generation, grid interconnection/delivery, transmission/distribution, storage, cooling, procurement, utilisation, revenue or margin. Do not promote a ticker or subtheme on an announcement alone.
 
 ## 4. Factor-Macro Exposure Check
 
@@ -94,6 +99,7 @@ Weekly or during regime transitions, record:
 - Theme overlap: multiple stocks can express the same AI capex bet.
 - Sleeve drawdown overlap: value sleeve and momentum sleeve may fail together if both are exposed to the same macro shock.
 - Climate-resource input stress: use the shared classification contract in `institutional-market-research-framework.md`. Retain constraint category, affected geography/supply chain, direct AI-capex linkage, severity, independent-source count, `first_visible`, `source`, `as_of`, and `expires_at`; record `unavailable` if the two-independent-source threshold is not met.
+- Complex-credit complacency: `present`, `absent`, or `unavailable`. Only flag when dated evidence identifies compressed compensation alongside duration/extension, negative-convexity or structural/documentation risk. It requests a macro/common-factor review; it is not a credit or equity signal.
 
 Daily action guide:
 
@@ -113,6 +119,7 @@ Track these subthemes:
 - Co-packaged optics.
 - InP lasers and compound semiconductors.
 - Data-center power and cooling.
+- Power generation, grid interconnection/delivery, transmission/distribution and storage; keep the evidence stage separate from a thematic demand narrative.
 - Network equipment and custom silicon.
 - Memory/storage throughput.
 

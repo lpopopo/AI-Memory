@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12",
+  "updated": "2026-08-05",
   "scope": "All tradable symbols from the codebase manual watchlist are formal user-selected names and must appear in full-watchlist analysis even when they do not rank in the top candidate tables.",
   "tickers": [
     {"symbol": "DRAM", "theme": "memory_storage"},
@@ -7,6 +7,7 @@
     {"symbol": "WDC", "theme": "memory_storage"},
     {"symbol": "STX", "theme": "memory_storage"},
     {"symbol": "SNDK", "theme": "memory_storage"},
+    {"symbol": "SKHY", "theme": "memory_storage", "market": "NASDAQ", "name": "SK hynix ADR"},
     {"symbol": "MRVL", "theme": "interconnect_custom_silicon"},
     {"symbol": "AVGO", "theme": "interconnect_custom_silicon"},
     {"symbol": "ALAB", "theme": "interconnect_custom_silicon"},
@@ -18,6 +19,7 @@
     {"symbol": "CRDO", "theme": "interconnect_transmission"},
     {"symbol": "SMCI", "theme": "ai_server_rack"},
     {"symbol": "ORCL", "theme": "ai_factory_cloud"},
+    {"symbol": "META", "theme": "ai_infrastructure_memory_cxl_demand"},
     {"symbol": "TER", "theme": "semiconductor_test"},
     {"symbol": "ASML", "theme": "semiconductor_equipment"},
     {"symbol": "AMAT", "theme": "semiconductor_equipment"},
@@ -33,6 +35,7 @@
     {"symbol": "GLW", "theme": "optical_network"},
     {"symbol": "NOK", "theme": "network_infrastructure"},
     {"symbol": "TTMI", "theme": "pcb_electronics_manufacturing"},
+    {"symbol": "CEG", "theme": "ai_power_nuclear_generation", "market": "NASDAQ", "name": "Constellation Energy"},
     {"symbol": "KO", "theme": "consumer_defensive_beverages"},
     {"symbol": "QQQM", "theme": "nasdaq_100_index_core_execution_proxy"}
   ],

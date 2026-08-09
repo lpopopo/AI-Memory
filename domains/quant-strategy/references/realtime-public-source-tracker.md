@@ -2,6 +2,27 @@
 
 This file tracks public, source-specific realtime observations that should not be mixed into Xiaohongshu author views.
 
+## 2026-07-24 Monitor
+
+- Window: `2026-07-21T15:24:40.767Z` through the 2026-07-24 run. Chrome and status-detail verification covered @Kay2289123 `2080438515285078184`/`2080328845799141809`, @nvidia `2080326297260072992`/`2080078677426241940`/`2079715060197310935`, and @elonmusk `2080048685522837664`. They are author views, product/ecosystem facts, or an earnings-call entry, not order, revenue, profitability, price, or trade confirmation.
+- Xiaohongshu Chrome had a server-connection gap and fallback had titles only; no stable new-note URL/time/body/comments/carousel was verified and images are `0/unknown`. @realDonaldTrump's visible range was pre-window, so policy coverage remains incomplete rather than “no new post.”
+- Institutional checker completed at `2026-07-24T12:37:24.596Z`: AQR 0, Citadel Securities 0, GMO 3 and Man Institute 0 post-window official-detail high-evidence articles. GMO is research overlay only; no framework or stable decision was promoted. See `memory/daily/2026-07-24-realtime-public-institutional-monitor.md`.
+
+## 2026-07-14 Incremental Monitor
+
+- Window: `2026-07-13T12:57:08.033Z` onward; detailed evidence is in `memory/daily/2026-07-14-realtime-public-institutional-monitor.md`.
+- Chrome-visible @Kay2289123 yielded status IDs `2076934898066305255`, `2076716113820598735`, `2076700875326947416`, and `2076696023423156645` with relative times 8h–23h and AI narrative/optical/storage content. This is medium evidence for the post fact and author view, not independent market fact.
+- Xiaohongshu remained readable; first non-pinned card was existing `6a45e9690000000016027e78`. No detail, comment or carousel was read (`0/unknown` images), so no new Xiaohongshu fact was added.
+- @nvidia, @elonmusk and @realDonaldTrump were not completed after a Chrome read timeout; this is an access gap, not an unavailable-source conclusion.
+
+## 2026-07-13 Realtime Public / Institutional Monitor
+
+- Provisional window: `2026-07-12T10:05:31Z` onward, based on the last readable institutional artifact because the automation memory file was missing. This is a window assumption, not a confirmed successful all-source cutoff.
+- Chrome 在本次监控时未建立会话，原因是调用路径误写。后续复核确认 `browser-client.mjs` 位于插件根目录 `scripts/` 且 Chrome 已可成功连接；本次监控中未访问任何私有浏览器/账户数据。
+- Institutional checker was launched with the required `--since` and `--max-items 8` arguments. Although the outer call timed out after 124 seconds, it ultimately wrote a 2026-07-13 12:52Z artifact: AQR, Citadel, GMO and Man each had zero post-window verified items after list/detail date filtering. The public-source checker did not complete in the same network-constrained run; its latest file remains 2026-07-10.
+- No current-window Xiaohongshu note, X status, or official-domain institutional detail page was verified. The social-source result is an evidence gap; the four institutional zeroes are date-filtered checks, not source-unavailable claims. No strategy rule, trade advice, broker action, order, or fill was added. Detailed record: `memory/daily/2026-07-13-realtime-public-institutional-monitor.md`.
+- 20:57 Beijing Chrome rerun using the corrected plugin-root path: Xiaohongshu profile was browser-readable and showed the two known pinned notes followed by existing note `6a45e9690000000016027e78`; no new non-pinned item was visible. Its list supplied neither stable time/body/comments nor carousel detail, so current image coverage is `0/unknown`. All four X target profiles visibly returned “Something went wrong. Try reloading.”; no status fact was captured. This is a browser-visible access limitation, not an account-unavailable finding.
+
 ## 2026-07-10 Realtime Public / Institutional Monitor
 
 - Strict window: `2026-07-09T12:40:17.691Z` to 2026-07-10 20:45 Beijing time, using automation memory's latest successful rerun cutoff.
@@ -900,3 +921,102 @@ Source: `https://x.com/realDonaldTrump`
 - Verification status: latest public timeline not verified in this run.
 - Visible range issue: the profile opened, but visible articles were from January-February 2026 and did not cover the previous automation window.
 - Action: no new policy posts recorded; no macro/policy risk update from X.
+## 2026-07-15 Monitor
+
+- Window: `2026-07-13T12:57:08.033Z` onward. Chrome-visible X navigation timed out; do not treat this as no-post/source-unavailable. Fallback diagnostics were read from `work/realtime-public-source-latest.md/.json`.
+- Verified fallback X status details: @nvidia `2077060563666866491`, `2077060581253648482`, `2077075654210695537`, and `2077075662536339911` (2026-07-14 16:00-17:00Z). These are high evidence for official post existence/author/time, but performance, power constraint, adoption and financial transmission need independent verification.
+- Xiaohongshu public HTML exposed only title candidates, not stable note URLs, time, body, comments, or carousel images (`0/unknown`); retain low-to-medium topic-crowding evidence only.
+- The required institutional checker timed out without a new output. Retain the 2026-07-14 artifacts as historical, not as current-window results.
+
+## 2026-07-16 Monitor
+
+- Window remains `2026-07-13T12:57:08.033Z` onward. Chrome visibly verified @Kay2289123 status IDs `2077616139992265128`, `2077586674046091335`, and `2077435693065015354`, but page times were relative and text/images incomplete; retain medium evidence for author views only.
+- Xiaohongshu remained title-only with no stable note URL/time/body/comments/carousel (`0/unknown` images). Chrome loading for @nvidia then timed out before @elonmusk/@realDonaldTrump; these are access gaps, not no-update results.
+- Institutional checker completed: AQR 0; Citadel 1; GMO 3; Man Institute 1 post-window official-detail high-evidence items. See `memory/daily/2026-07-16-realtime-public-institutional-monitor.md` and `work/institutional-research-latest.*`.
+
+## 2026-07-17 Monitor
+
+- Window: `2026-07-16T12:37:30.205Z` onward. Chrome public X timeline navigation timed out before any profile could be read; this is an access gap, not a no-post or source-unavailable conclusion.
+- Fallback diagnostics were completed and read: @nvidia, @elonmusk, and @realDonaldTrump each returned HTTP 200 with empty profile bodies, so no status item was verified. Xiaohongshu exposed title candidates only, with no stable note URL/time/body/comments/carousel and images `0/unknown`; retain only low-to-medium topic-crowding evidence.
+- Institutional checker completed at `2026-07-17T12:42:02.089Z`: AQR, Citadel Securities, GMO, and Man Institute each had 0 post-window official-detail high-evidence items after date filtering. List/detail readability and date-unverified candidates were distinguished; no new framework was extracted.
+
+### Xiaohongshu single-note verification (user-supplied link)
+
+- Verified public note: 美研芒格君 / `6a5840d8000000001302f692`, published `2026-07-16 10:24:24 +08:00`, last page update `10:33:56 +08:00`; title `存储是堵墙，下个机会是打破它，这次别错过了`.
+- Direct page exposed stable author, ID, time, body, tags and a `24/24` image carousel. All images were downloaded from public page metadata and visually checked; they support the CXL/memory-pooling/interconnect narrative but do not independently establish deployment, orders, revenue, price or profitability claims.
+- Record as high evidence for the author post fact and medium evidence for a CXL/AI-memory-bottleneck research lead; require primary sources (Meta ISCA paper, Microsoft/Azure data, vendor specifications, customer deployments, filings) and independent market data before any framework or replay promotion.
+## 2026-07-20 Monitor
+
+- Window: `2026-07-19T03:34:43.000Z` onward. Chrome extension was unavailable, so no browser-visible social content was captured; this is an access gap, not a no-update finding.
+- Fallback diagnostics were completed and read from `work/realtime-public-source-latest.md/.json`: @nvidia, @elonmusk and @realDonaldTrump returned HTTP 200 with empty profile bodies; Xiaohongshu exposed only un-timed/no-body title candidates and carousel images remain `0/unknown`. No current social source item was verified.
+- Institutional checker completed at `2026-07-20T13:48:35.952Z` and its Markdown/JSON outputs were read. AQR, Citadel Securities, GMO and Man Institute each had 0 post-window official-detail high-evidence items. List/detail readability was recorded separately from date-unverified candidates; no new framework was extracted.
+
+## 2026-07-23 Monitor
+
+- Xiaohongshu retry succeeded in the browser: note `6a60140c000000001b01d1ab`, *开源模型越强，互联消耗越大，机会还在初期*, had stable author, ID, body and page-visible “昨天 08:51 美国” time. It maps scale-up / scale-out / scale-across and copper-to-optics transition as an author-view/research lead only. All `29/29` carousel pages were visually/OCR read. Reusable framework: separate connection segment, product layer, customer purchase object and demo→revenue maturity; do not elevate embedded AAOI/NVIDIA/Lumentum/Coherent or other company order/procurement/revenue claims without official confirmation.
+- Window: `2026-07-21T15:24:40.767Z` onward. Browser-visible status details verified NVIDIA `2079715060197310935`, `2079699527888404973`, `2079699529943699613`, `2079633231629144565`, and Elon Musk `2079758604656316619`; all timestamps are snowflake-derived where the page showed relative time. They are product, manufacturing and ecosystem facts—not independent demand, deployment, revenue or price confirmation.
+- @Kay2289123 displayed an inconsistent anonymous-view “hasn't posted” state; do not turn this into a no-update conclusion. @realDonaldTrump visible posts were before the window, so policy coverage remains incomplete. Xiaohongshu did not render a readable author page; fallback diagnostics saw only untimed/no-body title candidates and images `0/unknown`.
+- Institutional checker completed at `2026-07-22T17:09:38.424Z`: AQR, Citadel Securities, GMO and Man Institute each had 0 post-window official-detail high-evidence articles. List visibility, detail readability and date-unverified candidates were separated; no framework was promoted. See `memory/daily/2026-07-23-realtime-public-institutional-monitor.md`.
+
+## 2026-07-21 Monitor
+
+## 2026-07-23 Monitor（20:36 Asia/Shanghai）
+
+- 窗口：`2026-07-21T15:24:40.767Z` 以后。Chrome 公开可见核验 @Kay2289123 `2080190120993698148` 和 `2080151391985914112`（页面相对时间；精确时间仅由 snowflake 推导），以及 @elonmusk `2080048685522837664`。全部仅为作者观点/活动或财报入口，不作基本面和价格确认。
+- 降级 checker 已完成并读取：@nvidia `2080078677426241940` 为作者匹配的 status 详情（LiveX/NVIDIA AI 应用宣传）；这是中到高证据的帖子事实，但不代表部署规模或收入。@nvidia 与 @realDonaldTrump Chrome 时间线分别为空，后者仍是覆盖缺口而非无新帖结论。
+- 小红书 Chrome 主页可读但未展示稳定的新笔记发布时间；单篇详情、作者评论与轮播未重读，图片 `0/unknown`。不得将主页卡片当成窗口内新增笔记。
+- 机构 checker 已按要求启动但 244 秒超时，未刷新 `institutional-research-latest.md/.json`；旧产物绝不可冒充本窗口检查。详见 `memory/daily/2026-07-23-realtime-public-institutional-monitor-run2.md`。
+
+- Window: `2026-07-20T13:48:57.576Z` to `2026-07-21T15:24:40.767Z`. Chrome connected, but four requested X timelines stayed loading and Xiaohongshu did not render the target author; these are access gaps, not no-post findings.
+- Fallback diagnostics were completed and read: author-matched status details were NVIDIA `2079221588705099788`, `2079240931337965928`, `2079254592664301778`, and Elon Musk `2079430412837757338`; times are snowflake-derived. They are product/ecosystem facts, not demand, revenue or price confirmation. @realDonaldTrump had no verified in-window item.
+- Xiaohongshu remains title-only with no stable note URL/time/body/comments and images `0/unknown`; retain low-to-medium topic-crowding evidence only.
+- Institutional checker completed at `2026-07-21T15:24:40.767Z`: AQR/Citadel/GMO had 0 post-window official-detail items; Man Institute had one high-evidence detail article dated 2026-07-20, *The VIX Isn't Worried, But Maybe It Should Be*. It is an experimental risk-review input, not a rule change. See `memory/daily/2026-07-21-realtime-public-institutional-monitor.md`.
+
+## 2026-07-27 Monitor
+
+- Window: `2026-07-24T12:37:24.596Z` onward. Chrome connected but two attempts to read the public `@Kay2289123` DOM timed out before a visible snapshot; all four X sources and Xiaohongshu are therefore coverage gaps, not no-update findings.
+- Fallback diagnostics were completed and read. It returned full status URL/body/author and snowflake-derived time for five @nvidia and four @elonmusk status items; record them only as **medium** evidence because Chrome did not visibly corroborate them this run. NVIDIA items concern Korea AI factory/HBM/DSX, an AI technology center, and an open AI-security alliance; no item independently proves orders, shipment, revenue or price action.
+- Xiaohongshu exposed title candidates only, without stable single-note URL/time/body/comments or carousel; images `0/unknown`. @realDonaldTrump had no fallback item inside the window but remains a coverage gap because Chrome did not complete.
+- Institutional checker completed at `2026-07-27T12:55:53.521Z`: AQR 1 official-detail high-evidence post-window article (concentrated wealth/positions); Citadel, GMO and Man 0. List readability, detail readability and date-unverified candidates were separated. No stable rule, hypothesis, trade advice, broker action, order or fill was added. See `memory/daily/2026-07-27-realtime-public-institutional-monitor.md`.
+
+## 2026-07-29 Monitor
+
+- Window: `2026-07-27T12:55:53.521Z` onward. Chrome extension was unavailable, so no browser-visible public-page evidence was captured. This is a coverage gap, not a no-update or source-unavailable conclusion.
+- Both required fallback checkers were launched but timed out at about 64 seconds and did not refresh their Markdown/JSON outputs (which remain dated 2026-07-27). The old diagnostics were read as history only and are not treated as current-window verification.
+- Therefore no new social status/note and no AQR/Citadel/GMO/Man official-detail item is recorded. Small-red-book carousel coverage remains `0/unknown`; no rule, hypothesis, trade advice, broker action, order, or fill was added. See `memory/daily/2026-07-29-realtime-public-institutional-monitor.md`.
+
+## 2026-07-30 Monitor
+
+- Window: `2026-07-27T12:55:53.521Z` onward. Chrome extension was unavailable; this is a browser-visible coverage gap, not a no-update conclusion. The fallback checker completed and was read: @nvidia, @elonmusk and @realDonaldTrump returned HTTP 200 with empty Reader bodies, so no in-window status was verified. Xiaohongshu remained title-only without stable note URL/time/body/comments/carousel (`0/unknown` images).
+- Institutional checker completed and its current Markdown/JSON were read. Official-detail high-evidence post-window counts were AQR 0, Citadel 1 (`Fed Views: The Case for July`, 2026-07-27), GMO 3 (including `The Electricity Tipping Point & the Next Energy Boom`, 2026-07-29), and Man Institute 1 (`The Yield Trap Hiding in Junior Bank Bonds`, 2026-07-28). List/detail readability and date-unverified candidates remain separate; no one-day article was promoted to a stable framework or rule.
+- No rule, hypothesis, trade advice, broker action, order, fill, or inferred account-state update. See `memory/daily/2026-07-30-realtime-public-institutional-monitor.md`.
+
+- 21:46 Asia/Shanghai rerun confirmation: both current work artifacts were regenerated and read. Chrome remained unavailable because it was not running; public-source fallback again yielded empty X bodies and untimed Xiaohongshu title candidates only. The institution count and evidence boundaries above remain the current-window conclusion.
+
+## 2026-07-31 Monitor
+
+- Window: `2026-07-30T13:40:51.817Z` to `2026-07-31T12:36:44.488Z`. Chrome connected for public-only reading, but all four X targets stayed visibly Loading and Xiaohongshu showed only a public shell without the target author content. These are coverage gaps, not no-update conclusions; carousel images are `0/unknown`.
+- Browser availability means the fallback public checker was not used to substitute for missing visible content. No in-window social note or status meets the verified-item record threshold.
+- Institutional checker completed; both Markdown and JSON outputs were read. AQR, Citadel Securities, GMO and Man Institute each had 0 post-window official-detail high-evidence items. List/detail readability and date-unverified candidates remain distinct; no framework, hypothesis or stable rule was promoted. See `memory/daily/2026-07-31-realtime-public-institutional-monitor.md`.
+## 2026-08-04 Monitor
+
+- Window: `2026-07-31T12:36:44.488Z` to `2026-08-04T14:25:20.069Z`. Chrome-visible, public-only X pages verified in-window @Kay2289123 author-view posts, @nvidia official ecosystem/product posts, and an @elonmusk product post. These do not prove orders, deployments, revenue, price impact, or trade outcomes.
+- Xiaohongshu returned a public server-connection error. No target-author profile, new note, detail, comment or carousel was visible; images are `0/unknown`. @realDonaldTrump showed only a 7/29 item, so policy coverage remains incomplete rather than negative.
+- Institutional checker completed and Markdown/JSON were read at `2026-08-04T14:25:20.069Z`: AQR 0, Citadel Securities 2, GMO 0, Man Institute 0 post-window official-detail high-evidence articles. Citadel's two articles are research/replay overlays only; date-unverified candidates were not promoted. See `memory/daily/2026-08-04-realtime-public-institutional-monitor.md`.
+
+## 2026-08-05 Monitor
+
+- Window: `2026-08-04T14:25:20.069Z` to `2026-08-05T12:52:29.124Z`. Chrome connected for public-only reading but all four requested X profiles and the Xiaohongshu target profile timed out before a visible DOM snapshot was returned. This is a coverage gap, not a no-update finding; no fallback checker was substituted because the browser surface was available. Xiaohongshu carousel coverage is `0/unknown`.
+- The institutional checker completed and both current output files were read. AQR, Citadel Securities, GMO and Man Institute each had 0 post-window official-detail high-evidence articles. List and detail candidates were readable; Citadel's 8/04 articles are pre-window under this run's exact cutoff, while date-unverified candidates remain non-framework evidence. See `memory/daily/2026-08-05-realtime-public-institutional-monitor.md`.
+
+## 2026-08-06 Monitor
+
+- Window: `2026-08-05T12:52:29.124Z` to `2026-08-06T13:17:14.178Z`. Chrome read-only DOM access to `@Kay2289123` timed out twice and reset; treat all requested social sources as coverage gaps, not no-update findings.
+- Fallback public artifacts were regenerated and read: `@nvidia`, `@elonmusk`, and `@realDonaldTrump` each returned HTTP 200 with empty Reader body; no status detail was verified. Xiaohongshu exposed untimed/no-body/no-URL title candidates only, and carousel coverage is `0/unknown`; retain only low-to-medium topic-crowding evidence.
+- Institutional Markdown and raw JSON were regenerated and read: AQR, Citadel Securities, GMO, and Man Institute each had zero post-window official-detail high-evidence articles. Lists and details were readable; date-unverified candidates were not promoted. No rule, hypothesis, advice, broker action, order, fill, or inferred account-state update. See `memory/daily/2026-08-06-realtime-public-institutional-monitor.md`.
+
+## 2026-08-08 Monitor
+
+- Incremental cutoff retained at `2026-08-06T13:17:14.178Z`. Chrome connected for public-only collection but the visible DOM read of the five target pages timed out and reset before any post, note, comment, or carousel could be captured. This is a source-specific coverage gap, not a no-update finding; Xiaohongshu image coverage is `0/unknown`.
+- Both prescribed local checkers were invoked, but neither `work/*-latest.md/.json` refreshed: their embedded run/args timestamps remain 2026-08-06/2026-08-05. The stale Markdown and JSON were read only to diagnose the issue. Do not infer an AQR/Citadel/GMO/Man current-window zero or reuse stale X/Xiaohongshu results.
+- No new framework, hypothesis, stable decision, trade advice, broker action, order, fill, or account-state inference. See `memory/daily/2026-08-08-realtime-public-institutional-monitor.md`.

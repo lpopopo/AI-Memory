@@ -46,6 +46,11 @@ Proxy inputs:
 - Short-duration leverage: 0DTE share, average option tenor, call-premium concentration, and inverted call-skew breadth if available.
 - Volatility character: single-stock implied correlation, semiconductor implied volatility, and `spot up / vol up` frequency.
 - Financing capacity: equity-financing spreads or a documented public substitute.
+- Risk localisation: index/ETF versus semiconductor/Nasdaq/single-name implied-vol or skew, implied-correlation proxy, down-day breadth and credit confirmation. Preserve `unavailable` instead of backfilling a state from future prices.
+- Flow-to-fundamentals handoff: dated positioning-reset, retail/flow, breadth/rotation, financing, valuation and earnings-revision observations. Treat proprietary-source readings as event labels until a reproducible public proxy is available.
+- Complacency divergence: a point-in-time joint label for subdued VIX/term structure, concentrated leadership, credit or implied-correlation/option evidence where available, and an upcoming macro or major-earnings cluster. Do not label from VIX alone; preserve each unavailable component.
+- Retail risk transfer: dated index/ETF versus single-stock option mix, put/call or retail-monetisation observations. Retain `source_only` for proprietary platform data; public substitutes must be separately identified rather than silently treated as equivalent.
+- Complex-credit complacency: dated compression in compensation together with duration/extension, negative-convexity or structural risk. Keep specialised-credit data separate from HYG/LQD proxies.
 
 Backtest behavior:
 
@@ -62,6 +67,9 @@ Metrics:
 - Warning lead time before 1/5/20-day AI or semiconductor drawdowns.
 - Incremental value of each direct diagnostic versus the existing public-proxy score.
 - Stability across 2022 growth-duration stress, 2024-2026 AI rallies, and concentrated reversal episodes.
+- Incremental classification value of broad/systemic versus cross-sectional stress: false-risk-off calls, missed index drawdowns, AI-capex common-factor drawdowns, and lead time before 1/5/20-day outcomes.
+- Incremental value of `complacency_divergence` beyond the existing flow-fragility score: trigger count, false warnings, maximum adverse excursion, missed winners and cash drag. Separate the low-VIX-only subset from the fully observed joint label.
+- Incremental value of `retail_risk_transfer` and `complex_credit_complacency`: source-only versus independently reproducible subsets, 1/5/20/60-day outcomes, maximum adverse excursion, false warnings, blocked winners/losses and cash drag. Do not award predictive credit to observations reconstructed after the event.
 
 ### Overlay C: AI Quality / Capex-Cycle Score
 
@@ -78,6 +86,7 @@ Score components:
 - Non-AI revenue base.
 - Evidence type: earnings/guidance/backlog is stronger than product/partnership/narrative.
 - Relative strength confirmation.
+- Power-delivery evidence stage: `source_only`, `independently_confirmed`, or `unavailable`, split into generation, grid interconnection/delivery, transmission/distribution, storage/cooling, procurement, utilisation, revenue and margin evidence.
 
 Backtest behavior:
 
@@ -91,6 +100,7 @@ Metrics:
 - Drawdown by class.
 - Gap-down frequency after capex scares or earnings misses.
 - Whether the score improves selection among MRVL/AMD/WDC/STX/MU/NVDA/AVGO-style candidates.
+- Whether independently confirmed power-delivery evidence improves relative selection or only restates the broad AI-capex cycle. Announcements and source-only items stay in the diagnostic sample and cannot be treated as realised demand.
 
 ### Overlay D: Factor-Macro Exposure Audit
 
