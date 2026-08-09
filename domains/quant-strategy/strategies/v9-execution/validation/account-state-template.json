@@ -1,0 +1,15 @@
+{
+  "as_of": "YYYY-MM-DD",
+  "observed_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "cash": 0.0,
+  "fee_per_order": 1.0,
+  "positions": {},
+  "stock_symbols": [],
+  "orders": [],
+  "required_actions": [],
+  "blocked_signals": [],
+  "authorization": {
+    "approved": false,
+    "reason": "signal_not_authorized"
+  }
+}

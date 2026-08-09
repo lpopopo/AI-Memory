@@ -4,17 +4,24 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
 
 import pandas as pd
 
+from forward_state_inventory import inspect_forward_state
+
 ROOT = Path(__file__).resolve().parents[1]
-FROZEN = ROOT / "results" / "shadow_portfolio" / "frozen" / "code_manifest.json"
-FORWARD = ROOT / "results" / "shadow_portfolio" / "forward"
+SHADOW_DIR = Path(os.environ.get("V9_SHADOW_DIR", ROOT / "results" / "shadow_portfolio"))
+FROZEN_DIR = Path(os.environ.get("V9_FROZEN_DIR", SHADOW_DIR / "frozen"))
+FORWARD = Path(os.environ.get("V9_FORWARD_DIR", SHADOW_DIR / "forward"))
+FROZEN = FROZEN_DIR / "code_manifest.json"
 DATA_CLOSE = ROOT / "datasets" / "data_v9" / "close.csv"
 REQUIRED_SYMBOLS = ("SPY", "QQQ", "SMH", "IWM", "RSP", "HYG", "LQD", "^VIX", "^VIX3M")
+VALIDATION_DIR = Path(os.environ.get("V9_VALIDATION_DIR", ROOT / "results" / "validation"))
+LAUNCH_AUDIT = VALIDATION_DIR / "shadow_forward_launch_audit.json"
 
 
 def git_dirty() -> bool:
@@ -53,10 +60,21 @@ def main() -> None:
         if bad:
             blockers.append(f"code hash mismatch: {bad}")
 
-    inits = list(FORWARD.glob("accounts/*/initial_state.json")) if FORWARD.exists() else []
-    dailies = list(FORWARD.glob("accounts/*/20*_state.json")) if FORWARD.exists() else []
-    if len(inits) < 4:
-        blockers.append("forward genesis incomplete (<4 initial_state.json)")
+    inventory = inspect_forward_state(FORWARD, manifest)
+    blockers.extend(f"forward integrity: {issue}" for issue in inventory["issues"])
+
+    if LAUNCH_AUDIT.exists():
+        prior_audit = json.loads(LAUNCH_AUDIT.read_text(encoding="utf-8"))
+        prior_identity = prior_audit.get("manifest_identity", {})
+        current_identity = {
+            "combined_code_hash": manifest.get("combined_code_hash"),
+            "frozen_at_utc": manifest.get("frozen_at_utc"),
+        }
+        if prior_identity != current_identity:
+            warnings.append("shadow_forward_launch_audit.json is stale for the current frozen manifest")
+        prior_files = prior_audit.get("prerequisites", {}).get("forward_daily_states")
+        if prior_files is not None and prior_files != inventory["daily_state_files"]:
+            warnings.append("shadow forward launch audit state count disagrees with the live forward directory")
 
     if not DATA_CLOSE.exists():
         blockers.append("datasets/data_v9/close.csv missing; run download_v9_data.py")
@@ -77,11 +95,10 @@ def main() -> None:
                 blockers.append(f"{as_of.date()} session close is not after freeze time {freeze_ts}")
         if last_date is not None and last_date < as_of:
             blockers.append(f"data_v9 last bar {last_date.date()} < requested as-of {as_of.date()}; refresh data first")
-        if dailies:
-            dates = sorted(pd.Timestamp(p.stem.replace("_state", "")) for p in dailies)
-            expected_prev = None
+        if inventory["latest_completed_session"]:
+            dates = [pd.Timestamp(inventory["latest_completed_session"])]
             # Contiguity is enforced by the runner; here only warn if as-of already exists.
-            if any(p.stem.startswith(str(as_of.date())) for p in dailies):
+            if str(as_of.date()) in set().union(*(set(v) for v in inventory["dates_by_account"].values())):
                 blockers.append(f"forward state for {as_of.date()} already exists")
             latest = dates[-1]
             if as_of <= latest:
@@ -94,14 +111,21 @@ def main() -> None:
         "ok": not blockers,
         "as_of": None if as_of is None else str(as_of.date()),
         "forward_eligible": bool(manifest.get("forward_eligible")),
+        "manifest_identity": {
+            "combined_code_hash": manifest.get("combined_code_hash"),
+            "frozen_at_utc": manifest.get("frozen_at_utc"),
+        },
         "frozen_at_utc": manifest.get("frozen_at_utc"),
         "data_v9_last_date": None if last_date is None else str(last_date.date()),
-        "forward_initial_states": len(inits),
-        "forward_daily_states": len(dailies),
+        "forward_initial_states": inventory["initial_states"],
+        "forward_daily_states": inventory["daily_state_files"],
+        "forward_completed_sessions": inventory["completed_sessions"],
+        "forward_latest_completed_session": inventory["latest_completed_session"],
+        "forward_inventory": inventory,
         "blockers": blockers,
         "warnings": warnings,
     }
-    out = ROOT / "results" / "validation" / "formal_forward_preflight.json"
+    out = VALIDATION_DIR / "formal_forward_preflight.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(json.dumps(report, indent=2))

@@ -30,3 +30,4 @@ datasets/*.csv
 results/shadow_portfolio/dry_run/
 results/shadow_portfolio/forward/
 results/shadow_portfolio/frozen/
+results/shadow_portfolio/generations/

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from dataclasses import replace
 import hashlib
 import json
 import os
@@ -18,11 +19,12 @@ sys.path.insert(0, str(SCRIPTS))
 from v9_information_strategy import V9Backtester, V9Config, load_event_store
 from v9_data import load_data
 from v9_research_monitors import build_research_diagnostics
+from v9_source_health import build_source_health_audit, filter_events_to_healthy_intervals
 from shadow_integrity import TamperAlarmException, canonical_json as canonical, digest, state_digest, verify_genesis, verify_daily_state
 from shadow_v9_engine import ShadowV9Engine
 
-SHADOW_DIR = ROOT / "results" / "shadow_portfolio"
-FROZEN_DIR = SHADOW_DIR / "frozen"
+SHADOW_DIR = Path(os.environ.get("V9_SHADOW_DIR", ROOT / "results" / "shadow_portfolio"))
+FROZEN_DIR = Path(os.environ.get("V9_FROZEN_DIR", SHADOW_DIR / "frozen"))
 
 ACCOUNTS = {
     "v8_base": {"v8_core_weight": 1.0, "info_sleeve_weight": 0.0, "entry_rule_version": "A"},
@@ -223,8 +225,6 @@ def main():
     
     # 2. Load Data
     panels, vix, meta = load_data()
-    events, _ = load_event_store(FROZEN_DIR / "baseline_event_snapshot.json", use_retrospective=False)
-    
     if dt not in panels["close"].index:
         print(f"Holiday or no market data for {dt.date()}, skipping.")
         return
@@ -238,6 +238,15 @@ def main():
             raise TamperAlarmException(f"Forbidden: Cannot execute {dt.date()}. Session close {session_close_utc} is not after freeze time {frozen_dt}.")
             
     event_snapshot_path, event_hash, new_event_hashes = visible_event_snapshot(mode_dir, dt)
+    visible_events, event_raw = load_event_store(event_snapshot_path, use_retrospective=False)
+    source_health_audit = build_source_health_audit(event_raw, dt)
+    events = (
+        filter_events_to_healthy_intervals(visible_events, event_raw)
+        if source_health_audit["new_information_entries_allowed"]
+        else []
+    )
+    source_health_audit["visible_event_count"] = len(visible_events)
+    source_health_audit["eligible_event_count"] = len(events)
     market = market_snapshot(panels, vix, dt)
     market_path = mode_dir / "shared" / "market_snapshots" / f"{dt.date()}.json"
     atomic_freeze(market_path, market)
@@ -250,7 +259,11 @@ def main():
         cfg_kwargs.pop("stress_transaction_cost", None)
         cfg_kwargs.pop("code_manifest_hash", None)
         acc_config_hash = digest(cfg_kwargs)
-        cfg = V9Config(**cfg_kwargs)
+        cfg = replace(
+            V9Config(**cfg_kwargs),
+            source_healthy=source_health_audit["new_information_entries_allowed"],
+            source_failure_date=None,
+        )
         state_file = acc_dir / f"{dt.date()}_state.json"
         shadow = ShadowV9Engine(panels, vix, events, cfg, state_file)
 
@@ -288,7 +301,7 @@ def main():
         decision_rows = [row for row in shadow.bt.audit if row.get("date") == str(dt.date())]
         funnel_rows = [row for row in shadow.bt.funnel if row.get("date") == str(dt.date())]
         execution_payload = {"as_of": str(dt.date()), "account": acc_name, "rows": execution_rows}
-        decision_payload = {"as_of": str(dt.date()), "account": acc_name, "audit": decision_rows, "funnel": funnel_rows}
+        decision_payload = {"as_of": str(dt.date()), "account": acc_name, "audit": decision_rows, "funnel": funnel_rows, "source_health_audit": source_health_audit}
         execution_hash = digest(execution_payload)
         decision_hash = digest(decision_payload)
         atomic_freeze(mode_dir / "executions" / acc_name / f"{dt.date()}_open_execution.json", execution_payload)
@@ -307,6 +320,7 @@ def main():
             "code_hash": manifest["combined_code_hash"],
             "market_data_hash": market_hash,
             "event_snapshot_hash": event_hash,
+            "source_health_audit_hash": digest(source_health_audit),
             "new_event_hashes": new_event_hashes,
             "execution_hash": execution_hash,
             "decision_hash": decision_hash,
@@ -325,6 +339,8 @@ def main():
         "mode": "dry_run" if args.dry_run else "forward",
         "accounts": daily_stats,
         "rule_e_incremental_alpha": daily_stats["v9_e"]["info_pnl"] - daily_stats["v9_a"]["info_pnl"],
+        "source_health_audit": source_health_audit,
+        "broker_submission_enabled": False,
         "diagnostics": build_research_diagnostics(panels["close"], vix, dt),
     }
     atomic_freeze(mode_dir / "reports" / f"shadow_report_{dt.date()}.json", report)

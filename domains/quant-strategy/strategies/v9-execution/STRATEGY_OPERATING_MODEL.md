@@ -21,8 +21,8 @@ signal, its unused allocation stays in cash.
 
 - SPY and QQQ each earn half of the 70% core budget above MA150 and another
   half above MA200.
-- Signals are reviewed monthly and execute next session with costs; leverage is
-  prohibited.
+- Signals are reviewed monthly and execute at the next session close with
+  costs; leverage is prohibited. Weights drift between reviews.
 - The module supplies long-term index exposure but does not govern individual
   stock selection.
 - Momentum-factor monitor (research-validated context, not a weight override):
@@ -53,6 +53,11 @@ experiments until independently promoted.
 ## Portfolio-wide controls
 
 - The Market Fear Gate can reduce or prohibit all new risk.
+- Fear-budget conflicts use `core_priority`: preserve the better-evidenced
+  index core first and reduce the stock sleeve's available budget. Normal,
+  elevated, stress and panic ceilings are respectively `70/25/5`, `70/5/25`,
+  `55/0/45` and `35/0/65` for core/stocks/minimum cash. Core resizing is monthly
+  except that `VIX >= 35` triggers a panic cut latched until the next month-end.
 - Aggregate correlated AI-capex/semiconductor names as one common factor.
 - Keep cash floors and concentration caps; do not average down into new lows
   without a confirmed recovery.

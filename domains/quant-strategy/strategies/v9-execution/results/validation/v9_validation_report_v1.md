@@ -1,6 +1,6 @@
 # V9 Validation Report v1
 
-- Generated: `2026-07-11 16:13:18.088687+00:00`
+- Generated: `2026-07-14 16:37:48.687885+00:00`
 - Formal V9 weights unchanged.
 
 ## Experiment A: Panic-to-repair

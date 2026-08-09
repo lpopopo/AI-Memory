@@ -8,6 +8,7 @@ from pathlib import Path
 import hashlib, json, math
 import numpy as np
 import pandas as pd
+from v9_fear_gate import compute_canonical_fear_gate
 
 AI_CAPEX_THEMES = frozenset({
     "ai_architecture", "ai_bottleneck", "ai_cloud_factory", "ai_inference",
@@ -68,6 +69,8 @@ class V9Config:
     min_source_completeness: int = 0
     score_cap_scale: float = 1.0
     aggregate_common_factors: bool = True
+    fear_gate_enabled: bool = True
+    fear_allocation_policy: str = "core_priority" # 'proportional', 'core_priority'
     institutional_triple_confirmation: bool = False
     institutional_flow_overlay: bool = False
     institutional_quality_sizing: bool = False
@@ -104,6 +107,8 @@ class V9Config:
             raise ValueError("information-quality floor is outside [0, 20]")
         if self.dynamic_stop_mode not in {"fixed", "technical_staged"}:
             raise ValueError("unknown dynamic stop mode")
+        if self.fear_allocation_policy not in {"proportional", "core_priority"}:
+            raise ValueError("unknown fear allocation policy")
 
 @dataclass
 class PendingOrder:
@@ -257,6 +262,7 @@ class V9Backtester:
         self.rs20 = self.close.pct_change(20, fill_method=None).sub(self.close["QQQ"].pct_change(20, fill_method=None), axis=0)
         self.prior20 = self.close.shift(1).rolling(20).max()
 
+        self._fear_gate_cache: dict[pd.Timestamp, dict] = {}
         self.v8_base_weights = self._v8_base()
 
         self.positions = {} # symbol -> PositionState
@@ -274,21 +280,84 @@ class V9Backtester:
         self.highwater = 1.0
         self.turnover = 0.0
 
+    def _is_completed_month_end(self, i: int) -> bool:
+        dt = self.close.index[i]
+        if i + 1 < len(self.close.index):
+            return self.close.index[i + 1].to_period("M") != dt.to_period("M")
+        # Do not mistake an incomplete latest dataset row for month-end.
+        return dt.normalize() == (dt + pd.offsets.BMonthEnd(0)).normalize()
+
     def _v8_base(self):
         v8 = {}
-        periods = self.close.index.to_period("M")
         latest8 = {}
         for i, dt in enumerate(self.close.index):
-            if i == len(self.close) - 1 or periods[i + 1] != periods[i]:
+            if self._is_completed_month_end(i):
                 # 0.5 per asset
                 latest8 = {s: 0.5 * (int(self.close.at[dt, s] > self.ma150.at[dt, s]) + int(self.close.at[dt, s] > self.ma200.at[dt, s])) * 0.5 for s in ("SPY", "QQQ")}
-            else:
-                # Also check if moving average status changed intraday to trigger signal
-                curr = {s: 0.5 * (int(self.close.at[dt, s] > self.ma150.at[dt, s]) + int(self.close.at[dt, s] > self.ma200.at[dt, s])) * 0.5 for s in ("SPY", "QQQ")}
-                if curr != latest8:
-                    latest8 = curr
             v8[dt] = dict(latest8)
         return v8
+
+    def _fear_gate(self, dt: pd.Timestamp) -> dict:
+        """Point-in-time portfolio gate using only completed bars through ``dt``."""
+        if dt in self._fear_gate_cache:
+            return self._fear_gate_cache[dt]
+        canonical = compute_canonical_fear_gate(
+            self.close,
+            self.vix,
+            dt,
+            enabled=self.cfg.fear_gate_enabled,
+        )
+        result = {key: value for key, value in canonical.items() if key != "action"}
+        result["signals"] = [
+            {key: value for key, value in signal.items() if key != "note"}
+            for signal in canonical["signals"]
+        ]
+        self._fear_gate_cache[dt] = result
+        return result
+
+    def _core_fear_gate(self, dt: pd.Timestamp) -> dict:
+        if not self.cfg.fear_gate_enabled:
+            return self._fear_gate(dt)
+        # The core remains a monthly process. Its risk budget is fixed from the
+        # latest completed month-end, except that a VIX>=35 panic cuts it once
+        # and keeps the lower budget until the next month-end review. Stock
+        # entries continue to use the current daily gate.
+        loc = self.close.index.get_loc(dt)
+        review_dt = dt
+        for i in range(loc, -1, -1):
+            if self._is_completed_month_end(i):
+                review_dt = self.close.index[i]
+                break
+        core_fear = self._fear_gate(review_dt)
+        if "^VIX" in self.vix.columns:
+            since_review = self.vix.loc[review_dt:dt, "^VIX"].dropna()
+            if not since_review.empty and float(since_review.max()) >= 35:
+                core_fear = {
+                    **core_fear,
+                    "regime": "panic",
+                    "risk_multiplier": .20,
+                    "max_gross_exposure": .35,
+                    "max_new_buy_exposure": 0.0,
+                    "cash_floor": .65,
+                    "panic_latched_since_month_end": True,
+                }
+        return core_fear
+
+    def _effective_sleeve_caps(self, dt: pd.Timestamp) -> tuple[float, float, dict]:
+        fear = self._fear_gate(dt)
+        core_fear = self._core_fear_gate(dt)
+        if self.cfg.fear_allocation_policy == "core_priority":
+            core_cap = min(self.cfg.v8_core_weight, core_fear["max_gross_exposure"])
+            info_cap = min(
+                self.cfg.info_sleeve_weight,
+                max(0.0, fear["max_gross_exposure"] - core_cap),
+            )
+            return core_cap, info_cap, fear
+        return (
+            self.cfg.v8_core_weight * core_fear["max_gross_exposure"],
+            self.cfg.info_sleeve_weight * fear["max_gross_exposure"],
+            fear,
+        )
 
     def _event_for(self, symbol, dt):
         events = self.events
@@ -617,13 +686,17 @@ class V9Backtester:
             self.daily_cost = 0.0
 
             if is_trading:
-                # 1. MORNING EXECUTION: Pending Orders & Gaps
+                # 1. NEXT-SESSION EXECUTION: stock orders at open; V8 core at close.
                 executed_symbols = set()
 
-                # A. Execute explicit pending orders at Open
+                # A. Execute explicit pending orders at their governed price.
                 for order in list(self.pending_orders):
                     s = order.symbol
-                    if pd.isna(open_prices.at[s]): continue
+                    if order.order_type == "v8_rebalance":
+                        if pd.isna(close_prices.at[s]):
+                            continue
+                    elif pd.isna(open_prices.at[s]):
+                        continue
 
                     if order.order_type in ["sell", "trim", "drawdown_cut"]:
                         if s in self.positions:
@@ -670,16 +743,16 @@ class V9Backtester:
                                 executed_symbols.add(s)
 
                     elif order.order_type == "v8_rebalance":
-                        pre_val = self.cash + sum(self.positions[k].shares * open_prices.at[k] for k in self.positions if pd.notna(open_prices.at[k])) + sum(self.v8_shares[k] * open_prices.at[k] for k in self.v8_shares if pd.notna(open_prices.at[k]))
+                        pre_val = self.cash + sum(self.positions[k].shares * close_prices.at[k] for k in self.positions if pd.notna(close_prices.at[k])) + sum(self.v8_shares[k] * close_prices.at[k] for k in self.v8_shares if pd.notna(close_prices.at[k]))
                         target_val = pre_val * order.target_weight
-                        current_val = self.v8_shares.get(s, 0) * open_prices.at[s]
+                        current_val = self.v8_shares.get(s, 0) * close_prices.at[s]
                         diff_val = target_val - current_val
                         weight_diff = abs(diff_val) / pre_val if pre_val > 0 else 0
-                        diff_shares = diff_val / open_prices.at[s] if open_prices.at[s] > 0 else 0
+                        diff_shares = diff_val / close_prices.at[s] if close_prices.at[s] > 0 else 0
 
                         # Only trade if deviation > 2% AND nominal value > 0.5% NAV AND shares > 1e-6
                         if weight_diff > 0.02 and abs(diff_val) > pre_val * 0.005 and abs(diff_shares) >= 1e-6:
-                            actual_diff = self._execute_trade(s, dt, open_prices.at[s], diff_shares, "v8_rebalance", is_info=False)
+                            actual_diff = self._execute_trade(s, dt, close_prices.at[s], diff_shares, "v8_rebalance", is_info=False)
                             self.v8_shares[s] = self.v8_shares.get(s, 0) + actual_diff
 
                 self.pending_orders.clear()
@@ -730,6 +803,7 @@ class V9Backtester:
             if is_trading:
                 self.highwater = max(self.highwater, self.value)
                 dd = self.value / self.highwater - 1
+                core_cap, info_cap, fear_gate = self._effective_sleeve_caps(dt)
 
                 # 3. DRAWDOWN RULES
                 v9_blocked = False
@@ -789,11 +863,18 @@ class V9Backtester:
                         elif self.cfg.upgrade_trigger == "break_high" and px > state.peak:
                             upgrade = True
 
-                        if upgrade:
+                        if upgrade and not v9_blocked and fear_gate["max_new_buy_exposure"] > 0:
                             # Upgrade target weight to what it normally would be
                             single_cap = 0.15 if state.score >= 80 else self.cfg.max_single
-                            full_size = min(self.score_cap(state.score), single_cap)
-                            self.pending_orders.append(PendingOrder(s, full_size, dt, state.score, state.initial_stop, "buy", event_id=state.event_id))
+                            current_info_weight = info_val / self.value if self.value > 0 else 0.0
+                            full_size = min(
+                                self.score_cap(state.score) * fear_gate["risk_multiplier"],
+                                single_cap,
+                                max(0.0, info_cap - current_info_weight),
+                                fear_gate["max_new_buy_exposure"],
+                            )
+                            if full_size >= .005:
+                                self.pending_orders.append(PendingOrder(s, full_size, dt, state.score, state.initial_stop, "buy", event_id=state.event_id))
 
                     if state.days_held >= self.cfg.event_life_days:
                         self.pending_orders.append(PendingOrder(s, 0, dt, 0, 0, "sell"))
@@ -808,19 +889,19 @@ class V9Backtester:
 
                 # 5. V8 CORE ORDERS
                 v8_targets = self.v8_base_weights.get(dt, {})
-                prev_v8_targets = self.v8_base_weights.get(self.close.index[max(0, self.close.index.get_loc(dt)-1)], {})
+                prev_dt = self.close.index[max(0, self.close.index.get_loc(dt)-1)]
+                prev_v8_targets = self.v8_base_weights.get(prev_dt, {})
+                prev_core_cap, _, _ = self._effective_sleeve_caps(prev_dt)
 
                 assert sum(v8_targets.values()) <= 1.0, f"V8 targets sum to {sum(v8_targets.values())} > 1.0"
 
                 for s in ("SPY", "QQQ"):
-                    target_w = v8_targets.get(s, 0) * self.cfg.v8_core_weight
-                    prev_w = prev_v8_targets.get(s, 0) * self.cfg.v8_core_weight
+                    target_w = v8_targets.get(s, 0) * core_cap
+                    prev_w = prev_v8_targets.get(s, 0) * prev_core_cap
 
-                    # Calculate current drift
-                    current_w = (self.v8_shares.get(s, 0) * close_prices.at[s]) / self.value if self.value > 0 else 0
-
-                    # Issue rebalance if target changed OR drift > 2%
-                    if target_w != prev_w or abs(target_w - current_w) > 0.02:
+                    bootstrap = target_w > 0 and not any(self.v8_shares.values()) and not any(row["reason"] == "v8_rebalance" for row in self.ledger)
+                    # Formal V8 allows target-change trades only. Between signals, weights drift.
+                    if target_w != prev_w or bootstrap:
                         self.pending_orders.append(PendingOrder(s, target_w, dt, 0, 0, "v8_rebalance"))
 
                 # 5b. Safety Checks
@@ -829,7 +910,7 @@ class V9Backtester:
                 # 6. INFO CANDIDATE GENERATION & FUNNEL
                 # A. Evaluate Waitlist Transitions
 
-                market_panic = (self.vix.at[dt, "^VIX"] > 35) if (dt in self.vix.index and pd.notna(self.vix.at[dt, "^VIX"])) else False
+                market_panic = fear_gate["regime"] == "panic"
 
                 for key in list(self.waitlist.keys()):
                     w_state = self.waitlist[key]
@@ -957,6 +1038,11 @@ class V9Backtester:
 
                 # Sort candidates by score descending
                 candidates.sort(key=lambda x: x["score"], reverse=True)
+                if v9_blocked or market_panic:
+                    block_reason = "portfolio_drawdown_gate" if v9_blocked else "fear_gate_panic"
+                    for cand in candidates:
+                        self.funnel.append({"date": str(dt.date()), "symbol": cand["symbol"], "reason": block_reason, "event_id": cand.get("event_id")})
+                    candidates = []
                 flow_fragility = self._flow_fragility_score(dt) if self.cfg.institutional_flow_overlay else 0
 
                 # Order Execution Logic for Candidates
@@ -980,7 +1066,9 @@ class V9Backtester:
 
                     theme_bucket = self._theme_bucket(cand["theme"])
                     room_theme = self.cfg.max_theme - theme_exposure.get(theme_bucket, 0)
-                    room_sleeve = self.cfg.info_sleeve_weight - info_exposure
+                    room_sleeve = info_cap - info_exposure
+                    pending_new_buy = sum(o.target_weight for o in self.pending_orders if o.order_type == "buy")
+                    room_new_buy = fear_gate["max_new_buy_exposure"] - pending_new_buy
 
                     if is_observation:
                         room_theme = min(room_theme, 0.06 - theme_exposure.get(theme_bucket, 0)) # Max 6% obs per common-factor theme
@@ -995,6 +1083,9 @@ class V9Backtester:
                             self.capacity_queue[(e_id, s)] = {"rule": "Capacity", "days_waited": 0, "score": cand["score"]}
                         self.funnel.append({"date": str(dt.date()), "symbol": s, "reason": "sleeve_cap", "event_id": e_id})
                         continue
+                    if room_new_buy <= 0 or market_panic:
+                        self.funnel.append({"date": str(dt.date()), "symbol": s, "reason": "fear_gate_new_buy_cap", "event_id": e_id})
+                        continue
 
                     px = close_prices.at[s]
 
@@ -1007,7 +1098,8 @@ class V9Backtester:
                     risk_size = self.cfg.risk_per_name / dist
                     single_cap = 0.15 if cand["score"] >= 80 else self.cfg.max_single
 
-                    size = min(self.score_cap(self._candidate_sizing_score(cand)), single_cap, risk_size, room_theme, room_sleeve)
+                    size = min(self.score_cap(self._candidate_sizing_score(cand)), single_cap, risk_size, room_theme, room_sleeve, room_new_buy)
+                    size *= fear_gate["risk_multiplier"]
                     if self.cfg.institutional_flow_overlay:
                         size *= .50 if flow_fragility >= 7 else .75 if flow_fragility >= 4 else 1.0
                     if self.cfg.institutional_quality_sizing:
@@ -1055,13 +1147,14 @@ class V9Backtester:
         curve = pd.Series(equity, index=self.close.loc[trading_start:trading_end].index, name="V9")
         wf = pd.DataFrame(weight_rows).set_index("date").fillna(0)
 
-        return V9Result(curve, wf, self.audit, {"turnover": self.turnover, "execution": "Strict T+1 Open"}, self.funnel, self.ledger)
+        return V9Result(curve, wf, self.audit, {"turnover": self.turnover, "execution": "Stocks T+1 Open; V8 core T+1 Close"}, self.funnel, self.ledger)
 
     def _build_decision_snapshot(self, dt: pd.Timestamp, close_prices: pd.Series, drawdown: float, actual_weights: dict) -> dict:
         """Build the daily decision fields expected by run_v9_daily_execution."""
         v8_targets = self.v8_base_weights.get(dt, {})
+        core_cap, stock_cap, fear_gate = self._effective_sleeve_caps(dt)
         final_target = {
-            s: float(v8_targets.get(s, 0.0) * self.cfg.v8_core_weight)
+            s: float(v8_targets.get(s, 0.0) * core_cap)
             for s in ("SPY", "QQQ")
         }
         for symbol, state in self.positions.items():
@@ -1127,6 +1220,15 @@ class V9Backtester:
             "stock_targets": stock_targets,
             "final_target": final_target,
             "v8_base": {s: float(v8_targets.get(s, 0.0)) for s in ("SPY", "QQQ")},
+            "fear_gate": fear_gate,
+            "core_fear_gate": self._core_fear_gate(dt),
+            "portfolio_limits": {
+                "core_cap": float(core_cap),
+                "stock_cap": float(stock_cap),
+                "cash_floor": float(fear_gate["cash_floor"]),
+                "max_gross_exposure": float(fear_gate["max_gross_exposure"]),
+                "allocation_policy": self.cfg.fear_allocation_policy,
+            },
             "ma_regime": {
                 s: {
                     "above_ma150": bool(pd.notna(self.ma150.at[dt, s]) and self.close.at[dt, s] > self.ma150.at[dt, s]),

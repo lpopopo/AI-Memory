@@ -44,6 +44,7 @@ class V9Tests(unittest.TestCase):
   self.assertEqual(V9Config().risk_per_name,.015);self.assertEqual(V9Config().hard_stop,.08)
  def test_invalid_risk_limits(self):
   with self.assertRaises(ValueError):V9Config(max_single=.25)
+  with self.assertRaises(ValueError):V9Config(fear_allocation_policy="unknown")
  def test_common_factor_theme_exposure_is_aggregated(self):
   i,p,v=self.synthetic();p={k:df.assign(Y=df["X"]) for k,df in p.items()};b=V9Backtester(p,v,[],V9Config(aggregate_common_factors=True));b.value=100
   b.positions={"X":PositionState(10,1,9,"ai_interconnect",75,1),"Y":PositionState(10,2,9,"memory_storage",75,1)}
@@ -76,4 +77,25 @@ class V9Tests(unittest.TestCase):
   i,p,v=self.synthetic();b=V9Backtester(p,v,[],V9Config());weights=b.v8_base_weights[i[-1]]
   for symbol in ("SPY","QQQ"):
    self.assertIn(weights[symbol],{0.0,0.25,0.5})
+ def test_v8_targets_only_change_on_month_end(self):
+  i,p,v=self.synthetic();b=V9Backtester(p,v,[],V9Config());previous={}
+  for dt,weights in b.v8_base_weights.items():
+   if weights!=previous:
+    loc=i.get_loc(dt);self.assertTrue(b._is_completed_month_end(loc))
+   previous=weights
+ def test_incomplete_latest_month_is_not_a_rebalance_date(self):
+  i,p,v=self.synthetic();cut=next(n for n in range(len(i)-2,200,-1) if i[n].day<20);p={k:df.iloc[:cut+1] for k,df in p.items()};v=v.iloc[:cut+1];b=V9Backtester(p,v,[],V9Config())
+  self.assertFalse(b._is_completed_month_end(len(p["close"])-1));self.assertEqual(b.v8_base_weights[i[cut]],b.v8_base_weights[i[cut-1]])
+ def test_v8_rebalance_executes_at_next_session_close(self):
+  i,p,v=self.synthetic();r=V9Backtester(p,v,[],V9Config(fear_gate_enabled=False)).run();trades=[x for x in r.ledger if x["reason"]=="v8_rebalance"]
+  self.assertTrue(trades);first=trades[0];dt=pd.Timestamp(first["date"]);self.assertAlmostEqual(first["price"],float(p["close"].at[dt,first["symbol"]]))
+ def test_fear_gate_proportionally_reserves_cash(self):
+  i,p,v=self.synthetic();b=V9Backtester(p,v,[],V9Config(fear_allocation_policy="proportional"));core,info,fear=b._effective_sleeve_caps(i[-1])
+  self.assertEqual(fear["regime"],"normal");self.assertAlmostEqual(core,.665);self.assertAlmostEqual(info,.285);self.assertAlmostEqual(core+info,1-fear["cash_floor"])
+ def test_core_priority_reserves_normal_cash_from_stock_sleeve(self):
+  i,p,v=self.synthetic();b=V9Backtester(p,v,[],V9Config(fear_allocation_policy="core_priority"));core,info,fear=b._effective_sleeve_caps(i[-1])
+  self.assertAlmostEqual(core,.70);self.assertAlmostEqual(info,.25);self.assertAlmostEqual(core+info,1-fear["cash_floor"])
+ def test_panic_fear_gate_blocks_new_buys(self):
+  i,p,v=self.synthetic();v.loc[:,"^VIX"]=40.;v.loc[:,"^VIX3M"]=30.;b=V9Backtester(p,v,[],V9Config());fear=b._fear_gate(i[-1])
+  self.assertEqual(fear["regime"],"panic");self.assertEqual(fear["max_new_buy_exposure"],0.0);self.assertEqual(fear["cash_floor"],.65)
 if __name__=="__main__":unittest.main()

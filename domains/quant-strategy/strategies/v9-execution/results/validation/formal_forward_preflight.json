@@ -1,11 +1,37 @@
 {
-  "ok": true,
-  "as_of": null,
-  "forward_eligible": true,
-  "frozen_at_utc": "2026-07-12T11:40:40Z",
-  "data_v9_last_date": "2026-07-10",
+  "ok": false,
+  "as_of": "2026-07-17",
+  "forward_eligible": false,
+  "manifest_identity": {
+    "combined_code_hash": "afff99ce95dccaf813c751b44e816c7aca2ddff62edfca7a0df95ad053a8d6a3",
+    "frozen_at_utc": "2026-07-14T16:37:42Z"
+  },
+  "frozen_at_utc": "2026-07-14T16:37:42Z",
+  "data_v9_last_date": "2026-07-14",
   "forward_initial_states": 4,
   "forward_daily_states": 0,
-  "blockers": [],
-  "warnings": []
+  "forward_completed_sessions": 0,
+  "forward_latest_completed_session": null,
+  "forward_inventory": {
+    "initial_states": 4,
+    "daily_state_files": 0,
+    "completed_sessions": 0,
+    "latest_completed_session": null,
+    "dates_by_account": {
+      "v8_base": [],
+      "v9_a": [],
+      "v9_e": [],
+      "passive_50_50": []
+    },
+    "report_dates": [],
+    "issues": []
+  },
+  "blockers": [
+    "forward_eligible is false",
+    "code hash mismatch: ['../../references/user-selected-watchlist.json', 'scripts/freeze_v9_rule_e.py', 'scripts/init_forward_accounts.py']",
+    "data_v9 last bar 2026-07-14 < requested as-of 2026-07-17; refresh data first"
+  ],
+  "warnings": [
+    "git worktree dirty; formal forward can still run on frozen hashes, but do not re-freeze"
+  ]
 }

@@ -1,21 +1,50 @@
 {
-  "formal_forward_authorized": true,
-  "blockers": [],
-  "warnings": [
-    "only 18 reliable PIT events; Rule E statistical promotion blocked"
+  "formal_forward_authorized": false,
+  "blockers": [
+    "frozen manifest is not forward_eligible",
+    "frozen code hash mismatch: ['../../references/user-selected-watchlist.json', 'scripts/freeze_v9_rule_e.py', 'scripts/init_forward_accounts.py']"
   ],
+  "warnings": [
+    "only 18 reliable PIT events; Rule E statistical promotion blocked",
+    "git worktree is dirty now; do not re-freeze until committed"
+  ],
+  "manifest_identity": {
+    "combined_code_hash": "afff99ce95dccaf813c751b44e816c7aca2ddff62edfca7a0df95ad053a8d6a3",
+    "frozen_at_utc": "2026-07-14T16:37:42Z"
+  },
   "prerequisites": {
     "venv_python_exists": true,
     "freeze_script_exists": true,
     "research_monitors_exist": true,
     "frozen_dir_exists": true,
     "forward_dir_exists": true,
-    "forward_eligible": true,
-    "dirty_worktree_at_freeze": false,
-    "git_dirty_now": false,
+    "forward_eligible": false,
+    "dirty_worktree_at_freeze": true,
+    "git_dirty_now": true,
     "forward_initialized": true,
     "forward_daily_states": 0,
-    "first_executable_as_of": "2026-07-13",
+    "forward_completed_sessions": 0,
+    "forward_latest_completed_session": null,
+    "forward_inventory": {
+      "initial_states": 4,
+      "daily_state_files": 0,
+      "completed_sessions": 0,
+      "latest_completed_session": null,
+      "dates_by_account": {
+        "v8_base": [],
+        "v9_a": [],
+        "v9_e": [],
+        "passive_50_50": []
+      },
+      "report_dates": [],
+      "issues": []
+    },
+    "code_hash_mismatches": [
+      "../../references/user-selected-watchlist.json",
+      "scripts/freeze_v9_rule_e.py",
+      "scripts/init_forward_accounts.py"
+    ],
+    "first_executable_as_of": "2026-07-15",
     "events": {
       "all_events": 50,
       "reliable_point_in_time": 18,
@@ -23,5 +52,5 @@
       "source_health": "partial"
     }
   },
-  "next_action": "Append-only formal forward is initialized. First executable completed session is 2026-07-13; do not backfill earlier dates. Rule E statistical promotion still waits for >=50 reliable PIT events."
+  "next_action": "Resolve blockers before formal forward launch."
 }

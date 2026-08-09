@@ -2,14 +2,15 @@
 """Phase 5: Official Forward Shadow Portfolio Initialization."""
 import json
 import hashlib
+import os
 import sys
 from pathlib import Path
 
 SCRIPTS = Path(__file__).resolve().parent
 ROOT = SCRIPTS.parent
-SHADOW_DIR = ROOT / "results" / "shadow_portfolio"
-FORWARD_DIR = SHADOW_DIR / "forward"
-FROZEN_DIR = SHADOW_DIR / "frozen"
+SHADOW_DIR = Path(os.environ.get("V9_SHADOW_DIR", ROOT / "results" / "shadow_portfolio"))
+FORWARD_DIR = Path(os.environ.get("V9_FORWARD_DIR", SHADOW_DIR / "forward"))
+FROZEN_DIR = Path(os.environ.get("V9_FROZEN_DIR", SHADOW_DIR / "frozen"))
 
 from shadow_integrity import TamperAlarmException, digest, state_digest
 from run_v9_shadow import ACCOUNTS
@@ -20,6 +21,8 @@ def main():
         raise FileNotFoundError("Frozen directory missing. Cannot initialize forward accounts.")
         
     manifest = json.loads((FROZEN_DIR / "code_manifest.json").read_text())
+    if not manifest.get("forward_eligible", False):
+        raise TamperAlarmException("Cannot initialize formal forward accounts from an ineligible/dirty freeze.")
     config = json.loads((FROZEN_DIR / "config.json").read_text())
     events_raw = (FROZEN_DIR / "baseline_event_snapshot.json").read_text(encoding="utf-8")
     
@@ -28,6 +31,8 @@ def main():
     
     events_obj = json.loads(events_raw)
     baseline_events_hash = hashlib.sha256(json.dumps(events_obj, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
+    if baseline_events_hash != manifest.get("baseline_event_snapshot_hash"):
+        raise TamperAlarmException("Frozen baseline event snapshot does not match the manifest hash.")
     
     accounts_dir = FORWARD_DIR / "accounts"
     accounts_dir.mkdir(parents=True, exist_ok=True)
@@ -122,7 +127,14 @@ def main():
         "previous_event_hash": digest({"baseline": baseline_events_hash, "frozen_at": frozen_at_utc})
     }
     event_genesis_file = shared_dir / "event_chain_genesis.json"
-    event_genesis_file.write_text(json.dumps(event_genesis, indent=2, sort_keys=True))
+    encoded_genesis = json.dumps(event_genesis, indent=2, sort_keys=True)
+    if event_genesis_file.exists():
+        if json.loads(event_genesis_file.read_text(encoding="utf-8")) != event_genesis:
+            raise TamperAlarmException("Tamper Alarm: event_chain_genesis.json differs from expected genesis!")
+    else:
+        tmp_genesis = event_genesis_file.with_suffix(".tmp")
+        tmp_genesis.write_text(encoded_genesis, encoding="utf-8")
+        tmp_genesis.replace(event_genesis_file)
     print(f"[shared] Created event_chain_genesis.json. Initial Hash: {event_genesis['previous_event_hash']}")
     
     # Initialize empty append log

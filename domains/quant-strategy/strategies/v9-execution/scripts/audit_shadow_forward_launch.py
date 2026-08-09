@@ -3,17 +3,23 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
 
 import pandas as pd
 
+from forward_state_inventory import inspect_forward_state
+
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
-FROZEN = ROOT / "results" / "shadow_portfolio" / "frozen"
-FORWARD = ROOT / "results" / "shadow_portfolio" / "forward"
+SHADOW_DIR = Path(os.environ.get("V9_SHADOW_DIR", ROOT / "results" / "shadow_portfolio"))
+FROZEN = Path(os.environ.get("V9_FROZEN_DIR", SHADOW_DIR / "frozen"))
+FORWARD = Path(os.environ.get("V9_FORWARD_DIR", SHADOW_DIR / "forward"))
+VALIDATION_DIR = Path(os.environ.get("V9_VALIDATION_DIR", ROOT / "results" / "validation"))
 EVENTS = ROOT / "datasets" / "v9_information_events.json"
 PYTHON = Path(r"D:\code\AI-Memory\domains\quant-strategy\.venv\Scripts\python.exe")
 
@@ -67,14 +73,23 @@ def main() -> None:
     if (FROZEN / "code_manifest.json").exists():
         manifest = json.loads((FROZEN / "code_manifest.json").read_text(encoding="utf-8"))
 
-    initial_states = list((FORWARD / "accounts").glob("*/initial_state.json")) if FORWARD.exists() else []
-    daily_states = list((FORWARD / "accounts").glob("*/20*_state.json")) if FORWARD.exists() else []
+    inventory = inspect_forward_state(FORWARD, manifest)
+    code_hash_mismatches = []
+    for rel, expected in manifest.get("files", {}).items():
+        path = ROOT / rel
+        actual = hashlib.sha256(path.read_bytes()).hexdigest() if path.exists() else ""
+        if actual != expected:
+            code_hash_mismatches.append(rel)
     first_as_of = next_session_after_freeze(manifest.get("frozen_at_utc"))
 
     audit = {
         "formal_forward_authorized": False,
         "blockers": [],
         "warnings": [],
+        "manifest_identity": {
+            "combined_code_hash": manifest.get("combined_code_hash"),
+            "frozen_at_utc": manifest.get("frozen_at_utc"),
+        },
         "prerequisites": {
             "venv_python_exists": PYTHON.exists(),
             "freeze_script_exists": (SCRIPTS / "freeze_v9_rule_e.py").exists(),
@@ -84,8 +99,12 @@ def main() -> None:
             "forward_eligible": bool(manifest.get("forward_eligible")),
             "dirty_worktree_at_freeze": bool(manifest.get("dirty_worktree")),
             "git_dirty_now": git_dirty(),
-            "forward_initialized": len(initial_states) >= 4,
-            "forward_daily_states": len(daily_states),
+            "forward_initialized": inventory["initial_states"] == 4,
+            "forward_daily_states": inventory["daily_state_files"],
+            "forward_completed_sessions": inventory["completed_sessions"],
+            "forward_latest_completed_session": inventory["latest_completed_session"],
+            "forward_inventory": inventory,
+            "code_hash_mismatches": code_hash_mismatches,
             "first_executable_as_of": first_as_of,
             "events": event_stats,
         },
@@ -99,8 +118,11 @@ def main() -> None:
         audit["blockers"].append("frozen artifacts missing; run freeze_v9_rule_e.py after clean commit")
     elif not manifest.get("forward_eligible"):
         audit["blockers"].append("frozen manifest is not forward_eligible")
-    if len(initial_states) < 4:
+    if code_hash_mismatches:
+        audit["blockers"].append(f"frozen code hash mismatch: {code_hash_mismatches}")
+    if inventory["initial_states"] < 4:
         audit["blockers"].append("forward accounts not initialized; run run_v9_shadow.py --initialize")
+    audit["blockers"].extend(f"forward integrity: {issue}" for issue in inventory["issues"])
     if event_stats["reliable_point_in_time"] < 50:
         audit["warnings"].append(
             f"only {event_stats['reliable_point_in_time']} reliable PIT events; Rule E statistical promotion blocked"
@@ -125,7 +147,7 @@ def main() -> None:
     launch_ready = (
         not audit["blockers"]
         and bool(manifest.get("forward_eligible"))
-        and len(initial_states) >= 4
+        and inventory["initial_states"] == 4
     )
     audit["formal_forward_authorized"] = launch_ready
     if launch_ready:
@@ -136,7 +158,7 @@ def main() -> None:
     else:
         audit["next_action"] = "Resolve blockers before formal forward launch."
 
-    out = ROOT / "results" / "validation" / "shadow_forward_launch_audit.json"
+    out = VALIDATION_DIR / "shadow_forward_launch_audit.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(audit, indent=2), encoding="utf-8")
     print(json.dumps(audit, indent=2))

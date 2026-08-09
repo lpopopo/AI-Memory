@@ -10,6 +10,7 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
+from v9_fear_gate import compute_canonical_fear_gate
 
 
 @dataclass(frozen=True)
@@ -67,7 +68,29 @@ def compute_fear_snapshot(
     vix: pd.DataFrame | None,
     as_of: pd.Timestamp,
 ) -> FearSnapshot:
-    """Port of the 14-point Market Fear Gate for advisory diagnostics only."""
+    """Expose the canonical formal gate as a read-only research snapshot."""
+    as_of = pd.Timestamp(as_of)
+    canonical = compute_canonical_fear_gate(close, vix, as_of)
+    return FearSnapshot(
+        as_of=str(as_of.date()),
+        score=canonical["score"],
+        regime=canonical["regime"],
+        risk_multiplier=canonical["risk_multiplier"],
+        max_gross_exposure=canonical["max_gross_exposure"],
+        max_new_buy_exposure=canonical["max_new_buy_exposure"],
+        cash_floor=canonical["cash_floor"],
+        signals=[FearSignal(**signal) for signal in canonical["signals"]],
+        action=canonical["action"],
+    )
+
+
+def _retired_fear_snapshot_reference(
+    close: pd.DataFrame,
+    vix: pd.DataFrame | None,
+    as_of: pd.Timestamp,
+) -> FearSnapshot:
+    """Historical migration reference; deliberately unavailable to callers."""
+    raise RuntimeError("retired Fear Gate implementation; use compute_fear_snapshot")
     as_of = pd.Timestamp(as_of)
     if as_of not in close.index:
         raise KeyError(f"as_of not in close index: {as_of.date()}")
@@ -286,6 +309,146 @@ def panic_to_repair_label(
     }
 
 
+def market_semiconductor_turn_snapshot(
+    close: pd.DataFrame,
+    vix: pd.DataFrame | None,
+    as_of: pd.Timestamp,
+) -> dict[str, Any]:
+    """Completed-close market/semiconductor transition ladder.
+
+    This is a read-only monitor. Missing confirmation inputs fail closed and
+    the result never authorizes a trade or changes portfolio weights.
+    """
+    as_of = pd.Timestamp(as_of)
+    required = ("SPY", "QQQ", "SMH", "RSP", "HYG", "LQD")
+    missing = [ticker for ticker in required if ticker not in close.columns]
+    if as_of not in close.index or missing:
+        return {
+            "as_of": str(as_of.date()),
+            "stage": "unavailable",
+            "confirmed_turn": False,
+            "missing_inputs": missing or ["as_of"],
+            "authorizes_trade": False,
+        }
+
+    loc = close.index.get_loc(as_of)
+    if not isinstance(loc, int) or loc < 63:
+        return {
+            "as_of": str(as_of.date()),
+            "stage": "warmup",
+            "confirmed_turn": False,
+            "missing_inputs": [],
+            "authorizes_trade": False,
+        }
+
+    history = close.iloc[: loc + 1]
+    qqq = history["QQQ"]
+    smh = history["SMH"]
+
+    qqq_dd = drawdown_from_high(qqq, 63)
+    smh_dd = drawdown_from_high(smh, 63)
+    recent_qqq_min_dd = float(qqq_dd.iloc[-21:].min())
+    recent_smh_min_dd = float(smh_dd.iloc[-21:].min())
+    recent_stress_base = min(recent_qqq_min_dd, recent_smh_min_dd) <= -0.08
+
+    no_new_low_flags: list[bool] = []
+    for offset in (2, 1, 0):
+        end = len(smh) - offset
+        current = smh.iloc[end - 1]
+        prior_window = smh.iloc[max(0, end - 11) : end - 1]
+        no_new_low_flags.append(bool(not prior_window.empty and current > prior_window.min()))
+    smh_no_new_10d_low_3d = all(no_new_low_flags)
+
+    smh_mom5 = _safe(smh.pct_change(5).iloc[-1])
+    qqq_mom5 = _safe(qqq.pct_change(5).iloc[-1])
+    smh_ma10 = smh.rolling(10).mean()
+    smh_ma20 = smh.rolling(20).mean()
+    qqq_ma20 = qqq.rolling(20).mean()
+    smh_above_ma10 = bool(pd.notna(smh_ma10.iloc[-1]) and smh.iloc[-1] > smh_ma10.iloc[-1])
+    smh_above_ma20_2d = bool(
+        pd.notna(smh_ma20.iloc[-2])
+        and smh.iloc[-2] > smh_ma20.iloc[-2]
+        and smh.iloc[-1] > smh_ma20.iloc[-1]
+    )
+    smh_relative_5d_positive = bool(
+        smh_mom5 is not None and qqq_mom5 is not None and smh_mom5 > qqq_mom5
+    )
+    qqq_above_ma20 = bool(pd.notna(qqq_ma20.iloc[-1]) and qqq.iloc[-1] > qqq_ma20.iloc[-1])
+
+    def relative_change(left: str, right: str, periods: int = 5) -> float | None:
+        ratio = history[left] / history[right]
+        value = ratio.pct_change(periods).iloc[-1]
+        return _safe(value)
+
+    breadth_5d = relative_change("RSP", "SPY")
+    credit_5d = relative_change("HYG", "LQD")
+    breadth_nonnegative = bool(breadth_5d is not None and breadth_5d >= 0.0)
+    credit_nonnegative = bool(credit_5d is not None and credit_5d >= 0.0)
+
+    fear_now = compute_fear_snapshot(close, vix, as_of)
+    fear_prior = compute_fear_snapshot(close, vix, close.index[loc - 5])
+    fear_nonworsening = bool(
+        fear_now.regime in {"normal", "elevated"} and fear_now.score <= fear_prior.score
+    )
+
+    repair_attempt = bool(
+        recent_stress_base
+        and smh_no_new_10d_low_3d
+        and smh_mom5 is not None
+        and smh_mom5 > 0.0
+        and smh_above_ma10
+    )
+    confirmations = {
+        "smh_above_ma20_2d": smh_above_ma20_2d,
+        "smh_relative_5d_positive": smh_relative_5d_positive,
+        "qqq_above_ma20": qqq_above_ma20,
+        "breadth_5d_nonnegative": breadth_nonnegative,
+        "credit_5d_nonnegative": credit_nonnegative,
+        "fear_nonworsening_normal_or_elevated": fear_nonworsening,
+    }
+    confirmed = bool(repair_attempt and all(confirmations.values()))
+    if not recent_stress_base:
+        stage = "no_recent_stress"
+    elif confirmed:
+        stage = "confirmed_turn"
+    elif repair_attempt:
+        stage = "repair_attempt"
+    elif smh_no_new_10d_low_3d:
+        stage = "stabilizing"
+    else:
+        stage = "risk_off"
+
+    return {
+        "as_of": str(as_of.date()),
+        "stage": stage,
+        "confirmed_turn": confirmed,
+        "recent_stress_base": recent_stress_base,
+        "recent_qqq_min_dd63": recent_qqq_min_dd,
+        "recent_smh_min_dd63": recent_smh_min_dd,
+        "stabilization": {
+            "smh_no_new_10d_low_3d": smh_no_new_10d_low_3d,
+            "smh_mom5": smh_mom5,
+            "smh_above_ma10": smh_above_ma10,
+        },
+        "confirmations": confirmations,
+        "measurements": {
+            "qqq_mom5": qqq_mom5,
+            "smh_relative_mom5": (
+                None if smh_mom5 is None or qqq_mom5 is None else float(smh_mom5 - qqq_mom5)
+            ),
+            "rsp_spy_5d": breadth_5d,
+            "hyg_lqd_5d": credit_5d,
+            "fear_score": fear_now.score,
+            "fear_score_5d_ago": fear_prior.score,
+            "fear_regime": fear_now.regime,
+        },
+        "turn_score": int(sum(confirmations.values())),
+        "missing_inputs": [],
+        "authorizes_trade": False,
+        "note": "Research-only completed-close monitor; stock and portfolio gates remain binding.",
+    }
+
+
 def momentum_family_snapshot(close: pd.DataFrame, as_of: pd.Timestamp) -> dict[str, Any]:
     """Keep XSMOM/TSMOM/MA/drawdown momentum definitions separated."""
     as_of = pd.Timestamp(as_of)
@@ -365,6 +528,7 @@ def build_research_diagnostics(
             "signals": [asdict(signal) for signal in fear.signals],
         },
         "panic_to_repair": panic_to_repair_label(close, vix, as_of),
+        "market_semiconductor_turn": market_semiconductor_turn_snapshot(close, vix, as_of),
         "momentum_families": momentum_family_snapshot(close, as_of),
         "behavioral_execution_audit": behavioral_execution_audit(behavioral_fields),
     }

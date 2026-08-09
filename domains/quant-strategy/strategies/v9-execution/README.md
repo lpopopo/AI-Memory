@@ -51,7 +51,7 @@ PIT event gate status and what will **not** close the 18/50 gap:
 ```powershell
 $py = 'D:\code\AI-Memory\domains\quant-strategy\.venv\Scripts\python.exe'
 & $py scripts/preflight_formal_forward.py 2026-07-13
-& $py scripts/download_v9_data.py
+& $py scripts/download_v9_data.py --completed-through 2026-07-13
 # Optional new observation (copy validation/event-append-template.json first):
 # & $py scripts/append_shadow_event.py --forward --event-json path\to\event.json
 & $py scripts/run_v9_shadow.py --as-of 2026-07-13
@@ -68,10 +68,15 @@ All signals use completed bars and are subject to human review. Nothing here
 sends an order to a broker.
 
 ```powershell
-python scripts/download_v9_data.py
+python scripts/download_v9_data.py --completed-through YYYY-MM-DD
 python scripts/run_v9_daily_execution.py
 python scripts/v9_signal.py --json
 ```
+
+The downloader writes atomically only after every required proxy reaches the
+declared session. It records per-symbol provenance and uses official Cboe
+history for VIX/VIX3M, preventing a stale volatility term structure from
+silently entering the Fear Gate.
 
 For the append-only shadow ledger:
 
