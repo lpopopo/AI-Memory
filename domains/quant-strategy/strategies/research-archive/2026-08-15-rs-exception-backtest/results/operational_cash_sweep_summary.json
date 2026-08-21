@@ -1,0 +1,17 @@
+{
+  "generated_at_utc": "2026-08-15T08:14:35.211317+00:00",
+  "working_cash": 3756.49,
+  "working_nav": 5751.77,
+  "research_only": true,
+  "authorizes_trade": false,
+  "sgov_full_shares": 37,
+  "bil_full_shares": 41,
+  "sgov_full_annual_income": 133.94592,
+  "bil_full_annual_income": 133.972461,
+  "sgov_half_immediate_cash": 1945.4099999999999,
+  "sgov_half_breakeven_pre_tax": 31.48047477336791,
+  "sgov_half_breakeven_30tax": 44.972106819097014,
+  "sgov_three_entry_shares": 23,
+  "sgov_three_entry_pct": 0.6157024243376131,
+  "decision": "operationally_conditional_no_order_until_broker_and_tax_facts"
+}

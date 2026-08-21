@@ -1,6 +1,6 @@
 {
   "args": {
-    "since": "2026-08-06T13:17:14.178Z",
+    "since": "2026-08-11T14:49:11.778Z",
     "out": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\realtime-public-source-latest.md",
     "json": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\realtime-public-source-latest.json",
     "maxPosts": 5
@@ -18,140 +18,29 @@
           "url": "https://r.jina.ai/http://x.com/nvidia",
           "ok": true,
           "status": 200,
-          "length": 3541,
+          "length": 0,
           "error": null
         }
       ],
-      "note": "账号页可读，但没有抽取到可校验 status 链接；可能是 X 返回置顶/历史推荐或无链接摘要。"
+      "note": "Jina Reader 未能读取账号页。"
     },
     {
       "source": "@elonmusk",
       "type": "x",
       "dimension": "xAI/Tesla/SpaceX/AI 基建",
       "profileUrl": "https://x.com/elonmusk",
-      "posts": [
-        {
-          "id": "2085737443228045492",
-          "authorName": null,
-          "authorHandle": "elonmusk",
-          "text": "* [](http://x.com/elonmusk) Elon Musk[](https://twitter.com/X) @elonmusk It really is this amazing [](http://x.com/paulg)Paul Graham @paulg 10h Jessica bought a new Tesla today. Her experience with self-driving was the usual religious revelation. Impressive that a 23 year old company can still generate that kind of reaction. 2:38 PM · Aug 7, 2026",
-          "url": "https://x.com/i/status/2085737443228045492",
-          "createdAt": "2026-08-07T14:38:52.250Z",
-          "createdAtSource": "twitter_snowflake_id",
-          "account": "@elonmusk",
-          "sourceStatus": "verified_account_post",
-          "dimension": "xAI/Tesla/SpaceX/AI 基建",
-          "evidence": "高：Jina Reader 读取 status 详情；发布时间由 X snowflake ID 推算；作者匹配目标账号。"
-        },
-        {
-          "id": "2085735374651871702",
-          "authorName": null,
-          "authorHandle": "elonmusk",
-          "text": "* [](https://x.com/elonmusk) Elon Musk [](https://twitter.com/X) @elonmusk Video 5Tesla Europe, Middle East & Africa 03:26 Tesla Europe, Middle East & Africa [](https://twitter.com/Tesla) 2:30 PM · Aug 7, 2026",
-          "url": "https://x.com/i/status/2085735374651871702",
-          "createdAt": "2026-08-07T14:30:39.063Z",
-          "createdAtSource": "twitter_snowflake_id",
-          "account": "@elonmusk",
-          "sourceStatus": "verified_account_post",
-          "dimension": "xAI/Tesla/SpaceX/AI 基建",
-          "evidence": "高：Jina Reader 读取 status 详情；发布时间由 X snowflake ID 推算；作者匹配目标账号。"
-        },
-        {
-          "id": "2085735269525766343",
-          "authorName": "Elon Musk (@elonmusk) on X URL Source: http://x.com/i/status/2085735269525766343 Published Time: 2026-08-07T14:30:13.000Z Markdown Content: [](http://x.com/) ## Post Log inSign up ## Post * [](http://x.com/elonmusk) Elon Musk[](https://twitter.com/X) @elonmusk Try Grok Build X.ai/build [](http://x.com/XFreeze)X Freeze @XFreeze 10h Grok Build officially reaches v1.0.0, rapidly becoming one of the most powerful coding harnesses in the world After 100+ updates in just over 10 weeks, SpaceXAI’s coding agent has hit a major milestone.......with a smarter dashboard, a more polished developer experience, Show more [](http://x.com/XFreeze/status/2085594014481359104/photo/1) [](http://x.com/XFreeze/status/2085594014481359104/photo/1) 2:30 PM · Aug 7, 2026876.1K Views 605 330 1.9K 89 * [](http://x.com/XCEO_eth) X CEO @XCEO_eth 1h [](http://x.com/XCEO_eth/status/2085741706025062417/photo/1) [](http://x.com/XCEO_eth/status/2085741706025062417/photo/1) Made with AI 3 5 12 337 * [](http://x.com/GuntherEagleman) Gunther Eagleman™ @GuntherEagleman 1h Build!! 🚀 3 2 11 2.6K ## Log in or sign up for X See what’s happening and join the conversation Continue with phoneContinue with Apple Continue with Google Continue with Google Continue with Google. Opens in new tab or Log in with username or email ## Relevant people [](http://x.com/elonmusk) Elon Musk@elonmuskFollow Terms·Privacy·Cookies·Accessibility·Ads Info·More© 2026 X Corp. Scan to get the app Elon Musk",
-          "authorHandle": "elonmusk",
-          "text": "Try Grok Build",
-          "url": "https://x.com/i/status/2085735269525766343",
-          "createdAt": "2026-08-07T14:30:13.999Z",
-          "createdAtSource": "twitter_snowflake_id",
-          "account": "@elonmusk",
-          "sourceStatus": "verified_account_post",
-          "dimension": "xAI/Tesla/SpaceX/AI 基建",
-          "evidence": "高：Jina Reader 读取 status 详情；发布时间由 X snowflake ID 推算；作者匹配目标账号。"
-        },
-        {
-          "id": "2085594813840216212",
-          "authorName": "Elon Musk (@elonmusk) on X URL Source: http://x.com/i/status/2085594813840216212 Published Time: 2026-08-07T05:12:06.000Z Markdown Content: ## Post ## Post * [](https://x.com/elonmusk) Grok Build V1.0 is now released. Try it out! X.ai/build [](https://x.com/cb_doge) 🚨 NEW GROK BUILD UPDATE 🚨 Grok Build v1.0.0 is now live. SpaceXAI is pushing new Grok Build updates almost daily. Updates: UI & navigation • Dashboard rows show a short summary of what the agent did in the previous turn • Extensions modal groups items alphabetically with [](https://x.com/cb_doge/status/2085587302726742073/photo/1) * [](https://x.com/RafelineK) ChatGPT right now 😂😂😂😂😂😂 [](https://x.com/RafelineK/status/2085596459785695475/photo/1) * [](https://x.com/thesoragirls) Grok Build V1.0 going live 😂 Video 5 GIF * [](https://x.com/XCEO_eth) Try Grok Build V1.0 now! Video 6 00:06 Made with AI Elon Musk",
-          "authorHandle": "elonmusk",
-          "text": "Grok Build V1.0 is now released. Try it out!",
-          "url": "https://x.com/i/status/2085594813840216212",
-          "createdAt": "2026-08-07T05:12:06.754Z",
-          "createdAtSource": "twitter_snowflake_id",
-          "account": "@elonmusk",
-          "sourceStatus": "verified_account_post",
-          "dimension": "xAI/Tesla/SpaceX/AI 基建",
-          "evidence": "高：Jina Reader 读取 status 详情；发布时间由 X snowflake ID 推算；作者匹配目标账号。"
-        },
-        {
-          "id": "2085377974396752305",
-          "authorName": "Elon Musk (@elonmusk) on X URL Source: http://x.com/i/status/2085377974396752305 Published Time: 2026-08-06T14:50:28.000Z Markdown Content: ## Post Log inSign up ## Post * [](https://x.com/elonmusk) Elon Musk [](https://twitter.com/X) @elonmusk Terafab Texas will be the largest and most valuable building on Earth by far. And it will be stunningly beautiful. Video 3SpaceX 00:53 SpaceX 2:50 PM · Aug 6, 202614.7M Views * [](https://x.com/AdanGuajardo) Adan Guajardo @AdanGuajardo Aug 6 Futuristic scene with RoboVan + Cybercab + Tesla Semi + Optimus 🖤 [](https://x.com/AdanGuajardo/status/2085381556219113586/photo/1) * [](https://x.com/GuntherEagleman) Gunther Eagleman™ @GuntherEagleman Aug 6 God Bless Texas! Everything is bigger and better in Texas! * [](https://x.com/Dawson_Boyle) Dawson Boyle @Dawson_Boyle 21h SHHHHEEEEIIITTTT... [](https://x.com/Dawson_Boyle/status/2085427627288924469/photo/1) Elon Musk",
-          "authorHandle": "elonmusk",
-          "text": "Terafab Texas will be the largest and most valuable building on Earth by far. And it will be stunningly beautiful.",
-          "url": "https://x.com/i/status/2085377974396752305",
-          "createdAt": "2026-08-06T14:50:28.202Z",
-          "createdAtSource": "twitter_snowflake_id",
-          "account": "@elonmusk",
-          "sourceStatus": "verified_account_post",
-          "dimension": "xAI/Tesla/SpaceX/AI 基建",
-          "evidence": "高：Jina Reader 读取 status 详情；发布时间由 X snowflake ID 推算；作者匹配目标账号。"
-        }
-      ],
+      "posts": [],
       "diagnostics": [
         {
           "channel": "jina_profile",
           "url": "https://r.jina.ai/http://x.com/elonmusk",
           "ok": true,
           "status": 200,
-          "length": 7876,
-          "error": null
-        },
-        {
-          "channel": "jina_status",
-          "id": "2085377974396752305",
-          "url": "https://r.jina.ai/http://x.com/i/status/2085377974396752305",
-          "ok": true,
-          "status": 200,
-          "length": 2617,
-          "error": null
-        },
-        {
-          "channel": "jina_status",
-          "id": "2085737443228045492",
-          "url": "https://r.jina.ai/http://x.com/i/status/2085737443228045492",
-          "ok": true,
-          "status": 200,
-          "length": 5003,
-          "error": null
-        },
-        {
-          "channel": "jina_status",
-          "id": "2085735374651871702",
-          "url": "https://r.jina.ai/http://x.com/i/status/2085735374651871702",
-          "ok": true,
-          "status": 200,
-          "length": 2691,
-          "error": null
-        },
-        {
-          "channel": "jina_status",
-          "id": "2085735269525766343",
-          "url": "https://r.jina.ai/http://x.com/i/status/2085735269525766343",
-          "ok": true,
-          "status": 200,
-          "length": 3850,
-          "error": null
-        },
-        {
-          "channel": "jina_status",
-          "id": "2085594813840216212",
-          "url": "https://r.jina.ai/http://x.com/i/status/2085594813840216212",
-          "ok": true,
-          "status": 200,
-          "length": 1988,
+          "length": 0,
           "error": null
         }
       ],
-      "note": "账号页可读；已按 status 详情和 snowflake 时间筛选。"
+      "note": "Jina Reader 未能读取账号页。"
     },
     {
       "source": "@realDonaldTrump",
@@ -165,56 +54,11 @@
           "url": "https://r.jina.ai/http://x.com/realDonaldTrump",
           "ok": true,
           "status": 200,
-          "length": 7121,
-          "error": null
-        },
-        {
-          "channel": "jina_status",
-          "id": "2082159711852298494",
-          "url": "https://r.jina.ai/http://x.com/i/status/2082159711852298494",
-          "ok": true,
-          "status": 200,
-          "length": 5099,
-          "error": null
-        },
-        {
-          "channel": "jina_status",
-          "id": "2073607119878623432",
-          "url": "https://r.jina.ai/http://x.com/i/status/2073607119878623432",
-          "ok": true,
-          "status": 200,
-          "length": 3354,
-          "error": null
-        },
-        {
-          "channel": "jina_status",
-          "id": "2072681271566708832",
-          "url": "https://r.jina.ai/http://x.com/i/status/2072681271566708832",
-          "ok": true,
-          "status": 200,
-          "length": 3927,
-          "error": null
-        },
-        {
-          "channel": "jina_status",
-          "id": "2068370042018767262",
-          "url": "https://r.jina.ai/http://x.com/i/status/2068370042018767262",
-          "ok": true,
-          "status": 200,
-          "length": 4507,
-          "error": null
-        },
-        {
-          "channel": "jina_status",
-          "id": "2057968277062582378",
-          "url": "https://r.jina.ai/http://x.com/i/status/2057968277062582378",
-          "ok": true,
-          "status": 200,
-          "length": 2343,
+          "length": 0,
           "error": null
         }
       ],
-      "note": "账号页可读；已按 status 详情和 snowflake 时间筛选。"
+      "note": "Jina Reader 未能读取账号页。"
     },
     {
       "source": "美研芒格君",
@@ -226,8 +70,8 @@
       "note": "原始公开 HTML/SSR 暴露可见笔记标题，但没有稳定单条笔记 URL、发布时间或正文；可用于主题温度和候选池，不可当作完整事实正文。",
       "evidence": "低到中",
       "titles": [
-        "[置顶] 40小时呕心沥血！MRVL光模块+AI推理布局解析",
         "[置顶] 分享我压箱底的 AI 主线 下一“瓶颈”标的",
+        "[置顶] 40小时呕心沥血！MRVL光模块+AI推理布局解析",
         "如果你也在找下一阶段的AI主线标的，看MRVL",
         "错过了存储光模块，别再错过 Token 算力工厂",
         "不必为了存储自责，我们都是华尔街的一块肉",
@@ -253,7 +97,7 @@
           "url": "https://www.xiaohongshu.com/user/profile/632ea1e700000000230381cb",
           "ok": true,
           "status": 200,
-          "length": 876324,
+          "length": 1023599,
           "error": null
         },
         {
@@ -261,7 +105,7 @@
           "url": "https://r.jina.ai/http://www.xiaohongshu.com/user/profile/632ea1e700000000230381cb",
           "ok": true,
           "status": 200,
-          "length": 510,
+          "length": 9735,
           "error": null
         }
       ]

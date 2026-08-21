@@ -1,0 +1,274 @@
+{
+  "research_only": true,
+  "formal_v9_modified": false,
+  "live_authorization": false,
+  "period": [
+    "2024-01-02",
+    "2026-08-18"
+  ],
+  "universe": "ai_capex_broad",
+  "symbols": 32,
+  "cost_model": {
+    "initial_nav": 6000.0,
+    "commission": 1.0,
+    "slippage_per_side": 0.001
+  },
+  "variant_economics": {
+    "matched_baseline": {
+      "trades": 44,
+      "wins": 19,
+      "losses": 25,
+      "win_rate": 0.4318181818181818,
+      "mean_return": 0.018576469053585547,
+      "gross_profit": 1148.1273037245887,
+      "gross_loss": 824.8723197973657,
+      "net_pnl": 323.25498392722295,
+      "profit_factor": 1.3918848725662565
+    },
+    "RSR1-shadow": {
+      "trades": 23,
+      "wins": 15,
+      "losses": 8,
+      "win_rate": 0.6521739130434783,
+      "mean_return": 0.08945839376045701,
+      "gross_profit": 1179.6562295969752,
+      "gross_loss": 238.6998363699691,
+      "net_pnl": 940.9563932270062,
+      "profit_factor": 4.942006863249732
+    },
+    "RSR2-profit-lock-shadow": {
+      "trades": 23,
+      "wins": 16,
+      "losses": 7,
+      "win_rate": 0.6956521739130435,
+      "mean_return": 0.09640646503744436,
+      "gross_profit": 1284.1479423970047,
+      "gross_loss": 197.8485548416141,
+      "net_pnl": 1086.2993875553907,
+      "profit_factor": 6.49056013285019
+    }
+  },
+  "path_groups": {
+    "common": {
+      "trades": 19,
+      "wins": 12,
+      "losses": 7,
+      "win_rate": 0.631578947368421,
+      "mean_return": 0.09574402604701295,
+      "gross_profit": 988.7609562318992,
+      "gross_loss": 217.85286287164155,
+      "net_pnl": 770.9080933602576,
+      "profit_factor": 4.53866404690984
+    },
+    "baseline_only": {
+      "trades": 25,
+      "wins": 7,
+      "losses": 18,
+      "win_rate": 0.28,
+      "mean_return": -0.040070874261419274,
+      "gross_profit": 159.3663474926895,
+      "gross_loss": 607.0194569257242,
+      "net_pnl": -447.6531094330346,
+      "profit_factor": 0.2625391092071532
+    },
+    "rsr1_only_replacement": {
+      "trades": 4,
+      "wins": 3,
+      "losses": 1,
+      "win_rate": 0.75,
+      "mean_return": 0.058814546454605675,
+      "gross_profit": 156.5051137330089,
+      "gross_loss": 18.996912473167754,
+      "net_pnl": 137.50820125984114,
+      "profit_factor": 8.238450008866705
+    }
+  },
+  "direct_quality_exclusions": {
+    "trades": 23,
+    "avoided_losing_trades": 16,
+    "avoided_loss_dollars": 554.7940400788513,
+    "missed_winning_trades": 7,
+    "missed_profit_dollars": 159.3663474926895,
+    "net_pnl_removed": -395.42769258616175,
+    "win_rate": 0.30434782608695654,
+    "mean_return": -0.038436169207790236,
+    "by_reason": {
+      "atr_pct": {
+        "trades": 14,
+        "wins": 4,
+        "losses": 10,
+        "win_rate": 0.2857142857142857,
+        "mean_return": -0.04906754805835746,
+        "gross_profit": 119.47159187876304,
+        "gross_loss": 432.74613983937894,
+        "net_pnl": -313.2745479606159,
+        "profit_factor": 0.27607777604465045
+      },
+      "atr_pct+close_location": {
+        "trades": 2,
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "mean_return": -0.03997745541374747,
+        "gross_profit": 0,
+        "gross_loss": 28.820435739301445,
+        "net_pnl": -28.820435739301445,
+        "profit_factor": 0.0
+      },
+      "close_location": {
+        "trades": 7,
+        "wins": 3,
+        "losses": 4,
+        "win_rate": 0.42857142857142855,
+        "mean_return": -0.01673304401923944,
+        "gross_profit": 39.89475561392646,
+        "gross_loss": 93.22746450017087,
+        "net_pnl": -53.332708886244404,
+        "profit_factor": 0.4279292140767525
+      }
+    }
+  },
+  "winner_concentration": {
+    "RSR1-shadow": {
+      "largest_winners": [
+        {
+          "rank": 1,
+          "symbol": "MU",
+          "signal_date": "2025-09-05",
+          "pnl": 189.9813954781087,
+          "return": 0.48413582932156435
+        },
+        {
+          "rank": 2,
+          "symbol": "NOK",
+          "signal_date": "2025-10-10",
+          "pnl": 163.01867166519173,
+          "return": 0.3024030128469159
+        },
+        {
+          "rank": 3,
+          "symbol": "LITE",
+          "signal_date": "2024-11-06",
+          "pnl": 118.86128536987303,
+          "return": 0.2702262374906154
+        },
+        {
+          "rank": 4,
+          "symbol": "MRVL",
+          "signal_date": "2024-11-06",
+          "pnl": 96.52956811861736,
+          "return": 0.21078325445694263
+        },
+        {
+          "rank": 5,
+          "symbol": "LITE",
+          "signal_date": "2025-07-15",
+          "pnl": 92.97294544219983,
+          "return": 0.18897305310852863
+        }
+      ],
+      "top_k": [
+        {
+          "top_winners": 1,
+          "removed_pnl": 189.9813954781087,
+          "share_of_gross_profit": 0.16104810088869287,
+          "share_of_net_pnl": 0.20190244398740761,
+          "leave_out_net_pnl": 750.9749977488975
+        },
+        {
+          "top_winners": 2,
+          "removed_pnl": 353.00006714330044,
+          "share_of_gross_profit": 0.29923977705259225,
+          "share_of_net_pnl": 0.37515029355684393,
+          "leave_out_net_pnl": 587.9563260837058
+        },
+        {
+          "top_winners": 3,
+          "removed_pnl": 471.8613525131735,
+          "share_of_gross_profit": 0.39999903418844573,
+          "share_of_net_pnl": 0.5014699468643035,
+          "leave_out_net_pnl": 469.0950407138327
+        }
+      ]
+    },
+    "RSR2-profit-lock-shadow": {
+      "largest_winners": [
+        {
+          "rank": 1,
+          "symbol": "MU",
+          "signal_date": "2025-09-05",
+          "pnl": 253.97519397081157,
+          "return": 0.48571943944197427
+        },
+        {
+          "rank": 2,
+          "symbol": "NOK",
+          "signal_date": "2025-10-10",
+          "pnl": 166.25433189392095,
+          "return": 0.3024851504940275
+        },
+        {
+          "rank": 3,
+          "symbol": "LITE",
+          "signal_date": "2024-11-06",
+          "pnl": 118.86128536987303,
+          "return": 0.2702262374906154
+        },
+        {
+          "rank": 4,
+          "symbol": "MRVL",
+          "signal_date": "2024-11-06",
+          "pnl": 96.52956811861736,
+          "return": 0.21078325445694263
+        },
+        {
+          "rank": 5,
+          "symbol": "LITE",
+          "signal_date": "2025-07-15",
+          "pnl": 92.97294544219983,
+          "return": 0.18897305310852863
+        }
+      ],
+      "top_k": [
+        {
+          "top_winners": 1,
+          "removed_pnl": 253.97519397081157,
+          "share_of_gross_profit": 0.19777720742731456,
+          "share_of_net_pnl": 0.23379852449549623,
+          "leave_out_net_pnl": 832.3241935845791
+        },
+        {
+          "top_winners": 2,
+          "removed_pnl": 420.2295258647325,
+          "share_of_gross_profit": 0.3272438571838751,
+          "share_of_net_pnl": 0.386845036164862,
+          "leave_out_net_pnl": 666.0698616906582
+        },
+        {
+          "top_winners": 3,
+          "removed_pnl": 539.0908112346056,
+          "share_of_gross_profit": 0.4198042869019692,
+          "share_of_net_pnl": 0.49626356915083614,
+          "leave_out_net_pnl": 547.2085763207851
+        }
+      ]
+    }
+  },
+  "profit_lock_attribution": {
+    "paired_trades": 23,
+    "improved": 5,
+    "worsened": 0,
+    "unchanged": 18,
+    "aggregate_pnl_delta": 145.34299432838435,
+    "aggregate_direct_exit_effect": 77.95278553065826,
+    "aggregate_capital_path_and_sizing_residual": 67.39020879772609,
+    "direct_exit_effect_share": 0.5363367246620341,
+    "capital_path_and_sizing_share": 0.4636632753379659,
+    "trades_with_nonzero_direct_exit_effect": 2,
+    "largest_positive_delta_share": 0.4402950330589507,
+    "two_largest_positive_delta_share": 0.8693018685895675,
+    "lock_activations": 12,
+    "profit_lock_exits": 2
+  },
+  "decision": "diagnostic_only_keep_frozen_forward_rules"
+}

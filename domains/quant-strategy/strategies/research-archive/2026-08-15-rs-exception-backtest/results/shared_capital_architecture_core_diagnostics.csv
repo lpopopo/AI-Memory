@@ -1,0 +1,7 @@
+period,architecture,fractional_transactions,fractional_turnover
+train_2024_2025,formal_70_25,10,3.0457130201708824
+train_2024_2025,challenger_80_20,12,3.615763144080695
+heldout_2026,formal_70_25,6,2.040421716136258
+heldout_2026,challenger_80_20,6,2.3277813623257924
+full_2024_2026,formal_70_25,14,4.770087876813889
+full_2024_2026,challenger_80_20,16,5.624783820377953

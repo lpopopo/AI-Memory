@@ -1,0 +1,56 @@
+{
+  "research_only": true,
+  "formal_v9_modified": false,
+  "live_authorization": false,
+  "preregistration": "selection-bias-audit-preregistration.md",
+  "data_start": "2024-01-02",
+  "data_end": "2026-08-18",
+  "trial_cells": 20,
+  "cscv": {
+    "splits": 252,
+    "pbo": 0.13095238095238096,
+    "median_oos_rank": 0.95,
+    "median_selected_minus_baseline_return": 0.037698532301350784,
+    "median_oos_return_regret": 0.0053477106718049505,
+    "selection_frequency": {
+      "atr_04_loc_50": 154,
+      "atr_04_loc_25": 48,
+      "atr_04_loc_75": 17,
+      "atr_03_loc_50": 11,
+      "atr_05_loc_75": 10,
+      "atr_05_loc_50": 4,
+      "atr_06_loc_50": 4,
+      "atr_03_loc_00": 2,
+      "atr_04_loc_00": 1,
+      "atr_06_loc_75": 1
+    }
+  },
+  "fixed_cell_stability": {
+    "positive_return_blocks": 6,
+    "positive_sharpe_blocks": 6,
+    "active_return_blocks": 7,
+    "positive_return_active_blocks": 6,
+    "active_sharpe_blocks": 7,
+    "positive_sharpe_active_blocks": 6,
+    "blocks": 10
+  },
+  "familywise_reality_check": {
+    "samples": 10000,
+    "block_sessions": 20,
+    "seed": 20260820,
+    "best_observed_cell": "atr_04_loc_50",
+    "best_observed_mean_daily_delta": 0.0001596635888318264,
+    "best_observed_annualized_mean_delta": 0.04023522438562025,
+    "familywise_p_value": 0.0633936606339366,
+    "fixed_cell_mean_daily_delta": 0.0001596635888318264,
+    "fixed_cell_annualized_mean_delta": 0.04023522438562025,
+    "fixed_unadjusted_p_value": 0.022097790220977902
+  },
+  "gate": {
+    "pbo_below_50pct": true,
+    "familywise_p_below_10pct": true,
+    "fixed_positive_return_at_least_7_of_10": false,
+    "fixed_positive_sharpe_at_least_7_of_10": false,
+    "contained": false
+  }
+}

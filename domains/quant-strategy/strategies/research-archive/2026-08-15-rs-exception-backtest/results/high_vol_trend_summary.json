@@ -1,0 +1,19 @@
+{
+  "generated_at_utc": "2026-08-15T07:55:44.287358+00:00",
+  "data_last_date": "2026-08-07",
+  "universe": "ai_capex_broad",
+  "symbols": 32,
+  "research_only": true,
+  "authorizes_trade": false,
+  "minimum_event_count": true,
+  "positive_mean_both": true,
+  "positive_median_both": true,
+  "positive_excess_both": true,
+  "win_rate_ge_50_both": true,
+  "mfe_mae_ge_1_25_both": true,
+  "positive_return_concentration_le_35": true,
+  "two_of_three_neighbors_positive": true,
+  "positive_return_concentration": 0.24177298316394993,
+  "passes_event_continuation_gate": true,
+  "decision": "proceed_to_portfolio_simulation_research_only"
+}

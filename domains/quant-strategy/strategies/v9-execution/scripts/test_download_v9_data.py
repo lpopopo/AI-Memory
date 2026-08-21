@@ -2,7 +2,14 @@ import unittest
 
 import pandas as pd
 
-from download_v9_data import REQUIRED_MARKET_SYMBOLS, parse_cboe_history, validate_required_close
+from download_v9_data import (
+    FIELDS,
+    REQUIRED_MARKET_SYMBOLS,
+    parse_cboe_history,
+    parse_yahoo_chart,
+    validate_requested_ohlcv,
+    validate_required_close,
+)
 
 
 class DownloadV9DataTests(unittest.TestCase):
@@ -42,6 +49,48 @@ class DownloadV9DataTests(unittest.TestCase):
     def test_cboe_history_parser_requires_close(self):
         with self.assertRaises(ValueError):
             parse_cboe_history(pd.DataFrame({"DATE": ["08/07/2026"]}), pd.Timestamp("2026-08-07"))
+
+    def test_yahoo_chart_parser_adjusts_ohlc_and_excludes_live_bar(self):
+        timestamps = [
+            int(pd.Timestamp("2026-08-18 16:00", tz="America/New_York").timestamp()),
+            int(pd.Timestamp("2026-08-19 16:00", tz="America/New_York").timestamp()),
+        ]
+        payload = {
+            "chart": {
+                "error": None,
+                "result": [
+                    {
+                        "timestamp": timestamps,
+                        "indicators": {
+                            "quote": [
+                                {
+                                    "open": [100.0, 110.0],
+                                    "high": [105.0, 115.0],
+                                    "low": [95.0, 105.0],
+                                    "close": [100.0, 110.0],
+                                    "volume": [1000, 2000],
+                                }
+                            ],
+                            "adjclose": [{"adjclose": [50.0, 55.0]}],
+                        },
+                    }
+                ],
+            }
+        }
+        parsed = parse_yahoo_chart(payload, pd.Timestamp("2026-08-18"))
+        self.assertEqual(list(parsed.index), [pd.Timestamp("2026-08-18")])
+        self.assertEqual(parsed.iloc[0]["Open"], 50.0)
+        self.assertEqual(parsed.iloc[0]["High"], 52.5)
+        self.assertEqual(parsed.iloc[0]["Close"], 50.0)
+        self.assertEqual(parsed.iloc[0]["Volume"], 1000)
+
+    def test_requested_ohlcv_rejects_stale_watchlist_symbol(self):
+        date = pd.Timestamp("2026-08-18")
+        dfs = {field: pd.DataFrame({"ASML": [1.0]}, index=[date]) for field in FIELDS}
+        validate_requested_ohlcv(dfs, {"ASML"}, date)
+        dfs["Volume"].loc[date, "ASML"] = float("nan")
+        with self.assertRaises(RuntimeError):
+            validate_requested_ohlcv(dfs, {"ASML"}, date)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,42 @@
+{
+  "research_only": true,
+  "formal_v9_modified": false,
+  "live_authorization": false,
+  "preregistration": "pit-exact-filter-preregistration.md",
+  "transferability_screen_passed": false,
+  "coverage": {
+    "development_2015_2019": 0.9931270666036844,
+    "validation_2020_2022": 0.9979166666666667,
+    "final_2023_2025": 1.0
+  },
+  "screen": [
+    {
+      "period": "validation_2020_2022",
+      "coverage": true,
+      "sample": true,
+      "return": true,
+      "sharpe": false,
+      "drawdown": true,
+      "win_rate": true,
+      "expectancy": false,
+      "passed": false
+    },
+    {
+      "period": "final_2023_2025",
+      "coverage": true,
+      "sample": true,
+      "return": true,
+      "sharpe": true,
+      "drawdown": true,
+      "win_rate": true,
+      "expectancy": true,
+      "passed": true
+    }
+  ],
+  "frozen_stock_symbols": 633,
+  "usable_stock_symbols": 631,
+  "failed_stock_symbols": [
+    "CSRA",
+    "EA"
+  ]
+}

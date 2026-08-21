@@ -475,3 +475,59 @@
 ## 2026-08-09
 
 - **Institutional weekly study:** Required checker outputs were regenerated and read using `2026-07-26T03:09:40.239Z`. Citadel Reader official-domain details verified three post-window articles and Man one; GMO list/details were readable with no post-window item; AQR Reader list failed in this run, an access gap rather than a no-new or source-unavailable conclusion. Added experimental `retail_risk_transfer` and `complex_credit_complacency` to the institutional framework, checklist, Overlay B and H7/H11 validation; created the weekly source/evidence note. `decisions.md` unchanged; no trade advice or account action. See [weekly study](daily/2026-08-09-institutional-research-weekly.md).
+
+## 2026-08-11
+
+- **实时公开来源与机构研究监控：** 沿用 `2026-08-06T13:17:14.178Z` 增量起点。Chrome 公开只读页面在 DOM 可见快照前超时并重置，社媒按访问缺口处理；降级检查器已刷新并读完，X 均 HTTP 200/空正文，小红书仅无时间/URL/正文的标题候选（图片 `0/unknown`），没有新社媒事实。机构 Markdown/JSON 成功刷新并读完：AQR 官方详情页高证据确认 2026-08-11 *Ten Lessons on Managing Concentrated Wealth*，只作为组合集中度 replay 复核输入；Citadel/GMO/Man 本窗口无已验证 official-detail 新文。Fear Gate、趋势、AI-capex 新增/摊低 `0%` 约束不变；未更新 decisions/hypotheses，未提供交易建议或记录账户行为。见 [监控记录](daily/2026-08-11-realtime-public-institutional-monitor.md)。
+
+## 2026-08-10
+
+- **2026-08-10 Formal Post-Close Audit:** Node Tencent Primary structured quotes were non-empty; because 8/11 was live, `yesterdayClose` was correctly used for the completed 8/10 close and checked against local Yahoo completed daily bars. Cboe official VIX/VIX3M were `15.46/18.98`. Fear Gate remains `normal 4/14`, but actual correlated adds remain `0%` because SMH is below MA50, theme overlap is high and risk reviews are unresolved. MXL is below `78`; replay/watch AMD/WDC/STX are below `492/500/835`; none of the latter are real positions. Working real-account NAV is USD `5,641.23` (cash `66.59%`, four holdings, one effective AI-capex theme). Completed portfolio-level correlation review and replay row; no broker action or decision update. See [audit](daily/2026-08-10-post-close-audit.md) and [portfolio](portfolio/2026-08-10-portfolio-summary.md).
+
+- **实时公开来源与机构研究监控：** 以 `2026-08-06T13:17:14.178Z` 为增量起点，Chrome 只读核验 Kay 三条窗口内 X 内容、NVIDIA 两条官方产品/生态帖与 Elon Musk 一条产品评论；均只作来源事实/研究线索，不确认订单、收入、价格或交易。小红书主页可读但最新非置顶仍为已入库旧笔记（图片 `0/unknown`）；Trump 可见最新帖在窗口前，政策覆盖仍不完整。机构检查器虽执行但 MD/JSON 未刷新且仍带 7/26 cutoff，故未给出本窗口机构计数。Fear Gate、趋势、AI-capex 集中度与新增/摊低 `0%` 约束不变；未更新 `decisions.md`/`hypotheses.md`，未生成交易建议、订单或成交。见 [监控记录](daily/2026-08-10-realtime-public-institutional-monitor.md)。
+## 2026-08-11
+
+- **2026-08-11 Formal Post-Close Audit:** Local Node Quote Workflow Smoke Test returned non-empty Tencent Primary structured quotes; because 8/12 was live, `yesterdayClose` was correctly used for the 8/11 completed close and cross-checked with local Yahoo daily bars. Cboe official VIX/VIX3M were `15.28/18.91`. Fear Gate remains `normal 4/14`, but actual correlated adds remain `0%`: SMH is below MA50, theme overlap is high, and GLW/MXL/MRVL reviews are unresolved. Replay/watch AMD/WDC/STX are below `492/500/835` and are not real positions. Working real-account NAV is USD `5,663.59` (cash `66.33%`, four holdings, one effective theme). Completed the portfolio-level review and replay row; no broker action or decision update. See [audit](daily/2026-08-11-post-close-audit.md) and [portfolio](portfolio/2026-08-11-portfolio-summary.md).
+
+## 2026-08-12
+
+- **实时公开来源与机构研究监控：** 增量起点 `2026-08-11T14:49:11.778Z`。Chrome 对四个 X 目标与小红书的公开只读 DOM 均在可见内容前超时；这只是覆盖缺口，轮播 `0/unknown`。两项本地检查器虽已调用但没有刷新 `*-latest.md/.json`，旧输出仅作诊断，未推断本窗口社媒或 AQR/Citadel/GMO/Man 结论。Fear Gate、趋势、AI-capex 集中度及相关新增/摊低 `0%` 约束不变；未更新 decisions/hypotheses，未生成交易建议、订单、成交或账户状态。见 `daily/2026-08-12-realtime-public-institutional-monitor.md`。
+
+- **正式盘后审计：** Node Quote Workflow Smoke Test 返回非空 Tencent Primary 结构化对象，Yahoo Chart completed bars 核验 8/12 收盘；Cboe 官方 VIX/VIX3M 为 `14.55/18.53`。Fear Gate 为 normal `4/14`，但相关新增/摊低维持 `0%`：SMH 仍低于 MA50，主题重叠高，GLW/MXL/MRVL 风险复核未闭环。AMD/WDC 为 replay/watch reduce-review，STX 为 defensive near-stop review，均非真实持仓。工作 NAV USD `5,731.81`（现金/股票 `65.54%/34.46%`，四持仓、一有效主题），完成组合级相关复核与 8/12 replay 行；无订单、成交或稳定决策更新。见 `daily/2026-08-12-post-close-audit.md`。
+
+## 2026-08-13
+
+- **2026-08-14 实时公开来源与机构研究监控：**Chrome 公开只读验证 @Kay2289123 三条窗口内帖（AI 基建职业自述、AI 泡沫观点与 CBRS/高速推理讨论），仅作作者观点/主题拥挤度与 replay 线索；小红书最新非置顶仍为已入库旧项（图片 `0/unknown`），@nvidia/@elonmusk/@realDonaldTrump 页面跳转超时。机构检查器执行后 Markdown/JSON 未刷新、仍为 8/13 产物，只作陈旧诊断，未断言当日 AQR/Citadel/GMO/Man 计数；未更新 decisions/hypotheses 或策略规则。见 `daily/2026-08-14-realtime-public-institutional-monitor.md`。
+
+- **实时公开来源与机构研究监控：**以 `2026-08-11T14:49:11.778Z` 为增量起点。Chrome 公开只读页面在可见内容前超时，X 与小红书均列为访问缺口；降级检查器的 X 正文为空，小红书只有无时间/URL/正文的题目候选（图片 `0/unknown`），没有社媒 verified item。机构 Markdown/JSON 成功刷新并读完：Citadel Securities 官方详情页高证据确认 1 篇窗口内文章 *August Checklist*（2026-08-11），仅作为 flow-fragility replay 观察输入；AQR/GMO/Man 为 0，日期不可验证候选未提升。Fear Gate、趋势、AI-capex 分类与相关新增/摊低 `0%` 约束不变；未更新 decisions/hypotheses，未给出交易建议或记录账户行为。见 `daily/2026-08-13-realtime-public-institutional-monitor.md`。
+## 2026-08-13
+
+- **正式盘后审计：** 本地 Node `Tencent (Primary)` 结构化行情在 8/14 常规盘期间以 `yesterdayClose` 确认 8/13 收盘，并由本地 Yahoo Chart 日线交叉核对；Cboe 官方 VIX/VIX3M 为 `14.63/18.61`。Fear Gate 为 normal `4/14`，但 AI-capex 相关新增/摊低仍为 `0%`：SMH 低于 MA50、主题重叠高且 GLW/MXL/MRVL 复核未闭环。MXL、replay/watch AMD/WDC 为 reduce-review，STX 为修复复核且后两类均非真实持仓。工作 NAV USD `5,751.77`（现金/股票 `65.31%/34.69%`，四持仓、一有效主题）；已完成组合级相关复核和 8/13 replay 行，无订单、成交或 `decisions.md` 更新。见 `daily/2026-08-13-post-close-audit.md` 与 `portfolio/2026-08-13-portfolio-summary.md`。
+
+## 2026-08-18
+
+- **实时公开来源与机构研究监控：**以 `2026-08-11T14:49:11.778Z` 为增量起点。Chrome 只读页面对四个 X 目标均只显示 Loading，小红书仅为非目标壳层；降级产物已刷新并读取，但 X 为 HTTP 200/空正文，小红书仅无时间/URL/正文标题候选（图片 `0/unknown`），没有新增社媒 verified item。机构 checker 已执行但 Markdown/JSON 未刷新、仍为 8/14 陈旧产物；仅重读 Citadel *August Checklist* 的官方详情高证据事实作为 flow-fragility replay 标签，不断言当前机构计数。不更新 decisions/hypotheses、Fear Gate 或集中度约束，不提供交易建议、不记录订单或成交。见 `daily/2026-08-18-realtime-public-institutional-monitor.md`。
+## 2026-08-17
+
+- **正式盘后审计：**本地 Node Quote Workflow Smoke Test 及扩展请求返回非空 `Tencent (Primary)` 对象，8/18 盘中以 `yesterdayClose` 锁定 8/17 收盘；Cboe 官方 VIX/VIX3M 为 `15.19/19.04`。Fear Gate 为 normal `3/14`，但真实四持仓仍是一条 AI-capex sleeve，GLW/MRVL 的完成周收盘复核与 MXL 既有触发未闭环，相关新增/摊低保持 `0%`。工作 NAV USD `5,873.15`（现金/股票 `63.96%/36.04%`，四持仓、一有效主题），MRVL `15.96%` 超 normal 单名上限；已完成组合级相关复核及 8/17 replay 行，无订单、成交或 `decisions.md` 更新。见 `daily/2026-08-17-post-close-audit.md` 与 `portfolio/2026-08-17-portfolio-summary.md`。
+- 2026-08-18 美股盘后正式审计：本地 Node Tencent smoke test/扩展请求返回结构化行情，并由 Yahoo 日线核验；Cboe VIX/VIX3M 为 15.84/19.27。Fear Gate `normal 4/14`，但 SMH/SOXX 低于 MA50、四真实持仓为一个 AI-capex sleeve，GLW/MXL/MRVL 维持 reduce-review、相关新增/摊低 `0%`；工作 NAV USD 5,696.45（现金 65.94%），已追加 completed replay 行，未假设真实交易或更新稳定决策。
+
+## 2026-08-19
+
+- **正式盘后审计：**本地 Node Tencent Primary 结构化报价与 Yahoo completed bars 确认 8/19 收盘；Cboe 官方 VIX/VIX3M 为 `14.89/18.57`。Fear Gate 升为 elevated `5/14`，实际相关新增/摊低仍 `0%`：SMH/SOXX 均低于 MA20/MA50、SMH/QQQ 21 日 `-4.92%`，且四真实持仓为一条相关 sleeve。GLW/MXL、replay/watch AMD/WDC/STX 为 reduce-review；MRVL 为利润保护而非追高。工作 NAV USD `5,732.89`（现金 `65.53%`），完成组合级复核与 replay 行；无订单、成交或稳定决策更新。见 `daily/2026-08-19-post-close-audit.md`。
+
+- **实时公开来源与机构研究监控：**以 `2026-08-11T14:49:11.778Z` 为增量起点。Chrome 公开只读核验 Kay 一条课程资源帖、NVIDIA 两条产品/AI 基建帖及 Elon 一条 Grok 评论；均仅作来源事实或研究线索，不确认订单、收入、部署、价格或交易。小红书主页可读但最新非置顶仍为已入库旧笔记（图片 `0/unknown`），Trump 当前可见帖早于窗口。机构 Markdown/JSON 已于 `2026-08-19T14:36:33.117Z` 刷新并读完：AQR 0、Citadel 3、GMO 0、Man 0；Citadel *Back to Cloud (Nine?)* 仅作 AI capex/replay 观察。Fear Gate、趋势、集中度约束不变；未更新 decisions/hypotheses，未生成交易建议或记录账户行为。见 [监控记录](daily/2026-08-19-realtime-public-institutional-monitor.md)。
+
+## 2026-08-20
+
+- **实时公开来源与机构研究监控：**沿用 `2026-08-11T14:49:11.778Z` 增量起点。Chrome 公开只读核验 NVIDIA 既有官方帖，以及 @elonmusk 置顶 Grok Bot 应用转帖（仅产品/作者观点线索）；Kay 与 Trump 可见时间线仍在 Loading，作为覆盖缺口。小红书主页可读，最新非置顶仍为既有 `6a7149a300000000060051d7`，未读正文/评论/轮播，图片 `0/unknown`。机构 checker 已执行但约四分钟未刷新；已读 8/19 MD/JSON 仅作陈旧诊断，未延伸 AQR/Citadel/GMO/Man 计数。Fear Gate、趋势与 AI-capex 集中度约束不变；未更新 decisions/hypotheses、未生成交易建议或账户行为。见 [监控记录](daily/2026-08-20-realtime-public-institutional-monitor.md)。
+
+- **正式盘后审计：**Node Tencent Primary structured quotes 与 Yahoo completed bars 确认收盘，Cboe 官方 VIX/VIX3M 为 `16.01/19.06`。唯一 canonical V9 Fear Gate 为 elevated `7/14`，实际相关新增/摊低继续 `0%`：SMH/SOXX 低于 MA20/MA50，半导体相对 QQQ 仍锐化走弱，真实四持仓为一个 AI-capex sleeve。GLW/MXL 维持 reduce-review；MRVL 为利润保护而非追高；replay/watch AMD/WDC 为 reduce-review、STX 为 near-stop review。工作 NAV USD `5,776.59`（现金 `65.03%`）；完成组合级复核与 8/20 replay 行，无订单、成交或稳定决策更新。见 `daily/2026-08-20-post-close-audit.md`。
+
+## 2026-08-21
+
+- **本周策略失误与机会复盘（已完成至 8/20）：**固定 32 名 RSR 池从 8/14 至 8/20 仅 MRVL/TSLA/DRAM/MU 上涨，且后三者涨幅都不足 1%；AAOI/MXL 分别下跌 `14.09%/23.06%`。工作 NAV 下跌 USD `40.58` / `0.70%`，65% 现金与已持有 MRVL `+13.06%` 显著缓冲其他持仓下跌。四个前瞻交易日仍无 RSR/基线信号或成交；不放松规则。见 `strategies/research-archive/2026-08-15-rs-exception-backtest/results/weekly_strategy_review_2026-08-21.md`。
+- **风险动作纸面反事实账本：**已冻结全减/减半相对继续持有的次日开盘与 1/5/20 日测量口径，含 10bps 不利滑点及每次 USD 1 纸面佣金。GLW/MRVL/MXL 三项已观察事件严格标为 retrospective seed：固定 1 日全减仅 `1/3` 胜出、净收益 `+$10.16`；5/20 日均未成熟，genuine-forward 事件为 0，因此不选择自动卖出或减半规则。正式策略、长期持有分类与真实账户均未改动。见 `strategies/research-archive/2026-08-15-rs-exception-backtest/results/forward_risk_action_counterfactual_report.md`。
+- **8/20 前瞻证据推进：**47 标的均 source-complete，VIX/VIX3M 使用 Cboe 官方历史。RSR1/RSR2/匹配基线连续四个完成交易日仍为零信号/零成交；新增 MRVL raw missed-leader 但未形成新的独立 episode，且 MRVL 已是真实持仓。风险动作任意 as-of 全减合计从 8/19 `+$39.90` 翻至 8/20 `-$6.14`，直接证明只能使用冻结的 1/5/20 日期。见 `strategies/research-archive/2026-08-15-rs-exception-backtest/results/forward_review_2026-08-20.md`。
+- **胜率—收益—回撤—证据强度统一矩阵：**在不新增参数搜索的前提下，把既有实验整理为 27 行、11 个严格同口径比较组。RSR2 是当前列表历史多目标最强候选（收益 `18.11%`、胜率 `69.57%`、DD `-2.33%`、Sharpe `1.77`、PF `6.49`），但 exact PIT 转移失败、选择偏差未被控制且前瞻零交易，故只保留冻结影子。部分止盈、延长持有、balanced rank、core-only 80% 与短期 80/20 虽有局部 Pareto 优势，跨期/证据复核后仍不采用；可部署架构继续为正式 V9 70/30，相关新增为 `0%`，现金收益仅条件性研究。见 `strategies/research-archive/2026-08-15-rs-exception-backtest/results/objective_frontier_report.md`。
+- **历史优势抽样不确定性审计：**仅用既有归因账本预注册并执行 20,000 次 signal-date 聚类重采样。RSR1 直接排除的 23 笔基线交易在 `98.43%` 样本中仍同时为负平均收益/负平均 P&L，且逐一剔除任何信号日后方向不变；这支持优先前瞻验证“少做坏交易”。RSR2 总 P&L 增量为正概率 `99.59%`，但纯退出效果为正仅 `87.72%`，总利润/直接效果/胜率同时改善仅 `64.31%`；两笔解释总增量 `86.93%`，两次直接退出解释全部直接效果，胜率只多一笔。结论是不再优化退出参数，继续冻结影子并等待真实前瞻样本。见 `strategies/research-archive/2026-08-15-rs-exception-backtest/results/historical_uncertainty_audit_report.md`。

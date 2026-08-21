@@ -1,0 +1,22 @@
+{
+  "generated_at_utc": "2026-08-15T12:53:37.140571+00:00",
+  "data_end": "2026-08-07",
+  "universe": "ai_capex_broad",
+  "universe_size": 32,
+  "research_only": true,
+  "authorizes_trade": false,
+  "decision": "retain_RSR2_without_partial_exit",
+  "screen": {
+    "sufficient_partial_exits": false,
+    "return_improves_10bps": false,
+    "sharpe_nonworse": true,
+    "drawdown_within_1pp": true,
+    "win_rate_nonworse": false,
+    "return_improves_20bps": false,
+    "profit_diversified": true,
+    "min_return_delta_10bps": -0.02847847738255438,
+    "min_return_delta_20bps": -0.016488513943673233,
+    "passes": false,
+    "status": "insufficient"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "generated_at_utc": "2026-08-15T07:58:27.203324+00:00",
+  "research_only": true,
+  "authorizes_trade": false,
+  "minimum_trade_count": true,
+  "positive_return_both": true,
+  "sharpe_ge_0_50_both": false,
+  "win_rate_ge_50_both": false,
+  "profit_factor_ge_1_20_both": true,
+  "max_drawdown_no_worse_10pct_both": true,
+  "positive_at_20bps_both": true,
+  "entry_path_stable_10_to_20bps": true,
+  "gross_profit_concentration": 0.33768809127491095,
+  "gross_profit_concentration_le_35": true,
+  "passes_portfolio_gate": false,
+  "decision": "stop_sleeve_keep_diagnostic_only"
+}

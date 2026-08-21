@@ -1,0 +1,165 @@
+{
+  "research_only": true,
+  "formal_v9_modified": false,
+  "real_account_modified": false,
+  "live_order_authorization": false,
+  "as_of": "2026-08-20",
+  "costs": {
+    "slippage_one_way": 0.001,
+    "commission_per_paper_sale": 1.0
+  },
+  "event_counts": {
+    "total": 3,
+    "retrospective_seed": 3,
+    "genuine_forward": 0
+  },
+  "summaries": {
+    "retrospective_seed": {
+      "full_exit": {
+        "1": {
+          "eligible_events": 3,
+          "mature_events": 3,
+          "beneficial_events": 1,
+          "beneficial_rate": 0.3333333333333333,
+          "total_net_benefit": 10.16279010009768,
+          "average_net_benefit": 3.38759670003256
+        },
+        "5": {
+          "eligible_events": 3,
+          "mature_events": 0,
+          "beneficial_events": null,
+          "beneficial_rate": null,
+          "total_net_benefit": null,
+          "average_net_benefit": null
+        },
+        "20": {
+          "eligible_events": 3,
+          "mature_events": 0,
+          "beneficial_events": null,
+          "beneficial_rate": null,
+          "total_net_benefit": null,
+          "average_net_benefit": null
+        },
+        "as_of": {
+          "eligible_events": 3,
+          "mature_events": 3,
+          "beneficial_events": 2,
+          "beneficial_rate": 0.6666666666666666,
+          "total_net_benefit": -6.137151916503996,
+          "average_net_benefit": -2.045717305501332
+        }
+      },
+      "half_exit": {
+        "1": {
+          "eligible_events": 3,
+          "mature_events": 3,
+          "beneficial_events": 1,
+          "beneficial_rate": 0.3333333333333333,
+          "total_net_benefit": 3.5813950500488403,
+          "average_net_benefit": 1.19379835001628
+        },
+        "5": {
+          "eligible_events": 3,
+          "mature_events": 0,
+          "beneficial_events": null,
+          "beneficial_rate": null,
+          "total_net_benefit": null,
+          "average_net_benefit": null
+        },
+        "20": {
+          "eligible_events": 3,
+          "mature_events": 0,
+          "beneficial_events": null,
+          "beneficial_rate": null,
+          "total_net_benefit": null,
+          "average_net_benefit": null
+        },
+        "as_of": {
+          "eligible_events": 3,
+          "mature_events": 3,
+          "beneficial_events": 2,
+          "beneficial_rate": 0.6666666666666666,
+          "total_net_benefit": -4.568575958251998,
+          "average_net_benefit": -1.522858652750666
+        }
+      }
+    },
+    "genuine_forward": {
+      "full_exit": {
+        "1": {
+          "eligible_events": 0,
+          "mature_events": 0,
+          "beneficial_events": null,
+          "beneficial_rate": null,
+          "total_net_benefit": null,
+          "average_net_benefit": null
+        },
+        "5": {
+          "eligible_events": 0,
+          "mature_events": 0,
+          "beneficial_events": null,
+          "beneficial_rate": null,
+          "total_net_benefit": null,
+          "average_net_benefit": null
+        },
+        "20": {
+          "eligible_events": 0,
+          "mature_events": 0,
+          "beneficial_events": null,
+          "beneficial_rate": null,
+          "total_net_benefit": null,
+          "average_net_benefit": null
+        },
+        "as_of": {
+          "eligible_events": 0,
+          "mature_events": 0,
+          "beneficial_events": null,
+          "beneficial_rate": null,
+          "total_net_benefit": null,
+          "average_net_benefit": null
+        }
+      },
+      "half_exit": {
+        "1": {
+          "eligible_events": 0,
+          "mature_events": 0,
+          "beneficial_events": null,
+          "beneficial_rate": null,
+          "total_net_benefit": null,
+          "average_net_benefit": null
+        },
+        "5": {
+          "eligible_events": 0,
+          "mature_events": 0,
+          "beneficial_events": null,
+          "beneficial_rate": null,
+          "total_net_benefit": null,
+          "average_net_benefit": null
+        },
+        "20": {
+          "eligible_events": 0,
+          "mature_events": 0,
+          "beneficial_events": null,
+          "beneficial_rate": null,
+          "total_net_benefit": null,
+          "average_net_benefit": null
+        },
+        "as_of": {
+          "eligible_events": 0,
+          "mature_events": 0,
+          "beneficial_events": null,
+          "beneficial_rate": null,
+          "total_net_benefit": null,
+          "average_net_benefit": null
+        }
+      }
+    }
+  },
+  "genuine_forward_policy_selection_available": false,
+  "input_hashes": {
+    "events": "eb932d8ddd8dbcb9b78b1cb2f40fce2b332416237828601f519991af443eaaf6",
+    "open": "57a02e75dca05e694c64f8a46e7dac358eaaf4975337ea4231c4b46c067577ee",
+    "close": "1a9d0e6757f25b0848609cc783b0a083fead155a2503770074fa36770dd4f2c9",
+    "status": "55f53dcb5cb9df6eb731837cd76e5bf317dbd4326d3ca9872fa4686d456e9ef6"
+  }
+}

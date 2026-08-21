@@ -1,0 +1,4 @@
+trigger_date,symbol,shares,review_state,trigger_basis,trigger_level,observation_class,frozen_at,source_path,real_order_assumed,notes
+2026-08-14,GLW,2,reduce-review,completed-week close below 166-167 review band,166.5,retrospective_seed,2026-08-21,memory/daily/2026-08-17-post-close-audit.md,False,Long-term reclassification remains controlling; paper action only
+2026-08-14,MRVL,4,profit-protection,completed-week close below 223 review line,223.0,retrospective_seed,2026-08-21,memory/daily/2026-08-17-post-close-audit.md,False,Long-term reclassification remains controlling; paper action only
+2026-08-18,MXL,6,reduce-review,completed close below 78 review line,78.0,retrospective_seed,2026-08-21,memory/daily/2026-08-18-post-close-audit.md,False,Long-term reclassification remains controlling; paper action only

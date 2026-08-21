@@ -1,0 +1,3215 @@
+{
+  "research_only": true,
+  "formal_v9_modified": false,
+  "live_authorization": false,
+  "preregistration": "pit-exact-filter-preregistration.md",
+  "start": "2014-01-01",
+  "end": "2025-12-31",
+  "adjustment": "Yahoo Finance auto_adjust=True; volume unadjusted",
+  "frozen_stock_symbols": 633,
+  "usable_stock_symbols": 631,
+  "failed_stock_symbols": [
+    "CSRA",
+    "EA"
+  ],
+  "market_symbols": [
+    "SPY",
+    "QQQ",
+    "SMH",
+    "^VIX",
+    "^VIX3M"
+  ],
+  "symbol_status": {
+    "A": {
+      "status": "downloaded",
+      "provider_symbol": "A",
+      "rows": 3018
+    },
+    "AA": {
+      "status": "downloaded",
+      "provider_symbol": "AA",
+      "rows": 3018
+    },
+    "AAL": {
+      "status": "downloaded",
+      "provider_symbol": "AAL",
+      "rows": 3018
+    },
+    "AAP": {
+      "status": "downloaded",
+      "provider_symbol": "AAP",
+      "rows": 3018
+    },
+    "AAPL": {
+      "status": "downloaded",
+      "provider_symbol": "AAPL",
+      "rows": 3018
+    },
+    "ABBV": {
+      "status": "downloaded",
+      "provider_symbol": "ABBV",
+      "rows": 3018
+    },
+    "ABNB": {
+      "status": "downloaded",
+      "provider_symbol": "ABNB",
+      "rows": 1270
+    },
+    "ABT": {
+      "status": "downloaded",
+      "provider_symbol": "ABT",
+      "rows": 3018
+    },
+    "ACGL": {
+      "status": "downloaded",
+      "provider_symbol": "ACGL",
+      "rows": 3018
+    },
+    "ACN": {
+      "status": "downloaded",
+      "provider_symbol": "ACN",
+      "rows": 3018
+    },
+    "ADBE": {
+      "status": "downloaded",
+      "provider_symbol": "ADBE",
+      "rows": 3018
+    },
+    "ADI": {
+      "status": "downloaded",
+      "provider_symbol": "ADI",
+      "rows": 3018
+    },
+    "ADM": {
+      "status": "downloaded",
+      "provider_symbol": "ADM",
+      "rows": 3018
+    },
+    "ADP": {
+      "status": "downloaded",
+      "provider_symbol": "ADP",
+      "rows": 3018
+    },
+    "ADSK": {
+      "status": "downloaded",
+      "provider_symbol": "ADSK",
+      "rows": 3018
+    },
+    "ADT": {
+      "status": "downloaded",
+      "provider_symbol": "ADT",
+      "rows": 1999
+    },
+    "AEE": {
+      "status": "downloaded",
+      "provider_symbol": "AEE",
+      "rows": 3018
+    },
+    "AEP": {
+      "status": "downloaded",
+      "provider_symbol": "AEP",
+      "rows": 3018
+    },
+    "AES": {
+      "status": "downloaded",
+      "provider_symbol": "AES",
+      "rows": 3018
+    },
+    "AET": {
+      "status": "downloaded",
+      "provider_symbol": "AET",
+      "rows": 1238
+    },
+    "AFL": {
+      "status": "downloaded",
+      "provider_symbol": "AFL",
+      "rows": 3018
+    },
+    "AIG": {
+      "status": "downloaded",
+      "provider_symbol": "AIG",
+      "rows": 3018
+    },
+    "AIV": {
+      "status": "downloaded",
+      "provider_symbol": "AIV",
+      "rows": 3018
+    },
+    "AIZ": {
+      "status": "downloaded",
+      "provider_symbol": "AIZ",
+      "rows": 3018
+    },
+    "AJG": {
+      "status": "downloaded",
+      "provider_symbol": "AJG",
+      "rows": 3018
+    },
+    "AKAM": {
+      "status": "downloaded",
+      "provider_symbol": "AKAM",
+      "rows": 3018
+    },
+    "ALB": {
+      "status": "downloaded",
+      "provider_symbol": "ALB",
+      "rows": 3018
+    },
+    "ALGN": {
+      "status": "downloaded",
+      "provider_symbol": "ALGN",
+      "rows": 3018
+    },
+    "ALK": {
+      "status": "downloaded",
+      "provider_symbol": "ALK",
+      "rows": 3018
+    },
+    "ALL": {
+      "status": "downloaded",
+      "provider_symbol": "ALL",
+      "rows": 3018
+    },
+    "ALLE": {
+      "status": "downloaded",
+      "provider_symbol": "ALLE",
+      "rows": 3018
+    },
+    "ALNY": {
+      "status": "downloaded",
+      "provider_symbol": "ALNY",
+      "rows": 3018
+    },
+    "AMAT": {
+      "status": "downloaded",
+      "provider_symbol": "AMAT",
+      "rows": 3018
+    },
+    "AMCR": {
+      "status": "downloaded",
+      "provider_symbol": "AMCR",
+      "rows": 3018
+    },
+    "AMD": {
+      "status": "downloaded",
+      "provider_symbol": "AMD",
+      "rows": 3018
+    },
+    "AME": {
+      "status": "downloaded",
+      "provider_symbol": "AME",
+      "rows": 3018
+    },
+    "AMG": {
+      "status": "downloaded",
+      "provider_symbol": "AMG",
+      "rows": 3018
+    },
+    "AMGN": {
+      "status": "downloaded",
+      "provider_symbol": "AMGN",
+      "rows": 3018
+    },
+    "AMP": {
+      "status": "downloaded",
+      "provider_symbol": "AMP",
+      "rows": 3018
+    },
+    "AMT": {
+      "status": "downloaded",
+      "provider_symbol": "AMT",
+      "rows": 3018
+    },
+    "AMTM": {
+      "status": "downloaded",
+      "provider_symbol": "AMTM",
+      "rows": 319
+    },
+    "AMZN": {
+      "status": "downloaded",
+      "provider_symbol": "AMZN",
+      "rows": 3018
+    },
+    "AN": {
+      "status": "downloaded",
+      "provider_symbol": "AN",
+      "rows": 3018
+    },
+    "ANDV": {
+      "status": "downloaded",
+      "provider_symbol": "ANDV",
+      "rows": 1195
+    },
+    "ANET": {
+      "status": "downloaded",
+      "provider_symbol": "ANET",
+      "rows": 2911
+    },
+    "AON": {
+      "status": "downloaded",
+      "provider_symbol": "AON",
+      "rows": 3018
+    },
+    "AOS": {
+      "status": "downloaded",
+      "provider_symbol": "AOS",
+      "rows": 3018
+    },
+    "APA": {
+      "status": "downloaded",
+      "provider_symbol": "APA",
+      "rows": 3018
+    },
+    "APD": {
+      "status": "downloaded",
+      "provider_symbol": "APD",
+      "rows": 3018
+    },
+    "APH": {
+      "status": "downloaded",
+      "provider_symbol": "APH",
+      "rows": 3018
+    },
+    "APO": {
+      "status": "downloaded",
+      "provider_symbol": "APO",
+      "rows": 3018
+    },
+    "APP": {
+      "status": "downloaded",
+      "provider_symbol": "APP",
+      "rows": 1185
+    },
+    "APTV": {
+      "status": "downloaded",
+      "provider_symbol": "APTV",
+      "rows": 3018
+    },
+    "ARE": {
+      "status": "downloaded",
+      "provider_symbol": "ARE",
+      "rows": 3018
+    },
+    "ARES": {
+      "status": "downloaded",
+      "provider_symbol": "ARES",
+      "rows": 2935
+    },
+    "ARM": {
+      "status": "downloaded",
+      "provider_symbol": "ARM",
+      "rows": 577
+    },
+    "ASML": {
+      "status": "downloaded",
+      "provider_symbol": "ASML",
+      "rows": 3018
+    },
+    "ATO": {
+      "status": "downloaded",
+      "provider_symbol": "ATO",
+      "rows": 3018
+    },
+    "AVB": {
+      "status": "downloaded",
+      "provider_symbol": "AVB",
+      "rows": 3018
+    },
+    "AVGO": {
+      "status": "downloaded",
+      "provider_symbol": "AVGO",
+      "rows": 3018
+    },
+    "AVY": {
+      "status": "downloaded",
+      "provider_symbol": "AVY",
+      "rows": 3018
+    },
+    "AWK": {
+      "status": "downloaded",
+      "provider_symbol": "AWK",
+      "rows": 3018
+    },
+    "AXON": {
+      "status": "downloaded",
+      "provider_symbol": "AXON",
+      "rows": 3018
+    },
+    "AXP": {
+      "status": "downloaded",
+      "provider_symbol": "AXP",
+      "rows": 3018
+    },
+    "AYI": {
+      "status": "downloaded",
+      "provider_symbol": "AYI",
+      "rows": 3018
+    },
+    "AZN": {
+      "status": "downloaded",
+      "provider_symbol": "AZN",
+      "rows": 3018
+    },
+    "AZO": {
+      "status": "downloaded",
+      "provider_symbol": "AZO",
+      "rows": 3018
+    },
+    "BA": {
+      "status": "downloaded",
+      "provider_symbol": "BA",
+      "rows": 3018
+    },
+    "BAC": {
+      "status": "downloaded",
+      "provider_symbol": "BAC",
+      "rows": 3018
+    },
+    "BALL": {
+      "status": "downloaded",
+      "provider_symbol": "BALL",
+      "rows": 3018
+    },
+    "BATRA": {
+      "status": "downloaded",
+      "provider_symbol": "BATRA",
+      "rows": 2442
+    },
+    "BATRK": {
+      "status": "downloaded",
+      "provider_symbol": "BATRK",
+      "rows": 2442
+    },
+    "BAX": {
+      "status": "downloaded",
+      "provider_symbol": "BAX",
+      "rows": 3018
+    },
+    "BBBY": {
+      "status": "downloaded",
+      "provider_symbol": "BBBY",
+      "rows": 3018
+    },
+    "BBWI": {
+      "status": "downloaded",
+      "provider_symbol": "BBWI",
+      "rows": 3018
+    },
+    "BBY": {
+      "status": "downloaded",
+      "provider_symbol": "BBY",
+      "rows": 3018
+    },
+    "BDX": {
+      "status": "downloaded",
+      "provider_symbol": "BDX",
+      "rows": 3018
+    },
+    "BEN": {
+      "status": "downloaded",
+      "provider_symbol": "BEN",
+      "rows": 3018
+    },
+    "BF-B": {
+      "status": "downloaded",
+      "provider_symbol": "BF-B",
+      "rows": 3018
+    },
+    "BG": {
+      "status": "downloaded",
+      "provider_symbol": "BG",
+      "rows": 3018
+    },
+    "BHF": {
+      "status": "downloaded",
+      "provider_symbol": "BHF",
+      "rows": 2128
+    },
+    "BIDU": {
+      "status": "downloaded",
+      "provider_symbol": "BIDU",
+      "rows": 3018
+    },
+    "BIIB": {
+      "status": "downloaded",
+      "provider_symbol": "BIIB",
+      "rows": 3018
+    },
+    "BIO": {
+      "status": "downloaded",
+      "provider_symbol": "BIO",
+      "rows": 3018
+    },
+    "BKNG": {
+      "status": "downloaded",
+      "provider_symbol": "BKNG",
+      "rows": 3018
+    },
+    "BKR": {
+      "status": "downloaded",
+      "provider_symbol": "BKR",
+      "rows": 3018
+    },
+    "BLDR": {
+      "status": "downloaded",
+      "provider_symbol": "BLDR",
+      "rows": 3018
+    },
+    "BLK": {
+      "status": "downloaded",
+      "provider_symbol": "BLK",
+      "rows": 3018
+    },
+    "BMRN": {
+      "status": "downloaded",
+      "provider_symbol": "BMRN",
+      "rows": 3018
+    },
+    "BMS": {
+      "status": "downloaded",
+      "provider_symbol": "BMS",
+      "rows": 1368
+    },
+    "BMY": {
+      "status": "downloaded",
+      "provider_symbol": "BMY",
+      "rows": 3018
+    },
+    "BR": {
+      "status": "downloaded",
+      "provider_symbol": "BR",
+      "rows": 3018
+    },
+    "BRK-B": {
+      "status": "downloaded",
+      "provider_symbol": "BRK-B",
+      "rows": 3018
+    },
+    "BRO": {
+      "status": "downloaded",
+      "provider_symbol": "BRO",
+      "rows": 3018
+    },
+    "BSX": {
+      "status": "downloaded",
+      "provider_symbol": "BSX",
+      "rows": 3018
+    },
+    "BWA": {
+      "status": "downloaded",
+      "provider_symbol": "BWA",
+      "rows": 3018
+    },
+    "BX": {
+      "status": "downloaded",
+      "provider_symbol": "BX",
+      "rows": 3018
+    },
+    "BXP": {
+      "status": "downloaded",
+      "provider_symbol": "BXP",
+      "rows": 3018
+    },
+    "C": {
+      "status": "downloaded",
+      "provider_symbol": "C",
+      "rows": 3018
+    },
+    "CAG": {
+      "status": "downloaded",
+      "provider_symbol": "CAG",
+      "rows": 3018
+    },
+    "CAH": {
+      "status": "downloaded",
+      "provider_symbol": "CAH",
+      "rows": 3018
+    },
+    "CAM": {
+      "status": "downloaded",
+      "provider_symbol": "CAM",
+      "rows": 61
+    },
+    "CARR": {
+      "status": "downloaded",
+      "provider_symbol": "CARR",
+      "rows": 1455
+    },
+    "CAT": {
+      "status": "downloaded",
+      "provider_symbol": "CAT",
+      "rows": 3018
+    },
+    "CB": {
+      "status": "downloaded",
+      "provider_symbol": "CB",
+      "rows": 3018
+    },
+    "CBOE": {
+      "status": "downloaded",
+      "provider_symbol": "CBOE",
+      "rows": 3018
+    },
+    "CBRE": {
+      "status": "downloaded",
+      "provider_symbol": "CBRE",
+      "rows": 3018
+    },
+    "CCEP": {
+      "status": "downloaded",
+      "provider_symbol": "CCEP",
+      "rows": 3018
+    },
+    "CCI": {
+      "status": "downloaded",
+      "provider_symbol": "CCI",
+      "rows": 3018
+    },
+    "CCL": {
+      "status": "downloaded",
+      "provider_symbol": "CCL",
+      "rows": 3018
+    },
+    "CDNS": {
+      "status": "downloaded",
+      "provider_symbol": "CDNS",
+      "rows": 3018
+    },
+    "CDW": {
+      "status": "downloaded",
+      "provider_symbol": "CDW",
+      "rows": 3018
+    },
+    "CE": {
+      "status": "downloaded",
+      "provider_symbol": "CE",
+      "rows": 3018
+    },
+    "CEG": {
+      "status": "downloaded",
+      "provider_symbol": "CEG",
+      "rows": 992
+    },
+    "CF": {
+      "status": "downloaded",
+      "provider_symbol": "CF",
+      "rows": 3018
+    },
+    "CFG": {
+      "status": "downloaded",
+      "provider_symbol": "CFG",
+      "rows": 2835
+    },
+    "CHD": {
+      "status": "downloaded_individual_retry",
+      "provider_symbol": "CHD",
+      "rows": 3018
+    },
+    "CHKP": {
+      "status": "downloaded",
+      "provider_symbol": "CHKP",
+      "rows": 3018
+    },
+    "CHRW": {
+      "status": "downloaded",
+      "provider_symbol": "CHRW",
+      "rows": 3018
+    },
+    "CHTR": {
+      "status": "downloaded",
+      "provider_symbol": "CHTR",
+      "rows": 3018
+    },
+    "CI": {
+      "status": "downloaded",
+      "provider_symbol": "CI",
+      "rows": 3018
+    },
+    "CINF": {
+      "status": "downloaded",
+      "provider_symbol": "CINF",
+      "rows": 3018
+    },
+    "CL": {
+      "status": "downloaded",
+      "provider_symbol": "CL",
+      "rows": 3018
+    },
+    "CLX": {
+      "status": "downloaded",
+      "provider_symbol": "CLX",
+      "rows": 3018
+    },
+    "CMCSA": {
+      "status": "downloaded",
+      "provider_symbol": "CMCSA",
+      "rows": 3018
+    },
+    "CME": {
+      "status": "downloaded",
+      "provider_symbol": "CME",
+      "rows": 3018
+    },
+    "CMG": {
+      "status": "downloaded",
+      "provider_symbol": "CMG",
+      "rows": 3018
+    },
+    "CMI": {
+      "status": "downloaded",
+      "provider_symbol": "CMI",
+      "rows": 3018
+    },
+    "CMS": {
+      "status": "downloaded",
+      "provider_symbol": "CMS",
+      "rows": 3018
+    },
+    "CNC": {
+      "status": "downloaded",
+      "provider_symbol": "CNC",
+      "rows": 3018
+    },
+    "CNP": {
+      "status": "downloaded",
+      "provider_symbol": "CNP",
+      "rows": 3018
+    },
+    "CNX": {
+      "status": "downloaded",
+      "provider_symbol": "CNX",
+      "rows": 3018
+    },
+    "COF": {
+      "status": "downloaded",
+      "provider_symbol": "COF",
+      "rows": 3018
+    },
+    "COIN": {
+      "status": "downloaded",
+      "provider_symbol": "COIN",
+      "rows": 1186
+    },
+    "COL": {
+      "status": "downloaded",
+      "provider_symbol": "COL",
+      "rows": 1708
+    },
+    "COO": {
+      "status": "downloaded",
+      "provider_symbol": "COO",
+      "rows": 3018
+    },
+    "COP": {
+      "status": "downloaded",
+      "provider_symbol": "COP",
+      "rows": 3018
+    },
+    "COR": {
+      "status": "downloaded",
+      "provider_symbol": "COR",
+      "rows": 3018
+    },
+    "COST": {
+      "status": "downloaded",
+      "provider_symbol": "COST",
+      "rows": 3018
+    },
+    "COTY": {
+      "status": "downloaded",
+      "provider_symbol": "COTY",
+      "rows": 3018
+    },
+    "CPAY": {
+      "status": "downloaded",
+      "provider_symbol": "CPAY",
+      "rows": 3018
+    },
+    "CPB": {
+      "status": "downloaded",
+      "provider_symbol": "CPB",
+      "rows": 3018
+    },
+    "CPRI": {
+      "status": "downloaded",
+      "provider_symbol": "CPRI",
+      "rows": 3018
+    },
+    "CPRT": {
+      "status": "downloaded",
+      "provider_symbol": "CPRT",
+      "rows": 3018
+    },
+    "CPT": {
+      "status": "downloaded",
+      "provider_symbol": "CPT",
+      "rows": 3018
+    },
+    "CRH": {
+      "status": "downloaded",
+      "provider_symbol": "CRH",
+      "rows": 3018
+    },
+    "CRL": {
+      "status": "downloaded",
+      "provider_symbol": "CRL",
+      "rows": 3018
+    },
+    "CRM": {
+      "status": "downloaded",
+      "provider_symbol": "CRM",
+      "rows": 3018
+    },
+    "CRWD": {
+      "status": "downloaded",
+      "provider_symbol": "CRWD",
+      "rows": 1649
+    },
+    "CSCO": {
+      "status": "downloaded",
+      "provider_symbol": "CSCO",
+      "rows": 3018
+    },
+    "CSGP": {
+      "status": "downloaded",
+      "provider_symbol": "CSGP",
+      "rows": 3018
+    },
+    "CSRA": {
+      "status": "missing_after_batch",
+      "provider_symbol": "CSRA",
+      "retry": "no_usable_ohlcv"
+    },
+    "CSX": {
+      "status": "downloaded",
+      "provider_symbol": "CSX",
+      "rows": 3018
+    },
+    "CTAS": {
+      "status": "downloaded",
+      "provider_symbol": "CTAS",
+      "rows": 3018
+    },
+    "CTSH": {
+      "status": "downloaded",
+      "provider_symbol": "CTSH",
+      "rows": 3018
+    },
+    "CTVA": {
+      "status": "downloaded",
+      "provider_symbol": "CTVA",
+      "rows": 1661
+    },
+    "CVNA": {
+      "status": "downloaded",
+      "provider_symbol": "CVNA",
+      "rows": 2182
+    },
+    "CVS": {
+      "status": "downloaded",
+      "provider_symbol": "CVS",
+      "rows": 3018
+    },
+    "CVX": {
+      "status": "downloaded",
+      "provider_symbol": "CVX",
+      "rows": 3018
+    },
+    "CZR": {
+      "status": "downloaded",
+      "provider_symbol": "CZR",
+      "rows": 2837
+    },
+    "D": {
+      "status": "downloaded",
+      "provider_symbol": "D",
+      "rows": 3018
+    },
+    "DAL": {
+      "status": "downloaded",
+      "provider_symbol": "DAL",
+      "rows": 3018
+    },
+    "DASH": {
+      "status": "downloaded",
+      "provider_symbol": "DASH",
+      "rows": 1271
+    },
+    "DD": {
+      "status": "downloaded",
+      "provider_symbol": "DD",
+      "rows": 3018
+    },
+    "DDOG": {
+      "status": "downloaded",
+      "provider_symbol": "DDOG",
+      "rows": 1580
+    },
+    "DE": {
+      "status": "downloaded",
+      "provider_symbol": "DE",
+      "rows": 3018
+    },
+    "DECK": {
+      "status": "downloaded",
+      "provider_symbol": "DECK",
+      "rows": 3018
+    },
+    "DELL": {
+      "status": "downloaded",
+      "provider_symbol": "DELL",
+      "rows": 2357
+    },
+    "DG": {
+      "status": "downloaded",
+      "provider_symbol": "DG",
+      "rows": 3018
+    },
+    "DGX": {
+      "status": "downloaded",
+      "provider_symbol": "DGX",
+      "rows": 3018
+    },
+    "DHI": {
+      "status": "downloaded",
+      "provider_symbol": "DHI",
+      "rows": 3018
+    },
+    "DHR": {
+      "status": "downloaded",
+      "provider_symbol": "DHR",
+      "rows": 3018
+    },
+    "DIS": {
+      "status": "downloaded",
+      "provider_symbol": "DIS",
+      "rows": 3018
+    },
+    "DLR": {
+      "status": "downloaded",
+      "provider_symbol": "DLR",
+      "rows": 3018
+    },
+    "DLTR": {
+      "status": "downloaded",
+      "provider_symbol": "DLTR",
+      "rows": 3018
+    },
+    "DOC": {
+      "status": "downloaded",
+      "provider_symbol": "DOC",
+      "rows": 3018
+    },
+    "DOCU": {
+      "status": "downloaded",
+      "provider_symbol": "DOCU",
+      "rows": 1931
+    },
+    "DOV": {
+      "status": "downloaded",
+      "provider_symbol": "DOV",
+      "rows": 3018
+    },
+    "DOW": {
+      "status": "downloaded",
+      "provider_symbol": "DOW",
+      "rows": 1707
+    },
+    "DPZ": {
+      "status": "downloaded",
+      "provider_symbol": "DPZ",
+      "rows": 3018
+    },
+    "DRI": {
+      "status": "downloaded",
+      "provider_symbol": "DRI",
+      "rows": 3018
+    },
+    "DTE": {
+      "status": "downloaded",
+      "provider_symbol": "DTE",
+      "rows": 3018
+    },
+    "DUK": {
+      "status": "downloaded",
+      "provider_symbol": "DUK",
+      "rows": 3018
+    },
+    "DVA": {
+      "status": "downloaded",
+      "provider_symbol": "DVA",
+      "rows": 3018
+    },
+    "DVN": {
+      "status": "downloaded",
+      "provider_symbol": "DVN",
+      "rows": 3018
+    },
+    "DXC": {
+      "status": "downloaded",
+      "provider_symbol": "DXC",
+      "rows": 3018
+    },
+    "DXCM": {
+      "status": "downloaded",
+      "provider_symbol": "DXCM",
+      "rows": 3018
+    },
+    "EA": {
+      "status": "missing_after_batch",
+      "provider_symbol": "EA",
+      "retry": "no_usable_ohlcv"
+    },
+    "EBAY": {
+      "status": "downloaded",
+      "provider_symbol": "EBAY",
+      "rows": 3018
+    },
+    "ECL": {
+      "status": "downloaded",
+      "provider_symbol": "ECL",
+      "rows": 3018
+    },
+    "ED": {
+      "status": "downloaded",
+      "provider_symbol": "ED",
+      "rows": 3018
+    },
+    "EFX": {
+      "status": "downloaded",
+      "provider_symbol": "EFX",
+      "rows": 3018
+    },
+    "EG": {
+      "status": "downloaded",
+      "provider_symbol": "EG",
+      "rows": 3018
+    },
+    "EIX": {
+      "status": "downloaded",
+      "provider_symbol": "EIX",
+      "rows": 3018
+    },
+    "EL": {
+      "status": "downloaded",
+      "provider_symbol": "EL",
+      "rows": 3018
+    },
+    "ELV": {
+      "status": "downloaded",
+      "provider_symbol": "ELV",
+      "rows": 3018
+    },
+    "EMC": {
+      "status": "downloaded",
+      "provider_symbol": "EMC",
+      "rows": 661
+    },
+    "EME": {
+      "status": "downloaded",
+      "provider_symbol": "EME",
+      "rows": 3018
+    },
+    "EMN": {
+      "status": "downloaded",
+      "provider_symbol": "EMN",
+      "rows": 3018
+    },
+    "EMR": {
+      "status": "downloaded",
+      "provider_symbol": "EMR",
+      "rows": 3018
+    },
+    "ENPH": {
+      "status": "downloaded",
+      "provider_symbol": "ENPH",
+      "rows": 3018
+    },
+    "EOG": {
+      "status": "downloaded",
+      "provider_symbol": "EOG",
+      "rows": 3018
+    },
+    "EPAM": {
+      "status": "downloaded",
+      "provider_symbol": "EPAM",
+      "rows": 3018
+    },
+    "EQIX": {
+      "status": "downloaded",
+      "provider_symbol": "EQIX",
+      "rows": 3018
+    },
+    "EQR": {
+      "status": "downloaded",
+      "provider_symbol": "EQR",
+      "rows": 3018
+    },
+    "EQT": {
+      "status": "downloaded",
+      "provider_symbol": "EQT",
+      "rows": 3018
+    },
+    "ERIE": {
+      "status": "downloaded",
+      "provider_symbol": "ERIE",
+      "rows": 3018
+    },
+    "ES": {
+      "status": "downloaded",
+      "provider_symbol": "ES",
+      "rows": 3018
+    },
+    "ESRX": {
+      "status": "downloaded",
+      "provider_symbol": "ESRX",
+      "rows": 1252
+    },
+    "ESS": {
+      "status": "downloaded",
+      "provider_symbol": "ESS",
+      "rows": 3018
+    },
+    "ETN": {
+      "status": "downloaded",
+      "provider_symbol": "ETN",
+      "rows": 3018
+    },
+    "ETR": {
+      "status": "downloaded",
+      "provider_symbol": "ETR",
+      "rows": 3018
+    },
+    "ETSY": {
+      "status": "downloaded",
+      "provider_symbol": "ETSY",
+      "rows": 2695
+    },
+    "EVHC": {
+      "status": "downloaded",
+      "provider_symbol": "EVHC",
+      "rows": 1202
+    },
+    "EVRG": {
+      "status": "downloaded",
+      "provider_symbol": "EVRG",
+      "rows": 3018
+    },
+    "EW": {
+      "status": "downloaded",
+      "provider_symbol": "EW",
+      "rows": 3018
+    },
+    "EXC": {
+      "status": "downloaded",
+      "provider_symbol": "EXC",
+      "rows": 3018
+    },
+    "EXE": {
+      "status": "downloaded",
+      "provider_symbol": "EXE",
+      "rows": 1229
+    },
+    "EXPD": {
+      "status": "downloaded",
+      "provider_symbol": "EXPD",
+      "rows": 3018
+    },
+    "EXPE": {
+      "status": "downloaded",
+      "provider_symbol": "EXPE",
+      "rows": 3018
+    },
+    "EXR": {
+      "status": "downloaded",
+      "provider_symbol": "EXR",
+      "rows": 3018
+    },
+    "F": {
+      "status": "downloaded",
+      "provider_symbol": "F",
+      "rows": 3018
+    },
+    "FANG": {
+      "status": "downloaded",
+      "provider_symbol": "FANG",
+      "rows": 3018
+    },
+    "FAST": {
+      "status": "downloaded",
+      "provider_symbol": "FAST",
+      "rows": 3018
+    },
+    "FCX": {
+      "status": "downloaded",
+      "provider_symbol": "FCX",
+      "rows": 3018
+    },
+    "FDS": {
+      "status": "downloaded",
+      "provider_symbol": "FDS",
+      "rows": 3018
+    },
+    "FDX": {
+      "status": "downloaded",
+      "provider_symbol": "FDX",
+      "rows": 3018
+    },
+    "FE": {
+      "status": "downloaded",
+      "provider_symbol": "FE",
+      "rows": 3018
+    },
+    "FER": {
+      "status": "downloaded",
+      "provider_symbol": "FER",
+      "rows": 3018
+    },
+    "FFIV": {
+      "status": "downloaded",
+      "provider_symbol": "FFIV",
+      "rows": 3018
+    },
+    "FICO": {
+      "status": "downloaded",
+      "provider_symbol": "FICO",
+      "rows": 3018
+    },
+    "FIS": {
+      "status": "downloaded",
+      "provider_symbol": "FIS",
+      "rows": 3018
+    },
+    "FISV": {
+      "status": "downloaded",
+      "provider_symbol": "FISV",
+      "rows": 3017
+    },
+    "FITB": {
+      "status": "downloaded",
+      "provider_symbol": "FITB",
+      "rows": 3018
+    },
+    "FIX": {
+      "status": "downloaded",
+      "provider_symbol": "FIX",
+      "rows": 3018
+    },
+    "FLR": {
+      "status": "downloaded",
+      "provider_symbol": "FLR",
+      "rows": 3018
+    },
+    "FLS": {
+      "status": "downloaded",
+      "provider_symbol": "FLS",
+      "rows": 3018
+    },
+    "FMC": {
+      "status": "downloaded",
+      "provider_symbol": "FMC",
+      "rows": 3018
+    },
+    "FOX": {
+      "status": "downloaded",
+      "provider_symbol": "FOX",
+      "rows": 1712
+    },
+    "FOXA": {
+      "status": "downloaded",
+      "provider_symbol": "FOXA",
+      "rows": 1713
+    },
+    "FRT": {
+      "status": "downloaded",
+      "provider_symbol": "FRT",
+      "rows": 3018
+    },
+    "FSLR": {
+      "status": "downloaded",
+      "provider_symbol": "FSLR",
+      "rows": 3018
+    },
+    "FTI": {
+      "status": "downloaded",
+      "provider_symbol": "FTI",
+      "rows": 3018
+    },
+    "FTNT": {
+      "status": "downloaded",
+      "provider_symbol": "FTNT",
+      "rows": 3018
+    },
+    "FTV": {
+      "status": "downloaded",
+      "provider_symbol": "FTV",
+      "rows": 2388
+    },
+    "GD": {
+      "status": "downloaded",
+      "provider_symbol": "GD",
+      "rows": 3018
+    },
+    "GDDY": {
+      "status": "downloaded",
+      "provider_symbol": "GDDY",
+      "rows": 2706
+    },
+    "GE": {
+      "status": "downloaded",
+      "provider_symbol": "GE",
+      "rows": 3018
+    },
+    "GEHC": {
+      "status": "downloaded",
+      "provider_symbol": "GEHC",
+      "rows": 763
+    },
+    "GEN": {
+      "status": "downloaded",
+      "provider_symbol": "GEN",
+      "rows": 3018
+    },
+    "GEV": {
+      "status": "downloaded",
+      "provider_symbol": "GEV",
+      "rows": 443
+    },
+    "GFS": {
+      "status": "downloaded",
+      "provider_symbol": "GFS",
+      "rows": 1048
+    },
+    "GILD": {
+      "status": "downloaded",
+      "provider_symbol": "GILD",
+      "rows": 3018
+    },
+    "GIS": {
+      "status": "downloaded",
+      "provider_symbol": "GIS",
+      "rows": 3018
+    },
+    "GL": {
+      "status": "downloaded",
+      "provider_symbol": "GL",
+      "rows": 3018
+    },
+    "GLW": {
+      "status": "downloaded",
+      "provider_symbol": "GLW",
+      "rows": 3018
+    },
+    "GM": {
+      "status": "downloaded",
+      "provider_symbol": "GM",
+      "rows": 3018
+    },
+    "GME": {
+      "status": "downloaded",
+      "provider_symbol": "GME",
+      "rows": 3018
+    },
+    "GNRC": {
+      "status": "downloaded",
+      "provider_symbol": "GNRC",
+      "rows": 3018
+    },
+    "GNW": {
+      "status": "downloaded",
+      "provider_symbol": "GNW",
+      "rows": 3018
+    },
+    "GOOG": {
+      "status": "downloaded",
+      "provider_symbol": "GOOG",
+      "rows": 3018
+    },
+    "GOOGL": {
+      "status": "downloaded",
+      "provider_symbol": "GOOGL",
+      "rows": 3018
+    },
+    "GPC": {
+      "status": "downloaded",
+      "provider_symbol": "GPC",
+      "rows": 3018
+    },
+    "GPN": {
+      "status": "downloaded",
+      "provider_symbol": "GPN",
+      "rows": 3018
+    },
+    "GRMN": {
+      "status": "downloaded",
+      "provider_symbol": "GRMN",
+      "rows": 3018
+    },
+    "GS": {
+      "status": "downloaded",
+      "provider_symbol": "GS",
+      "rows": 3018
+    },
+    "GT": {
+      "status": "downloaded",
+      "provider_symbol": "GT",
+      "rows": 3018
+    },
+    "GWW": {
+      "status": "downloaded",
+      "provider_symbol": "GWW",
+      "rows": 3018
+    },
+    "HAL": {
+      "status": "downloaded",
+      "provider_symbol": "HAL",
+      "rows": 3018
+    },
+    "HAS": {
+      "status": "downloaded",
+      "provider_symbol": "HAS",
+      "rows": 3018
+    },
+    "HBAN": {
+      "status": "downloaded",
+      "provider_symbol": "HBAN",
+      "rows": 3018
+    },
+    "HCA": {
+      "status": "downloaded",
+      "provider_symbol": "HCA",
+      "rows": 3018
+    },
+    "HD": {
+      "status": "downloaded",
+      "provider_symbol": "HD",
+      "rows": 3018
+    },
+    "HIG": {
+      "status": "downloaded",
+      "provider_symbol": "HIG",
+      "rows": 3018
+    },
+    "HII": {
+      "status": "downloaded",
+      "provider_symbol": "HII",
+      "rows": 3018
+    },
+    "HLT": {
+      "status": "downloaded",
+      "provider_symbol": "HLT",
+      "rows": 3018
+    },
+    "HON": {
+      "status": "downloaded",
+      "provider_symbol": "HON",
+      "rows": 3018
+    },
+    "HOOD": {
+      "status": "downloaded",
+      "provider_symbol": "HOOD",
+      "rows": 1112
+    },
+    "HOT": {
+      "status": "downloaded",
+      "provider_symbol": "HOT",
+      "rows": 502
+    },
+    "HP": {
+      "status": "downloaded",
+      "provider_symbol": "HP",
+      "rows": 3018
+    },
+    "HPE": {
+      "status": "downloaded",
+      "provider_symbol": "HPE",
+      "rows": 2566
+    },
+    "HPQ": {
+      "status": "downloaded",
+      "provider_symbol": "HPQ",
+      "rows": 3018
+    },
+    "HRL": {
+      "status": "downloaded",
+      "provider_symbol": "HRL",
+      "rows": 3018
+    },
+    "HSIC": {
+      "status": "downloaded",
+      "provider_symbol": "HSIC",
+      "rows": 3018
+    },
+    "HST": {
+      "status": "downloaded",
+      "provider_symbol": "HST",
+      "rows": 3018
+    },
+    "HSY": {
+      "status": "downloaded",
+      "provider_symbol": "HSY",
+      "rows": 3018
+    },
+    "HUBB": {
+      "status": "downloaded",
+      "provider_symbol": "HUBB",
+      "rows": 3018
+    },
+    "HUM": {
+      "status": "downloaded",
+      "provider_symbol": "HUM",
+      "rows": 3018
+    },
+    "HWM": {
+      "status": "downloaded",
+      "provider_symbol": "HWM",
+      "rows": 2304
+    },
+    "IBKR": {
+      "status": "downloaded",
+      "provider_symbol": "IBKR",
+      "rows": 3018
+    },
+    "IBM": {
+      "status": "downloaded",
+      "provider_symbol": "IBM",
+      "rows": 3018
+    },
+    "ICE": {
+      "status": "downloaded",
+      "provider_symbol": "ICE",
+      "rows": 3018
+    },
+    "IDXX": {
+      "status": "downloaded",
+      "provider_symbol": "IDXX",
+      "rows": 3018
+    },
+    "IEX": {
+      "status": "downloaded",
+      "provider_symbol": "IEX",
+      "rows": 3018
+    },
+    "IFF": {
+      "status": "downloaded",
+      "provider_symbol": "IFF",
+      "rows": 3018
+    },
+    "ILMN": {
+      "status": "downloaded",
+      "provider_symbol": "ILMN",
+      "rows": 3018
+    },
+    "INCY": {
+      "status": "downloaded",
+      "provider_symbol": "INCY",
+      "rows": 3018
+    },
+    "INFO": {
+      "status": "downloaded",
+      "provider_symbol": "INFO",
+      "rows": 307
+    },
+    "INSM": {
+      "status": "downloaded",
+      "provider_symbol": "INSM",
+      "rows": 3018
+    },
+    "INTC": {
+      "status": "downloaded",
+      "provider_symbol": "INTC",
+      "rows": 3018
+    },
+    "INTU": {
+      "status": "downloaded",
+      "provider_symbol": "INTU",
+      "rows": 3018
+    },
+    "INVH": {
+      "status": "downloaded",
+      "provider_symbol": "INVH",
+      "rows": 2242
+    },
+    "IP": {
+      "status": "downloaded",
+      "provider_symbol": "IP",
+      "rows": 3018
+    },
+    "IQV": {
+      "status": "downloaded",
+      "provider_symbol": "IQV",
+      "rows": 3018
+    },
+    "IR": {
+      "status": "downloaded",
+      "provider_symbol": "IR",
+      "rows": 2172
+    },
+    "IRM": {
+      "status": "downloaded",
+      "provider_symbol": "IRM",
+      "rows": 3018
+    },
+    "ISRG": {
+      "status": "downloaded",
+      "provider_symbol": "ISRG",
+      "rows": 3018
+    },
+    "IT": {
+      "status": "downloaded",
+      "provider_symbol": "IT",
+      "rows": 3018
+    },
+    "ITW": {
+      "status": "downloaded",
+      "provider_symbol": "ITW",
+      "rows": 3018
+    },
+    "IVZ": {
+      "status": "downloaded",
+      "provider_symbol": "IVZ",
+      "rows": 3018
+    },
+    "J": {
+      "status": "downloaded",
+      "provider_symbol": "J",
+      "rows": 3018
+    },
+    "JBHT": {
+      "status": "downloaded",
+      "provider_symbol": "JBHT",
+      "rows": 3018
+    },
+    "JBL": {
+      "status": "downloaded",
+      "provider_symbol": "JBL",
+      "rows": 3018
+    },
+    "JCI": {
+      "status": "downloaded",
+      "provider_symbol": "JCI",
+      "rows": 3018
+    },
+    "JD": {
+      "status": "downloaded",
+      "provider_symbol": "JD",
+      "rows": 2921
+    },
+    "JEF": {
+      "status": "downloaded",
+      "provider_symbol": "JEF",
+      "rows": 3018
+    },
+    "JKHY": {
+      "status": "downloaded",
+      "provider_symbol": "JKHY",
+      "rows": 3018
+    },
+    "JNJ": {
+      "status": "downloaded",
+      "provider_symbol": "JNJ",
+      "rows": 3018
+    },
+    "JPM": {
+      "status": "downloaded",
+      "provider_symbol": "JPM",
+      "rows": 3018
+    },
+    "KDP": {
+      "status": "downloaded",
+      "provider_symbol": "KDP",
+      "rows": 3018
+    },
+    "KEY": {
+      "status": "downloaded",
+      "provider_symbol": "KEY",
+      "rows": 3018
+    },
+    "KEYS": {
+      "status": "downloaded",
+      "provider_symbol": "KEYS",
+      "rows": 2817
+    },
+    "KHC": {
+      "status": "downloaded",
+      "provider_symbol": "KHC",
+      "rows": 2640
+    },
+    "KIM": {
+      "status": "downloaded",
+      "provider_symbol": "KIM",
+      "rows": 3018
+    },
+    "KKR": {
+      "status": "downloaded",
+      "provider_symbol": "KKR",
+      "rows": 3018
+    },
+    "KLAC": {
+      "status": "downloaded",
+      "provider_symbol": "KLAC",
+      "rows": 3018
+    },
+    "KMB": {
+      "status": "downloaded",
+      "provider_symbol": "KMB",
+      "rows": 3018
+    },
+    "KMI": {
+      "status": "downloaded",
+      "provider_symbol": "KMI",
+      "rows": 3018
+    },
+    "KMX": {
+      "status": "downloaded",
+      "provider_symbol": "KMX",
+      "rows": 3018
+    },
+    "KO": {
+      "status": "downloaded",
+      "provider_symbol": "KO",
+      "rows": 3018
+    },
+    "KR": {
+      "status": "downloaded",
+      "provider_symbol": "KR",
+      "rows": 3018
+    },
+    "KSS": {
+      "status": "downloaded",
+      "provider_symbol": "KSS",
+      "rows": 3018
+    },
+    "KVUE": {
+      "status": "downloaded",
+      "provider_symbol": "KVUE",
+      "rows": 668
+    },
+    "L": {
+      "status": "downloaded",
+      "provider_symbol": "L",
+      "rows": 3018
+    },
+    "LBTYA": {
+      "status": "downloaded",
+      "provider_symbol": "LBTYA",
+      "rows": 3018
+    },
+    "LBTYK": {
+      "status": "downloaded",
+      "provider_symbol": "LBTYK",
+      "rows": 3018
+    },
+    "LCID": {
+      "status": "downloaded",
+      "provider_symbol": "LCID",
+      "rows": 1328
+    },
+    "LDOS": {
+      "status": "downloaded",
+      "provider_symbol": "LDOS",
+      "rows": 3018
+    },
+    "LEG": {
+      "status": "downloaded",
+      "provider_symbol": "LEG",
+      "rows": 3018
+    },
+    "LEN": {
+      "status": "downloaded",
+      "provider_symbol": "LEN",
+      "rows": 3018
+    },
+    "LH": {
+      "status": "downloaded",
+      "provider_symbol": "LH",
+      "rows": 3018
+    },
+    "LHX": {
+      "status": "downloaded",
+      "provider_symbol": "LHX",
+      "rows": 3018
+    },
+    "LII": {
+      "status": "downloaded",
+      "provider_symbol": "LII",
+      "rows": 3018
+    },
+    "LILA": {
+      "status": "downloaded",
+      "provider_symbol": "LILA",
+      "rows": 2641
+    },
+    "LILAK": {
+      "status": "downloaded",
+      "provider_symbol": "LILAK",
+      "rows": 2648
+    },
+    "LIN": {
+      "status": "downloaded",
+      "provider_symbol": "LIN",
+      "rows": 3018
+    },
+    "LKQ": {
+      "status": "downloaded",
+      "provider_symbol": "LKQ",
+      "rows": 3018
+    },
+    "LLY": {
+      "status": "downloaded",
+      "provider_symbol": "LLY",
+      "rows": 3018
+    },
+    "LMT": {
+      "status": "downloaded",
+      "provider_symbol": "LMT",
+      "rows": 3018
+    },
+    "LNC": {
+      "status": "downloaded",
+      "provider_symbol": "LNC",
+      "rows": 3018
+    },
+    "LNT": {
+      "status": "downloaded",
+      "provider_symbol": "LNT",
+      "rows": 3018
+    },
+    "LOW": {
+      "status": "downloaded",
+      "provider_symbol": "LOW",
+      "rows": 3018
+    },
+    "LRCX": {
+      "status": "downloaded",
+      "provider_symbol": "LRCX",
+      "rows": 3018
+    },
+    "LULU": {
+      "status": "downloaded",
+      "provider_symbol": "LULU",
+      "rows": 3018
+    },
+    "LUMN": {
+      "status": "downloaded",
+      "provider_symbol": "LUMN",
+      "rows": 3018
+    },
+    "LUV": {
+      "status": "downloaded",
+      "provider_symbol": "LUV",
+      "rows": 3018
+    },
+    "LVS": {
+      "status": "downloaded",
+      "provider_symbol": "LVS",
+      "rows": 3018
+    },
+    "LW": {
+      "status": "downloaded",
+      "provider_symbol": "LW",
+      "rows": 2297
+    },
+    "LYB": {
+      "status": "downloaded",
+      "provider_symbol": "LYB",
+      "rows": 3018
+    },
+    "LYV": {
+      "status": "downloaded",
+      "provider_symbol": "LYV",
+      "rows": 3018
+    },
+    "M": {
+      "status": "downloaded",
+      "provider_symbol": "M",
+      "rows": 3018
+    },
+    "MA": {
+      "status": "downloaded",
+      "provider_symbol": "MA",
+      "rows": 3018
+    },
+    "MAA": {
+      "status": "downloaded",
+      "provider_symbol": "MAA",
+      "rows": 3018
+    },
+    "MAC": {
+      "status": "downloaded",
+      "provider_symbol": "MAC",
+      "rows": 3018
+    },
+    "MAR": {
+      "status": "downloaded",
+      "provider_symbol": "MAR",
+      "rows": 3018
+    },
+    "MAS": {
+      "status": "downloaded",
+      "provider_symbol": "MAS",
+      "rows": 3018
+    },
+    "MAT": {
+      "status": "downloaded",
+      "provider_symbol": "MAT",
+      "rows": 3018
+    },
+    "MBC": {
+      "status": "downloaded",
+      "provider_symbol": "MBC",
+      "rows": 767
+    },
+    "MCD": {
+      "status": "downloaded",
+      "provider_symbol": "MCD",
+      "rows": 3018
+    },
+    "MCHP": {
+      "status": "downloaded",
+      "provider_symbol": "MCHP",
+      "rows": 3018
+    },
+    "MCK": {
+      "status": "downloaded",
+      "provider_symbol": "MCK",
+      "rows": 3018
+    },
+    "MCO": {
+      "status": "downloaded",
+      "provider_symbol": "MCO",
+      "rows": 3018
+    },
+    "MDB": {
+      "status": "downloaded",
+      "provider_symbol": "MDB",
+      "rows": 2061
+    },
+    "MDLZ": {
+      "status": "downloaded",
+      "provider_symbol": "MDLZ",
+      "rows": 3018
+    },
+    "MDT": {
+      "status": "downloaded",
+      "provider_symbol": "MDT",
+      "rows": 3018
+    },
+    "MELI": {
+      "status": "downloaded",
+      "provider_symbol": "MELI",
+      "rows": 3018
+    },
+    "MET": {
+      "status": "downloaded",
+      "provider_symbol": "MET",
+      "rows": 3018
+    },
+    "META": {
+      "status": "downloaded",
+      "provider_symbol": "META",
+      "rows": 3018
+    },
+    "MGM": {
+      "status": "downloaded",
+      "provider_symbol": "MGM",
+      "rows": 3018
+    },
+    "MHK": {
+      "status": "downloaded",
+      "provider_symbol": "MHK",
+      "rows": 3018
+    },
+    "MKC": {
+      "status": "downloaded",
+      "provider_symbol": "MKC",
+      "rows": 3018
+    },
+    "MKTX": {
+      "status": "downloaded",
+      "provider_symbol": "MKTX",
+      "rows": 3018
+    },
+    "MLM": {
+      "status": "downloaded",
+      "provider_symbol": "MLM",
+      "rows": 3018
+    },
+    "MMM": {
+      "status": "downloaded",
+      "provider_symbol": "MMM",
+      "rows": 3018
+    },
+    "MNST": {
+      "status": "downloaded",
+      "provider_symbol": "MNST",
+      "rows": 3018
+    },
+    "MO": {
+      "status": "downloaded",
+      "provider_symbol": "MO",
+      "rows": 3018
+    },
+    "MOH": {
+      "status": "downloaded",
+      "provider_symbol": "MOH",
+      "rows": 3018
+    },
+    "MOS": {
+      "status": "downloaded",
+      "provider_symbol": "MOS",
+      "rows": 3018
+    },
+    "MPC": {
+      "status": "downloaded",
+      "provider_symbol": "MPC",
+      "rows": 3018
+    },
+    "MPWR": {
+      "status": "downloaded",
+      "provider_symbol": "MPWR",
+      "rows": 3018
+    },
+    "MRK": {
+      "status": "downloaded",
+      "provider_symbol": "MRK",
+      "rows": 3018
+    },
+    "MRNA": {
+      "status": "downloaded",
+      "provider_symbol": "MRNA",
+      "rows": 1776
+    },
+    "MRSH": {
+      "status": "downloaded",
+      "provider_symbol": "MRSH",
+      "rows": 3018
+    },
+    "MRVL": {
+      "status": "downloaded",
+      "provider_symbol": "MRVL",
+      "rows": 3018
+    },
+    "MS": {
+      "status": "downloaded",
+      "provider_symbol": "MS",
+      "rows": 3018
+    },
+    "MSCI": {
+      "status": "downloaded",
+      "provider_symbol": "MSCI",
+      "rows": 3018
+    },
+    "MSFT": {
+      "status": "downloaded",
+      "provider_symbol": "MSFT",
+      "rows": 3018
+    },
+    "MSI": {
+      "status": "downloaded",
+      "provider_symbol": "MSI",
+      "rows": 3018
+    },
+    "MSTR": {
+      "status": "downloaded",
+      "provider_symbol": "MSTR",
+      "rows": 3018
+    },
+    "MTB": {
+      "status": "downloaded",
+      "provider_symbol": "MTB",
+      "rows": 3018
+    },
+    "MTCH": {
+      "status": "downloaded",
+      "provider_symbol": "MTCH",
+      "rows": 3018
+    },
+    "MTD": {
+      "status": "downloaded",
+      "provider_symbol": "MTD",
+      "rows": 3018
+    },
+    "MU": {
+      "status": "downloaded",
+      "provider_symbol": "MU",
+      "rows": 3018
+    },
+    "NAVI": {
+      "status": "downloaded",
+      "provider_symbol": "NAVI",
+      "rows": 2945
+    },
+    "NBR": {
+      "status": "downloaded",
+      "provider_symbol": "NBR",
+      "rows": 3018
+    },
+    "NCLH": {
+      "status": "downloaded",
+      "provider_symbol": "NCLH",
+      "rows": 3018
+    },
+    "NDAQ": {
+      "status": "downloaded",
+      "provider_symbol": "NDAQ",
+      "rows": 3018
+    },
+    "NDSN": {
+      "status": "downloaded",
+      "provider_symbol": "NDSN",
+      "rows": 3018
+    },
+    "NE": {
+      "status": "downloaded",
+      "provider_symbol": "NE",
+      "rows": 1147
+    },
+    "NEE": {
+      "status": "downloaded",
+      "provider_symbol": "NEE",
+      "rows": 3018
+    },
+    "NEM": {
+      "status": "downloaded",
+      "provider_symbol": "NEM",
+      "rows": 3018
+    },
+    "NFLX": {
+      "status": "downloaded",
+      "provider_symbol": "NFLX",
+      "rows": 3018
+    },
+    "NI": {
+      "status": "downloaded",
+      "provider_symbol": "NI",
+      "rows": 3018
+    },
+    "NKE": {
+      "status": "downloaded",
+      "provider_symbol": "NKE",
+      "rows": 3018
+    },
+    "NKTR": {
+      "status": "downloaded",
+      "provider_symbol": "NKTR",
+      "rows": 3018
+    },
+    "NOC": {
+      "status": "downloaded",
+      "provider_symbol": "NOC",
+      "rows": 3018
+    },
+    "NOV": {
+      "status": "downloaded",
+      "provider_symbol": "NOV",
+      "rows": 3018
+    },
+    "NOW": {
+      "status": "downloaded",
+      "provider_symbol": "NOW",
+      "rows": 3018
+    },
+    "NRG": {
+      "status": "downloaded",
+      "provider_symbol": "NRG",
+      "rows": 3018
+    },
+    "NSC": {
+      "status": "downloaded",
+      "provider_symbol": "NSC",
+      "rows": 3018
+    },
+    "NTAP": {
+      "status": "downloaded",
+      "provider_symbol": "NTAP",
+      "rows": 3018
+    },
+    "NTES": {
+      "status": "downloaded",
+      "provider_symbol": "NTES",
+      "rows": 3018
+    },
+    "NTRS": {
+      "status": "downloaded",
+      "provider_symbol": "NTRS",
+      "rows": 3018
+    },
+    "NUE": {
+      "status": "downloaded",
+      "provider_symbol": "NUE",
+      "rows": 3018
+    },
+    "NVDA": {
+      "status": "downloaded",
+      "provider_symbol": "NVDA",
+      "rows": 3018
+    },
+    "NVR": {
+      "status": "downloaded",
+      "provider_symbol": "NVR",
+      "rows": 3018
+    },
+    "NWS": {
+      "status": "downloaded",
+      "provider_symbol": "NWS",
+      "rows": 3018
+    },
+    "NWSA": {
+      "status": "downloaded",
+      "provider_symbol": "NWSA",
+      "rows": 3018
+    },
+    "NXPI": {
+      "status": "downloaded",
+      "provider_symbol": "NXPI",
+      "rows": 3018
+    },
+    "O": {
+      "status": "downloaded",
+      "provider_symbol": "O",
+      "rows": 3018
+    },
+    "ODFL": {
+      "status": "downloaded",
+      "provider_symbol": "ODFL",
+      "rows": 3018
+    },
+    "OGN": {
+      "status": "downloaded",
+      "provider_symbol": "OGN",
+      "rows": 1164
+    },
+    "OKE": {
+      "status": "downloaded",
+      "provider_symbol": "OKE",
+      "rows": 3018
+    },
+    "OKTA": {
+      "status": "downloaded",
+      "provider_symbol": "OKTA",
+      "rows": 2196
+    },
+    "OMC": {
+      "status": "downloaded",
+      "provider_symbol": "OMC",
+      "rows": 3018
+    },
+    "ON": {
+      "status": "downloaded",
+      "provider_symbol": "ON",
+      "rows": 3018
+    },
+    "ORCL": {
+      "status": "downloaded",
+      "provider_symbol": "ORCL",
+      "rows": 3018
+    },
+    "ORLY": {
+      "status": "downloaded",
+      "provider_symbol": "ORLY",
+      "rows": 3018
+    },
+    "OTIS": {
+      "status": "downloaded",
+      "provider_symbol": "OTIS",
+      "rows": 1455
+    },
+    "OXY": {
+      "status": "downloaded",
+      "provider_symbol": "OXY",
+      "rows": 3018
+    },
+    "PANW": {
+      "status": "downloaded",
+      "provider_symbol": "PANW",
+      "rows": 3018
+    },
+    "PAYC": {
+      "status": "downloaded",
+      "provider_symbol": "PAYC",
+      "rows": 2947
+    },
+    "PAYX": {
+      "status": "downloaded",
+      "provider_symbol": "PAYX",
+      "rows": 3018
+    },
+    "PBI": {
+      "status": "downloaded",
+      "provider_symbol": "PBI",
+      "rows": 3018
+    },
+    "PCAR": {
+      "status": "downloaded",
+      "provider_symbol": "PCAR",
+      "rows": 3018
+    },
+    "PCG": {
+      "status": "downloaded",
+      "provider_symbol": "PCG",
+      "rows": 3018
+    },
+    "PCL": {
+      "status": "downloaded",
+      "provider_symbol": "PCL",
+      "rows": 104
+    },
+    "PDD": {
+      "status": "downloaded",
+      "provider_symbol": "PDD",
+      "rows": 1869
+    },
+    "PEG": {
+      "status": "downloaded",
+      "provider_symbol": "PEG",
+      "rows": 3018
+    },
+    "PENN": {
+      "status": "downloaded",
+      "provider_symbol": "PENN",
+      "rows": 3018
+    },
+    "PEP": {
+      "status": "downloaded",
+      "provider_symbol": "PEP",
+      "rows": 3018
+    },
+    "PFE": {
+      "status": "downloaded",
+      "provider_symbol": "PFE",
+      "rows": 3018
+    },
+    "PFG": {
+      "status": "downloaded",
+      "provider_symbol": "PFG",
+      "rows": 3018
+    },
+    "PG": {
+      "status": "downloaded",
+      "provider_symbol": "PG",
+      "rows": 3018
+    },
+    "PGR": {
+      "status": "downloaded",
+      "provider_symbol": "PGR",
+      "rows": 3018
+    },
+    "PH": {
+      "status": "downloaded",
+      "provider_symbol": "PH",
+      "rows": 3018
+    },
+    "PHM": {
+      "status": "downloaded",
+      "provider_symbol": "PHM",
+      "rows": 3018
+    },
+    "PKG": {
+      "status": "downloaded",
+      "provider_symbol": "PKG",
+      "rows": 3018
+    },
+    "PLD": {
+      "status": "downloaded",
+      "provider_symbol": "PLD",
+      "rows": 3018
+    },
+    "PLTR": {
+      "status": "downloaded",
+      "provider_symbol": "PLTR",
+      "rows": 1320
+    },
+    "PM": {
+      "status": "downloaded",
+      "provider_symbol": "PM",
+      "rows": 3018
+    },
+    "PNC": {
+      "status": "downloaded",
+      "provider_symbol": "PNC",
+      "rows": 3018
+    },
+    "PNR": {
+      "status": "downloaded",
+      "provider_symbol": "PNR",
+      "rows": 3018
+    },
+    "PNW": {
+      "status": "downloaded",
+      "provider_symbol": "PNW",
+      "rows": 3018
+    },
+    "PODD": {
+      "status": "downloaded",
+      "provider_symbol": "PODD",
+      "rows": 3018
+    },
+    "POM": {
+      "status": "downloaded",
+      "provider_symbol": "POM",
+      "rows": 59
+    },
+    "POOL": {
+      "status": "downloaded",
+      "provider_symbol": "POOL",
+      "rows": 3018
+    },
+    "PPG": {
+      "status": "downloaded",
+      "provider_symbol": "PPG",
+      "rows": 3018
+    },
+    "PPL": {
+      "status": "downloaded",
+      "provider_symbol": "PPL",
+      "rows": 3018
+    },
+    "PRGO": {
+      "status": "downloaded",
+      "provider_symbol": "PRGO",
+      "rows": 3018
+    },
+    "PRU": {
+      "status": "downloaded",
+      "provider_symbol": "PRU",
+      "rows": 3018
+    },
+    "PSA": {
+      "status": "downloaded",
+      "provider_symbol": "PSA",
+      "rows": 3018
+    },
+    "PSKY": {
+      "status": "downloaded",
+      "provider_symbol": "PSKY",
+      "rows": 3018
+    },
+    "PSX": {
+      "status": "downloaded",
+      "provider_symbol": "PSX",
+      "rows": 3018
+    },
+    "PTC": {
+      "status": "downloaded",
+      "provider_symbol": "PTC",
+      "rows": 3018
+    },
+    "PTON": {
+      "status": "downloaded",
+      "provider_symbol": "PTON",
+      "rows": 1575
+    },
+    "PVH": {
+      "status": "downloaded",
+      "provider_symbol": "PVH",
+      "rows": 3018
+    },
+    "PWR": {
+      "status": "downloaded",
+      "provider_symbol": "PWR",
+      "rows": 3018
+    },
+    "PYPL": {
+      "status": "downloaded",
+      "provider_symbol": "PYPL",
+      "rows": 2640
+    },
+    "Q": {
+      "status": "downloaded",
+      "provider_symbol": "Q",
+      "rows": 46
+    },
+    "QCOM": {
+      "status": "downloaded",
+      "provider_symbol": "QCOM",
+      "rows": 3018
+    },
+    "QRVO": {
+      "status": "downloaded",
+      "provider_symbol": "QRVO",
+      "rows": 2766
+    },
+    "R": {
+      "status": "downloaded",
+      "provider_symbol": "R",
+      "rows": 3018
+    },
+    "RCL": {
+      "status": "downloaded",
+      "provider_symbol": "RCL",
+      "rows": 3018
+    },
+    "REG": {
+      "status": "downloaded",
+      "provider_symbol": "REG",
+      "rows": 3018
+    },
+    "REGN": {
+      "status": "downloaded",
+      "provider_symbol": "REGN",
+      "rows": 3018
+    },
+    "RF": {
+      "status": "downloaded",
+      "provider_symbol": "RF",
+      "rows": 3018
+    },
+    "RIG": {
+      "status": "downloaded",
+      "provider_symbol": "RIG",
+      "rows": 3018
+    },
+    "RIVN": {
+      "status": "downloaded",
+      "provider_symbol": "RIVN",
+      "rows": 1039
+    },
+    "RJF": {
+      "status": "downloaded",
+      "provider_symbol": "RJF",
+      "rows": 3018
+    },
+    "RL": {
+      "status": "downloaded",
+      "provider_symbol": "RL",
+      "rows": 3018
+    },
+    "RMD": {
+      "status": "downloaded",
+      "provider_symbol": "RMD",
+      "rows": 3018
+    },
+    "ROK": {
+      "status": "downloaded",
+      "provider_symbol": "ROK",
+      "rows": 3018
+    },
+    "ROL": {
+      "status": "downloaded",
+      "provider_symbol": "ROL",
+      "rows": 3018
+    },
+    "ROP": {
+      "status": "downloaded",
+      "provider_symbol": "ROP",
+      "rows": 3018
+    },
+    "ROST": {
+      "status": "downloaded",
+      "provider_symbol": "ROST",
+      "rows": 3018
+    },
+    "RRC": {
+      "status": "downloaded",
+      "provider_symbol": "RRC",
+      "rows": 3018
+    },
+    "RSG": {
+      "status": "downloaded",
+      "provider_symbol": "RSG",
+      "rows": 3018
+    },
+    "RTX": {
+      "status": "downloaded",
+      "provider_symbol": "RTX",
+      "rows": 3018
+    },
+    "RVTY": {
+      "status": "downloaded",
+      "provider_symbol": "RVTY",
+      "rows": 3018
+    },
+    "SBAC": {
+      "status": "downloaded",
+      "provider_symbol": "SBAC",
+      "rows": 3018
+    },
+    "SBNY": {
+      "status": "downloaded",
+      "provider_symbol": "SBNY",
+      "rows": 346
+    },
+    "SBUX": {
+      "status": "downloaded",
+      "provider_symbol": "SBUX",
+      "rows": 3018
+    },
+    "SCG": {
+      "status": "downloaded",
+      "provider_symbol": "SCG",
+      "rows": 872
+    },
+    "SCHW": {
+      "status": "downloaded",
+      "provider_symbol": "SCHW",
+      "rows": 3018
+    },
+    "SE": {
+      "status": "downloaded",
+      "provider_symbol": "SE",
+      "rows": 2060
+    },
+    "SEDG": {
+      "status": "downloaded",
+      "provider_symbol": "SEDG",
+      "rows": 2709
+    },
+    "SHOP": {
+      "status": "downloaded",
+      "provider_symbol": "SHOP",
+      "rows": 2671
+    },
+    "SHPG": {
+      "status": "downloaded",
+      "provider_symbol": "SHPG",
+      "rows": 1262
+    },
+    "SHW": {
+      "status": "downloaded",
+      "provider_symbol": "SHW",
+      "rows": 3018
+    },
+    "SIG": {
+      "status": "downloaded",
+      "provider_symbol": "SIG",
+      "rows": 3018
+    },
+    "SIRI": {
+      "status": "downloaded",
+      "provider_symbol": "SIRI",
+      "rows": 3018
+    },
+    "SJM": {
+      "status": "downloaded",
+      "provider_symbol": "SJM",
+      "rows": 3018
+    },
+    "SLB": {
+      "status": "downloaded",
+      "provider_symbol": "SLB",
+      "rows": 3018
+    },
+    "SLG": {
+      "status": "downloaded",
+      "provider_symbol": "SLG",
+      "rows": 3018
+    },
+    "SMCI": {
+      "status": "downloaded",
+      "provider_symbol": "SMCI",
+      "rows": 3018
+    },
+    "SNA": {
+      "status": "downloaded_individual_retry",
+      "provider_symbol": "SNA",
+      "rows": 3018
+    },
+    "SNDK": {
+      "status": "downloaded",
+      "provider_symbol": "SNDK",
+      "rows": 222
+    },
+    "SNPS": {
+      "status": "downloaded",
+      "provider_symbol": "SNPS",
+      "rows": 3018
+    },
+    "SO": {
+      "status": "downloaded",
+      "provider_symbol": "SO",
+      "rows": 3018
+    },
+    "SOLS": {
+      "status": "downloaded",
+      "provider_symbol": "SOLS",
+      "rows": 51
+    },
+    "SOLV": {
+      "status": "downloaded",
+      "provider_symbol": "SOLV",
+      "rows": 444
+    },
+    "SPG": {
+      "status": "downloaded",
+      "provider_symbol": "SPG",
+      "rows": 3018
+    },
+    "SPGI": {
+      "status": "downloaded",
+      "provider_symbol": "SPGI",
+      "rows": 3018
+    },
+    "SRE": {
+      "status": "downloaded",
+      "provider_symbol": "SRE",
+      "rows": 3018
+    },
+    "STE": {
+      "status": "downloaded",
+      "provider_symbol": "STE",
+      "rows": 3018
+    },
+    "STI": {
+      "status": "downloaded",
+      "provider_symbol": "STI",
+      "rows": 921
+    },
+    "STLD": {
+      "status": "downloaded",
+      "provider_symbol": "STLD",
+      "rows": 3018
+    },
+    "STT": {
+      "status": "downloaded",
+      "provider_symbol": "STT",
+      "rows": 3018
+    },
+    "STX": {
+      "status": "downloaded",
+      "provider_symbol": "STX",
+      "rows": 3018
+    },
+    "STZ": {
+      "status": "downloaded",
+      "provider_symbol": "STZ",
+      "rows": 3018
+    },
+    "SW": {
+      "status": "downloaded",
+      "provider_symbol": "SW",
+      "rows": 3018
+    },
+    "SWK": {
+      "status": "downloaded",
+      "provider_symbol": "SWK",
+      "rows": 3018
+    },
+    "SWKS": {
+      "status": "downloaded",
+      "provider_symbol": "SWKS",
+      "rows": 3018
+    },
+    "SYF": {
+      "status": "downloaded",
+      "provider_symbol": "SYF",
+      "rows": 2873
+    },
+    "SYK": {
+      "status": "downloaded",
+      "provider_symbol": "SYK",
+      "rows": 3018
+    },
+    "SYY": {
+      "status": "downloaded",
+      "provider_symbol": "SYY",
+      "rows": 3018
+    },
+    "T": {
+      "status": "downloaded",
+      "provider_symbol": "T",
+      "rows": 3018
+    },
+    "TAP": {
+      "status": "downloaded",
+      "provider_symbol": "TAP",
+      "rows": 3018
+    },
+    "TCOM": {
+      "status": "downloaded",
+      "provider_symbol": "TCOM",
+      "rows": 3018
+    },
+    "TDC": {
+      "status": "downloaded",
+      "provider_symbol": "TDC",
+      "rows": 3018
+    },
+    "TDG": {
+      "status": "downloaded",
+      "provider_symbol": "TDG",
+      "rows": 3018
+    },
+    "TDY": {
+      "status": "downloaded",
+      "provider_symbol": "TDY",
+      "rows": 3018
+    },
+    "TE": {
+      "status": "downloaded",
+      "provider_symbol": "TE",
+      "rows": 1502
+    },
+    "TEAM": {
+      "status": "downloaded",
+      "provider_symbol": "TEAM",
+      "rows": 2530
+    },
+    "TECH": {
+      "status": "downloaded",
+      "provider_symbol": "TECH",
+      "rows": 3018
+    },
+    "TEG": {
+      "status": "downloaded",
+      "provider_symbol": "TEG",
+      "rows": 1551
+    },
+    "TEL": {
+      "status": "downloaded",
+      "provider_symbol": "TEL",
+      "rows": 3018
+    },
+    "TER": {
+      "status": "downloaded",
+      "provider_symbol": "TER",
+      "rows": 3018
+    },
+    "TFC": {
+      "status": "downloaded",
+      "provider_symbol": "TFC",
+      "rows": 3018
+    },
+    "TFX": {
+      "status": "downloaded",
+      "provider_symbol": "TFX",
+      "rows": 3018
+    },
+    "TGT": {
+      "status": "downloaded",
+      "provider_symbol": "TGT",
+      "rows": 3018
+    },
+    "THC": {
+      "status": "downloaded",
+      "provider_symbol": "THC",
+      "rows": 3018
+    },
+    "TJX": {
+      "status": "downloaded",
+      "provider_symbol": "TJX",
+      "rows": 3018
+    },
+    "TKO": {
+      "status": "downloaded",
+      "provider_symbol": "TKO",
+      "rows": 3018
+    },
+    "TMO": {
+      "status": "downloaded",
+      "provider_symbol": "TMO",
+      "rows": 3018
+    },
+    "TMUS": {
+      "status": "downloaded",
+      "provider_symbol": "TMUS",
+      "rows": 3018
+    },
+    "TPL": {
+      "status": "downloaded",
+      "provider_symbol": "TPL",
+      "rows": 3018
+    },
+    "TPR": {
+      "status": "downloaded",
+      "provider_symbol": "TPR",
+      "rows": 3018
+    },
+    "TRGP": {
+      "status": "downloaded",
+      "provider_symbol": "TRGP",
+      "rows": 3018
+    },
+    "TRI": {
+      "status": "downloaded",
+      "provider_symbol": "TRI",
+      "rows": 3018
+    },
+    "TRMB": {
+      "status": "downloaded",
+      "provider_symbol": "TRMB",
+      "rows": 3018
+    },
+    "TROW": {
+      "status": "downloaded",
+      "provider_symbol": "TROW",
+      "rows": 3018
+    },
+    "TRV": {
+      "status": "downloaded",
+      "provider_symbol": "TRV",
+      "rows": 3018
+    },
+    "TSCO": {
+      "status": "downloaded",
+      "provider_symbol": "TSCO",
+      "rows": 3018
+    },
+    "TSLA": {
+      "status": "downloaded_individual_retry",
+      "provider_symbol": "TSLA",
+      "rows": 3018
+    },
+    "TSN": {
+      "status": "downloaded",
+      "provider_symbol": "TSN",
+      "rows": 3018
+    },
+    "TT": {
+      "status": "downloaded",
+      "provider_symbol": "TT",
+      "rows": 3018
+    },
+    "TTD": {
+      "status": "downloaded",
+      "provider_symbol": "TTD",
+      "rows": 2333
+    },
+    "TTWO": {
+      "status": "downloaded",
+      "provider_symbol": "TTWO",
+      "rows": 3018
+    },
+    "TWX": {
+      "status": "downloaded",
+      "provider_symbol": "TWX",
+      "rows": 1121
+    },
+    "TXN": {
+      "status": "downloaded",
+      "provider_symbol": "TXN",
+      "rows": 3018
+    },
+    "TXT": {
+      "status": "downloaded",
+      "provider_symbol": "TXT",
+      "rows": 3018
+    },
+    "TYL": {
+      "status": "downloaded",
+      "provider_symbol": "TYL",
+      "rows": 3018
+    },
+    "UA": {
+      "status": "downloaded",
+      "provider_symbol": "UA",
+      "rows": 2459
+    },
+    "UAA": {
+      "status": "downloaded",
+      "provider_symbol": "UAA",
+      "rows": 3018
+    },
+    "UAL": {
+      "status": "downloaded",
+      "provider_symbol": "UAL",
+      "rows": 3018
+    },
+    "UBER": {
+      "status": "downloaded",
+      "provider_symbol": "UBER",
+      "rows": 1671
+    },
+    "UDR": {
+      "status": "downloaded",
+      "provider_symbol": "UDR",
+      "rows": 3018
+    },
+    "UHS": {
+      "status": "downloaded",
+      "provider_symbol": "UHS",
+      "rows": 3018
+    },
+    "ULTA": {
+      "status": "downloaded",
+      "provider_symbol": "ULTA",
+      "rows": 3018
+    },
+    "UNH": {
+      "status": "downloaded",
+      "provider_symbol": "UNH",
+      "rows": 3018
+    },
+    "UNM": {
+      "status": "downloaded",
+      "provider_symbol": "UNM",
+      "rows": 3018
+    },
+    "UNP": {
+      "status": "downloaded",
+      "provider_symbol": "UNP",
+      "rows": 3018
+    },
+    "UPS": {
+      "status": "downloaded",
+      "provider_symbol": "UPS",
+      "rows": 3018
+    },
+    "URBN": {
+      "status": "downloaded",
+      "provider_symbol": "URBN",
+      "rows": 3018
+    },
+    "URI": {
+      "status": "downloaded",
+      "provider_symbol": "URI",
+      "rows": 3018
+    },
+    "USB": {
+      "status": "downloaded",
+      "provider_symbol": "USB",
+      "rows": 3018
+    },
+    "V": {
+      "status": "downloaded_individual_retry",
+      "provider_symbol": "V",
+      "rows": 3018
+    },
+    "VICI": {
+      "status": "downloaded",
+      "provider_symbol": "VICI",
+      "rows": 2011
+    },
+    "VLO": {
+      "status": "downloaded",
+      "provider_symbol": "VLO",
+      "rows": 3018
+    },
+    "VLTO": {
+      "status": "downloaded",
+      "provider_symbol": "VLTO",
+      "rows": 563
+    },
+    "VMC": {
+      "status": "downloaded",
+      "provider_symbol": "VMC",
+      "rows": 3018
+    },
+    "VNO": {
+      "status": "downloaded",
+      "provider_symbol": "VNO",
+      "rows": 3018
+    },
+    "VNT": {
+      "status": "downloaded",
+      "provider_symbol": "VNT",
+      "rows": 1324
+    },
+    "VOD": {
+      "status": "downloaded",
+      "provider_symbol": "VOD",
+      "rows": 3018
+    },
+    "VRSK": {
+      "status": "downloaded",
+      "provider_symbol": "VRSK",
+      "rows": 3018
+    },
+    "VRSN": {
+      "status": "downloaded",
+      "provider_symbol": "VRSN",
+      "rows": 3018
+    },
+    "VRTX": {
+      "status": "downloaded",
+      "provider_symbol": "VRTX",
+      "rows": 3018
+    },
+    "VST": {
+      "status": "downloaded",
+      "provider_symbol": "VST",
+      "rows": 2323
+    },
+    "VTR": {
+      "status": "downloaded",
+      "provider_symbol": "VTR",
+      "rows": 3018
+    },
+    "VTRS": {
+      "status": "downloaded",
+      "provider_symbol": "VTRS",
+      "rows": 3018
+    },
+    "VZ": {
+      "status": "downloaded",
+      "provider_symbol": "VZ",
+      "rows": 3018
+    },
+    "WAB": {
+      "status": "downloaded",
+      "provider_symbol": "WAB",
+      "rows": 3018
+    },
+    "WAT": {
+      "status": "downloaded",
+      "provider_symbol": "WAT",
+      "rows": 3018
+    },
+    "WBD": {
+      "status": "downloaded",
+      "provider_symbol": "WBD",
+      "rows": 3018
+    },
+    "WDAY": {
+      "status": "downloaded",
+      "provider_symbol": "WDAY",
+      "rows": 3018
+    },
+    "WDC": {
+      "status": "downloaded",
+      "provider_symbol": "WDC",
+      "rows": 3018
+    },
+    "WEC": {
+      "status": "downloaded",
+      "provider_symbol": "WEC",
+      "rows": 3018
+    },
+    "WELL": {
+      "status": "downloaded",
+      "provider_symbol": "WELL",
+      "rows": 3018
+    },
+    "WFC": {
+      "status": "downloaded",
+      "provider_symbol": "WFC",
+      "rows": 3018
+    },
+    "WHR": {
+      "status": "downloaded",
+      "provider_symbol": "WHR",
+      "rows": 3018
+    },
+    "WM": {
+      "status": "downloaded",
+      "provider_symbol": "WM",
+      "rows": 3018
+    },
+    "WMB": {
+      "status": "downloaded",
+      "provider_symbol": "WMB",
+      "rows": 3018
+    },
+    "WMT": {
+      "status": "downloaded",
+      "provider_symbol": "WMT",
+      "rows": 3018
+    },
+    "WRB": {
+      "status": "downloaded",
+      "provider_symbol": "WRB",
+      "rows": 3018
+    },
+    "WSM": {
+      "status": "downloaded",
+      "provider_symbol": "WSM",
+      "rows": 3018
+    },
+    "WST": {
+      "status": "downloaded",
+      "provider_symbol": "WST",
+      "rows": 3018
+    },
+    "WTW": {
+      "status": "downloaded",
+      "provider_symbol": "WTW",
+      "rows": 3018
+    },
+    "WU": {
+      "status": "downloaded",
+      "provider_symbol": "WU",
+      "rows": 3018
+    },
+    "WY": {
+      "status": "downloaded",
+      "provider_symbol": "WY",
+      "rows": 3018
+    },
+    "WYNN": {
+      "status": "downloaded",
+      "provider_symbol": "WYNN",
+      "rows": 3018
+    },
+    "XEL": {
+      "status": "downloaded",
+      "provider_symbol": "XEL",
+      "rows": 3018
+    },
+    "XOM": {
+      "status": "downloaded",
+      "provider_symbol": "XOM",
+      "rows": 3018
+    },
+    "XRX": {
+      "status": "downloaded",
+      "provider_symbol": "XRX",
+      "rows": 3018
+    },
+    "XYL": {
+      "status": "downloaded",
+      "provider_symbol": "XYL",
+      "rows": 3018
+    },
+    "XYZ": {
+      "status": "downloaded",
+      "provider_symbol": "XYZ",
+      "rows": 2543
+    },
+    "YUM": {
+      "status": "downloaded",
+      "provider_symbol": "YUM",
+      "rows": 3018
+    },
+    "ZBH": {
+      "status": "downloaded",
+      "provider_symbol": "ZBH",
+      "rows": 3018
+    },
+    "ZBRA": {
+      "status": "downloaded",
+      "provider_symbol": "ZBRA",
+      "rows": 3018
+    },
+    "ZION": {
+      "status": "downloaded",
+      "provider_symbol": "ZION",
+      "rows": 3018
+    },
+    "ZS": {
+      "status": "downloaded",
+      "provider_symbol": "ZS",
+      "rows": 1960
+    },
+    "ZTS": {
+      "status": "downloaded",
+      "provider_symbol": "ZTS",
+      "rows": 3018
+    },
+    "SPY": {
+      "status": "downloaded",
+      "provider_symbol": "SPY",
+      "rows": 3018
+    },
+    "QQQ": {
+      "status": "downloaded",
+      "provider_symbol": "QQQ",
+      "rows": 3018
+    },
+    "SMH": {
+      "status": "downloaded",
+      "provider_symbol": "SMH",
+      "rows": 3018
+    },
+    "^VIX": {
+      "status": "downloaded",
+      "provider_symbol": "^VIX",
+      "rows": 3018
+    },
+    "^VIX3M": {
+      "status": "downloaded",
+      "provider_symbol": "^VIX3M",
+      "rows": 3018
+    }
+  },
+  "downloaded_at_utc": "2026-08-19T16:21:59.643872+00:00"
+}

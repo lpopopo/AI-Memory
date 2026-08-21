@@ -1,0 +1,46 @@
+{
+  "research_only": true,
+  "formal_v9_modified": false,
+  "live_authorization": false,
+  "changes_promotion_gate": false,
+  "as_of": "2026-08-20",
+  "sessions": 4,
+  "input_hashes": {
+    "signals": "d06b1b85878f87abedce9044d923bc693e4476816e1e7340531c8c01b1cf13ae",
+    "baseline": "65756e9e3ae30621150e37ad0c16c282c0971e73356781654d0b3f7025d3d08c",
+    "rsr1": "0fbbc368538cadb65e1a7873c7810057915254a3fe6ff58d02c275ac26986ce9",
+    "rsr2": "7195ea0ab7312a9f9b18758bfef0cc17096d8f9ea91aeb90f3b245087317b2e1",
+    "status": "55f53dcb5cb9df6eb731837cd76e5bf317dbd4326d3ca9872fa4686d456e9ef6"
+  },
+  "closed_trade_counts": {
+    "matched_baseline": 0,
+    "RSR1-shadow": 0,
+    "RSR2-profit-lock-shadow": 0
+  },
+  "path_pairing": {
+    "common_baseline_rsr1": 0,
+    "baseline_only": 0,
+    "rsr1_only": 0
+  },
+  "direct_quality_exclusions": {
+    "status": "awaiting_closed_baseline_exclusion",
+    "closed_direct_exclusions": 0,
+    "avoided_losing_trades": null,
+    "avoided_loss_dollars": null,
+    "missed_winning_trades": null,
+    "missed_profit_dollars": null,
+    "net_pnl_removed": null
+  },
+  "profit_lock_attribution": {
+    "status": "awaiting_paired_rsr_exit",
+    "paired_closed_trades": 0,
+    "aggregate_pnl_delta": null,
+    "aggregate_direct_exit_effect": null,
+    "aggregate_capital_path_and_sizing_residual": null,
+    "largest_positive_delta_share": null,
+    "two_largest_positive_delta_share": null
+  },
+  "review_eligible": false,
+  "overall_status": "awaiting_sample",
+  "historical_calibration_is_forward_evidence": false
+}

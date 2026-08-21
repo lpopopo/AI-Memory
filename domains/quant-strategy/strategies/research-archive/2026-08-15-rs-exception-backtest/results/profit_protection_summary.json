@@ -1,0 +1,40 @@
+{
+  "generated_at_utc": "2026-08-15T07:20:49.228547+00:00",
+  "data_end": "2026-08-07",
+  "universe": "ai_capex_broad",
+  "universe_size": 32,
+  "research_only": true,
+  "authorizes_trade": false,
+  "frozen_trades": 23,
+  "frozen_winners": 15,
+  "frozen_losses": 8,
+  "losers_reaching_8pct_mfe": 1,
+  "losers_reaching_8pct_close": 1,
+  "winners_reaching_8pct_mfe": 14,
+  "neighbor_passes": 8,
+  "neighbor_total": 9,
+  "central_10bps_trades": 23,
+  "central_20bps_trades": 24,
+  "central_20bps_return": 0.14716992830651732,
+  "central_20bps_baseline_return": 0.07135455622031994,
+  "frozen_20bps_return": 0.1344631357121011,
+  "central_fixed_path_20bps_return": 0.17720279460534338,
+  "frozen_fixed_path_20bps_return": 0.153048788974526,
+  "central_profit_lock_exits": [
+    {
+      "symbol": "INTC",
+      "signal_date": "2025-02-12",
+      "profit_lock_date": "2025-02-18",
+      "exit_date": "2025-02-24",
+      "return": 0.04469128799576756
+    },
+    {
+      "symbol": "KLAC",
+      "signal_date": "2026-01-05",
+      "profit_lock_date": "2026-01-27",
+      "exit_date": "2026-01-30",
+      "return": 0.045210099869915726
+    }
+  ],
+  "decision": "nominate_separate_forward_challenger_do_not_modify_rsr1"
+}

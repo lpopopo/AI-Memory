@@ -1,0 +1,33 @@
+{
+  "tested_training_ranks": 20,
+  "default_2026": {
+    "final_value": 5930.347925082218,
+    "total_return": -0.011608679152963597,
+    "cagr": -0.019461915966567878,
+    "max_drawdown": -0.02890520248697248,
+    "volatility": 0.037059675792750206,
+    "sharpe": -0.5106761443183211,
+    "sortino": -0.32813864456654473,
+    "trade_count": 8,
+    "win_rate": 0.25,
+    "average_win": 0.10536666948789804,
+    "average_loss": -0.06209138614088087,
+    "profit_factor": 0.5714034582436445,
+    "exception_trade_count": 0,
+    "exception_win_rate": null,
+    "exception_average_return": null,
+    "exposure": 0.039769546263777426,
+    "turnover": 1.1641797292227547,
+    "costs": 22.98503170829332
+  },
+  "share_positive_return_delta": 1.0,
+  "share_nonworse_drawdown": 1.0,
+  "share_positive_sharpe_delta": 1.0,
+  "share_nonworse_win_rate": 0.2,
+  "median_return_delta": 0.011527043064605835,
+  "median_drawdown_delta": 0.024849288065179276,
+  "median_sharpe_delta": 0.4862431513375974,
+  "median_win_rate_delta": -0.25,
+  "median_trade_count": 1.0,
+  "status": "robustness_diagnostic_only; post_hoc and not fresh OOS"
+}

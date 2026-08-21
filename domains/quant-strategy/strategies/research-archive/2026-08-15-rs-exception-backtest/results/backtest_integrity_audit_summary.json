@@ -1,0 +1,261 @@
+{
+  "research_only": true,
+  "formal_v9_modified": false,
+  "live_authorization": false,
+  "as_of": "2026-08-18",
+  "audit_passed": true,
+  "headline_conclusion_changed": false,
+  "checks": [
+    {
+      "check": "causal_features",
+      "severity": "pass"
+    },
+    {
+      "check": "execution_chronology",
+      "severity": "pass"
+    },
+    {
+      "check": "price_feasibility",
+      "severity": "pass"
+    },
+    {
+      "check": "corporate_action_consistency",
+      "severity": "pass"
+    },
+    {
+      "check": "portfolio_accounting",
+      "severity": "pass"
+    },
+    {
+      "check": "exit_path_integrity",
+      "severity": "minor"
+    },
+    {
+      "check": "data_invariants",
+      "severity": "minor"
+    },
+    {
+      "check": "cross_engine_consistency",
+      "severity": "pass"
+    }
+  ],
+  "causality": {
+    "cutoff": "2025-12-31",
+    "feature_prefix_unchanged": {
+      "ma20": true,
+      "rs20": true,
+      "volume_ratio": true,
+      "atr_pct": true,
+      "close_location": true,
+      "signal": true,
+      "score": true,
+      "broad_healthy": true,
+      "smh_healthy": true
+    },
+    "passed": true
+  },
+  "execution": {
+    "chronology_failures": [],
+    "price_feasibility_failures": [],
+    "chronology_passed": true,
+    "price_feasibility_passed": true
+  },
+  "adjustment": {
+    "current_source": "Yahoo Finance via yfinance auto_adjust=True with local-cache fallback; Cboe official history for volatility indices",
+    "pit_adjustment": "Yahoo Finance auto_adjust=True; volume unadjusted",
+    "same_basis_documented": true
+  },
+  "current_data": {
+    "strictly_increasing_unique_dates": true,
+    "aligned_panel_dates": true,
+    "invalid_high_bars": 0,
+    "invalid_low_bars": 0,
+    "nonpositive_ohlc_bars": 0,
+    "negative_volume_bars": 0,
+    "invalid_ohlc_records": []
+  },
+  "pit_data": {
+    "strictly_increasing_unique_dates": true,
+    "aligned_panel_dates": true,
+    "invalid_high_bars": 3,
+    "invalid_low_bars": 3,
+    "nonpositive_ohlc_bars": 0,
+    "negative_volume_bars": 0,
+    "invalid_ohlc_records": [
+      {
+        "date": "2015-03-30",
+        "symbol": "EVHC",
+        "open": 61.84999847412109,
+        "high": 62.68999862670898,
+        "low": 61.91999816894531,
+        "close": 62.43000030517578
+      },
+      {
+        "date": "2018-09-20",
+        "symbol": "ANDV",
+        "open": 155.4199981689453,
+        "high": 153.5800018310547,
+        "low": 148.75,
+        "close": 152.55999755859375
+      },
+      {
+        "date": "2021-05-05",
+        "symbol": "AVB",
+        "open": 158.37691147006828,
+        "high": 157.76721425772408,
+        "low": 155.99243743861322,
+        "close": 156.98214721679688
+      },
+      {
+        "date": "2021-05-05",
+        "symbol": "HUBB",
+        "open": 180.3050952787261,
+        "high": 182.7523461420498,
+        "low": 180.5167094929784,
+        "close": 182.28314208984372
+      },
+      {
+        "date": "2021-05-05",
+        "symbol": "UA",
+        "open": 20.8700008392334,
+        "high": 21.825000762939453,
+        "low": 21.0,
+        "close": 21.1299991607666
+      },
+      {
+        "date": "2021-11-02",
+        "symbol": "TEG",
+        "open": 16850.0,
+        "high": 17000.0,
+        "low": 16500.0,
+        "close": 17250.0
+      }
+    ]
+  },
+  "accounting": {
+    "ending_cash_for_closed_and_open_path": 7086.299387555393,
+    "minimum_cash": 4624.174030431366,
+    "nonnegative": true,
+    "whole_shares": true,
+    "maximum_concurrent_positions": 3,
+    "maximum_entry_exposure": 0.23490220355426872,
+    "maximum_close_exposure_after_price_drift": 0.26177134611622727,
+    "sleeve_cap": 0.25
+  },
+  "invalid_bar_trade_impacts": [],
+  "cross_engine": {
+    "common_trades": 23,
+    "common_entry_mismatches": [],
+    "unactivated_profit_lock_exit_mismatches": [],
+    "passed": true
+  },
+  "terminal_liquidation_sensitivity": {
+    "forced_terminal_trade_count": 9,
+    "maximum_absolute_return_delta": 0.0007149719476700067,
+    "nonliquidated_transferability_screen_passed": false,
+    "nonliquidated_screen": [
+      {
+        "period": "validation_2020_2022",
+        "coverage": true,
+        "sample": true,
+        "return": true,
+        "sharpe": false,
+        "drawdown": true,
+        "win_rate": true,
+        "expectancy": false,
+        "passed": false
+      },
+      {
+        "period": "final_2023_2025",
+        "coverage": true,
+        "sample": true,
+        "return": true,
+        "sharpe": true,
+        "drawdown": true,
+        "win_rate": true,
+        "expectancy": true,
+        "passed": true
+      }
+    ],
+    "rows": [
+      {
+        "period": "development_2015_2019",
+        "variant": "matched_baseline",
+        "forced_terminal_trades": 3,
+        "open_positions_at_end": 3,
+        "forced_return": -0.07090601673499264,
+        "nonliquidated_return": -0.07019775106517001,
+        "return_delta": 0.0007082656698226275,
+        "forced_win_rate": 0.37799043062200954,
+        "nonliquidated_win_rate": 0.3737864077669903,
+        "forced_trade_count": 209,
+        "nonliquidated_trade_count": 206
+      },
+      {
+        "period": "development_2015_2019",
+        "variant": "combined_4pct_50pct",
+        "forced_terminal_trades": 3,
+        "open_positions_at_end": 3,
+        "forced_return": -0.0583481412834852,
+        "nonliquidated_return": -0.05763316933581519,
+        "return_delta": 0.0007149719476700067,
+        "forced_win_rate": 0.37962962962962965,
+        "nonliquidated_win_rate": 0.3755868544600939,
+        "forced_trade_count": 216,
+        "nonliquidated_trade_count": 213
+      },
+      {
+        "period": "validation_2020_2022",
+        "variant": "matched_baseline",
+        "forced_terminal_trades": 0,
+        "open_positions_at_end": 0,
+        "forced_return": -0.08299505718814526,
+        "nonliquidated_return": -0.08299505718814526,
+        "return_delta": 0.0,
+        "forced_win_rate": 0.34375,
+        "nonliquidated_win_rate": 0.34375,
+        "forced_trade_count": 96,
+        "nonliquidated_trade_count": 96
+      },
+      {
+        "period": "validation_2020_2022",
+        "variant": "combined_4pct_50pct",
+        "forced_terminal_trades": 0,
+        "open_positions_at_end": 0,
+        "forced_return": -0.07578992877852775,
+        "nonliquidated_return": -0.07578992877852775,
+        "return_delta": 0.0,
+        "forced_win_rate": 0.34444444444444444,
+        "nonliquidated_win_rate": 0.34444444444444444,
+        "forced_trade_count": 90,
+        "nonliquidated_trade_count": 90
+      },
+      {
+        "period": "final_2023_2025",
+        "variant": "matched_baseline",
+        "forced_terminal_trades": 2,
+        "open_positions_at_end": 2,
+        "forced_return": 0.0010659435776263493,
+        "nonliquidated_return": 0.0015382453812151642,
+        "return_delta": 0.0004723018035888149,
+        "forced_win_rate": 0.4172661870503597,
+        "nonliquidated_win_rate": 0.40875912408759124,
+        "forced_trade_count": 139,
+        "nonliquidated_trade_count": 137
+      },
+      {
+        "period": "final_2023_2025",
+        "variant": "combined_4pct_50pct",
+        "forced_terminal_trades": 1,
+        "open_positions_at_end": 1,
+        "forced_return": 0.01624428396099531,
+        "nonliquidated_return": 0.01647537243145436,
+        "return_delta": 0.000231088470459051,
+        "forced_win_rate": 0.4233576642335766,
+        "nonliquidated_win_rate": 0.41911764705882354,
+        "forced_trade_count": 137,
+        "nonliquidated_trade_count": 136
+      }
+    ]
+  }
+}

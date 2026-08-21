@@ -1,0 +1,9 @@
+{
+  "generated_at_utc": "2026-08-15T08:01:13.710777+00:00",
+  "research_only": true,
+  "authorizes_trade": false,
+  "central_passes": false,
+  "passing_variants": [],
+  "decision": "reject_conditional_extension_keep_rsr2_frozen",
+  "decision_explanation": "The central extension fails the preregistered cross-period screen. Keep frozen RSR2 and do not optimize further on this history."
+}

@@ -1,0 +1,308 @@
+{
+  "research_only": true,
+  "formal_v9_modified": false,
+  "live_authorization": false,
+  "changes_promotion_gate": false,
+  "preregistration": "forward-power-duration-audit-preregistration.md",
+  "alpha_one_sided": 0.05,
+  "target_power": 0.8,
+  "maximum_sample_search": 500,
+  "baseline_rate": 0.4318181818181818,
+  "arrival": {
+    "trades": 23,
+    "sessions": 659,
+    "rate_per_session": 0.03490136570561457
+  },
+  "variants": [
+    {
+      "variant": "RSR1-shadow",
+      "planning_win_rate": 0.6521739130434783,
+      "break_even_win_rate": 0.2703893956162816
+    },
+    {
+      "variant": "RSR2-profit-lock-shadow",
+      "planning_win_rate": 0.6956521739130435,
+      "break_even_win_rate": 0.2676234800597734
+    }
+  ],
+  "one_sample_power": [
+    {
+      "variant": "RSR1-shadow",
+      "null": "candidate_breakeven",
+      "null_rate": 0.2703893956,
+      "planning_true_rate": 0.652173913,
+      "power_at_20": 0.9490916444,
+      "critical_wins_at_20": 10,
+      "minimum_n_for_80pct_power": 11,
+      "power_at_minimum_n": 0.8549622676,
+      "critical_wins_at_minimum_n": 6
+    },
+    {
+      "variant": "RSR1-shadow",
+      "null": "matched_baseline_rate",
+      "null_rate": 0.4318181818,
+      "planning_true_rate": 0.652173913,
+      "power_at_20": 0.6090301157,
+      "critical_wins_at_20": 13,
+      "minimum_n_for_80pct_power": 32,
+      "power_at_minimum_n": 0.8115481364,
+      "critical_wins_at_minimum_n": 19
+    },
+    {
+      "variant": "RSR1-shadow",
+      "null": "majority_50pct",
+      "null_rate": 0.5,
+      "planning_true_rate": 0.652173913,
+      "power_at_20": 0.2518271701,
+      "critical_wins_at_20": 15,
+      "minimum_n_for_80pct_power": 69,
+      "power_at_minimum_n": 0.8125685081,
+      "critical_wins_at_minimum_n": 42
+    },
+    {
+      "variant": "RSR2-profit-lock-shadow",
+      "null": "candidate_breakeven",
+      "null_rate": 0.2676234801,
+      "planning_true_rate": 0.6956521739,
+      "power_at_20": 0.9808541198,
+      "critical_wins_at_20": 10,
+      "minimum_n_for_80pct_power": 10,
+      "power_at_minimum_n": 0.842173775,
+      "critical_wins_at_minimum_n": 6
+    },
+    {
+      "variant": "RSR2-profit-lock-shadow",
+      "null": "matched_baseline_rate",
+      "null_rate": 0.4318181818,
+      "planning_true_rate": 0.6956521739,
+      "power_at_20": 0.7588326411,
+      "critical_wins_at_20": 13,
+      "minimum_n_for_80pct_power": 22,
+      "power_at_minimum_n": 0.8009536793,
+      "critical_wins_at_minimum_n": 14
+    },
+    {
+      "variant": "RSR2-profit-lock-shadow",
+      "null": "majority_50pct",
+      "null_rate": 0.5,
+      "planning_true_rate": 0.6956521739,
+      "power_at_20": 0.3998310963,
+      "critical_wins_at_20": 15,
+      "minimum_n_for_80pct_power": 42,
+      "power_at_minimum_n": 0.8199629892,
+      "critical_wins_at_minimum_n": 27
+    }
+  ],
+  "two_sample_power": [
+    {
+      "variant": "RSR1-shadow",
+      "candidate_rate": 0.652173913,
+      "baseline_rate": 0.4318181818,
+      "power_at_equal_n_20": 0.3758520116,
+      "minimum_equal_n_for_80pct_power": 59,
+      "power_at_minimum_equal_n": 0.8035962252
+    },
+    {
+      "variant": "RSR2-profit-lock-shadow",
+      "candidate_rate": 0.6956521739,
+      "baseline_rate": 0.4318181818,
+      "power_at_equal_n_20": 0.4937888013,
+      "minimum_equal_n_for_80pct_power": 43,
+      "power_at_minimum_equal_n": 0.808070726
+    }
+  ],
+  "wilson_confidence": [
+    {
+      "variant": "RSR1-shadow",
+      "event": "lower_bound_above_candidate_breakeven",
+      "threshold": 0.2703893956,
+      "probability_at_20": 0.9490916444,
+      "minimum_n_for_80pct_probability": 11,
+      "probability_at_minimum_n": 0.8549622676
+    },
+    {
+      "variant": "RSR1-shadow",
+      "event": "lower_bound_above_matched_baseline_rate",
+      "threshold": 0.4318181818,
+      "probability_at_20": 0.6090301157,
+      "minimum_n_for_80pct_probability": 37,
+      "probability_at_minimum_n": 0.8188592632
+    },
+    {
+      "variant": "RSR1-shadow",
+      "event": "lower_bound_above_majority_50pct",
+      "threshold": 0.5,
+      "probability_at_20": 0.2518271701,
+      "minimum_n_for_80pct_probability": 80,
+      "probability_at_minimum_n": 0.8065866635
+    },
+    {
+      "variant": "RSR1-shadow",
+      "event": "half_width_at_most_10pct",
+      "threshold": 0.1,
+      "probability_at_20": 0.0001937626,
+      "minimum_n_for_80pct_probability": 88,
+      "probability_at_minimum_n": 0.808837539
+    },
+    {
+      "variant": "RSR2-profit-lock-shadow",
+      "event": "lower_bound_above_candidate_breakeven",
+      "threshold": 0.2676234801,
+      "probability_at_20": 0.9808541198,
+      "minimum_n_for_80pct_probability": 10,
+      "probability_at_minimum_n": 0.842173775
+    },
+    {
+      "variant": "RSR2-profit-lock-shadow",
+      "event": "lower_bound_above_matched_baseline_rate",
+      "threshold": 0.4318181818,
+      "probability_at_20": 0.7588326411,
+      "minimum_n_for_80pct_probability": 27,
+      "probability_at_minimum_n": 0.8309247498
+    },
+    {
+      "variant": "RSR2-profit-lock-shadow",
+      "event": "lower_bound_above_majority_50pct",
+      "threshold": 0.5,
+      "probability_at_20": 0.3998310963,
+      "minimum_n_for_80pct_probability": 48,
+      "probability_at_minimum_n": 0.8187982527
+    },
+    {
+      "variant": "RSR2-profit-lock-shadow",
+      "event": "half_width_at_most_10pct",
+      "threshold": 0.1,
+      "probability_at_20": 0.0007044383,
+      "minimum_n_for_80pct_probability": 84,
+      "probability_at_minimum_n": 0.8251613984
+    }
+  ],
+  "duration": [
+    {
+      "target_trades": 10,
+      "expected_sessions": 286.5217391304,
+      "median_completion_sessions": 278,
+      "p80_completion_sessions": 359,
+      "expected_years_252": 1.1369910283,
+      "probability_within_126_sessions": 0.0148392301
+    },
+    {
+      "target_trades": 11,
+      "expected_sessions": 315.1739130435,
+      "median_completion_sessions": 306,
+      "p80_completion_sessions": 392,
+      "expected_years_252": 1.2506901311,
+      "probability_within_126_sessions": 0.0056659354
+    },
+    {
+      "target_trades": 20,
+      "expected_sessions": 573.0434782609,
+      "median_completion_sessions": 564,
+      "p80_completion_sessions": 678,
+      "expected_years_252": 2.2739820566,
+      "probability_within_126_sessions": 4.67e-08
+    },
+    {
+      "target_trades": 22,
+      "expected_sessions": 630.347826087,
+      "median_completion_sessions": 621,
+      "p80_completion_sessions": 740,
+      "expected_years_252": 2.5013802622,
+      "probability_within_126_sessions": 1.9e-09
+    },
+    {
+      "target_trades": 27,
+      "expected_sessions": 773.6086956522,
+      "median_completion_sessions": 765,
+      "p80_completion_sessions": 896,
+      "expected_years_252": 3.0698757764,
+      "probability_within_126_sessions": 0.0
+    },
+    {
+      "target_trades": 32,
+      "expected_sessions": 916.8695652174,
+      "median_completion_sessions": 908,
+      "p80_completion_sessions": 1050,
+      "expected_years_252": 3.6383712905,
+      "probability_within_126_sessions": 2.063557741e-17
+    },
+    {
+      "target_trades": 37,
+      "expected_sessions": 1060.1304347826,
+      "median_completion_sessions": 1051,
+      "p80_completion_sessions": 1204,
+      "expected_years_252": 4.2068668047,
+      "probability_within_126_sessions": 6.361015497e-22
+    },
+    {
+      "target_trades": 42,
+      "expected_sessions": 1203.3913043478,
+      "median_completion_sessions": 1194,
+      "p80_completion_sessions": 1357,
+      "expected_years_252": 4.7753623188,
+      "probability_within_126_sessions": 1.009606638e-26
+    },
+    {
+      "target_trades": 43,
+      "expected_sessions": 1232.0434782609,
+      "median_completion_sessions": 1223,
+      "p80_completion_sessions": 1387,
+      "expected_years_252": 4.8890614217,
+      "probability_within_126_sessions": 1.02987063e-27
+    },
+    {
+      "target_trades": 48,
+      "expected_sessions": 1375.3043478261,
+      "median_completion_sessions": 1366,
+      "p80_completion_sessions": 1539,
+      "expected_years_252": 5.4575569358,
+      "probability_within_126_sessions": 8.15128629e-33
+    },
+    {
+      "target_trades": 59,
+      "expected_sessions": 1690.4782608696,
+      "median_completion_sessions": 1681,
+      "p80_completion_sessions": 1873,
+      "expected_years_252": 6.7082470669,
+      "probability_within_126_sessions": 8.525371957e-45
+    },
+    {
+      "target_trades": 69,
+      "expected_sessions": 1977.0,
+      "median_completion_sessions": 1968,
+      "p80_completion_sessions": 2175,
+      "expected_years_252": 7.8452380952,
+      "probability_within_126_sessions": 1.847979526e-56
+    },
+    {
+      "target_trades": 80,
+      "expected_sessions": 2292.1739130435,
+      "median_completion_sessions": 2283,
+      "p80_completion_sessions": 2505,
+      "expected_years_252": 9.0959282264,
+      "probability_within_126_sessions": 5.208268825e-70
+    },
+    {
+      "target_trades": 84,
+      "expected_sessions": 2406.7826086957,
+      "median_completion_sessions": 2398,
+      "p80_completion_sessions": 2625,
+      "expected_years_252": 9.5507246377,
+      "probability_within_126_sessions": 4.194881898e-75
+    },
+    {
+      "target_trades": 88,
+      "expected_sessions": 2521.3913043478,
+      "median_completion_sessions": 2512,
+      "p80_completion_sessions": 2745,
+      "expected_years_252": 10.005521049,
+      "probability_within_126_sessions": 2.796344455e-80
+    }
+  ],
+  "interpretation": {
+    "twenty_trades_powerful_against_breakeven": true,
+    "twenty_trades_powerful_against_majority": false,
+    "twenty_trade_gate_is_binding_clock": true,
+    "changes_promotion_gate": false
+  }
+}

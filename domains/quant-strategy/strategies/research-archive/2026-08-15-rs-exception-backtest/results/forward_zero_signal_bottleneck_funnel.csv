@@ -1,0 +1,13 @@
+condition,marginal_pass_symbol_days,marginal_fail_symbol_days,sequential_survivor_symbol_days
+usable_ohlcv,128,0,128
+broad_gate,128,0,128
+smh_ma50,32,96,32
+above_ma20,84,44,29
+above_ma50,39,89,16
+breakout_prior_high20,11,117,8
+rs20_at_least_3pct,54,74,7
+volume_ratio_at_least_1_2,14,114,1
+extension_0_to_12pct,60,68,0
+event_cooldown_clear,126,2,0
+atr_at_most_4pct,20,108,0
+close_location_at_least_50pct,47,81,0

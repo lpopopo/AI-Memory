@@ -1,0 +1,144 @@
+{
+  "research_only": true,
+  "formal_v9_modified": false,
+  "real_account_modified": false,
+  "live_order_authorization": false,
+  "new_parameter_search": false,
+  "comparability_rule": "Pareto dominance is computed only within fixed family-period-NAV-cost groups.",
+  "row_count": 27,
+  "comparable_group_count": 11,
+  "pareto_frontier_rows": [
+    {
+      "family": "stock_selection_exit",
+      "variant": "RSR2",
+      "period": "full_2024_2026",
+      "evidence_tier": "retrospective_current_list",
+      "decision_priority": "historical_leader_forward_unproven"
+    },
+    {
+      "family": "profit_realization",
+      "variant": "RSR2",
+      "period": "full_2024_2026",
+      "evidence_tier": "retrospective_current_list",
+      "decision_priority": "retain_whole_position_lock"
+    },
+    {
+      "family": "profit_realization",
+      "variant": "partial_half_at_15",
+      "period": "full_2024_2026",
+      "evidence_tier": "retrospective_current_list",
+      "decision_priority": "reject"
+    },
+    {
+      "family": "winner_extension",
+      "variant": "rsr2_frozen",
+      "period": "full_2024_2026",
+      "evidence_tier": "retrospective_current_list_cross_period_checked",
+      "decision_priority": "retain_frozen_exit"
+    },
+    {
+      "family": "winner_extension",
+      "variant": "extend30_any_winner",
+      "period": "full_2024_2026",
+      "evidence_tier": "retrospective_current_list_cross_period_checked",
+      "decision_priority": "reject"
+    },
+    {
+      "family": "entry_ranking",
+      "variant": "formal_composite",
+      "period": "development_2024_2025",
+      "evidence_tier": "historical_development_with_short_heldout",
+      "decision_priority": "retain"
+    },
+    {
+      "family": "entry_ranking",
+      "variant": "balanced_rank",
+      "period": "development_2024_2025",
+      "evidence_tier": "historical_development_with_short_heldout",
+      "decision_priority": "reject_or_insufficient"
+    },
+    {
+      "family": "shared_capital",
+      "variant": "formal_70_25",
+      "period": "train_2024_2025",
+      "evidence_tier": "historical_multi_period",
+      "decision_priority": "retain_deployable_architecture"
+    },
+    {
+      "family": "shared_capital",
+      "variant": "challenger_80_20",
+      "period": "heldout_2026",
+      "evidence_tier": "short_heldout",
+      "decision_priority": "reject"
+    },
+    {
+      "family": "shared_capital",
+      "variant": "formal_70_25",
+      "period": "full_2024_2026",
+      "evidence_tier": "historical_multi_period",
+      "decision_priority": "retain_deployable_architecture"
+    },
+    {
+      "family": "core_only_allocation",
+      "variant": "core_70",
+      "period": "full_2006_2025",
+      "evidence_tier": "historical_multi_period_core_only",
+      "decision_priority": "retain_deployable_architecture"
+    },
+    {
+      "family": "core_only_allocation",
+      "variant": "core_80",
+      "period": "full_2006_2025",
+      "evidence_tier": "historical_multi_period_core_only",
+      "decision_priority": "local_frontier_not_deployable"
+    },
+    {
+      "family": "combined_2026_architecture",
+      "variant": "v9_core_70",
+      "period": "heldout_2026_through_2026_08_07",
+      "evidence_tier": "short_heldout_with_three_stock_trades",
+      "decision_priority": "no_change"
+    },
+    {
+      "family": "combined_2026_architecture",
+      "variant": "v9_core_plus_rsr2_sgov_proxy",
+      "period": "heldout_2026_through_2026_08_07",
+      "evidence_tier": "conditional_proxy",
+      "decision_priority": "conditional_only"
+    }
+  ],
+  "best_historical_multi_objective_candidate": {
+    "variant": "RSR2",
+    "return": 0.18106117055994786,
+    "win_rate": 0.6956521739130435,
+    "max_drawdown": -0.023258890167864976,
+    "status": "frozen shadow leader; not promoted",
+    "evidence_gap": "exact point-in-time transfer failed, selection bias remains uncontained, and genuine-forward signals/trades are zero through 2026-08-20"
+  },
+  "best_deployable_architecture": {
+    "variant": "formal V9 70/30",
+    "stock_sleeve_action": "no correlated additions",
+    "status": "unchanged",
+    "reason": "80/20 loses on train/full shared-capital replay and omits stock opportunities; equity challengers lack forward proof"
+  },
+  "retained": [
+    "formal V9 70/30 shared-capital architecture",
+    "current RS-plus-volume contention ordering",
+    "whole-position RSR2 profit-lock specification as a frozen shadow"
+  ],
+  "rejected": [
+    "automatic RSR2 half-position scale-out",
+    "conditional winner extension",
+    "high-volatility sleeve",
+    "80/20 shared-capital challenger"
+  ],
+  "conditional": [
+    "residual-cash yield only after broker, tax, settlement, fee and liquidity verification"
+  ],
+  "interpretation": [
+    "Historical RSR2 has the strongest return-win-drawdown combination on the current-list sample.",
+    "Its evidence strength is insufficient for formal or live promotion.",
+    "A Pareto label is descriptive and never overrides cross-period failure or governance gates.",
+    "The next useful evidence is immutable forward trades and matured opportunity outcomes, not another historical parameter search."
+  ]
+}

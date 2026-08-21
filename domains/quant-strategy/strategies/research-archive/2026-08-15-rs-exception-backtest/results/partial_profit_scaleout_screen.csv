@@ -1,0 +1,2 @@
+sufficient_partial_exits,return_improves_10bps,sharpe_nonworse,drawdown_within_1pp,win_rate_nonworse,return_improves_20bps,profit_diversified,min_return_delta_10bps,min_return_delta_20bps,passes,status
+False,False,True,True,False,False,True,-0.02847847738255438,-0.016488513943673233,False,insufficient

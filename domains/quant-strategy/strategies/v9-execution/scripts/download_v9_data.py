@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Refresh completed V9 daily bars without destroying a usable cache on failure."""
 from pathlib import Path
-import argparse,json,pandas as pd,yfinance as yf
+import argparse,json,pandas as pd,requests,yfinance as yf
 ROOT=Path(__file__).resolve().parents[1];EVENTS=ROOT/"datasets/v9_information_events.json";OUT=ROOT/"datasets/data_v9"
 # Fear Gate advisory breadth/credit proxies used by v9_research_monitors only.
 DIAGNOSTIC_SYMBOLS={"SMH","IWM","RSP","HYG","LQD"}
@@ -24,6 +24,36 @@ def series_from_download(data:pd.DataFrame,field:str)->pd.Series:
  if isinstance(col,pd.DataFrame):col=col.iloc[:,0]
  col.index=pd.to_datetime(col.index).tz_localize(None)
  return col.dropna()
+
+def parse_yahoo_chart(payload:dict,completed_through:pd.Timestamp)->pd.DataFrame:
+ chart=payload.get("chart",{});error=chart.get("error")
+ if error:raise ValueError(f"Yahoo Chart error: {error}")
+ results=chart.get("result") or []
+ if not results:raise ValueError("Yahoo Chart returned no result")
+ item=results[0];timestamps=item.get("timestamp") or []
+ indicators=item.get("indicators") or {};quotes=indicators.get("quote") or []
+ if not timestamps or not quotes:raise ValueError("Yahoo Chart missing timestamps or quote data")
+ quote=quotes[0];index=pd.to_datetime(timestamps,unit="s",utc=True).tz_convert("America/New_York").tz_localize(None).normalize()
+ raw_close=pd.to_numeric(pd.Series(quote.get("close",[]),index=index),errors="coerce")
+ adjusted_blocks=indicators.get("adjclose") or []
+ adjusted=(pd.to_numeric(pd.Series(adjusted_blocks[0].get("adjclose",[]),index=index),errors="coerce") if adjusted_blocks else raw_close.copy())
+ factor=(adjusted/raw_close).replace([float("inf"),float("-inf")],pd.NA).fillna(1.0)
+ frame=pd.DataFrame(index=index)
+ for field in ("Open","High","Low"):
+  values=pd.to_numeric(pd.Series(quote.get(field.lower(),[]),index=index),errors="coerce")
+  frame[field]=values*factor
+ frame["Close"]=adjusted
+ frame["Volume"]=pd.to_numeric(pd.Series(quote.get("volume",[]),index=index),errors="coerce")
+ frame=frame[~frame.index.duplicated(keep="last")].sort_index().loc[:completed_through]
+ return frame.dropna(how="all")
+
+def download_yahoo_chart(symbol:str,start:pd.Timestamp,completed_through:pd.Timestamp)->pd.DataFrame:
+ period1=int(pd.Timestamp(start,tz="UTC").timestamp());period2=int((completed_through+pd.Timedelta(days=1)).tz_localize("UTC").timestamp())
+ url=f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?period1={period1}&period2={period2}&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+ response=requests.get(url,headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"},timeout=20);response.raise_for_status()
+ frame=parse_yahoo_chart(response.json(),completed_through)
+ if frame.empty or frame["Close"].dropna().empty:raise RuntimeError("Yahoo Chart returned no daily bars")
+ return frame
 
 def parse_cboe_history(data:pd.DataFrame,completed_through:pd.Timestamp)->pd.DataFrame:
  normalized=data.rename(columns={column:str(column).strip().upper() for column in data.columns})
@@ -67,6 +97,15 @@ def validate_required_close(close:pd.DataFrame,completed_through:pd.Timestamp)->
  stale=sorted(symbol for symbol in REQUIRED_MARKET_SYMBOLS if symbol in close and (close[symbol].dropna().empty or close[symbol].dropna().index[-1]<completed_through))
  if missing or stale:raise RuntimeError(f"required market data incomplete; missing={missing}, stale={stale}")
 
+def validate_requested_ohlcv(dfs:dict[str,pd.DataFrame],symbols:set[str],completed_through:pd.Timestamp)->None:
+ missing=[]
+ for symbol in sorted(set(symbols)-set(CBOE_HISTORY_URLS)):
+  for field in FIELDS:
+   frame=dfs[field]
+   if symbol not in frame or completed_through not in frame.index or pd.isna(frame.at[completed_through,symbol]):
+    missing.append(f"{symbol}:{field}")
+ if missing:raise RuntimeError(f"requested completed-session OHLCV incomplete: {missing}")
+
 def atomic_write_csv(frame:pd.DataFrame,path:Path)->None:
  temporary=path.with_suffix(path.suffix+".tmp")
  frame.to_csv(temporary,index_label="Date");temporary.replace(path)
@@ -88,13 +127,19 @@ def main():
    source_status[s]={"source":"Yahoo Finance via yfinance auto_adjust=True","status":"downloaded","last_date":str(dfs["Close"][s].dropna().index[-1].date())}
    print(f"Successfully downloaded {s}")
   except Exception as e:
-   if all(s in cached[field].columns for field in FIELDS):
-    for field in FIELDS:dfs[field][s]=cached[field][s].loc[:completed_through]
-    last=dfs["Close"][s].dropna().index[-1] if not dfs["Close"][s].dropna().empty else None;source_status[s]={"source":"existing local cache","status":"cached_fallback","error":str(e),"last_date":str(last.date()) if last is not None else None};print(f"Using cached fallback for {s}: {e}")
-   else:source_status[s]={"source":None,"status":"failed","error":str(e),"last_date":None};print(f"Error downloading {s}: {e}")
+   try:
+    chart=download_yahoo_chart(s,pd.Timestamp("2024-01-01"),completed_through)
+    for field in FIELDS:dfs[field][s]=chart[field]
+    source_status[s]={"source":"Yahoo Chart daily API auto-adjusted","status":"chart_fallback","primary_error":str(e),"last_date":str(chart["Close"].dropna().index[-1].date())};print(f"Used Yahoo Chart fallback for {s}")
+   except Exception as chart_error:
+    if all(s in cached[field].columns for field in FIELDS):
+     for field in FIELDS:dfs[field][s]=cached[field][s].loc[:completed_through]
+     last=dfs["Close"][s].dropna().index[-1] if not dfs["Close"][s].dropna().empty else None;source_status[s]={"source":"existing local cache","status":"cached_fallback","error":str(e),"chart_error":str(chart_error),"last_date":str(last.date()) if last is not None else None};print(f"Using cached fallback for {s}: {e}; chart={chart_error}")
+    else:source_status[s]={"source":None,"status":"failed","error":str(e),"chart_error":str(chart_error),"last_date":None};print(f"Error downloading {s}: {e}; chart={chart_error}")
 
  apply_cboe_history(dfs,source_status,completed_through)
  validate_required_close(dfs["Close"],completed_through)
+ validate_requested_ohlcv(dfs,set(symbols),completed_through)
  core_index=dfs["Close"][["SPY","QQQ"]].dropna().index;last_date=core_index[-1]
  if last_date!=completed_through:raise RuntimeError(f"core data ends at {last_date.date()}, expected {completed_through.date()}")
  meta={"source":"Yahoo Finance via yfinance auto_adjust=True with local-cache fallback; Cboe official history for volatility indices","symbols":list(dfs["Close"].columns),"event_symbols":sorted(event_symbols),"user_watchlist_symbols":sorted(watchlist),"downloaded_at_utc":pd.Timestamp.now(tz="UTC").isoformat(),"completed_through":str(completed_through.date()),"last_date":str(last_date.date()),"symbol_status":source_status}

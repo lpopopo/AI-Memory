@@ -1,0 +1,403 @@
+{
+  "as_of": "2026-08-14",
+  "research_only": true,
+  "formal_cache_modified": false,
+  "authorizes_trade": false,
+  "source_status": {
+    "AAOI": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "ALAB": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "AMAT": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "AMD": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "ASML": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "AVGO": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "AXTI": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "CEG": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "COHR": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "CRDO": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "DRAM": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "GLW": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "INTC": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "KLAC": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "KO": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "LITE": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "LRCX": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "META": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "MRVL": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "MU": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "MXL": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "NOK": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "NVDA": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "ORCL": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "QCOM": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "QQQ": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "RDW": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "RKLB": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "SKHY": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "SMCI": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "SMH": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "SNDK": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "SPY": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "STX": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "TER": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "TSLA": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "TTMI": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "WDC": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-14"
+    },
+    "^VIX": {
+      "source": "Cboe official daily history",
+      "last_date": "2026-08-14"
+    },
+    "^VIX3M": {
+      "source": "Cboe official daily history",
+      "last_date": "2026-08-14"
+    }
+  },
+  "runs": {
+    "default_strict_veto": {
+      "variant": "strict_veto",
+      "period": [
+        "2026-01-02",
+        "2026-08-14"
+      ],
+      "config": {
+        "rs20_min": 0.05,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 1.0,
+        "min_close_location": 0.0
+      },
+      "final_value": 5930.347925082218,
+      "total_return": -0.011608679152963597,
+      "cagr": -0.018859503109065368,
+      "max_drawdown": -0.02890520248697248,
+      "volatility": 0.03645764779855294,
+      "sharpe": -0.5023635285444441,
+      "sortino": -0.31755352699988193,
+      "trade_count": 8,
+      "win_rate": 0.25,
+      "average_win": 0.10536666948789804,
+      "average_loss": -0.06209138614088087,
+      "profit_factor": 0.5714034582436445,
+      "exception_trade_count": 0,
+      "exception_win_rate": null,
+      "exception_average_return": null,
+      "exposure": 0.038486657674623316,
+      "turnover": 1.1641797292227547,
+      "costs": 22.98503170829332
+    },
+    "default_rs_exception": {
+      "variant": "rs_exception",
+      "period": [
+        "2026-01-02",
+        "2026-08-14"
+      ],
+      "config": {
+        "rs20_min": 0.05,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 1.0,
+        "min_close_location": 0.0
+      },
+      "final_value": 5923.770079646122,
+      "total_return": -0.01270498672564635,
+      "cagr": -0.020633386111651664,
+      "max_drawdown": -0.030178513826572884,
+      "volatility": 0.03647060354954889,
+      "sharpe": -0.5516415823931441,
+      "sortino": -0.3743097828513438,
+      "trade_count": 9,
+      "win_rate": 0.2222222222222222,
+      "average_win": 0.10536666948789804,
+      "average_loss": -0.05673779028856263,
+      "profit_factor": 0.5491750154546379,
+      "exception_trade_count": 1,
+      "exception_win_rate": 0.0,
+      "exception_average_return": -0.024616215174653188,
+      "exposure": 0.04190623044444669,
+      "turnover": 1.25215540651081,
+      "costs": 25.51288172202623
+    },
+    "default_breadth_exception": {
+      "variant": "breadth_exception",
+      "period": [
+        "2026-01-02",
+        "2026-08-14"
+      ],
+      "config": {
+        "rs20_min": 0.05,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 1.0,
+        "min_close_location": 0.0
+      },
+      "final_value": 5901.313355257814,
+      "total_return": -0.01644777412369769,
+      "cagr": -0.026680053400111148,
+      "max_drawdown": -0.0347133208873035,
+      "volatility": 0.037092937007292395,
+      "sharpe": -0.7082275095569384,
+      "sortino": -0.4791752076494782,
+      "trade_count": 10,
+      "win_rate": 0.3,
+      "average_win": 0.0720152009217468,
+      "average_loss": -0.06556512811509183,
+      "profit_factor": 0.48795355535300133,
+      "exception_trade_count": 2,
+      "exception_win_rate": 0.5,
+      "exception_average_return": -0.04054765808545663,
+      "exposure": 0.04018458592553261,
+      "turnover": 1.350162262252916,
+      "costs": 28.10090298777574
+    },
+    "risk_filter_strict_veto": {
+      "variant": "strict_veto",
+      "period": [
+        "2026-01-02",
+        "2026-08-14"
+      ],
+      "config": {
+        "rs20_min": 0.03,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 0.04,
+        "min_close_location": 0.5
+      },
+      "final_value": 6036.8819442205195,
+      "total_return": 0.006146990703419952,
+      "cagr": 0.010042573371753738,
+      "max_drawdown": -0.018922207487740872,
+      "volatility": 0.033504440010404694,
+      "sharpe": 0.3141708254764582,
+      "sortino": 0.20772304349491555,
+      "trade_count": 4,
+      "win_rate": 0.5,
+      "average_win": 0.10536666948789804,
+      "average_loss": -0.04244307387536896,
+      "profit_factor": 1.6588653842247734,
+      "exception_trade_count": 0,
+      "exception_win_rate": null,
+      "exception_average_return": null,
+      "exposure": 0.035258926167473295,
+      "turnover": 0.6645118988309219,
+      "costs": 11.987120262050013
+    },
+    "risk_filter_rs_exception": {
+      "variant": "rs_exception",
+      "period": [
+        "2026-01-02",
+        "2026-08-14"
+      ],
+      "config": {
+        "rs20_min": 0.03,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 0.04,
+        "min_close_location": 0.5
+      },
+      "final_value": 6030.304098784423,
+      "total_return": 0.00505068313073731,
+      "cagr": 0.008248651095668746,
+      "max_drawdown": -0.020185907282840976,
+      "volatility": 0.03352402559867514,
+      "sharpe": 0.2611334923592992,
+      "sortino": 0.18718254444223828,
+      "trade_count": 5,
+      "win_rate": 0.4,
+      "average_win": 0.10536666948789804,
+      "average_loss": -0.03650078764179704,
+      "profit_factor": 1.4844329884465597,
+      "exception_trade_count": 1,
+      "exception_win_rate": 0.0,
+      "exception_average_return": -0.024616215174653188,
+      "exposure": 0.03861809804826819,
+      "turnover": 0.7524875761189772,
+      "costs": 14.514970275782922
+    },
+    "risk_filter_breadth_exception": {
+      "variant": "breadth_exception",
+      "period": [
+        "2026-01-02",
+        "2026-08-14"
+      ],
+      "config": {
+        "rs20_min": 0.03,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 0.04,
+        "min_close_location": 0.5
+      },
+      "final_value": 6036.8819442205195,
+      "total_return": 0.006146990703419952,
+      "cagr": 0.010042573371753738,
+      "max_drawdown": -0.018922207487740872,
+      "volatility": 0.033504440010404694,
+      "sharpe": 0.3141708254764582,
+      "sortino": 0.20772304349491555,
+      "trade_count": 4,
+      "win_rate": 0.5,
+      "average_win": 0.10536666948789804,
+      "average_loss": -0.04244307387536896,
+      "profit_factor": 1.6588653842247734,
+      "exception_trade_count": 0,
+      "exception_win_rate": null,
+      "exception_average_return": null,
+      "exposure": 0.035258926167473295,
+      "turnover": 0.6645118988309219,
+      "costs": 11.987120262050013
+    }
+  },
+  "candidate_rows": {
+    "default": [],
+    "risk_filter": []
+  },
+  "note": "The risk filter and exception hypotheses were defined after observing parts of this week; this is retrospective replay, not forward evidence."
+}

@@ -1,0 +1,5 @@
+variant,train_2025_return_nonworse,train_2025_drawdown_nonworse,train_2025_sharpe_nonworse,test_2026_return_nonworse,test_2026_drawdown_nonworse,test_2026_sharpe_nonworse,behaviorally_distinct,has_strict_improvement,passes_promotion_gate
+confirm_2m_both,False,False,False,True,True,True,True,True,False
+confirm_2m_exit,True,False,False,True,True,True,True,True,False
+confirm_2m_entry,False,True,False,False,False,False,True,False,False
+ma200_only,True,True,True,True,True,True,False,False,False

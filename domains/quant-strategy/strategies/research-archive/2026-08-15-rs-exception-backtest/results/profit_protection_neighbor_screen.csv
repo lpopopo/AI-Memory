@@ -1,0 +1,10 @@
+overlay,return_nonworse_train_and_2026,drawdown_nonworse_train_and_2026,sharpe_nonworse_train_and_2026,win_rate_nonworse_train_and_2026,filter_still_beats_paired_baseline,passes_all
+lock_12_to_0,True,True,True,True,True,True
+lock_12_to_3,True,True,True,True,True,True
+lock_12_to_5,False,False,False,False,True,False
+lock_15_to_0,True,True,True,True,True,True
+lock_15_to_3,True,True,True,True,True,True
+lock_15_to_5,True,True,True,True,True,True
+lock_18_to_0,True,True,True,True,True,True
+lock_18_to_3,True,True,True,True,True,True
+lock_18_to_5,True,True,True,True,True,True

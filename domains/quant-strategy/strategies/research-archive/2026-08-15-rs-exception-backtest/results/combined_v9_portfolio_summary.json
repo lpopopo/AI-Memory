@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-08-15T07:37:51.719392+00:00",
+  "period": [
+    "2026-01-02",
+    "2026-08-07"
+  ],
+  "warmup_start": "2024-01-02",
+  "research_only": true,
+  "authorizes_trade": false,
+  "v9_data_source": "Yahoo Finance via yfinance auto_adjust=True with local-cache fallback; Cboe official history for volatility indices",
+  "core_return": 0.014125059867406087,
+  "combined_rsr1_return": 0.0203536866591838,
+  "combined_rsr2_return": 0.022305854288046767,
+  "combined_rsr2_sgov_return": 0.03047983687657685,
+  "rsr2_incremental_return": 0.00818079442064068,
+  "rsr2_drawdown_change": -0.003506753565721832,
+  "rsr2_closed_trades": 3,
+  "combined_rsr2_max_gross": 0.8481783423950422,
+  "decision": "portfolio_context_only_keep_v9_rsr1_rsr2_unchanged"
+}

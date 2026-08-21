@@ -1,0 +1,96 @@
+variant,period,date,SPY_raw,SPY_before,SPY_confirmed,SPY_pending,SPY_pending_count,QQQ_raw,QQQ_before,QQQ_confirmed,QQQ_pending,QQQ_pending_count,core_cap,fear_regime,fear_score,fear_max_gross,positive_fear_signals,SPY_effective_target,QQQ_effective_target
+current_1m,train_2025,2025-01-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,4.0,0.95,vix_level:1; smh_drawdown_63d:2; smh_trend_break:1,0.35,0.35
+current_1m,train_2025,2025-02-28,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.55,stress,11.0,0.55,vix_level:1; spy_trend_break:1; qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:3; smh_trend_break:3; smallcap_vs_spy_21d:1,0.275,0.275
+current_1m,train_2025,2025-03-31,0.0,0.5,0.0,,0,0.0,0.5,0.0,,0,0.35,panic,22.0,0.35,vix_level:2; vix_5d_change:1; vix_vix3m_ratio:2; spy_drawdown_63d:2; spy_trend_break:3; qqq_drawdown_63d:3; qqq_trend_break:3; smh_drawdown_63d:3; smh_trend_break:3,0.0,0.0
+current_1m,train_2025,2025-04-30,0.0,0.0,0.0,,0,0.0,0.0,0.0,,0,0.35,panic,18.0,0.35,vix_level:2; spy_drawdown_63d:2; spy_trend_break:3; qqq_drawdown_63d:2; qqq_trend_break:3; smh_drawdown_63d:3; smh_trend_break:3,0.0,0.0
+current_1m,train_2025,2025-05-30,0.5,0.0,0.5,,0,0.5,0.0,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+current_1m,train_2025,2025-06-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+current_1m,train_2025,2025-07-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+current_1m,train_2025,2025-08-29,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,0.0,0.95,,0.35,0.35
+current_1m,train_2025,2025-09-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+current_1m,train_2025,2025-10-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; equal_weight_vs_spy_21d:1,0.35,0.35
+current_1m,train_2025,2025-11-28,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; smh_drawdown_63d:1,0.35,0.35
+current_1m,train_2025,2025-12-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,qqq_trend_break:1,0.35,0.35
+confirm_2m_both,train_2025,2025-01-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,4.0,0.95,vix_level:1; smh_drawdown_63d:2; smh_trend_break:1,0.35,0.35
+confirm_2m_both,train_2025,2025-02-28,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.55,stress,11.0,0.55,vix_level:1; spy_trend_break:1; qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:3; smh_trend_break:3; smallcap_vs_spy_21d:1,0.275,0.275
+confirm_2m_both,train_2025,2025-03-31,0.0,0.5,0.5,0.0,1,0.0,0.5,0.5,0.0,1,0.35,panic,22.0,0.35,vix_level:2; vix_5d_change:1; vix_vix3m_ratio:2; spy_drawdown_63d:2; spy_trend_break:3; qqq_drawdown_63d:3; qqq_trend_break:3; smh_drawdown_63d:3; smh_trend_break:3,0.175,0.175
+confirm_2m_both,train_2025,2025-04-30,0.0,0.5,0.0,,0,0.0,0.5,0.0,,0,0.35,panic,18.0,0.35,vix_level:2; spy_drawdown_63d:2; spy_trend_break:3; qqq_drawdown_63d:2; qqq_trend_break:3; smh_drawdown_63d:3; smh_trend_break:3,0.0,0.0
+confirm_2m_both,train_2025,2025-05-30,0.5,0.0,0.0,0.5,1,0.5,0.0,0.0,0.5,1,0.7,normal,1.0,0.95,vix_level:1,0.0,0.0
+confirm_2m_both,train_2025,2025-06-30,0.5,0.0,0.5,,0,0.5,0.0,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_both,train_2025,2025-07-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_both,train_2025,2025-08-29,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,0.0,0.95,,0.35,0.35
+confirm_2m_both,train_2025,2025-09-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_both,train_2025,2025-10-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; equal_weight_vs_spy_21d:1,0.35,0.35
+confirm_2m_both,train_2025,2025-11-28,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; smh_drawdown_63d:1,0.35,0.35
+confirm_2m_both,train_2025,2025-12-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,qqq_trend_break:1,0.35,0.35
+confirm_2m_exit,train_2025,2025-01-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,4.0,0.95,vix_level:1; smh_drawdown_63d:2; smh_trend_break:1,0.35,0.35
+confirm_2m_exit,train_2025,2025-02-28,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.55,stress,11.0,0.55,vix_level:1; spy_trend_break:1; qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:3; smh_trend_break:3; smallcap_vs_spy_21d:1,0.275,0.275
+confirm_2m_exit,train_2025,2025-03-31,0.0,0.5,0.5,0.0,1,0.0,0.5,0.5,0.0,1,0.35,panic,22.0,0.35,vix_level:2; vix_5d_change:1; vix_vix3m_ratio:2; spy_drawdown_63d:2; spy_trend_break:3; qqq_drawdown_63d:3; qqq_trend_break:3; smh_drawdown_63d:3; smh_trend_break:3,0.175,0.175
+confirm_2m_exit,train_2025,2025-04-30,0.0,0.5,0.0,,0,0.0,0.5,0.0,,0,0.35,panic,18.0,0.35,vix_level:2; spy_drawdown_63d:2; spy_trend_break:3; qqq_drawdown_63d:2; qqq_trend_break:3; smh_drawdown_63d:3; smh_trend_break:3,0.0,0.0
+confirm_2m_exit,train_2025,2025-05-30,0.5,0.0,0.5,,0,0.5,0.0,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_exit,train_2025,2025-06-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_exit,train_2025,2025-07-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_exit,train_2025,2025-08-29,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,0.0,0.95,,0.35,0.35
+confirm_2m_exit,train_2025,2025-09-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_exit,train_2025,2025-10-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; equal_weight_vs_spy_21d:1,0.35,0.35
+confirm_2m_exit,train_2025,2025-11-28,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; smh_drawdown_63d:1,0.35,0.35
+confirm_2m_exit,train_2025,2025-12-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,qqq_trend_break:1,0.35,0.35
+confirm_2m_entry,train_2025,2025-01-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,4.0,0.95,vix_level:1; smh_drawdown_63d:2; smh_trend_break:1,0.35,0.35
+confirm_2m_entry,train_2025,2025-02-28,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.55,stress,11.0,0.55,vix_level:1; spy_trend_break:1; qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:3; smh_trend_break:3; smallcap_vs_spy_21d:1,0.275,0.275
+confirm_2m_entry,train_2025,2025-03-31,0.0,0.5,0.0,,0,0.0,0.5,0.0,,0,0.35,panic,22.0,0.35,vix_level:2; vix_5d_change:1; vix_vix3m_ratio:2; spy_drawdown_63d:2; spy_trend_break:3; qqq_drawdown_63d:3; qqq_trend_break:3; smh_drawdown_63d:3; smh_trend_break:3,0.0,0.0
+confirm_2m_entry,train_2025,2025-04-30,0.0,0.0,0.0,,0,0.0,0.0,0.0,,0,0.35,panic,18.0,0.35,vix_level:2; spy_drawdown_63d:2; spy_trend_break:3; qqq_drawdown_63d:2; qqq_trend_break:3; smh_drawdown_63d:3; smh_trend_break:3,0.0,0.0
+confirm_2m_entry,train_2025,2025-05-30,0.5,0.0,0.0,0.5,1,0.5,0.0,0.0,0.5,1,0.7,normal,1.0,0.95,vix_level:1,0.0,0.0
+confirm_2m_entry,train_2025,2025-06-30,0.5,0.0,0.5,,0,0.5,0.0,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_entry,train_2025,2025-07-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_entry,train_2025,2025-08-29,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,0.0,0.95,,0.35,0.35
+confirm_2m_entry,train_2025,2025-09-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_entry,train_2025,2025-10-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; equal_weight_vs_spy_21d:1,0.35,0.35
+confirm_2m_entry,train_2025,2025-11-28,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; smh_drawdown_63d:1,0.35,0.35
+confirm_2m_entry,train_2025,2025-12-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,qqq_trend_break:1,0.35,0.35
+ma200_only,train_2025,2025-01-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,4.0,0.95,vix_level:1; smh_drawdown_63d:2; smh_trend_break:1,0.35,0.35
+ma200_only,train_2025,2025-02-28,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.55,stress,11.0,0.55,vix_level:1; spy_trend_break:1; qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:3; smh_trend_break:3; smallcap_vs_spy_21d:1,0.275,0.275
+ma200_only,train_2025,2025-03-31,0.0,0.5,0.0,,0,0.0,0.5,0.0,,0,0.35,panic,22.0,0.35,vix_level:2; vix_5d_change:1; vix_vix3m_ratio:2; spy_drawdown_63d:2; spy_trend_break:3; qqq_drawdown_63d:3; qqq_trend_break:3; smh_drawdown_63d:3; smh_trend_break:3,0.0,0.0
+ma200_only,train_2025,2025-04-30,0.0,0.0,0.0,,0,0.0,0.0,0.0,,0,0.35,panic,18.0,0.35,vix_level:2; spy_drawdown_63d:2; spy_trend_break:3; qqq_drawdown_63d:2; qqq_trend_break:3; smh_drawdown_63d:3; smh_trend_break:3,0.0,0.0
+ma200_only,train_2025,2025-05-30,0.5,0.0,0.5,,0,0.5,0.0,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+ma200_only,train_2025,2025-06-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+ma200_only,train_2025,2025-07-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+ma200_only,train_2025,2025-08-29,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,0.0,0.95,,0.35,0.35
+ma200_only,train_2025,2025-09-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+ma200_only,train_2025,2025-10-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; equal_weight_vs_spy_21d:1,0.35,0.35
+ma200_only,train_2025,2025-11-28,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; smh_drawdown_63d:1,0.35,0.35
+ma200_only,train_2025,2025-12-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,qqq_trend_break:1,0.35,0.35
+current_1m,test_2026,2026-01-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+current_1m,test_2026,2026-02-27,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,elevated,5.0,0.75,vix_level:1; spy_trend_break:1; qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:1,0.35,0.35
+current_1m,test_2026,2026-03-31,0.0,0.5,0.0,,0,0.0,0.5,0.0,,0,0.35,panic,14.0,0.35,vix_level:2; spy_drawdown_63d:1; spy_trend_break:3; qqq_drawdown_63d:2; qqq_trend_break:3; smh_drawdown_63d:2; smh_trend_break:1,0.0,0.0
+current_1m,test_2026,2026-04-30,0.5,0.0,0.5,,0,0.5,0.0,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; equal_weight_vs_spy_21d:1,0.35,0.35
+current_1m,test_2026,2026-05-29,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,0.0,0.95,,0.35,0.35
+current_1m,test_2026,2026-06-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+current_1m,test_2026,2026-07-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,elevated,7.0,0.75,qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:3; smh_trend_break:1; smallcap_vs_spy_21d:1,0.35,0.35
+confirm_2m_both,test_2026,2026-01-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_both,test_2026,2026-02-27,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,elevated,5.0,0.75,vix_level:1; spy_trend_break:1; qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:1,0.35,0.35
+confirm_2m_both,test_2026,2026-03-31,0.0,0.5,0.5,0.0,1,0.0,0.5,0.5,0.0,1,0.35,panic,14.0,0.35,vix_level:2; spy_drawdown_63d:1; spy_trend_break:3; qqq_drawdown_63d:2; qqq_trend_break:3; smh_drawdown_63d:2; smh_trend_break:1,0.175,0.175
+confirm_2m_both,test_2026,2026-04-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; equal_weight_vs_spy_21d:1,0.35,0.35
+confirm_2m_both,test_2026,2026-05-29,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,0.0,0.95,,0.35,0.35
+confirm_2m_both,test_2026,2026-06-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_both,test_2026,2026-07-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,elevated,7.0,0.75,qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:3; smh_trend_break:1; smallcap_vs_spy_21d:1,0.35,0.35
+confirm_2m_exit,test_2026,2026-01-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_exit,test_2026,2026-02-27,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,elevated,5.0,0.75,vix_level:1; spy_trend_break:1; qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:1,0.35,0.35
+confirm_2m_exit,test_2026,2026-03-31,0.0,0.5,0.5,0.0,1,0.0,0.5,0.5,0.0,1,0.35,panic,14.0,0.35,vix_level:2; spy_drawdown_63d:1; spy_trend_break:3; qqq_drawdown_63d:2; qqq_trend_break:3; smh_drawdown_63d:2; smh_trend_break:1,0.175,0.175
+confirm_2m_exit,test_2026,2026-04-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; equal_weight_vs_spy_21d:1,0.35,0.35
+confirm_2m_exit,test_2026,2026-05-29,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,0.0,0.95,,0.35,0.35
+confirm_2m_exit,test_2026,2026-06-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_exit,test_2026,2026-07-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,elevated,7.0,0.75,qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:3; smh_trend_break:1; smallcap_vs_spy_21d:1,0.35,0.35
+confirm_2m_entry,test_2026,2026-01-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_entry,test_2026,2026-02-27,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,elevated,5.0,0.75,vix_level:1; spy_trend_break:1; qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:1,0.35,0.35
+confirm_2m_entry,test_2026,2026-03-31,0.0,0.5,0.0,,0,0.0,0.5,0.0,,0,0.35,panic,14.0,0.35,vix_level:2; spy_drawdown_63d:1; spy_trend_break:3; qqq_drawdown_63d:2; qqq_trend_break:3; smh_drawdown_63d:2; smh_trend_break:1,0.0,0.0
+confirm_2m_entry,test_2026,2026-04-30,0.5,0.0,0.0,0.5,1,0.5,0.0,0.0,0.5,1,0.7,normal,2.0,0.95,vix_level:1; equal_weight_vs_spy_21d:1,0.0,0.0
+confirm_2m_entry,test_2026,2026-05-29,0.5,0.0,0.5,,0,0.5,0.0,0.5,,0,0.7,normal,0.0,0.95,,0.35,0.35
+confirm_2m_entry,test_2026,2026-06-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+confirm_2m_entry,test_2026,2026-07-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,elevated,7.0,0.75,qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:3; smh_trend_break:1; smallcap_vs_spy_21d:1,0.35,0.35
+ma200_only,test_2026,2026-01-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+ma200_only,test_2026,2026-02-27,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,elevated,5.0,0.75,vix_level:1; spy_trend_break:1; qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:1,0.35,0.35
+ma200_only,test_2026,2026-03-31,0.0,0.5,0.0,,0,0.0,0.5,0.0,,0,0.35,panic,14.0,0.35,vix_level:2; spy_drawdown_63d:1; spy_trend_break:3; qqq_drawdown_63d:2; qqq_trend_break:3; smh_drawdown_63d:2; smh_trend_break:1,0.0,0.0
+ma200_only,test_2026,2026-04-30,0.5,0.0,0.5,,0,0.5,0.0,0.5,,0,0.7,normal,2.0,0.95,vix_level:1; equal_weight_vs_spy_21d:1,0.35,0.35
+ma200_only,test_2026,2026-05-29,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,0.0,0.95,,0.35,0.35
+ma200_only,test_2026,2026-06-30,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,normal,1.0,0.95,vix_level:1,0.35,0.35
+ma200_only,test_2026,2026-07-31,0.5,0.5,0.5,,0,0.5,0.5,0.5,,0,0.7,elevated,7.0,0.75,qqq_drawdown_63d:1; qqq_trend_break:1; smh_drawdown_63d:3; smh_trend_break:1; smallcap_vs_spy_21d:1,0.35,0.35

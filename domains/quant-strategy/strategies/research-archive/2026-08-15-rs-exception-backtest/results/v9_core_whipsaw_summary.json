@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-08-15T07:50:59.637460+00:00",
+  "data_source": "Yahoo Finance via yfinance auto_adjust=True with local-cache fallback; Cboe official history for volatility indices",
+  "data_last_date": "2026-08-07",
+  "research_only": true,
+  "authorizes_trade": false,
+  "current_exit_date": "2026-04-01",
+  "current_reentry_date": "2026-05-01",
+  "spy_gap_return": 0.09982605310899473,
+  "qqq_gap_return": 0.1537540262679673,
+  "weighted_gap_opportunity": 0.08875302778193671,
+  "march_fear_regime": "panic",
+  "march_fear_score": 14,
+  "march_positive_fear_signals": "vix_level:2; spy_drawdown_63d:1; spy_trend_break:3; qqq_drawdown_63d:2; qqq_trend_break:3; smh_drawdown_63d:2; smh_trend_break:1",
+  "march_core_cap": 0.35,
+  "delayed_exit_total_effective_target": 0.35,
+  "delayed_exit_retained_opportunity": 0.044376513890968354,
+  "slow_exit_2026_return_delta": 0.04577014851830641,
+  "slow_exit_2025_dd_worsening_pp": 3.078089885318014,
+  "passing_challengers": 0,
+  "challengers_tested": 4,
+  "decision": "retain_formal_v9_track_one_month_exit_whipsaws_forward"
+}

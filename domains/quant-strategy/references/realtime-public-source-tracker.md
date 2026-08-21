@@ -2,6 +2,12 @@
 
 This file tracks public, source-specific realtime observations that should not be mixed into Xiaohongshu author views.
 
+## 2026-08-14 Monitor
+
+- Window: `2026-08-11T14:49:11.778Z` onward. Chrome-visible @Kay2289123 posts `2088047527501476247`, `2088033792904843683`, and `2087977701080764580` were verified with relative page times and snowflake-derived creation timestamps. They remain author self-report/opinion or quoted-product discussion, never order, revenue, price, deployment or trade evidence.
+- Xiaohongshu profile was visible but its latest non-pinned card remained the already-recorded `6a7149a300000000060051d7`; no current-window note detail/comment/carousel was opened and image coverage is `0/unknown`. @nvidia, @elonmusk and @realDonaldTrump page reads timed out; coverage is incomplete, not a no-post conclusion.
+- Institutional checker was invoked and both latest outputs were read, but they retained `2026-08-13T12:36:28.434Z`; therefore AQR/Citadel/GMO/Man results are stale diagnostics, not current-window counts. No decision, hypothesis, trade advice, broker action, order, fill or account-state inference was added. See `memory/daily/2026-08-14-realtime-public-institutional-monitor.md`.
+
 ## 2026-07-24 Monitor
 
 - Window: `2026-07-21T15:24:40.767Z` through the 2026-07-24 run. Chrome and status-detail verification covered @Kay2289123 `2080438515285078184`/`2080328845799141809`, @nvidia `2080326297260072992`/`2080078677426241940`/`2079715060197310935`, and @elonmusk `2080048685522837664`. They are author views, product/ecosystem facts, or an earnings-call entry, not order, revenue, profitability, price, or trade confirmation.
@@ -1020,3 +1026,42 @@ Source: `https://x.com/realDonaldTrump`
 - Incremental cutoff retained at `2026-08-06T13:17:14.178Z`. Chrome connected for public-only collection but the visible DOM read of the five target pages timed out and reset before any post, note, comment, or carousel could be captured. This is a source-specific coverage gap, not a no-update finding; Xiaohongshu image coverage is `0/unknown`.
 - Both prescribed local checkers were invoked, but neither `work/*-latest.md/.json` refreshed: their embedded run/args timestamps remain 2026-08-06/2026-08-05. The stale Markdown and JSON were read only to diagnose the issue. Do not infer an AQR/Citadel/GMO/Man current-window zero or reuse stale X/Xiaohongshu results.
 - No new framework, hypothesis, stable decision, trade advice, broker action, order, fill, or account-state inference. See `memory/daily/2026-08-08-realtime-public-institutional-monitor.md`.
+
+## 2026-08-10 Monitor
+
+- Window: `2026-08-06T13:17:14.178Z` onward. Chrome public-only reads verified Kay X IDs `2086283952277610562`, `2086243566511354298`, `2086249304164008197`; NVIDIA official IDs `2086040693596659932` and `2085485069226106891`; and Elon Musk ID `2086701644192891249`. They are author views, product/ecosystem statements, or management commentary, not order, revenue, deployment, price, or trade confirmation.
+- Xiaohongshu public profile was readable: latest visible non-pinned item remained previously recorded `6a7149a300000000060051d7`; no strict-window new note was confirmed and this run did not read a note/comment/carousel (`0/unknown` images). @realDonaldTrump's latest visible item was 2026-07-29; keep policy coverage as incomplete, not a no-update conclusion.
+- Institutional checker command was invoked with the required 8/06 cutoff, but `work/institutional-research-latest.md/.json` remained dated 2026-08-09 with a 7/26 cutoff. Both stale files were read for diagnosis only; do not infer current-window AQR/Citadel/GMO/Man counts. No decision, hypothesis, advice, broker/order/fill or account-state inference was added. See `memory/daily/2026-08-10-realtime-public-institutional-monitor.md`.
+
+## 2026-08-11 Monitor
+
+- Window: `2026-08-06T13:17:14.178Z` onward. Chrome public-only DOM retrieval timed out and reset before a readable snapshot. This is a source-specific access gap for all requested X accounts and Xiaohongshu, not evidence of no update; no private browser data or interaction was accessed.
+- Fallback public checker was regenerated and read. X profiles returned HTTP 200 with empty bodies, so no current status met the required URL/time/body threshold. Xiaohongshu raw public HTML had only untimed, no-body/no-URL title candidates and carousel coverage is `0/unknown`; use only as low-to-medium theme/crowding context.
+- Institutional checker was regenerated and both Markdown/JSON were read at `2026-08-11T14:49:11.778Z`: AQR has one post-window official-detail high-evidence article, *Ten Lessons on Managing Concentrated Wealth* (2026-08-11); Citadel Securities, GMO and Man Institute each have zero verified post-window official-detail articles among filtered candidates. No item was promoted to a stable rule. See `memory/daily/2026-08-11-realtime-public-institutional-monitor.md`.
+## 2026-08-12 Monitor
+
+- Window: `2026-08-11T14:49:11.778Z` onward. Chrome public-only reading of all four X targets and the Xiaohongshu target timed out before a visible DOM snapshot, so this is an access gap rather than a no-update conclusion; Xiaohongshu carousel coverage is `0/unknown`.
+- Both prescribed local checkers were called with the 8/11 cutoff, but neither `*-latest.md/.json` refreshed. The existing public artifact still embeds the 8/06 cutoff, and the institutional artifact still embeds the 8/06 cutoff and 8/11 run time. Both were read as stale diagnostics only; do not infer social findings or AQR/Citadel/GMO/Man counts for this window. See `memory/daily/2026-08-12-realtime-public-institutional-monitor.md`.
+
+## 2026-08-13 Monitor
+
+- Window: `2026-08-11T14:49:11.778Z` onward. Chrome public-only reads of all four X targets and Xiaohongshu timed out before a visible snapshot; this is an access gap, not a no-update conclusion. Xiaohongshu carousel coverage is `0/unknown`.
+- Regenerated and read public fallback Markdown/JSON: X profiles were HTTP 200 with empty bodies. Xiaohongshu raw public HTML exposed only untimed/no-body/no-URL title candidates, which remain low-to-medium theme-crowding context rather than verified posts.
+- Regenerated and read institutional Markdown/JSON: AQR 0, Citadel Securities 1, GMO 0 and Man Institute 0 post-window official-detail high-evidence articles. Citadel's `August Checklist` (2026-08-11) is an experimental flow-fragility/replay input only; list candidates without stable dates were not promoted. See `memory/daily/2026-08-13-realtime-public-institutional-monitor.md`.
+
+## 2026-08-18 Monitor
+
+- Window remains `2026-08-11T14:49:11.778Z` onward. Chrome public-only reads returned only `Loading…` for all four requested X profiles and a non-target shell for Xiaohongshu; these are source-specific access gaps, not no-update findings. The fallback checker was regenerated and read because browser content was unavailable: X profile bodies were HTTP 200/empty, while Xiaohongshu had only un-timed/no-URL/no-body title candidates and carousel coverage `0/unknown`.
+- Institutional checker was invoked with the same cutoff, and current Markdown/JSON were read, but neither file refreshed beyond `2026-08-14T12:36:32.137Z`. Treat its AQR 0/Citadel 1/GMO 0/Man 0 result only as stale diagnostics. The re-read Citadel *August Checklist* official detail remains a high-evidence article fact and an experimental flow-fragility replay input; it does not establish a current-window count or stable rule. See `memory/daily/2026-08-18-realtime-public-institutional-monitor.md`.
+
+## 2026-08-19 Monitor
+
+- Window: `2026-08-11T14:49:11.778Z` onward. Chrome public-only pages verified Kay `2089928894623502819` (learning-resource post), NVIDIA `2089804526970642920` (RTX Spark) and `2089331953585607127` (Ohio AI infrastructure post), plus Elon Musk `2090079231783120975` (Grok commentary). They are public post facts only, not order, revenue, deployment, price or trade confirmation. Trump’s visible timeline is pre-window, so policy coverage remains incomplete.
+- Xiaohongshu target profile was visible; its latest non-pinned card is still existing `6a7149a300000000060051d7`. No new note time/body/comments/carousel was read and images remain `0/unknown`.
+- Institutional checker refreshed and Markdown/JSON were read at `2026-08-19T14:36:33.117Z`: AQR 0, Citadel Securities 3, GMO 0, Man Institute 0 post-window official-detail high-evidence articles. Citadel’s new 8/17 *Back to Cloud (Nine?)* is an experimental AI capex/replay overlay only. Date-unverified candidates remain non-framework evidence. See `memory/daily/2026-08-19-realtime-public-institutional-monitor.md`.
+
+## 2026-08-20 Monitor
+
+- Window retained at `2026-08-11T14:49:11.778Z`. Chrome public-only reads verified the existing NVIDIA 8/19 and 8/17 official posts and a new pinned @elonmusk status `2090398269318758570` with page-visible `4 hours ago`; the latter is a product/application claim only, not revenue, order, deployment or price evidence. @Kay2289123 and @realDonaldTrump remained visibly Loading, which is a coverage gap rather than a no-update finding.
+- Xiaohongshu target profile was readable and latest non-pinned card remains existing `6a7149a300000000060051d7`; no stable note time, body, comment or carousel was read. Image coverage remains `0/unknown`.
+- Required institutional checker was invoked but did not complete or refresh output after about four minutes. Existing 2026-08-19 Markdown/JSON were read as stale diagnostics only: AQR 0, Citadel 3, GMO 0, Man 0 cannot be extended to the current run. No stable rule, hypothesis, trade advice, broker action, order, fill or account-state inference was added. See `memory/daily/2026-08-20-realtime-public-institutional-monitor.md`.

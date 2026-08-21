@@ -1,6 +1,6 @@
 {
   "args": {
-    "since": "2026-07-26T03:09:40.239Z",
+    "since": "2026-08-11T14:49:11.778Z",
     "out": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\institutional-research-latest.md",
     "json": "D:\\code\\AI-Memory\\domains\\quant-strategy\\work\\institutional-research-latest.json",
     "maxItems": 8
@@ -9,27 +9,217 @@
     {
       "source": "AQR Research",
       "dimension": "trend_aligned_entry / factor robustness / portfolio construction",
-      "items": [],
+      "items": [
+        {
+          "title": "Ten Lessons on Managing Concentrated Wealth",
+          "url": "https://www.aqr.com/Insights/Research/Tax-Aware-Investing/Ten-Lessons-on-Managing-Concentrated-Wealth",
+          "date": "2026-08-10T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "Every concentrated position tells a different story. For one investor, it may represent decades spent building a family business. For another, it may be equity accumulated as an executive or early employee. In each case, the concentrated asset often carries value that extends well beyond its market price, requiring an approach that reflects both its financial and personal significance. A recent special issue of _The Journal of Wealth Management_ explores these challenges through perspectives from leading academics and practitioners. While the articles approach the topic from different angles, they point to a common conclusion: concentrated wealth should not be viewed simply as a problem to s",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "More Attention on Tax-Aware Investing Is a Good Thing for the Industry and Investors",
+          "url": "https://www.aqr.com/Insights/Research/Tax-Aware-Investing/More-Attention-on-Tax-Aware-Investing-Is-a-Good-Thing-for-the-Industry-and-Investors",
+          "date": "2026-08-05T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "We've shared publicly what we've learned about tax-aware long/short investing for fifteen years now.11CloseStarting with Israel and Moskowitz (2011).,22CloseSome additional perspective is important: Although we have published a number of articles on tax-aware investing, they represent only a sliver of AQR’s overall research on investment signals, portfolio construction, and asset allocation. Our articles on tax-related topics always cite the relevant investment-focused literature, which serves as a foundation for tax-aware long-short factor strategies. Whether in peer-reviewed publications,33CloseFor example, Sialm and Sosner (2018), Liberman et al (2023), Krasner et al (2024). award-winning",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "Managing Concentrated Wealth: Research, Perspectives, and Practical Insights",
+          "url": "https://www.aqr.com/Insights/Research/Tax-Aware-Investing/Managing-Concentrated-Wealth-Research-Perspectives-and-Practical-Insights",
+          "date": "2026-08-05T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "Opens in a new window Opens an external website Opens an external website in a new window This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. Privacy Policy Accept Deny Non-Essential Manage Preferences Storage Preferences Important Notice:Fraudulent Schemes Impersonating AQR Capital Management, LLC and Affiliates (collectively, \"AQR\") Important Notice:Fraudulent Schemes Impersonating AQR More Info [](http://www.aqr.com/Insights/Research/Tax-Aware-Investing/Managing-Concentrated-Wealth-Research-Perspectives-and-Practical-Insights) There have been recent incidents of individuals and grou",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "An Interview with Nathan Sosner: Perspectives on Concentrated Wealth",
+          "url": "https://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Nathan-Sosner-Perspectives-on-Concentrated-Wealth",
+          "date": "2026-07-30T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "${ numberSection }${ text } An Interview with Nathan Sosner: Perspectives on Concentrated Wealth In an interview with Portfolio Management Research, AQR Principal Nathan Sosner discusses managing concentrated wealth and concentrated stock positions, including balancing diversification benefits against tax costs, aligning risk-management techniques with an investor's broader financial and nonfinancial goals, and integrating investment, tax, estate, philanthropic, and family considerations into a coordinated plan. He also highlights why volatility can impair long-term compounding, why diversification should be viewed as a tool rather than an end goal, and why the appropriate approach may evolv",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "Total Portfolio Approach",
+          "url": "https://www.aqr.com/Insights/Research/Alternative-Thinking/Total-Portfolio-Approach",
+          "date": "2026-05-18T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "${ numberSection }${ text } Total Portfolio Approach The total portfolio approach to investing (TPA) has been aptly described as \"buzzy but fuzzy.\"11CloseFT Alphaville, November 2025. Many commentators have tried to sort the substance from the hype: in this article we bring a skeptical but constructive and distinctively quantitative lens to that task. We identify a set of tangible advantages and a countervailing set of possible risks from removing traditional strategic asset allocation constraints or guardrails, and we offer four practical demonstrations of how a total portfolio mindset can help to drive long-term success for investors with many different objectives and approaches, whatever ",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "An Interview with Cliff Asness: The Illusion of Safety in Private Assets",
+          "url": "https://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Cliff-Asness-The-Illusion-of-Safety-in-Private-Assets",
+          "date": "2026-03-30T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "${ numberSection }${ text } An Interview with Cliff Asness: The Illusion of Safety in Private Assets In an interview with the editor of _The Journal of Private Markets Investing_, Cliff Asness reiterates his views on the numerous flaws embedded in private assets – including artificially smoothed returns (and investors taking on more equity risk as a result), performance during drawdowns compared to equities, and correlation risks with public assets – and what investors should keep in mind when assessing the role of privates in their own portfolios. Published In The Journal of Private Markets Investing This document is not intended to, and does not relate specifically to any investment strate",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "Why More Alpha Can Mean More Tax Benefits",
+          "url": "https://www.aqr.com/Insights/Research/Tax-Aware-Investing/Why-More-Alpha-Can-Mean-More-Tax-Benefits",
+          "date": "2026-03-18T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "Opens in a new window Opens an external website Opens an external website in a new window This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. Privacy Policy Accept Deny Non-Essential Manage Preferences Storage Preferences Important Notice:Fraudulent Schemes Impersonating AQR Capital Management, LLC and Affiliates (collectively, \"AQR\") Important Notice:Fraudulent Schemes Impersonating AQR More Info [](http://www.aqr.com/Insights/Research/Tax-Aware-Investing/Why-More-Alpha-Can-Mean-More-Tax-Benefits) There have been recent incidents of individuals and groups falsely claiming to be associ",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        },
+        {
+          "title": "The Tax Benefits of Pre-Tax Alpha",
+          "url": "https://www.aqr.com/Insights/Research/Working-Paper/The-Tax-Benefits-of-Pre-Tax-Alpha",
+          "date": "2026-03-17T16:00:00.000Z",
+          "dateSource": "list_page",
+          "summary": "${ numberSection }${ text } The Tax Benefits of Pre-Tax Alpha We present new evidence that pre-tax alpha materially enhances the tax benefits of tax-aware long-short beta-one equity strategies. The positive effect of pre-tax alpha on tax benefits strengthens with leverage and investment horizon. Two mechanisms drive this result. First, pre-tax alpha accelerates the growth of net asset value (NAV), which leads to higher dollar tax benefits as the asset base over which these benefits are realized grows. Second, pre-tax alpha leads to creation of new positions, acting similarly to recurring capital contributions. Position creation also lowers the cost of transitioning a long-short strategy to a",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "trend_aligned_entry / factor robustness / portfolio construction"
+        }
+      ],
       "diagnostics": [
         {
           "channel": "jina_list",
           "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research",
-          "ok": false,
-          "length": 0,
-          "attempts": 3,
+          "ok": true,
+          "length": 4122,
+          "attempts": 1,
           "error": null
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Working-Paper/The-Tax-Benefits-of-Pre-Tax-Alpha",
+          "ok": true,
+          "length": 4495,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Working-Paper/The-Tax-Benefits-of-Pre-Tax-Alpha"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Tax-Aware-Investing/Ten-Lessons-on-Managing-Concentrated-Wealth",
+          "ok": true,
+          "length": 4750,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Tax-Aware-Investing/Ten-Lessons-on-Managing-Concentrated-Wealth"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Tax-Aware-Investing/More-Attention-on-Tax-Aware-Investing-Is-a-Good-Thing-for-the-Industry-and-Investors",
+          "ok": true,
+          "length": 11107,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Tax-Aware-Investing/More-Attention-on-Tax-Aware-Investing-Is-a-Good-Thing-for-the-Industry-and-Investors"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Tax-Aware-Investing/Managing-Concentrated-Wealth-Research-Perspectives-and-Practical-Insights",
+          "ok": true,
+          "length": 19645,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Tax-Aware-Investing/Managing-Concentrated-Wealth-Research-Perspectives-and-Practical-Insights"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Nathan-Sosner-Perspectives-on-Concentrated-Wealth",
+          "ok": true,
+          "length": 4378,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Nathan-Sosner-Perspectives-on-Concentrated-Wealth"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Alternative-Thinking/Total-Portfolio-Approach",
+          "ok": true,
+          "length": 4532,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Alternative-Thinking/Total-Portfolio-Approach"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Cliff-Asness-The-Illusion-of-Safety-in-Private-Assets",
+          "ok": true,
+          "length": 4229,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Journal-Article/An-Interview-with-Cliff-Asness-The-Illusion-of-Safety-in-Private-Assets"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.aqr.com/Insights/Research/Tax-Aware-Investing/Why-More-Alpha-Can-Mean-More-Tax-Benefits",
+          "ok": true,
+          "length": 18472,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.aqr.com/Insights/Research/Tax-Aware-Investing/Why-More-Alpha-Can-Mean-More-Tax-Benefits"
         }
       ],
-      "note": "列表页 Reader 读取失败。"
+      "note": "列表页可读；已读取候选详情页并按日期过滤。"
     },
     {
       "source": "Citadel Securities Market Insights",
       "dimension": "flow_fragility / market structure / macro strategy",
       "items": [
         {
-          "title": "Traders on Defense",
-          "url": "https://www.citadelsecurities.com/news-and-insights/retail-detail/traders-on-defense/",
-          "date": "2026-08-05T16:08:42.000Z",
+          "title": "Back to Cloud (Nine?)",
+          "url": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/back-to-cloud-nine/",
+          "date": "2026-08-17T14:58:43.000Z",
+          "dateSource": "detail_page",
+          "summary": "THE FRONTIER IS NOT FOR EVERYONE…AND IT MAY NOT EVEN BE WHERE THE BEST RETURNS ARE.Recent earnings reports from hyperscalers can be read as a signal that the objective function of these firms may be changing…the marginal dollar of AI investment (and the marginal unit of compute) is increasingly being asked to generate visible returns through cloud, inference and distribution today, rather than fund another, more uncertain attempt to move the frontier tomorrow. At the heart of this shift is a simple tension…_the science_ still demands that every incremental dollar and unit of compute chase the next breakthrough, whilst _the economics_ increasingly favour renting that compute to the entire eco",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "post_window_verified",
+          "isPostWindow": true,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "flow_fragility / market structure / macro strategy"
+        },
+        {
+          "title": "High Touch, Rewired",
+          "url": "https://www.citadelsecurities.com/news-and-insights/jim-esposito/high-touch-rewired/",
+          "date": "2026-08-17T13:12:19.000Z",
           "dateSource": "detail_page",
           "summary": "Skip to Content[](http://www.citadelsecurities.com/) * Who We Are Who We AreLearn More * Our Culture * Leadership Team * Civic Leadership * Office Locations × * What We Do What We DoLearn More * Equities * Designated Market Maker * Options * Fixed Income & FX * What is a Market Maker? * Corporate Solutions × * News & Insights News & InsightsLearn More * In the Media * Market Insights * Policy Positions × * Careers CareersLearn More * Markets & Trading * Quantitative Research * Engineering * Internships * Programs & Events * Conference Travel Grant * Datathons * Discover Citadel Securities * Citadel Securities Quant Invitational * Ignite Women's Trading Program * PhD Summit * Terminal * Tradi",
           "detailWarning": false,
@@ -40,42 +230,16 @@
           "dimension": "flow_fragility / market structure / macro strategy"
         },
         {
-          "title": "From Forward Guidance to Market Guidance",
-          "url": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/from-forward-guidance-to-market-guidance/",
-          "date": "2026-08-03T21:20:25.000Z",
+          "title": "August Checklist",
+          "url": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/august-checklist/",
+          "date": "2026-08-11T20:23:39.000Z",
           "dateSource": "detail_page",
-          "summary": "THE FED SOUNDS HAWKISH…BUT MARKETS ARE TESTING THE REACTION FUNCTION. Chair Warsh was unequivocal that there is _“no soft inflation target”_, that five-plus years of above-target inflation cannot be cured by nine weeks of better data, and that this Fed _“will not waver”_. Yet despite that language…and three members preferring an immediate hike…the FOMC again declined to move. Warsh instead repeatedly highlighted the large rise in nominal and real Treasury yields since June, arguing that reduced forward guidance had allowed markets to respond more directly to the data and, in effect, deliver some tightening on the Fed’s behalf. But all forms of FCI tightening are not equal…higher front-end yi",
+          "summary": "The S&P 500 has made 26 all-time highs this year despite a wall of macro worry. Why? Because underneath the noise, the balance of flows is beginning to shift. The macro crosscurrents are real, dispersion remains extreme, and positioning has moved quickly. There are plenty of reasons to be cautious, which is why most of my inbound continues to focus on the same question: What can go wrong? That question still matters. But for August, I think there is a more interesting one: Who becomes a buyer higher? The answer matters because the list of buyers is getting longer. Earnings are beating while multiples compress. The leverage reset has largely run its course, creating room for systematic strate",
           "detailWarning": false,
           "detailOk": true,
           "verificationStatus": "post_window_verified",
           "isPostWindow": true,
           "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
-          "dimension": "flow_fragility / market structure / macro strategy"
-        },
-        {
-          "title": "August – After The Reset",
-          "url": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/august-after-the-reset/",
-          "date": "2026-08-03T21:01:33.000Z",
-          "dateSource": "detail_page",
-          "summary": "_Positioning Has Normalized. Fundamentals Matter Again._ I wasn’t planning to send an update today, but after receiving a number of client questions over the weekend regarding market risk, I thought it would be helpful to share our latest thinking more broadly. It has also been one of the most technically challenging trading environments we have navigated in recent years. Sharp rotations, elevated single-stock volatility, rapidly changing market leadership, and significant deleveraging created an exceptionally difficult backdrop for investors across the marketplace. Today, we believe much of the global technical reset is behind us. Importantly, the reset occurred through rotation, deleveragi",
-          "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "post_window_verified",
-          "isPostWindow": true,
-          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
-          "dimension": "flow_fragility / market structure / macro strategy"
-        },
-        {
-          "title": "Retail Detail Archives - Citadel Securities",
-          "url": "https://www.citadelsecurities.com/news-and-insights/retail-detail/",
-          "date": null,
-          "dateSource": "none",
-          "summary": "Skip to Content[](http://www.citadelsecurities.com/) * Who We Are Who We AreLearn More * Our Culture * Leadership Team * Civic Leadership * Office Locations × * What We Do What We DoLearn More * Equities * Designated Market Maker * Options * Fixed Income & FX * What is a Market Maker? * Corporate Solutions × * News & Insights News & InsightsLearn More * In the Media * Market Insights * Policy Positions × * Careers CareersLearn More * Markets & Trading * Quantitative Research * Engineering * Internships * Programs & Events * Conference Travel Grant * Datathons * Discover Citadel Securities * Citadel Securities Quant Invitational * Ignite Women's Trading Program * PhD Summit * Terminal * Tradi",
-          "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "date_unverified",
-          "isPostWindow": false,
-          "evidence": "低：未取得稳定发布日期。",
           "dimension": "flow_fragility / market structure / macro strategy"
         },
         {
@@ -92,21 +256,21 @@
           "dimension": "flow_fragility / market structure / macro strategy"
         },
         {
-          "title": "Just a moment...",
+          "title": "Global Market Intelligence Archives - Citadel Securities",
           "url": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/",
           "date": null,
           "dateSource": "none",
-          "summary": "www.citadelsecurities.com Performing security verification This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.",
-          "detailWarning": true,
+          "summary": "Skip to Content[](http://www.citadelsecurities.com/) * Who We Are Who We AreLearn More * Our Culture * Leadership Team * Civic Leadership * Office Locations × * What We Do What We DoLearn More * Equities * Designated Market Maker * Options * Fixed Income & FX * What is a Market Maker? * Corporate Solutions × * News & Insights News & InsightsLearn More * In the Media * Market Insights * Policy Positions × * Careers CareersLearn More * Markets & Trading * Quantitative Research * Engineering * Internships * Programs & Events * Conference Travel Grant * Datathons * Discover Citadel Securities * Citadel Securities Quant Invitational * Ignite Women's Trading Program * PhD Summit * Terminal * Tradi",
+          "detailWarning": false,
           "detailOk": true,
-          "verificationStatus": "detail_blocked_no_date",
+          "verificationStatus": "date_unverified",
           "isPostWindow": false,
-          "evidence": "低：列表可见但详情页安全校验/403，无法确认发布时间和正文。",
+          "evidence": "低：未取得稳定发布日期。",
           "dimension": "flow_fragility / market structure / macro strategy"
         },
         {
           "title": "https://secure-gl.imrworldwide.com/cgi-bin/m",
-          "url": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/fed-views-the-case-for-july/",
+          "url": "https://www.citadelsecurities.com/news-and-insights/retail-detail/traders-on-defense/",
           "date": null,
           "dateSource": "none",
           "summary": "A 1x1 image, likely be a tacker probe",
@@ -118,11 +282,24 @@
           "dimension": "flow_fragility / market structure / macro strategy"
         },
         {
-          "title": "Global Macro Strategy Archives - Citadel Securities",
-          "url": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/",
+          "title": "Retail Detail Archives - Citadel Securities",
+          "url": "https://www.citadelsecurities.com/news-and-insights/retail-detail/",
           "date": null,
           "dateSource": "none",
           "summary": "Skip to Content[](http://www.citadelsecurities.com/) * Who We Are Who We AreLearn More * Our Culture * Leadership Team * Civic Leadership * Office Locations × * What We Do What We DoLearn More * Equities * Designated Market Maker * Options * Fixed Income & FX * What is a Market Maker? * Corporate Solutions × * News & Insights News & InsightsLearn More * In the Media * Market Insights * Policy Positions × * Careers CareersLearn More * Markets & Trading * Quantitative Research * Engineering * Internships * Programs & Events * Conference Travel Grant * Datathons * Discover Citadel Securities * Citadel Securities Quant Invitational * Ignite Women's Trading Program * PhD Summit * Terminal * Tradi",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "date_unverified",
+          "isPostWindow": false,
+          "evidence": "低：未取得稳定发布日期。",
+          "dimension": "flow_fragility / market structure / macro strategy"
+        },
+        {
+          "title": "https://secure-gl.imrworldwide.com/cgi-bin/m",
+          "url": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/from-forward-guidance-to-market-guidance/",
+          "date": null,
+          "dateSource": "none",
+          "summary": "A 1x1 image, likely be a tacker probe",
           "detailWarning": false,
           "detailOk": true,
           "verificationStatus": "date_unverified",
@@ -136,15 +313,60 @@
           "channel": "jina_list",
           "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/category/market-insights/",
           "ok": true,
-          "length": 17240,
-          "attempts": 3,
+          "length": 16734,
+          "attempts": 1,
           "error": null
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/macro-thoughts/back-to-cloud-nine/",
+          "ok": true,
+          "length": 7576,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/back-to-cloud-nine/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/macro-thoughts/",
+          "ok": true,
+          "length": 16648,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/jim-esposito/high-touch-rewired/",
+          "ok": true,
+          "length": 30346,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/jim-esposito/high-touch-rewired/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-market-intelligence/august-checklist/",
+          "ok": true,
+          "length": 19618,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/august-checklist/"
+        },
+        {
+          "channel": "jina_detail",
+          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-market-intelligence/",
+          "ok": true,
+          "length": 16509,
+          "attempts": 1,
+          "error": null,
+          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/"
         },
         {
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/retail-detail/traders-on-defense/",
           "ok": true,
-          "length": 20963,
+          "length": 209,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.citadelsecurities.com/news-and-insights/retail-detail/traders-on-defense/"
@@ -153,7 +375,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/retail-detail/",
           "ok": true,
-          "length": 14390,
+          "length": 14081,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.citadelsecurities.com/news-and-insights/retail-detail/"
@@ -162,55 +384,10 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/macro-thoughts/from-forward-guidance-to-market-guidance/",
           "ok": true,
-          "length": 14088,
+          "length": 232,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/from-forward-guidance-to-market-guidance/"
-        },
-        {
-          "channel": "jina_detail",
-          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/macro-thoughts/",
-          "ok": true,
-          "length": 16991,
-          "attempts": 1,
-          "error": null,
-          "candidate": "https://www.citadelsecurities.com/news-and-insights/macro-thoughts/"
-        },
-        {
-          "channel": "jina_detail",
-          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-market-intelligence/august-after-the-reset/",
-          "ok": true,
-          "length": 12039,
-          "attempts": 1,
-          "error": null,
-          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/august-after-the-reset/"
-        },
-        {
-          "channel": "jina_detail",
-          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-market-intelligence/",
-          "ok": true,
-          "length": 542,
-          "attempts": 1,
-          "error": null,
-          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-market-intelligence/"
-        },
-        {
-          "channel": "jina_detail",
-          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-macro-strategy/fed-views-the-case-for-july/",
-          "ok": true,
-          "length": 226,
-          "attempts": 1,
-          "error": null,
-          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/fed-views-the-case-for-july/"
-        },
-        {
-          "channel": "jina_detail",
-          "url": "https://r.jina.ai/http://www.citadelsecurities.com/news-and-insights/global-macro-strategy/",
-          "ok": true,
-          "length": 16538,
-          "attempts": 1,
-          "error": null,
-          "candidate": "https://www.citadelsecurities.com/news-and-insights/global-macro-strategy/"
         }
       ],
       "note": "列表页可读；已读取候选详情页并按日期过滤。"
@@ -264,7 +441,7 @@
           "channel": "jina_list",
           "url": "https://r.jina.ai/http://www.gmo.com/americas/research-library/",
           "ok": true,
-          "length": 30841,
+          "length": 30772,
           "attempts": 1,
           "error": null
         },
@@ -310,8 +487,8 @@
           "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-28-July) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the e",
           "detailWarning": false,
           "detailOk": true,
-          "verificationStatus": "post_window_verified",
-          "isPostWindow": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
           "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
           "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
         },
@@ -320,7 +497,7 @@
           "url": "https://www.man.com/insights/views-from-the-floor-2026-21-July",
           "date": "2026-07-20T16:00:00.000Z",
           "dateSource": "detail_page",
-          "summary": "* [](http://www.man.com/) [](http://www.man.com/) * ETFs & Funds ETFs & Funds * ETFs * Document centre * Capabilities Investment capabilities * Asset classes * Client solutions * Investment themes * Strategies in focus * Alternatives * Credit * Equities * Multi-asset * Insurance * Solutions * Responsible investment * Trend-following * Insights Insights * Insights hub * Key topics * Macro & markets * Asset class & investment themes * Client solutions & portfolio strategy * Global Outlook * Technology * About us About us * About Man * Careers * Diversity, equity & inclusion * Corporate sustainability Media * News center Contact us * Get in touch * Search Man Group * ETFs & Funds * Capabilities",
+          "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-21-July) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the e",
           "detailWarning": false,
           "detailOk": true,
           "verificationStatus": "pre_window_or_existing",
@@ -334,6 +511,19 @@
           "date": "2026-07-13T16:00:00.000Z",
           "dateSource": "detail_page",
           "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-14-july) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the e",
+          "detailWarning": false,
+          "detailOk": true,
+          "verificationStatus": "pre_window_or_existing",
+          "isPostWindow": false,
+          "evidence": "高：官方域名文章页经 Reader 读取，标题和日期可核验。",
+          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
+        },
+        {
+          "title": "Views from the Floor Could 'Super El Niño' Scorch AI Too? | Man Group",
+          "url": "https://www.man.com/insights/views-from-the-floor-2026-7-july",
+          "date": "2026-07-06T16:00:00.000Z",
+          "dateSource": "detail_page",
+          "summary": "[](https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2) * Consent * Details * [[IABV2SETTINGS]](http://www.man.com/insights/views-from-the-floor-2026-7-july) * About Cookie Manager We use cookies to personalise content, provide social media features, and analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.You can at any time change or withdraw your consent from theCookiespage on our website.Please be aware that the em",
           "detailWarning": false,
           "detailOk": true,
           "verificationStatus": "pre_window_or_existing",
@@ -381,19 +571,6 @@
           "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
         },
         {
-          "title": "Views from the Floor Could 'Super El Niño' Scorch AI Too? | Man Group",
-          "url": "https://www.man.com/insights/views-from-the-floor-2026-7-july",
-          "date": null,
-          "dateSource": "none",
-          "summary": "AI data centres and drought-stricken farmers could be about to start fighting over the same water and power. This year’s ‘Super El Niño’ has arrived and its landing on one of the key market drivers should shake investors out of their complacency around climate volatility. El Niño is a naturally occurring climate pattern that drives up sea surface temperatures in certain regions and is commonly associated with extreme weather events. The National Oceanic and Atmospheric Administration confirmed its arrival in June, when sea surface temperatures across the central and eastern Pacific rose enough above average to cross the threshold, a shift that historically brings more extreme weather worldwi",
-          "detailWarning": false,
-          "detailOk": true,
-          "verificationStatus": "date_unverified",
-          "isPostWindow": false,
-          "evidence": "低：未取得稳定发布日期。",
-          "dimension": "factor_macro_exposure / flow_fragility / AI bottleneck watch"
-        },
-        {
           "title": "A Trend Following Deep Dive: Cash (Equities) Is King | Man Group",
           "url": "https://www.man.com/insights/trend-following-cash-is-king",
           "date": null,
@@ -412,7 +589,7 @@
           "channel": "jina_list",
           "url": "https://r.jina.ai/http://www.man.com/maninstitute/market-views",
           "ok": true,
-          "length": 22387,
+          "length": 44120,
           "attempts": 1,
           "error": null
         },
@@ -420,7 +597,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-28-July",
           "ok": true,
-          "length": 43215,
+          "length": 43412,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-28-July"
@@ -438,7 +615,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-21-July",
           "ok": true,
-          "length": 19415,
+          "length": 41671,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-21-July"
@@ -447,7 +624,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/road-ahead-andy-burnham",
           "ok": true,
-          "length": 12938,
+          "length": 12985,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/road-ahead-andy-burnham"
@@ -456,7 +633,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-14-july",
           "ok": true,
-          "length": 42139,
+          "length": 42336,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-14-july"
@@ -465,7 +642,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/views-from-the-floor-2026-7-july",
           "ok": true,
-          "length": 6771,
+          "length": 43892,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/views-from-the-floor-2026-7-july"
@@ -474,7 +651,7 @@
           "channel": "jina_detail",
           "url": "https://r.jina.ai/http://www.man.com/insights/2026-h2-credit-outlook",
           "ok": true,
-          "length": 50790,
+          "length": 50814,
           "attempts": 1,
           "error": null,
           "candidate": "https://www.man.com/insights/2026-h2-credit-outlook"

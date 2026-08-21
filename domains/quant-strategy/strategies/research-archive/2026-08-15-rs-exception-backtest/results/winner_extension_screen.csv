@@ -1,0 +1,4 @@
+variant,train_2024_2025_total_return_nonworse,train_2024_2025_max_drawdown_nonworse,train_2024_2025_sharpe_nonworse,train_2024_2025_win_rate_nonworse,retrospective_2026_total_return_nonworse,retrospective_2026_max_drawdown_nonworse,retrospective_2026_sharpe_nonworse,retrospective_2026_win_rate_nonworse,full_20bps_return_nonworse,concentration_le_35,return_improves_both,two_of_three_return_improve_both,passes_all
+extend30_any_winner,False,False,False,False,True,True,True,True,True,True,False,False,False
+extend30_gain8,False,False,False,False,True,True,True,True,True,True,False,False,False
+extend40_gain8,False,False,False,False,True,False,True,True,True,True,False,False,False

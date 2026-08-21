@@ -1,0 +1,4 @@
+core_cap,validation_2015_2019_return_higher,validation_2015_2019_dd_within_3pp,validation_2015_2019_sharpe_within_005,validation_2015_2019_monthly_win_within_1pp,final_2020_2025_return_higher,final_2020_2025_dd_within_3pp,final_2020_2025_sharpe_within_005,final_2020_2025_monthly_win_within_1pp,heldout_2026_return_higher,heldout_2026_dd_within_3pp,heldout_2026_sharpe_within_005,heldout_2026_monthly_win_within_1pp,full_drawdown_not_worse_than_20pct,rolling_positive_rate_nonworse,passes_balanced_challenger_screen
+0.8,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+0.9,True,False,False,True,True,True,True,True,True,True,True,True,False,True,False
+1.0,True,False,False,False,True,True,True,True,True,True,True,True,False,True,False

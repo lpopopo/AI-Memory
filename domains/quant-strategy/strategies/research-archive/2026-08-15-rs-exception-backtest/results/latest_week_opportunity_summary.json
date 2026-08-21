@@ -1,0 +1,16 @@
+{
+  "generated_at_utc": "2026-08-15T07:49:30.720445+00:00",
+  "period": [
+    "2026-08-10",
+    "2026-08-14"
+  ],
+  "research_only": true,
+  "authorizes_trade": false,
+  "symbols": 35,
+  "all_strict_signal_days": 0,
+  "aaoi_week_return": 0.10801440219029934,
+  "aaoi_strict_signal_days": 0,
+  "aaoi_recurring_failures": "extension_le_12pct (5/5), atr_le_4pct (5/5), breakout_20d (4/5), above_ma50 (3/5), volume_ge_1_2x (3/5), close_location_ge_50pct (2/5), event_gap_clear (2/5)",
+  "source_complete_through": "2026-08-14",
+  "all_equity_sources_complete": true
+}

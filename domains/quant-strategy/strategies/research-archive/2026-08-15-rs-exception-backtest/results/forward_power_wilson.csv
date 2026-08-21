@@ -1,0 +1,9 @@
+variant,event,threshold,probability_at_20,minimum_n_for_80pct_probability,probability_at_minimum_n
+RSR1-shadow,lower_bound_above_candidate_breakeven,0.2703893956162816,0.9490916444384812,11,0.8549622676177131
+RSR1-shadow,lower_bound_above_matched_baseline_rate,0.4318181818181818,0.6090301156784704,37,0.8188592631785359
+RSR1-shadow,lower_bound_above_majority_50pct,0.5,0.25182717008996824,80,0.8065866635147708
+RSR1-shadow,half_width_at_most_10pct,0.1,0.00019376260585315057,88,0.8088375389558188
+RSR2-profit-lock-shadow,lower_bound_above_candidate_breakeven,0.2676234800597734,0.9808541197676265,10,0.8421737750342146
+RSR2-profit-lock-shadow,lower_bound_above_matched_baseline_rate,0.4318181818181818,0.7588326411305784,27,0.8309247498058697
+RSR2-profit-lock-shadow,lower_bound_above_majority_50pct,0.5,0.399831096340649,48,0.8187982527225984
+RSR2-profit-lock-shadow,half_width_at_most_10pct,0.1,0.0007044383017751714,84,0.8251613983560694

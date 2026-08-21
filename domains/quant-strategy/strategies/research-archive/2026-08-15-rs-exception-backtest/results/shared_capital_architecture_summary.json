@@ -1,0 +1,14 @@
+{
+  "generated_at_utc": "2026-08-15T08:45:26.599530+00:00",
+  "latest_completed_date": "2026-08-07",
+  "current_data_source": "Yahoo Finance via yfinance auto_adjust=True with local-cache fallback; Cboe official history for volatility indices",
+  "long_history_data_source": {
+    "source": "cached Yahoo Finance via yfinance auto_adjust=True",
+    "cache": "D:\\code\\AI-Memory\\domains\\quant-strategy\\strategies\\research-archive\\2026-08-15-rs-exception-backtest\\results\\core_allocation_frontier_long_history.csv",
+    "fallback": true
+  },
+  "research_only": true,
+  "authorizes_trade": false,
+  "challenger_passes": false,
+  "decision": "remove_80_20_challenger_keep_formal_70_30"
+}

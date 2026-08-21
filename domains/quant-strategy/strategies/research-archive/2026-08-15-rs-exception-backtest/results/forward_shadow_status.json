@@ -1,0 +1,1052 @@
+{
+  "version": "RSR1-shadow",
+  "generated_at_utc": "2026-08-21T01:14:54.061233+00:00",
+  "as_of": "2026-08-20",
+  "expected_completed_cutoff": "2026-08-20",
+  "status": "observing",
+  "research_only": true,
+  "formal_v9_modified": false,
+  "live_order_authorization": false,
+  "source_complete": true,
+  "missing_latest": [],
+  "full_watchlist_source_complete": true,
+  "full_watchlist_missing_latest": [],
+  "shadow_universe": "ai_capex_broad",
+  "shadow_symbol_count": 32,
+  "shadow_symbols": [
+    "DRAM",
+    "MU",
+    "WDC",
+    "STX",
+    "SNDK",
+    "SKHY",
+    "MRVL",
+    "AVGO",
+    "ALAB",
+    "COHR",
+    "LITE",
+    "AAOI",
+    "MXL",
+    "AXTI",
+    "CRDO",
+    "SMCI",
+    "ORCL",
+    "META",
+    "TER",
+    "ASML",
+    "AMAT",
+    "KLAC",
+    "LRCX",
+    "TSLA",
+    "QCOM",
+    "NVDA",
+    "AMD",
+    "INTC",
+    "GLW",
+    "NOK",
+    "TTMI",
+    "CEG"
+  ],
+  "excluded_from_shadow_but_retained_in_full_watchlist_analysis": [
+    "KO",
+    "RDW",
+    "RKLB"
+  ],
+  "profit_protection_shadow": {
+    "version": "RSR2-profit-lock-shadow",
+    "status": "observing",
+    "trigger": 0.15,
+    "floor": 0.05,
+    "activation_basis": "completed_close_effective_next_session",
+    "benchmark": "RSR1-shadow",
+    "separate_ledger": "forward_profit_protection_ledger.csv"
+  },
+  "sources": {
+    "AAOI": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "ALAB": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "AMAT": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "AMD": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "ASML": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "AVGO": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "AXTI": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "CEG": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "COHR": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "CRDO": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "DRAM": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "GLW": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "INTC": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "KLAC": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "KO": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "LITE": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "LRCX": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "META": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "MRVL": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "MU": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "MXL": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "NOK": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "NVDA": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "ORCL": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "QCOM": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "QQQ": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "RDW": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "RKLB": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "SKHY": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "SMCI": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "SMH": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "SNDK": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "SPY": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "STX": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "TER": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "TSLA": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "TTMI": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "WDC": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "^VIX": {
+      "source": "Cboe official daily history",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "^VIX3M": {
+      "source": "Cboe official daily history",
+      "last_date": "2026-08-20",
+      "error": null
+    }
+  },
+  "message": "Forward observations recorded; they do not authorize an order.",
+  "sessions": 4,
+  "signal_counts": {
+    "matched_baseline": 0,
+    "risk_filter": 0
+  },
+  "pair_10bps": {
+    "matched_baseline": {
+      "variant": "strict_veto",
+      "period": [
+        "2026-08-17",
+        "2026-08-20"
+      ],
+      "config": {
+        "rs20_min": 0.03,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 1.0,
+        "min_close_location": 0.0,
+        "normal_target_weight": 0.08,
+        "stock_sleeve_max": 0.25,
+        "entry_delay_sessions": 1,
+        "max_entry_gap": 1.0
+      },
+      "metrics": {
+        "final_value": 6000.0,
+        "total_return": 0.0,
+        "cagr": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "sharpe": 0.0,
+        "sortino": 0.0,
+        "trade_count": 0,
+        "win_rate": null,
+        "average_win": null,
+        "average_loss": null,
+        "profit_factor": null,
+        "exception_trade_count": 0,
+        "exception_win_rate": null,
+        "exception_average_return": null,
+        "exposure": 0.0,
+        "turnover": 0.0,
+        "costs": 0.0,
+        "cash_yield_earned": 0.0,
+        "cash_return_days": 0,
+        "cash_return_missing_days": 0
+      },
+      "trades": [],
+      "open_positions": [],
+      "pending_entries": [],
+      "pending_exits": [],
+      "pending_partial_exits": [],
+      "ranking_mode": "formal_composite",
+      "ranking_events": [],
+      "ranking_contention_decisions": 0,
+      "liquidated_at_end": false,
+      "profit_lock_overlay": {
+        "trigger": null,
+        "floor": 0.0,
+        "activation_basis": "completed_close_effective_next_session"
+      },
+      "partial_profit_overlay": {
+        "trigger": null,
+        "fraction": 0.5,
+        "minimum_notional": 200.0,
+        "executed": 0,
+        "ineligible": 0,
+        "activation_basis": "completed_close_next_session_open_once"
+      },
+      "cash_return_overlay": {
+        "enabled": false,
+        "timing": "session_close_on_post_execution_cash"
+      },
+      "equity": {
+        "2026-08-17": 6000.0,
+        "2026-08-18": 6000.0,
+        "2026-08-19": 6000.0,
+        "2026-08-20": 6000.0
+      },
+      "exposure": {
+        "2026-08-17": 0.0,
+        "2026-08-18": 0.0,
+        "2026-08-19": 0.0,
+        "2026-08-20": 0.0
+      }
+    },
+    "risk_filter": {
+      "variant": "strict_veto",
+      "period": [
+        "2026-08-17",
+        "2026-08-20"
+      ],
+      "config": {
+        "rs20_min": 0.03,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 0.04,
+        "min_close_location": 0.5,
+        "normal_target_weight": 0.08,
+        "stock_sleeve_max": 0.25,
+        "entry_delay_sessions": 1,
+        "max_entry_gap": 1.0
+      },
+      "metrics": {
+        "final_value": 6000.0,
+        "total_return": 0.0,
+        "cagr": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "sharpe": 0.0,
+        "sortino": 0.0,
+        "trade_count": 0,
+        "win_rate": null,
+        "average_win": null,
+        "average_loss": null,
+        "profit_factor": null,
+        "exception_trade_count": 0,
+        "exception_win_rate": null,
+        "exception_average_return": null,
+        "exposure": 0.0,
+        "turnover": 0.0,
+        "costs": 0.0,
+        "cash_yield_earned": 0.0,
+        "cash_return_days": 0,
+        "cash_return_missing_days": 0
+      },
+      "trades": [],
+      "open_positions": [],
+      "pending_entries": [],
+      "pending_exits": [],
+      "pending_partial_exits": [],
+      "ranking_mode": "formal_composite",
+      "ranking_events": [],
+      "ranking_contention_decisions": 0,
+      "liquidated_at_end": false,
+      "profit_lock_overlay": {
+        "trigger": null,
+        "floor": 0.0,
+        "activation_basis": "completed_close_effective_next_session"
+      },
+      "partial_profit_overlay": {
+        "trigger": null,
+        "fraction": 0.5,
+        "minimum_notional": 200.0,
+        "executed": 0,
+        "ineligible": 0,
+        "activation_basis": "completed_close_next_session_open_once"
+      },
+      "cash_return_overlay": {
+        "enabled": false,
+        "timing": "session_close_on_post_execution_cash"
+      },
+      "equity": {
+        "2026-08-17": 6000.0,
+        "2026-08-18": 6000.0,
+        "2026-08-19": 6000.0,
+        "2026-08-20": 6000.0
+      },
+      "exposure": {
+        "2026-08-17": 0.0,
+        "2026-08-18": 0.0,
+        "2026-08-19": 0.0,
+        "2026-08-20": 0.0
+      }
+    }
+  },
+  "pair_20bps": {
+    "matched_baseline": {
+      "variant": "strict_veto",
+      "period": [
+        "2026-08-17",
+        "2026-08-20"
+      ],
+      "config": {
+        "rs20_min": 0.03,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 1.0,
+        "min_close_location": 0.0,
+        "normal_target_weight": 0.08,
+        "stock_sleeve_max": 0.25,
+        "entry_delay_sessions": 1,
+        "max_entry_gap": 1.0
+      },
+      "metrics": {
+        "final_value": 6000.0,
+        "total_return": 0.0,
+        "cagr": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "sharpe": 0.0,
+        "sortino": 0.0,
+        "trade_count": 0,
+        "win_rate": null,
+        "average_win": null,
+        "average_loss": null,
+        "profit_factor": null,
+        "exception_trade_count": 0,
+        "exception_win_rate": null,
+        "exception_average_return": null,
+        "exposure": 0.0,
+        "turnover": 0.0,
+        "costs": 0.0,
+        "cash_yield_earned": 0.0,
+        "cash_return_days": 0,
+        "cash_return_missing_days": 0
+      },
+      "trades": [],
+      "open_positions": [],
+      "pending_entries": [],
+      "pending_exits": [],
+      "pending_partial_exits": [],
+      "ranking_mode": "formal_composite",
+      "ranking_events": [],
+      "ranking_contention_decisions": 0,
+      "liquidated_at_end": false,
+      "profit_lock_overlay": {
+        "trigger": null,
+        "floor": 0.0,
+        "activation_basis": "completed_close_effective_next_session"
+      },
+      "partial_profit_overlay": {
+        "trigger": null,
+        "fraction": 0.5,
+        "minimum_notional": 200.0,
+        "executed": 0,
+        "ineligible": 0,
+        "activation_basis": "completed_close_next_session_open_once"
+      },
+      "cash_return_overlay": {
+        "enabled": false,
+        "timing": "session_close_on_post_execution_cash"
+      },
+      "equity": {
+        "2026-08-17": 6000.0,
+        "2026-08-18": 6000.0,
+        "2026-08-19": 6000.0,
+        "2026-08-20": 6000.0
+      },
+      "exposure": {
+        "2026-08-17": 0.0,
+        "2026-08-18": 0.0,
+        "2026-08-19": 0.0,
+        "2026-08-20": 0.0
+      }
+    },
+    "risk_filter": {
+      "variant": "strict_veto",
+      "period": [
+        "2026-08-17",
+        "2026-08-20"
+      ],
+      "config": {
+        "rs20_min": 0.03,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 0.04,
+        "min_close_location": 0.5,
+        "normal_target_weight": 0.08,
+        "stock_sleeve_max": 0.25,
+        "entry_delay_sessions": 1,
+        "max_entry_gap": 1.0
+      },
+      "metrics": {
+        "final_value": 6000.0,
+        "total_return": 0.0,
+        "cagr": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "sharpe": 0.0,
+        "sortino": 0.0,
+        "trade_count": 0,
+        "win_rate": null,
+        "average_win": null,
+        "average_loss": null,
+        "profit_factor": null,
+        "exception_trade_count": 0,
+        "exception_win_rate": null,
+        "exception_average_return": null,
+        "exposure": 0.0,
+        "turnover": 0.0,
+        "costs": 0.0,
+        "cash_yield_earned": 0.0,
+        "cash_return_days": 0,
+        "cash_return_missing_days": 0
+      },
+      "trades": [],
+      "open_positions": [],
+      "pending_entries": [],
+      "pending_exits": [],
+      "pending_partial_exits": [],
+      "ranking_mode": "formal_composite",
+      "ranking_events": [],
+      "ranking_contention_decisions": 0,
+      "liquidated_at_end": false,
+      "profit_lock_overlay": {
+        "trigger": null,
+        "floor": 0.0,
+        "activation_basis": "completed_close_effective_next_session"
+      },
+      "partial_profit_overlay": {
+        "trigger": null,
+        "fraction": 0.5,
+        "minimum_notional": 200.0,
+        "executed": 0,
+        "ineligible": 0,
+        "activation_basis": "completed_close_next_session_open_once"
+      },
+      "cash_return_overlay": {
+        "enabled": false,
+        "timing": "session_close_on_post_execution_cash"
+      },
+      "equity": {
+        "2026-08-17": 6000.0,
+        "2026-08-18": 6000.0,
+        "2026-08-19": 6000.0,
+        "2026-08-20": 6000.0
+      },
+      "exposure": {
+        "2026-08-17": 0.0,
+        "2026-08-18": 0.0,
+        "2026-08-19": 0.0,
+        "2026-08-20": 0.0
+      }
+    }
+  },
+  "promotion_gate": {
+    "sample_ready": false,
+    "eligible_for_review": false,
+    "sessions": 4,
+    "closed_trades": 0,
+    "themes": [],
+    "max_symbol_profit_share": 1.0,
+    "gross_profit": 0,
+    "profit_by_symbol": {},
+    "win_rate_delta": null,
+    "fixed_path_20bps": {
+      "matched_baseline": {
+        "source_slippage": 0.001,
+        "stressed_slippage": 0.002,
+        "closed_trades": 0,
+        "open_positions": 0,
+        "closed_pnl": 0.0,
+        "open_unrealized": 0.0,
+        "final_value": 6000.0,
+        "total_return": 0.0
+      },
+      "risk_filter": {
+        "source_slippage": 0.001,
+        "stressed_slippage": 0.002,
+        "closed_trades": 0,
+        "open_positions": 0,
+        "closed_pnl": 0.0,
+        "open_unrealized": 0.0,
+        "final_value": 6000.0,
+        "total_return": 0.0
+      }
+    },
+    "checks": {
+      "sessions_at_least_126": false,
+      "closed_trades_at_least_20": false,
+      "themes_at_least_3": false,
+      "max_symbol_profit_share_at_most_35pct": false,
+      "net_return_not_below_baseline": true,
+      "win_rate_delta_at_least_5pp": false,
+      "profit_factor_at_least_1_30": false,
+      "sharpe_not_below_baseline": true,
+      "max_drawdown_not_worse_by_1pp": true,
+      "survives_20bps": true,
+      "survives_fixed_path_20bps": true
+    }
+  },
+  "profit_protection_10bps": {
+    "rsr1": {
+      "variant": "strict_veto",
+      "period": [
+        "2026-08-17",
+        "2026-08-20"
+      ],
+      "config": {
+        "rs20_min": 0.03,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 0.04,
+        "min_close_location": 0.5,
+        "normal_target_weight": 0.08,
+        "stock_sleeve_max": 0.25,
+        "entry_delay_sessions": 1,
+        "max_entry_gap": 1.0
+      },
+      "metrics": {
+        "final_value": 6000.0,
+        "total_return": 0.0,
+        "cagr": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "sharpe": 0.0,
+        "sortino": 0.0,
+        "trade_count": 0,
+        "win_rate": null,
+        "average_win": null,
+        "average_loss": null,
+        "profit_factor": null,
+        "exception_trade_count": 0,
+        "exception_win_rate": null,
+        "exception_average_return": null,
+        "exposure": 0.0,
+        "turnover": 0.0,
+        "costs": 0.0,
+        "cash_yield_earned": 0.0,
+        "cash_return_days": 0,
+        "cash_return_missing_days": 0
+      },
+      "trades": [],
+      "open_positions": [],
+      "pending_entries": [],
+      "pending_exits": [],
+      "pending_partial_exits": [],
+      "ranking_mode": "formal_composite",
+      "ranking_events": [],
+      "ranking_contention_decisions": 0,
+      "liquidated_at_end": false,
+      "profit_lock_overlay": {
+        "trigger": null,
+        "floor": 0.0,
+        "activation_basis": "completed_close_effective_next_session"
+      },
+      "partial_profit_overlay": {
+        "trigger": null,
+        "fraction": 0.5,
+        "minimum_notional": 200.0,
+        "executed": 0,
+        "ineligible": 0,
+        "activation_basis": "completed_close_next_session_open_once"
+      },
+      "cash_return_overlay": {
+        "enabled": false,
+        "timing": "session_close_on_post_execution_cash"
+      },
+      "equity": {
+        "2026-08-17": 6000.0,
+        "2026-08-18": 6000.0,
+        "2026-08-19": 6000.0,
+        "2026-08-20": 6000.0
+      },
+      "exposure": {
+        "2026-08-17": 0.0,
+        "2026-08-18": 0.0,
+        "2026-08-19": 0.0,
+        "2026-08-20": 0.0
+      }
+    },
+    "challenger": {
+      "variant": "strict_veto",
+      "period": [
+        "2026-08-17",
+        "2026-08-20"
+      ],
+      "config": {
+        "rs20_min": 0.03,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 0.04,
+        "min_close_location": 0.5,
+        "normal_target_weight": 0.08,
+        "stock_sleeve_max": 0.25,
+        "entry_delay_sessions": 1,
+        "max_entry_gap": 1.0
+      },
+      "metrics": {
+        "final_value": 6000.0,
+        "total_return": 0.0,
+        "cagr": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "sharpe": 0.0,
+        "sortino": 0.0,
+        "trade_count": 0,
+        "win_rate": null,
+        "average_win": null,
+        "average_loss": null,
+        "profit_factor": null,
+        "exception_trade_count": 0,
+        "exception_win_rate": null,
+        "exception_average_return": null,
+        "exposure": 0.0,
+        "turnover": 0.0,
+        "costs": 0.0,
+        "cash_yield_earned": 0.0,
+        "cash_return_days": 0,
+        "cash_return_missing_days": 0
+      },
+      "trades": [],
+      "open_positions": [],
+      "pending_entries": [],
+      "pending_exits": [],
+      "pending_partial_exits": [],
+      "ranking_mode": "formal_composite",
+      "ranking_events": [],
+      "ranking_contention_decisions": 0,
+      "liquidated_at_end": false,
+      "profit_lock_overlay": {
+        "trigger": 0.15,
+        "floor": 0.05,
+        "activation_basis": "completed_close_effective_next_session"
+      },
+      "partial_profit_overlay": {
+        "trigger": null,
+        "fraction": 0.5,
+        "minimum_notional": 200.0,
+        "executed": 0,
+        "ineligible": 0,
+        "activation_basis": "completed_close_next_session_open_once"
+      },
+      "cash_return_overlay": {
+        "enabled": false,
+        "timing": "session_close_on_post_execution_cash"
+      },
+      "equity": {
+        "2026-08-17": 6000.0,
+        "2026-08-18": 6000.0,
+        "2026-08-19": 6000.0,
+        "2026-08-20": 6000.0
+      },
+      "exposure": {
+        "2026-08-17": 0.0,
+        "2026-08-18": 0.0,
+        "2026-08-19": 0.0,
+        "2026-08-20": 0.0
+      }
+    }
+  },
+  "profit_protection_20bps": {
+    "rsr1": {
+      "variant": "strict_veto",
+      "period": [
+        "2026-08-17",
+        "2026-08-20"
+      ],
+      "config": {
+        "rs20_min": 0.03,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 0.04,
+        "min_close_location": 0.5,
+        "normal_target_weight": 0.08,
+        "stock_sleeve_max": 0.25,
+        "entry_delay_sessions": 1,
+        "max_entry_gap": 1.0
+      },
+      "metrics": {
+        "final_value": 6000.0,
+        "total_return": 0.0,
+        "cagr": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "sharpe": 0.0,
+        "sortino": 0.0,
+        "trade_count": 0,
+        "win_rate": null,
+        "average_win": null,
+        "average_loss": null,
+        "profit_factor": null,
+        "exception_trade_count": 0,
+        "exception_win_rate": null,
+        "exception_average_return": null,
+        "exposure": 0.0,
+        "turnover": 0.0,
+        "costs": 0.0,
+        "cash_yield_earned": 0.0,
+        "cash_return_days": 0,
+        "cash_return_missing_days": 0
+      },
+      "trades": [],
+      "open_positions": [],
+      "pending_entries": [],
+      "pending_exits": [],
+      "pending_partial_exits": [],
+      "ranking_mode": "formal_composite",
+      "ranking_events": [],
+      "ranking_contention_decisions": 0,
+      "liquidated_at_end": false,
+      "profit_lock_overlay": {
+        "trigger": null,
+        "floor": 0.0,
+        "activation_basis": "completed_close_effective_next_session"
+      },
+      "partial_profit_overlay": {
+        "trigger": null,
+        "fraction": 0.5,
+        "minimum_notional": 200.0,
+        "executed": 0,
+        "ineligible": 0,
+        "activation_basis": "completed_close_next_session_open_once"
+      },
+      "cash_return_overlay": {
+        "enabled": false,
+        "timing": "session_close_on_post_execution_cash"
+      },
+      "equity": {
+        "2026-08-17": 6000.0,
+        "2026-08-18": 6000.0,
+        "2026-08-19": 6000.0,
+        "2026-08-20": 6000.0
+      },
+      "exposure": {
+        "2026-08-17": 0.0,
+        "2026-08-18": 0.0,
+        "2026-08-19": 0.0,
+        "2026-08-20": 0.0
+      }
+    },
+    "challenger": {
+      "variant": "strict_veto",
+      "period": [
+        "2026-08-17",
+        "2026-08-20"
+      ],
+      "config": {
+        "rs20_min": 0.03,
+        "volume_ratio_min": 1.2,
+        "max_extension": 0.12,
+        "max_hold_days": 20,
+        "exception_target_weight": 0.05,
+        "stop_loss": 0.08,
+        "repair_rs10_min": 0.03,
+        "breadth_min": 0.5,
+        "breadth_count_min": 2,
+        "max_atr_pct": 0.04,
+        "min_close_location": 0.5,
+        "normal_target_weight": 0.08,
+        "stock_sleeve_max": 0.25,
+        "entry_delay_sessions": 1,
+        "max_entry_gap": 1.0
+      },
+      "metrics": {
+        "final_value": 6000.0,
+        "total_return": 0.0,
+        "cagr": 0.0,
+        "max_drawdown": 0.0,
+        "volatility": 0.0,
+        "sharpe": 0.0,
+        "sortino": 0.0,
+        "trade_count": 0,
+        "win_rate": null,
+        "average_win": null,
+        "average_loss": null,
+        "profit_factor": null,
+        "exception_trade_count": 0,
+        "exception_win_rate": null,
+        "exception_average_return": null,
+        "exposure": 0.0,
+        "turnover": 0.0,
+        "costs": 0.0,
+        "cash_yield_earned": 0.0,
+        "cash_return_days": 0,
+        "cash_return_missing_days": 0
+      },
+      "trades": [],
+      "open_positions": [],
+      "pending_entries": [],
+      "pending_exits": [],
+      "pending_partial_exits": [],
+      "ranking_mode": "formal_composite",
+      "ranking_events": [],
+      "ranking_contention_decisions": 0,
+      "liquidated_at_end": false,
+      "profit_lock_overlay": {
+        "trigger": 0.15,
+        "floor": 0.05,
+        "activation_basis": "completed_close_effective_next_session"
+      },
+      "partial_profit_overlay": {
+        "trigger": null,
+        "fraction": 0.5,
+        "minimum_notional": 200.0,
+        "executed": 0,
+        "ineligible": 0,
+        "activation_basis": "completed_close_next_session_open_once"
+      },
+      "cash_return_overlay": {
+        "enabled": false,
+        "timing": "session_close_on_post_execution_cash"
+      },
+      "equity": {
+        "2026-08-17": 6000.0,
+        "2026-08-18": 6000.0,
+        "2026-08-19": 6000.0,
+        "2026-08-20": 6000.0
+      },
+      "exposure": {
+        "2026-08-17": 0.0,
+        "2026-08-18": 0.0,
+        "2026-08-19": 0.0,
+        "2026-08-20": 0.0
+      }
+    }
+  },
+  "profit_protection_promotion_gate": {
+    "sample_ready": false,
+    "eligible_for_review": false,
+    "sessions": 4,
+    "closed_trades": 0,
+    "themes": [],
+    "max_symbol_profit_share": 1.0,
+    "gross_profit": 0,
+    "profit_by_symbol": {},
+    "win_rate_delta_vs_rsr1": null,
+    "fixed_path_20bps": {
+      "rsr1": {
+        "source_slippage": 0.001,
+        "stressed_slippage": 0.002,
+        "closed_trades": 0,
+        "open_positions": 0,
+        "closed_pnl": 0.0,
+        "open_unrealized": 0.0,
+        "final_value": 6000.0,
+        "total_return": 0.0
+      },
+      "challenger": {
+        "source_slippage": 0.001,
+        "stressed_slippage": 0.002,
+        "closed_trades": 0,
+        "open_positions": 0,
+        "closed_pnl": 0.0,
+        "open_unrealized": 0.0,
+        "final_value": 6000.0,
+        "total_return": 0.0
+      }
+    },
+    "checks": {
+      "sessions_at_least_126": false,
+      "closed_trades_at_least_20": false,
+      "themes_at_least_3": false,
+      "max_symbol_profit_share_at_most_35pct": false,
+      "net_return_not_below_rsr1": true,
+      "win_rate_not_below_rsr1": false,
+      "profit_factor_at_least_1_30": false,
+      "sharpe_not_below_rsr1": true,
+      "max_drawdown_not_worse_by_1pp": true,
+      "survives_20bps_vs_rsr1": true,
+      "survives_fixed_path_20bps_vs_rsr1": true
+    }
+  }
+}

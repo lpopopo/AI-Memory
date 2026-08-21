@@ -1,0 +1,220 @@
+{
+  "version": "opportunity-diagnostics-v1",
+  "generated_at_utc": "2026-08-21T01:15:30.088004+00:00",
+  "status": "observing",
+  "as_of": "2026-08-20",
+  "expected_completed_cutoff": "2026-08-20",
+  "source_complete": true,
+  "missing_latest": [],
+  "recorded_sessions": 4,
+  "high_vol_central_signals": 0,
+  "high_vol_missed_leaders": 24,
+  "core_one_month_reversals": 0,
+  "research_only": true,
+  "authorizes_trade": false,
+  "registration_sha256": "fdeeb4408f8450ee0a6eb248c5366a171af35f7add55c8292bc98921de4292da",
+  "ledger_sha256": "dacedabbbdeb47338cf5709fc52ac65255bc4cb5c47586088ba4e4aeb1b55ed2",
+  "sources": {
+    "AAOI": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "ALAB": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "AMAT": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "AMD": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "ASML": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "AVGO": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "AXTI": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "CEG": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "COHR": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "CRDO": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "DRAM": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "GLW": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "INTC": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "KLAC": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "KO": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "LITE": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "LRCX": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "META": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "MRVL": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "MU": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "MXL": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "NOK": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "NVDA": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "ORCL": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "QCOM": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "QQQ": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "RDW": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "RKLB": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "SKHY": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "SMCI": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "SMH": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "SNDK": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "SPY": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "STX": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "TER": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "TSLA": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "TTMI": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "WDC": {
+      "source": "Yahoo Finance via yfinance",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "^VIX": {
+      "source": "Cboe official daily history",
+      "last_date": "2026-08-20",
+      "error": null
+    },
+    "^VIX3M": {
+      "source": "Cboe official daily history",
+      "last_date": "2026-08-20",
+      "error": null
+    }
+  },
+  "message": "Completed-session diagnostics appended or verified; no order is authorized."
+}

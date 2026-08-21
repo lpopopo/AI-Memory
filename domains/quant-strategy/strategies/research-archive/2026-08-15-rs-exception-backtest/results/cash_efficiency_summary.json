@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-08-15T07:31:46.058090+00:00",
+  "data_end": "2026-08-07",
+  "research_only": true,
+  "authorizes_trade": false,
+  "sgov_source": {
+    "source": "Yahoo Finance via yfinance",
+    "auto_adjust": true,
+    "fetched_at_utc": "2026-08-15T07:31:43.015300+00:00",
+    "fallback": false
+  },
+  "sgov_start": "2023-12-26",
+  "sgov_end": "2026-08-07",
+  "sgov_proxy_price_return_full": 0.12118747444468281,
+  "rsr1_zero_return": 0.156834391772668,
+  "rsr1_sgov_return": 0.2927733570796458,
+  "rsr2_zero_return": 0.18106117055994786,
+  "rsr2_sgov_return": 0.30876982263909447,
+  "rsr1_zero_trades": 23,
+  "rsr1_sgov_trades": 24,
+  "rsr1_cash_yield_earned": 734.5012136709317,
+  "rsr1_final_value_improvement": 815.6337918418658,
+  "rsr1_fixed_path_sgov_return": 0.279400350096652,
+  "rsr2_fixed_path_sgov_return": 0.30464764738782235,
+  "rsr1_fixed_path_cash_yield_earned": 735.3957499439067,
+  "rsr2_fixed_path_cash_yield_earned": 741.5188609672443,
+  "rsr1_dynamic_minus_fixed_return": 0.013373006982993818,
+  "rsr2_dynamic_minus_fixed_return": 0.00412217525127212,
+  "rsr1_zero_reconstruction_max_error": 9.094947017729282e-13,
+  "rsr1_dynamic_added_trades": [
+    {
+      "symbol": "ASML",
+      "signal_date": "2025-12-01",
+      "pnl": -45.568213053108366,
+      "return": -0.041940949543084055
+    }
+  ],
+  "rsr1_path_identical": false,
+  "rsr2_path_identical": false,
+  "decision": "cash_sweep_is_operational_research_only_no_rsr3"
+}

@@ -1,0 +1,33 @@
+{
+  "research_only": true,
+  "formal_v9_modified": false,
+  "live_authorization": false,
+  "coverage": {
+    "membership_symbols": 945.0,
+    "price_symbols": 698.0,
+    "missing_symbols": 247.0,
+    "median_monthly_coverage": 0.7855787476280836
+  },
+  "variants": [
+    {
+      "name": "baseline",
+      "absolute_vol_cap": null,
+      "cross_sectional_vol_percentile": null
+    },
+    {
+      "name": "rv40",
+      "absolute_vol_cap": 0.4,
+      "cross_sectional_vol_percentile": null
+    },
+    {
+      "name": "rv_percentile_60",
+      "absolute_vol_cap": null,
+      "cross_sectional_vol_percentile": 0.6
+    },
+    {
+      "name": "dual_rv40_p60",
+      "absolute_vol_cap": 0.4,
+      "cross_sectional_vol_percentile": 0.6
+    }
+  ]
+}

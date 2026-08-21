@@ -1,0 +1,59 @@
+{
+  "generated_at_utc": "2026-08-21T01:15:30.748981+00:00",
+  "as_of": "2026-08-20",
+  "registration_sha256": "56d195b09bf70a55b3eec091eead33a2b155ed4dadfb3f7f7bd03af676d44ecc",
+  "input_ledger_sha256": "dacedabbbdeb47338cf5709fc52ac65255bc4cb5c47586088ba4e4aeb1b55ed2",
+  "input_ledger_hash_preserved": true,
+  "research_only": true,
+  "authorizes_trade": false,
+  "summary": [
+    {
+      "event_type": "high_vol_central",
+      "horizon_sessions": 5,
+      "raw_events": 0,
+      "primary_episodes": 0,
+      "matured_primary_episodes": 0,
+      "mean_return": null,
+      "median_return": null,
+      "positive_return_rate": null,
+      "mean_mfe": null,
+      "mean_mae": null
+    },
+    {
+      "event_type": "high_vol_central",
+      "horizon_sessions": 20,
+      "raw_events": 0,
+      "primary_episodes": 0,
+      "matured_primary_episodes": 0,
+      "mean_return": null,
+      "median_return": null,
+      "positive_return_rate": null,
+      "mean_mfe": null,
+      "mean_mae": null
+    },
+    {
+      "event_type": "high_vol_missed_leader",
+      "horizon_sessions": 5,
+      "raw_events": 24,
+      "primary_episodes": 16,
+      "matured_primary_episodes": 0,
+      "mean_return": null,
+      "median_return": null,
+      "positive_return_rate": null,
+      "mean_mfe": null,
+      "mean_mae": null
+    },
+    {
+      "event_type": "high_vol_missed_leader",
+      "horizon_sessions": 20,
+      "raw_events": 24,
+      "primary_episodes": 16,
+      "matured_primary_episodes": 0,
+      "mean_return": null,
+      "median_return": null,
+      "positive_return_rate": null,
+      "mean_mfe": null,
+      "mean_mae": null
+    }
+  ]
+}

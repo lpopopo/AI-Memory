@@ -1,0 +1,113 @@
+{
+  "research_only": true,
+  "formal_v9_modified": false,
+  "live_authorization": false,
+  "as_of": "2026-08-20",
+  "historical_research_saturated": true,
+  "forward_validation_complete": false,
+  "new_historical_parameter_search_authorized": false,
+  "branch_counts": {
+    "historical_closed": 13,
+    "frozen_forward": 2,
+    "retained_controls": 10,
+    "external_conditional": 1,
+    "total": 26
+  },
+  "branches": {
+    "historical_closed": [
+      "ATR/close-location parameter-selection bias",
+      "Below-SMH-MA50 relative-strength exception",
+      "Breadth repair exception",
+      "Capital-constrained entry ranking",
+      "Conditional winner extension",
+      "Fixed profit target",
+      "High-volatility trend sleeve",
+      "Increase stock-sleeve allocation",
+      "Point-in-time exact ATR/close-location transfer",
+      "Point-in-time low-volatility proxy",
+      "RSR2 half-position profit taking",
+      "V9 index-core ceiling",
+      "V9 two-month exit confirmation"
+    ],
+    "frozen_forward": [
+      "RSR1 ATR + close-location filter",
+      "RSR2 +15%/+5% profit lock"
+    ],
+    "retained_controls": [
+      "Backtest implementation integrity",
+      "Economic edge and opportunity-cost decomposition",
+      "Forward economic-edge attribution",
+      "Forward economic-evidence scorecard",
+      "Forward risk-action counterfactual",
+      "Forward statistical power and duration",
+      "Forward zero-signal bottleneck",
+      "Historical edge uncertainty audit",
+      "Multi-objective evidence frontier",
+      "RSR1 position weight"
+    ],
+    "external_conditional": [
+      "Residual-cash yield"
+    ]
+  },
+  "forward_state": {
+    "sessions": 4,
+    "closed_trades_by_variant": {
+      "RSR1-shadow": 0,
+      "RSR2-profit-lock-shadow": 0
+    },
+    "matured_opportunity_outcomes": 0,
+    "risk_action_events": {
+      "total": 3,
+      "retrospective_seed": 3,
+      "genuine_forward": 0
+    }
+  },
+  "checks": {
+    "all_registered_branches_classified": true,
+    "point_in_time_transfer_failed": true,
+    "selection_bias_not_contained": true,
+    "genuine_forward_below_126_sessions": true,
+    "genuine_forward_below_20_closed_trades": true,
+    "opportunity_outcomes_not_mature": true,
+    "twenty_trade_clock_is_binding": true,
+    "promotion_gate_unchanged": true,
+    "risk_action_is_measurement_only": true,
+    "risk_action_has_no_forward_policy_selection": true,
+    "objective_frontier_is_synthesis_only": true,
+    "objective_frontier_separates_historical_and_deployable": true,
+    "historical_uncertainty_is_measurement_only": true,
+    "historical_uncertainty_keeps_rsr2_sparse": true
+  },
+  "next_evidence": [
+    {
+      "milestone": "latest completed session",
+      "condition": "append only after a fully completed and validated U.S. session"
+    },
+    {
+      "milestone": "first 5-session opportunity outcomes",
+      "condition": "five later completed sessions after the earliest 2026-08-17 episode; expected no earlier than 2026-08-24"
+    },
+    {
+      "milestone": "first 20-session opportunity outcomes",
+      "condition": "twenty later completed sessions after the earliest episode; expected around mid-September 2026"
+    },
+    {
+      "milestone": "risk-action fixed horizons",
+      "condition": "append genuine-forward reviews before their next open and wait for fixed 1/5/20-session marks; never pool the descriptive as-of mark"
+    },
+    {
+      "milestone": "calendar minimum",
+      "condition": "126 completed forward sessions; approximately mid-February 2027"
+    },
+    {
+      "milestone": "trade-count minimum",
+      "condition": "20 closed candidate trades; historical-rate expectation about 573 sessions / 2.3 years"
+    }
+  ],
+  "reopen_policy": [
+    "new independent mechanism plus genuinely fresh data",
+    "preregister before observing the new outcome",
+    "separate ledger and version; no backfill",
+    "no formal or live change without the original governance gates"
+  ]
+}

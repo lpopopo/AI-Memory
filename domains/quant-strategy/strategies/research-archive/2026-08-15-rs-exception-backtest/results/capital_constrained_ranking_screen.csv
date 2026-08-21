@@ -1,0 +1,4 @@
+policy,sufficient_contention,return_improves_10bps,sharpe_nonworse,drawdown_within_1pp,win_rate_within_5pp,return_improves_20bps,profit_diversified,min_return_delta_10bps,min_return_delta_20bps,passes,status
+rs_only,False,False,False,True,True,False,True,-0.03821042175138367,-0.03095843977879542,False,insufficient
+low_atr_first,False,False,False,True,True,False,True,-0.036093328697620164,-0.026028465415318225,False,insufficient
+balanced_rank,False,False,True,True,True,False,True,-0.0012544791469584204,-0.0013870143098624332,False,insufficient

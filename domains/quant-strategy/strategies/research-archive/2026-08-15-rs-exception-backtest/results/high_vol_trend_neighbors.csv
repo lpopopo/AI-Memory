@@ -1,0 +1,4 @@
+variant,positive_in_both_periods
+hv_relaxed,True
+hv_central,True
+hv_strict,False
