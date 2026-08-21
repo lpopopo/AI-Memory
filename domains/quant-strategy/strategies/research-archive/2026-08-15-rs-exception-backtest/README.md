@@ -312,8 +312,8 @@ with:
 ..\..\..\.venv\Scripts\python.exe evaluate_research_saturation.py
 ```
 
-All 26 decision-register branches are classified: 13 historical branches are
-closed/rejected, two variants remain frozen forward shadows, ten items are
+All 27 decision-register branches are classified: 13 historical branches are
+closed/rejected, two variants remain frozen forward shadows, eleven items are
 retained measurement/control layers, and one cash-yield item remains conditional
 on external account facts. This inventory freezes additional parameter searches
 on the same history; it does not declare forward validation complete. Through
@@ -430,3 +430,17 @@ uplift, and only one historical loss becomes a win. This prioritizes genuine
 forward validation of entry-quality loss avoidance over more exit tuning; it
 does not promote either shadow. See
 `results/historical_uncertainty_audit_report.md`.
+
+Peek-safe forward mechanism interpretation is generated with:
+
+```powershell
+..\..\..\.venv\Scripts\python.exe evaluate_forward_mechanism_clock.py
+```
+
+Entry-quality exclusions and paired RSR1/RSR2 exits accumulate continuously,
+but their directional labels are frozen only at 5, 10 and 20 closed outcomes.
+Actual non-zero changed exits have descriptive checkpoints at 1, 2 and 5.
+Rows are ordered by the date when the complete outcome becomes known, so later
+appends cannot redraw an earlier checkpoint. Through Aug 20 all three clocks
+remain at zero/`unavailable`; the original promotion gates remain unchanged.
+See `results/forward_mechanism_evidence_clock_report.md`.

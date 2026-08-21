@@ -1,0 +1,4 @@
+mechanism,current_outcomes,next_checkpoint,latest_completed_checkpoint,latest_checkpoint_interpretation,between_checkpoints_do_not_reclassify,current_raw_direction
+entry_quality,0,5,,unavailable,False,awaiting_sample
+paired_rsr2,0,5,,unavailable,False,awaiting_sample
+changed_exit,0,1,,unavailable,False,awaiting_sample

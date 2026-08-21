@@ -1,0 +1,91 @@
+{
+  "research_only": true,
+  "formal_v9_modified": false,
+  "real_account_modified": false,
+  "live_order_authorization": false,
+  "changes_promotion_gate": false,
+  "new_parameter_search": false,
+  "preregistration": "forward-mechanism-evidence-clock-preregistration.md",
+  "as_of": "2026-08-20",
+  "sessions": 4,
+  "input_hashes": {
+    "signals": "d06b1b85878f87abedce9044d923bc693e4476816e1e7340531c8c01b1cf13ae",
+    "baseline": "65756e9e3ae30621150e37ad0c16c282c0971e73356781654d0b3f7025d3d08c",
+    "rsr1": "0fbbc368538cadb65e1a7873c7810057915254a3fe6ff58d02c275ac26986ce9",
+    "rsr2": "7195ea0ab7312a9f9b18758bfef0cc17096d8f9ea91aeb90f3b245087317b2e1",
+    "status": "55f53dcb5cb9df6eb731837cd76e5bf317dbd4326d3ca9872fa4686d456e9ef6"
+  },
+  "checkpoints": {
+    "entry_quality": [
+      5,
+      10,
+      20
+    ],
+    "paired_rsr2": [
+      5,
+      10,
+      20
+    ],
+    "changed_exit_diagnostic": [
+      1,
+      2,
+      5
+    ]
+  },
+  "entry_quality_clock": {
+    "current_outcomes": 0,
+    "next_checkpoint": 5,
+    "latest_completed_checkpoint": null,
+    "latest_checkpoint_interpretation": "unavailable",
+    "current_raw_metrics": {
+      "outcomes": 0,
+      "avoided_losers": null,
+      "missed_winners": null,
+      "loss_rate": null,
+      "avoided_loss_dollars": null,
+      "missed_profit_dollars": null,
+      "net_pnl_removed": null,
+      "mean_return": null,
+      "direction": "awaiting_sample"
+    },
+    "checkpoint_snapshots": [],
+    "between_checkpoints_do_not_reclassify": false
+  },
+  "paired_rsr2_clock": {
+    "current_outcomes": 0,
+    "next_checkpoint": 5,
+    "latest_completed_checkpoint": null,
+    "latest_checkpoint_interpretation": "unavailable",
+    "current_raw_metrics": {
+      "outcomes": 0,
+      "rsr1_wins": null,
+      "rsr2_wins": null,
+      "win_rate_delta": null,
+      "aggregate_total_pnl_delta": null,
+      "aggregate_direct_exit_effect": null,
+      "aggregate_path_sizing_residual": null,
+      "direction": "awaiting_sample"
+    },
+    "checkpoint_snapshots": [],
+    "between_checkpoints_do_not_reclassify": false
+  },
+  "changed_exit_clock": {
+    "current_outcomes": 0,
+    "next_checkpoint": 1,
+    "latest_completed_checkpoint": null,
+    "latest_checkpoint_interpretation": "unavailable",
+    "current_raw_metrics": {
+      "outcomes": 0,
+      "positive": null,
+      "negative": null,
+      "aggregate_direct_exit_effect": null,
+      "direction": "awaiting_sample"
+    },
+    "checkpoint_snapshots": [],
+    "between_checkpoints_do_not_reclassify": false
+  },
+  "original_gate_review_eligible": false,
+  "overall_status": "awaiting_sample",
+  "historical_calibration_is_forward_evidence": false,
+  "decision": "accumulate immutable outcomes; interpret only frozen checkpoints; no rule or order change"
+}

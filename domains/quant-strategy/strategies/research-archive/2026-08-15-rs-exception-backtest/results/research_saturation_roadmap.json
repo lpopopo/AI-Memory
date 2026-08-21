@@ -9,9 +9,9 @@
   "branch_counts": {
     "historical_closed": 13,
     "frozen_forward": 2,
-    "retained_controls": 10,
+    "retained_controls": 11,
     "external_conditional": 1,
-    "total": 26
+    "total": 27
   },
   "branches": {
     "historical_closed": [
@@ -38,6 +38,7 @@
       "Economic edge and opportunity-cost decomposition",
       "Forward economic-edge attribution",
       "Forward economic-evidence scorecard",
+      "Forward mechanism evidence clock",
       "Forward risk-action counterfactual",
       "Forward statistical power and duration",
       "Forward zero-signal bottleneck",
@@ -76,7 +77,9 @@
     "objective_frontier_is_synthesis_only": true,
     "objective_frontier_separates_historical_and_deployable": true,
     "historical_uncertainty_is_measurement_only": true,
-    "historical_uncertainty_keeps_rsr2_sparse": true
+    "historical_uncertainty_keeps_rsr2_sparse": true,
+    "mechanism_clock_is_peek_safe_measurement": true,
+    "mechanism_clock_has_fixed_checkpoints": true
   },
   "next_evidence": [
     {

@@ -17,6 +17,7 @@ POWER_STATUS = RESULTS / "forward_power_duration_summary.json"
 RISK_ACTION_STATUS = RESULTS / "forward_risk_action_counterfactual.json"
 OBJECTIVE_FRONTIER_STATUS = RESULTS / "objective_frontier_summary.json"
 HISTORICAL_UNCERTAINTY_STATUS = RESULTS / "historical_uncertainty_audit.json"
+MECHANISM_CLOCK_STATUS = RESULTS / "forward_mechanism_evidence_clock.json"
 
 HISTORICAL_CLOSED = {
     "Below-SMH-MA50 relative-strength exception",
@@ -48,6 +49,7 @@ RETAINED_CONTROLS = {
     "Forward risk-action counterfactual",
     "Multi-objective evidence frontier",
     "Historical edge uncertainty audit",
+    "Forward mechanism evidence clock",
 }
 EXTERNAL_CONDITIONAL = {"Residual-cash yield"}
 
@@ -104,6 +106,7 @@ def evaluate() -> dict:
     risk_action = load_json(RISK_ACTION_STATUS)
     objective_frontier = load_json(OBJECTIVE_FRONTIER_STATUS)
     historical_uncertainty = load_json(HISTORICAL_UNCERTAINTY_STATUS)
+    mechanism_clock = load_json(MECHANISM_CLOCK_STATUS)
 
     opportunity_rows = opportunity.get("summary", [])
     matured = sum(int(row.get("matured_primary_episodes", 0)) for row in opportunity_rows)
@@ -164,6 +167,20 @@ def evaluate() -> dict:
         "historical_uncertainty_keeps_rsr2_sparse": (
             historical_uncertainty.get("rsr2_paired_delta", {}).get("evidence_label")
             == "directional_but_sparse"
+        ),
+        "mechanism_clock_is_peek_safe_measurement": bool(
+            mechanism_clock.get("research_only", False)
+        )
+        and not bool(mechanism_clock.get("changes_promotion_gate", True))
+        and not bool(mechanism_clock.get("new_parameter_search", True))
+        and not bool(mechanism_clock.get("formal_v9_modified", True))
+        and not bool(mechanism_clock.get("real_account_modified", True))
+        and not bool(mechanism_clock.get("live_order_authorization", True)),
+        "mechanism_clock_has_fixed_checkpoints": (
+            mechanism_clock.get("checkpoints", {}).get("entry_quality") == [5, 10, 20]
+            and mechanism_clock.get("checkpoints", {}).get("paired_rsr2") == [5, 10, 20]
+            and mechanism_clock.get("checkpoints", {}).get("changed_exit_diagnostic")
+            == [1, 2, 5]
         ),
     }
     return {

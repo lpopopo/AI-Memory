@@ -9,9 +9,9 @@ This does not complete strategy validation. It means the next decisive informati
 
 - Historical branches closed or rejected: 13
 - Frozen forward shadows: 2
-- Retained measurement/control layers: 10
+- Retained measurement/control layers: 11
 - External-account conditional items: 1
-- Total classified branches: 26
+- Total classified branches: 27
 
 ## Current forward state
 
